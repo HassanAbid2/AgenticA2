@@ -21,6 +21,7 @@ from pathlib import Path
 
 from scripts.catalog import (
     CATEGORY_HOURS,
+    CLIENT_NEED,
     FOREIGN_SKILLS,
     INDUSTRIES,
     MARKET_RATE,
@@ -177,12 +178,12 @@ def make_past_proposal(rng, persona, idx, prj):
     anchor = rng.choice(prj)
     specific = rng.random() < 0.55
     cat = anchor["category"]
-    job_title = f"{cat}: {anchor['need'][:60]}"
+    job_title = f"{cat}: {CLIENT_NEED[anchor['slug']][:60]}"
     if specific:
         name = anchor["alt"] if rng.random() < 0.5 else anchor["title"]
         opening = rng.choice([
-            f"You need {anchor['need']} - I built exactly this as {name} for a {anchor['industry']} client.",
-            f"Your post about {anchor['need'][:50]} sounds a lot like {name}, which {anchor['metric']}.",
+            f"You need {CLIENT_NEED[anchor['slug']]} - I built exactly this as {name} for a {anchor['industry']} client.",
+            f"Your post about {CLIENT_NEED[anchor['slug']][:50]} sounds a lot like {name}, which {anchor['metric']}.",
         ])
         body = (f" In {name} I used {', '.join(anchor['skills'][:3])}, and it {anchor['metric']}. "
                 f"For your project I would start with a short discovery call, then ship a first milestone in a week. "
@@ -409,13 +410,13 @@ def make_job(rng, persona, kind, jid, clients_by_kind, posted):
         gold["difficult_client"] = True
 
     if kind == "vague":
-        desc = (f"Hi! We're a small {industry} business. We need {anchor['need']}. We're not technical so we "
+        desc = (f"Hi! We're a small {industry} business. We need {CLIENT_NEED[anchor['slug']]}. We're not technical so we "
                 f"don't know exactly what tools are needed - open to your suggestions. Please explain your approach "
                 f"in plain language.")
         listed = []
     else:
         bullets = "\n".join(f"- {req_phrase(rng, s)}" for s in req)
-        need = anchor["need"] if kind != "mismatch" else f"a specialist for our {', '.join(req[:2])} work"
+        need = CLIENT_NEED[anchor["slug"]] if kind != "mismatch" else f"a specialist for our {', '.join(req[:2])} work"
         ind_line = f"\nYou must have previous experience working with {industry} clients." if kind == "industry" else ""
         desc = (f"About us: we are a {rng.choice(['small', 'growing', 'mid-size', 'well-funded'])} {industry} company.\n"
                 f"We need {need}.{ind_line}\n\nRequirements:\n{bullets}\n\nDeliverables:\n"
@@ -434,7 +435,7 @@ def make_job(rng, persona, kind, jid, clients_by_kind, posted):
             extra_text += "\n" + stxt.format(thing=anchor["title"].lower())
             gold.update(scam=True, bid=False, scam_type=tag)
 
-    title_pool = [f"{category} expert needed", f"Need help: {anchor['need'][:55]}",
+    title_pool = [f"{category} expert needed", f"Need help: {CLIENT_NEED[anchor['slug']][:55]}",
                   f"{', '.join(req[:2])} developer for {industry} project", f"Looking for a freelancer - {category.lower()}"]
     if kind == "mismatch":
         title_pool = [f"{req[0]} specialist needed", f"{req[0]} + {req[1]} project"]

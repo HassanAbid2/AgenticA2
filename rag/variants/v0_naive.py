@@ -1,3 +1,3 @@
-def retrieve(query: str, index, k: int = 5):
-    # TODO: Implement the mandatory baseline: dense top-k cosine retrieval.
-    raise NotImplementedError
+"""V0 baseline: fixed-size chunks, top-k cosine against the whole job post."""
+
+CONFIG = {"scheme": "naive", "query": "whole", "retrieval": "dense"}

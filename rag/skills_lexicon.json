@@ -1,0 +1,638 @@
+{
+ "Python": {
+  "aliases": [],
+  "code_patterns": [
+   "(?m)^\\s*(?:from|import)\\s+sys\\b"
+  ]
+ },
+ "PyTorch": {
+  "aliases": [],
+  "code_patterns": [
+   "(?m)^\\s*(?:from|import)\\s+torch\\b"
+  ]
+ },
+ "TensorFlow": {
+  "aliases": [],
+  "code_patterns": [
+   "(?m)^\\s*(?:from|import)\\s+tensorflow\\b"
+  ]
+ },
+ "scikit-learn": {
+  "aliases": [
+   "sklearn",
+   "scikit learn"
+  ],
+  "code_patterns": [
+   "(?m)^\\s*(?:from|import)\\s+sklearn\\b"
+  ]
+ },
+ "XGBoost": {
+  "aliases": [
+   "xgb"
+  ],
+  "code_patterns": [
+   "(?m)^\\s*(?:from|import)\\s+xgboost\\b"
+  ]
+ },
+ "LightGBM": {
+  "aliases": [
+   "lgbm"
+  ],
+  "code_patterns": [
+   "(?m)^\\s*(?:from|import)\\s+lightgbm\\b"
+  ]
+ },
+ "LangChain": {
+  "aliases": [],
+  "code_patterns": [
+   "(?m)^\\s*(?:from|import)\\s+langchain_core\\b"
+  ]
+ },
+ "LangGraph": {
+  "aliases": [],
+  "code_patterns": [
+   "(?m)^\\s*(?:from|import)\\s+langgraph\\b"
+  ]
+ },
+ "RAG": {
+  "aliases": [
+   "retrieval-augmented generation",
+   "retrieval augmented generation"
+  ],
+  "code_patterns": []
+ },
+ "Pinecone": {
+  "aliases": [],
+  "code_patterns": [
+   "(?m)^\\s*(?:from|import)\\s+pinecone\\b"
+  ]
+ },
+ "Qdrant": {
+  "aliases": [],
+  "code_patterns": [
+   "(?m)^\\s*(?:from|import)\\s+qdrant_client\\b"
+  ]
+ },
+ "FAISS": {
+  "aliases": [],
+  "code_patterns": [
+   "(?m)^\\s*(?:from|import)\\s+faiss\\b"
+  ]
+ },
+ "OpenAI API": {
+  "aliases": [
+   "openai",
+   "gpt-4",
+   "gpt-4o",
+   "chatgpt api"
+  ],
+  "code_patterns": [
+   "(?m)^\\s*(?:from|import)\\s+openai\\b"
+  ]
+ },
+ "Hugging Face Transformers": {
+  "aliases": [
+   "hugging face",
+   "huggingface",
+   "transformers"
+  ],
+  "code_patterns": [
+   "(?m)^\\s*(?:from|import)\\s+transformers\\b"
+  ]
+ },
+ "LoRA fine-tuning": {
+  "aliases": [
+   "lora",
+   "qlora",
+   "peft",
+   "fine-tuning",
+   "fine tuning",
+   "finetuning"
+  ],
+  "code_patterns": [
+   "(?m)^\\s*(?:from|import)\\s+peft\\b"
+  ]
+ },
+ "NLP": {
+  "aliases": [
+   "natural language processing",
+   "text classification",
+   "named entity recognition",
+   "ner"
+  ],
+  "code_patterns": []
+ },
+ "spaCy": {
+  "aliases": [],
+  "code_patterns": [
+   "(?m)^\\s*(?:from|import)\\s+spacy\\b"
+  ]
+ },
+ "computer vision": {
+  "aliases": [
+   "image recognition",
+   "object detection",
+   "cv model"
+  ],
+  "code_patterns": []
+ },
+ "OpenCV": {
+  "aliases": [],
+  "code_patterns": [
+   "(?m)^\\s*(?:from|import)\\s+cv2\\b"
+  ]
+ },
+ "YOLO": {
+  "aliases": [
+   "yolov8",
+   "ultralytics"
+  ],
+  "code_patterns": [
+   "(?m)^\\s*(?:from|import)\\s+ultralytics\\b"
+  ]
+ },
+ "FastAPI": {
+  "aliases": [
+   "fast api"
+  ],
+  "code_patterns": [
+   "(?m)^\\s*(?:from|import)\\s+fastapi\\b"
+  ]
+ },
+ "Docker": {
+  "aliases": [],
+  "code_patterns": [
+   "(?m)^FROM\\s+\\S+"
+  ]
+ },
+ "MLflow": {
+  "aliases": [],
+  "code_patterns": [
+   "(?m)^\\s*(?:from|import)\\s+mlflow\\b"
+  ]
+ },
+ "AWS SageMaker": {
+  "aliases": [
+   "sagemaker"
+  ],
+  "code_patterns": [
+   "(?m)^\\s*(?:from|import)\\s+sagemaker\\b"
+  ]
+ },
+ "time series forecasting": {
+  "aliases": [
+   "time series",
+   "time-series",
+   "demand forecasting"
+  ],
+  "code_patterns": []
+ },
+ "recommendation systems": {
+  "aliases": [
+   "recommender",
+   "recommendation engine",
+   "recommendations"
+  ],
+  "code_patterns": []
+ },
+ "Celery": {
+  "aliases": [],
+  "code_patterns": [
+   "(?m)^\\s*(?:from|import)\\s+celery\\b",
+   "\\bCelery\\("
+  ]
+ },
+ "Airflow": {
+  "aliases": [],
+  "code_patterns": [
+   "(?m)^\\s*(?:from|import)\\s+airflow\\b"
+  ]
+ },
+ "LLM evaluation": {
+  "aliases": [
+   "llm evals",
+   "llm eval"
+  ],
+  "code_patterns": []
+ },
+ "prompt engineering": {
+  "aliases": [
+   "prompting",
+   "prompt design"
+  ],
+  "code_patterns": []
+ },
+ "speech recognition": {
+  "aliases": [
+   "speech-to-text",
+   "whisper",
+   "asr"
+  ],
+  "code_patterns": [
+   "(?m)^\\s*(?:from|import)\\s+whisper\\b"
+  ]
+ },
+ "embeddings": {
+  "aliases": [
+   "vector search",
+   "semantic search"
+  ],
+  "code_patterns": []
+ },
+ "pandas": {
+  "aliases": [],
+  "code_patterns": [
+   "(?m)^\\s*(?:from|import)\\s+pandas\\b"
+  ]
+ },
+ "React": {
+  "aliases": [],
+  "code_patterns": [
+   "react"
+  ]
+ },
+ "Next.js": {
+  "aliases": [
+   "nextjs",
+   "next js"
+  ],
+  "code_patterns": [
+   "(?m)^\\s*(?:from|import)\\s+Link\\b",
+   "next/link"
+  ]
+ },
+ "TypeScript": {
+  "aliases": [],
+  "code_patterns": []
+ },
+ "Node.js": {
+  "aliases": [
+   "nodejs"
+  ],
+  "code_patterns": []
+ },
+ "Express": {
+  "aliases": [],
+  "code_patterns": []
+ },
+ "NestJS": {
+  "aliases": [],
+  "code_patterns": []
+ },
+ "PostgreSQL": {
+  "aliases": [
+   "postgres",
+   "psql"
+  ],
+  "code_patterns": []
+ },
+ "MongoDB": {
+  "aliases": [
+   "mongo"
+  ],
+  "code_patterns": []
+ },
+ "Redis": {
+  "aliases": [],
+  "code_patterns": [
+   "new Redis\\("
+  ]
+ },
+ "GraphQL": {
+  "aliases": [
+   "apollo",
+   "graph ql"
+  ],
+  "code_patterns": []
+ },
+ "Tailwind CSS": {
+  "aliases": [
+   "tailwind",
+   "tailwindcss"
+  ],
+  "code_patterns": []
+ },
+ "Stripe": {
+  "aliases": [
+   "stripe checkout"
+  ],
+  "code_patterns": [
+   "new Stripe\\("
+  ]
+ },
+ "Firebase": {
+  "aliases": [],
+  "code_patterns": [
+   "firebase/app"
+  ]
+ },
+ "AWS": {
+  "aliases": [
+   "amazon web services",
+   "ec2"
+  ],
+  "code_patterns": []
+ },
+ "Django": {
+  "aliases": [
+   "django rest framework",
+   "drf"
+  ],
+  "code_patterns": [
+   "(?m)^\\s*(?:from|import)\\s+django\\b"
+  ]
+ },
+ "WebSockets": {
+  "aliases": [
+   "websocket",
+   "socket.io",
+   "real-time updates"
+  ],
+  "code_patterns": [
+   "new WebSocket\\("
+  ]
+ },
+ "Prisma": {
+  "aliases": [],
+  "code_patterns": []
+ },
+ "Supabase": {
+  "aliases": [],
+  "code_patterns": [
+   "@supabase/supabase\\-js"
+  ]
+ },
+ "Shopify": {
+  "aliases": [
+   "shopify app",
+   "liquid"
+  ],
+  "code_patterns": []
+ },
+ "React Native": {
+  "aliases": [
+   "react-native",
+   "expo"
+  ],
+  "code_patterns": [
+   "react\\-native"
+  ]
+ },
+ "Jest": {
+  "aliases": [],
+  "code_patterns": []
+ },
+ "Playwright": {
+  "aliases": [],
+  "code_patterns": [
+   "@playwright/test"
+  ]
+ },
+ "CI/CD": {
+  "aliases": [
+   "ci cd",
+   "github actions",
+   "continuous integration"
+  ],
+  "code_patterns": []
+ },
+ "Vercel": {
+  "aliases": [],
+  "code_patterns": []
+ },
+ "OAuth": {
+  "aliases": [
+   "oauth2",
+   "auth0"
+  ],
+  "code_patterns": []
+ },
+ "JavaScript": {
+  "aliases": [
+   "jquery",
+   "es6"
+  ],
+  "code_patterns": []
+ },
+ "SQL": {
+  "aliases": [],
+  "code_patterns": []
+ },
+ "Excel": {
+  "aliases": [
+   "spreadsheet",
+   "spreadsheets",
+   "xlsx"
+  ],
+  "code_patterns": []
+ },
+ "Power BI": {
+  "aliases": [
+   "powerbi",
+   "dax"
+  ],
+  "code_patterns": []
+ },
+ "Tableau": {
+  "aliases": [],
+  "code_patterns": []
+ },
+ "dbt": {
+  "aliases": [
+   "data build tool"
+  ],
+  "code_patterns": [
+   "\\{\\{\\s*ref\\("
+  ]
+ },
+ "Snowflake": {
+  "aliases": [],
+  "code_patterns": []
+ },
+ "BigQuery": {
+  "aliases": [
+   "big query"
+  ],
+  "code_patterns": []
+ },
+ "Looker": {
+  "aliases": [
+   "lookml"
+  ],
+  "code_patterns": []
+ },
+ "Looker Studio": {
+  "aliases": [
+   "data studio"
+  ],
+  "code_patterns": []
+ },
+ "Google Analytics": {
+  "aliases": [
+   "ga4",
+   "google analytics 4"
+  ],
+  "code_patterns": []
+ },
+ "A/B testing": {
+  "aliases": [
+   "ab testing",
+   "a/b test",
+   "split test"
+  ],
+  "code_patterns": []
+ },
+ "statistics": {
+  "aliases": [
+   "statistical",
+   "hypothesis testing",
+   "regression analysis"
+  ],
+  "code_patterns": [
+   "(?m)^\\s*(?:from|import)\\s+scipy\\b"
+  ]
+ },
+ "R": {
+  "aliases": [
+   "rstats",
+   "tidyverse",
+   "ggplot"
+  ],
+  "code_patterns": []
+ },
+ "ETL": {
+  "aliases": [
+   "elt",
+   "data pipeline",
+   "data pipelines"
+  ],
+  "code_patterns": []
+ },
+ "data cleaning": {
+  "aliases": [
+   "data wrangling",
+   "data cleansing"
+  ],
+  "code_patterns": []
+ },
+ "dashboards": {
+  "aliases": [],
+  "code_patterns": []
+ },
+ "forecasting": {
+  "aliases": [],
+  "code_patterns": []
+ },
+ "cohort analysis": {
+  "aliases": [
+   "cohorts",
+   "retention cohorts"
+  ],
+  "code_patterns": []
+ },
+ "Google Sheets": {
+  "aliases": [
+   "gsheets",
+   "apps script"
+  ],
+  "code_patterns": []
+ },
+ "Metabase": {
+  "aliases": [],
+  "code_patterns": []
+ },
+ "Redshift": {
+  "aliases": [
+   "amazon redshift"
+  ],
+  "code_patterns": []
+ },
+ "VBA": {
+  "aliases": [
+   "macros",
+   "excel macros"
+  ],
+  "code_patterns": []
+ },
+ "Power Query": {
+  "aliases": [
+   "powerquery",
+   "m language"
+  ],
+  "code_patterns": []
+ },
+ "clustering": {
+  "aliases": [
+   "k-means",
+   "kmeans"
+  ],
+  "code_patterns": []
+ },
+ "Unity": {
+  "aliases": [],
+  "code_patterns": []
+ },
+ "Solidity": {
+  "aliases": [],
+  "code_patterns": []
+ },
+ "iOS Swift": {
+  "aliases": [
+   "swift",
+   "swiftui"
+  ],
+  "code_patterns": [
+   "(?m)^\\s*(?:from|import)\\s+SwiftUI\\b"
+  ]
+ },
+ "Figma": {
+  "aliases": [
+   "ui design"
+  ],
+  "code_patterns": []
+ },
+ "SEO copywriting": {
+  "aliases": [
+   "seo"
+  ],
+  "code_patterns": []
+ },
+ "video editing": {
+  "aliases": [],
+  "code_patterns": []
+ },
+ "WordPress": {
+  "aliases": [],
+  "code_patterns": []
+ },
+ "Salesforce Apex": {
+  "aliases": [
+   "apex",
+   "salesforce"
+  ],
+  "code_patterns": []
+ },
+ "embedded C": {
+  "aliases": [
+   "firmware",
+   "microcontroller"
+  ],
+  "code_patterns": []
+ },
+ "Kubernetes": {
+  "aliases": [
+   "k8s"
+  ],
+  "code_patterns": []
+ },
+ "Rust": {
+  "aliases": [],
+  "code_patterns": []
+ },
+ "3D modeling": {
+  "aliases": [
+   "blender"
+  ],
+  "code_patterns": []
+ }
+}
