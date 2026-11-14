@@ -51,12 +51,26 @@ async def trace_requests(request: Request, call_next):
 
 
 @app.on_event("startup")
-def _startup():
+async def _startup():
     engine()  # create tables
     if os.getenv("SEED_REVIEWER", "1") == "1":
         from apps.api.seed import ensure_reviewer
 
         ensure_reviewer()
+    if os.getenv("TASK_MODE") == "inline" and os.getenv("INLINE_SCHEDULER", "1") == "1":
+        import asyncio
+
+        from worker.tasks import tick
+
+        async def scheduler():  # single-process mode: the worker's cron, in-process
+            while True:
+                await asyncio.sleep(60)
+                try:
+                    await tick({})
+                except Exception:  # noqa: BLE001
+                    log.exception("scheduler tick failed")
+
+        asyncio.get_running_loop().create_task(scheduler())
 
 
 for r in (users.router, token_store.router, settings_router.router, jobs.router, approvals.router, messages.router,

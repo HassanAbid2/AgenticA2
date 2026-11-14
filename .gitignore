@@ -18,3 +18,5 @@ evals/holdout/
 evals/cache/
 apps/web/test-results/
 apps/web/playwright-report/
+apps/web/dist/
+apps/web/node_modules/
