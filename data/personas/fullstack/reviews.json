@@ -1,0 +1,114 @@
+[
+  {
+    "review_id": "fullstack-rev-00",
+    "project": "Headless CMS blog",
+    "client_industry": "media",
+    "rating": 5,
+    "date": "2022-07",
+    "text": "We hired Bilal for rebuild our blog so editors can publish without a developer; would hire again. Minor delays in week two but quality was high."
+  },
+  {
+    "review_id": "fullstack-rev-01",
+    "project": "Inventory API with background jobs",
+    "client_industry": "retail",
+    "rating": 5,
+    "date": "2024-11",
+    "text": "Great to work with. The StockSync project went live on schedule and stock sync across 3 warehouses every 2 minutes instead of nightly."
+  },
+  {
+    "review_id": "fullstack-rev-02",
+    "project": "Event ticketing PWA",
+    "client_industry": "events",
+    "rating": 5,
+    "date": "2023-04",
+    "text": "Solid engineer. Asked the right questions about sell tickets for our events and scan the and handed over clean documentation."
+  },
+  {
+    "review_id": "fullstack-rev-03",
+    "project": "GraphQL API for a media app",
+    "client_industry": "media",
+    "rating": 5,
+    "date": "2023-10",
+    "text": "Solid engineer. Asked the right questions about a faster API for our video app; the mobi and handed over clean documentation."
+  },
+  {
+    "review_id": "fullstack-rev-04",
+    "project": "Classroom chat with presence",
+    "client_industry": "education",
+    "rating": 3,
+    "date": "2022-09",
+    "text": "Bilal delivered real-time chat between teachers and students with online indicators. 8,000 concurrent students on two small instances. Communication was clear and on time."
+  },
+  {
+    "review_id": "fullstack-rev-05",
+    "project": "Internal admin panel",
+    "client_industry": "fintech",
+    "rating": 5,
+    "date": "2024-08",
+    "text": "Solid engineer. Asked the right questions about an internal tool so our support staff ca and handed over clean documentation."
+  },
+  {
+    "review_id": "fullstack-rev-06",
+    "project": "Mobile fitness app",
+    "client_industry": "health & fitness",
+    "rating": 5,
+    "date": "2023-01",
+    "text": "Solid engineer. Asked the right questions about an iOS and Android app for logging worko and handed over clean documentation."
+  },
+  {
+    "review_id": "fullstack-rev-07",
+    "project": "Payment reconciliation tool",
+    "client_industry": "fintech",
+    "rating": 4,
+    "date": "2024-07",
+    "text": "Solid engineer. Asked the right questions about match payment-provider payouts against o and handed over clean documentation."
+  },
+  {
+    "review_id": "fullstack-rev-08",
+    "project": "End-to-end test suite and CI",
+    "client_industry": "SaaS",
+    "rating": 4,
+    "date": "2025-01",
+    "text": "Solid engineer. Asked the right questions about automated tests so releases stop breakin and handed over clean documentation."
+  },
+  {
+    "review_id": "fullstack-rev-09",
+    "project": "Real-time logistics tracker",
+    "client_industry": "logistics",
+    "rating": 5,
+    "date": "2024-06",
+    "text": "We hired Bilal for a live map showing where every delivery van is right now; would hire again. Minor delays in week two but quality was high."
+  },
+  {
+    "review_id": "fullstack-rev-10",
+    "project": "Realtime notes app",
+    "client_industry": "productivity",
+    "rating": 5,
+    "date": "2025-11",
+    "text": "Bilal delivered a shared notes app where edits show up instantly for everyone. Shipped MVP in 3 weeks; 2,300 weekly active users. Communication was clear and on time."
+  },
+  {
+    "review_id": "fullstack-rev-11",
+    "project": "Clinic appointment booking",
+    "client_industry": "healthcare",
+    "rating": 4,
+    "date": "2023-06",
+    "text": "Bilal delivered online booking for our clinics with SMS reminders. No-shows down 28% thanks to automated reminders. Communication was clear and on time."
+  },
+  {
+    "review_id": "fullstack-rev-12",
+    "project": "Multi-tenant CRM",
+    "client_industry": "real estate",
+    "rating": 5,
+    "date": "2023-12",
+    "text": "Bilal delivered a CRM for estate agencies where each agency only sees its own leads. Rolled out to 45 agencies with strict per-tenant data isolation. Communication was clear and on time."
+  },
+  {
+    "review_id": "fullstack-rev-13",
+    "project": "Legacy jQuery to React migration",
+    "client_industry": "insurance",
+    "rating": 5,
+    "date": "2022-12",
+    "text": "Bilal delivered replace our old quote form front end without breaking anything. Bundle size down 60%; zero downtime across a 4-month migration. Communication was clear and on time."
+  }
+]

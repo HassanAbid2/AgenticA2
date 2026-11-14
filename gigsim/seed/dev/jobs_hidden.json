@@ -1,0 +1,8321 @@
+{
+ "j-ai-0001": {
+  "must_have": [
+   "LangChain",
+   "Python"
+  ],
+  "budget_ceiling": 55.34,
+  "fair_total": 3059.77,
+  "est_hours": 63.7,
+  "domain": "ai_ml"
+ },
+ "j-ai-0002": {
+  "must_have": [
+   "computer vision",
+   "Python"
+  ],
+  "budget_ceiling": 4745.22,
+  "fair_total": 4259.07,
+  "est_hours": 88.7,
+  "domain": "ai_ml"
+ },
+ "j-ai-0003": {
+  "must_have": [
+   "Docker",
+   "TensorFlow"
+  ],
+  "budget_ceiling": 6619.51,
+  "fair_total": 4195.2,
+  "est_hours": 87.4,
+  "domain": "ai_ml"
+ },
+ "j-ai-0004": {
+  "must_have": [
+   "LangChain",
+   "Docker"
+  ],
+  "budget_ceiling": 4142.06,
+  "fair_total": 3079.67,
+  "est_hours": 64.2,
+  "domain": "ai_ml"
+ },
+ "j-ai-0005": {
+  "must_have": [
+   "Python",
+   "Docker"
+  ],
+  "budget_ceiling": 53.65,
+  "fair_total": 2609.26,
+  "est_hours": 54.4,
+  "domain": "ai_ml"
+ },
+ "j-ai-0006": {
+  "must_have": [
+   "Python",
+   "XGBoost"
+  ],
+  "budget_ceiling": 4912.88,
+  "fair_total": 3468.98,
+  "est_hours": 72.3,
+  "domain": "ai_ml"
+ },
+ "j-ai-0007": {
+  "must_have": [
+   "speech recognition",
+   "NLP"
+  ],
+  "budget_ceiling": 2629.42,
+  "fair_total": 2126.7,
+  "est_hours": 44.3,
+  "domain": "ai_ml"
+ },
+ "j-ai-0008": {
+  "must_have": [
+   "PostgreSQL",
+   "pandas"
+  ],
+  "budget_ceiling": 2995.15,
+  "fair_total": 2221.54,
+  "est_hours": 46.3,
+  "domain": "ai_ml"
+ },
+ "j-ai-0009": {
+  "must_have": [
+   "OpenCV",
+   "FastAPI"
+  ],
+  "budget_ceiling": 65.27,
+  "fair_total": 4492.46,
+  "est_hours": 93.6,
+  "domain": "ai_ml"
+ },
+ "j-ai-0010": {
+  "must_have": [
+   "Docker",
+   "PyTorch"
+  ],
+  "budget_ceiling": 6145.43,
+  "fair_total": 4345.62,
+  "est_hours": 90.5,
+  "domain": "ai_ml"
+ },
+ "j-ai-0011": {
+  "must_have": [
+   "AWS SageMaker",
+   "scikit-learn"
+  ],
+  "budget_ceiling": 3180.69,
+  "fair_total": 2933.31,
+  "est_hours": 61.1,
+  "domain": "ai_ml"
+ },
+ "j-ai-0012": {
+  "must_have": [
+   "pandas",
+   "Python"
+  ],
+  "budget_ceiling": 55.44,
+  "fair_total": 4102.82,
+  "est_hours": 85.5,
+  "domain": "ai_ml"
+ },
+ "j-ai-0013": {
+  "must_have": [
+   "MLflow",
+   "scikit-learn"
+  ],
+  "budget_ceiling": 53.0,
+  "fair_total": 2806.44,
+  "est_hours": 58.5,
+  "domain": "ai_ml"
+ },
+ "j-ai-0014": {
+  "must_have": [
+   "OpenAI API",
+   "Qdrant"
+  ],
+  "budget_ceiling": 68.65,
+  "fair_total": 2770.2,
+  "est_hours": 57.7,
+  "domain": "ai_ml"
+ },
+ "j-ai-0015": {
+  "must_have": [
+   "scikit-learn",
+   "NLP"
+  ],
+  "budget_ceiling": 3500.49,
+  "fair_total": 2605.84,
+  "est_hours": 54.3,
+  "domain": "ai_ml"
+ },
+ "j-ai-0016": {
+  "must_have": [
+   "Python",
+   "OpenCV"
+  ],
+  "budget_ceiling": 58.75,
+  "fair_total": 3830.94,
+  "est_hours": 79.8,
+  "domain": "ai_ml"
+ },
+ "j-ai-0017": {
+  "must_have": [
+   "OpenAI API",
+   "FastAPI"
+  ],
+  "budget_ceiling": 58.15,
+  "fair_total": 2922.76,
+  "est_hours": 60.9,
+  "domain": "ai_ml"
+ },
+ "j-ai-0018": {
+  "must_have": [
+   "pandas",
+   "Hugging Face Transformers"
+  ],
+  "budget_ceiling": 2814.52,
+  "fair_total": 2704.09,
+  "est_hours": 56.3,
+  "domain": "ai_ml"
+ },
+ "j-ai-0019": {
+  "must_have": [
+   "FastAPI",
+   "computer vision"
+  ],
+  "budget_ceiling": 75.81,
+  "fair_total": 3886.53,
+  "est_hours": 81.0,
+  "domain": "ai_ml"
+ },
+ "j-ai-0020": {
+  "must_have": [
+   "LightGBM",
+   "Python"
+  ],
+  "budget_ceiling": 3476.77,
+  "fair_total": 3177.41,
+  "est_hours": 66.2,
+  "domain": "ai_ml"
+ },
+ "j-ai-0021": {
+  "must_have": [
+   "speech recognition",
+   "Python"
+  ],
+  "budget_ceiling": 54.43,
+  "fair_total": 3574.59,
+  "est_hours": 74.5,
+  "domain": "ai_ml"
+ },
+ "j-ai-0022": {
+  "must_have": [
+   "OpenAI API",
+   "FastAPI"
+  ],
+  "budget_ceiling": 3842.63,
+  "fair_total": 3175.88,
+  "est_hours": 66.2,
+  "domain": "ai_ml"
+ },
+ "j-ai-0023": {
+  "must_have": [
+   "FastAPI",
+   "LangChain"
+  ],
+  "budget_ceiling": 4577.16,
+  "fair_total": 3792.84,
+  "est_hours": 79.0,
+  "domain": "ai_ml"
+ },
+ "j-ai-0024": {
+  "must_have": [
+   "Python",
+   "FastAPI"
+  ],
+  "budget_ceiling": 65.51,
+  "fair_total": 2740.32,
+  "est_hours": 57.1,
+  "domain": "ai_ml"
+ },
+ "j-ai-0025": {
+  "must_have": [
+   "Python",
+   "prompt engineering"
+  ],
+  "budget_ceiling": 3329.31,
+  "fair_total": 2243.04,
+  "est_hours": 46.7,
+  "domain": "ai_ml"
+ },
+ "j-ai-0026": {
+  "must_have": [
+   "XGBoost",
+   "MLflow"
+  ],
+  "budget_ceiling": 54.63,
+  "fair_total": 2263.54,
+  "est_hours": 47.2,
+  "domain": "ai_ml"
+ },
+ "j-ai-0027": {
+  "must_have": [
+   "OpenCV",
+   "computer vision"
+  ],
+  "budget_ceiling": 4602.45,
+  "fair_total": 3091.88,
+  "est_hours": 64.4,
+  "domain": "ai_ml"
+ },
+ "j-ai-0028": {
+  "must_have": [
+   "Python",
+   "MLflow"
+  ],
+  "budget_ceiling": 3211.29,
+  "fair_total": 2300.26,
+  "est_hours": 47.9,
+  "domain": "ai_ml"
+ },
+ "j-ai-0029": {
+  "must_have": [
+   "Redis",
+   "recommendation systems"
+  ],
+  "budget_ceiling": 5279.34,
+  "fair_total": 3470.89,
+  "est_hours": 72.3,
+  "domain": "ai_ml"
+ },
+ "j-ai-0030": {
+  "must_have": [
+   "AWS",
+   "NLP"
+  ],
+  "budget_ceiling": 4022.23,
+  "fair_total": 3288.28,
+  "est_hours": 68.5,
+  "domain": "ai_ml"
+ },
+ "j-ai-0031": {
+  "must_have": [
+   "Docker",
+   "AWS SageMaker"
+  ],
+  "budget_ceiling": 61.37,
+  "fair_total": 2567.83,
+  "est_hours": 53.5,
+  "domain": "ai_ml"
+ },
+ "j-ai-0032": {
+  "must_have": [
+   "Celery",
+   "AWS"
+  ],
+  "budget_ceiling": 3646.53,
+  "fair_total": 2905.92,
+  "est_hours": 60.5,
+  "domain": "ai_ml"
+ },
+ "j-ai-0033": {
+  "must_have": [
+   "RAG",
+   "Python"
+  ],
+  "budget_ceiling": 3739.07,
+  "fair_total": 2475.78,
+  "est_hours": 51.6,
+  "domain": "ai_ml"
+ },
+ "j-ai-0034": {
+  "must_have": [
+   "Pinecone",
+   "LangGraph"
+  ],
+  "budget_ceiling": 3957.62,
+  "fair_total": 3403.99,
+  "est_hours": 70.9,
+  "domain": "ai_ml"
+ },
+ "j-ai-0035": {
+  "must_have": [
+   "XGBoost",
+   "Python"
+  ],
+  "budget_ceiling": 3024.93,
+  "fair_total": 2808.46,
+  "est_hours": 58.5,
+  "domain": "ai_ml"
+ },
+ "j-ai-0036": {
+  "must_have": [
+   "Python",
+   "XGBoost"
+  ],
+  "budget_ceiling": 3593.97,
+  "fair_total": 3007.42,
+  "est_hours": 62.7,
+  "domain": "ai_ml"
+ },
+ "j-ai-0037": {
+  "must_have": [
+   "Hugging Face Transformers",
+   "Python"
+  ],
+  "budget_ceiling": 2880.74,
+  "fair_total": 2120.16,
+  "est_hours": 44.2,
+  "domain": "ai_ml"
+ },
+ "j-ai-0038": {
+  "must_have": [
+   "OpenAI API",
+   "Pinecone"
+  ],
+  "budget_ceiling": 4292.99,
+  "fair_total": 3634.29,
+  "est_hours": 75.7,
+  "domain": "ai_ml"
+ },
+ "j-ai-0039": {
+  "must_have": [
+   "OpenAI API",
+   "prompt engineering"
+  ],
+  "budget_ceiling": 3368.82,
+  "fair_total": 2125.06,
+  "est_hours": 44.3,
+  "domain": "ai_ml"
+ },
+ "j-ai-0040": {
+  "must_have": [
+   "PyTorch",
+   "Python"
+  ],
+  "budget_ceiling": 75.09,
+  "fair_total": 2709.33,
+  "est_hours": 56.4,
+  "domain": "ai_ml"
+ },
+ "j-ai-0041": {
+  "must_have": [
+   "FastAPI",
+   "NLP"
+  ],
+  "budget_ceiling": 4077.43,
+  "fair_total": 3373.2,
+  "est_hours": 70.3,
+  "domain": "ai_ml"
+ },
+ "j-ai-0042": {
+  "must_have": [
+   "pandas",
+   "scikit-learn"
+  ],
+  "budget_ceiling": 65.36,
+  "fair_total": 2692.3,
+  "est_hours": 56.1,
+  "domain": "ai_ml"
+ },
+ "j-ai-0043": {
+  "must_have": [
+   "FastAPI",
+   "LangChain"
+  ],
+  "budget_ceiling": 3878.37,
+  "fair_total": 2485.04,
+  "est_hours": 51.8,
+  "domain": "ai_ml"
+ },
+ "j-ai-0044": {
+  "must_have": [
+   "RAG",
+   "OpenAI API"
+  ],
+  "budget_ceiling": 56.05,
+  "fair_total": 2519.01,
+  "est_hours": 52.5,
+  "domain": "ai_ml"
+ },
+ "j-ai-0045": {
+  "must_have": [
+   "scikit-learn",
+   "Hugging Face Transformers"
+  ],
+  "budget_ceiling": 57.79,
+  "fair_total": 3170.55,
+  "est_hours": 66.1,
+  "domain": "ai_ml"
+ },
+ "j-ai-0046": {
+  "must_have": [
+   "OpenAI API",
+   "Python"
+  ],
+  "budget_ceiling": 5063.83,
+  "fair_total": 2949.71,
+  "est_hours": 61.5,
+  "domain": "ai_ml"
+ },
+ "j-ai-0047": {
+  "must_have": [
+   "Python",
+   "FastAPI"
+  ],
+  "budget_ceiling": 4499.02,
+  "fair_total": 3130.21,
+  "est_hours": 65.2,
+  "domain": "ai_ml"
+ },
+ "j-ai-0048": {
+  "must_have": [
+   "NLP",
+   "Python"
+  ],
+  "budget_ceiling": 2974.82,
+  "fair_total": 2465.96,
+  "est_hours": 51.4,
+  "domain": "ai_ml"
+ },
+ "j-ai-0049": {
+  "must_have": [
+   "XGBoost",
+   "scikit-learn"
+  ],
+  "budget_ceiling": 2916.15,
+  "fair_total": 2645.0,
+  "est_hours": 55.1,
+  "domain": "ai_ml"
+ },
+ "j-ai-0050": {
+  "must_have": [
+   "LoRA fine-tuning",
+   "Python"
+  ],
+  "budget_ceiling": 3939.28,
+  "fair_total": 3198.6,
+  "est_hours": 66.6,
+  "domain": "ai_ml"
+ },
+ "j-ai-0051": {
+  "must_have": [
+   "Docker",
+   "TensorFlow"
+  ],
+  "budget_ceiling": 4884.45,
+  "fair_total": 3646.02,
+  "est_hours": 76.0,
+  "domain": "ai_ml"
+ },
+ "j-ai-0052": {
+  "must_have": [
+   "Python",
+   "PostgreSQL"
+  ],
+  "budget_ceiling": 69.64,
+  "fair_total": 2335.02,
+  "est_hours": 48.6,
+  "domain": "ai_ml"
+ },
+ "j-ai-0053": {
+  "must_have": [
+   "speech recognition",
+   "Python"
+  ],
+  "budget_ceiling": 4443.26,
+  "fair_total": 3293.86,
+  "est_hours": 68.6,
+  "domain": "ai_ml"
+ },
+ "j-ai-0054": {
+  "must_have": [
+   "Airflow",
+   "Python"
+  ],
+  "budget_ceiling": 2786.86,
+  "fair_total": 2167.93,
+  "est_hours": 45.2,
+  "domain": "ai_ml"
+ },
+ "j-ai-0055": {
+  "must_have": [
+   "pandas",
+   "MLflow"
+  ],
+  "budget_ceiling": 4696.6,
+  "fair_total": 2963.05,
+  "est_hours": 61.7,
+  "domain": "ai_ml"
+ },
+ "j-ai-0056": {
+  "must_have": [
+   "scikit-learn",
+   "AWS SageMaker"
+  ],
+  "budget_ceiling": 77.92,
+  "fair_total": 2316.17,
+  "est_hours": 48.3,
+  "domain": "ai_ml"
+ },
+ "j-ai-0057": {
+  "must_have": [
+   "RAG",
+   "FastAPI"
+  ],
+  "budget_ceiling": 78.26,
+  "fair_total": 2715.46,
+  "est_hours": 56.6,
+  "domain": "ai_ml"
+ },
+ "j-ai-0058": {
+  "must_have": [
+   "Hugging Face Transformers",
+   "PyTorch"
+  ],
+  "budget_ceiling": 76.74,
+  "fair_total": 2483.66,
+  "est_hours": 51.7,
+  "domain": "ai_ml"
+ },
+ "j-ai-0059": {
+  "must_have": [
+   "Hugging Face Transformers",
+   "Python"
+  ],
+  "budget_ceiling": 4066.63,
+  "fair_total": 2377.56,
+  "est_hours": 49.5,
+  "domain": "ai_ml"
+ },
+ "j-ai-0060": {
+  "must_have": [
+   "pandas",
+   "Python"
+  ],
+  "budget_ceiling": 2259.36,
+  "fair_total": 1961.0,
+  "est_hours": 40.9,
+  "domain": "ai_ml"
+ },
+ "j-ai-0061": {
+  "must_have": [
+   "OpenAI API",
+   "RAG"
+  ],
+  "budget_ceiling": 5876.29,
+  "fair_total": 4388.76,
+  "est_hours": 91.4,
+  "domain": "ai_ml"
+ },
+ "j-ai-0062": {
+  "must_have": [
+   "OpenAI API",
+   "Airflow"
+  ],
+  "budget_ceiling": 59.8,
+  "fair_total": 2666.96,
+  "est_hours": 55.6,
+  "domain": "ai_ml"
+ },
+ "j-ai-0063": {
+  "must_have": [
+   "Python",
+   "embeddings"
+  ],
+  "budget_ceiling": 4044.79,
+  "fair_total": 3530.54,
+  "est_hours": 73.6,
+  "domain": "ai_ml"
+ },
+ "j-ai-0064": {
+  "must_have": [
+   "pandas",
+   "LangChain"
+  ],
+  "budget_ceiling": 77.61,
+  "fair_total": 4002.83,
+  "est_hours": 83.4,
+  "domain": "ai_ml"
+ },
+ "j-ai-0065": {
+  "must_have": [
+   "OpenCV",
+   "RAG"
+  ],
+  "budget_ceiling": 61.9,
+  "fair_total": 6166.14,
+  "est_hours": 128.5,
+  "domain": "ai_ml"
+ },
+ "j-ai-0066": {
+  "must_have": [
+   "pandas",
+   "Python"
+  ],
+  "budget_ceiling": 3467.69,
+  "fair_total": 2944.1,
+  "est_hours": 61.3,
+  "domain": "ai_ml"
+ },
+ "j-ai-0067": {
+  "must_have": [
+   "NLP",
+   "Python"
+  ],
+  "budget_ceiling": 8817.81,
+  "fair_total": 5173.65,
+  "est_hours": 107.8,
+  "domain": "ai_ml"
+ },
+ "j-ai-0068": {
+  "must_have": [
+   "LLM evaluation",
+   "Docker"
+  ],
+  "budget_ceiling": 4820.22,
+  "fair_total": 3300.76,
+  "est_hours": 68.8,
+  "domain": "ai_ml"
+ },
+ "j-ai-0069": {
+  "must_have": [
+   "Airflow",
+   "scikit-learn"
+  ],
+  "budget_ceiling": 6864.64,
+  "fair_total": 4072.36,
+  "est_hours": 84.8,
+  "domain": "ai_ml"
+ },
+ "j-ai-0070": {
+  "must_have": [
+   "LoRA fine-tuning",
+   "Python"
+  ],
+  "budget_ceiling": 4874.04,
+  "fair_total": 3360.9,
+  "est_hours": 70.0,
+  "domain": "ai_ml"
+ },
+ "j-ai-0071": {
+  "must_have": [
+   "Pinecone",
+   "TensorFlow"
+  ],
+  "budget_ceiling": 6279.75,
+  "fair_total": 4389.76,
+  "est_hours": 91.5,
+  "domain": "ai_ml"
+ },
+ "j-ai-0072": {
+  "must_have": [
+   "OpenAI API",
+   "AWS SageMaker"
+  ],
+  "budget_ceiling": 6254.67,
+  "fair_total": 3861.79,
+  "est_hours": 80.5,
+  "domain": "ai_ml"
+ },
+ "j-ai-0073": {
+  "must_have": [
+   "FAISS",
+   "Airflow"
+  ],
+  "budget_ceiling": 48.95,
+  "fair_total": 3394.72,
+  "est_hours": 70.7,
+  "domain": "ai_ml"
+ },
+ "j-ai-0074": {
+  "must_have": [
+   "pandas",
+   "Docker"
+  ],
+  "budget_ceiling": 4265.27,
+  "fair_total": 3291.56,
+  "est_hours": 68.6,
+  "domain": "ai_ml"
+ },
+ "j-ai-0075": {
+  "must_have": [
+   "Docker",
+   "speech recognition"
+  ],
+  "budget_ceiling": 57.68,
+  "fair_total": 3998.28,
+  "est_hours": 83.3,
+  "domain": "ai_ml"
+ },
+ "j-ai-0076": {
+  "must_have": [
+   "pandas",
+   "LangGraph"
+  ],
+  "budget_ceiling": 55.55,
+  "fair_total": 3928.29,
+  "est_hours": 81.8,
+  "domain": "ai_ml"
+ },
+ "j-ai-0077": {
+  "must_have": [
+   "Python",
+   "AWS SageMaker"
+  ],
+  "budget_ceiling": 4053.18,
+  "fair_total": 2656.46,
+  "est_hours": 55.3,
+  "domain": "ai_ml"
+ },
+ "j-ai-0078": {
+  "must_have": [
+   "Python",
+   "FastAPI"
+  ],
+  "budget_ceiling": 6133.78,
+  "fair_total": 4298.77,
+  "est_hours": 89.6,
+  "domain": "ai_ml"
+ },
+ "j-ai-0079": {
+  "must_have": [
+   "FastAPI",
+   "NLP"
+  ],
+  "budget_ceiling": 66.78,
+  "fair_total": 2991.68,
+  "est_hours": 62.3,
+  "domain": "ai_ml"
+ },
+ "j-ai-0080": {
+  "must_have": [
+   "scikit-learn",
+   "FastAPI"
+  ],
+  "budget_ceiling": 5754.77,
+  "fair_total": 3719.44,
+  "est_hours": 77.5,
+  "domain": "ai_ml"
+ },
+ "j-ai-0081": {
+  "must_have": [
+   "NLP",
+   "AWS"
+  ],
+  "budget_ceiling": 4621.67,
+  "fair_total": 3139.88,
+  "est_hours": 65.4,
+  "domain": "ai_ml"
+ },
+ "j-ai-0082": {
+  "must_have": [
+   "NLP",
+   "FastAPI"
+  ],
+  "budget_ceiling": 7737.53,
+  "fair_total": 4634.94,
+  "est_hours": 96.6,
+  "domain": "ai_ml"
+ },
+ "j-ai-0083": {
+  "must_have": [
+   "speech recognition",
+   "NLP"
+  ],
+  "budget_ceiling": 5421.81,
+  "fair_total": 4315.43,
+  "est_hours": 89.9,
+  "domain": "ai_ml"
+ },
+ "j-ai-0084": {
+  "must_have": [
+   "OpenAI API",
+   "OpenCV"
+  ],
+  "budget_ceiling": 4827.47,
+  "fair_total": 3791.79,
+  "est_hours": 79.0,
+  "domain": "ai_ml"
+ },
+ "j-ai-0085": {
+  "must_have": [
+   "TensorFlow",
+   "Docker"
+  ],
+  "budget_ceiling": 69.81,
+  "fair_total": 5094.27,
+  "est_hours": 106.1,
+  "domain": "ai_ml"
+ },
+ "j-ai-0086": {
+  "must_have": [
+   "pandas",
+   "Python"
+  ],
+  "budget_ceiling": 57.89,
+  "fair_total": 4814.65,
+  "est_hours": 100.3,
+  "domain": "ai_ml"
+ },
+ "j-ai-0087": {
+  "must_have": [
+   "YOLO",
+   "Docker"
+  ],
+  "budget_ceiling": 3811.48,
+  "fair_total": 3221.75,
+  "est_hours": 67.1,
+  "domain": "ai_ml"
+ },
+ "j-ai-0088": {
+  "must_have": [
+   "Python",
+   "scikit-learn"
+  ],
+  "budget_ceiling": 5879.97,
+  "fair_total": 3778.31,
+  "est_hours": 78.7,
+  "domain": "ai_ml"
+ },
+ "j-ai-0089": {
+  "must_have": [
+   "LLM evaluation",
+   "Python"
+  ],
+  "budget_ceiling": 4531.86,
+  "fair_total": 3353.85,
+  "est_hours": 69.9,
+  "domain": "ai_ml"
+ },
+ "j-ai-0090": {
+  "must_have": [
+   "Airflow",
+   "PostgreSQL"
+  ],
+  "budget_ceiling": 4222.51,
+  "fair_total": 3403.95,
+  "est_hours": 70.9,
+  "domain": "ai_ml"
+ },
+ "j-ai-0091": {
+  "must_have": [
+   "LLM evaluation",
+   "Python"
+  ],
+  "budget_ceiling": 4130.93,
+  "fair_total": 2664.2,
+  "est_hours": 55.5,
+  "domain": "ai_ml"
+ },
+ "j-ai-0092": {
+  "must_have": [
+   "computer vision",
+   "Python"
+  ],
+  "budget_ceiling": 59.7,
+  "fair_total": 4616.05,
+  "est_hours": 96.2,
+  "domain": "ai_ml"
+ },
+ "j-ai-0093": {
+  "must_have": [
+   "Python",
+   "computer vision"
+  ],
+  "budget_ceiling": 5562.44,
+  "fair_total": 3429.69,
+  "est_hours": 71.5,
+  "domain": "ai_ml"
+ },
+ "j-ai-0094": {
+  "must_have": [
+   "recommendation systems",
+   "PyTorch"
+  ],
+  "budget_ceiling": 66.06,
+  "fair_total": 3005.28,
+  "est_hours": 62.6,
+  "domain": "ai_ml"
+ },
+ "j-ai-0095": {
+  "must_have": [
+   "scikit-learn",
+   "XGBoost"
+  ],
+  "budget_ceiling": 3089.4,
+  "fair_total": 2546.4,
+  "est_hours": 53.1,
+  "domain": "ai_ml"
+ },
+ "j-ai-0096": {
+  "must_have": [
+   "Docker",
+   "computer vision"
+  ],
+  "budget_ceiling": 58.21,
+  "fair_total": 3434.9,
+  "est_hours": 71.6,
+  "domain": "ai_ml"
+ },
+ "j-ai-0097": {
+  "must_have": [
+   "Python",
+   "pandas"
+  ],
+  "budget_ceiling": 64.93,
+  "fair_total": 2274.86,
+  "est_hours": 47.4,
+  "domain": "ai_ml"
+ },
+ "j-ai-0098": {
+  "must_have": [
+   "Pinecone",
+   "LangGraph"
+  ],
+  "budget_ceiling": 4568.61,
+  "fair_total": 3116.39,
+  "est_hours": 64.9,
+  "domain": "ai_ml"
+ },
+ "j-ai-0099": {
+  "must_have": [
+   "LLM evaluation",
+   "OpenAI API"
+  ],
+  "budget_ceiling": 3286.16,
+  "fair_total": 2562.39,
+  "est_hours": 53.4,
+  "domain": "ai_ml"
+ },
+ "j-ai-0100": {
+  "must_have": [
+   "LangChain",
+   "FastAPI"
+  ],
+  "budget_ceiling": 3369.43,
+  "fair_total": 2693.43,
+  "est_hours": 56.1,
+  "domain": "ai_ml"
+ },
+ "j-ai-0101": {
+  "must_have": [
+   "Airflow",
+   "pandas"
+  ],
+  "budget_ceiling": 3081.59,
+  "fair_total": 2628.43,
+  "est_hours": 54.8,
+  "domain": "ai_ml"
+ },
+ "j-ai-0102": {
+  "must_have": [
+   "Airflow",
+   "time series forecasting"
+  ],
+  "budget_ceiling": 3316.49,
+  "fair_total": 2306.89,
+  "est_hours": 48.1,
+  "domain": "ai_ml"
+ },
+ "j-ai-0103": {
+  "must_have": [
+   "OpenCV",
+   "YOLO"
+  ],
+  "budget_ceiling": 69.66,
+  "fair_total": 4417.14,
+  "est_hours": 92.0,
+  "domain": "ai_ml"
+ },
+ "j-ai-0104": {
+  "must_have": [
+   "FastAPI",
+   "OpenAI API"
+  ],
+  "budget_ceiling": 5084.82,
+  "fair_total": 3618.15,
+  "est_hours": 75.4,
+  "domain": "ai_ml"
+ },
+ "j-ai-0105": {
+  "must_have": [
+   "XGBoost",
+   "pandas"
+  ],
+  "budget_ceiling": 5504.86,
+  "fair_total": 3197.56,
+  "est_hours": 66.6,
+  "domain": "ai_ml"
+ },
+ "j-ai-0106": {
+  "must_have": [
+   "LLM evaluation",
+   "OpenAI API"
+  ],
+  "budget_ceiling": 78.76,
+  "fair_total": 2339.46,
+  "est_hours": 48.7,
+  "domain": "ai_ml"
+ },
+ "j-ai-0107": {
+  "must_have": [
+   "Python",
+   "CI/CD"
+  ],
+  "budget_ceiling": 3829.33,
+  "fair_total": 2668.07,
+  "est_hours": 55.6,
+  "domain": "ai_ml"
+ },
+ "j-ai-0108": {
+  "must_have": [
+   "Python",
+   "PostgreSQL"
+  ],
+  "budget_ceiling": 3804.01,
+  "fair_total": 2976.02,
+  "est_hours": 62.0,
+  "domain": "ai_ml"
+ },
+ "j-ai-0109": {
+  "must_have": [
+   "LangChain",
+   "LangGraph"
+  ],
+  "budget_ceiling": 3268.14,
+  "fair_total": 2855.2,
+  "est_hours": 59.5,
+  "domain": "ai_ml"
+ },
+ "j-ai-0110": {
+  "must_have": [
+   "FAISS",
+   "embeddings"
+  ],
+  "budget_ceiling": 3538.79,
+  "fair_total": 2919.44,
+  "est_hours": 60.8,
+  "domain": "ai_ml"
+ },
+ "j-ai-0111": {
+  "must_have": [
+   "AWS SageMaker",
+   "Docker"
+  ],
+  "budget_ceiling": 62.84,
+  "fair_total": 3204.8,
+  "est_hours": 66.8,
+  "domain": "ai_ml"
+ },
+ "j-ai-0112": {
+  "must_have": [
+   "Redis",
+   "recommendation systems"
+  ],
+  "budget_ceiling": 4123.45,
+  "fair_total": 3245.64,
+  "est_hours": 67.6,
+  "domain": "ai_ml"
+ },
+ "j-ai-0113": {
+  "must_have": [
+   "Python",
+   "MLflow"
+  ],
+  "budget_ceiling": 72.21,
+  "fair_total": 2326.4,
+  "est_hours": 48.5,
+  "domain": "ai_ml"
+ },
+ "j-ai-0114": {
+  "must_have": [
+   "scikit-learn",
+   "XGBoost"
+  ],
+  "budget_ceiling": 4989.33,
+  "fair_total": 3451.79,
+  "est_hours": 71.9,
+  "domain": "ai_ml"
+ },
+ "j-ai-0115": {
+  "must_have": [
+   "pandas",
+   "scikit-learn"
+  ],
+  "budget_ceiling": 71.88,
+  "fair_total": 3749.25,
+  "est_hours": 78.1,
+  "domain": "ai_ml"
+ },
+ "j-ai-0116": {
+  "must_have": [
+   "MLflow",
+   "Docker"
+  ],
+  "budget_ceiling": 3245.08,
+  "fair_total": 2108.67,
+  "est_hours": 43.9,
+  "domain": "ai_ml"
+ },
+ "j-ai-0117": {
+  "must_have": [
+   "OpenAI API",
+   "prompt engineering"
+  ],
+  "budget_ceiling": 78.23,
+  "fair_total": 2176.86,
+  "est_hours": 45.4,
+  "domain": "ai_ml"
+ },
+ "j-ai-0118": {
+  "must_have": [
+   "scikit-learn",
+   "AWS SageMaker"
+  ],
+  "budget_ceiling": 3264.07,
+  "fair_total": 2494.42,
+  "est_hours": 52.0,
+  "domain": "ai_ml"
+ },
+ "j-ai-0119": {
+  "must_have": [
+   "Redis",
+   "Python"
+  ],
+  "budget_ceiling": 4913.98,
+  "fair_total": 3163.48,
+  "est_hours": 65.9,
+  "domain": "ai_ml"
+ },
+ "j-ai-0120": {
+  "must_have": [
+   "Python",
+   "OpenAI API"
+  ],
+  "budget_ceiling": 59.19,
+  "fair_total": 2497.49,
+  "est_hours": 52.0,
+  "domain": "ai_ml"
+ },
+ "j-ai-0121": {
+  "must_have": [
+   "LangChain",
+   "Pinecone"
+  ],
+  "budget_ceiling": 74.18,
+  "fair_total": 2808.65,
+  "est_hours": 58.5,
+  "domain": "ai_ml"
+ },
+ "j-ai-0122": {
+  "must_have": [
+   "pandas",
+   "Airflow"
+  ],
+  "budget_ceiling": 3016.69,
+  "fair_total": 2004.99,
+  "est_hours": 41.8,
+  "domain": "ai_ml"
+ },
+ "j-ai-0123": {
+  "must_have": [
+   "XGBoost",
+   "scikit-learn"
+  ],
+  "budget_ceiling": 4846.64,
+  "fair_total": 3204.89,
+  "est_hours": 66.8,
+  "domain": "ai_ml"
+ },
+ "j-ai-0124": {
+  "must_have": [
+   "Python",
+   "XGBoost"
+  ],
+  "budget_ceiling": 65.65,
+  "fair_total": 3599.02,
+  "est_hours": 75.0,
+  "domain": "ai_ml"
+ },
+ "j-ai-0125": {
+  "must_have": [
+   "NLP",
+   "pandas"
+  ],
+  "budget_ceiling": 3789.01,
+  "fair_total": 3021.32,
+  "est_hours": 62.9,
+  "domain": "ai_ml"
+ },
+ "j-ai-0126": {
+  "must_have": [
+   "computer vision",
+   "TensorFlow"
+  ],
+  "budget_ceiling": 5295.43,
+  "fair_total": 4196.38,
+  "est_hours": 87.4,
+  "domain": "ai_ml"
+ },
+ "j-ai-0127": {
+  "must_have": [
+   "Airflow",
+   "time series forecasting"
+  ],
+  "budget_ceiling": 4710.99,
+  "fair_total": 3510.54,
+  "est_hours": 73.1,
+  "domain": "ai_ml"
+ },
+ "j-ai-0128": {
+  "must_have": [
+   "Python",
+   "NLP"
+  ],
+  "budget_ceiling": 5489.65,
+  "fair_total": 3231.39,
+  "est_hours": 67.3,
+  "domain": "ai_ml"
+ },
+ "j-ai-0129": {
+  "must_have": [
+   "NLP",
+   "AWS"
+  ],
+  "budget_ceiling": 4698.37,
+  "fair_total": 3270.18,
+  "est_hours": 68.1,
+  "domain": "ai_ml"
+ },
+ "j-ai-0130": {
+  "must_have": [
+   "Python",
+   "PyTorch"
+  ],
+  "budget_ceiling": 69.1,
+  "fair_total": 3673.16,
+  "est_hours": 76.5,
+  "domain": "ai_ml"
+ },
+ "j-ai-0131": {
+  "must_have": [
+   "AWS SageMaker",
+   "MLflow"
+  ],
+  "budget_ceiling": 3582.21,
+  "fair_total": 2238.65,
+  "est_hours": 46.6,
+  "domain": "ai_ml"
+ },
+ "j-ai-0132": {
+  "must_have": [
+   "Python",
+   "Redis"
+  ],
+  "budget_ceiling": 3518.91,
+  "fair_total": 2572.23,
+  "est_hours": 53.6,
+  "domain": "ai_ml"
+ },
+ "j-ai-0133": {
+  "must_have": [
+   "PostgreSQL",
+   "pandas"
+  ],
+  "budget_ceiling": 3632.86,
+  "fair_total": 2783.59,
+  "est_hours": 58.0,
+  "domain": "ai_ml"
+ },
+ "j-ai-0134": {
+  "must_have": [
+   "FastAPI",
+   "Redis"
+  ],
+  "budget_ceiling": 53.27,
+  "fair_total": 2809.65,
+  "est_hours": 58.5,
+  "domain": "ai_ml"
+ },
+ "j-ai-0135": {
+  "must_have": [
+   "pandas",
+   "LightGBM"
+  ],
+  "budget_ceiling": 63.4,
+  "fair_total": 2769.52,
+  "est_hours": 57.7,
+  "domain": "ai_ml"
+ },
+ "j-ai-0136": {
+  "must_have": [
+   "Hugging Face Transformers",
+   "PyTorch"
+  ],
+  "budget_ceiling": 4802.35,
+  "fair_total": 3311.32,
+  "est_hours": 69.0,
+  "domain": "ai_ml"
+ },
+ "j-ai-0137": {
+  "must_have": [
+   "OpenAI API",
+   "RAG"
+  ],
+  "budget_ceiling": 5121.7,
+  "fair_total": 3288.68,
+  "est_hours": 68.5,
+  "domain": "ai_ml"
+ },
+ "j-ai-0138": {
+  "must_have": [
+   "LightGBM",
+   "Airflow"
+  ],
+  "budget_ceiling": 5484.79,
+  "fair_total": 3778.35,
+  "est_hours": 78.7,
+  "domain": "ai_ml"
+ },
+ "j-ai-0139": {
+  "must_have": [
+   "Python",
+   "pandas"
+  ],
+  "budget_ceiling": 3040.52,
+  "fair_total": 2287.59,
+  "est_hours": 47.7,
+  "domain": "ai_ml"
+ },
+ "j-ai-0140": {
+  "must_have": [
+   "LoRA fine-tuning",
+   "Python"
+  ],
+  "budget_ceiling": 70.66,
+  "fair_total": 2279.72,
+  "est_hours": 47.5,
+  "domain": "ai_ml"
+ },
+ "j-ai-0141": {
+  "must_have": [
+   "pandas",
+   "Python"
+  ],
+  "budget_ceiling": 4516.62,
+  "fair_total": 3461.12,
+  "est_hours": 72.1,
+  "domain": "ai_ml"
+ },
+ "j-ai-0142": {
+  "must_have": [
+   "Hugging Face Transformers",
+   "LLM evaluation"
+  ],
+  "budget_ceiling": 2517.14,
+  "fair_total": 2227.92,
+  "est_hours": 46.4,
+  "domain": "ai_ml"
+ },
+ "j-ai-0143": {
+  "must_have": [
+   "Python",
+   "AWS SageMaker"
+  ],
+  "budget_ceiling": 69.04,
+  "fair_total": 2736.29,
+  "est_hours": 57.0,
+  "domain": "ai_ml"
+ },
+ "j-ai-0144": {
+  "must_have": [
+   "PyTorch",
+   "recommendation systems"
+  ],
+  "budget_ceiling": 4372.32,
+  "fair_total": 2972.86,
+  "est_hours": 61.9,
+  "domain": "ai_ml"
+ },
+ "j-ai-0145": {
+  "must_have": [
+   "Python",
+   "FastAPI"
+  ],
+  "budget_ceiling": 3616.72,
+  "fair_total": 2424.03,
+  "est_hours": 50.5,
+  "domain": "ai_ml"
+ },
+ "j-ai-0146": {
+  "must_have": [
+   "scikit-learn",
+   "pandas"
+  ],
+  "budget_ceiling": 5462.45,
+  "fair_total": 3185.6,
+  "est_hours": 66.4,
+  "domain": "ai_ml"
+ },
+ "j-ai-0147": {
+  "must_have": [
+   "PyTorch",
+   "LoRA fine-tuning"
+  ],
+  "budget_ceiling": 3295.3,
+  "fair_total": 2480.61,
+  "est_hours": 51.7,
+  "domain": "ai_ml"
+ },
+ "j-ai-0148": {
+  "must_have": [
+   "OpenAI API",
+   "Pinecone"
+  ],
+  "budget_ceiling": 3659.78,
+  "fair_total": 2876.07,
+  "est_hours": 59.9,
+  "domain": "ai_ml"
+ },
+ "j-ai-0149": {
+  "must_have": [
+   "OpenCV",
+   "computer vision"
+  ],
+  "budget_ceiling": 6686.12,
+  "fair_total": 4124.13,
+  "est_hours": 85.9,
+  "domain": "ai_ml"
+ },
+ "j-ai-0150": {
+  "must_have": [
+   "TensorFlow",
+   "Docker"
+  ],
+  "budget_ceiling": 62.15,
+  "fair_total": 4160.12,
+  "est_hours": 86.7,
+  "domain": "ai_ml"
+ },
+ "j-ai-0151": {
+  "must_have": [
+   "Python"
+  ],
+  "budget_ceiling": 4853.92,
+  "fair_total": 3325.27,
+  "est_hours": 69.3,
+  "domain": "ai_ml"
+ },
+ "j-ai-0152": {
+  "must_have": [
+   "pandas"
+  ],
+  "budget_ceiling": 64.96,
+  "fair_total": 3452.97,
+  "est_hours": 71.9,
+  "domain": "ai_ml"
+ },
+ "j-ai-0153": {
+  "must_have": [
+   "pandas"
+  ],
+  "budget_ceiling": 69.14,
+  "fair_total": 3004.91,
+  "est_hours": 62.6,
+  "domain": "ai_ml"
+ },
+ "j-ai-0154": {
+  "must_have": [
+   "pandas"
+  ],
+  "budget_ceiling": 3547.08,
+  "fair_total": 2853.32,
+  "est_hours": 59.4,
+  "domain": "ai_ml"
+ },
+ "j-ai-0155": {
+  "must_have": [
+   "Docker"
+  ],
+  "budget_ceiling": 5567.01,
+  "fair_total": 4515.63,
+  "est_hours": 94.1,
+  "domain": "ai_ml"
+ },
+ "j-ai-0156": {
+  "must_have": [
+   "Python"
+  ],
+  "budget_ceiling": 4060.55,
+  "fair_total": 2567.87,
+  "est_hours": 53.5,
+  "domain": "ai_ml"
+ },
+ "j-ai-0157": {
+  "must_have": [
+   "pandas"
+  ],
+  "budget_ceiling": 3479.53,
+  "fair_total": 2835.6,
+  "est_hours": 59.1,
+  "domain": "ai_ml"
+ },
+ "j-ai-0158": {
+  "must_have": [
+   "pandas"
+  ],
+  "budget_ceiling": 3909.29,
+  "fair_total": 3139.07,
+  "est_hours": 65.4,
+  "domain": "ai_ml"
+ },
+ "j-ai-0159": {
+  "must_have": [
+   "pandas"
+  ],
+  "budget_ceiling": 6540.26,
+  "fair_total": 4194.11,
+  "est_hours": 87.4,
+  "domain": "ai_ml"
+ },
+ "j-ai-0160": {
+  "must_have": [
+   "Docker"
+  ],
+  "budget_ceiling": 6621.26,
+  "fair_total": 4567.94,
+  "est_hours": 95.2,
+  "domain": "ai_ml"
+ },
+ "j-ai-0161": {
+  "must_have": [
+   "Python"
+  ],
+  "budget_ceiling": 58.86,
+  "fair_total": 4567.87,
+  "est_hours": 95.2,
+  "domain": "ai_ml"
+ },
+ "j-ai-0162": {
+  "must_have": [
+   "Docker"
+  ],
+  "budget_ceiling": 3249.16,
+  "fair_total": 2592.55,
+  "est_hours": 54.0,
+  "domain": "ai_ml"
+ },
+ "j-ai-0163": {
+  "must_have": [
+   "pandas"
+  ],
+  "budget_ceiling": 4724.47,
+  "fair_total": 3846.73,
+  "est_hours": 80.1,
+  "domain": "ai_ml"
+ },
+ "j-ai-0164": {
+  "must_have": [
+   "pandas"
+  ],
+  "budget_ceiling": 62.49,
+  "fair_total": 2544.13,
+  "est_hours": 53.0,
+  "domain": "ai_ml"
+ },
+ "j-ai-0165": {
+  "must_have": [
+   "Python"
+  ],
+  "budget_ceiling": 47.76,
+  "fair_total": 4465.46,
+  "est_hours": 93.0,
+  "domain": "ai_ml"
+ },
+ "j-ai-0166": {
+  "must_have": [
+   "Docker"
+  ],
+  "budget_ceiling": 67.78,
+  "fair_total": 3283.7,
+  "est_hours": 68.4,
+  "domain": "ai_ml"
+ },
+ "j-ai-0167": {
+  "must_have": [
+   "pandas"
+  ],
+  "budget_ceiling": 66.96,
+  "fair_total": 3135.37,
+  "est_hours": 65.3,
+  "domain": "ai_ml"
+ },
+ "j-ai-0168": {
+  "must_have": [
+   "Docker"
+  ],
+  "budget_ceiling": 63.06,
+  "fair_total": 4305.77,
+  "est_hours": 89.7,
+  "domain": "ai_ml"
+ },
+ "j-ai-0169": {
+  "must_have": [
+   "pandas"
+  ],
+  "budget_ceiling": 5198.9,
+  "fair_total": 3188.24,
+  "est_hours": 66.4,
+  "domain": "ai_ml"
+ },
+ "j-ai-0170": {
+  "must_have": [
+   "Python"
+  ],
+  "budget_ceiling": 5155.16,
+  "fair_total": 3995.67,
+  "est_hours": 83.2,
+  "domain": "ai_ml"
+ },
+ "j-ai-0171": {
+  "must_have": [
+   "NLP",
+   "Hugging Face Transformers"
+  ],
+  "budget_ceiling": 76.42,
+  "fair_total": 2678.54,
+  "est_hours": 55.8,
+  "domain": "ai_ml"
+ },
+ "j-ai-0172": {
+  "must_have": [
+   "OpenAI API",
+   "LangChain"
+  ],
+  "budget_ceiling": 48.0,
+  "fair_total": 2588.52,
+  "est_hours": 53.9,
+  "domain": "ai_ml"
+ },
+ "j-ai-0173": {
+  "must_have": [
+   "NLP",
+   "AWS"
+  ],
+  "budget_ceiling": 51.79,
+  "fair_total": 2094.67,
+  "est_hours": 43.6,
+  "domain": "ai_ml"
+ },
+ "j-ai-0174": {
+  "must_have": [
+   "XGBoost",
+   "pandas"
+  ],
+  "budget_ceiling": 68.1,
+  "fair_total": 2726.84,
+  "est_hours": 56.8,
+  "domain": "ai_ml"
+ },
+ "j-ai-0175": {
+  "must_have": [
+   "FAISS",
+   "Python"
+  ],
+  "budget_ceiling": 66.68,
+  "fair_total": 2740.36,
+  "est_hours": 57.1,
+  "domain": "ai_ml"
+ },
+ "j-ai-0176": {
+  "must_have": [
+   "XGBoost",
+   "pandas"
+  ],
+  "budget_ceiling": 111.28,
+  "fair_total": 2304.36,
+  "est_hours": 48.0,
+  "domain": "ai_ml"
+ },
+ "j-ai-0177": {
+  "must_have": [
+   "Docker",
+   "Python"
+  ],
+  "budget_ceiling": 59.9,
+  "fair_total": 2915.65,
+  "est_hours": 60.7,
+  "domain": "ai_ml"
+ },
+ "j-ai-0178": {
+  "must_have": [
+   "scikit-learn",
+   "Hugging Face Transformers"
+  ],
+  "budget_ceiling": 60.17,
+  "fair_total": 2721.48,
+  "est_hours": 56.7,
+  "domain": "ai_ml"
+ },
+ "j-ai-0179": {
+  "must_have": [
+   "RAG",
+   "LangChain"
+  ],
+  "budget_ceiling": 82.38,
+  "fair_total": 2717.84,
+  "est_hours": 56.6,
+  "domain": "ai_ml"
+ },
+ "j-ai-0180": {
+  "must_have": [
+   "pandas",
+   "Python"
+  ],
+  "budget_ceiling": 64.83,
+  "fair_total": 2193.28,
+  "est_hours": 45.7,
+  "domain": "ai_ml"
+ },
+ "j-ai-0181": {
+  "must_have": [
+   "Python",
+   "pandas"
+  ],
+  "budget_ceiling": 2457.75,
+  "fair_total": 1874.02,
+  "est_hours": 39.0,
+  "domain": "ai_ml"
+ },
+ "j-ai-0182": {
+  "must_have": [
+   "XGBoost",
+   "Python"
+  ],
+  "budget_ceiling": 3260.49,
+  "fair_total": 2360.24,
+  "est_hours": 49.2,
+  "domain": "ai_ml"
+ },
+ "j-ai-0183": {
+  "must_have": [
+   "OpenCV",
+   "Python"
+  ],
+  "budget_ceiling": 3344.92,
+  "fair_total": 3189.15,
+  "est_hours": 66.4,
+  "domain": "ai_ml"
+ },
+ "j-ai-0184": {
+  "must_have": [
+   "LangGraph",
+   "Python"
+  ],
+  "budget_ceiling": 4640.23,
+  "fair_total": 3278.08,
+  "est_hours": 68.3,
+  "domain": "ai_ml"
+ },
+ "j-ai-0185": {
+  "must_have": [
+   "FastAPI",
+   "spaCy"
+  ],
+  "budget_ceiling": 3688.3,
+  "fair_total": 2721.42,
+  "est_hours": 56.7,
+  "domain": "ai_ml"
+ },
+ "j-ai-0186": {
+  "must_have": [
+   "LLM evaluation",
+   "OpenAI API"
+  ],
+  "budget_ceiling": 2906.28,
+  "fair_total": 2379.79,
+  "est_hours": 49.6,
+  "domain": "ai_ml"
+ },
+ "j-ai-0187": {
+  "must_have": [
+   "pandas",
+   "Airflow"
+  ],
+  "budget_ceiling": 3439.85,
+  "fair_total": 2890.71,
+  "est_hours": 60.2,
+  "domain": "ai_ml"
+ },
+ "j-ai-0188": {
+  "must_have": [
+   "Hugging Face Transformers",
+   "NLP"
+  ],
+  "budget_ceiling": 3553.75,
+  "fair_total": 2187.08,
+  "est_hours": 45.6,
+  "domain": "ai_ml"
+ },
+ "j-ai-0189": {
+  "must_have": [
+   "Docker",
+   "CI/CD"
+  ],
+  "budget_ceiling": 3523.64,
+  "fair_total": 2109.65,
+  "est_hours": 44.0,
+  "domain": "ai_ml"
+ },
+ "j-ai-0190": {
+  "must_have": [
+   "PyTorch",
+   "computer vision"
+  ],
+  "budget_ceiling": 4314.89,
+  "fair_total": 3704.9,
+  "est_hours": 77.2,
+  "domain": "ai_ml"
+ },
+ "j-ai-0191": {
+  "must_have": [
+   "FastAPI",
+   "embeddings"
+  ],
+  "budget_ceiling": 3870.51,
+  "fair_total": 2898.75,
+  "est_hours": 60.4,
+  "domain": "ai_ml"
+ },
+ "j-ai-0192": {
+  "must_have": [
+   "LightGBM",
+   "time series forecasting"
+  ],
+  "budget_ceiling": 3051.17,
+  "fair_total": 2940.58,
+  "est_hours": 61.3,
+  "domain": "ai_ml"
+ },
+ "j-ai-0193": {
+  "must_have": [
+   "Python",
+   "AWS"
+  ],
+  "budget_ceiling": 51.47,
+  "fair_total": 3310.54,
+  "est_hours": 69.0,
+  "domain": "ai_ml"
+ },
+ "j-ai-0194": {
+  "must_have": [
+   "FastAPI",
+   "Celery"
+  ],
+  "budget_ceiling": 5003.86,
+  "fair_total": 3284.73,
+  "est_hours": 68.4,
+  "domain": "ai_ml"
+ },
+ "j-ai-0195": {
+  "must_have": [
+   "FastAPI",
+   "Python"
+  ],
+  "budget_ceiling": 4634.92,
+  "fair_total": 2985.15,
+  "est_hours": 62.2,
+  "domain": "ai_ml"
+ },
+ "j-ai-0196": {
+  "must_have": [
+   "computer vision",
+   "Python"
+  ],
+  "budget_ceiling": 55.18,
+  "fair_total": 3704.43,
+  "est_hours": 77.2,
+  "domain": "ai_ml"
+ },
+ "j-ai-0197": {
+  "must_have": [
+   "OpenAI API",
+   "Qdrant"
+  ],
+  "budget_ceiling": 3823.4,
+  "fair_total": 2867.55,
+  "est_hours": 59.7,
+  "domain": "ai_ml"
+ },
+ "j-ai-0198": {
+  "must_have": [
+   "FastAPI",
+   "Python"
+  ],
+  "budget_ceiling": 3388.22,
+  "fair_total": 2467.9,
+  "est_hours": 51.4,
+  "domain": "ai_ml"
+ },
+ "j-ai-0199": {
+  "must_have": [
+   "Docker",
+   "FastAPI"
+  ],
+  "budget_ceiling": 3790.57,
+  "fair_total": 3216.72,
+  "est_hours": 67.0,
+  "domain": "ai_ml"
+ },
+ "j-ai-0200": {
+  "must_have": [
+   "computer vision",
+   "AWS"
+  ],
+  "budget_ceiling": 3262.46,
+  "fair_total": 3028.25,
+  "est_hours": 63.1,
+  "domain": "ai_ml"
+ },
+ "j-fu-0201": {
+  "must_have": [
+   "PostgreSQL",
+   "Django"
+  ],
+  "budget_ceiling": 4331.31,
+  "fair_total": 3386.52,
+  "est_hours": 89.1,
+  "domain": "fullstack"
+ },
+ "j-fu-0202": {
+  "must_have": [
+   "Next.js",
+   "Supabase"
+  ],
+  "budget_ceiling": 6364.98,
+  "fair_total": 3846.19,
+  "est_hours": 101.2,
+  "domain": "fullstack"
+ },
+ "j-fu-0203": {
+  "must_have": [
+   "JavaScript",
+   "React"
+  ],
+  "budget_ceiling": 53.86,
+  "fair_total": 1647.77,
+  "est_hours": 43.4,
+  "domain": "fullstack"
+ },
+ "j-fu-0204": {
+  "must_have": [
+   "TypeScript",
+   "Jest"
+  ],
+  "budget_ceiling": 1626.29,
+  "fair_total": 1304.99,
+  "est_hours": 34.3,
+  "domain": "fullstack"
+ },
+ "j-fu-0205": {
+  "must_have": [
+   "Django",
+   "React"
+  ],
+  "budget_ceiling": 4175.26,
+  "fair_total": 3236.85,
+  "est_hours": 85.2,
+  "domain": "fullstack"
+ },
+ "j-fu-0206": {
+  "must_have": [
+   "PostgreSQL",
+   "WebSockets"
+  ],
+  "budget_ceiling": 4203.61,
+  "fair_total": 3258.5,
+  "est_hours": 85.7,
+  "domain": "fullstack"
+ },
+ "j-fu-0207": {
+  "must_have": [
+   "Next.js",
+   "React"
+  ],
+  "budget_ceiling": 1894.55,
+  "fair_total": 1573.32,
+  "est_hours": 41.4,
+  "domain": "fullstack"
+ },
+ "j-fu-0208": {
+  "must_have": [
+   "PostgreSQL",
+   "Node.js"
+  ],
+  "budget_ceiling": 57.22,
+  "fair_total": 2791.42,
+  "est_hours": 73.5,
+  "domain": "fullstack"
+ },
+ "j-fu-0209": {
+  "must_have": [
+   "React",
+   "Next.js"
+  ],
+  "budget_ceiling": 4041.48,
+  "fair_total": 3964.55,
+  "est_hours": 104.3,
+  "domain": "fullstack"
+ },
+ "j-fu-0210": {
+  "must_have": [
+   "Next.js",
+   "Prisma"
+  ],
+  "budget_ceiling": 60.59,
+  "fair_total": 3833.11,
+  "est_hours": 100.9,
+  "domain": "fullstack"
+ },
+ "j-fu-0211": {
+  "must_have": [
+   "Express",
+   "AWS"
+  ],
+  "budget_ceiling": 2759.94,
+  "fair_total": 2142.21,
+  "est_hours": 56.4,
+  "domain": "fullstack"
+ },
+ "j-fu-0212": {
+  "must_have": [
+   "PostgreSQL",
+   "Docker"
+  ],
+  "budget_ceiling": 5009.8,
+  "fair_total": 3975.09,
+  "est_hours": 104.6,
+  "domain": "fullstack"
+ },
+ "j-fu-0213": {
+  "must_have": [
+   "PostgreSQL",
+   "Supabase"
+  ],
+  "budget_ceiling": 3316.23,
+  "fair_total": 2784.9,
+  "est_hours": 73.3,
+  "domain": "fullstack"
+ },
+ "j-fu-0214": {
+  "must_have": [
+   "TypeScript",
+   "React"
+  ],
+  "budget_ceiling": 2729.42,
+  "fair_total": 2352.33,
+  "est_hours": 61.9,
+  "domain": "fullstack"
+ },
+ "j-fu-0215": {
+  "must_have": [
+   "TypeScript",
+   "CI/CD"
+  ],
+  "budget_ceiling": 3267.34,
+  "fair_total": 1995.32,
+  "est_hours": 52.5,
+  "domain": "fullstack"
+ },
+ "j-fu-0216": {
+  "must_have": [
+   "Node.js",
+   "Redis"
+  ],
+  "budget_ceiling": 3581.09,
+  "fair_total": 2692.55,
+  "est_hours": 70.9,
+  "domain": "fullstack"
+ },
+ "j-fu-0217": {
+  "must_have": [
+   "React",
+   "AWS"
+  ],
+  "budget_ceiling": 4021.22,
+  "fair_total": 2654.68,
+  "est_hours": 69.9,
+  "domain": "fullstack"
+ },
+ "j-fu-0218": {
+  "must_have": [
+   "Node.js",
+   "Docker"
+  ],
+  "budget_ceiling": 4805.35,
+  "fair_total": 3656.3,
+  "est_hours": 96.2,
+  "domain": "fullstack"
+ },
+ "j-fu-0219": {
+  "must_have": [
+   "GraphQL",
+   "TypeScript"
+  ],
+  "budget_ceiling": 1492.54,
+  "fair_total": 1473.1,
+  "est_hours": 38.8,
+  "domain": "fullstack"
+ },
+ "j-fu-0220": {
+  "must_have": [
+   "Node.js",
+   "WebSockets"
+  ],
+  "budget_ceiling": 2648.9,
+  "fair_total": 2101.27,
+  "est_hours": 55.3,
+  "domain": "fullstack"
+ },
+ "j-fu-0221": {
+  "must_have": [
+   "React",
+   "Stripe"
+  ],
+  "budget_ceiling": 5059.31,
+  "fair_total": 4063.09,
+  "est_hours": 106.9,
+  "domain": "fullstack"
+ },
+ "j-fu-0222": {
+  "must_have": [
+   "React Native",
+   "TypeScript"
+  ],
+  "budget_ceiling": 41.47,
+  "fair_total": 4248.04,
+  "est_hours": 111.8,
+  "domain": "fullstack"
+ },
+ "j-fu-0223": {
+  "must_have": [
+   "TypeScript",
+   "PostgreSQL"
+  ],
+  "budget_ceiling": 4986.88,
+  "fair_total": 3412.51,
+  "est_hours": 89.8,
+  "domain": "fullstack"
+ },
+ "j-fu-0224": {
+  "must_have": [
+   "Supabase",
+   "PostgreSQL"
+  ],
+  "budget_ceiling": 6128.54,
+  "fair_total": 4839.81,
+  "est_hours": 127.4,
+  "domain": "fullstack"
+ },
+ "j-fu-0225": {
+  "must_have": [
+   "Vercel",
+   "Next.js"
+  ],
+  "budget_ceiling": 1727.57,
+  "fair_total": 1414.61,
+  "est_hours": 37.2,
+  "domain": "fullstack"
+ },
+ "j-fu-0226": {
+  "must_have": [
+   "Node.js",
+   "Jest"
+  ],
+  "budget_ceiling": 3543.62,
+  "fair_total": 2247.27,
+  "est_hours": 59.1,
+  "domain": "fullstack"
+ },
+ "j-fu-0227": {
+  "must_have": [
+   "Firebase",
+   "React Native"
+  ],
+  "budget_ceiling": 5662.29,
+  "fair_total": 3159.56,
+  "est_hours": 83.1,
+  "domain": "fullstack"
+ },
+ "j-fu-0228": {
+  "must_have": [
+   "React",
+   "Shopify"
+  ],
+  "budget_ceiling": 60.04,
+  "fair_total": 3096.68,
+  "est_hours": 81.5,
+  "domain": "fullstack"
+ },
+ "j-fu-0229": {
+  "must_have": [
+   "NestJS",
+   "OAuth"
+  ],
+  "budget_ceiling": 4237.53,
+  "fair_total": 3016.68,
+  "est_hours": 79.4,
+  "domain": "fullstack"
+ },
+ "j-fu-0230": {
+  "must_have": [
+   "Redis",
+   "Django"
+  ],
+  "budget_ceiling": 53.06,
+  "fair_total": 4431.72,
+  "est_hours": 116.6,
+  "domain": "fullstack"
+ },
+ "j-fu-0231": {
+  "must_have": [
+   "Supabase",
+   "Stripe"
+  ],
+  "budget_ceiling": 62.98,
+  "fair_total": 2466.72,
+  "est_hours": 64.9,
+  "domain": "fullstack"
+ },
+ "j-fu-0232": {
+  "must_have": [
+   "Playwright",
+   "Jest"
+  ],
+  "budget_ceiling": 2603.1,
+  "fair_total": 1612.74,
+  "est_hours": 42.4,
+  "domain": "fullstack"
+ },
+ "j-fu-0233": {
+  "must_have": [
+   "Playwright",
+   "TypeScript"
+  ],
+  "budget_ceiling": 47.32,
+  "fair_total": 1989.42,
+  "est_hours": 52.4,
+  "domain": "fullstack"
+ },
+ "j-fu-0234": {
+  "must_have": [
+   "Stripe",
+   "Tailwind CSS"
+  ],
+  "budget_ceiling": 4973.53,
+  "fair_total": 3332.5,
+  "est_hours": 87.7,
+  "domain": "fullstack"
+ },
+ "j-fu-0235": {
+  "must_have": [
+   "React",
+   "Next.js"
+  ],
+  "budget_ceiling": 4233.75,
+  "fair_total": 3588.9,
+  "est_hours": 94.4,
+  "domain": "fullstack"
+ },
+ "j-fu-0236": {
+  "must_have": [
+   "GraphQL",
+   "React"
+  ],
+  "budget_ceiling": 2707.97,
+  "fair_total": 2159.13,
+  "est_hours": 56.8,
+  "domain": "fullstack"
+ },
+ "j-fu-0237": {
+  "must_have": [
+   "React",
+   "Node.js"
+  ],
+  "budget_ceiling": 45.96,
+  "fair_total": 1989.4,
+  "est_hours": 52.4,
+  "domain": "fullstack"
+ },
+ "j-fu-0238": {
+  "must_have": [
+   "Redis",
+   "React"
+  ],
+  "budget_ceiling": 3778.55,
+  "fair_total": 2640.49,
+  "est_hours": 69.5,
+  "domain": "fullstack"
+ },
+ "j-fu-0239": {
+  "must_have": [
+   "Next.js",
+   "React"
+  ],
+  "budget_ceiling": 2375.69,
+  "fair_total": 1966.94,
+  "est_hours": 51.8,
+  "domain": "fullstack"
+ },
+ "j-fu-0240": {
+  "must_have": [
+   "GraphQL",
+   "Next.js"
+  ],
+  "budget_ceiling": 49.03,
+  "fair_total": 1359.15,
+  "est_hours": 35.8,
+  "domain": "fullstack"
+ },
+ "j-fu-0241": {
+  "must_have": [
+   "JavaScript",
+   "Jest"
+  ],
+  "budget_ceiling": 2170.11,
+  "fair_total": 1371.69,
+  "est_hours": 36.1,
+  "domain": "fullstack"
+ },
+ "j-fu-0242": {
+  "must_have": [
+   "TypeScript",
+   "React Native"
+  ],
+  "budget_ceiling": 3561.23,
+  "fair_total": 3529.94,
+  "est_hours": 92.9,
+  "domain": "fullstack"
+ },
+ "j-fu-0243": {
+  "must_have": [
+   "Vercel",
+   "Tailwind CSS"
+  ],
+  "budget_ceiling": 2629.21,
+  "fair_total": 1631.65,
+  "est_hours": 42.9,
+  "domain": "fullstack"
+ },
+ "j-fu-0244": {
+  "must_have": [
+   "React",
+   "Tailwind CSS"
+  ],
+  "budget_ceiling": 2562.55,
+  "fair_total": 2081.05,
+  "est_hours": 54.8,
+  "domain": "fullstack"
+ },
+ "j-fu-0245": {
+  "must_have": [
+   "Next.js",
+   "TypeScript"
+  ],
+  "budget_ceiling": 4223.76,
+  "fair_total": 3380.46,
+  "est_hours": 89.0,
+  "domain": "fullstack"
+ },
+ "j-fu-0246": {
+  "must_have": [
+   "Firebase",
+   "Stripe"
+  ],
+  "budget_ceiling": 4401.45,
+  "fair_total": 4021.19,
+  "est_hours": 105.8,
+  "domain": "fullstack"
+ },
+ "j-fu-0247": {
+  "must_have": [
+   "React",
+   "PostgreSQL"
+  ],
+  "budget_ceiling": 2954.4,
+  "fair_total": 2850.94,
+  "est_hours": 75.0,
+  "domain": "fullstack"
+ },
+ "j-fu-0248": {
+  "must_have": [
+   "Node.js",
+   "MongoDB"
+  ],
+  "budget_ceiling": 3653.27,
+  "fair_total": 2761.01,
+  "est_hours": 72.7,
+  "domain": "fullstack"
+ },
+ "j-fu-0249": {
+  "must_have": [
+   "Celery",
+   "Django"
+  ],
+  "budget_ceiling": 5573.33,
+  "fair_total": 4009.36,
+  "est_hours": 105.5,
+  "domain": "fullstack"
+ },
+ "j-fu-0250": {
+  "must_have": [
+   "Stripe",
+   "Tailwind CSS"
+  ],
+  "budget_ceiling": 5758.72,
+  "fair_total": 3957.23,
+  "est_hours": 104.1,
+  "domain": "fullstack"
+ },
+ "j-fu-0251": {
+  "must_have": [
+   "Stripe",
+   "Express"
+  ],
+  "budget_ceiling": 3080.64,
+  "fair_total": 2225.71,
+  "est_hours": 58.6,
+  "domain": "fullstack"
+ },
+ "j-fu-0252": {
+  "must_have": [
+   "Redis",
+   "PostgreSQL"
+  ],
+  "budget_ceiling": 3462.54,
+  "fair_total": 2651.02,
+  "est_hours": 69.8,
+  "domain": "fullstack"
+ },
+ "j-fu-0253": {
+  "must_have": [
+   "React",
+   "PostgreSQL"
+  ],
+  "budget_ceiling": 4625.16,
+  "fair_total": 3625.16,
+  "est_hours": 95.4,
+  "domain": "fullstack"
+ },
+ "j-fu-0254": {
+  "must_have": [
+   "Node.js",
+   "PostgreSQL"
+  ],
+  "budget_ceiling": 47.11,
+  "fair_total": 1984.12,
+  "est_hours": 52.2,
+  "domain": "fullstack"
+ },
+ "j-fu-0255": {
+  "must_have": [
+   "Jest",
+   "React"
+  ],
+  "budget_ceiling": 2144.94,
+  "fair_total": 1785.31,
+  "est_hours": 47.0,
+  "domain": "fullstack"
+ },
+ "j-fu-0256": {
+  "must_have": [
+   "AWS",
+   "Celery"
+  ],
+  "budget_ceiling": 62.82,
+  "fair_total": 3697.48,
+  "est_hours": 97.3,
+  "domain": "fullstack"
+ },
+ "j-fu-0257": {
+  "must_have": [
+   "Express",
+   "Redis"
+  ],
+  "budget_ceiling": 2689.15,
+  "fair_total": 2287.59,
+  "est_hours": 60.2,
+  "domain": "fullstack"
+ },
+ "j-fu-0258": {
+  "must_have": [
+   "Redis",
+   "React"
+  ],
+  "budget_ceiling": 2535.17,
+  "fair_total": 1838.44,
+  "est_hours": 48.4,
+  "domain": "fullstack"
+ },
+ "j-fu-0259": {
+  "must_have": [
+   "Celery",
+   "Django"
+  ],
+  "budget_ceiling": 2520.09,
+  "fair_total": 2176.13,
+  "est_hours": 57.3,
+  "domain": "fullstack"
+ },
+ "j-fu-0260": {
+  "must_have": [
+   "Vercel",
+   "GraphQL"
+  ],
+  "budget_ceiling": 56.76,
+  "fair_total": 1726.94,
+  "est_hours": 45.4,
+  "domain": "fullstack"
+ },
+ "j-fu-0261": {
+  "must_have": [
+   "Firebase",
+   "React"
+  ],
+  "budget_ceiling": 49.64,
+  "fair_total": 3512.63,
+  "est_hours": 92.4,
+  "domain": "fullstack"
+ },
+ "j-fu-0262": {
+  "must_have": [
+   "Firebase",
+   "NestJS"
+  ],
+  "budget_ceiling": 6487.53,
+  "fair_total": 5621.24,
+  "est_hours": 147.9,
+  "domain": "fullstack"
+ },
+ "j-fu-0263": {
+  "must_have": [
+   "Supabase",
+   "Express"
+  ],
+  "budget_ceiling": 5337.09,
+  "fair_total": 3442.36,
+  "est_hours": 90.6,
+  "domain": "fullstack"
+ },
+ "j-fu-0264": {
+  "must_have": [
+   "PostgreSQL",
+   "Redis"
+  ],
+  "budget_ceiling": 4323.93,
+  "fair_total": 2986.02,
+  "est_hours": 78.6,
+  "domain": "fullstack"
+ },
+ "j-fu-0265": {
+  "must_have": [
+   "Docker",
+   "WebSockets"
+  ],
+  "budget_ceiling": 4301.35,
+  "fair_total": 3592.04,
+  "est_hours": 94.5,
+  "domain": "fullstack"
+ },
+ "j-fu-0266": {
+  "must_have": [
+   "Stripe",
+   "Next.js"
+  ],
+  "budget_ceiling": 50.41,
+  "fair_total": 4503.07,
+  "est_hours": 118.5,
+  "domain": "fullstack"
+ },
+ "j-fu-0267": {
+  "must_have": [
+   "GraphQL",
+   "Node.js"
+  ],
+  "budget_ceiling": 4154.01,
+  "fair_total": 3657.22,
+  "est_hours": 96.2,
+  "domain": "fullstack"
+ },
+ "j-fu-0268": {
+  "must_have": [
+   "React",
+   "Next.js"
+  ],
+  "budget_ceiling": 5154.22,
+  "fair_total": 3694.78,
+  "est_hours": 97.2,
+  "domain": "fullstack"
+ },
+ "j-fu-0269": {
+  "must_have": [
+   "React",
+   "TypeScript"
+  ],
+  "budget_ceiling": 2447.55,
+  "fair_total": 2131.29,
+  "est_hours": 56.1,
+  "domain": "fullstack"
+ },
+ "j-fu-0270": {
+  "must_have": [
+   "React",
+   "Jest"
+  ],
+  "budget_ceiling": 3807.06,
+  "fair_total": 2701.26,
+  "est_hours": 71.1,
+  "domain": "fullstack"
+ },
+ "j-fu-0271": {
+  "must_have": [
+   "TypeScript",
+   "Firebase"
+  ],
+  "budget_ceiling": 6842.93,
+  "fair_total": 4849.29,
+  "est_hours": 127.6,
+  "domain": "fullstack"
+ },
+ "j-fu-0272": {
+  "must_have": [
+   "Express",
+   "Firebase"
+  ],
+  "budget_ceiling": 4717.69,
+  "fair_total": 3267.55,
+  "est_hours": 86.0,
+  "domain": "fullstack"
+ },
+ "j-fu-0273": {
+  "must_have": [
+   "Docker",
+   "OAuth"
+  ],
+  "budget_ceiling": 4635.62,
+  "fair_total": 4359.97,
+  "est_hours": 114.7,
+  "domain": "fullstack"
+ },
+ "j-fu-0274": {
+  "must_have": [
+   "Next.js",
+   "Firebase"
+  ],
+  "budget_ceiling": 2546.72,
+  "fair_total": 2259.2,
+  "est_hours": 59.5,
+  "domain": "fullstack"
+ },
+ "j-fu-0275": {
+  "must_have": [
+   "Stripe",
+   "React"
+  ],
+  "budget_ceiling": 5543.27,
+  "fair_total": 4396.65,
+  "est_hours": 115.7,
+  "domain": "fullstack"
+ },
+ "j-fu-0276": {
+  "must_have": [
+   "React",
+   "GraphQL"
+  ],
+  "budget_ceiling": 3487.46,
+  "fair_total": 2524.76,
+  "est_hours": 66.4,
+  "domain": "fullstack"
+ },
+ "j-fu-0277": {
+  "must_have": [
+   "PostgreSQL",
+   "OAuth"
+  ],
+  "budget_ceiling": 7438.35,
+  "fair_total": 5070.78,
+  "est_hours": 133.4,
+  "domain": "fullstack"
+ },
+ "j-fu-0278": {
+  "must_have": [
+   "Jest",
+   "Node.js"
+  ],
+  "budget_ceiling": 2603.61,
+  "fair_total": 2142.05,
+  "est_hours": 56.4,
+  "domain": "fullstack"
+ },
+ "j-fu-0279": {
+  "must_have": [
+   "TypeScript",
+   "Firebase"
+  ],
+  "budget_ceiling": 3445.45,
+  "fair_total": 2413.78,
+  "est_hours": 63.5,
+  "domain": "fullstack"
+ },
+ "j-fu-0280": {
+  "must_have": [
+   "JavaScript",
+   "TypeScript"
+  ],
+  "budget_ceiling": 3546.82,
+  "fair_total": 2155.83,
+  "est_hours": 56.7,
+  "domain": "fullstack"
+ },
+ "j-fu-0281": {
+  "must_have": [
+   "Redis",
+   "Supabase"
+  ],
+  "budget_ceiling": 5642.98,
+  "fair_total": 3260.15,
+  "est_hours": 85.8,
+  "domain": "fullstack"
+ },
+ "j-fu-0282": {
+  "must_have": [
+   "Supabase",
+   "Vercel"
+  ],
+  "budget_ceiling": 2554.83,
+  "fair_total": 2271.78,
+  "est_hours": 59.8,
+  "domain": "fullstack"
+ },
+ "j-fu-0283": {
+  "must_have": [
+   "OAuth",
+   "TypeScript"
+  ],
+  "budget_ceiling": 3679.97,
+  "fair_total": 2667.06,
+  "est_hours": 70.2,
+  "domain": "fullstack"
+ },
+ "j-fu-0284": {
+  "must_have": [
+   "Celery",
+   "React"
+  ],
+  "budget_ceiling": 3331.92,
+  "fair_total": 3307.65,
+  "est_hours": 87.0,
+  "domain": "fullstack"
+ },
+ "j-fu-0285": {
+  "must_have": [
+   "React Native",
+   "PostgreSQL"
+  ],
+  "budget_ceiling": 8804.11,
+  "fair_total": 5295.89,
+  "est_hours": 139.4,
+  "domain": "fullstack"
+ },
+ "j-fu-0286": {
+  "must_have": [
+   "Next.js",
+   "Prisma"
+  ],
+  "budget_ceiling": 2615.22,
+  "fair_total": 1879.77,
+  "est_hours": 49.5,
+  "domain": "fullstack"
+ },
+ "j-fu-0287": {
+  "must_have": [
+   "Firebase",
+   "Vercel"
+  ],
+  "budget_ceiling": 56.18,
+  "fair_total": 4851.03,
+  "est_hours": 127.7,
+  "domain": "fullstack"
+ },
+ "j-fu-0288": {
+  "must_have": [
+   "CI/CD",
+   "Docker"
+  ],
+  "budget_ceiling": 3030.92,
+  "fair_total": 2323.63,
+  "est_hours": 61.1,
+  "domain": "fullstack"
+ },
+ "j-fu-0289": {
+  "must_have": [
+   "Docker",
+   "Vercel"
+  ],
+  "budget_ceiling": 3730.39,
+  "fair_total": 2722.58,
+  "est_hours": 71.6,
+  "domain": "fullstack"
+ },
+ "j-fu-0290": {
+  "must_have": [
+   "TypeScript",
+   "Vercel"
+  ],
+  "budget_ceiling": 3175.62,
+  "fair_total": 1953.05,
+  "est_hours": 51.4,
+  "domain": "fullstack"
+ },
+ "j-fu-0291": {
+  "must_have": [
+   "TypeScript",
+   "Vercel"
+  ],
+  "budget_ceiling": 58.36,
+  "fair_total": 2173.21,
+  "est_hours": 57.2,
+  "domain": "fullstack"
+ },
+ "j-fu-0292": {
+  "must_have": [
+   "Tailwind CSS",
+   "Next.js"
+  ],
+  "budget_ceiling": 1968.04,
+  "fair_total": 1706.41,
+  "est_hours": 44.9,
+  "domain": "fullstack"
+ },
+ "j-fu-0293": {
+  "must_have": [
+   "Tailwind CSS",
+   "React"
+  ],
+  "budget_ceiling": 5066.44,
+  "fair_total": 3672.22,
+  "est_hours": 96.6,
+  "domain": "fullstack"
+ },
+ "j-fu-0294": {
+  "must_have": [
+   "TypeScript",
+   "CI/CD"
+  ],
+  "budget_ceiling": 2204.27,
+  "fair_total": 1735.4,
+  "est_hours": 45.7,
+  "domain": "fullstack"
+ },
+ "j-fu-0295": {
+  "must_have": [
+   "PostgreSQL",
+   "Django"
+  ],
+  "budget_ceiling": 59.26,
+  "fair_total": 1995.36,
+  "est_hours": 52.5,
+  "domain": "fullstack"
+ },
+ "j-fu-0296": {
+  "must_have": [
+   "Docker",
+   "Django"
+  ],
+  "budget_ceiling": 3461.31,
+  "fair_total": 2566.69,
+  "est_hours": 67.5,
+  "domain": "fullstack"
+ },
+ "j-fu-0297": {
+  "must_have": [
+   "Supabase",
+   "Stripe"
+  ],
+  "budget_ceiling": 3793.85,
+  "fair_total": 3144.52,
+  "est_hours": 82.8,
+  "domain": "fullstack"
+ },
+ "j-fu-0298": {
+  "must_have": [
+   "JavaScript",
+   "TypeScript"
+  ],
+  "budget_ceiling": 2617.19,
+  "fair_total": 2012.07,
+  "est_hours": 52.9,
+  "domain": "fullstack"
+ },
+ "j-fu-0299": {
+  "must_have": [
+   "React",
+   "Redis"
+  ],
+  "budget_ceiling": 55.85,
+  "fair_total": 4022.82,
+  "est_hours": 105.9,
+  "domain": "fullstack"
+ },
+ "j-fu-0300": {
+  "must_have": [
+   "Tailwind CSS",
+   "React"
+  ],
+  "budget_ceiling": 2641.5,
+  "fair_total": 1795.56,
+  "est_hours": 47.3,
+  "domain": "fullstack"
+ },
+ "j-fu-0301": {
+  "must_have": [
+   "Celery",
+   "Docker"
+  ],
+  "budget_ceiling": 3528.93,
+  "fair_total": 2861.34,
+  "est_hours": 75.3,
+  "domain": "fullstack"
+ },
+ "j-fu-0302": {
+  "must_have": [
+   "Tailwind CSS",
+   "Firebase"
+  ],
+  "budget_ceiling": 4676.96,
+  "fair_total": 3680.19,
+  "est_hours": 96.8,
+  "domain": "fullstack"
+ },
+ "j-fu-0303": {
+  "must_have": [
+   "Django",
+   "React"
+  ],
+  "budget_ceiling": 6968.66,
+  "fair_total": 4509.11,
+  "est_hours": 118.7,
+  "domain": "fullstack"
+ },
+ "j-fu-0304": {
+  "must_have": [
+   "Node.js",
+   "AWS"
+  ],
+  "budget_ceiling": 46.88,
+  "fair_total": 2226.3,
+  "est_hours": 58.6,
+  "domain": "fullstack"
+ },
+ "j-fu-0305": {
+  "must_have": [
+   "React",
+   "Node.js"
+  ],
+  "budget_ceiling": 2863.6,
+  "fair_total": 2621.66,
+  "est_hours": 69.0,
+  "domain": "fullstack"
+ },
+ "j-fu-0306": {
+  "must_have": [
+   "Next.js",
+   "TypeScript"
+  ],
+  "budget_ceiling": 3412.85,
+  "fair_total": 3127.23,
+  "est_hours": 82.3,
+  "domain": "fullstack"
+ },
+ "j-fu-0307": {
+  "must_have": [
+   "React Native",
+   "TypeScript"
+  ],
+  "budget_ceiling": 4612.45,
+  "fair_total": 4082.5,
+  "est_hours": 107.4,
+  "domain": "fullstack"
+ },
+ "j-fu-0308": {
+  "must_have": [
+   "React",
+   "Express"
+  ],
+  "budget_ceiling": 56.17,
+  "fair_total": 3282.46,
+  "est_hours": 86.4,
+  "domain": "fullstack"
+ },
+ "j-fu-0309": {
+  "must_have": [
+   "Stripe",
+   "Express"
+  ],
+  "budget_ceiling": 42.01,
+  "fair_total": 2135.16,
+  "est_hours": 56.2,
+  "domain": "fullstack"
+ },
+ "j-fu-0310": {
+  "must_have": [
+   "TypeScript",
+   "Firebase"
+  ],
+  "budget_ceiling": 53.16,
+  "fair_total": 3127.25,
+  "est_hours": 82.3,
+  "domain": "fullstack"
+ },
+ "j-fu-0311": {
+  "must_have": [
+   "Node.js",
+   "Jest"
+  ],
+  "budget_ceiling": 1929.62,
+  "fair_total": 1781.83,
+  "est_hours": 46.9,
+  "domain": "fullstack"
+ },
+ "j-fu-0312": {
+  "must_have": [
+   "GraphQL",
+   "TypeScript"
+  ],
+  "budget_ceiling": 49.8,
+  "fair_total": 1584.57,
+  "est_hours": 41.7,
+  "domain": "fullstack"
+ },
+ "j-fu-0313": {
+  "must_have": [
+   "React",
+   "WebSockets"
+  ],
+  "budget_ceiling": 48.72,
+  "fair_total": 1869.75,
+  "est_hours": 49.2,
+  "domain": "fullstack"
+ },
+ "j-fu-0314": {
+  "must_have": [
+   "Prisma",
+   "Stripe"
+  ],
+  "budget_ceiling": 2623.47,
+  "fair_total": 2741.3,
+  "est_hours": 72.1,
+  "domain": "fullstack"
+ },
+ "j-fu-0315": {
+  "must_have": [
+   "React",
+   "Tailwind CSS"
+  ],
+  "budget_ceiling": 3844.99,
+  "fair_total": 2922.05,
+  "est_hours": 76.9,
+  "domain": "fullstack"
+ },
+ "j-fu-0316": {
+  "must_have": [
+   "Vercel",
+   "Next.js"
+  ],
+  "budget_ceiling": 53.55,
+  "fair_total": 1652.07,
+  "est_hours": 43.5,
+  "domain": "fullstack"
+ },
+ "j-fu-0317": {
+  "must_have": [
+   "Django",
+   "Celery"
+  ],
+  "budget_ceiling": 61.19,
+  "fair_total": 4272.43,
+  "est_hours": 112.4,
+  "domain": "fullstack"
+ },
+ "j-fu-0318": {
+  "must_have": [
+   "Celery",
+   "Django"
+  ],
+  "budget_ceiling": 4263.41,
+  "fair_total": 3218.43,
+  "est_hours": 84.7,
+  "domain": "fullstack"
+ },
+ "j-fu-0319": {
+  "must_have": [
+   "TypeScript",
+   "Next.js"
+  ],
+  "budget_ceiling": 52.21,
+  "fair_total": 2601.47,
+  "est_hours": 68.5,
+  "domain": "fullstack"
+ },
+ "j-fu-0320": {
+  "must_have": [
+   "React",
+   "Vercel"
+  ],
+  "budget_ceiling": 2934.58,
+  "fair_total": 1718.2,
+  "est_hours": 45.2,
+  "domain": "fullstack"
+ },
+ "j-fu-0321": {
+  "must_have": [
+   "Firebase",
+   "TypeScript"
+  ],
+  "budget_ceiling": 3038.64,
+  "fair_total": 2995.98,
+  "est_hours": 78.8,
+  "domain": "fullstack"
+ },
+ "j-fu-0322": {
+  "must_have": [
+   "Docker",
+   "NestJS"
+  ],
+  "budget_ceiling": 3488.29,
+  "fair_total": 3160.22,
+  "est_hours": 83.2,
+  "domain": "fullstack"
+ },
+ "j-fu-0323": {
+  "must_have": [
+   "Django",
+   "AWS"
+  ],
+  "budget_ceiling": 4912.93,
+  "fair_total": 3172.33,
+  "est_hours": 83.5,
+  "domain": "fullstack"
+ },
+ "j-fu-0324": {
+  "must_have": [
+   "Celery",
+   "Docker"
+  ],
+  "budget_ceiling": 5120.96,
+  "fair_total": 3446.38,
+  "est_hours": 90.7,
+  "domain": "fullstack"
+ },
+ "j-fu-0325": {
+  "must_have": [
+   "Django",
+   "PostgreSQL"
+  ],
+  "budget_ceiling": 51.35,
+  "fair_total": 3320.69,
+  "est_hours": 87.4,
+  "domain": "fullstack"
+ },
+ "j-fu-0326": {
+  "must_have": [
+   "PostgreSQL",
+   "Node.js"
+  ],
+  "budget_ceiling": 45.9,
+  "fair_total": 3846.43,
+  "est_hours": 101.2,
+  "domain": "fullstack"
+ },
+ "j-fu-0327": {
+  "must_have": [
+   "Celery",
+   "AWS"
+  ],
+  "budget_ceiling": 44.38,
+  "fair_total": 2805.34,
+  "est_hours": 73.8,
+  "domain": "fullstack"
+ },
+ "j-fu-0328": {
+  "must_have": [
+   "OAuth",
+   "React"
+  ],
+  "budget_ceiling": 3735.24,
+  "fair_total": 3287.1,
+  "est_hours": 86.5,
+  "domain": "fullstack"
+ },
+ "j-fu-0329": {
+  "must_have": [
+   "Vercel",
+   "TypeScript"
+  ],
+  "budget_ceiling": 2874.97,
+  "fair_total": 1637.35,
+  "est_hours": 43.1,
+  "domain": "fullstack"
+ },
+ "j-fu-0330": {
+  "must_have": [
+   "Node.js",
+   "Redis"
+  ],
+  "budget_ceiling": 2802.28,
+  "fair_total": 2150.89,
+  "est_hours": 56.6,
+  "domain": "fullstack"
+ },
+ "j-fu-0331": {
+  "must_have": [
+   "Express",
+   "Redis"
+  ],
+  "budget_ceiling": 50.24,
+  "fair_total": 2545.93,
+  "est_hours": 67.0,
+  "domain": "fullstack"
+ },
+ "j-fu-0332": {
+  "must_have": [
+   "React",
+   "Celery"
+  ],
+  "budget_ceiling": 6076.75,
+  "fair_total": 4707.57,
+  "est_hours": 123.9,
+  "domain": "fullstack"
+ },
+ "j-fu-0333": {
+  "must_have": [
+   "Docker",
+   "Jest"
+  ],
+  "budget_ceiling": 47.26,
+  "fair_total": 2053.26,
+  "est_hours": 54.0,
+  "domain": "fullstack"
+ },
+ "j-fu-0334": {
+  "must_have": [
+   "Tailwind CSS",
+   "React"
+  ],
+  "budget_ceiling": 54.31,
+  "fair_total": 3717.96,
+  "est_hours": 97.8,
+  "domain": "fullstack"
+ },
+ "j-fu-0335": {
+  "must_have": [
+   "Playwright",
+   "TypeScript"
+  ],
+  "budget_ceiling": 3326.61,
+  "fair_total": 1974.96,
+  "est_hours": 52.0,
+  "domain": "fullstack"
+ },
+ "j-fu-0336": {
+  "must_have": [
+   "Stripe",
+   "Tailwind CSS"
+  ],
+  "budget_ceiling": 5469.41,
+  "fair_total": 4622.54,
+  "est_hours": 121.6,
+  "domain": "fullstack"
+ },
+ "j-fu-0337": {
+  "must_have": [
+   "AWS",
+   "Stripe"
+  ],
+  "budget_ceiling": 2504.0,
+  "fair_total": 2480.47,
+  "est_hours": 65.3,
+  "domain": "fullstack"
+ },
+ "j-fu-0338": {
+  "must_have": [
+   "Tailwind CSS",
+   "TypeScript"
+  ],
+  "budget_ceiling": 2810.82,
+  "fair_total": 2671.47,
+  "est_hours": 70.3,
+  "domain": "fullstack"
+ },
+ "j-fu-0339": {
+  "must_have": [
+   "WebSockets",
+   "PostgreSQL"
+  ],
+  "budget_ceiling": 3190.9,
+  "fair_total": 2644.65,
+  "est_hours": 69.6,
+  "domain": "fullstack"
+ },
+ "j-fu-0340": {
+  "must_have": [
+   "React",
+   "PostgreSQL"
+  ],
+  "budget_ceiling": 5799.88,
+  "fair_total": 3469.08,
+  "est_hours": 91.3,
+  "domain": "fullstack"
+ },
+ "j-fu-0341": {
+  "must_have": [
+   "TypeScript",
+   "CI/CD"
+  ],
+  "budget_ceiling": 2009.57,
+  "fair_total": 1546.69,
+  "est_hours": 40.7,
+  "domain": "fullstack"
+ },
+ "j-fu-0342": {
+  "must_have": [
+   "Node.js",
+   "React"
+  ],
+  "budget_ceiling": 54.04,
+  "fair_total": 3874.71,
+  "est_hours": 102.0,
+  "domain": "fullstack"
+ },
+ "j-fu-0343": {
+  "must_have": [
+   "Stripe",
+   "Tailwind CSS"
+  ],
+  "budget_ceiling": 48.12,
+  "fair_total": 2334.27,
+  "est_hours": 61.4,
+  "domain": "fullstack"
+ },
+ "j-fu-0344": {
+  "must_have": [
+   "Docker",
+   "Celery"
+  ],
+  "budget_ceiling": 5137.59,
+  "fair_total": 3298.8,
+  "est_hours": 86.8,
+  "domain": "fullstack"
+ },
+ "j-fu-0345": {
+  "must_have": [
+   "Tailwind CSS",
+   "Next.js"
+  ],
+  "budget_ceiling": 3000.0,
+  "fair_total": 2716.95,
+  "est_hours": 71.5,
+  "domain": "fullstack"
+ },
+ "j-fu-0346": {
+  "must_have": [
+   "React",
+   "JavaScript"
+  ],
+  "budget_ceiling": 1726.2,
+  "fair_total": 1418.18,
+  "est_hours": 37.3,
+  "domain": "fullstack"
+ },
+ "j-fu-0347": {
+  "must_have": [
+   "Tailwind CSS",
+   "Firebase"
+  ],
+  "budget_ceiling": 49.94,
+  "fair_total": 3021.3,
+  "est_hours": 79.5,
+  "domain": "fullstack"
+ },
+ "j-fu-0348": {
+  "must_have": [
+   "Jest",
+   "TypeScript"
+  ],
+  "budget_ceiling": 2147.38,
+  "fair_total": 1715.38,
+  "est_hours": 45.1,
+  "domain": "fullstack"
+ },
+ "j-fu-0349": {
+  "must_have": [
+   "Supabase",
+   "Next.js"
+  ],
+  "budget_ceiling": 5842.58,
+  "fair_total": 3441.75,
+  "est_hours": 90.6,
+  "domain": "fullstack"
+ },
+ "j-fu-0350": {
+  "must_have": [
+   "Next.js",
+   "Stripe"
+  ],
+  "budget_ceiling": 4882.12,
+  "fair_total": 3371.83,
+  "est_hours": 88.7,
+  "domain": "fullstack"
+ },
+ "j-fu-0351": {
+  "must_have": [
+   "TypeScript"
+  ],
+  "budget_ceiling": 48.75,
+  "fair_total": 4127.55,
+  "est_hours": 108.6,
+  "domain": "fullstack"
+ },
+ "j-fu-0352": {
+  "must_have": [
+   "JavaScript"
+  ],
+  "budget_ceiling": 4411.37,
+  "fair_total": 3205.03,
+  "est_hours": 84.3,
+  "domain": "fullstack"
+ },
+ "j-fu-0353": {
+  "must_have": [
+   "JavaScript"
+  ],
+  "budget_ceiling": 45.76,
+  "fair_total": 1845.11,
+  "est_hours": 48.6,
+  "domain": "fullstack"
+ },
+ "j-fu-0354": {
+  "must_have": [
+   "Docker"
+  ],
+  "budget_ceiling": 41.77,
+  "fair_total": 4046.75,
+  "est_hours": 106.5,
+  "domain": "fullstack"
+ },
+ "j-fu-0355": {
+  "must_have": [
+   "TypeScript"
+  ],
+  "budget_ceiling": 49.8,
+  "fair_total": 1559.12,
+  "est_hours": 41.0,
+  "domain": "fullstack"
+ },
+ "j-fu-0356": {
+  "must_have": [
+   "TypeScript"
+  ],
+  "budget_ceiling": 4493.54,
+  "fair_total": 3591.62,
+  "est_hours": 94.5,
+  "domain": "fullstack"
+ },
+ "j-fu-0357": {
+  "must_have": [
+   "Docker"
+  ],
+  "budget_ceiling": 3748.92,
+  "fair_total": 2833.36,
+  "est_hours": 74.6,
+  "domain": "fullstack"
+ },
+ "j-fu-0358": {
+  "must_have": [
+   "JavaScript"
+  ],
+  "budget_ceiling": 3771.47,
+  "fair_total": 2347.21,
+  "est_hours": 61.8,
+  "domain": "fullstack"
+ },
+ "j-fu-0359": {
+  "must_have": [
+   "TypeScript"
+  ],
+  "budget_ceiling": 3521.28,
+  "fair_total": 2870.28,
+  "est_hours": 75.5,
+  "domain": "fullstack"
+ },
+ "j-fu-0360": {
+  "must_have": [
+   "Docker"
+  ],
+  "budget_ceiling": 39.23,
+  "fair_total": 2763.24,
+  "est_hours": 72.7,
+  "domain": "fullstack"
+ },
+ "j-fu-0361": {
+  "must_have": [
+   "TypeScript"
+  ],
+  "budget_ceiling": 2804.08,
+  "fair_total": 2351.82,
+  "est_hours": 61.9,
+  "domain": "fullstack"
+ },
+ "j-fu-0362": {
+  "must_have": [
+   "Docker"
+  ],
+  "budget_ceiling": 51.48,
+  "fair_total": 2447.15,
+  "est_hours": 64.4,
+  "domain": "fullstack"
+ },
+ "j-fu-0363": {
+  "must_have": [
+   "JavaScript"
+  ],
+  "budget_ceiling": 3656.09,
+  "fair_total": 2754.45,
+  "est_hours": 72.5,
+  "domain": "fullstack"
+ },
+ "j-fu-0364": {
+  "must_have": [
+   "JavaScript"
+  ],
+  "budget_ceiling": 56.01,
+  "fair_total": 3482.06,
+  "est_hours": 91.6,
+  "domain": "fullstack"
+ },
+ "j-fu-0365": {
+  "must_have": [
+   "TypeScript"
+  ],
+  "budget_ceiling": 46.93,
+  "fair_total": 1816.38,
+  "est_hours": 47.8,
+  "domain": "fullstack"
+ },
+ "j-fu-0366": {
+  "must_have": [
+   "TypeScript"
+  ],
+  "budget_ceiling": 61.42,
+  "fair_total": 1975.27,
+  "est_hours": 52.0,
+  "domain": "fullstack"
+ },
+ "j-fu-0367": {
+  "must_have": [
+   "JavaScript"
+  ],
+  "budget_ceiling": 6227.61,
+  "fair_total": 4280.73,
+  "est_hours": 112.7,
+  "domain": "fullstack"
+ },
+ "j-fu-0368": {
+  "must_have": [
+   "JavaScript"
+  ],
+  "budget_ceiling": 3758.81,
+  "fair_total": 2472.42,
+  "est_hours": 65.1,
+  "domain": "fullstack"
+ },
+ "j-fu-0369": {
+  "must_have": [
+   "JavaScript"
+  ],
+  "budget_ceiling": 3440.77,
+  "fair_total": 2411.62,
+  "est_hours": 63.5,
+  "domain": "fullstack"
+ },
+ "j-fu-0370": {
+  "must_have": [
+   "TypeScript"
+  ],
+  "budget_ceiling": 56.65,
+  "fair_total": 3606.91,
+  "est_hours": 94.9,
+  "domain": "fullstack"
+ },
+ "j-fu-0371": {
+  "must_have": [
+   "Shopify",
+   "GraphQL"
+  ],
+  "budget_ceiling": 56.95,
+  "fair_total": 2284.47,
+  "est_hours": 60.1,
+  "domain": "fullstack"
+ },
+ "j-fu-0372": {
+  "must_have": [
+   "Celery",
+   "Django"
+  ],
+  "budget_ceiling": 73.46,
+  "fair_total": 2117.77,
+  "est_hours": 55.7,
+  "domain": "fullstack"
+ },
+ "j-fu-0373": {
+  "must_have": [
+   "Redis",
+   "Django"
+  ],
+  "budget_ceiling": 34.97,
+  "fair_total": 3168.76,
+  "est_hours": 83.4,
+  "domain": "fullstack"
+ },
+ "j-fu-0374": {
+  "must_have": [
+   "React Native",
+   "Firebase"
+  ],
+  "budget_ceiling": 80.73,
+  "fair_total": 3192.61,
+  "est_hours": 84.0,
+  "domain": "fullstack"
+ },
+ "j-fu-0375": {
+  "must_have": [
+   "React",
+   "Tailwind CSS"
+  ],
+  "budget_ceiling": 43.93,
+  "fair_total": 1676.92,
+  "est_hours": 44.1,
+  "domain": "fullstack"
+ },
+ "j-fu-0376": {
+  "must_have": [
+   "Celery",
+   "React"
+  ],
+  "budget_ceiling": 79.92,
+  "fair_total": 2676.24,
+  "est_hours": 70.4,
+  "domain": "fullstack"
+ },
+ "j-fu-0377": {
+  "must_have": [
+   "PostgreSQL",
+   "Prisma"
+  ],
+  "budget_ceiling": 62.49,
+  "fair_total": 3129.24,
+  "est_hours": 82.3,
+  "domain": "fullstack"
+ },
+ "j-fu-0378": {
+  "must_have": [
+   "Next.js",
+   "PostgreSQL"
+  ],
+  "budget_ceiling": 49.85,
+  "fair_total": 2975.76,
+  "est_hours": 78.3,
+  "domain": "fullstack"
+ },
+ "j-fu-0379": {
+  "must_have": [
+   "TypeScript",
+   "Playwright"
+  ],
+  "budget_ceiling": 43.65,
+  "fair_total": 1497.54,
+  "est_hours": 39.4,
+  "domain": "fullstack"
+ },
+ "j-fu-0380": {
+  "must_have": [
+   "React",
+   "WebSockets"
+  ],
+  "budget_ceiling": 58.01,
+  "fair_total": 1817.42,
+  "est_hours": 47.8,
+  "domain": "fullstack"
+ },
+ "j-fu-0381": {
+  "must_have": [
+   "PostgreSQL",
+   "Express"
+  ],
+  "budget_ceiling": 2767.72,
+  "fair_total": 2021.09,
+  "est_hours": 53.2,
+  "domain": "fullstack"
+ },
+ "j-fu-0382": {
+  "must_have": [
+   "Jest",
+   "MongoDB"
+  ],
+  "budget_ceiling": 2305.69,
+  "fair_total": 2099.7,
+  "est_hours": 55.3,
+  "domain": "fullstack"
+ },
+ "j-fu-0383": {
+  "must_have": [
+   "Docker",
+   "PostgreSQL"
+  ],
+  "budget_ceiling": 4147.2,
+  "fair_total": 2964.59,
+  "est_hours": 78.0,
+  "domain": "fullstack"
+ },
+ "j-fu-0384": {
+  "must_have": [
+   "Vercel",
+   "Next.js"
+  ],
+  "budget_ceiling": 1802.06,
+  "fair_total": 1444.43,
+  "est_hours": 38.0,
+  "domain": "fullstack"
+ },
+ "j-fu-0385": {
+  "must_have": [
+   "TypeScript",
+   "Next.js"
+  ],
+  "budget_ceiling": 2311.8,
+  "fair_total": 1670.47,
+  "est_hours": 44.0,
+  "domain": "fullstack"
+ },
+ "j-fu-0386": {
+  "must_have": [
+   "TypeScript",
+   "React Native"
+  ],
+  "budget_ceiling": 4408.67,
+  "fair_total": 3682.42,
+  "est_hours": 96.9,
+  "domain": "fullstack"
+ },
+ "j-fu-0387": {
+  "must_have": [
+   "React",
+   "Vercel"
+  ],
+  "budget_ceiling": 1597.61,
+  "fair_total": 1399.4,
+  "est_hours": 36.8,
+  "domain": "fullstack"
+ },
+ "j-fu-0388": {
+  "must_have": [
+   "AWS",
+   "React"
+  ],
+  "budget_ceiling": 3488.25,
+  "fair_total": 2772.53,
+  "est_hours": 73.0,
+  "domain": "fullstack"
+ },
+ "j-fu-0389": {
+  "must_have": [
+   "React",
+   "Shopify"
+  ],
+  "budget_ceiling": 3109.74,
+  "fair_total": 2203.13,
+  "est_hours": 58.0,
+  "domain": "fullstack"
+ },
+ "j-fu-0390": {
+  "must_have": [
+   "Django",
+   "PostgreSQL"
+  ],
+  "budget_ceiling": 2975.52,
+  "fair_total": 2125.07,
+  "est_hours": 55.9,
+  "domain": "fullstack"
+ },
+ "j-fu-0391": {
+  "must_have": [
+   "Node.js",
+   "Shopify"
+  ],
+  "budget_ceiling": 2639.08,
+  "fair_total": 2185.64,
+  "est_hours": 57.5,
+  "domain": "fullstack"
+ },
+ "j-fu-0392": {
+  "must_have": [
+   "Tailwind CSS",
+   "TypeScript"
+  ],
+  "budget_ceiling": 2925.17,
+  "fair_total": 2090.79,
+  "est_hours": 55.0,
+  "domain": "fullstack"
+ },
+ "j-fu-0393": {
+  "must_have": [
+   "NestJS",
+   "OAuth"
+  ],
+  "budget_ceiling": 4222.97,
+  "fair_total": 3201.15,
+  "est_hours": 84.2,
+  "domain": "fullstack"
+ },
+ "j-fu-0394": {
+  "must_have": [
+   "NestJS",
+   "Docker"
+  ],
+  "budget_ceiling": 3953.81,
+  "fair_total": 2992.36,
+  "est_hours": 78.7,
+  "domain": "fullstack"
+ },
+ "j-fu-0395": {
+  "must_have": [
+   "Firebase",
+   "React Native"
+  ],
+  "budget_ceiling": 54.39,
+  "fair_total": 3863.93,
+  "est_hours": 101.7,
+  "domain": "fullstack"
+ },
+ "j-fu-0396": {
+  "must_have": [
+   "Next.js",
+   "Supabase"
+  ],
+  "budget_ceiling": 5403.41,
+  "fair_total": 4037.65,
+  "est_hours": 106.3,
+  "domain": "fullstack"
+ },
+ "j-fu-0397": {
+  "must_have": [
+   "Redis",
+   "WebSockets"
+  ],
+  "budget_ceiling": 4092.43,
+  "fair_total": 2948.91,
+  "est_hours": 77.6,
+  "domain": "fullstack"
+ },
+ "j-fu-0398": {
+  "must_have": [
+   "MongoDB",
+   "Node.js"
+  ],
+  "budget_ceiling": 3075.28,
+  "fair_total": 2392.56,
+  "est_hours": 63.0,
+  "domain": "fullstack"
+ },
+ "j-fu-0399": {
+  "must_have": [
+   "React",
+   "Tailwind CSS"
+  ],
+  "budget_ceiling": 4736.22,
+  "fair_total": 3133.25,
+  "est_hours": 82.5,
+  "domain": "fullstack"
+ },
+ "j-fu-0400": {
+  "must_have": [
+   "TypeScript",
+   "Next.js"
+  ],
+  "budget_ceiling": 1886.14,
+  "fair_total": 1531.82,
+  "est_hours": 40.3,
+  "domain": "fullstack"
+ },
+ "j-da-0401": {
+  "must_have": [
+   "SQL",
+   "dbt"
+  ],
+  "budget_ceiling": 38.17,
+  "fair_total": 1497.95,
+  "est_hours": 49.9,
+  "domain": "data_analyst"
+ },
+ "j-da-0402": {
+  "must_have": [
+   "Looker",
+   "SQL"
+  ],
+  "budget_ceiling": 1221.67,
+  "fair_total": 995.42,
+  "est_hours": 33.2,
+  "domain": "data_analyst"
+ },
+ "j-da-0403": {
+  "must_have": [
+   "R",
+   "A/B testing"
+  ],
+  "budget_ceiling": 986.95,
+  "fair_total": 943.1,
+  "est_hours": 31.4,
+  "domain": "data_analyst"
+ },
+ "j-da-0404": {
+  "must_have": [
+   "Tableau",
+   "Snowflake"
+  ],
+  "budget_ceiling": 43.8,
+  "fair_total": 1212.3,
+  "est_hours": 40.4,
+  "domain": "data_analyst"
+ },
+ "j-da-0405": {
+  "must_have": [
+   "SQL",
+   "Snowflake"
+  ],
+  "budget_ceiling": 1716.7,
+  "fair_total": 1268.77,
+  "est_hours": 42.3,
+  "domain": "data_analyst"
+ },
+ "j-da-0406": {
+  "must_have": [
+   "VBA",
+   "Excel"
+  ],
+  "budget_ceiling": 679.98,
+  "fair_total": 479.27,
+  "est_hours": 16.0,
+  "domain": "data_analyst"
+ },
+ "j-da-0407": {
+  "must_have": [
+   "cohort analysis",
+   "SQL"
+  ],
+  "budget_ceiling": 1318.21,
+  "fair_total": 1078.93,
+  "est_hours": 36.0,
+  "domain": "data_analyst"
+ },
+ "j-da-0408": {
+  "must_have": [
+   "R",
+   "statistics"
+  ],
+  "budget_ceiling": 907.72,
+  "fair_total": 889.61,
+  "est_hours": 29.7,
+  "domain": "data_analyst"
+ },
+ "j-da-0409": {
+  "must_have": [
+   "cohort analysis",
+   "Metabase"
+  ],
+  "budget_ceiling": 1356.11,
+  "fair_total": 921.91,
+  "est_hours": 30.7,
+  "domain": "data_analyst"
+ },
+ "j-da-0410": {
+  "must_have": [
+   "SQL",
+   "dbt"
+  ],
+  "budget_ceiling": 41.16,
+  "fair_total": 1395.35,
+  "est_hours": 46.5,
+  "domain": "data_analyst"
+ },
+ "j-da-0411": {
+  "must_have": [
+   "Snowflake",
+   "SQL"
+  ],
+  "budget_ceiling": 1945.75,
+  "fair_total": 1261.32,
+  "est_hours": 42.0,
+  "domain": "data_analyst"
+ },
+ "j-da-0412": {
+  "must_have": [
+   "R",
+   "Python"
+  ],
+  "budget_ceiling": 1275.75,
+  "fair_total": 850.61,
+  "est_hours": 28.4,
+  "domain": "data_analyst"
+ },
+ "j-da-0413": {
+  "must_have": [
+   "Python",
+   "SQL"
+  ],
+  "budget_ceiling": 1175.54,
+  "fair_total": 1015.7,
+  "est_hours": 33.9,
+  "domain": "data_analyst"
+ },
+ "j-da-0414": {
+  "must_have": [
+   "R",
+   "statistics"
+  ],
+  "budget_ceiling": 1416.47,
+  "fair_total": 1146.94,
+  "est_hours": 38.2,
+  "domain": "data_analyst"
+ },
+ "j-da-0415": {
+  "must_have": [
+   "Excel",
+   "forecasting"
+  ],
+  "budget_ceiling": 1291.83,
+  "fair_total": 952.54,
+  "est_hours": 31.8,
+  "domain": "data_analyst"
+ },
+ "j-da-0416": {
+  "must_have": [
+   "pandas",
+   "data cleaning"
+  ],
+  "budget_ceiling": 1090.95,
+  "fair_total": 805.46,
+  "est_hours": 26.8,
+  "domain": "data_analyst"
+ },
+ "j-da-0417": {
+  "must_have": [
+   "statistics",
+   "SQL"
+  ],
+  "budget_ceiling": 930.16,
+  "fair_total": 877.61,
+  "est_hours": 29.3,
+  "domain": "data_analyst"
+ },
+ "j-da-0418": {
+  "must_have": [
+   "SQL",
+   "clustering"
+  ],
+  "budget_ceiling": 1207.17,
+  "fair_total": 1143.85,
+  "est_hours": 38.1,
+  "domain": "data_analyst"
+ },
+ "j-da-0419": {
+  "must_have": [
+   "Snowflake",
+   "dashboards"
+  ],
+  "budget_ceiling": 1066.51,
+  "fair_total": 928.38,
+  "est_hours": 30.9,
+  "domain": "data_analyst"
+ },
+ "j-da-0420": {
+  "must_have": [
+   "A/B testing",
+   "R"
+  ],
+  "budget_ceiling": 1053.62,
+  "fair_total": 868.54,
+  "est_hours": 29.0,
+  "domain": "data_analyst"
+ },
+ "j-da-0421": {
+  "must_have": [
+   "data cleaning",
+   "Python"
+  ],
+  "budget_ceiling": 1063.59,
+  "fair_total": 809.28,
+  "est_hours": 27.0,
+  "domain": "data_analyst"
+ },
+ "j-da-0422": {
+  "must_have": [
+   "SQL",
+   "BigQuery"
+  ],
+  "budget_ceiling": 1161.23,
+  "fair_total": 1050.78,
+  "est_hours": 35.0,
+  "domain": "data_analyst"
+ },
+ "j-da-0423": {
+  "must_have": [
+   "dbt",
+   "SQL"
+  ],
+  "budget_ceiling": 1972.69,
+  "fair_total": 1534.98,
+  "est_hours": 51.2,
+  "domain": "data_analyst"
+ },
+ "j-da-0424": {
+  "must_have": [
+   "Snowflake",
+   "dbt"
+  ],
+  "budget_ceiling": 1529.92,
+  "fair_total": 1268.31,
+  "est_hours": 42.3,
+  "domain": "data_analyst"
+ },
+ "j-da-0425": {
+  "must_have": [
+   "data cleaning",
+   "pandas"
+  ],
+  "budget_ceiling": 1783.88,
+  "fair_total": 1018.24,
+  "est_hours": 33.9,
+  "domain": "data_analyst"
+ },
+ "j-da-0426": {
+  "must_have": [
+   "SQL",
+   "dashboards"
+  ],
+  "budget_ceiling": 38.7,
+  "fair_total": 1201.36,
+  "est_hours": 40.0,
+  "domain": "data_analyst"
+ },
+ "j-da-0427": {
+  "must_have": [
+   "Power Query",
+   "VBA"
+  ],
+  "budget_ceiling": 515.66,
+  "fair_total": 465.28,
+  "est_hours": 15.5,
+  "domain": "data_analyst"
+ },
+ "j-da-0428": {
+  "must_have": [
+   "Google Sheets",
+   "Excel"
+  ],
+  "budget_ceiling": 802.88,
+  "fair_total": 652.14,
+  "est_hours": 21.7,
+  "domain": "data_analyst"
+ },
+ "j-da-0429": {
+  "must_have": [
+   "Excel",
+   "pandas"
+  ],
+  "budget_ceiling": 1351.44,
+  "fair_total": 981.36,
+  "est_hours": 32.7,
+  "domain": "data_analyst"
+ },
+ "j-da-0430": {
+  "must_have": [
+   "VBA",
+   "Excel"
+  ],
+  "budget_ceiling": 718.8,
+  "fair_total": 489.54,
+  "est_hours": 16.3,
+  "domain": "data_analyst"
+ },
+ "j-da-0431": {
+  "must_have": [
+   "A/B testing",
+   "R"
+  ],
+  "budget_ceiling": 45.38,
+  "fair_total": 877.89,
+  "est_hours": 29.3,
+  "domain": "data_analyst"
+ },
+ "j-da-0432": {
+  "must_have": [
+   "Metabase",
+   "SQL"
+  ],
+  "budget_ceiling": 1166.03,
+  "fair_total": 893.26,
+  "est_hours": 29.8,
+  "domain": "data_analyst"
+ },
+ "j-da-0433": {
+  "must_have": [
+   "Tableau",
+   "statistics"
+  ],
+  "budget_ceiling": 1120.85,
+  "fair_total": 872.92,
+  "est_hours": 29.1,
+  "domain": "data_analyst"
+ },
+ "j-da-0434": {
+  "must_have": [
+   "Excel",
+   "pandas"
+  ],
+  "budget_ceiling": 41.76,
+  "fair_total": 1048.32,
+  "est_hours": 34.9,
+  "domain": "data_analyst"
+ },
+ "j-da-0435": {
+  "must_have": [
+   "SQL",
+   "statistics"
+  ],
+  "budget_ceiling": 1351.83,
+  "fair_total": 1037.27,
+  "est_hours": 34.6,
+  "domain": "data_analyst"
+ },
+ "j-da-0436": {
+  "must_have": [
+   "cohort analysis",
+   "SQL"
+  ],
+  "budget_ceiling": 1339.67,
+  "fair_total": 838.08,
+  "est_hours": 27.9,
+  "domain": "data_analyst"
+ },
+ "j-da-0437": {
+  "must_have": [
+   "pandas",
+   "Excel"
+  ],
+  "budget_ceiling": 34.55,
+  "fair_total": 857.9,
+  "est_hours": 28.6,
+  "domain": "data_analyst"
+ },
+ "j-da-0438": {
+  "must_have": [
+   "Redshift",
+   "PostgreSQL"
+  ],
+  "budget_ceiling": 38.53,
+  "fair_total": 1483.95,
+  "est_hours": 49.5,
+  "domain": "data_analyst"
+ },
+ "j-da-0439": {
+  "must_have": [
+   "SQL",
+   "Snowflake"
+  ],
+  "budget_ceiling": 41.77,
+  "fair_total": 1079.37,
+  "est_hours": 36.0,
+  "domain": "data_analyst"
+ },
+ "j-da-0440": {
+  "must_have": [
+   "A/B testing",
+   "statistics"
+  ],
+  "budget_ceiling": 1293.64,
+  "fair_total": 890.57,
+  "est_hours": 29.7,
+  "domain": "data_analyst"
+ },
+ "j-da-0441": {
+  "must_have": [
+   "Google Analytics",
+   "pandas"
+  ],
+  "budget_ceiling": 43.14,
+  "fair_total": 977.07,
+  "est_hours": 32.6,
+  "domain": "data_analyst"
+ },
+ "j-da-0442": {
+  "must_have": [
+   "Excel",
+   "VBA"
+  ],
+  "budget_ceiling": 961.77,
+  "fair_total": 605.14,
+  "est_hours": 20.2,
+  "domain": "data_analyst"
+ },
+ "j-da-0443": {
+  "must_have": [
+   "R",
+   "statistics"
+  ],
+  "budget_ceiling": 49.03,
+  "fair_total": 1086.15,
+  "est_hours": 36.2,
+  "domain": "data_analyst"
+ },
+ "j-da-0444": {
+  "must_have": [
+   "dbt",
+   "SQL"
+  ],
+  "budget_ceiling": 43.22,
+  "fair_total": 1458.13,
+  "est_hours": 48.6,
+  "domain": "data_analyst"
+ },
+ "j-da-0445": {
+  "must_have": [
+   "pandas",
+   "Excel"
+  ],
+  "budget_ceiling": 1388.43,
+  "fair_total": 1065.02,
+  "est_hours": 35.5,
+  "domain": "data_analyst"
+ },
+ "j-da-0446": {
+  "must_have": [
+   "Excel",
+   "SQL"
+  ],
+  "budget_ceiling": 1061.34,
+  "fair_total": 873.0,
+  "est_hours": 29.1,
+  "domain": "data_analyst"
+ },
+ "j-da-0447": {
+  "must_have": [
+   "Python",
+   "A/B testing"
+  ],
+  "budget_ceiling": 1040.41,
+  "fair_total": 1018.08,
+  "est_hours": 33.9,
+  "domain": "data_analyst"
+ },
+ "j-da-0448": {
+  "must_have": [
+   "Python",
+   "Excel"
+  ],
+  "budget_ceiling": 1199.36,
+  "fair_total": 839.74,
+  "est_hours": 28.0,
+  "domain": "data_analyst"
+ },
+ "j-da-0449": {
+  "must_have": [
+   "Python",
+   "pandas"
+  ],
+  "budget_ceiling": 39.48,
+  "fair_total": 970.43,
+  "est_hours": 32.3,
+  "domain": "data_analyst"
+ },
+ "j-da-0450": {
+  "must_have": [
+   "Google Sheets",
+   "Google Analytics"
+  ],
+  "budget_ceiling": 1565.89,
+  "fair_total": 1205.85,
+  "est_hours": 40.2,
+  "domain": "data_analyst"
+ },
+ "j-da-0451": {
+  "must_have": [
+   "statistics",
+   "Python"
+  ],
+  "budget_ceiling": 1128.24,
+  "fair_total": 1026.22,
+  "est_hours": 34.2,
+  "domain": "data_analyst"
+ },
+ "j-da-0452": {
+  "must_have": [
+   "dbt",
+   "SQL"
+  ],
+  "budget_ceiling": 1385.06,
+  "fair_total": 1316.77,
+  "est_hours": 43.9,
+  "domain": "data_analyst"
+ },
+ "j-da-0453": {
+  "must_have": [
+   "forecasting",
+   "Excel"
+  ],
+  "budget_ceiling": 806.79,
+  "fair_total": 675.65,
+  "est_hours": 22.5,
+  "domain": "data_analyst"
+ },
+ "j-da-0454": {
+  "must_have": [
+   "cohort analysis",
+   "SQL"
+  ],
+  "budget_ceiling": 1703.63,
+  "fair_total": 1007.0,
+  "est_hours": 33.6,
+  "domain": "data_analyst"
+ },
+ "j-da-0455": {
+  "must_have": [
+   "Excel",
+   "Python"
+  ],
+  "budget_ceiling": 716.54,
+  "fair_total": 488.7,
+  "est_hours": 16.3,
+  "domain": "data_analyst"
+ },
+ "j-da-0456": {
+  "must_have": [
+   "SQL",
+   "BigQuery"
+  ],
+  "budget_ceiling": 1661.02,
+  "fair_total": 1351.18,
+  "est_hours": 45.0,
+  "domain": "data_analyst"
+ },
+ "j-da-0457": {
+  "must_have": [
+   "pandas",
+   "Python"
+  ],
+  "budget_ceiling": 1931.05,
+  "fair_total": 1301.77,
+  "est_hours": 43.4,
+  "domain": "data_analyst"
+ },
+ "j-da-0458": {
+  "must_have": [
+   "A/B testing",
+   "R"
+  ],
+  "budget_ceiling": 1198.13,
+  "fair_total": 961.86,
+  "est_hours": 32.1,
+  "domain": "data_analyst"
+ },
+ "j-da-0459": {
+  "must_have": [
+   "Python",
+   "Metabase"
+  ],
+  "budget_ceiling": 33.14,
+  "fair_total": 788.79,
+  "est_hours": 26.3,
+  "domain": "data_analyst"
+ },
+ "j-da-0460": {
+  "must_have": [
+   "SQL",
+   "Metabase"
+  ],
+  "budget_ceiling": 1433.94,
+  "fair_total": 991.67,
+  "est_hours": 33.1,
+  "domain": "data_analyst"
+ },
+ "j-da-0461": {
+  "must_have": [
+   "Python",
+   "VBA"
+  ],
+  "budget_ceiling": 974.77,
+  "fair_total": 848.89,
+  "est_hours": 28.3,
+  "domain": "data_analyst"
+ },
+ "j-da-0462": {
+  "must_have": [
+   "dashboards",
+   "SQL"
+  ],
+  "budget_ceiling": 45.59,
+  "fair_total": 1087.21,
+  "est_hours": 36.2,
+  "domain": "data_analyst"
+ },
+ "j-da-0463": {
+  "must_have": [
+   "SQL",
+   "statistics"
+  ],
+  "budget_ceiling": 1392.82,
+  "fair_total": 1153.93,
+  "est_hours": 38.5,
+  "domain": "data_analyst"
+ },
+ "j-da-0464": {
+  "must_have": [
+   "SQL",
+   "Redshift"
+  ],
+  "budget_ceiling": 1581.06,
+  "fair_total": 1275.51,
+  "est_hours": 42.5,
+  "domain": "data_analyst"
+ },
+ "j-da-0465": {
+  "must_have": [
+   "statistics",
+   "R"
+  ],
+  "budget_ceiling": 2076.78,
+  "fair_total": 1335.8,
+  "est_hours": 44.5,
+  "domain": "data_analyst"
+ },
+ "j-da-0466": {
+  "must_have": [
+   "cohort analysis",
+   "SQL"
+  ],
+  "budget_ceiling": 1714.49,
+  "fair_total": 1124.78,
+  "est_hours": 37.5,
+  "domain": "data_analyst"
+ },
+ "j-da-0467": {
+  "must_have": [
+   "Google Sheets",
+   "Google Analytics"
+  ],
+  "budget_ceiling": 1279.85,
+  "fair_total": 1271.68,
+  "est_hours": 42.4,
+  "domain": "data_analyst"
+ },
+ "j-da-0468": {
+  "must_have": [
+   "Python",
+   "Looker"
+  ],
+  "budget_ceiling": 48.26,
+  "fair_total": 1350.48,
+  "est_hours": 45.0,
+  "domain": "data_analyst"
+ },
+ "j-da-0469": {
+  "must_have": [
+   "dbt",
+   "SQL"
+  ],
+  "budget_ceiling": 2067.85,
+  "fair_total": 1306.64,
+  "est_hours": 43.6,
+  "domain": "data_analyst"
+ },
+ "j-da-0470": {
+  "must_have": [
+   "SQL",
+   "Python"
+  ],
+  "budget_ceiling": 48.51,
+  "fair_total": 1535.07,
+  "est_hours": 51.2,
+  "domain": "data_analyst"
+ },
+ "j-da-0471": {
+  "must_have": [
+   "statistics",
+   "SQL"
+  ],
+  "budget_ceiling": 3301.87,
+  "fair_total": 2426.38,
+  "est_hours": 80.9,
+  "domain": "data_analyst"
+ },
+ "j-da-0472": {
+  "must_have": [
+   "Looker",
+   "Tableau"
+  ],
+  "budget_ceiling": 1445.66,
+  "fair_total": 1025.66,
+  "est_hours": 34.2,
+  "domain": "data_analyst"
+ },
+ "j-da-0473": {
+  "must_have": [
+   "SQL",
+   "statistics"
+  ],
+  "budget_ceiling": 2024.12,
+  "fair_total": 1403.6,
+  "est_hours": 46.8,
+  "domain": "data_analyst"
+ },
+ "j-da-0474": {
+  "must_have": [
+   "Tableau",
+   "SQL"
+  ],
+  "budget_ceiling": 1960.27,
+  "fair_total": 1327.79,
+  "est_hours": 44.3,
+  "domain": "data_analyst"
+ },
+ "j-da-0475": {
+  "must_have": [
+   "Python",
+   "pandas"
+  ],
+  "budget_ceiling": 1832.92,
+  "fair_total": 1162.09,
+  "est_hours": 38.7,
+  "domain": "data_analyst"
+ },
+ "j-da-0476": {
+  "must_have": [
+   "VBA",
+   "Excel"
+  ],
+  "budget_ceiling": 1889.93,
+  "fair_total": 1387.95,
+  "est_hours": 46.3,
+  "domain": "data_analyst"
+ },
+ "j-da-0477": {
+  "must_have": [
+   "R",
+   "BigQuery"
+  ],
+  "budget_ceiling": 1209.78,
+  "fair_total": 1210.31,
+  "est_hours": 40.3,
+  "domain": "data_analyst"
+ },
+ "j-da-0478": {
+  "must_have": [
+   "dashboards",
+   "pandas"
+  ],
+  "budget_ceiling": 1863.24,
+  "fair_total": 1504.02,
+  "est_hours": 50.1,
+  "domain": "data_analyst"
+ },
+ "j-da-0479": {
+  "must_have": [
+   "dashboards",
+   "SQL"
+  ],
+  "budget_ceiling": 36.03,
+  "fair_total": 1159.68,
+  "est_hours": 38.7,
+  "domain": "data_analyst"
+ },
+ "j-da-0480": {
+  "must_have": [
+   "forecasting",
+   "A/B testing"
+  ],
+  "budget_ceiling": 1832.27,
+  "fair_total": 1516.67,
+  "est_hours": 50.6,
+  "domain": "data_analyst"
+ },
+ "j-da-0481": {
+  "must_have": [
+   "cohort analysis",
+   "Excel"
+  ],
+  "budget_ceiling": 1428.81,
+  "fair_total": 1075.0,
+  "est_hours": 35.8,
+  "domain": "data_analyst"
+ },
+ "j-da-0482": {
+  "must_have": [
+   "Looker Studio",
+   "Looker"
+  ],
+  "budget_ceiling": 1896.4,
+  "fair_total": 1461.4,
+  "est_hours": 48.7,
+  "domain": "data_analyst"
+ },
+ "j-da-0483": {
+  "must_have": [
+   "SQL",
+   "Excel"
+  ],
+  "budget_ceiling": 51.28,
+  "fair_total": 1464.78,
+  "est_hours": 48.8,
+  "domain": "data_analyst"
+ },
+ "j-da-0484": {
+  "must_have": [
+   "Excel",
+   "Power Query"
+  ],
+  "budget_ceiling": 1560.36,
+  "fair_total": 1192.52,
+  "est_hours": 39.8,
+  "domain": "data_analyst"
+ },
+ "j-da-0485": {
+  "must_have": [
+   "Google Analytics",
+   "Excel"
+  ],
+  "budget_ceiling": 41.82,
+  "fair_total": 1536.73,
+  "est_hours": 51.2,
+  "domain": "data_analyst"
+ },
+ "j-da-0486": {
+  "must_have": [
+   "cohort analysis",
+   "BigQuery"
+  ],
+  "budget_ceiling": 1162.68,
+  "fair_total": 885.67,
+  "est_hours": 29.5,
+  "domain": "data_analyst"
+ },
+ "j-da-0487": {
+  "must_have": [
+   "Metabase",
+   "forecasting"
+  ],
+  "budget_ceiling": 924.84,
+  "fair_total": 788.52,
+  "est_hours": 26.3,
+  "domain": "data_analyst"
+ },
+ "j-da-0488": {
+  "must_have": [
+   "Google Analytics",
+   "BigQuery"
+  ],
+  "budget_ceiling": 2343.33,
+  "fair_total": 2439.1,
+  "est_hours": 81.3,
+  "domain": "data_analyst"
+ },
+ "j-da-0489": {
+  "must_have": [
+   "Power Query",
+   "Looker"
+  ],
+  "budget_ceiling": 42.04,
+  "fair_total": 951.06,
+  "est_hours": 31.7,
+  "domain": "data_analyst"
+ },
+ "j-da-0490": {
+  "must_have": [
+   "Python",
+   "A/B testing"
+  ],
+  "budget_ceiling": 1615.52,
+  "fair_total": 1275.83,
+  "est_hours": 42.5,
+  "domain": "data_analyst"
+ },
+ "j-da-0491": {
+  "must_have": [
+   "A/B testing",
+   "statistics"
+  ],
+  "budget_ceiling": 1217.19,
+  "fair_total": 825.46,
+  "est_hours": 27.5,
+  "domain": "data_analyst"
+ },
+ "j-da-0492": {
+  "must_have": [
+   "dbt",
+   "BigQuery"
+  ],
+  "budget_ceiling": 40.66,
+  "fair_total": 1223.72,
+  "est_hours": 40.8,
+  "domain": "data_analyst"
+ },
+ "j-da-0493": {
+  "must_have": [
+   "statistics",
+   "R"
+  ],
+  "budget_ceiling": 33.09,
+  "fair_total": 868.48,
+  "est_hours": 28.9,
+  "domain": "data_analyst"
+ },
+ "j-da-0494": {
+  "must_have": [
+   "cohort analysis",
+   "SQL"
+  ],
+  "budget_ceiling": 1444.15,
+  "fair_total": 1140.83,
+  "est_hours": 38.0,
+  "domain": "data_analyst"
+ },
+ "j-da-0495": {
+  "must_have": [
+   "Python",
+   "SQL"
+  ],
+  "budget_ceiling": 49.05,
+  "fair_total": 1029.4,
+  "est_hours": 34.3,
+  "domain": "data_analyst"
+ },
+ "j-da-0496": {
+  "must_have": [
+   "R",
+   "statistics"
+  ],
+  "budget_ceiling": 1646.11,
+  "fair_total": 944.48,
+  "est_hours": 31.5,
+  "domain": "data_analyst"
+ },
+ "j-da-0497": {
+  "must_have": [
+   "dbt",
+   "Snowflake"
+  ],
+  "budget_ceiling": 1781.21,
+  "fair_total": 1461.75,
+  "est_hours": 48.7,
+  "domain": "data_analyst"
+ },
+ "j-da-0498": {
+  "must_have": [
+   "BigQuery",
+   "dbt"
+  ],
+  "budget_ceiling": 1986.72,
+  "fair_total": 1544.79,
+  "est_hours": 51.5,
+  "domain": "data_analyst"
+ },
+ "j-da-0499": {
+  "must_have": [
+   "R",
+   "statistics"
+  ],
+  "budget_ceiling": 893.79,
+  "fair_total": 766.65,
+  "est_hours": 25.6,
+  "domain": "data_analyst"
+ },
+ "j-da-0500": {
+  "must_have": [
+   "Google Analytics",
+   "statistics"
+  ],
+  "budget_ceiling": 1665.15,
+  "fair_total": 1239.74,
+  "est_hours": 41.3,
+  "domain": "data_analyst"
+ },
+ "j-da-0501": {
+  "must_have": [
+   "statistics",
+   "Python"
+  ],
+  "budget_ceiling": 43.64,
+  "fair_total": 1139.55,
+  "est_hours": 38.0,
+  "domain": "data_analyst"
+ },
+ "j-da-0502": {
+  "must_have": [
+   "PostgreSQL",
+   "SQL"
+  ],
+  "budget_ceiling": 1268.8,
+  "fair_total": 1043.01,
+  "est_hours": 34.8,
+  "domain": "data_analyst"
+ },
+ "j-da-0503": {
+  "must_have": [
+   "Snowflake",
+   "dashboards"
+  ],
+  "budget_ceiling": 40.46,
+  "fair_total": 1019.23,
+  "est_hours": 34.0,
+  "domain": "data_analyst"
+ },
+ "j-da-0504": {
+  "must_have": [
+   "Looker Studio",
+   "Google Analytics"
+  ],
+  "budget_ceiling": 1128.3,
+  "fair_total": 872.85,
+  "est_hours": 29.1,
+  "domain": "data_analyst"
+ },
+ "j-da-0505": {
+  "must_have": [
+   "VBA",
+   "Excel"
+  ],
+  "budget_ceiling": 795.31,
+  "fair_total": 600.75,
+  "est_hours": 20.0,
+  "domain": "data_analyst"
+ },
+ "j-da-0506": {
+  "must_have": [
+   "Excel",
+   "pandas"
+  ],
+  "budget_ceiling": 1057.72,
+  "fair_total": 1007.34,
+  "est_hours": 33.6,
+  "domain": "data_analyst"
+ },
+ "j-da-0507": {
+  "must_have": [
+   "Google Analytics",
+   "Looker Studio"
+  ],
+  "budget_ceiling": 40.57,
+  "fair_total": 850.51,
+  "est_hours": 28.4,
+  "domain": "data_analyst"
+ },
+ "j-da-0508": {
+  "must_have": [
+   "dbt",
+   "BigQuery"
+  ],
+  "budget_ceiling": 2322.93,
+  "fair_total": 1498.88,
+  "est_hours": 50.0,
+  "domain": "data_analyst"
+ },
+ "j-da-0509": {
+  "must_have": [
+   "dashboards",
+   "SQL"
+  ],
+  "budget_ceiling": 1304.38,
+  "fair_total": 967.18,
+  "est_hours": 32.2,
+  "domain": "data_analyst"
+ },
+ "j-da-0510": {
+  "must_have": [
+   "Python",
+   "Metabase"
+  ],
+  "budget_ceiling": 1421.01,
+  "fair_total": 1053.02,
+  "est_hours": 35.1,
+  "domain": "data_analyst"
+ },
+ "j-da-0511": {
+  "must_have": [
+   "dashboards",
+   "Tableau"
+  ],
+  "budget_ceiling": 1315.44,
+  "fair_total": 977.31,
+  "est_hours": 32.6,
+  "domain": "data_analyst"
+ },
+ "j-da-0512": {
+  "must_have": [
+   "R",
+   "statistics"
+  ],
+  "budget_ceiling": 1554.86,
+  "fair_total": 947.33,
+  "est_hours": 31.6,
+  "domain": "data_analyst"
+ },
+ "j-da-0513": {
+  "must_have": [
+   "Python",
+   "SQL"
+  ],
+  "budget_ceiling": 1040.81,
+  "fair_total": 858.01,
+  "est_hours": 28.6,
+  "domain": "data_analyst"
+ },
+ "j-da-0514": {
+  "must_have": [
+   "PostgreSQL",
+   "dashboards"
+  ],
+  "budget_ceiling": 1337.22,
+  "fair_total": 1101.35,
+  "est_hours": 36.7,
+  "domain": "data_analyst"
+ },
+ "j-da-0515": {
+  "must_have": [
+   "Tableau",
+   "statistics"
+  ],
+  "budget_ceiling": 2075.35,
+  "fair_total": 1226.93,
+  "est_hours": 40.9,
+  "domain": "data_analyst"
+ },
+ "j-da-0516": {
+  "must_have": [
+   "BigQuery",
+   "dbt"
+  ],
+  "budget_ceiling": 1532.55,
+  "fair_total": 1333.78,
+  "est_hours": 44.5,
+  "domain": "data_analyst"
+ },
+ "j-da-0517": {
+  "must_have": [
+   "Airflow",
+   "Redshift"
+  ],
+  "budget_ceiling": 43.37,
+  "fair_total": 1432.87,
+  "est_hours": 47.8,
+  "domain": "data_analyst"
+ },
+ "j-da-0518": {
+  "must_have": [
+   "Google Analytics",
+   "Looker Studio"
+  ],
+  "budget_ceiling": 1385.2,
+  "fair_total": 994.96,
+  "est_hours": 33.2,
+  "domain": "data_analyst"
+ },
+ "j-da-0519": {
+  "must_have": [
+   "cohort analysis",
+   "SQL"
+  ],
+  "budget_ceiling": 1020.97,
+  "fair_total": 814.59,
+  "est_hours": 27.2,
+  "domain": "data_analyst"
+ },
+ "j-da-0520": {
+  "must_have": [
+   "Looker",
+   "BigQuery"
+  ],
+  "budget_ceiling": 1229.1,
+  "fair_total": 767.91,
+  "est_hours": 25.6,
+  "domain": "data_analyst"
+ },
+ "j-da-0521": {
+  "must_have": [
+   "pandas",
+   "SQL"
+  ],
+  "budget_ceiling": 1246.76,
+  "fair_total": 946.01,
+  "est_hours": 31.5,
+  "domain": "data_analyst"
+ },
+ "j-da-0522": {
+  "must_have": [
+   "forecasting",
+   "pandas"
+  ],
+  "budget_ceiling": 41.46,
+  "fair_total": 1138.5,
+  "est_hours": 37.9,
+  "domain": "data_analyst"
+ },
+ "j-da-0523": {
+  "must_have": [
+   "Excel",
+   "SQL"
+  ],
+  "budget_ceiling": 1541.79,
+  "fair_total": 1018.96,
+  "est_hours": 34.0,
+  "domain": "data_analyst"
+ },
+ "j-da-0524": {
+  "must_have": [
+   "dbt",
+   "SQL"
+  ],
+  "budget_ceiling": 2500.09,
+  "fair_total": 1846.06,
+  "est_hours": 61.5,
+  "domain": "data_analyst"
+ },
+ "j-da-0525": {
+  "must_have": [
+   "SQL",
+   "dbt"
+  ],
+  "budget_ceiling": 2676.81,
+  "fair_total": 1708.21,
+  "est_hours": 56.9,
+  "domain": "data_analyst"
+ },
+ "j-da-0526": {
+  "must_have": [
+   "Excel",
+   "Power BI"
+  ],
+  "budget_ceiling": 1286.2,
+  "fair_total": 1005.83,
+  "est_hours": 33.5,
+  "domain": "data_analyst"
+ },
+ "j-da-0527": {
+  "must_have": [
+   "Excel",
+   "forecasting"
+  ],
+  "budget_ceiling": 1623.96,
+  "fair_total": 1283.86,
+  "est_hours": 42.8,
+  "domain": "data_analyst"
+ },
+ "j-da-0528": {
+  "must_have": [
+   "R",
+   "Python"
+  ],
+  "budget_ceiling": 45.7,
+  "fair_total": 878.82,
+  "est_hours": 29.3,
+  "domain": "data_analyst"
+ },
+ "j-da-0529": {
+  "must_have": [
+   "Python",
+   "SQL"
+  ],
+  "budget_ceiling": 49.99,
+  "fair_total": 902.6,
+  "est_hours": 30.1,
+  "domain": "data_analyst"
+ },
+ "j-da-0530": {
+  "must_have": [
+   "Excel",
+   "Power BI"
+  ],
+  "budget_ceiling": 1181.38,
+  "fair_total": 978.29,
+  "est_hours": 32.6,
+  "domain": "data_analyst"
+ },
+ "j-da-0531": {
+  "must_have": [
+   "SQL",
+   "Metabase"
+  ],
+  "budget_ceiling": 1337.27,
+  "fair_total": 904.88,
+  "est_hours": 30.2,
+  "domain": "data_analyst"
+ },
+ "j-da-0532": {
+  "must_have": [
+   "Metabase",
+   "PostgreSQL"
+  ],
+  "budget_ceiling": 1563.89,
+  "fair_total": 1231.76,
+  "est_hours": 41.1,
+  "domain": "data_analyst"
+ },
+ "j-da-0533": {
+  "must_have": [
+   "SQL",
+   "Python"
+  ],
+  "budget_ceiling": 1005.8,
+  "fair_total": 835.56,
+  "est_hours": 27.9,
+  "domain": "data_analyst"
+ },
+ "j-da-0534": {
+  "must_have": [
+   "SQL",
+   "Snowflake"
+  ],
+  "budget_ceiling": 1917.29,
+  "fair_total": 1479.72,
+  "est_hours": 49.3,
+  "domain": "data_analyst"
+ },
+ "j-da-0535": {
+  "must_have": [
+   "dbt",
+   "Snowflake"
+  ],
+  "budget_ceiling": 38.44,
+  "fair_total": 1529.51,
+  "est_hours": 51.0,
+  "domain": "data_analyst"
+ },
+ "j-da-0536": {
+  "must_have": [
+   "Python",
+   "R"
+  ],
+  "budget_ceiling": 48.44,
+  "fair_total": 1028.84,
+  "est_hours": 34.3,
+  "domain": "data_analyst"
+ },
+ "j-da-0537": {
+  "must_have": [
+   "Snowflake",
+   "Tableau"
+  ],
+  "budget_ceiling": 46.02,
+  "fair_total": 831.62,
+  "est_hours": 27.7,
+  "domain": "data_analyst"
+ },
+ "j-da-0538": {
+  "must_have": [
+   "Excel",
+   "Power BI"
+  ],
+  "budget_ceiling": 1702.71,
+  "fair_total": 1183.82,
+  "est_hours": 39.5,
+  "domain": "data_analyst"
+ },
+ "j-da-0539": {
+  "must_have": [
+   "SQL",
+   "Metabase"
+  ],
+  "budget_ceiling": 1445.98,
+  "fair_total": 1125.51,
+  "est_hours": 37.5,
+  "domain": "data_analyst"
+ },
+ "j-da-0540": {
+  "must_have": [
+   "statistics",
+   "A/B testing"
+  ],
+  "budget_ceiling": 1383.19,
+  "fair_total": 956.23,
+  "est_hours": 31.9,
+  "domain": "data_analyst"
+ },
+ "j-da-0541": {
+  "must_have": [
+   "SQL",
+   "Looker"
+  ],
+  "budget_ceiling": 2073.46,
+  "fair_total": 1319.9,
+  "est_hours": 44.0,
+  "domain": "data_analyst"
+ },
+ "j-da-0542": {
+  "must_have": [
+   "Snowflake",
+   "dbt"
+  ],
+  "budget_ceiling": 1823.38,
+  "fair_total": 1403.82,
+  "est_hours": 46.8,
+  "domain": "data_analyst"
+ },
+ "j-da-0543": {
+  "must_have": [
+   "dbt",
+   "SQL"
+  ],
+  "budget_ceiling": 1660.84,
+  "fair_total": 1198.13,
+  "est_hours": 39.9,
+  "domain": "data_analyst"
+ },
+ "j-da-0544": {
+  "must_have": [
+   "Snowflake",
+   "SQL"
+  ],
+  "budget_ceiling": 1301.1,
+  "fair_total": 800.33,
+  "est_hours": 26.7,
+  "domain": "data_analyst"
+ },
+ "j-da-0545": {
+  "must_have": [
+   "forecasting",
+   "pandas"
+  ],
+  "budget_ceiling": 1576.47,
+  "fair_total": 1078.14,
+  "est_hours": 35.9,
+  "domain": "data_analyst"
+ },
+ "j-da-0546": {
+  "must_have": [
+   "statistics",
+   "Python"
+  ],
+  "budget_ceiling": 1507.48,
+  "fair_total": 969.2,
+  "est_hours": 32.3,
+  "domain": "data_analyst"
+ },
+ "j-da-0547": {
+  "must_have": [
+   "Excel",
+   "pandas"
+  ],
+  "budget_ceiling": 1270.4,
+  "fair_total": 799.41,
+  "est_hours": 26.6,
+  "domain": "data_analyst"
+ },
+ "j-da-0548": {
+  "must_have": [
+   "BigQuery",
+   "SQL"
+  ],
+  "budget_ceiling": 930.59,
+  "fair_total": 827.6,
+  "est_hours": 27.6,
+  "domain": "data_analyst"
+ },
+ "j-da-0549": {
+  "must_have": [
+   "BigQuery",
+   "dbt"
+  ],
+  "budget_ceiling": 1958.86,
+  "fair_total": 1287.05,
+  "est_hours": 42.9,
+  "domain": "data_analyst"
+ },
+ "j-da-0550": {
+  "must_have": [
+   "A/B testing",
+   "statistics"
+  ],
+  "budget_ceiling": 1099.6,
+  "fair_total": 947.6,
+  "est_hours": 31.6,
+  "domain": "data_analyst"
+ },
+ "j-da-0551": {
+  "must_have": [
+   "dashboards"
+  ],
+  "budget_ceiling": 41.4,
+  "fair_total": 1196.8,
+  "est_hours": 39.9,
+  "domain": "data_analyst"
+ },
+ "j-da-0552": {
+  "must_have": [
+   "Python"
+  ],
+  "budget_ceiling": 1569.26,
+  "fair_total": 1185.04,
+  "est_hours": 39.5,
+  "domain": "data_analyst"
+ },
+ "j-da-0553": {
+  "must_have": [
+   "pandas"
+  ],
+  "budget_ceiling": 47.28,
+  "fair_total": 1066.39,
+  "est_hours": 35.5,
+  "domain": "data_analyst"
+ },
+ "j-da-0554": {
+  "must_have": [
+   "Excel"
+  ],
+  "budget_ceiling": 1086.71,
+  "fair_total": 936.35,
+  "est_hours": 31.2,
+  "domain": "data_analyst"
+ },
+ "j-da-0555": {
+  "must_have": [
+   "pandas"
+  ],
+  "budget_ceiling": 1066.91,
+  "fair_total": 1017.56,
+  "est_hours": 33.9,
+  "domain": "data_analyst"
+ },
+ "j-da-0556": {
+  "must_have": [
+   "pandas"
+  ],
+  "budget_ceiling": 1643.08,
+  "fair_total": 1183.62,
+  "est_hours": 39.5,
+  "domain": "data_analyst"
+ },
+ "j-da-0557": {
+  "must_have": [
+   "pandas"
+  ],
+  "budget_ceiling": 36.47,
+  "fair_total": 1093.32,
+  "est_hours": 36.4,
+  "domain": "data_analyst"
+ },
+ "j-da-0558": {
+  "must_have": [
+   "pandas"
+  ],
+  "budget_ceiling": 2709.21,
+  "fair_total": 1644.46,
+  "est_hours": 54.8,
+  "domain": "data_analyst"
+ },
+ "j-da-0559": {
+  "must_have": [
+   "Python"
+  ],
+  "budget_ceiling": 1481.25,
+  "fair_total": 989.61,
+  "est_hours": 33.0,
+  "domain": "data_analyst"
+ },
+ "j-da-0560": {
+  "must_have": [
+   "dashboards"
+  ],
+  "budget_ceiling": 1073.56,
+  "fair_total": 937.94,
+  "est_hours": 31.3,
+  "domain": "data_analyst"
+ },
+ "j-da-0561": {
+  "must_have": [
+   "Python"
+  ],
+  "budget_ceiling": 38.78,
+  "fair_total": 649.28,
+  "est_hours": 21.6,
+  "domain": "data_analyst"
+ },
+ "j-da-0562": {
+  "must_have": [
+   "SQL"
+  ],
+  "budget_ceiling": 37.94,
+  "fair_total": 1095.82,
+  "est_hours": 36.5,
+  "domain": "data_analyst"
+ },
+ "j-da-0563": {
+  "must_have": [
+   "SQL"
+  ],
+  "budget_ceiling": 1908.41,
+  "fair_total": 1101.12,
+  "est_hours": 36.7,
+  "domain": "data_analyst"
+ },
+ "j-da-0564": {
+  "must_have": [
+   "pandas"
+  ],
+  "budget_ceiling": 1516.24,
+  "fair_total": 1168.72,
+  "est_hours": 39.0,
+  "domain": "data_analyst"
+ },
+ "j-da-0565": {
+  "must_have": [
+   "Excel"
+  ],
+  "budget_ceiling": 37.68,
+  "fair_total": 1125.3,
+  "est_hours": 37.5,
+  "domain": "data_analyst"
+ },
+ "j-da-0566": {
+  "must_have": [
+   "dashboards"
+  ],
+  "budget_ceiling": 32.78,
+  "fair_total": 1440.81,
+  "est_hours": 48.0,
+  "domain": "data_analyst"
+ },
+ "j-da-0567": {
+  "must_have": [
+   "Python"
+  ],
+  "budget_ceiling": 1299.36,
+  "fair_total": 949.9,
+  "est_hours": 31.7,
+  "domain": "data_analyst"
+ },
+ "j-da-0568": {
+  "must_have": [
+   "SQL"
+  ],
+  "budget_ceiling": 36.86,
+  "fair_total": 1710.38,
+  "est_hours": 57.0,
+  "domain": "data_analyst"
+ },
+ "j-da-0569": {
+  "must_have": [
+   "Excel"
+  ],
+  "budget_ceiling": 1688.53,
+  "fair_total": 1084.02,
+  "est_hours": 36.1,
+  "domain": "data_analyst"
+ },
+ "j-da-0570": {
+  "must_have": [
+   "Python"
+  ],
+  "budget_ceiling": 48.37,
+  "fair_total": 1053.64,
+  "est_hours": 35.1,
+  "domain": "data_analyst"
+ },
+ "j-da-0571": {
+  "must_have": [
+   "Python",
+   "Redshift"
+  ],
+  "budget_ceiling": 40.81,
+  "fair_total": 1345.47,
+  "est_hours": 44.8,
+  "domain": "data_analyst"
+ },
+ "j-da-0572": {
+  "must_have": [
+   "SQL",
+   "Metabase"
+  ],
+  "budget_ceiling": 39.21,
+  "fair_total": 740.45,
+  "est_hours": 24.7,
+  "domain": "data_analyst"
+ },
+ "j-da-0573": {
+  "must_have": [
+   "pandas",
+   "Python"
+  ],
+  "budget_ceiling": 52.56,
+  "fair_total": 796.89,
+  "est_hours": 26.6,
+  "domain": "data_analyst"
+ },
+ "j-da-0574": {
+  "must_have": [
+   "SQL",
+   "dashboards"
+  ],
+  "budget_ceiling": 40.59,
+  "fair_total": 1026.23,
+  "est_hours": 34.2,
+  "domain": "data_analyst"
+ },
+ "j-da-0575": {
+  "must_have": [
+   "SQL",
+   "Power BI"
+  ],
+  "budget_ceiling": 38.91,
+  "fair_total": 789.63,
+  "est_hours": 26.3,
+  "domain": "data_analyst"
+ },
+ "j-da-0576": {
+  "must_have": [
+   "SQL",
+   "statistics"
+  ],
+  "budget_ceiling": 58.81,
+  "fair_total": 963.02,
+  "est_hours": 32.1,
+  "domain": "data_analyst"
+ },
+ "j-da-0577": {
+  "must_have": [
+   "Python",
+   "Redshift"
+  ],
+  "budget_ceiling": 21.43,
+  "fair_total": 1364.69,
+  "est_hours": 45.5,
+  "domain": "data_analyst"
+ },
+ "j-da-0578": {
+  "must_have": [
+   "statistics",
+   "A/B testing"
+  ],
+  "budget_ceiling": 47.01,
+  "fair_total": 746.41,
+  "est_hours": 24.9,
+  "domain": "data_analyst"
+ },
+ "j-da-0579": {
+  "must_have": [
+   "SQL",
+   "Python"
+  ],
+  "budget_ceiling": 24.71,
+  "fair_total": 767.08,
+  "est_hours": 25.6,
+  "domain": "data_analyst"
+ },
+ "j-da-0580": {
+  "must_have": [
+   "dashboards",
+   "SQL"
+  ],
+  "budget_ceiling": 24.22,
+  "fair_total": 950.52,
+  "est_hours": 31.7,
+  "domain": "data_analyst"
+ },
+ "j-da-0581": {
+  "must_have": [
+   "Excel",
+   "Python"
+  ],
+  "budget_ceiling": 749.69,
+  "fair_total": 599.85,
+  "est_hours": 20.0,
+  "domain": "data_analyst"
+ },
+ "j-da-0582": {
+  "must_have": [
+   "Looker Studio",
+   "Google Analytics"
+  ],
+  "budget_ceiling": 1108.5,
+  "fair_total": 957.32,
+  "est_hours": 31.9,
+  "domain": "data_analyst"
+ },
+ "j-da-0583": {
+  "must_have": [
+   "statistics",
+   "SQL"
+  ],
+  "budget_ceiling": 1217.21,
+  "fair_total": 897.02,
+  "est_hours": 29.9,
+  "domain": "data_analyst"
+ },
+ "j-da-0584": {
+  "must_have": [
+   "Google Sheets",
+   "Google Analytics"
+  ],
+  "budget_ceiling": 945.8,
+  "fair_total": 885.32,
+  "est_hours": 29.5,
+  "domain": "data_analyst"
+ },
+ "j-da-0585": {
+  "must_have": [
+   "R",
+   "A/B testing"
+  ],
+  "budget_ceiling": 1188.47,
+  "fair_total": 915.4,
+  "est_hours": 30.5,
+  "domain": "data_analyst"
+ },
+ "j-da-0586": {
+  "must_have": [
+   "Looker",
+   "BigQuery"
+  ],
+  "budget_ceiling": 1203.25,
+  "fair_total": 905.42,
+  "est_hours": 30.2,
+  "domain": "data_analyst"
+ },
+ "j-da-0587": {
+  "must_have": [
+   "SQL",
+   "statistics"
+  ],
+  "budget_ceiling": 835.44,
+  "fair_total": 810.41,
+  "est_hours": 27.0,
+  "domain": "data_analyst"
+ },
+ "j-da-0588": {
+  "must_have": [
+   "pandas",
+   "data cleaning"
+  ],
+  "budget_ceiling": 1003.22,
+  "fair_total": 929.39,
+  "est_hours": 31.0,
+  "domain": "data_analyst"
+ },
+ "j-da-0589": {
+  "must_have": [
+   "SQL",
+   "dbt"
+  ],
+  "budget_ceiling": 1474.0,
+  "fair_total": 1497.83,
+  "est_hours": 49.9,
+  "domain": "data_analyst"
+ },
+ "j-da-0590": {
+  "must_have": [
+   "A/B testing",
+   "Python"
+  ],
+  "budget_ceiling": 1208.51,
+  "fair_total": 730.79,
+  "est_hours": 24.4,
+  "domain": "data_analyst"
+ },
+ "j-da-0591": {
+  "must_have": [
+   "BigQuery",
+   "SQL"
+  ],
+  "budget_ceiling": 1148.51,
+  "fair_total": 752.13,
+  "est_hours": 25.1,
+  "domain": "data_analyst"
+ },
+ "j-da-0592": {
+  "must_have": [
+   "forecasting",
+   "Excel"
+  ],
+  "budget_ceiling": 892.59,
+  "fair_total": 857.67,
+  "est_hours": 28.6,
+  "domain": "data_analyst"
+ },
+ "j-da-0593": {
+  "must_have": [
+   "forecasting",
+   "Python"
+  ],
+  "budget_ceiling": 2161.94,
+  "fair_total": 1335.69,
+  "est_hours": 44.5,
+  "domain": "data_analyst"
+ },
+ "j-da-0594": {
+  "must_have": [
+   "PostgreSQL",
+   "ETL"
+  ],
+  "budget_ceiling": 39.27,
+  "fair_total": 1696.07,
+  "est_hours": 56.5,
+  "domain": "data_analyst"
+ },
+ "j-da-0595": {
+  "must_have": [
+   "R",
+   "A/B testing"
+  ],
+  "budget_ceiling": 39.25,
+  "fair_total": 906.71,
+  "est_hours": 30.2,
+  "domain": "data_analyst"
+ },
+ "j-da-0596": {
+  "must_have": [
+   "Snowflake",
+   "SQL"
+  ],
+  "budget_ceiling": 1530.87,
+  "fair_total": 1249.4,
+  "est_hours": 41.6,
+  "domain": "data_analyst"
+ },
+ "j-da-0597": {
+  "must_have": [
+   "Looker Studio",
+   "Google Analytics"
+  ],
+  "budget_ceiling": 1295.76,
+  "fair_total": 927.88,
+  "est_hours": 30.9,
+  "domain": "data_analyst"
+ },
+ "j-da-0598": {
+  "must_have": [
+   "A/B testing",
+   "R"
+  ],
+  "budget_ceiling": 1072.69,
+  "fair_total": 900.28,
+  "est_hours": 30.0,
+  "domain": "data_analyst"
+ },
+ "j-da-0599": {
+  "must_have": [
+   "Python",
+   "statistics"
+  ],
+  "budget_ceiling": 983.44,
+  "fair_total": 726.01,
+  "est_hours": 24.2,
+  "domain": "data_analyst"
+ },
+ "j-da-0600": {
+  "must_have": [
+   "SQL",
+   "cohort analysis"
+  ],
+  "budget_ceiling": 1193.24,
+  "fair_total": 728.7,
+  "est_hours": 24.3,
+  "domain": "data_analyst"
+ },
+ "l-0000": {
+  "must_have": [
+   "A/B testing",
+   "R"
+  ],
+  "budget_ceiling": 2088.03,
+  "fair_total": 1425.89,
+  "est_hours": 47.5,
+  "domain": "data_analyst"
+ },
+ "l-0001": {
+  "must_have": [
+   "XGBoost",
+   "Python"
+  ],
+  "budget_ceiling": 79.0,
+  "fair_total": 3247.63,
+  "est_hours": 67.7,
+  "domain": "ai_ml"
+ },
+ "l-0002": {
+  "must_have": [
+   "FastAPI",
+   "RAG"
+  ],
+  "budget_ceiling": 90.98,
+  "fair_total": 2459.0,
+  "est_hours": 51.2,
+  "domain": "ai_ml"
+ },
+ "l-0003": {
+  "must_have": [
+   "Supabase",
+   "TypeScript"
+  ],
+  "budget_ceiling": 3959.25,
+  "fair_total": 3173.61,
+  "est_hours": 83.5,
+  "domain": "fullstack"
+ },
+ "l-0004": {
+  "must_have": [
+   "Google Sheets",
+   "Google Analytics"
+  ],
+  "budget_ceiling": 40.04,
+  "fair_total": 1010.2,
+  "est_hours": 33.7,
+  "domain": "data_analyst"
+ },
+ "l-0005": {
+  "must_have": [
+   "dbt",
+   "Snowflake"
+  ],
+  "budget_ceiling": 1789.64,
+  "fair_total": 1433.45,
+  "est_hours": 47.8,
+  "domain": "data_analyst"
+ },
+ "l-0006": {
+  "must_have": [
+   "XGBoost",
+   "Python"
+  ],
+  "budget_ceiling": 62.3,
+  "fair_total": 2998.34,
+  "est_hours": 62.5,
+  "domain": "ai_ml"
+ },
+ "l-0007": {
+  "must_have": [
+   "Express",
+   "PostgreSQL"
+  ],
+  "budget_ceiling": 2824.79,
+  "fair_total": 2337.36,
+  "est_hours": 61.5,
+  "domain": "fullstack"
+ },
+ "l-0008": {
+  "must_have": [
+   "JavaScript"
+  ],
+  "budget_ceiling": 4902.52,
+  "fair_total": 3607.52,
+  "est_hours": 94.9,
+  "domain": "fullstack"
+ },
+ "l-0009": {
+  "must_have": [
+   "Stripe",
+   "Firebase"
+  ],
+  "budget_ceiling": 51.78,
+  "fair_total": 3576.08,
+  "est_hours": 94.1,
+  "domain": "fullstack"
+ },
+ "l-0010": {
+  "must_have": [
+   "Metabase",
+   "PostgreSQL"
+  ],
+  "budget_ceiling": 1260.27,
+  "fair_total": 772.94,
+  "est_hours": 25.8,
+  "domain": "data_analyst"
+ },
+ "l-0011": {
+  "must_have": [
+   "PostgreSQL",
+   "Django"
+  ],
+  "budget_ceiling": 50.23,
+  "fair_total": 4179.22,
+  "est_hours": 110.0,
+  "domain": "fullstack"
+ },
+ "l-0012": {
+  "must_have": [
+   "LangGraph",
+   "LangChain"
+  ],
+  "budget_ceiling": 4337.94,
+  "fair_total": 2867.59,
+  "est_hours": 59.7,
+  "domain": "ai_ml"
+ },
+ "l-0013": {
+  "must_have": [
+   "Node.js",
+   "Express"
+  ],
+  "budget_ceiling": 4517.04,
+  "fair_total": 2728.57,
+  "est_hours": 71.8,
+  "domain": "fullstack"
+ },
+ "l-0014": {
+  "must_have": [
+   "React",
+   "TypeScript"
+  ],
+  "budget_ceiling": 44.2,
+  "fair_total": 1673.11,
+  "est_hours": 44.0,
+  "domain": "fullstack"
+ },
+ "l-0015": {
+  "must_have": [
+   "SQL",
+   "BigQuery"
+  ],
+  "budget_ceiling": 2330.64,
+  "fair_total": 1442.09,
+  "est_hours": 48.1,
+  "domain": "data_analyst"
+ },
+ "l-0016": {
+  "must_have": [
+   "OAuth",
+   "Docker"
+  ],
+  "budget_ceiling": 3094.43,
+  "fair_total": 2762.12,
+  "est_hours": 72.7,
+  "domain": "fullstack"
+ },
+ "l-0017": {
+  "must_have": [
+   "Snowflake",
+   "SQL"
+  ],
+  "budget_ceiling": 2381.23,
+  "fair_total": 1453.53,
+  "est_hours": 48.5,
+  "domain": "data_analyst"
+ },
+ "l-0018": {
+  "must_have": [
+   "Supabase",
+   "TypeScript"
+  ],
+  "budget_ceiling": 3959.25,
+  "fair_total": 3173.61,
+  "est_hours": 83.5,
+  "domain": "fullstack"
+ },
+ "l-0019": {
+  "must_have": [
+   "Supabase",
+   "TypeScript"
+  ],
+  "budget_ceiling": 3959.25,
+  "fair_total": 3173.61,
+  "est_hours": 83.5,
+  "domain": "fullstack"
+ },
+ "l-0020": {
+  "must_have": [
+   "Supabase",
+   "TypeScript"
+  ],
+  "budget_ceiling": 5787.14,
+  "fair_total": 4024.42,
+  "est_hours": 105.9,
+  "domain": "fullstack"
+ },
+ "l-0021": {
+  "must_have": [
+   "Supabase",
+   "Next.js"
+  ],
+  "budget_ceiling": 54.24,
+  "fair_total": 3029.73,
+  "est_hours": 79.7,
+  "domain": "fullstack"
+ },
+ "l-0022": {
+  "must_have": [
+   "Google Sheets",
+   "Looker Studio"
+  ],
+  "budget_ceiling": 1366.82,
+  "fair_total": 932.55,
+  "est_hours": 31.1,
+  "domain": "data_analyst"
+ },
+ "l-0023": {
+  "must_have": [
+   "PostgreSQL",
+   "Vercel"
+  ],
+  "budget_ceiling": 5355.37,
+  "fair_total": 4146.12,
+  "est_hours": 109.1,
+  "domain": "fullstack"
+ },
+ "l-0024": {
+  "must_have": [
+   "Supabase",
+   "Tailwind CSS"
+  ],
+  "budget_ceiling": 57.01,
+  "fair_total": 2468.21,
+  "est_hours": 65.0,
+  "domain": "fullstack"
+ },
+ "l-0025": {
+  "must_have": [
+   "Firebase",
+   "TypeScript"
+  ],
+  "budget_ceiling": 47.39,
+  "fair_total": 3515.76,
+  "est_hours": 92.5,
+  "domain": "fullstack"
+ },
+ "l-0026": {
+  "must_have": [
+   "Snowflake",
+   "Tableau"
+  ],
+  "budget_ceiling": 1850.28,
+  "fair_total": 1068.58,
+  "est_hours": 35.6,
+  "domain": "data_analyst"
+ },
+ "l-0027": {
+  "must_have": [
+   "pandas"
+  ],
+  "budget_ceiling": 63.78,
+  "fair_total": 3628.96,
+  "est_hours": 75.6,
+  "domain": "ai_ml"
+ },
+ "l-0028": {
+  "must_have": [
+   "pandas",
+   "scikit-learn"
+  ],
+  "budget_ceiling": 63.1,
+  "fair_total": 3009.12,
+  "est_hours": 62.7,
+  "domain": "ai_ml"
+ },
+ "l-0029": {
+  "must_have": [
+   "Next.js",
+   "React"
+  ],
+  "budget_ceiling": 45.05,
+  "fair_total": 1768.18,
+  "est_hours": 46.5,
+  "domain": "fullstack"
+ },
+ "l-0030": {
+  "must_have": [
+   "Stripe",
+   "Tailwind CSS"
+  ],
+  "budget_ceiling": 2755.1,
+  "fair_total": 2604.24,
+  "est_hours": 68.5,
+  "domain": "fullstack"
+ },
+ "l-0031": {
+  "must_have": [
+   "OpenCV",
+   "FastAPI"
+  ],
+  "budget_ceiling": 4782.35,
+  "fair_total": 3003.22,
+  "est_hours": 62.6,
+  "domain": "ai_ml"
+ },
+ "l-0032": {
+  "must_have": [
+   "MLflow",
+   "pandas"
+  ],
+  "budget_ceiling": 3933.07,
+  "fair_total": 2953.76,
+  "est_hours": 61.5,
+  "domain": "ai_ml"
+ },
+ "l-0033": {
+  "must_have": [
+   "Python",
+   "FastAPI"
+  ],
+  "budget_ceiling": 4011.6,
+  "fair_total": 2477.8,
+  "est_hours": 51.6,
+  "domain": "ai_ml"
+ },
+ "l-0034": {
+  "must_have": [
+   "Python",
+   "OpenAI API"
+  ],
+  "budget_ceiling": 4033.23,
+  "fair_total": 3012.87,
+  "est_hours": 62.8,
+  "domain": "ai_ml"
+ },
+ "l-0035": {
+  "must_have": [
+   "FastAPI",
+   "Docker"
+  ],
+  "budget_ceiling": 4104.32,
+  "fair_total": 3430.62,
+  "est_hours": 71.5,
+  "domain": "ai_ml"
+ },
+ "l-0036": {
+  "must_have": [
+   "Celery",
+   "React"
+  ],
+  "budget_ceiling": 54.76,
+  "fair_total": 4050.71,
+  "est_hours": 106.6,
+  "domain": "fullstack"
+ },
+ "l-0037": {
+  "must_have": [
+   "embeddings",
+   "Docker"
+  ],
+  "budget_ceiling": 4640.24,
+  "fair_total": 3269.05,
+  "est_hours": 68.1,
+  "domain": "ai_ml"
+ },
+ "l-0038": {
+  "must_have": [
+   "Celery",
+   "AWS"
+  ],
+  "budget_ceiling": 4930.55,
+  "fair_total": 3322.38,
+  "est_hours": 87.4,
+  "domain": "fullstack"
+ },
+ "l-0039": {
+  "must_have": [
+   "OpenCV",
+   "Python"
+  ],
+  "budget_ceiling": 4212.6,
+  "fair_total": 3302.82,
+  "est_hours": 68.8,
+  "domain": "ai_ml"
+ },
+ "l-0040": {
+  "must_have": [
+   "Node.js",
+   "Express"
+  ],
+  "budget_ceiling": 4517.04,
+  "fair_total": 2728.57,
+  "est_hours": 71.8,
+  "domain": "fullstack"
+ },
+ "l-0041": {
+  "must_have": [
+   "pandas",
+   "scikit-learn"
+  ],
+  "budget_ceiling": 2603.83,
+  "fair_total": 2179.87,
+  "est_hours": 45.4,
+  "domain": "ai_ml"
+ },
+ "l-0042": {
+  "must_have": [
+   "Looker Studio",
+   "Google Analytics"
+  ],
+  "budget_ceiling": 1270.54,
+  "fair_total": 987.21,
+  "est_hours": 32.9,
+  "domain": "data_analyst"
+ },
+ "l-0043": {
+  "must_have": [
+   "AWS SageMaker",
+   "MLflow"
+  ],
+  "budget_ceiling": 71.57,
+  "fair_total": 2621.26,
+  "est_hours": 54.6,
+  "domain": "ai_ml"
+ },
+ "l-0044": {
+  "must_have": [
+   "Excel"
+  ],
+  "budget_ceiling": 805.92,
+  "fair_total": 640.68,
+  "est_hours": 21.4,
+  "domain": "data_analyst"
+ },
+ "l-0045": {
+  "must_have": [
+   "Supabase",
+   "PostgreSQL"
+  ],
+  "budget_ceiling": 5188.45,
+  "fair_total": 3143.69,
+  "est_hours": 82.7,
+  "domain": "fullstack"
+ },
+ "l-0046": {
+  "must_have": [
+   "Docker",
+   "Python"
+  ],
+  "budget_ceiling": 80.65,
+  "fair_total": 3229.07,
+  "est_hours": 67.3,
+  "domain": "ai_ml"
+ },
+ "l-0047": {
+  "must_have": [
+   "PyTorch",
+   "Python"
+  ],
+  "budget_ceiling": 61.34,
+  "fair_total": 2221.23,
+  "est_hours": 46.3,
+  "domain": "ai_ml"
+ },
+ "l-0048": {
+  "must_have": [
+   "SQL"
+  ],
+  "budget_ceiling": 1510.04,
+  "fair_total": 1197.98,
+  "est_hours": 39.9,
+  "domain": "data_analyst"
+ },
+ "l-0049": {
+  "must_have": [
+   "PostgreSQL",
+   "Airflow"
+  ],
+  "budget_ceiling": 65.46,
+  "fair_total": 2035.88,
+  "est_hours": 42.4,
+  "domain": "ai_ml"
+ },
+ "l-0050": {
+  "must_have": [
+   "pandas",
+   "scikit-learn"
+  ],
+  "budget_ceiling": 3895.11,
+  "fair_total": 3221.57,
+  "est_hours": 67.1,
+  "domain": "ai_ml"
+ },
+ "l-0051": {
+  "must_have": [
+   "pandas",
+   "scikit-learn"
+  ],
+  "budget_ceiling": 3576.17,
+  "fair_total": 2856.2,
+  "est_hours": 59.5,
+  "domain": "ai_ml"
+ },
+ "l-0052": {
+  "must_have": [
+   "pandas",
+   "PostgreSQL"
+  ],
+  "budget_ceiling": 4056.28,
+  "fair_total": 2845.62,
+  "est_hours": 59.3,
+  "domain": "ai_ml"
+ },
+ "l-0053": {
+  "must_have": [
+   "Celery",
+   "React"
+  ],
+  "budget_ceiling": 54.76,
+  "fair_total": 4050.71,
+  "est_hours": 106.6,
+  "domain": "fullstack"
+ },
+ "l-0054": {
+  "must_have": [
+   "Tailwind CSS",
+   "React"
+  ],
+  "budget_ceiling": 48.05,
+  "fair_total": 3746.59,
+  "est_hours": 98.6,
+  "domain": "fullstack"
+ },
+ "l-0055": {
+  "must_have": [
+   "Firebase",
+   "TypeScript"
+  ],
+  "budget_ceiling": 47.39,
+  "fair_total": 3515.76,
+  "est_hours": 92.5,
+  "domain": "fullstack"
+ },
+ "l-0056": {
+  "must_have": [
+   "pandas",
+   "Python"
+  ],
+  "budget_ceiling": 38.33,
+  "fair_total": 858.21,
+  "est_hours": 28.6,
+  "domain": "data_analyst"
+ },
+ "l-0057": {
+  "must_have": [
+   "FastAPI",
+   "Hugging Face Transformers"
+  ],
+  "budget_ceiling": 2172.89,
+  "fair_total": 2041.31,
+  "est_hours": 42.5,
+  "domain": "ai_ml"
+ },
+ "l-0058": {
+  "must_have": [
+   "Python",
+   "embeddings"
+  ],
+  "budget_ceiling": 98.14,
+  "fair_total": 3223.97,
+  "est_hours": 67.2,
+  "domain": "ai_ml"
+ },
+ "l-0059": {
+  "must_have": [
+   "Next.js",
+   "React"
+  ],
+  "budget_ceiling": 45.05,
+  "fair_total": 1768.18,
+  "est_hours": 46.5,
+  "domain": "fullstack"
+ },
+ "l-0060": {
+  "must_have": [
+   "computer vision",
+   "Python"
+  ],
+  "budget_ceiling": 6217.32,
+  "fair_total": 5689.92,
+  "est_hours": 118.5,
+  "domain": "ai_ml"
+ },
+ "l-0061": {
+  "must_have": [
+   "scikit-learn",
+   "pandas"
+  ],
+  "budget_ceiling": 4687.07,
+  "fair_total": 3249.65,
+  "est_hours": 67.7,
+  "domain": "ai_ml"
+ },
+ "l-0062": {
+  "must_have": [
+   "Excel",
+   "VBA"
+  ],
+  "budget_ceiling": 537.47,
+  "fair_total": 477.63,
+  "est_hours": 15.9,
+  "domain": "data_analyst"
+ },
+ "l-0063": {
+  "must_have": [
+   "Redis",
+   "Docker"
+  ],
+  "budget_ceiling": 5366.93,
+  "fair_total": 4337.19,
+  "est_hours": 114.1,
+  "domain": "fullstack"
+ },
+ "l-0064": {
+  "must_have": [
+   "Python",
+   "A/B testing"
+  ],
+  "budget_ceiling": 23.65,
+  "fair_total": 863.8,
+  "est_hours": 28.8,
+  "domain": "data_analyst"
+ },
+ "l-0065": {
+  "must_have": [
+   "PostgreSQL",
+   "Redis"
+  ],
+  "budget_ceiling": 3427.65,
+  "fair_total": 3172.21,
+  "est_hours": 83.5,
+  "domain": "fullstack"
+ },
+ "l-0066": {
+  "must_have": [
+   "FastAPI",
+   "RAG"
+  ],
+  "budget_ceiling": 75.66,
+  "fair_total": 3104.46,
+  "est_hours": 64.7,
+  "domain": "ai_ml"
+ },
+ "l-0067": {
+  "must_have": [
+   "PyTorch",
+   "Docker"
+  ],
+  "budget_ceiling": 7335.71,
+  "fair_total": 4904.33,
+  "est_hours": 102.2,
+  "domain": "ai_ml"
+ },
+ "l-0068": {
+  "must_have": [
+   "Docker",
+   "YOLO"
+  ],
+  "budget_ceiling": 5466.14,
+  "fair_total": 3613.89,
+  "est_hours": 75.3,
+  "domain": "ai_ml"
+ },
+ "l-0069": {
+  "must_have": [
+   "Supabase",
+   "TypeScript"
+  ],
+  "budget_ceiling": 3959.25,
+  "fair_total": 3173.61,
+  "est_hours": 83.5,
+  "domain": "fullstack"
+ },
+ "l-0070": {
+  "must_have": [
+   "Docker",
+   "React"
+  ],
+  "budget_ceiling": 3776.89,
+  "fair_total": 2657.11,
+  "est_hours": 69.9,
+  "domain": "fullstack"
+ },
+ "l-0071": {
+  "must_have": [
+   "Python",
+   "R"
+  ],
+  "budget_ceiling": 1327.4,
+  "fair_total": 897.78,
+  "est_hours": 29.9,
+  "domain": "data_analyst"
+ },
+ "l-0072": {
+  "must_have": [
+   "Excel",
+   "data cleaning"
+  ],
+  "budget_ceiling": 55.11,
+  "fair_total": 778.86,
+  "est_hours": 26.0,
+  "domain": "data_analyst"
+ },
+ "l-0073": {
+  "must_have": [
+   "scikit-learn",
+   "AWS SageMaker"
+  ],
+  "budget_ceiling": 49.15,
+  "fair_total": 2507.39,
+  "est_hours": 52.2,
+  "domain": "ai_ml"
+ },
+ "l-0074": {
+  "must_have": [
+   "OpenCV",
+   "Python"
+  ],
+  "budget_ceiling": 4212.6,
+  "fair_total": 3302.82,
+  "est_hours": 68.8,
+  "domain": "ai_ml"
+ },
+ "l-0075": {
+  "must_have": [
+   "Supabase",
+   "Tailwind CSS"
+  ],
+  "budget_ceiling": 58.53,
+  "fair_total": 2513.0,
+  "est_hours": 66.1,
+  "domain": "fullstack"
+ },
+ "l-0076": {
+  "must_have": [
+   "Vercel",
+   "Next.js"
+  ],
+  "budget_ceiling": 3021.38,
+  "fair_total": 1830.8,
+  "est_hours": 48.2,
+  "domain": "fullstack"
+ },
+ "l-0077": {
+  "must_have": [
+   "Vercel",
+   "TypeScript"
+  ],
+  "budget_ceiling": 1861.98,
+  "fair_total": 1591.76,
+  "est_hours": 41.9,
+  "domain": "fullstack"
+ },
+ "l-0078": {
+  "must_have": [
+   "XGBoost",
+   "Python"
+  ],
+  "budget_ceiling": 4684.17,
+  "fair_total": 3473.05,
+  "est_hours": 72.4,
+  "domain": "ai_ml"
+ },
+ "l-0079": {
+  "must_have": [
+   "Excel",
+   "SQL"
+  ],
+  "budget_ceiling": 1113.89,
+  "fair_total": 808.05,
+  "est_hours": 26.9,
+  "domain": "data_analyst"
+ },
+ "l-0080": {
+  "must_have": [
+   "FastAPI",
+   "AWS"
+  ],
+  "budget_ceiling": 76.66,
+  "fair_total": 4351.78,
+  "est_hours": 90.7,
+  "domain": "ai_ml"
+ },
+ "l-0081": {
+  "must_have": [
+   "FastAPI",
+   "RAG"
+  ],
+  "budget_ceiling": 75.66,
+  "fair_total": 3104.46,
+  "est_hours": 64.7,
+  "domain": "ai_ml"
+ },
+ "l-0082": {
+  "must_have": [
+   "Supabase",
+   "TypeScript"
+  ],
+  "budget_ceiling": 3959.25,
+  "fair_total": 3173.61,
+  "est_hours": 83.5,
+  "domain": "fullstack"
+ },
+ "l-0083": {
+  "must_have": [
+   "Next.js",
+   "React"
+  ],
+  "budget_ceiling": 45.05,
+  "fair_total": 1768.18,
+  "est_hours": 46.5,
+  "domain": "fullstack"
+ },
+ "l-0084": {
+  "must_have": [
+   "AWS",
+   "React"
+  ],
+  "budget_ceiling": 5017.07,
+  "fair_total": 3417.7,
+  "est_hours": 89.9,
+  "domain": "fullstack"
+ },
+ "l-0085": {
+  "must_have": [
+   "FastAPI",
+   "Hugging Face Transformers"
+  ],
+  "budget_ceiling": 2172.89,
+  "fair_total": 2041.31,
+  "est_hours": 42.5,
+  "domain": "ai_ml"
+ },
+ "l-0086": {
+  "must_have": [
+   "Celery",
+   "Django"
+  ],
+  "budget_ceiling": 44.89,
+  "fair_total": 2668.16,
+  "est_hours": 70.2,
+  "domain": "fullstack"
+ },
+ "l-0087": {
+  "must_have": [
+   "Supabase",
+   "PostgreSQL"
+  ],
+  "budget_ceiling": 5188.45,
+  "fair_total": 3143.69,
+  "est_hours": 82.7,
+  "domain": "fullstack"
+ },
+ "l-0088": {
+  "must_have": [
+   "cohort analysis",
+   "Metabase"
+  ],
+  "budget_ceiling": 1338.36,
+  "fair_total": 1021.78,
+  "est_hours": 34.1,
+  "domain": "data_analyst"
+ },
+ "l-0089": {
+  "must_have": [
+   "dashboards",
+   "SQL"
+  ],
+  "budget_ceiling": 1428.34,
+  "fair_total": 1087.89,
+  "est_hours": 36.3,
+  "domain": "data_analyst"
+ },
+ "l-0090": {
+  "must_have": [
+   "OAuth",
+   "Docker"
+  ],
+  "budget_ceiling": 3094.43,
+  "fair_total": 2762.12,
+  "est_hours": 72.7,
+  "domain": "fullstack"
+ },
+ "l-0091": {
+  "must_have": [
+   "Python"
+  ],
+  "budget_ceiling": 1161.16,
+  "fair_total": 1119.65,
+  "est_hours": 37.3,
+  "domain": "data_analyst"
+ },
+ "l-0092": {
+  "must_have": [
+   "PostgreSQL",
+   "Docker"
+  ],
+  "budget_ceiling": 5964.28,
+  "fair_total": 4536.61,
+  "est_hours": 119.4,
+  "domain": "fullstack"
+ },
+ "l-0093": {
+  "must_have": [
+   "Snowflake",
+   "dbt"
+  ],
+  "budget_ceiling": 39.76,
+  "fair_total": 1177.62,
+  "est_hours": 39.3,
+  "domain": "data_analyst"
+ },
+ "l-0094": {
+  "must_have": [
+   "SQL",
+   "dashboards"
+  ],
+  "budget_ceiling": 1323.34,
+  "fair_total": 1052.58,
+  "est_hours": 35.1,
+  "domain": "data_analyst"
+ },
+ "l-0095": {
+  "must_have": [
+   "pandas"
+  ],
+  "budget_ceiling": 1722.37,
+  "fair_total": 1148.63,
+  "est_hours": 38.3,
+  "domain": "data_analyst"
+ },
+ "l-0096": {
+  "must_have": [
+   "TypeScript",
+   "Next.js"
+  ],
+  "budget_ceiling": 81.38,
+  "fair_total": 2367.01,
+  "est_hours": 62.3,
+  "domain": "fullstack"
+ },
+ "l-0097": {
+  "must_have": [
+   "pandas",
+   "XGBoost"
+  ],
+  "budget_ceiling": 39.12,
+  "fair_total": 2936.8,
+  "est_hours": 61.2,
+  "domain": "ai_ml"
+ },
+ "l-0098": {
+  "must_have": [
+   "Excel",
+   "data cleaning"
+  ],
+  "budget_ceiling": 55.11,
+  "fair_total": 778.86,
+  "est_hours": 26.0,
+  "domain": "data_analyst"
+ },
+ "l-0099": {
+  "must_have": [
+   "Excel",
+   "VBA"
+  ],
+  "budget_ceiling": 537.47,
+  "fair_total": 477.63,
+  "est_hours": 15.9,
+  "domain": "data_analyst"
+ },
+ "l-0100": {
+  "must_have": [
+   "FastAPI",
+   "Python"
+  ],
+  "budget_ceiling": 6946.16,
+  "fair_total": 4148.96,
+  "est_hours": 86.4,
+  "domain": "ai_ml"
+ },
+ "l-0101": {
+  "must_have": [
+   "TypeScript",
+   "React"
+  ],
+  "budget_ceiling": 93.3,
+  "fair_total": 3215.45,
+  "est_hours": 84.6,
+  "domain": "fullstack"
+ },
+ "l-0102": {
+  "must_have": [
+   "Docker",
+   "MLflow"
+  ],
+  "budget_ceiling": 3686.17,
+  "fair_total": 2306.17,
+  "est_hours": 48.0,
+  "domain": "ai_ml"
+ },
+ "l-0103": {
+  "must_have": [
+   "clustering",
+   "pandas"
+  ],
+  "budget_ceiling": 1414.13,
+  "fair_total": 917.99,
+  "est_hours": 30.6,
+  "domain": "data_analyst"
+ },
+ "l-0104": {
+  "must_have": [
+   "pandas",
+   "forecasting"
+  ],
+  "budget_ceiling": 1312.15,
+  "fair_total": 1133.57,
+  "est_hours": 37.8,
+  "domain": "data_analyst"
+ },
+ "l-0105": {
+  "must_have": [
+   "Excel",
+   "SQL"
+  ],
+  "budget_ceiling": 1064.46,
+  "fair_total": 767.94,
+  "est_hours": 25.6,
+  "domain": "data_analyst"
+ },
+ "l-0106": {
+  "must_have": [
+   "Docker",
+   "Python"
+  ],
+  "budget_ceiling": 80.65,
+  "fair_total": 3229.07,
+  "est_hours": 67.3,
+  "domain": "ai_ml"
+ },
+ "l-0107": {
+  "must_have": [
+   "React",
+   "Next.js"
+  ],
+  "budget_ceiling": 3520.07,
+  "fair_total": 2040.14,
+  "est_hours": 53.7,
+  "domain": "fullstack"
+ },
+ "l-0108": {
+  "must_have": [
+   "Python",
+   "FastAPI"
+  ],
+  "budget_ceiling": 4011.6,
+  "fair_total": 2477.8,
+  "est_hours": 51.6,
+  "domain": "ai_ml"
+ },
+ "l-0109": {
+  "must_have": [
+   "RAG",
+   "Python"
+  ],
+  "budget_ceiling": 5983.57,
+  "fair_total": 4170.22,
+  "est_hours": 86.9,
+  "domain": "ai_ml"
+ },
+ "l-0110": {
+  "must_have": [
+   "Stripe",
+   "AWS"
+  ],
+  "budget_ceiling": 2819.54,
+  "fair_total": 1985.23,
+  "est_hours": 52.2,
+  "domain": "fullstack"
+ },
+ "l-0111": {
+  "must_have": [
+   "FastAPI",
+   "AWS"
+  ],
+  "budget_ceiling": 76.66,
+  "fair_total": 4351.78,
+  "est_hours": 90.7,
+  "domain": "ai_ml"
+ },
+ "l-0112": {
+  "must_have": [
+   "Vercel",
+   "Next.js"
+  ],
+  "budget_ceiling": 3021.38,
+  "fair_total": 1830.8,
+  "est_hours": 48.2,
+  "domain": "fullstack"
+ },
+ "l-0113": {
+  "must_have": [
+   "Next.js",
+   "React"
+  ],
+  "budget_ceiling": 45.05,
+  "fair_total": 1768.18,
+  "est_hours": 46.5,
+  "domain": "fullstack"
+ },
+ "l-0114": {
+  "must_have": [
+   "SQL"
+  ],
+  "budget_ceiling": 44.41,
+  "fair_total": 1112.17,
+  "est_hours": 37.1,
+  "domain": "data_analyst"
+ },
+ "l-0115": {
+  "must_have": [
+   "Python",
+   "pandas"
+  ],
+  "budget_ceiling": 5382.43,
+  "fair_total": 3943.47,
+  "est_hours": 82.2,
+  "domain": "ai_ml"
+ },
+ "l-0116": {
+  "must_have": [
+   "Firebase",
+   "Stripe"
+  ],
+  "budget_ceiling": 48.75,
+  "fair_total": 2749.29,
+  "est_hours": 72.3,
+  "domain": "fullstack"
+ },
+ "l-0117": {
+  "must_have": [
+   "OAuth",
+   "Docker"
+  ],
+  "budget_ceiling": 3094.43,
+  "fair_total": 2762.12,
+  "est_hours": 72.7,
+  "domain": "fullstack"
+ },
+ "l-0118": {
+  "must_have": [
+   "BigQuery",
+   "dbt"
+  ],
+  "budget_ceiling": 1771.77,
+  "fair_total": 1274.41,
+  "est_hours": 42.5,
+  "domain": "data_analyst"
+ },
+ "l-0119": {
+  "must_have": [
+   "LLM evaluation",
+   "OpenAI API"
+  ],
+  "budget_ceiling": 3783.72,
+  "fair_total": 2381.65,
+  "est_hours": 49.6,
+  "domain": "ai_ml"
+ },
+ "l-0120": {
+  "must_have": [
+   "Python",
+   "FastAPI"
+  ],
+  "budget_ceiling": 4664.17,
+  "fair_total": 3798.33,
+  "est_hours": 79.1,
+  "domain": "ai_ml"
+ },
+ "l-0121": {
+  "must_have": [
+   "FastAPI",
+   "AWS"
+  ],
+  "budget_ceiling": 76.66,
+  "fair_total": 4351.78,
+  "est_hours": 90.7,
+  "domain": "ai_ml"
+ },
+ "l-0122": {
+  "must_have": [
+   "JavaScript",
+   "TypeScript"
+  ],
+  "budget_ceiling": 1718.5,
+  "fair_total": 1393.79,
+  "est_hours": 36.7,
+  "domain": "fullstack"
+ },
+ "l-0123": {
+  "must_have": [
+   "XGBoost",
+   "Python"
+  ],
+  "budget_ceiling": 4684.17,
+  "fair_total": 3473.05,
+  "est_hours": 72.4,
+  "domain": "ai_ml"
+ },
+ "l-0124": {
+  "must_have": [
+   "Google Analytics",
+   "SQL"
+  ],
+  "budget_ceiling": 1510.21,
+  "fair_total": 1141.49,
+  "est_hours": 38.0,
+  "domain": "data_analyst"
+ },
+ "l-0125": {
+  "must_have": [
+   "PostgreSQL",
+   "Docker"
+  ],
+  "budget_ceiling": 5142.24,
+  "fair_total": 4189.46,
+  "est_hours": 110.2,
+  "domain": "fullstack"
+ },
+ "l-0126": {
+  "must_have": [
+   "RAG",
+   "FastAPI"
+  ],
+  "budget_ceiling": 61.73,
+  "fair_total": 3858.51,
+  "est_hours": 80.4,
+  "domain": "ai_ml"
+ },
+ "l-0127": {
+  "must_have": [
+   "WebSockets",
+   "Docker"
+  ],
+  "budget_ceiling": 4170.65,
+  "fair_total": 2876.58,
+  "est_hours": 75.7,
+  "domain": "fullstack"
+ },
+ "l-0128": {
+  "must_have": [
+   "Python"
+  ],
+  "budget_ceiling": 4096.08,
+  "fair_total": 2931.19,
+  "est_hours": 61.1,
+  "domain": "ai_ml"
+ },
+ "l-0129": {
+  "must_have": [
+   "GraphQL",
+   "TypeScript"
+  ],
+  "budget_ceiling": 1714.1,
+  "fair_total": 1341.47,
+  "est_hours": 35.3,
+  "domain": "fullstack"
+ },
+ "l-0130": {
+  "must_have": [
+   "Next.js",
+   "Supabase"
+  ],
+  "budget_ceiling": 49.16,
+  "fair_total": 3608.32,
+  "est_hours": 95.0,
+  "domain": "fullstack"
+ },
+ "l-0131": {
+  "must_have": [
+   "Python",
+   "pandas"
+  ],
+  "budget_ceiling": 3356.34,
+  "fair_total": 2698.79,
+  "est_hours": 56.2,
+  "domain": "ai_ml"
+ },
+ "l-0132": {
+  "must_have": [
+   "computer vision",
+   "Docker"
+  ],
+  "budget_ceiling": 64.21,
+  "fair_total": 4062.97,
+  "est_hours": 84.6,
+  "domain": "ai_ml"
+ },
+ "l-0133": {
+  "must_have": [
+   "prompt engineering",
+   "OpenAI API"
+  ],
+  "budget_ceiling": 2448.15,
+  "fair_total": 2279.47,
+  "est_hours": 47.5,
+  "domain": "ai_ml"
+ },
+ "l-0134": {
+  "must_have": [
+   "pandas",
+   "PostgreSQL"
+  ],
+  "budget_ceiling": 4056.28,
+  "fair_total": 2845.62,
+  "est_hours": 59.3,
+  "domain": "ai_ml"
+ },
+ "l-0135": {
+  "must_have": [
+   "computer vision",
+   "Docker"
+  ],
+  "budget_ceiling": 64.21,
+  "fair_total": 4062.97,
+  "est_hours": 84.6,
+  "domain": "ai_ml"
+ },
+ "l-0136": {
+  "must_have": [
+   "LoRA fine-tuning",
+   "LLM evaluation"
+  ],
+  "budget_ceiling": 2963.03,
+  "fair_total": 2564.7,
+  "est_hours": 53.4,
+  "domain": "ai_ml"
+ },
+ "l-0137": {
+  "must_have": [
+   "pandas",
+   "XGBoost"
+  ],
+  "budget_ceiling": 39.12,
+  "fair_total": 2936.8,
+  "est_hours": 61.2,
+  "domain": "ai_ml"
+ },
+ "l-0138": {
+  "must_have": [
+   "Docker",
+   "React"
+  ],
+  "budget_ceiling": 47.46,
+  "fair_total": 2896.18,
+  "est_hours": 76.2,
+  "domain": "fullstack"
+ },
+ "l-0139": {
+  "must_have": [
+   "Python",
+   "pandas"
+  ],
+  "budget_ceiling": 4863.65,
+  "fair_total": 3420.33,
+  "est_hours": 71.3,
+  "domain": "ai_ml"
+ },
+ "l-0140": {
+  "must_have": [
+   "SQL",
+   "Power BI"
+  ],
+  "budget_ceiling": 42.69,
+  "fair_total": 950.81,
+  "est_hours": 31.7,
+  "domain": "data_analyst"
+ },
+ "l-0141": {
+  "must_have": [
+   "Next.js",
+   "Vercel"
+  ],
+  "budget_ceiling": 71.0,
+  "fair_total": 1637.93,
+  "est_hours": 43.1,
+  "domain": "fullstack"
+ },
+ "l-0142": {
+  "must_have": [
+   "forecasting",
+   "Excel"
+  ],
+  "budget_ceiling": 40.32,
+  "fair_total": 630.39,
+  "est_hours": 21.0,
+  "domain": "data_analyst"
+ },
+ "l-0143": {
+  "must_have": [
+   "Python",
+   "SQL"
+  ],
+  "budget_ceiling": 37.16,
+  "fair_total": 896.94,
+  "est_hours": 29.9,
+  "domain": "data_analyst"
+ },
+ "l-0144": {
+  "must_have": [
+   "Python",
+   "Excel"
+  ],
+  "budget_ceiling": 1114.66,
+  "fair_total": 1110.86,
+  "est_hours": 37.0,
+  "domain": "data_analyst"
+ },
+ "l-0145": {
+  "must_have": [
+   "Excel",
+   "Python"
+  ],
+  "budget_ceiling": 809.14,
+  "fair_total": 578.19,
+  "est_hours": 19.3,
+  "domain": "data_analyst"
+ },
+ "l-0146": {
+  "must_have": [
+   "Excel",
+   "forecasting"
+  ],
+  "budget_ceiling": 987.91,
+  "fair_total": 682.93,
+  "est_hours": 22.8,
+  "domain": "data_analyst"
+ },
+ "l-0147": {
+  "must_have": [
+   "Docker"
+  ],
+  "budget_ceiling": 58.71,
+  "fair_total": 3638.76,
+  "est_hours": 75.8,
+  "domain": "ai_ml"
+ },
+ "l-0148": {
+  "must_have": [
+   "OpenAI API",
+   "Python"
+  ],
+  "budget_ceiling": 4336.12,
+  "fair_total": 3095.96,
+  "est_hours": 64.5,
+  "domain": "ai_ml"
+ },
+ "l-0149": {
+  "must_have": [
+   "pandas"
+  ],
+  "budget_ceiling": 63.78,
+  "fair_total": 3628.96,
+  "est_hours": 75.6,
+  "domain": "ai_ml"
+ },
+ "l-0150": {
+  "must_have": [
+   "Power Query",
+   "Excel"
+  ],
+  "budget_ceiling": 990.28,
+  "fair_total": 610.15,
+  "est_hours": 20.3,
+  "domain": "data_analyst"
+ },
+ "l-0151": {
+  "must_have": [
+   "Firebase",
+   "Stripe"
+  ],
+  "budget_ceiling": 5008.98,
+  "fair_total": 3572.63,
+  "est_hours": 94.0,
+  "domain": "fullstack"
+ },
+ "l-0152": {
+  "must_have": [
+   "Python",
+   "OpenAI API"
+  ],
+  "budget_ceiling": 3675.81,
+  "fair_total": 2881.71,
+  "est_hours": 60.0,
+  "domain": "ai_ml"
+ },
+ "l-0153": {
+  "must_have": [
+   "React Native",
+   "Vercel"
+  ],
+  "budget_ceiling": 44.18,
+  "fair_total": 2482.07,
+  "est_hours": 65.3,
+  "domain": "fullstack"
+ },
+ "l-0154": {
+  "must_have": [
+   "LLM evaluation",
+   "OpenAI API"
+  ],
+  "budget_ceiling": 64.87,
+  "fair_total": 2104.07,
+  "est_hours": 43.8,
+  "domain": "ai_ml"
+ },
+ "l-0155": {
+  "must_have": [
+   "XGBoost",
+   "Python"
+  ],
+  "budget_ceiling": 4684.17,
+  "fair_total": 3473.05,
+  "est_hours": 72.4,
+  "domain": "ai_ml"
+ },
+ "l-0156": {
+  "must_have": [
+   "OpenCV",
+   "Python"
+  ],
+  "budget_ceiling": 4212.6,
+  "fair_total": 3302.82,
+  "est_hours": 68.8,
+  "domain": "ai_ml"
+ },
+ "l-0157": {
+  "must_have": [
+   "AWS",
+   "Stripe"
+  ],
+  "budget_ceiling": 1893.76,
+  "fair_total": 1855.75,
+  "est_hours": 48.8,
+  "domain": "fullstack"
+ },
+ "l-0158": {
+  "must_have": [
+   "Docker",
+   "Node.js"
+  ],
+  "budget_ceiling": 5476.08,
+  "fair_total": 3639.69,
+  "est_hours": 95.8,
+  "domain": "fullstack"
+ },
+ "l-0159": {
+  "must_have": [
+   "LLM evaluation",
+   "Python"
+  ],
+  "budget_ceiling": 4166.92,
+  "fair_total": 2880.21,
+  "est_hours": 60.0,
+  "domain": "ai_ml"
+ },
+ "l-0160": {
+  "must_have": [
+   "Docker",
+   "OpenAI API"
+  ],
+  "budget_ceiling": 66.0,
+  "fair_total": 2631.72,
+  "est_hours": 54.8,
+  "domain": "ai_ml"
+ },
+ "l-0161": {
+  "must_have": [
+   "R",
+   "A/B testing"
+  ],
+  "budget_ceiling": 45.79,
+  "fair_total": 792.85,
+  "est_hours": 26.4,
+  "domain": "data_analyst"
+ },
+ "l-0162": {
+  "must_have": [
+   "Metabase",
+   "SQL"
+  ],
+  "budget_ceiling": 1168.61,
+  "fair_total": 961.74,
+  "est_hours": 32.1,
+  "domain": "data_analyst"
+ },
+ "l-0163": {
+  "must_have": [
+   "BigQuery",
+   "Metabase"
+  ],
+  "budget_ceiling": 47.42,
+  "fair_total": 2076.17,
+  "est_hours": 69.2,
+  "domain": "data_analyst"
+ },
+ "l-0164": {
+  "must_have": [
+   "Celery",
+   "React"
+  ],
+  "budget_ceiling": 80.42,
+  "fair_total": 3300.4,
+  "est_hours": 86.9,
+  "domain": "fullstack"
+ },
+ "l-0165": {
+  "must_have": [
+   "dashboards",
+   "Metabase"
+  ],
+  "budget_ceiling": 1176.55,
+  "fair_total": 909.57,
+  "est_hours": 30.3,
+  "domain": "data_analyst"
+ },
+ "l-0166": {
+  "must_have": [
+   "SQL",
+   "cohort analysis"
+  ],
+  "budget_ceiling": 32.55,
+  "fair_total": 821.92,
+  "est_hours": 27.4,
+  "domain": "data_analyst"
+ },
+ "l-0167": {
+  "must_have": [
+   "Stripe",
+   "Tailwind CSS"
+  ],
+  "budget_ceiling": 6764.48,
+  "fair_total": 4194.55,
+  "est_hours": 110.4,
+  "domain": "fullstack"
+ },
+ "l-0168": {
+  "must_have": [
+   "OpenCV",
+   "computer vision"
+  ],
+  "budget_ceiling": 3745.17,
+  "fair_total": 2970.85,
+  "est_hours": 61.9,
+  "domain": "ai_ml"
+ },
+ "l-0169": {
+  "must_have": [
+   "BigQuery",
+   "dbt"
+  ],
+  "budget_ceiling": 43.72,
+  "fair_total": 1404.63,
+  "est_hours": 46.8,
+  "domain": "data_analyst"
+ },
+ "l-0170": {
+  "must_have": [
+   "Looker",
+   "cohort analysis"
+  ],
+  "budget_ceiling": 952.58,
+  "fair_total": 757.07,
+  "est_hours": 25.2,
+  "domain": "data_analyst"
+ },
+ "l-0171": {
+  "must_have": [
+   "spaCy",
+   "FastAPI"
+  ],
+  "budget_ceiling": 62.53,
+  "fair_total": 2680.15,
+  "est_hours": 55.8,
+  "domain": "ai_ml"
+ },
+ "l-0172": {
+  "must_have": [
+   "Playwright",
+   "CI/CD"
+  ],
+  "budget_ceiling": 31.09,
+  "fair_total": 1651.39,
+  "est_hours": 43.5,
+  "domain": "fullstack"
+ },
+ "l-0173": {
+  "must_have": [
+   "FAISS",
+   "embeddings"
+  ],
+  "budget_ceiling": 71.08,
+  "fair_total": 3642.38,
+  "est_hours": 75.9,
+  "domain": "ai_ml"
+ },
+ "l-0174": {
+  "must_have": [
+   "React",
+   "Docker"
+  ],
+  "budget_ceiling": 5120.08,
+  "fair_total": 3409.65,
+  "est_hours": 89.7,
+  "domain": "fullstack"
+ },
+ "l-0175": {
+  "must_have": [
+   "XGBoost",
+   "Python"
+  ],
+  "budget_ceiling": 65.31,
+  "fair_total": 3485.5,
+  "est_hours": 72.6,
+  "domain": "ai_ml"
+ },
+ "l-0176": {
+  "must_have": [
+   "Docker"
+  ],
+  "budget_ceiling": 4252.76,
+  "fair_total": 3138.82,
+  "est_hours": 82.6,
+  "domain": "fullstack"
+ },
+ "l-0177": {
+  "must_have": [
+   "React",
+   "Firebase"
+  ],
+  "budget_ceiling": 46.79,
+  "fair_total": 5003.13,
+  "est_hours": 131.7,
+  "domain": "fullstack"
+ },
+ "l-0178": {
+  "must_have": [
+   "FastAPI",
+   "Hugging Face Transformers"
+  ],
+  "budget_ceiling": 58.39,
+  "fair_total": 2571.56,
+  "est_hours": 53.6,
+  "domain": "ai_ml"
+ },
+ "l-0179": {
+  "must_have": [
+   "SQL",
+   "Power BI"
+  ],
+  "budget_ceiling": 34.68,
+  "fair_total": 1020.16,
+  "est_hours": 34.0,
+  "domain": "data_analyst"
+ },
+ "l-0180": {
+  "must_have": [
+   "forecasting",
+   "Excel"
+  ],
+  "budget_ceiling": 618.24,
+  "fair_total": 560.61,
+  "est_hours": 18.7,
+  "domain": "data_analyst"
+ },
+ "l-0181": {
+  "must_have": [
+   "pandas",
+   "Hugging Face Transformers"
+  ],
+  "budget_ceiling": 2571.59,
+  "fair_total": 2547.78,
+  "est_hours": 53.1,
+  "domain": "ai_ml"
+ },
+ "l-0182": {
+  "must_have": [
+   "Airflow",
+   "LightGBM"
+  ],
+  "budget_ceiling": 4021.42,
+  "fair_total": 3166.68,
+  "est_hours": 66.0,
+  "domain": "ai_ml"
+ },
+ "l-0183": {
+  "must_have": [
+   "React",
+   "TypeScript"
+  ],
+  "budget_ceiling": 2039.31,
+  "fair_total": 1506.6,
+  "est_hours": 39.6,
+  "domain": "fullstack"
+ },
+ "l-0184": {
+  "must_have": [
+   "Tailwind CSS",
+   "TypeScript"
+  ],
+  "budget_ceiling": 2931.77,
+  "fair_total": 2176.24,
+  "est_hours": 57.3,
+  "domain": "fullstack"
+ },
+ "l-0185": {
+  "must_have": [
+   "Docker"
+  ],
+  "budget_ceiling": 5471.48,
+  "fair_total": 4293.01,
+  "est_hours": 113.0,
+  "domain": "fullstack"
+ },
+ "l-0186": {
+  "must_have": [
+   "Tailwind CSS",
+   "TypeScript"
+  ],
+  "budget_ceiling": 2575.02,
+  "fair_total": 2353.94,
+  "est_hours": 61.9,
+  "domain": "fullstack"
+ },
+ "l-0187": {
+  "must_have": [
+   "Excel"
+  ],
+  "budget_ceiling": 1483.79,
+  "fair_total": 1136.23,
+  "est_hours": 37.9,
+  "domain": "data_analyst"
+ },
+ "l-0188": {
+  "must_have": [
+   "Python"
+  ],
+  "budget_ceiling": 1546.35,
+  "fair_total": 1019.91,
+  "est_hours": 34.0,
+  "domain": "data_analyst"
+ },
+ "l-0189": {
+  "must_have": [
+   "CI/CD",
+   "Docker"
+  ],
+  "budget_ceiling": 61.61,
+  "fair_total": 4976.98,
+  "est_hours": 103.7,
+  "domain": "ai_ml"
+ },
+ "l-0190": {
+  "must_have": [
+   "statistics",
+   "SQL"
+  ],
+  "budget_ceiling": 1432.78,
+  "fair_total": 864.19,
+  "est_hours": 28.8,
+  "domain": "data_analyst"
+ },
+ "l-0191": {
+  "must_have": [
+   "Python",
+   "time series forecasting"
+  ],
+  "budget_ceiling": 3342.26,
+  "fair_total": 2730.73,
+  "est_hours": 56.9,
+  "domain": "ai_ml"
+ },
+ "l-0192": {
+  "must_have": [
+   "SQL",
+   "dbt"
+  ],
+  "budget_ceiling": 39.87,
+  "fair_total": 1407.57,
+  "est_hours": 46.9,
+  "domain": "data_analyst"
+ },
+ "l-0193": {
+  "must_have": [
+   "JavaScript"
+  ],
+  "budget_ceiling": 3048.65,
+  "fair_total": 1857.27,
+  "est_hours": 48.9,
+  "domain": "fullstack"
+ },
+ "l-0194": {
+  "must_have": [
+   "scikit-learn",
+   "Python"
+  ],
+  "budget_ceiling": 104.89,
+  "fair_total": 2269.69,
+  "est_hours": 47.3,
+  "domain": "ai_ml"
+ },
+ "l-0195": {
+  "must_have": [
+   "Next.js",
+   "Supabase"
+  ],
+  "budget_ceiling": 4662.97,
+  "fair_total": 3556.42,
+  "est_hours": 93.6,
+  "domain": "fullstack"
+ },
+ "l-0196": {
+  "must_have": [
+   "Express",
+   "Node.js"
+  ],
+  "budget_ceiling": 53.55,
+  "fair_total": 2373.61,
+  "est_hours": 62.5,
+  "domain": "fullstack"
+ },
+ "l-0197": {
+  "must_have": [
+   "LangChain",
+   "OpenAI API"
+  ],
+  "budget_ceiling": 62.73,
+  "fair_total": 2774.27,
+  "est_hours": 57.8,
+  "domain": "ai_ml"
+ },
+ "l-0198": {
+  "must_have": [
+   "Python"
+  ],
+  "budget_ceiling": 44.12,
+  "fair_total": 1085.89,
+  "est_hours": 36.2,
+  "domain": "data_analyst"
+ },
+ "l-0199": {
+  "must_have": [
+   "React",
+   "Next.js"
+  ],
+  "budget_ceiling": 2297.45,
+  "fair_total": 1883.89,
+  "est_hours": 49.6,
+  "domain": "fullstack"
+ },
+ "l-0200": {
+  "must_have": [
+   "Docker",
+   "NestJS"
+  ],
+  "budget_ceiling": 57.03,
+  "fair_total": 3922.87,
+  "est_hours": 103.2,
+  "domain": "fullstack"
+ },
+ "l-0201": {
+  "must_have": [
+   "A/B testing",
+   "R"
+  ],
+  "budget_ceiling": 2088.03,
+  "fair_total": 1425.89,
+  "est_hours": 47.5,
+  "domain": "data_analyst"
+ },
+ "l-0202": {
+  "must_have": [
+   "SQL",
+   "Looker"
+  ],
+  "budget_ceiling": 927.54,
+  "fair_total": 755.88,
+  "est_hours": 25.2,
+  "domain": "data_analyst"
+ },
+ "l-0203": {
+  "must_have": [
+   "React Native",
+   "Next.js"
+  ],
+  "budget_ceiling": 2627.9,
+  "fair_total": 2355.25,
+  "est_hours": 62.0,
+  "domain": "fullstack"
+ },
+ "l-0204": {
+  "must_have": [
+   "React",
+   "Next.js"
+  ],
+  "budget_ceiling": 3520.07,
+  "fair_total": 2040.14,
+  "est_hours": 53.7,
+  "domain": "fullstack"
+ },
+ "l-0205": {
+  "must_have": [
+   "PostgreSQL",
+   "Express"
+  ],
+  "budget_ceiling": 2836.95,
+  "fair_total": 2090.93,
+  "est_hours": 55.0,
+  "domain": "fullstack"
+ },
+ "l-0206": {
+  "must_have": [
+   "PostgreSQL",
+   "Docker"
+  ],
+  "budget_ceiling": 3633.97,
+  "fair_total": 2726.4,
+  "est_hours": 71.7,
+  "domain": "fullstack"
+ },
+ "l-0207": {
+  "must_have": [
+   "TypeScript",
+   "Stripe"
+  ],
+  "budget_ceiling": 3081.32,
+  "fair_total": 2661.94,
+  "est_hours": 70.1,
+  "domain": "fullstack"
+ },
+ "l-0208": {
+  "must_have": [
+   "Metabase",
+   "SQL"
+  ],
+  "budget_ceiling": 1262.64,
+  "fair_total": 849.1,
+  "est_hours": 28.3,
+  "domain": "data_analyst"
+ },
+ "l-0209": {
+  "must_have": [
+   "FAISS",
+   "embeddings"
+  ],
+  "budget_ceiling": 4119.08,
+  "fair_total": 3480.13,
+  "est_hours": 72.5,
+  "domain": "ai_ml"
+ },
+ "l-0210": {
+  "must_have": [
+   "Python",
+   "computer vision"
+  ],
+  "budget_ceiling": 4008.64,
+  "fair_total": 3528.93,
+  "est_hours": 73.5,
+  "domain": "ai_ml"
+ },
+ "l-0211": {
+  "must_have": [
+   "Google Sheets",
+   "Google Analytics"
+  ],
+  "budget_ceiling": 1482.73,
+  "fair_total": 1019.03,
+  "est_hours": 34.0,
+  "domain": "data_analyst"
+ },
+ "l-0212": {
+  "must_have": [
+   "Hugging Face Transformers",
+   "YOLO"
+  ],
+  "budget_ceiling": 73.88,
+  "fair_total": 4128.35,
+  "est_hours": 86.0,
+  "domain": "ai_ml"
+ },
+ "l-0213": {
+  "must_have": [
+   "statistics",
+   "R"
+  ],
+  "budget_ceiling": 1274.12,
+  "fair_total": 858.8,
+  "est_hours": 28.6,
+  "domain": "data_analyst"
+ },
+ "l-0214": {
+  "must_have": [
+   "Python"
+  ],
+  "budget_ceiling": 66.91,
+  "fair_total": 3297.3,
+  "est_hours": 68.7,
+  "domain": "ai_ml"
+ },
+ "l-0215": {
+  "must_have": [
+   "pandas",
+   "Python"
+  ],
+  "budget_ceiling": 42.1,
+  "fair_total": 942.22,
+  "est_hours": 31.4,
+  "domain": "data_analyst"
+ },
+ "l-0216": {
+  "must_have": [
+   "FAISS",
+   "Python"
+  ],
+  "budget_ceiling": 3898.4,
+  "fair_total": 3287.17,
+  "est_hours": 68.5,
+  "domain": "ai_ml"
+ },
+ "l-0217": {
+  "must_have": [
+   "forecasting",
+   "pandas"
+  ],
+  "budget_ceiling": 3207.1,
+  "fair_total": 2023.51,
+  "est_hours": 67.5,
+  "domain": "data_analyst"
+ },
+ "l-0218": {
+  "must_have": [
+   "Docker",
+   "React"
+  ],
+  "budget_ceiling": 47.46,
+  "fair_total": 2896.18,
+  "est_hours": 76.2,
+  "domain": "fullstack"
+ },
+ "l-0219": {
+  "must_have": [
+   "SQL",
+   "Excel"
+  ],
+  "budget_ceiling": 50.86,
+  "fair_total": 944.93,
+  "est_hours": 31.5,
+  "domain": "data_analyst"
+ },
+ "l-0220": {
+  "must_have": [
+   "pandas",
+   "SQL"
+  ],
+  "budget_ceiling": 802.44,
+  "fair_total": 781.86,
+  "est_hours": 26.1,
+  "domain": "data_analyst"
+ },
+ "l-0221": {
+  "must_have": [
+   "Google Analytics",
+   "Google Sheets"
+  ],
+  "budget_ceiling": 1377.03,
+  "fair_total": 1179.51,
+  "est_hours": 39.3,
+  "domain": "data_analyst"
+ },
+ "l-0222": {
+  "must_have": [
+   "Redis",
+   "Docker"
+  ],
+  "budget_ceiling": 3403.36,
+  "fair_total": 2137.64,
+  "est_hours": 56.3,
+  "domain": "fullstack"
+ },
+ "l-0223": {
+  "must_have": [
+   "cohort analysis",
+   "Python"
+  ],
+  "budget_ceiling": 45.42,
+  "fair_total": 876.1,
+  "est_hours": 29.2,
+  "domain": "data_analyst"
+ },
+ "l-0224": {
+  "must_have": [
+   "dashboards"
+  ],
+  "budget_ceiling": 1790.2,
+  "fair_total": 1181.82,
+  "est_hours": 39.4,
+  "domain": "data_analyst"
+ },
+ "l-0225": {
+  "must_have": [
+   "pandas"
+  ],
+  "budget_ceiling": 3698.95,
+  "fair_total": 2699.62,
+  "est_hours": 56.2,
+  "domain": "ai_ml"
+ },
+ "l-0226": {
+  "must_have": [
+   "dashboards",
+   "PostgreSQL"
+  ],
+  "budget_ceiling": 46.18,
+  "fair_total": 1211.49,
+  "est_hours": 40.4,
+  "domain": "data_analyst"
+ },
+ "l-0227": {
+  "must_have": [
+   "Docker"
+  ],
+  "budget_ceiling": 53.12,
+  "fair_total": 2254.02,
+  "est_hours": 59.3,
+  "domain": "fullstack"
+ },
+ "l-0228": {
+  "must_have": [
+   "PostgreSQL",
+   "Node.js"
+  ],
+  "budget_ceiling": 46.53,
+  "fair_total": 2531.83,
+  "est_hours": 66.6,
+  "domain": "fullstack"
+ },
+ "l-0229": {
+  "must_have": [
+   "Supabase",
+   "PostgreSQL"
+  ],
+  "budget_ceiling": 5188.45,
+  "fair_total": 3143.69,
+  "est_hours": 82.7,
+  "domain": "fullstack"
+ },
+ "l-0230": {
+  "must_have": [
+   "TypeScript"
+  ],
+  "budget_ceiling": 50.41,
+  "fair_total": 2796.7,
+  "est_hours": 73.6,
+  "domain": "fullstack"
+ },
+ "l-0231": {
+  "must_have": [
+   "A/B testing",
+   "R"
+  ],
+  "budget_ceiling": 1178.02,
+  "fair_total": 889.43,
+  "est_hours": 29.6,
+  "domain": "data_analyst"
+ },
+ "l-0232": {
+  "must_have": [
+   "Python",
+   "XGBoost"
+  ],
+  "budget_ceiling": 68.43,
+  "fair_total": 2964.68,
+  "est_hours": 61.8,
+  "domain": "ai_ml"
+ },
+ "l-0233": {
+  "must_have": [
+   "Power Query",
+   "VBA"
+  ],
+  "budget_ceiling": 1051.38,
+  "fair_total": 722.15,
+  "est_hours": 24.1,
+  "domain": "data_analyst"
+ },
+ "l-0234": {
+  "must_have": [
+   "Power Query",
+   "VBA"
+  ],
+  "budget_ceiling": 938.11,
+  "fair_total": 614.92,
+  "est_hours": 20.5,
+  "domain": "data_analyst"
+ },
+ "l-0235": {
+  "must_have": [
+   "Docker",
+   "computer vision"
+  ],
+  "budget_ceiling": 64.39,
+  "fair_total": 3567.98,
+  "est_hours": 74.3,
+  "domain": "ai_ml"
+ },
+ "l-0236": {
+  "must_have": [
+   "Power Query",
+   "Excel"
+  ],
+  "budget_ceiling": 668.34,
+  "fair_total": 640.66,
+  "est_hours": 21.4,
+  "domain": "data_analyst"
+ },
+ "l-0237": {
+  "must_have": [
+   "Stripe",
+   "Supabase"
+  ],
+  "budget_ceiling": 3171.48,
+  "fair_total": 2012.19,
+  "est_hours": 53.0,
+  "domain": "fullstack"
+ },
+ "l-0238": {
+  "must_have": [
+   "Next.js",
+   "React"
+  ],
+  "budget_ceiling": 45.05,
+  "fair_total": 1768.18,
+  "est_hours": 46.5,
+  "domain": "fullstack"
+ },
+ "l-0239": {
+  "must_have": [
+   "Vercel",
+   "Next.js"
+  ],
+  "budget_ceiling": 49.02,
+  "fair_total": 1309.01,
+  "est_hours": 34.4,
+  "domain": "fullstack"
+ }
+}

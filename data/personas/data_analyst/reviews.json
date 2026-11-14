@@ -1,0 +1,114 @@
+[
+  {
+    "review_id": "data_analyst-rev-00",
+    "project": "Cohort retention analysis",
+    "client_industry": "subscription apps",
+    "rating": 5,
+    "date": "2023-09",
+    "text": "Sara delivered understand when and why our subscribers leave. Found the week-2 drop-off; onboarding fix lifted 90-day retention 6 points. Communication was clear and on time."
+  },
+  {
+    "review_id": "data_analyst-rev-01",
+    "project": "Hospital readmission analysis",
+    "client_industry": "healthcare",
+    "rating": 4,
+    "date": "2023-08",
+    "text": "Solid engineer. Asked the right questions about analyse why patients come back within 30 and handed over clean documentation."
+  },
+  {
+    "review_id": "data_analyst-rev-02",
+    "project": "Customer segmentation",
+    "client_industry": "e-commerce",
+    "rating": 4,
+    "date": "2023-10",
+    "text": "Great to work with. The SegmentIQ project went live on schedule and 5 segments drove a targeted email that lifted revenue per send 23%."
+  },
+  {
+    "review_id": "data_analyst-rev-03",
+    "project": "BigQuery cost optimisation",
+    "client_industry": "media",
+    "rating": 5,
+    "date": "2025-09",
+    "text": "Sara delivered our cloud data warehouse bill keeps growing; help us cut it. Monthly warehouse bill down 48% with partitioning and incremental models. Communication was clear and on time."
+  },
+  {
+    "review_id": "data_analyst-rev-04",
+    "project": "Pricing elasticity study",
+    "client_industry": "retail",
+    "rating": 5,
+    "date": "2024-10",
+    "text": "Sara delivered find out how sensitive our customers are to price changes. Price changes on 120 SKUs added 3.1% gross margin. Communication was clear and on time."
+  },
+  {
+    "review_id": "data_analyst-rev-05",
+    "project": "SaaS churn diagnostic",
+    "client_industry": "SaaS",
+    "rating": 5,
+    "date": "2025-06",
+    "text": "We hired Sara for figure out which customers are likely to cancel and why; would hire again. Minor delays in week two but quality was high."
+  },
+  {
+    "review_id": "data_analyst-rev-06",
+    "project": "Inventory optimisation analysis",
+    "client_industry": "retail",
+    "rating": 4,
+    "date": "2024-10",
+    "text": "Solid engineer. Asked the right questions about decide how much stock to hold per produc and handed over clean documentation."
+  },
+  {
+    "review_id": "data_analyst-rev-07",
+    "project": "Financial forecasting model",
+    "client_industry": "fintech",
+    "rating": 4,
+    "date": "2023-12",
+    "text": "Sara delivered a cash-flow forecast our CFO can update each week. 13-week cash forecast within 4% of actuals. Communication was clear and on time."
+  },
+  {
+    "review_id": "data_analyst-rev-08",
+    "project": "GA4 migration and tracking audit",
+    "client_industry": "media",
+    "rating": 5,
+    "date": "2023-01",
+    "text": "We hired Sara for fix our website analytics; the numbers don't match our sales; would hire again. Minor delays in week two but quality was high."
+  },
+  {
+    "review_id": "data_analyst-rev-09",
+    "project": "Excel automation for finance",
+    "client_industry": "accounting",
+    "rating": 5,
+    "date": "2022-06",
+    "text": "We hired Sara for automate the spreadsheets our finance team rebuilds every month; would hire again. Minor delays in week two but quality was high."
+  },
+  {
+    "review_id": "data_analyst-rev-10",
+    "project": "Operations dashboards in Metabase",
+    "client_industry": "logistics",
+    "rating": 4,
+    "date": "2022-05",
+    "text": "Solid engineer. Asked the right questions about simple self-serve dashboards for our war and handed over clean documentation."
+  },
+  {
+    "review_id": "data_analyst-rev-11",
+    "project": "Sales KPI dashboard",
+    "client_industry": "retail",
+    "rating": 4,
+    "date": "2024-10",
+    "text": "Solid engineer. Asked the right questions about one dashboard for our sales numbers inst and handed over clean documentation."
+  },
+  {
+    "review_id": "data_analyst-rev-12",
+    "project": "Supply-chain ETL pipeline",
+    "client_industry": "logistics",
+    "rating": 5,
+    "date": "2024-03",
+    "text": "Great to work with. The ShipStream project went live on schedule and data freshness from 24 hours to 1 hour."
+  },
+  {
+    "review_id": "data_analyst-rev-13",
+    "project": "A/B test readout framework",
+    "client_industry": "e-commerce",
+    "rating": 4,
+    "date": "2024-10",
+    "text": "Great to work with. The TestReader project went live on schedule and standardised 40+ experiment readouts with power checks."
+  }
+]

@@ -1,0 +1,30 @@
+[
+ {
+  "freelancer_id": "fl-ai_ml",
+  "name": "Ayesha Raza",
+  "persona": "ai_ml",
+  "api_token": "gigsim-dev-token-ai_ml",
+  "connects_balance": 160
+ },
+ {
+  "freelancer_id": "fl-fullstack",
+  "name": "Bilal Khan",
+  "persona": "fullstack",
+  "api_token": "gigsim-dev-token-fullstack",
+  "connects_balance": 160
+ },
+ {
+  "freelancer_id": "fl-data_analyst",
+  "name": "Sara Malik",
+  "persona": "data_analyst",
+  "api_token": "gigsim-dev-token-data_analyst",
+  "connects_balance": 160
+ },
+ {
+  "freelancer_id": "fl-reviewer",
+  "name": "Reviewer Demo",
+  "persona": "ai_ml",
+  "api_token": "gigsim-dev-token-reviewer",
+  "connects_balance": 160
+ }
+]

@@ -3,12 +3,18 @@
 __pycache__/
 *.py[cod]
 .pytest_cache/
-.mypy_cache/
 .ruff_cache/
 node_modules/
-.next/
 dist/
 build/
 data/processed/
-evals/results/*
-!evals/results/.gitkeep
+data/uploads/
+var/
+*.db
+*.sqlite3
+# held-out proxy test set never enters the repo
+gigsim/seed/holdout/
+evals/holdout/
+evals/cache/
+apps/web/test-results/
+apps/web/playwright-report/

@@ -1,0 +1,4308 @@
+{
+ "ai_ml": [
+  {
+   "evidence_id": "ai_ml-cv",
+   "type": "cv",
+   "path": "cv.pdf",
+   "project": null
+  },
+  {
+   "evidence_id": "ai_ml-cs-support-rag",
+   "type": "case_study",
+   "path": "case_studies/support-rag.md",
+   "project": "support-rag"
+  },
+  {
+   "evidence_id": "ai_ml-readme-support-rag",
+   "type": "readme",
+   "path": "repos/helpdesk-copilot-support/README.md",
+   "project": "support-rag",
+   "terse": true
+  },
+  {
+   "evidence_id": "ai_ml-code-support-rag",
+   "type": "code",
+   "path": "repos/helpdesk-copilot-support/app/main.py",
+   "project": "support-rag"
+  },
+  {
+   "evidence_id": "ai_ml-cs-clause-extract",
+   "type": "case_study",
+   "path": "case_studies/clause-extract.md",
+   "project": "clause-extract"
+  },
+  {
+   "evidence_id": "ai_ml-readme-clause-extract",
+   "type": "readme",
+   "path": "repos/clausefinder-clause/README.md",
+   "project": "clause-extract",
+   "terse": true
+  },
+  {
+   "evidence_id": "ai_ml-code-clause-extract",
+   "type": "code",
+   "path": "repos/clausefinder-clause/app/main.py",
+   "project": "clause-extract"
+  },
+  {
+   "evidence_id": "ai_ml-cs-telco-churn",
+   "type": "case_study",
+   "path": "case_studies/telco-churn.md",
+   "project": "telco-churn"
+  },
+  {
+   "evidence_id": "ai_ml-blog-telco-churn",
+   "type": "blog_post",
+   "path": "case_studies/telco-churn-blog.md",
+   "project": "telco-churn"
+  },
+  {
+   "evidence_id": "ai_ml-readme-telco-churn",
+   "type": "readme",
+   "path": "repos/retention-radar-telco/README.md",
+   "project": "telco-churn",
+   "terse": true
+  },
+  {
+   "evidence_id": "ai_ml-code-telco-churn",
+   "type": "code",
+   "path": "repos/retention-radar-telco/app/main.py",
+   "project": "telco-churn"
+  },
+  {
+   "evidence_id": "ai_ml-cs-retail-forecast",
+   "type": "case_study",
+   "path": "case_studies/retail-forecast.md",
+   "project": "retail-forecast"
+  },
+  {
+   "evidence_id": "ai_ml-readme-retail-forecast",
+   "type": "readme",
+   "path": "repos/stocksense-retail/README.md",
+   "project": "retail-forecast",
+   "terse": false
+  },
+  {
+   "evidence_id": "ai_ml-code-retail-forecast",
+   "type": "code",
+   "path": "repos/stocksense-retail/app/main.py",
+   "project": "retail-forecast"
+  },
+  {
+   "evidence_id": "ai_ml-cs-defect-vision",
+   "type": "case_study",
+   "path": "case_studies/defect-vision.md",
+   "project": "defect-vision"
+  },
+  {
+   "evidence_id": "ai_ml-blog-defect-vision",
+   "type": "blog_post",
+   "path": "case_studies/defect-vision-blog.md",
+   "project": "defect-vision"
+  },
+  {
+   "evidence_id": "ai_ml-cs-med-lora",
+   "type": "case_study",
+   "path": "case_studies/med-lora.md",
+   "project": "med-lora"
+  },
+  {
+   "evidence_id": "ai_ml-readme-med-lora",
+   "type": "readme",
+   "path": "repos/notebrief-med/README.md",
+   "project": "med-lora",
+   "terse": true
+  },
+  {
+   "evidence_id": "ai_ml-code-med-lora",
+   "type": "code",
+   "path": "repos/notebrief-med/app/main.py",
+   "project": "med-lora"
+  },
+  {
+   "evidence_id": "ai_ml-cs-reco-engine",
+   "type": "case_study",
+   "path": "case_studies/reco-engine.md",
+   "project": "reco-engine"
+  },
+  {
+   "evidence_id": "ai_ml-readme-reco-engine",
+   "type": "readme",
+   "path": "repos/shelfmate-reco/README.md",
+   "project": "reco-engine",
+   "terse": true
+  },
+  {
+   "evidence_id": "ai_ml-code-reco-engine",
+   "type": "code",
+   "path": "repos/shelfmate-reco/app/main.py",
+   "project": "reco-engine"
+  },
+  {
+   "evidence_id": "ai_ml-cs-research-agents",
+   "type": "case_study",
+   "path": "case_studies/research-agents.md",
+   "project": "research-agents"
+  },
+  {
+   "evidence_id": "ai_ml-readme-research-agents",
+   "type": "readme",
+   "path": "repos/briefbot-research/README.md",
+   "project": "research-agents",
+   "terse": false
+  },
+  {
+   "evidence_id": "ai_ml-code-research-agents",
+   "type": "code",
+   "path": "repos/briefbot-research/app/main.py",
+   "project": "research-agents"
+  },
+  {
+   "evidence_id": "ai_ml-cs-invoice-ocr",
+   "type": "case_study",
+   "path": "case_studies/invoice-ocr.md",
+   "project": "invoice-ocr"
+  },
+  {
+   "evidence_id": "ai_ml-readme-invoice-ocr",
+   "type": "readme",
+   "path": "repos/papertrail-invoice/README.md",
+   "project": "invoice-ocr",
+   "terse": true
+  },
+  {
+   "evidence_id": "ai_ml-code-invoice-ocr",
+   "type": "code",
+   "path": "repos/papertrail-invoice/app/main.py",
+   "project": "invoice-ocr"
+  },
+  {
+   "evidence_id": "ai_ml-cs-review-sentiment",
+   "type": "case_study",
+   "path": "case_studies/review-sentiment.md",
+   "project": "review-sentiment"
+  },
+  {
+   "evidence_id": "ai_ml-cs-fraud-anomaly",
+   "type": "case_study",
+   "path": "case_studies/fraud-anomaly.md",
+   "project": "fraud-anomaly"
+  },
+  {
+   "evidence_id": "ai_ml-cs-listing-search",
+   "type": "case_study",
+   "path": "case_studies/listing-search.md",
+   "project": "listing-search"
+  },
+  {
+   "evidence_id": "ai_ml-blog-listing-search",
+   "type": "blog_post",
+   "path": "case_studies/listing-search-blog.md",
+   "project": "listing-search"
+  },
+  {
+   "evidence_id": "ai_ml-readme-listing-search",
+   "type": "readme",
+   "path": "repos/nestfinder-listing/README.md",
+   "project": "listing-search",
+   "terse": true
+  },
+  {
+   "evidence_id": "ai_ml-code-listing-search",
+   "type": "code",
+   "path": "repos/nestfinder-listing/app/main.py",
+   "project": "listing-search"
+  },
+  {
+   "evidence_id": "ai_ml-cs-llm-evals",
+   "type": "case_study",
+   "path": "case_studies/llm-evals.md",
+   "project": "llm-evals"
+  },
+  {
+   "evidence_id": "ai_ml-readme-llm-evals",
+   "type": "readme",
+   "path": "repos/evalkit-llm/README.md",
+   "project": "llm-evals",
+   "terse": false
+  },
+  {
+   "evidence_id": "ai_ml-code-llm-evals",
+   "type": "code",
+   "path": "repos/evalkit-llm/app/main.py",
+   "project": "llm-evals"
+  },
+  {
+   "evidence_id": "ai_ml-cs-call-qa",
+   "type": "case_study",
+   "path": "case_studies/call-qa.md",
+   "project": "call-qa"
+  },
+  {
+   "evidence_id": "ai_ml-cs-xray-triage",
+   "type": "case_study",
+   "path": "case_studies/xray-triage.md",
+   "project": "xray-triage"
+  },
+  {
+   "evidence_id": "ai_ml-cs-sagemaker-migration",
+   "type": "case_study",
+   "path": "case_studies/sagemaker-migration.md",
+   "project": "sagemaker-migration"
+  },
+  {
+   "evidence_id": "ai_ml-blog-sagemaker-migration",
+   "type": "blog_post",
+   "path": "case_studies/sagemaker-migration-blog.md",
+   "project": "sagemaker-migration"
+  },
+  {
+   "evidence_id": "ai_ml-readme-sagemaker-migration",
+   "type": "readme",
+   "path": "repos/modelhub-sagemaker/README.md",
+   "project": "sagemaker-migration",
+   "terse": true
+  },
+  {
+   "evidence_id": "ai_ml-code-sagemaker-migration",
+   "type": "code",
+   "path": "repos/modelhub-sagemaker/app/main.py",
+   "project": "sagemaker-migration"
+  },
+  {
+   "evidence_id": "ai_ml-cs-shop-chatbot",
+   "type": "case_study",
+   "path": "case_studies/shop-chatbot.md",
+   "project": "shop-chatbot"
+  },
+  {
+   "evidence_id": "ai_ml-cs-insurance-pricing",
+   "type": "case_study",
+   "path": "case_studies/insurance-pricing.md",
+   "project": "insurance-pricing"
+  },
+  {
+   "evidence_id": "ai_ml-blog-insurance-pricing",
+   "type": "blog_post",
+   "path": "case_studies/insurance-pricing-blog.md",
+   "project": "insurance-pricing"
+  },
+  {
+   "evidence_id": "ai_ml-cs-feature-pipelines",
+   "type": "case_study",
+   "path": "case_studies/feature-pipelines.md",
+   "project": "feature-pipelines"
+  },
+  {
+   "evidence_id": "ai_ml-blog-feature-pipelines",
+   "type": "blog_post",
+   "path": "case_studies/feature-pipelines-blog.md",
+   "project": "feature-pipelines"
+  },
+  {
+   "evidence_id": "ai_ml-readme-feature-pipelines",
+   "type": "readme",
+   "path": "repos/featureflow-feature/README.md",
+   "project": "feature-pipelines",
+   "terse": true
+  },
+  {
+   "evidence_id": "ai_ml-code-feature-pipelines",
+   "type": "code",
+   "path": "repos/featureflow-feature/app/main.py",
+   "project": "feature-pipelines"
+  },
+  {
+   "evidence_id": "ai_ml-rev-00",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "research-agents"
+  },
+  {
+   "evidence_id": "ai_ml-rev-01",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "invoice-ocr"
+  },
+  {
+   "evidence_id": "ai_ml-rev-02",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "med-lora"
+  },
+  {
+   "evidence_id": "ai_ml-rev-03",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "fraud-anomaly"
+  },
+  {
+   "evidence_id": "ai_ml-rev-04",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "shop-chatbot"
+  },
+  {
+   "evidence_id": "ai_ml-rev-05",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "feature-pipelines"
+  },
+  {
+   "evidence_id": "ai_ml-rev-06",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "insurance-pricing"
+  },
+  {
+   "evidence_id": "ai_ml-rev-07",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "defect-vision"
+  },
+  {
+   "evidence_id": "ai_ml-rev-08",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "call-qa"
+  },
+  {
+   "evidence_id": "ai_ml-rev-09",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "sagemaker-migration"
+  },
+  {
+   "evidence_id": "ai_ml-rev-10",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "llm-evals"
+  },
+  {
+   "evidence_id": "ai_ml-rev-11",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "xray-triage"
+  },
+  {
+   "evidence_id": "ai_ml-rev-12",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "reco-engine"
+  },
+  {
+   "evidence_id": "ai_ml-rev-13",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "clause-extract"
+  },
+  {
+   "evidence_id": "ai_ml-prop-000",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-001",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-002",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-003",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "telco-churn",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-004",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-005",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-006",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-007",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-008",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "telco-churn",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "ai_ml-prop-009",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "defect-vision",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "ai_ml-prop-010",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-011",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "invoice-ocr",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-012",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-013",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-014",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-015",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "sagemaker-migration",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-016",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "insurance-pricing",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "ai_ml-prop-017",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-018",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "fraud-anomaly",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-019",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-020",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-021",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-022",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "clause-extract",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "ai_ml-prop-023",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-024",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "research-agents",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-025",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "retail-forecast",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-026",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "insurance-pricing",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "ai_ml-prop-027",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "feature-pipelines",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "ai_ml-prop-028",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "clause-extract",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "ai_ml-prop-029",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-030",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "llm-evals",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "ai_ml-prop-031",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "defect-vision",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "ai_ml-prop-032",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-033",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "reco-engine",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-034",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-035",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-036",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "review-sentiment",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "ai_ml-prop-037",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-038",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-039",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-040",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "defect-vision",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "ai_ml-prop-041",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "llm-evals",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "ai_ml-prop-042",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "fraud-anomaly",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-043",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "review-sentiment",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "ai_ml-prop-044",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-045",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-046",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "feature-pipelines",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-047",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-048",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "review-sentiment",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-049",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-050",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-051",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "research-agents",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-052",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-053",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "ai_ml-prop-054",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-055",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "research-agents",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-056",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "call-qa",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-057",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "xray-triage",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-058",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "review-sentiment",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-059",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-060",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "xray-triage",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-061",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-062",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "call-qa",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-063",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "med-lora",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-064",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-065",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "listing-search",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "ai_ml-prop-066",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-067",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "invoice-ocr",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "ai_ml-prop-068",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "research-agents",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-069",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-070",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-071",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "shop-chatbot",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "ai_ml-prop-072",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-073",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "insurance-pricing",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-074",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "call-qa",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-075",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "call-qa",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-076",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-077",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "defect-vision",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-078",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "reco-engine",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-079",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-080",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "reco-engine",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-081",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-082",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-083",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-084",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "fraud-anomaly",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-085",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-086",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-087",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "defect-vision",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-088",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "support-rag",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-089",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "review-sentiment",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-090",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-091",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "telco-churn",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "ai_ml-prop-092",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "research-agents",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "ai_ml-prop-093",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "research-agents",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-094",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-095",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-096",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-097",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-098",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-099",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "retail-forecast",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-100",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "review-sentiment",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-101",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-102",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "xray-triage",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-103",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "call-qa",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "ai_ml-prop-104",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-105",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "retail-forecast",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "ai_ml-prop-106",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "support-rag",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-107",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-108",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-109",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-110",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-111",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-112",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-113",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "review-sentiment",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-114",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-115",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-116",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "fraud-anomaly",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "ai_ml-prop-117",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "defect-vision",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-118",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "research-agents",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-119",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-120",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "sagemaker-migration",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-121",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "fraud-anomaly",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "ai_ml-prop-122",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-123",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "xray-triage",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-124",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "llm-evals",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-125",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-126",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "retail-forecast",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-127",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "med-lora",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-128",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "sagemaker-migration",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-129",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "med-lora",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-130",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "support-rag",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-131",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "telco-churn",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-132",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-133",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "shop-chatbot",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-134",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "listing-search",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-135",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "fraud-anomaly",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-136",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-137",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-138",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "insurance-pricing",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-139",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-140",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "insurance-pricing",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "ai_ml-prop-141",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-142",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-143",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-144",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "invoice-ocr",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "ai_ml-prop-145",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "review-sentiment",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-146",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-147",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "ai_ml-prop-148",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "fraud-anomaly",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "ai_ml-prop-149",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "review-sentiment",
+   "outcome": "won"
+  }
+ ],
+ "fullstack": [
+  {
+   "evidence_id": "fullstack-cv",
+   "type": "cv",
+   "path": "cv.pdf",
+   "project": null
+  },
+  {
+   "evidence_id": "fullstack-cs-saas-billing",
+   "type": "case_study",
+   "path": "case_studies/saas-billing.md",
+   "project": "saas-billing"
+  },
+  {
+   "evidence_id": "fullstack-readme-saas-billing",
+   "type": "readme",
+   "path": "repos/billboard-saas/README.md",
+   "project": "saas-billing",
+   "terse": false
+  },
+  {
+   "evidence_id": "fullstack-code-saas-billing",
+   "type": "code",
+   "path": "repos/billboard-saas/src/main.ts",
+   "project": "saas-billing"
+  },
+  {
+   "evidence_id": "fullstack-cs-logistics-tracker",
+   "type": "case_study",
+   "path": "case_studies/logistics-tracker.md",
+   "project": "logistics-tracker"
+  },
+  {
+   "evidence_id": "fullstack-readme-logistics-tracker",
+   "type": "readme",
+   "path": "repos/fleetpulse-logistics/README.md",
+   "project": "logistics-tracker",
+   "terse": false
+  },
+  {
+   "evidence_id": "fullstack-code-logistics-tracker",
+   "type": "code",
+   "path": "repos/fleetpulse-logistics/src/main.ts",
+   "project": "logistics-tracker"
+  },
+  {
+   "evidence_id": "fullstack-cs-handmade-market",
+   "type": "case_study",
+   "path": "case_studies/handmade-market.md",
+   "project": "handmade-market"
+  },
+  {
+   "evidence_id": "fullstack-readme-handmade-market",
+   "type": "readme",
+   "path": "repos/craftcart-handmade/README.md",
+   "project": "handmade-market",
+   "terse": true
+  },
+  {
+   "evidence_id": "fullstack-code-handmade-market",
+   "type": "code",
+   "path": "repos/craftcart-handmade/src/main.ts",
+   "project": "handmade-market"
+  },
+  {
+   "evidence_id": "fullstack-cs-clinic-booking",
+   "type": "case_study",
+   "path": "case_studies/clinic-booking.md",
+   "project": "clinic-booking"
+  },
+  {
+   "evidence_id": "fullstack-readme-clinic-booking",
+   "type": "readme",
+   "path": "repos/careslot-clinic/README.md",
+   "project": "clinic-booking",
+   "terse": true
+  },
+  {
+   "evidence_id": "fullstack-code-clinic-booking",
+   "type": "code",
+   "path": "repos/careslot-clinic/src/main.ts",
+   "project": "clinic-booking"
+  },
+  {
+   "evidence_id": "fullstack-cs-media-graphql",
+   "type": "case_study",
+   "path": "case_studies/media-graphql.md",
+   "project": "media-graphql"
+  },
+  {
+   "evidence_id": "fullstack-blog-media-graphql",
+   "type": "blog_post",
+   "path": "case_studies/media-graphql-blog.md",
+   "project": "media-graphql"
+  },
+  {
+   "evidence_id": "fullstack-readme-media-graphql",
+   "type": "readme",
+   "path": "repos/streamgraph-media/README.md",
+   "project": "media-graphql",
+   "terse": false
+  },
+  {
+   "evidence_id": "fullstack-code-media-graphql",
+   "type": "code",
+   "path": "repos/streamgraph-media/src/main.ts",
+   "project": "media-graphql"
+  },
+  {
+   "evidence_id": "fullstack-cs-shopify-app",
+   "type": "case_study",
+   "path": "case_studies/shopify-app.md",
+   "project": "shopify-app"
+  },
+  {
+   "evidence_id": "fullstack-cs-fitness-mobile",
+   "type": "case_study",
+   "path": "case_studies/fitness-mobile.md",
+   "project": "fitness-mobile"
+  },
+  {
+   "evidence_id": "fullstack-cs-admin-panel",
+   "type": "case_study",
+   "path": "case_studies/admin-panel.md",
+   "project": "admin-panel"
+  },
+  {
+   "evidence_id": "fullstack-readme-admin-panel",
+   "type": "readme",
+   "path": "repos/opsdesk-admin/README.md",
+   "project": "admin-panel",
+   "terse": false
+  },
+  {
+   "evidence_id": "fullstack-code-admin-panel",
+   "type": "code",
+   "path": "repos/opsdesk-admin/src/main.ts",
+   "project": "admin-panel"
+  },
+  {
+   "evidence_id": "fullstack-cs-landing-perf",
+   "type": "case_study",
+   "path": "case_studies/landing-perf.md",
+   "project": "landing-perf"
+  },
+  {
+   "evidence_id": "fullstack-blog-landing-perf",
+   "type": "blog_post",
+   "path": "case_studies/landing-perf-blog.md",
+   "project": "landing-perf"
+  },
+  {
+   "evidence_id": "fullstack-cs-multitenant-crm",
+   "type": "case_study",
+   "path": "case_studies/multitenant-crm.md",
+   "project": "multitenant-crm"
+  },
+  {
+   "evidence_id": "fullstack-readme-multitenant-crm",
+   "type": "readme",
+   "path": "repos/agentdesk-multitenant/README.md",
+   "project": "multitenant-crm",
+   "terse": false
+  },
+  {
+   "evidence_id": "fullstack-code-multitenant-crm",
+   "type": "code",
+   "path": "repos/agentdesk-multitenant/src/main.ts",
+   "project": "multitenant-crm"
+  },
+  {
+   "evidence_id": "fullstack-cs-e2e-suite",
+   "type": "case_study",
+   "path": "case_studies/e2e-suite.md",
+   "project": "e2e-suite"
+  },
+  {
+   "evidence_id": "fullstack-readme-e2e-suite",
+   "type": "readme",
+   "path": "repos/greenbuild-e2e/README.md",
+   "project": "e2e-suite",
+   "terse": false
+  },
+  {
+   "evidence_id": "fullstack-code-e2e-suite",
+   "type": "code",
+   "path": "repos/greenbuild-e2e/src/main.ts",
+   "project": "e2e-suite"
+  },
+  {
+   "evidence_id": "fullstack-cs-edu-chat",
+   "type": "case_study",
+   "path": "case_studies/edu-chat.md",
+   "project": "edu-chat"
+  },
+  {
+   "evidence_id": "fullstack-blog-edu-chat",
+   "type": "blog_post",
+   "path": "case_studies/edu-chat-blog.md",
+   "project": "edu-chat"
+  },
+  {
+   "evidence_id": "fullstack-readme-edu-chat",
+   "type": "readme",
+   "path": "repos/classtalk-edu/README.md",
+   "project": "edu-chat",
+   "terse": true
+  },
+  {
+   "evidence_id": "fullstack-code-edu-chat",
+   "type": "code",
+   "path": "repos/classtalk-edu/src/main.ts",
+   "project": "edu-chat"
+  },
+  {
+   "evidence_id": "fullstack-cs-headless-blog",
+   "type": "case_study",
+   "path": "case_studies/headless-blog.md",
+   "project": "headless-blog"
+  },
+  {
+   "evidence_id": "fullstack-cs-payment-recon",
+   "type": "case_study",
+   "path": "case_studies/payment-recon.md",
+   "project": "payment-recon"
+  },
+  {
+   "evidence_id": "fullstack-readme-payment-recon",
+   "type": "readme",
+   "path": "repos/ledgermatch-payment/README.md",
+   "project": "payment-recon",
+   "terse": false
+  },
+  {
+   "evidence_id": "fullstack-code-payment-recon",
+   "type": "code",
+   "path": "repos/ledgermatch-payment/src/main.ts",
+   "project": "payment-recon"
+  },
+  {
+   "evidence_id": "fullstack-cs-ticketing-pwa",
+   "type": "case_study",
+   "path": "case_studies/ticketing-pwa.md",
+   "project": "ticketing-pwa"
+  },
+  {
+   "evidence_id": "fullstack-cs-jquery-migration",
+   "type": "case_study",
+   "path": "case_studies/jquery-migration.md",
+   "project": "jquery-migration"
+  },
+  {
+   "evidence_id": "fullstack-readme-jquery-migration",
+   "type": "readme",
+   "path": "repos/modernize-jquery/README.md",
+   "project": "jquery-migration",
+   "terse": true
+  },
+  {
+   "evidence_id": "fullstack-code-jquery-migration",
+   "type": "code",
+   "path": "repos/modernize-jquery/src/main.ts",
+   "project": "jquery-migration"
+  },
+  {
+   "evidence_id": "fullstack-cs-inventory-api",
+   "type": "case_study",
+   "path": "case_studies/inventory-api.md",
+   "project": "inventory-api"
+  },
+  {
+   "evidence_id": "fullstack-blog-inventory-api",
+   "type": "blog_post",
+   "path": "case_studies/inventory-api-blog.md",
+   "project": "inventory-api"
+  },
+  {
+   "evidence_id": "fullstack-readme-inventory-api",
+   "type": "readme",
+   "path": "repos/stocksync-inventory/README.md",
+   "project": "inventory-api",
+   "terse": true
+  },
+  {
+   "evidence_id": "fullstack-code-inventory-api",
+   "type": "code",
+   "path": "repos/stocksync-inventory/app/main.py",
+   "project": "inventory-api"
+  },
+  {
+   "evidence_id": "fullstack-cs-notes-realtime",
+   "type": "case_study",
+   "path": "case_studies/notes-realtime.md",
+   "project": "notes-realtime"
+  },
+  {
+   "evidence_id": "fullstack-readme-notes-realtime",
+   "type": "readme",
+   "path": "repos/jotter-notes/README.md",
+   "project": "notes-realtime",
+   "terse": false
+  },
+  {
+   "evidence_id": "fullstack-code-notes-realtime",
+   "type": "code",
+   "path": "repos/jotter-notes/src/main.ts",
+   "project": "notes-realtime"
+  },
+  {
+   "evidence_id": "fullstack-rev-00",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "headless-blog"
+  },
+  {
+   "evidence_id": "fullstack-rev-01",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "inventory-api"
+  },
+  {
+   "evidence_id": "fullstack-rev-02",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "ticketing-pwa"
+  },
+  {
+   "evidence_id": "fullstack-rev-03",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "media-graphql"
+  },
+  {
+   "evidence_id": "fullstack-rev-04",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "edu-chat"
+  },
+  {
+   "evidence_id": "fullstack-rev-05",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "admin-panel"
+  },
+  {
+   "evidence_id": "fullstack-rev-06",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "fitness-mobile"
+  },
+  {
+   "evidence_id": "fullstack-rev-07",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "payment-recon"
+  },
+  {
+   "evidence_id": "fullstack-rev-08",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "e2e-suite"
+  },
+  {
+   "evidence_id": "fullstack-rev-09",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "logistics-tracker"
+  },
+  {
+   "evidence_id": "fullstack-rev-10",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "notes-realtime"
+  },
+  {
+   "evidence_id": "fullstack-rev-11",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "clinic-booking"
+  },
+  {
+   "evidence_id": "fullstack-rev-12",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "multitenant-crm"
+  },
+  {
+   "evidence_id": "fullstack-rev-13",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "jquery-migration"
+  },
+  {
+   "evidence_id": "fullstack-prop-000",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "fitness-mobile",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-001",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "handmade-market",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-002",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-003",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-004",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-005",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "landing-perf",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "fullstack-prop-006",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "saas-billing",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-007",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-008",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "landing-perf",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "fullstack-prop-009",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "landing-perf",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-010",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "fullstack-prop-011",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "ticketing-pwa",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "fullstack-prop-012",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "handmade-market",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "fullstack-prop-013",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "payment-recon",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-014",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-015",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "saas-billing",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-016",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-017",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "jquery-migration",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-018",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-019",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-020",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-021",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-022",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "shopify-app",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-023",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "fullstack-prop-024",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-025",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-026",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "multitenant-crm",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "fullstack-prop-027",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "fullstack-prop-028",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-029",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-030",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "jquery-migration",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "fullstack-prop-031",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "admin-panel",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "fullstack-prop-032",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "logistics-tracker",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-033",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "fullstack-prop-034",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-035",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "headless-blog",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-036",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "e2e-suite",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "fullstack-prop-037",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-038",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "admin-panel",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-039",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "inventory-api",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "fullstack-prop-040",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "shopify-app",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-041",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-042",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "headless-blog",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "fullstack-prop-043",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "ticketing-pwa",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "fullstack-prop-044",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-045",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "landing-perf",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "fullstack-prop-046",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-047",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-048",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-049",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-050",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "notes-realtime",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "fullstack-prop-051",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-052",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-053",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-054",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-055",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "media-graphql",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "fullstack-prop-056",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-057",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-058",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-059",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-060",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "payment-recon",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-061",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-062",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-063",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "saas-billing",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-064",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "clinic-booking",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-065",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-066",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "clinic-booking",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-067",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "jquery-migration",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "fullstack-prop-068",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-069",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-070",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "media-graphql",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-071",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-072",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-073",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "logistics-tracker",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-074",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-075",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "inventory-api",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-076",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-077",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-078",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "admin-panel",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-079",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-080",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "inventory-api",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "fullstack-prop-081",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-082",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-083",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "logistics-tracker",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-084",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "notes-realtime",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "fullstack-prop-085",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-086",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-087",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-088",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "notes-realtime",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "fullstack-prop-089",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-090",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "inventory-api",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-091",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-092",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-093",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "multitenant-crm",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-094",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-095",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-096",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "fullstack-prop-097",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "edu-chat",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-098",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-099",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-100",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "edu-chat",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "fullstack-prop-101",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "clinic-booking",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "fullstack-prop-102",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-103",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "ticketing-pwa",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-104",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "payment-recon",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "fullstack-prop-105",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-106",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "clinic-booking",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-107",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "fullstack-prop-108",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "fullstack-prop-109",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "ticketing-pwa",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "fullstack-prop-110",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-111",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "headless-blog",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "fullstack-prop-112",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "shopify-app",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "fullstack-prop-113",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-114",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "ticketing-pwa",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "fullstack-prop-115",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-116",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "clinic-booking",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "fullstack-prop-117",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "jquery-migration",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-118",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-119",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-120",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "landing-perf",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "fullstack-prop-121",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-122",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "logistics-tracker",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "fullstack-prop-123",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "handmade-market",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "fullstack-prop-124",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-125",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-126",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-127",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "saas-billing",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "fullstack-prop-128",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "payment-recon",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "fullstack-prop-129",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-130",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-131",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-132",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-133",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "edu-chat",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "fullstack-prop-134",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "ticketing-pwa",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "fullstack-prop-135",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "e2e-suite",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "fullstack-prop-136",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "saas-billing",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-137",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "inventory-api",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-138",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-139",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "handmade-market",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "fullstack-prop-140",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-141",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "logistics-tracker",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-142",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-143",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "payment-recon",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "fullstack-prop-144",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "edu-chat",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-145",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "notes-realtime",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "fullstack-prop-146",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-147",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "ticketing-pwa",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-148",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "jquery-migration",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "fullstack-prop-149",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "multitenant-crm",
+   "outcome": "replied"
+  }
+ ],
+ "data_analyst": [
+  {
+   "evidence_id": "data_analyst-cv",
+   "type": "cv",
+   "path": "cv.pdf",
+   "project": null
+  },
+  {
+   "evidence_id": "data_analyst-cs-sales-kpi",
+   "type": "case_study",
+   "path": "case_studies/sales-kpi.md",
+   "project": "sales-kpi"
+  },
+  {
+   "evidence_id": "data_analyst-cs-attribution",
+   "type": "case_study",
+   "path": "case_studies/attribution.md",
+   "project": "attribution"
+  },
+  {
+   "evidence_id": "data_analyst-readme-attribution",
+   "type": "readme",
+   "path": "repos/channelcredit-attribution/README.md",
+   "project": "attribution",
+   "terse": false
+  },
+  {
+   "evidence_id": "data_analyst-code-attribution",
+   "type": "code",
+   "path": "repos/channelcredit-attribution/models/core.sql",
+   "project": "attribution"
+  },
+  {
+   "evidence_id": "data_analyst-cs-dbt-refactor",
+   "type": "case_study",
+   "path": "case_studies/dbt-refactor.md",
+   "project": "dbt-refactor"
+  },
+  {
+   "evidence_id": "data_analyst-readme-dbt-refactor",
+   "type": "readme",
+   "path": "repos/modelops-dbt/README.md",
+   "project": "dbt-refactor",
+   "terse": true
+  },
+  {
+   "evidence_id": "data_analyst-code-dbt-refactor",
+   "type": "code",
+   "path": "repos/modelops-dbt/models/core.sql",
+   "project": "dbt-refactor"
+  },
+  {
+   "evidence_id": "data_analyst-cs-cohort-retention",
+   "type": "case_study",
+   "path": "case_studies/cohort-retention.md",
+   "project": "cohort-retention"
+  },
+  {
+   "evidence_id": "data_analyst-blog-cohort-retention",
+   "type": "blog_post",
+   "path": "case_studies/cohort-retention-blog.md",
+   "project": "cohort-retention"
+  },
+  {
+   "evidence_id": "data_analyst-cs-ab-framework",
+   "type": "case_study",
+   "path": "case_studies/ab-framework.md",
+   "project": "ab-framework"
+  },
+  {
+   "evidence_id": "data_analyst-blog-ab-framework",
+   "type": "blog_post",
+   "path": "case_studies/ab-framework-blog.md",
+   "project": "ab-framework"
+  },
+  {
+   "evidence_id": "data_analyst-readme-ab-framework",
+   "type": "readme",
+   "path": "repos/testreader-ab/README.md",
+   "project": "ab-framework",
+   "terse": false
+  },
+  {
+   "evidence_id": "data_analyst-code-ab-framework",
+   "type": "code",
+   "path": "repos/testreader-ab/app/main.py",
+   "project": "ab-framework"
+  },
+  {
+   "evidence_id": "data_analyst-cs-readmission",
+   "type": "case_study",
+   "path": "case_studies/readmission.md",
+   "project": "readmission"
+  },
+  {
+   "evidence_id": "data_analyst-blog-readmission",
+   "type": "blog_post",
+   "path": "case_studies/readmission-blog.md",
+   "project": "readmission"
+  },
+  {
+   "evidence_id": "data_analyst-cs-supply-etl",
+   "type": "case_study",
+   "path": "case_studies/supply-etl.md",
+   "project": "supply-etl"
+  },
+  {
+   "evidence_id": "data_analyst-readme-supply-etl",
+   "type": "readme",
+   "path": "repos/shipstream-supply/README.md",
+   "project": "supply-etl",
+   "terse": true
+  },
+  {
+   "evidence_id": "data_analyst-code-supply-etl",
+   "type": "code",
+   "path": "repos/shipstream-supply/app/main.py",
+   "project": "supply-etl"
+  },
+  {
+   "evidence_id": "data_analyst-cs-survey-clean",
+   "type": "case_study",
+   "path": "case_studies/survey-clean.md",
+   "project": "survey-clean"
+  },
+  {
+   "evidence_id": "data_analyst-blog-survey-clean",
+   "type": "blog_post",
+   "path": "case_studies/survey-clean-blog.md",
+   "project": "survey-clean"
+  },
+  {
+   "evidence_id": "data_analyst-readme-survey-clean",
+   "type": "readme",
+   "path": "repos/surveysense-survey/README.md",
+   "project": "survey-clean",
+   "terse": false
+  },
+  {
+   "evidence_id": "data_analyst-code-survey-clean",
+   "type": "code",
+   "path": "repos/surveysense-survey/app/main.py",
+   "project": "survey-clean"
+  },
+  {
+   "evidence_id": "data_analyst-cs-fin-forecast",
+   "type": "case_study",
+   "path": "case_studies/fin-forecast.md",
+   "project": "fin-forecast"
+  },
+  {
+   "evidence_id": "data_analyst-cs-tableau-exec",
+   "type": "case_study",
+   "path": "case_studies/tableau-exec.md",
+   "project": "tableau-exec"
+  },
+  {
+   "evidence_id": "data_analyst-blog-tableau-exec",
+   "type": "blog_post",
+   "path": "case_studies/tableau-exec-blog.md",
+   "project": "tableau-exec"
+  },
+  {
+   "evidence_id": "data_analyst-cs-saas-churn-diag",
+   "type": "case_study",
+   "path": "case_studies/saas-churn-diag.md",
+   "project": "saas-churn-diag"
+  },
+  {
+   "evidence_id": "data_analyst-readme-saas-churn-diag",
+   "type": "readme",
+   "path": "repos/churnlens-saas/README.md",
+   "project": "saas-churn-diag",
+   "terse": false
+  },
+  {
+   "evidence_id": "data_analyst-code-saas-churn-diag",
+   "type": "code",
+   "path": "repos/churnlens-saas/models/core.sql",
+   "project": "saas-churn-diag"
+  },
+  {
+   "evidence_id": "data_analyst-cs-ga4-audit",
+   "type": "case_study",
+   "path": "case_studies/ga4-audit.md",
+   "project": "ga4-audit"
+  },
+  {
+   "evidence_id": "data_analyst-cs-inventory-opt",
+   "type": "case_study",
+   "path": "case_studies/inventory-opt.md",
+   "project": "inventory-opt"
+  },
+  {
+   "evidence_id": "data_analyst-readme-inventory-opt",
+   "type": "readme",
+   "path": "repos/stocksmart-inventory/README.md",
+   "project": "inventory-opt",
+   "terse": true
+  },
+  {
+   "evidence_id": "data_analyst-code-inventory-opt",
+   "type": "code",
+   "path": "repos/stocksmart-inventory/app/main.py",
+   "project": "inventory-opt"
+  },
+  {
+   "evidence_id": "data_analyst-cs-ops-metabase",
+   "type": "case_study",
+   "path": "case_studies/ops-metabase.md",
+   "project": "ops-metabase"
+  },
+  {
+   "evidence_id": "data_analyst-blog-ops-metabase",
+   "type": "blog_post",
+   "path": "case_studies/ops-metabase-blog.md",
+   "project": "ops-metabase"
+  },
+  {
+   "evidence_id": "data_analyst-cs-segmentation",
+   "type": "case_study",
+   "path": "case_studies/segmentation.md",
+   "project": "segmentation"
+  },
+  {
+   "evidence_id": "data_analyst-blog-segmentation",
+   "type": "blog_post",
+   "path": "case_studies/segmentation-blog.md",
+   "project": "segmentation"
+  },
+  {
+   "evidence_id": "data_analyst-readme-segmentation",
+   "type": "readme",
+   "path": "repos/segmentiq-segmentation/README.md",
+   "project": "segmentation",
+   "terse": false
+  },
+  {
+   "evidence_id": "data_analyst-code-segmentation",
+   "type": "code",
+   "path": "repos/segmentiq-segmentation/models/core.sql",
+   "project": "segmentation"
+  },
+  {
+   "evidence_id": "data_analyst-cs-bq-cost",
+   "type": "case_study",
+   "path": "case_studies/bq-cost.md",
+   "project": "bq-cost"
+  },
+  {
+   "evidence_id": "data_analyst-readme-bq-cost",
+   "type": "readme",
+   "path": "repos/scansaver-bq/README.md",
+   "project": "bq-cost",
+   "terse": true
+  },
+  {
+   "evidence_id": "data_analyst-code-bq-cost",
+   "type": "code",
+   "path": "repos/scansaver-bq/models/core.sql",
+   "project": "bq-cost"
+  },
+  {
+   "evidence_id": "data_analyst-cs-excel-automation",
+   "type": "case_study",
+   "path": "case_studies/excel-automation.md",
+   "project": "excel-automation"
+  },
+  {
+   "evidence_id": "data_analyst-blog-excel-automation",
+   "type": "blog_post",
+   "path": "case_studies/excel-automation-blog.md",
+   "project": "excel-automation"
+  },
+  {
+   "evidence_id": "data_analyst-cs-price-elasticity",
+   "type": "case_study",
+   "path": "case_studies/price-elasticity.md",
+   "project": "price-elasticity"
+  },
+  {
+   "evidence_id": "data_analyst-rev-00",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "cohort-retention"
+  },
+  {
+   "evidence_id": "data_analyst-rev-01",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "readmission"
+  },
+  {
+   "evidence_id": "data_analyst-rev-02",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "segmentation"
+  },
+  {
+   "evidence_id": "data_analyst-rev-03",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "bq-cost"
+  },
+  {
+   "evidence_id": "data_analyst-rev-04",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "price-elasticity"
+  },
+  {
+   "evidence_id": "data_analyst-rev-05",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "saas-churn-diag"
+  },
+  {
+   "evidence_id": "data_analyst-rev-06",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "inventory-opt"
+  },
+  {
+   "evidence_id": "data_analyst-rev-07",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "fin-forecast"
+  },
+  {
+   "evidence_id": "data_analyst-rev-08",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "ga4-audit"
+  },
+  {
+   "evidence_id": "data_analyst-rev-09",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "excel-automation"
+  },
+  {
+   "evidence_id": "data_analyst-rev-10",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "ops-metabase"
+  },
+  {
+   "evidence_id": "data_analyst-rev-11",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "sales-kpi"
+  },
+  {
+   "evidence_id": "data_analyst-rev-12",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "supply-etl"
+  },
+  {
+   "evidence_id": "data_analyst-rev-13",
+   "type": "review",
+   "path": "reviews.json",
+   "project": "ab-framework"
+  },
+  {
+   "evidence_id": "data_analyst-prop-000",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "fin-forecast",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-001",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "inventory-opt",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-002",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "sales-kpi",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-003",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-004",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "ab-framework",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "data_analyst-prop-005",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "survey-clean",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-006",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "supply-etl",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-007",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "segmentation",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "data_analyst-prop-008",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-009",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "bq-cost",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-010",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "ops-metabase",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-011",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "fin-forecast",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-012",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-013",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-014",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "attribution",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-015",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "survey-clean",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-016",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-017",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "data_analyst-prop-018",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-019",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "sales-kpi",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-020",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "tableau-exec",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-021",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "price-elasticity",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-022",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "price-elasticity",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "data_analyst-prop-023",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-024",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "survey-clean",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-025",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "sales-kpi",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-026",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "readmission",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-027",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "fin-forecast",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "data_analyst-prop-028",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "segmentation",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "data_analyst-prop-029",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-030",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "survey-clean",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-031",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "tableau-exec",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-032",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-033",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "bq-cost",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "data_analyst-prop-034",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "tableau-exec",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "data_analyst-prop-035",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "cohort-retention",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-036",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-037",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-038",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "fin-forecast",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "data_analyst-prop-039",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "segmentation",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-040",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-041",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-042",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-043",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-044",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-045",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "ga4-audit",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-046",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-047",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-048",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "saas-churn-diag",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-049",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "bq-cost",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-050",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "attribution",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "data_analyst-prop-051",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-052",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "fin-forecast",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-053",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "price-elasticity",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "data_analyst-prop-054",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-055",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "supply-etl",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-056",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "cohort-retention",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-057",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "data_analyst-prop-058",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "cohort-retention",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "data_analyst-prop-059",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "ops-metabase",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-060",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "cohort-retention",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-061",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "saas-churn-diag",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-062",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "sales-kpi",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-063",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "readmission",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-064",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "saas-churn-diag",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "data_analyst-prop-065",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-066",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-067",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-068",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "readmission",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-069",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "dbt-refactor",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-070",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-071",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-072",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-073",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "survey-clean",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-074",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-075",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "excel-automation",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-076",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-077",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "attribution",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-078",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-079",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "ops-metabase",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "data_analyst-prop-080",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-081",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "segmentation",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-082",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "ga4-audit",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-083",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "cohort-retention",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-084",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-085",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-086",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "data_analyst-prop-087",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "tableau-exec",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-088",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "tableau-exec",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-089",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-090",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-091",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-092",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-093",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "attribution",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-094",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-095",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "tableau-exec",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-096",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "ops-metabase",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-097",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "supply-etl",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "data_analyst-prop-098",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-099",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "data_analyst-prop-100",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-101",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "survey-clean",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-102",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "ga4-audit",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "data_analyst-prop-103",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-104",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-105",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-106",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "excel-automation",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-107",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-108",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "dbt-refactor",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-109",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-110",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "sales-kpi",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-111",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "bq-cost",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "data_analyst-prop-112",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "ab-framework",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "data_analyst-prop-113",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-114",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-115",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "segmentation",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-116",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-117",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "excel-automation",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-118",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "supply-etl",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "data_analyst-prop-119",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-120",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "segmentation",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-121",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "readmission",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-122",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-123",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-124",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-125",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "inventory-opt",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-126",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "saas-churn-diag",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-127",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "saas-churn-diag",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-128",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "cohort-retention",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-129",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "supply-etl",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-130",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-131",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "survey-clean",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-132",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-133",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-134",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "supply-etl",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "data_analyst-prop-135",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "cohort-retention",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-136",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-137",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "sales-kpi",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "data_analyst-prop-138",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "supply-etl",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-139",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-140",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "saas-churn-diag",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "data_analyst-prop-141",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "fin-forecast",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "data_analyst-prop-142",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-143",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "tableau-exec",
+   "outcome": "won"
+  },
+  {
+   "evidence_id": "data_analyst-prop-144",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "ab-framework",
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-145",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-146",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-147",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "tableau-exec",
+   "outcome": "replied"
+  },
+  {
+   "evidence_id": "data_analyst-prop-148",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": null,
+   "outcome": "ignored"
+  },
+  {
+   "evidence_id": "data_analyst-prop-149",
+   "type": "proposal",
+   "path": "proposals.jsonl",
+   "project": "inventory-opt",
+   "outcome": "replied"
+  }
+ ]
+}

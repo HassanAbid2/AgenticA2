@@ -1,0 +1,5613 @@
+[
+ {
+  "client_id": "cl-0000",
+  "name": "Bright Logistics",
+  "country": "Germany",
+  "industry": "productivity",
+  "payment_verified": true,
+  "member_since": "2026-10-14",
+  "jobs_posted": 1,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0001",
+  "name": "Blue Media",
+  "country": "UK",
+  "industry": "e-commerce",
+  "payment_verified": true,
+  "member_since": "2017-09-01",
+  "jobs_posted": 23,
+  "hires": 8,
+  "total_spent_usd": 3632,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0002",
+  "name": "Green Media",
+  "country": "US",
+  "industry": "nonprofit",
+  "payment_verified": true,
+  "member_since": "2020-02-01",
+  "jobs_posted": 36,
+  "hires": 35,
+  "total_spent_usd": 117845,
+  "avg_rating_given": 4.2,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0003",
+  "name": "Blue Analytics",
+  "country": "Canada",
+  "industry": "media",
+  "payment_verified": true,
+  "member_since": "2022-09-01",
+  "jobs_posted": 48,
+  "hires": 35,
+  "total_spent_usd": 52290,
+  "avg_rating_given": 4.5,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0004",
+  "name": "Blue Logistics",
+  "country": "UK",
+  "industry": "manufacturing",
+  "payment_verified": true,
+  "member_since": "2016-06-01",
+  "jobs_posted": 36,
+  "hires": 36,
+  "total_spent_usd": 62964,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0005",
+  "name": "Green Capital",
+  "country": "Pakistan",
+  "industry": "retail",
+  "payment_verified": true,
+  "member_since": "2019-03-01",
+  "jobs_posted": 68,
+  "hires": 54,
+  "total_spent_usd": 91260,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0006",
+  "name": "Iron Studio",
+  "country": "Canada",
+  "industry": "productivity",
+  "payment_verified": true,
+  "member_since": "2020-08-01",
+  "jobs_posted": 50,
+  "hires": 49,
+  "total_spent_usd": 132643,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0007",
+  "name": "Pixel Labs",
+  "country": "UAE",
+  "industry": "insurance",
+  "payment_verified": true,
+  "member_since": "2018-01-01",
+  "jobs_posted": 46,
+  "hires": 40,
+  "total_spent_usd": 107880,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0008",
+  "name": "Quantum Systems",
+  "country": "Netherlands",
+  "industry": "real estate",
+  "payment_verified": true,
+  "member_since": "2019-11-01",
+  "jobs_posted": 38,
+  "hires": 25,
+  "total_spent_usd": 82450,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0009",
+  "name": "Harbor Systems",
+  "country": "UK",
+  "industry": "marketing",
+  "payment_verified": false,
+  "member_since": "2026-10-02",
+  "jobs_posted": 4,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0010",
+  "name": "Silver Labs",
+  "country": "Germany",
+  "industry": "accounting",
+  "payment_verified": true,
+  "member_since": "2021-12-01",
+  "jobs_posted": 38,
+  "hires": 35,
+  "total_spent_usd": 97090,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0011",
+  "name": "Quantum Retail",
+  "country": "Netherlands",
+  "industry": "real estate",
+  "payment_verified": true,
+  "member_since": "2025-05-01",
+  "jobs_posted": 24,
+  "hires": 5,
+  "total_spent_usd": 4555,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0012",
+  "name": "Cedar Studio",
+  "country": "UAE",
+  "industry": "healthcare",
+  "payment_verified": true,
+  "member_since": "2020-05-01",
+  "jobs_posted": 65,
+  "hires": 50,
+  "total_spent_usd": 56750,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0013",
+  "name": "Green Works",
+  "country": "Pakistan",
+  "industry": "mobile apps",
+  "payment_verified": true,
+  "member_since": "2021-09-01",
+  "jobs_posted": 20,
+  "hires": 3,
+  "total_spent_usd": 8037,
+  "avg_rating_given": 3.0,
+  "feedback_from_freelancers": [
+   "Changed scope constantly and disputed the final payment."
+  ]
+ },
+ {
+  "client_id": "cl-0014",
+  "name": "Quantum Health",
+  "country": "Australia",
+  "industry": "education",
+  "payment_verified": true,
+  "member_since": "2023-12-01",
+  "jobs_posted": 4,
+  "hires": 1,
+  "total_spent_usd": 2653,
+  "avg_rating_given": 4.5,
+  "feedback_from_freelancers": [
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0015",
+  "name": "Harbor Health",
+  "country": "Australia",
+  "industry": "subscription apps",
+  "payment_verified": true,
+  "member_since": "2016-01-01",
+  "jobs_posted": 25,
+  "hires": 17,
+  "total_spent_usd": 64277,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0016",
+  "name": "Pixel Studio",
+  "country": "Canada",
+  "industry": "consulting",
+  "payment_verified": true,
+  "member_since": "2014-01-01",
+  "jobs_posted": 40,
+  "hires": 28,
+  "total_spent_usd": 102340,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0017",
+  "name": "Quantum Retail",
+  "country": "UK",
+  "industry": "fintech",
+  "payment_verified": true,
+  "member_since": "2023-01-01",
+  "jobs_posted": 57,
+  "hires": 44,
+  "total_spent_usd": 53680,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0018",
+  "name": "Green Labs",
+  "country": "UK",
+  "industry": "nonprofit",
+  "payment_verified": true,
+  "member_since": "2026-10-05",
+  "jobs_posted": 3,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0019",
+  "name": "Cedar Retail",
+  "country": "UAE",
+  "industry": "e-commerce",
+  "payment_verified": true,
+  "member_since": "2017-05-01",
+  "jobs_posted": 31,
+  "hires": 27,
+  "total_spent_usd": 18765,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0020",
+  "name": "Green Labs",
+  "country": "France",
+  "industry": "fintech",
+  "payment_verified": true,
+  "member_since": "2023-04-01",
+  "jobs_posted": 60,
+  "hires": 51,
+  "total_spent_usd": 144942,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0021",
+  "name": "Nova Studio",
+  "country": "Singapore",
+  "industry": "call centers",
+  "payment_verified": true,
+  "member_since": "2014-08-01",
+  "jobs_posted": 46,
+  "hires": 44,
+  "total_spent_usd": 25696,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0022",
+  "name": "Blue Logistics",
+  "country": "Australia",
+  "industry": "health & fitness",
+  "payment_verified": true,
+  "member_since": "2025-01-01",
+  "jobs_posted": 57,
+  "hires": 47,
+  "total_spent_usd": 55836,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0023",
+  "name": "North Studio",
+  "country": "Netherlands",
+  "industry": "manufacturing",
+  "payment_verified": true,
+  "member_since": "2024-01-01",
+  "jobs_posted": 32,
+  "hires": 27,
+  "total_spent_usd": 25434,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0024",
+  "name": "Quantum Systems",
+  "country": "UAE",
+  "industry": "insurance",
+  "payment_verified": true,
+  "member_since": "2025-01-01",
+  "jobs_posted": 43,
+  "hires": 41,
+  "total_spent_usd": 162114,
+  "avg_rating_given": 4.5,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0025",
+  "name": "Bright Capital",
+  "country": "Netherlands",
+  "industry": "e-commerce",
+  "payment_verified": true,
+  "member_since": "2014-10-01",
+  "jobs_posted": 36,
+  "hires": 29,
+  "total_spent_usd": 41035,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0026",
+  "name": "Bright Retail",
+  "country": "Canada",
+  "industry": "mobile apps",
+  "payment_verified": true,
+  "member_since": "2019-03-01",
+  "jobs_posted": 4,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": 2.7,
+  "feedback_from_freelancers": [
+   "Changed scope constantly and disputed the final payment."
+  ]
+ },
+ {
+  "client_id": "cl-0027",
+  "name": "Harbor Health",
+  "country": "Singapore",
+  "industry": "e-commerce",
+  "payment_verified": false,
+  "member_since": "2026-10-07",
+  "jobs_posted": 4,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0028",
+  "name": "Atlas Retail",
+  "country": "Netherlands",
+  "industry": "mobile apps",
+  "payment_verified": true,
+  "member_since": "2024-12-01",
+  "jobs_posted": 14,
+  "hires": 2,
+  "total_spent_usd": 3120,
+  "avg_rating_given": 5.0,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0029",
+  "name": "Iron Systems",
+  "country": "Canada",
+  "industry": "consulting",
+  "payment_verified": true,
+  "member_since": "2017-07-01",
+  "jobs_posted": 19,
+  "hires": 3,
+  "total_spent_usd": 7455,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0030",
+  "name": "Cedar Retail",
+  "country": "France",
+  "industry": "consulting",
+  "payment_verified": true,
+  "member_since": "2023-07-01",
+  "jobs_posted": 27,
+  "hires": 10,
+  "total_spent_usd": 36060,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0031",
+  "name": "Cedar Retail",
+  "country": "France",
+  "industry": "events",
+  "payment_verified": true,
+  "member_since": "2015-02-01",
+  "jobs_posted": 20,
+  "hires": 16,
+  "total_spent_usd": 60368,
+  "avg_rating_given": 4.5,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0032",
+  "name": "Pixel Works",
+  "country": "Singapore",
+  "industry": "marketing",
+  "payment_verified": true,
+  "member_since": "2024-02-01",
+  "jobs_posted": 48,
+  "hires": 48,
+  "total_spent_usd": 41520,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0033",
+  "name": "Silver Health",
+  "country": "UAE",
+  "industry": "e-commerce",
+  "payment_verified": true,
+  "member_since": "2018-07-01",
+  "jobs_posted": 31,
+  "hires": 29,
+  "total_spent_usd": 57768,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0034",
+  "name": "Silver Capital",
+  "country": "US",
+  "industry": "SaaS",
+  "payment_verified": true,
+  "member_since": "2018-10-01",
+  "jobs_posted": 22,
+  "hires": 14,
+  "total_spent_usd": 7154,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0035",
+  "name": "Blue Logistics",
+  "country": "Netherlands",
+  "industry": "mobile apps",
+  "payment_verified": true,
+  "member_since": "2018-06-01",
+  "jobs_posted": 49,
+  "hires": 46,
+  "total_spent_usd": 105984,
+  "avg_rating_given": 4.5,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0036",
+  "name": "Silver Media",
+  "country": "UAE",
+  "industry": "retail",
+  "payment_verified": true,
+  "member_since": "2026-10-01",
+  "jobs_posted": 3,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0037",
+  "name": "Iron Logistics",
+  "country": "France",
+  "industry": "retail",
+  "payment_verified": true,
+  "member_since": "2018-10-01",
+  "jobs_posted": 64,
+  "hires": 48,
+  "total_spent_usd": 51936,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0038",
+  "name": "Silver Logistics",
+  "country": "Australia",
+  "industry": "telecom",
+  "payment_verified": true,
+  "member_since": "2019-12-01",
+  "jobs_posted": 36,
+  "hires": 33,
+  "total_spent_usd": 128799,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0039",
+  "name": "Green Capital",
+  "country": "Australia",
+  "industry": "telecom",
+  "payment_verified": false,
+  "member_since": "2014-05-01",
+  "jobs_posted": 11,
+  "hires": 3,
+  "total_spent_usd": 6540,
+  "avg_rating_given": 2.7,
+  "feedback_from_freelancers": [
+   "Changed scope constantly and disputed the final payment."
+  ]
+ },
+ {
+  "client_id": "cl-0040",
+  "name": "North Analytics",
+  "country": "Pakistan",
+  "industry": "mobile apps",
+  "payment_verified": true,
+  "member_since": "2020-11-01",
+  "jobs_posted": 19,
+  "hires": 10,
+  "total_spent_usd": 7400,
+  "avg_rating_given": 5.0,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0041",
+  "name": "Pixel Analytics",
+  "country": "Australia",
+  "industry": "real estate",
+  "payment_verified": true,
+  "member_since": "2016-12-01",
+  "jobs_posted": 21,
+  "hires": 5,
+  "total_spent_usd": 11990,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0042",
+  "name": "Quantum Labs",
+  "country": "UK",
+  "industry": "legal",
+  "payment_verified": true,
+  "member_since": "2022-09-01",
+  "jobs_posted": 54,
+  "hires": 41,
+  "total_spent_usd": 146452,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0043",
+  "name": "Pixel Capital",
+  "country": "UAE",
+  "industry": "healthcare",
+  "payment_verified": true,
+  "member_since": "2019-05-01",
+  "jobs_posted": 50,
+  "hires": 33,
+  "total_spent_usd": 128832,
+  "avg_rating_given": 4.5,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0044",
+  "name": "Silver Logistics",
+  "country": "UK",
+  "industry": "real estate",
+  "payment_verified": true,
+  "member_since": "2015-03-01",
+  "jobs_posted": 12,
+  "hires": 12,
+  "total_spent_usd": 45792,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0045",
+  "name": "Bright Studio",
+  "country": "Germany",
+  "industry": "health & fitness",
+  "payment_verified": false,
+  "member_since": "2026-10-20",
+  "jobs_posted": 1,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0046",
+  "name": "Pixel Capital",
+  "country": "Australia",
+  "industry": "call centers",
+  "payment_verified": true,
+  "member_since": "2017-06-01",
+  "jobs_posted": 42,
+  "hires": 40,
+  "total_spent_usd": 94520,
+  "avg_rating_given": 5.0,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0047",
+  "name": "Silver Retail",
+  "country": "Canada",
+  "industry": "logistics",
+  "payment_verified": true,
+  "member_since": "2015-06-01",
+  "jobs_posted": 15,
+  "hires": 4,
+  "total_spent_usd": 15888,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0048",
+  "name": "Atlas Capital",
+  "country": "UAE",
+  "industry": "legal",
+  "payment_verified": true,
+  "member_since": "2017-08-01",
+  "jobs_posted": 40,
+  "hires": 29,
+  "total_spent_usd": 36047,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0049",
+  "name": "Atlas Systems",
+  "country": "Pakistan",
+  "industry": "education",
+  "payment_verified": true,
+  "member_since": "2021-10-01",
+  "jobs_posted": 62,
+  "hires": 43,
+  "total_spent_usd": 14276,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0050",
+  "name": "Cedar Studio",
+  "country": "Singapore",
+  "industry": "SaaS",
+  "payment_verified": true,
+  "member_since": "2016-12-01",
+  "jobs_posted": 28,
+  "hires": 22,
+  "total_spent_usd": 41998,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0051",
+  "name": "Atlas Retail",
+  "country": "Singapore",
+  "industry": "marketing",
+  "payment_verified": true,
+  "member_since": "2024-12-01",
+  "jobs_posted": 66,
+  "hires": 54,
+  "total_spent_usd": 43686,
+  "avg_rating_given": 5.0,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0052",
+  "name": "Quantum Labs",
+  "country": "Singapore",
+  "industry": "telecom",
+  "payment_verified": false,
+  "member_since": "2021-01-01",
+  "jobs_posted": 4,
+  "hires": 3,
+  "total_spent_usd": 11013,
+  "avg_rating_given": 2.4,
+  "feedback_from_freelancers": [
+   "Changed scope constantly and disputed the final payment."
+  ]
+ },
+ {
+  "client_id": "cl-0053",
+  "name": "Bright Health",
+  "country": "US",
+  "industry": "mobile apps",
+  "payment_verified": true,
+  "member_since": "2023-10-01",
+  "jobs_posted": 15,
+  "hires": 10,
+  "total_spent_usd": 20580,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0054",
+  "name": "Pixel Logistics",
+  "country": "Singapore",
+  "industry": "healthcare",
+  "payment_verified": true,
+  "member_since": "2026-10-10",
+  "jobs_posted": 4,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0055",
+  "name": "Green Capital",
+  "country": "US",
+  "industry": "health & fitness",
+  "payment_verified": true,
+  "member_since": "2015-03-01",
+  "jobs_posted": 36,
+  "hires": 24,
+  "total_spent_usd": 64224,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0056",
+  "name": "Cedar Works",
+  "country": "Singapore",
+  "industry": "retail",
+  "payment_verified": true,
+  "member_since": "2023-08-01",
+  "jobs_posted": 40,
+  "hires": 23,
+  "total_spent_usd": 69345,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0057",
+  "name": "Nova Retail",
+  "country": "Canada",
+  "industry": "education",
+  "payment_verified": true,
+  "member_since": "2015-12-01",
+  "jobs_posted": 52,
+  "hires": 42,
+  "total_spent_usd": 149604,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0058",
+  "name": "North Systems",
+  "country": "UK",
+  "industry": "fintech",
+  "payment_verified": true,
+  "member_since": "2023-03-01",
+  "jobs_posted": 8,
+  "hires": 5,
+  "total_spent_usd": 6335,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0059",
+  "name": "North Analytics",
+  "country": "Canada",
+  "industry": "call centers",
+  "payment_verified": true,
+  "member_since": "2017-06-01",
+  "jobs_posted": 33,
+  "hires": 24,
+  "total_spent_usd": 21000,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0060",
+  "name": "Iron Logistics",
+  "country": "Australia",
+  "industry": "logistics",
+  "payment_verified": true,
+  "member_since": "2015-06-01",
+  "jobs_posted": 14,
+  "hires": 11,
+  "total_spent_usd": 23463,
+  "avg_rating_given": 5.0,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0061",
+  "name": "Cedar Works",
+  "country": "UK",
+  "industry": "accounting",
+  "payment_verified": true,
+  "member_since": "2017-01-01",
+  "jobs_posted": 27,
+  "hires": 25,
+  "total_spent_usd": 58000,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0062",
+  "name": "Bright Capital",
+  "country": "Netherlands",
+  "industry": "logistics",
+  "payment_verified": true,
+  "member_since": "2021-03-01",
+  "jobs_posted": 18,
+  "hires": 16,
+  "total_spent_usd": 43632,
+  "avg_rating_given": 4.5,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0063",
+  "name": "Cedar Health",
+  "country": "UAE",
+  "industry": "manufacturing",
+  "payment_verified": false,
+  "member_since": "2026-10-18",
+  "jobs_posted": 2,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0064",
+  "name": "Green Analytics",
+  "country": "Canada",
+  "industry": "healthcare",
+  "payment_verified": true,
+  "member_since": "2016-10-01",
+  "jobs_posted": 59,
+  "hires": 53,
+  "total_spent_usd": 153700,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0065",
+  "name": "Green Logistics",
+  "country": "UK",
+  "industry": "marketing",
+  "payment_verified": true,
+  "member_since": "2019-02-01",
+  "jobs_posted": 8,
+  "hires": 2,
+  "total_spent_usd": 5120,
+  "avg_rating_given": 2.8,
+  "feedback_from_freelancers": [
+   "Changed scope constantly and disputed the final payment."
+  ]
+ },
+ {
+  "client_id": "cl-0066",
+  "name": "Green Systems",
+  "country": "Australia",
+  "industry": "insurance",
+  "payment_verified": true,
+  "member_since": "2024-02-01",
+  "jobs_posted": 71,
+  "hires": 51,
+  "total_spent_usd": 188598,
+  "avg_rating_given": 4.5,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0067",
+  "name": "Green Systems",
+  "country": "Netherlands",
+  "industry": "call centers",
+  "payment_verified": true,
+  "member_since": "2022-06-01",
+  "jobs_posted": 32,
+  "hires": 15,
+  "total_spent_usd": 16380,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0068",
+  "name": "Pixel Media",
+  "country": "Australia",
+  "industry": "fintech",
+  "payment_verified": true,
+  "member_since": "2021-09-01",
+  "jobs_posted": 65,
+  "hires": 55,
+  "total_spent_usd": 219230,
+  "avg_rating_given": 4.2,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0069",
+  "name": "Nova Studio",
+  "country": "Pakistan",
+  "industry": "media",
+  "payment_verified": true,
+  "member_since": "2016-02-01",
+  "jobs_posted": 33,
+  "hires": 17,
+  "total_spent_usd": 29903,
+  "avg_rating_given": 5.0,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0070",
+  "name": "Cedar Retail",
+  "country": "Netherlands",
+  "industry": "healthcare",
+  "payment_verified": true,
+  "member_since": "2019-12-01",
+  "jobs_posted": 20,
+  "hires": 12,
+  "total_spent_usd": 22800,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0071",
+  "name": "Silver Logistics",
+  "country": "UAE",
+  "industry": "mobile apps",
+  "payment_verified": true,
+  "member_since": "2025-04-01",
+  "jobs_posted": 71,
+  "hires": 53,
+  "total_spent_usd": 94764,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0072",
+  "name": "Nova Works",
+  "country": "Germany",
+  "industry": "retail",
+  "payment_verified": true,
+  "member_since": "2026-10-21",
+  "jobs_posted": 2,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0073",
+  "name": "Bright Works",
+  "country": "Netherlands",
+  "industry": "productivity",
+  "payment_verified": true,
+  "member_since": "2014-09-01",
+  "jobs_posted": 25,
+  "hires": 8,
+  "total_spent_usd": 18112,
+  "avg_rating_given": 4.5,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0074",
+  "name": "Iron Works",
+  "country": "Singapore",
+  "industry": "education",
+  "payment_verified": true,
+  "member_since": "2021-10-01",
+  "jobs_posted": 25,
+  "hires": 19,
+  "total_spent_usd": 48602,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0075",
+  "name": "Harbor Labs",
+  "country": "Netherlands",
+  "industry": "accounting",
+  "payment_verified": true,
+  "member_since": "2018-08-01",
+  "jobs_posted": 59,
+  "hires": 42,
+  "total_spent_usd": 22932,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0076",
+  "name": "Silver Analytics",
+  "country": "France",
+  "industry": "insurance",
+  "payment_verified": true,
+  "member_since": "2017-03-01",
+  "jobs_posted": 29,
+  "hires": 15,
+  "total_spent_usd": 8250,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0077",
+  "name": "Cedar Labs",
+  "country": "UAE",
+  "industry": "real estate",
+  "payment_verified": true,
+  "member_since": "2015-11-01",
+  "jobs_posted": 23,
+  "hires": 18,
+  "total_spent_usd": 20790,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0078",
+  "name": "Blue Capital",
+  "country": "Singapore",
+  "industry": "marketing",
+  "payment_verified": true,
+  "member_since": "2025-12-01",
+  "jobs_posted": 11,
+  "hires": 3,
+  "total_spent_usd": 6123,
+  "avg_rating_given": 3.1,
+  "feedback_from_freelancers": [
+   "Changed scope constantly and disputed the final payment."
+  ]
+ },
+ {
+  "client_id": "cl-0079",
+  "name": "Pixel Studio",
+  "country": "Australia",
+  "industry": "retail",
+  "payment_verified": true,
+  "member_since": "2023-10-01",
+  "jobs_posted": 45,
+  "hires": 39,
+  "total_spent_usd": 37752,
+  "avg_rating_given": 5.0,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0080",
+  "name": "Atlas Systems",
+  "country": "Australia",
+  "industry": "e-commerce",
+  "payment_verified": true,
+  "member_since": "2020-04-01",
+  "jobs_posted": 48,
+  "hires": 44,
+  "total_spent_usd": 152460,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0081",
+  "name": "Atlas Health",
+  "country": "US",
+  "industry": "SaaS",
+  "payment_verified": false,
+  "member_since": "2026-10-25",
+  "jobs_posted": 2,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0082",
+  "name": "Quantum Studio",
+  "country": "Canada",
+  "industry": "accounting",
+  "payment_verified": true,
+  "member_since": "2025-04-01",
+  "jobs_posted": 64,
+  "hires": 52,
+  "total_spent_usd": 186524,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0083",
+  "name": "Green Studio",
+  "country": "UAE",
+  "industry": "real estate",
+  "payment_verified": true,
+  "member_since": "2021-02-01",
+  "jobs_posted": 36,
+  "hires": 34,
+  "total_spent_usd": 126072,
+  "avg_rating_given": 4.2,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0084",
+  "name": "North Systems",
+  "country": "Canada",
+  "industry": "SaaS",
+  "payment_verified": true,
+  "member_since": "2018-06-01",
+  "jobs_posted": 30,
+  "hires": 28,
+  "total_spent_usd": 10836,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0085",
+  "name": "Cedar Retail",
+  "country": "Pakistan",
+  "industry": "real estate",
+  "payment_verified": true,
+  "member_since": "2019-04-01",
+  "jobs_posted": 30,
+  "hires": 11,
+  "total_spent_usd": 28985,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0086",
+  "name": "Cedar Studio",
+  "country": "Australia",
+  "industry": "accounting",
+  "payment_verified": true,
+  "member_since": "2021-02-01",
+  "jobs_posted": 15,
+  "hires": 4,
+  "total_spent_usd": 2200,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0087",
+  "name": "Cedar Retail",
+  "country": "Pakistan",
+  "industry": "accounting",
+  "payment_verified": true,
+  "member_since": "2016-05-01",
+  "jobs_posted": 32,
+  "hires": 16,
+  "total_spent_usd": 40480,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0088",
+  "name": "Atlas Works",
+  "country": "Netherlands",
+  "industry": "subscription apps",
+  "payment_verified": true,
+  "member_since": "2020-01-01",
+  "jobs_posted": 36,
+  "hires": 32,
+  "total_spent_usd": 124320,
+  "avg_rating_given": 4.5,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0089",
+  "name": "Blue Retail",
+  "country": "US",
+  "industry": "fintech",
+  "payment_verified": true,
+  "member_since": "2022-03-01",
+  "jobs_posted": 58,
+  "hires": 58,
+  "total_spent_usd": 200448,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0090",
+  "name": "Iron Studio",
+  "country": "Netherlands",
+  "industry": "call centers",
+  "payment_verified": true,
+  "member_since": "2026-10-17",
+  "jobs_posted": 2,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0091",
+  "name": "Green Health",
+  "country": "Germany",
+  "industry": "real estate",
+  "payment_verified": true,
+  "member_since": "2020-03-01",
+  "jobs_posted": 17,
+  "hires": 2,
+  "total_spent_usd": 7012,
+  "avg_rating_given": 2.3,
+  "feedback_from_freelancers": [
+   "Changed scope constantly and disputed the final payment."
+  ]
+ },
+ {
+  "client_id": "cl-0092",
+  "name": "Nova Retail",
+  "country": "Netherlands",
+  "industry": "education",
+  "payment_verified": true,
+  "member_since": "2022-03-01",
+  "jobs_posted": 61,
+  "hires": 46,
+  "total_spent_usd": 32476,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0093",
+  "name": "North Retail",
+  "country": "Netherlands",
+  "industry": "call centers",
+  "payment_verified": true,
+  "member_since": "2023-05-01",
+  "jobs_posted": 48,
+  "hires": 39,
+  "total_spent_usd": 140127,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0094",
+  "name": "Cedar Logistics",
+  "country": "France",
+  "industry": "e-commerce",
+  "payment_verified": true,
+  "member_since": "2017-07-01",
+  "jobs_posted": 51,
+  "hires": 40,
+  "total_spent_usd": 71440,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0095",
+  "name": "Atlas Logistics",
+  "country": "Netherlands",
+  "industry": "subscription apps",
+  "payment_verified": true,
+  "member_since": "2022-04-01",
+  "jobs_posted": 42,
+  "hires": 42,
+  "total_spent_usd": 151200,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0096",
+  "name": "Cedar Retail",
+  "country": "UAE",
+  "industry": "health & fitness",
+  "payment_verified": true,
+  "member_since": "2025-08-01",
+  "jobs_posted": 58,
+  "hires": 45,
+  "total_spent_usd": 64440,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0097",
+  "name": "Harbor Labs",
+  "country": "France",
+  "industry": "fintech",
+  "payment_verified": true,
+  "member_since": "2022-12-01",
+  "jobs_posted": 20,
+  "hires": 8,
+  "total_spent_usd": 10248,
+  "avg_rating_given": 4.5,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0098",
+  "name": "Cedar Capital",
+  "country": "Canada",
+  "industry": "manufacturing",
+  "payment_verified": true,
+  "member_since": "2024-08-01",
+  "jobs_posted": 32,
+  "hires": 25,
+  "total_spent_usd": 12350,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0099",
+  "name": "North Analytics",
+  "country": "Pakistan",
+  "industry": "e-commerce",
+  "payment_verified": false,
+  "member_since": "2026-10-02",
+  "jobs_posted": 2,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0100",
+  "name": "Bright Capital",
+  "country": "Canada",
+  "industry": "accounting",
+  "payment_verified": true,
+  "member_since": "2024-06-01",
+  "jobs_posted": 33,
+  "hires": 23,
+  "total_spent_usd": 53751,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0101",
+  "name": "Cedar Capital",
+  "country": "Pakistan",
+  "industry": "health & fitness",
+  "payment_verified": true,
+  "member_since": "2023-09-01",
+  "jobs_posted": 56,
+  "hires": 55,
+  "total_spent_usd": 28270,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0102",
+  "name": "Atlas Health",
+  "country": "UK",
+  "industry": "education",
+  "payment_verified": true,
+  "member_since": "2014-07-01",
+  "jobs_posted": 10,
+  "hires": 2,
+  "total_spent_usd": 3780,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0103",
+  "name": "Bright Retail",
+  "country": "Singapore",
+  "industry": "health & fitness",
+  "payment_verified": true,
+  "member_since": "2021-01-01",
+  "jobs_posted": 36,
+  "hires": 24,
+  "total_spent_usd": 68328,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0104",
+  "name": "Green Health",
+  "country": "Netherlands",
+  "industry": "e-commerce",
+  "payment_verified": true,
+  "member_since": "2019-12-01",
+  "jobs_posted": 5,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": 2.2,
+  "feedback_from_freelancers": [
+   "Changed scope constantly and disputed the final payment."
+  ]
+ },
+ {
+  "client_id": "cl-0105",
+  "name": "Iron Capital",
+  "country": "UAE",
+  "industry": "e-commerce",
+  "payment_verified": true,
+  "member_since": "2024-02-01",
+  "jobs_posted": 17,
+  "hires": 17,
+  "total_spent_usd": 29019,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0106",
+  "name": "North Analytics",
+  "country": "Germany",
+  "industry": "logistics",
+  "payment_verified": true,
+  "member_since": "2024-05-01",
+  "jobs_posted": 73,
+  "hires": 54,
+  "total_spent_usd": 155628,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0107",
+  "name": "Atlas Capital",
+  "country": "Pakistan",
+  "industry": "healthcare",
+  "payment_verified": true,
+  "member_since": "2024-11-01",
+  "jobs_posted": 59,
+  "hires": 49,
+  "total_spent_usd": 47089,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0108",
+  "name": "Pixel Labs",
+  "country": "Pakistan",
+  "industry": "marketing",
+  "payment_verified": false,
+  "member_since": "2026-10-24",
+  "jobs_posted": 1,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0109",
+  "name": "Iron Systems",
+  "country": "US",
+  "industry": "mobile apps",
+  "payment_verified": true,
+  "member_since": "2023-09-01",
+  "jobs_posted": 37,
+  "hires": 35,
+  "total_spent_usd": 16380,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0110",
+  "name": "Iron Studio",
+  "country": "Germany",
+  "industry": "events",
+  "payment_verified": true,
+  "member_since": "2025-10-01",
+  "jobs_posted": 33,
+  "hires": 31,
+  "total_spent_usd": 97960,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0111",
+  "name": "Atlas Labs",
+  "country": "UAE",
+  "industry": "call centers",
+  "payment_verified": true,
+  "member_since": "2020-08-01",
+  "jobs_posted": 49,
+  "hires": 43,
+  "total_spent_usd": 82689,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0112",
+  "name": "Iron Retail",
+  "country": "US",
+  "industry": "healthcare",
+  "payment_verified": true,
+  "member_since": "2025-02-01",
+  "jobs_posted": 51,
+  "hires": 46,
+  "total_spent_usd": 163300,
+  "avg_rating_given": 5.0,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0113",
+  "name": "Nova Works",
+  "country": "France",
+  "industry": "accounting",
+  "payment_verified": true,
+  "member_since": "2025-03-01",
+  "jobs_posted": 37,
+  "hires": 27,
+  "total_spent_usd": 42849,
+  "avg_rating_given": 4.5,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0114",
+  "name": "Quantum Studio",
+  "country": "Singapore",
+  "industry": "marketing",
+  "payment_verified": true,
+  "member_since": "2014-01-01",
+  "jobs_posted": 61,
+  "hires": 43,
+  "total_spent_usd": 31992,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0115",
+  "name": "Bright Labs",
+  "country": "France",
+  "industry": "SaaS",
+  "payment_verified": true,
+  "member_since": "2019-06-01",
+  "jobs_posted": 61,
+  "hires": 55,
+  "total_spent_usd": 40095,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0116",
+  "name": "Blue Systems",
+  "country": "Canada",
+  "industry": "logistics",
+  "payment_verified": true,
+  "member_since": "2022-09-01",
+  "jobs_posted": 9,
+  "hires": 9,
+  "total_spent_usd": 30420,
+  "avg_rating_given": 5.0,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0117",
+  "name": "Blue Capital",
+  "country": "Australia",
+  "industry": "retail",
+  "payment_verified": false,
+  "member_since": "2026-10-24",
+  "jobs_posted": 2,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0118",
+  "name": "Green Health",
+  "country": "UAE",
+  "industry": "legal",
+  "payment_verified": true,
+  "member_since": "2021-02-01",
+  "jobs_posted": 26,
+  "hires": 6,
+  "total_spent_usd": 23574,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0119",
+  "name": "Green Logistics",
+  "country": "Singapore",
+  "industry": "consulting",
+  "payment_verified": true,
+  "member_since": "2025-01-01",
+  "jobs_posted": 25,
+  "hires": 13,
+  "total_spent_usd": 49179,
+  "avg_rating_given": 4.5,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0120",
+  "name": "Silver Logistics",
+  "country": "UAE",
+  "industry": "education",
+  "payment_verified": true,
+  "member_since": "2023-09-01",
+  "jobs_posted": 43,
+  "hires": 32,
+  "total_spent_usd": 40800,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0121",
+  "name": "Pixel Media",
+  "country": "France",
+  "industry": "education",
+  "payment_verified": true,
+  "member_since": "2020-06-01",
+  "jobs_posted": 64,
+  "hires": 52,
+  "total_spent_usd": 123864,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0122",
+  "name": "Silver Health",
+  "country": "Germany",
+  "industry": "events",
+  "payment_verified": true,
+  "member_since": "2017-10-01",
+  "jobs_posted": 37,
+  "hires": 27,
+  "total_spent_usd": 27756,
+  "avg_rating_given": 4.5,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0123",
+  "name": "Harbor Capital",
+  "country": "Singapore",
+  "industry": "consulting",
+  "payment_verified": true,
+  "member_since": "2016-05-01",
+  "jobs_posted": 35,
+  "hires": 24,
+  "total_spent_usd": 78768,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0124",
+  "name": "Harbor Works",
+  "country": "UAE",
+  "industry": "fintech",
+  "payment_verified": true,
+  "member_since": "2022-10-01",
+  "jobs_posted": 53,
+  "hires": 39,
+  "total_spent_usd": 22074,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0125",
+  "name": "Quantum Labs",
+  "country": "Australia",
+  "industry": "telecom",
+  "payment_verified": true,
+  "member_since": "2025-11-01",
+  "jobs_posted": 52,
+  "hires": 38,
+  "total_spent_usd": 127414,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0126",
+  "name": "Atlas Analytics",
+  "country": "Canada",
+  "industry": "subscription apps",
+  "payment_verified": false,
+  "member_since": "2026-10-25",
+  "jobs_posted": 1,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0127",
+  "name": "Green Labs",
+  "country": "Germany",
+  "industry": "consulting",
+  "payment_verified": true,
+  "member_since": "2014-02-01",
+  "jobs_posted": 20,
+  "hires": 9,
+  "total_spent_usd": 30906,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0128",
+  "name": "Iron Media",
+  "country": "Australia",
+  "industry": "telecom",
+  "payment_verified": true,
+  "member_since": "2023-11-01",
+  "jobs_posted": 29,
+  "hires": 29,
+  "total_spent_usd": 95758,
+  "avg_rating_given": 4.5,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0129",
+  "name": "Silver Works",
+  "country": "UK",
+  "industry": "productivity",
+  "payment_verified": true,
+  "member_since": "2016-01-01",
+  "jobs_posted": 61,
+  "hires": 56,
+  "total_spent_usd": 144704,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0130",
+  "name": "Nova Capital",
+  "country": "Canada",
+  "industry": "telecom",
+  "payment_verified": true,
+  "member_since": "2017-12-01",
+  "jobs_posted": 12,
+  "hires": 3,
+  "total_spent_usd": 10329,
+  "avg_rating_given": 2.9,
+  "feedback_from_freelancers": [
+   "Changed scope constantly and disputed the final payment."
+  ]
+ },
+ {
+  "client_id": "cl-0131",
+  "name": "Harbor Studio",
+  "country": "Netherlands",
+  "industry": "accounting",
+  "payment_verified": true,
+  "member_since": "2020-02-01",
+  "jobs_posted": 18,
+  "hires": 13,
+  "total_spent_usd": 21463,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0132",
+  "name": "Pixel Works",
+  "country": "Pakistan",
+  "industry": "consulting",
+  "payment_verified": true,
+  "member_since": "2018-02-01",
+  "jobs_posted": 12,
+  "hires": 10,
+  "total_spent_usd": 30940,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0133",
+  "name": "Atlas Analytics",
+  "country": "Pakistan",
+  "industry": "logistics",
+  "payment_verified": true,
+  "member_since": "2018-02-01",
+  "jobs_posted": 25,
+  "hires": 16,
+  "total_spent_usd": 26704,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0134",
+  "name": "Iron Works",
+  "country": "UAE",
+  "industry": "productivity",
+  "payment_verified": true,
+  "member_since": "2016-02-01",
+  "jobs_posted": 28,
+  "hires": 16,
+  "total_spent_usd": 49024,
+  "avg_rating_given": 4.5,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0135",
+  "name": "Bright Studio",
+  "country": "Netherlands",
+  "industry": "call centers",
+  "payment_verified": false,
+  "member_since": "2026-10-11",
+  "jobs_posted": 1,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0136",
+  "name": "Silver Retail",
+  "country": "UK",
+  "industry": "SaaS",
+  "payment_verified": true,
+  "member_since": "2016-02-01",
+  "jobs_posted": 45,
+  "hires": 28,
+  "total_spent_usd": 105028,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0137",
+  "name": "Iron Media",
+  "country": "Germany",
+  "industry": "health & fitness",
+  "payment_verified": true,
+  "member_since": "2024-11-01",
+  "jobs_posted": 24,
+  "hires": 10,
+  "total_spent_usd": 11370,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0138",
+  "name": "Green Retail",
+  "country": "Pakistan",
+  "industry": "events",
+  "payment_verified": true,
+  "member_since": "2016-05-01",
+  "jobs_posted": 16,
+  "hires": 1,
+  "total_spent_usd": 1213,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0139",
+  "name": "Cedar Capital",
+  "country": "Canada",
+  "industry": "consulting",
+  "payment_verified": true,
+  "member_since": "2023-11-01",
+  "jobs_posted": 30,
+  "hires": 24,
+  "total_spent_usd": 62736,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0140",
+  "name": "North Labs",
+  "country": "Australia",
+  "industry": "insurance",
+  "payment_verified": true,
+  "member_since": "2022-09-01",
+  "jobs_posted": 18,
+  "hires": 8,
+  "total_spent_usd": 25368,
+  "avg_rating_given": 4.5,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0141",
+  "name": "Nova Logistics",
+  "country": "Germany",
+  "industry": "telecom",
+  "payment_verified": true,
+  "member_since": "2015-04-01",
+  "jobs_posted": 45,
+  "hires": 38,
+  "total_spent_usd": 85234,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0142",
+  "name": "Harbor Systems",
+  "country": "Canada",
+  "industry": "real estate",
+  "payment_verified": true,
+  "member_since": "2022-04-01",
+  "jobs_posted": 24,
+  "hires": 5,
+  "total_spent_usd": 10055,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0143",
+  "name": "Silver Logistics",
+  "country": "US",
+  "industry": "education",
+  "payment_verified": false,
+  "member_since": "2017-12-01",
+  "jobs_posted": 19,
+  "hires": 3,
+  "total_spent_usd": 4029,
+  "avg_rating_given": 3.3,
+  "feedback_from_freelancers": [
+   "Changed scope constantly and disputed the final payment."
+  ]
+ },
+ {
+  "client_id": "cl-0144",
+  "name": "Pixel Capital",
+  "country": "Singapore",
+  "industry": "real estate",
+  "payment_verified": false,
+  "member_since": "2026-10-09",
+  "jobs_posted": 1,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0145",
+  "name": "Atlas Media",
+  "country": "UAE",
+  "industry": "call centers",
+  "payment_verified": true,
+  "member_since": "2014-11-01",
+  "jobs_posted": 33,
+  "hires": 15,
+  "total_spent_usd": 47580,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0146",
+  "name": "Quantum Systems",
+  "country": "Australia",
+  "industry": "productivity",
+  "payment_verified": true,
+  "member_since": "2015-02-01",
+  "jobs_posted": 40,
+  "hires": 23,
+  "total_spent_usd": 21229,
+  "avg_rating_given": 4.2,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0147",
+  "name": "Harbor Works",
+  "country": "Canada",
+  "industry": "subscription apps",
+  "payment_verified": true,
+  "member_since": "2020-08-01",
+  "jobs_posted": 28,
+  "hires": 24,
+  "total_spent_usd": 77640,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0148",
+  "name": "Bright Capital",
+  "country": "Netherlands",
+  "industry": "real estate",
+  "payment_verified": true,
+  "member_since": "2017-09-01",
+  "jobs_posted": 1,
+  "hires": 1,
+  "total_spent_usd": 2130,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0149",
+  "name": "Quantum Health",
+  "country": "Germany",
+  "industry": "accounting",
+  "payment_verified": true,
+  "member_since": "2015-01-01",
+  "jobs_posted": 71,
+  "hires": 51,
+  "total_spent_usd": 44217,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0150",
+  "name": "Harbor Systems",
+  "country": "Australia",
+  "industry": "fintech",
+  "payment_verified": true,
+  "member_since": "2018-10-01",
+  "jobs_posted": 49,
+  "hires": 30,
+  "total_spent_usd": 119730,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0151",
+  "name": "Quantum Logistics",
+  "country": "Pakistan",
+  "industry": "e-commerce",
+  "payment_verified": true,
+  "member_since": "2020-01-01",
+  "jobs_posted": 60,
+  "hires": 45,
+  "total_spent_usd": 50265,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0152",
+  "name": "Blue Analytics",
+  "country": "Germany",
+  "industry": "consulting",
+  "payment_verified": true,
+  "member_since": "2015-05-01",
+  "jobs_posted": 13,
+  "hires": 9,
+  "total_spent_usd": 31590,
+  "avg_rating_given": 4.5,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0153",
+  "name": "Blue Capital",
+  "country": "Australia",
+  "industry": "SaaS",
+  "payment_verified": false,
+  "member_since": "2026-10-18",
+  "jobs_posted": 1,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0154",
+  "name": "Atlas Capital",
+  "country": "Germany",
+  "industry": "nonprofit",
+  "payment_verified": true,
+  "member_since": "2019-10-01",
+  "jobs_posted": 73,
+  "hires": 59,
+  "total_spent_usd": 100359,
+  "avg_rating_given": 4.5,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0155",
+  "name": "Blue Systems",
+  "country": "UAE",
+  "industry": "real estate",
+  "payment_verified": true,
+  "member_since": "2021-12-01",
+  "jobs_posted": 7,
+  "hires": 6,
+  "total_spent_usd": 6066,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0156",
+  "name": "Iron Labs",
+  "country": "Australia",
+  "industry": "SaaS",
+  "payment_verified": false,
+  "member_since": "2025-02-01",
+  "jobs_posted": 21,
+  "hires": 2,
+  "total_spent_usd": 6570,
+  "avg_rating_given": 2.3,
+  "feedback_from_freelancers": [
+   "Changed scope constantly and disputed the final payment."
+  ]
+ },
+ {
+  "client_id": "cl-0157",
+  "name": "Harbor Health",
+  "country": "US",
+  "industry": "retail",
+  "payment_verified": true,
+  "member_since": "2019-07-01",
+  "jobs_posted": 42,
+  "hires": 40,
+  "total_spent_usd": 64920,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0158",
+  "name": "Green Logistics",
+  "country": "Netherlands",
+  "industry": "productivity",
+  "payment_verified": true,
+  "member_since": "2015-01-01",
+  "jobs_posted": 60,
+  "hires": 57,
+  "total_spent_usd": 119529,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0159",
+  "name": "Pixel Logistics",
+  "country": "Australia",
+  "industry": "legal",
+  "payment_verified": true,
+  "member_since": "2017-02-01",
+  "jobs_posted": 18,
+  "hires": 11,
+  "total_spent_usd": 41206,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0160",
+  "name": "Bright Media",
+  "country": "Germany",
+  "industry": "events",
+  "payment_verified": true,
+  "member_since": "2016-10-01",
+  "jobs_posted": 56,
+  "hires": 37,
+  "total_spent_usd": 138602,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0161",
+  "name": "Quantum Retail",
+  "country": "UK",
+  "industry": "events",
+  "payment_verified": true,
+  "member_since": "2020-05-01",
+  "jobs_posted": 15,
+  "hires": 7,
+  "total_spent_usd": 23877,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0162",
+  "name": "Iron Labs",
+  "country": "Germany",
+  "industry": "healthcare",
+  "payment_verified": false,
+  "member_since": "2026-10-13",
+  "jobs_posted": 4,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0163",
+  "name": "Bright Systems",
+  "country": "Netherlands",
+  "industry": "education",
+  "payment_verified": true,
+  "member_since": "2015-06-01",
+  "jobs_posted": 18,
+  "hires": 9,
+  "total_spent_usd": 32823,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0164",
+  "name": "Cedar Analytics",
+  "country": "UAE",
+  "industry": "fintech",
+  "payment_verified": true,
+  "member_since": "2017-07-01",
+  "jobs_posted": 65,
+  "hires": 54,
+  "total_spent_usd": 41688,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0165",
+  "name": "Harbor Studio",
+  "country": "Germany",
+  "industry": "healthcare",
+  "payment_verified": true,
+  "member_since": "2014-09-01",
+  "jobs_posted": 28,
+  "hires": 10,
+  "total_spent_usd": 4410,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0166",
+  "name": "Blue Health",
+  "country": "Pakistan",
+  "industry": "productivity",
+  "payment_verified": true,
+  "member_since": "2016-09-01",
+  "jobs_posted": 58,
+  "hires": 47,
+  "total_spent_usd": 142269,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0167",
+  "name": "Quantum Analytics",
+  "country": "Canada",
+  "industry": "productivity",
+  "payment_verified": true,
+  "member_since": "2017-02-01",
+  "jobs_posted": 41,
+  "hires": 31,
+  "total_spent_usd": 65968,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0168",
+  "name": "Harbor Systems",
+  "country": "Singapore",
+  "industry": "call centers",
+  "payment_verified": true,
+  "member_since": "2023-12-01",
+  "jobs_posted": 32,
+  "hires": 26,
+  "total_spent_usd": 59878,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0169",
+  "name": "Nova Media",
+  "country": "Australia",
+  "industry": "fintech",
+  "payment_verified": true,
+  "member_since": "2018-08-01",
+  "jobs_posted": 7,
+  "hires": 1,
+  "total_spent_usd": 408,
+  "avg_rating_given": 3.1,
+  "feedback_from_freelancers": [
+   "Changed scope constantly and disputed the final payment."
+  ]
+ },
+ {
+  "client_id": "cl-0170",
+  "name": "Blue Labs",
+  "country": "France",
+  "industry": "insurance",
+  "payment_verified": true,
+  "member_since": "2025-03-01",
+  "jobs_posted": 43,
+  "hires": 38,
+  "total_spent_usd": 53200,
+  "avg_rating_given": 4.5,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0171",
+  "name": "Iron Health",
+  "country": "Singapore",
+  "industry": "fintech",
+  "payment_verified": false,
+  "member_since": "2026-10-16",
+  "jobs_posted": 3,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0172",
+  "name": "Cedar Systems",
+  "country": "US",
+  "industry": "productivity",
+  "payment_verified": true,
+  "member_since": "2014-02-01",
+  "jobs_posted": 69,
+  "hires": 54,
+  "total_spent_usd": 91476,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0173",
+  "name": "Quantum Labs",
+  "country": "Singapore",
+  "industry": "call centers",
+  "payment_verified": true,
+  "member_since": "2020-07-01",
+  "jobs_posted": 27,
+  "hires": 19,
+  "total_spent_usd": 7258,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0174",
+  "name": "Green Capital",
+  "country": "Netherlands",
+  "industry": "healthcare",
+  "payment_verified": true,
+  "member_since": "2018-11-01",
+  "jobs_posted": 30,
+  "hires": 22,
+  "total_spent_usd": 18392,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0175",
+  "name": "Bright Retail",
+  "country": "Australia",
+  "industry": "insurance",
+  "payment_verified": true,
+  "member_since": "2016-03-01",
+  "jobs_posted": 11,
+  "hires": 3,
+  "total_spent_usd": 10674,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0176",
+  "name": "Pixel Studio",
+  "country": "Pakistan",
+  "industry": "subscription apps",
+  "payment_verified": true,
+  "member_since": "2019-10-01",
+  "jobs_posted": 25,
+  "hires": 6,
+  "total_spent_usd": 10380,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0177",
+  "name": "Harbor Labs",
+  "country": "Australia",
+  "industry": "subscription apps",
+  "payment_verified": true,
+  "member_since": "2022-04-01",
+  "jobs_posted": 24,
+  "hires": 13,
+  "total_spent_usd": 45435,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0178",
+  "name": "Iron Analytics",
+  "country": "Singapore",
+  "industry": "accounting",
+  "payment_verified": true,
+  "member_since": "2024-02-01",
+  "jobs_posted": 29,
+  "hires": 10,
+  "total_spent_usd": 19200,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0179",
+  "name": "Iron Systems",
+  "country": "US",
+  "industry": "manufacturing",
+  "payment_verified": true,
+  "member_since": "2017-10-01",
+  "jobs_posted": 50,
+  "hires": 45,
+  "total_spent_usd": 62055,
+  "avg_rating_given": 5.0,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0180",
+  "name": "Atlas Systems",
+  "country": "Pakistan",
+  "industry": "real estate",
+  "payment_verified": false,
+  "member_since": "2026-10-07",
+  "jobs_posted": 1,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0181",
+  "name": "Harbor Logistics",
+  "country": "Australia",
+  "industry": "telecom",
+  "payment_verified": true,
+  "member_since": "2024-06-01",
+  "jobs_posted": 65,
+  "hires": 55,
+  "total_spent_usd": 55715,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0182",
+  "name": "North Studio",
+  "country": "Pakistan",
+  "industry": "marketing",
+  "payment_verified": false,
+  "member_since": "2021-03-01",
+  "jobs_posted": 22,
+  "hires": 2,
+  "total_spent_usd": 3414,
+  "avg_rating_given": 2.7,
+  "feedback_from_freelancers": [
+   "Changed scope constantly and disputed the final payment."
+  ]
+ },
+ {
+  "client_id": "cl-0183",
+  "name": "Cedar Analytics",
+  "country": "US",
+  "industry": "events",
+  "payment_verified": true,
+  "member_since": "2019-06-01",
+  "jobs_posted": 23,
+  "hires": 13,
+  "total_spent_usd": 41951,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0184",
+  "name": "Cedar Studio",
+  "country": "Australia",
+  "industry": "media",
+  "payment_verified": true,
+  "member_since": "2023-09-01",
+  "jobs_posted": 57,
+  "hires": 43,
+  "total_spent_usd": 13029,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0185",
+  "name": "Green Systems",
+  "country": "Singapore",
+  "industry": "health & fitness",
+  "payment_verified": true,
+  "member_since": "2021-05-01",
+  "jobs_posted": 53,
+  "hires": 49,
+  "total_spent_usd": 194187,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0186",
+  "name": "Iron Labs",
+  "country": "Netherlands",
+  "industry": "insurance",
+  "payment_verified": true,
+  "member_since": "2023-05-01",
+  "jobs_posted": 70,
+  "hires": 57,
+  "total_spent_usd": 211299,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0187",
+  "name": "Cedar Health",
+  "country": "Singapore",
+  "industry": "marketing",
+  "payment_verified": true,
+  "member_since": "2014-10-01",
+  "jobs_posted": 62,
+  "hires": 50,
+  "total_spent_usd": 163250,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0188",
+  "name": "Pixel Health",
+  "country": "Germany",
+  "industry": "mobile apps",
+  "payment_verified": true,
+  "member_since": "2022-01-01",
+  "jobs_posted": 19,
+  "hires": 15,
+  "total_spent_usd": 59550,
+  "avg_rating_given": 5.0,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0189",
+  "name": "Blue Capital",
+  "country": "Netherlands",
+  "industry": "mobile apps",
+  "payment_verified": false,
+  "member_since": "2026-10-22",
+  "jobs_posted": 2,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0190",
+  "name": "Bright Logistics",
+  "country": "UK",
+  "industry": "insurance",
+  "payment_verified": true,
+  "member_since": "2022-03-01",
+  "jobs_posted": 71,
+  "hires": 53,
+  "total_spent_usd": 53636,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0191",
+  "name": "Silver Retail",
+  "country": "US",
+  "industry": "real estate",
+  "payment_verified": true,
+  "member_since": "2022-01-01",
+  "jobs_posted": 17,
+  "hires": 14,
+  "total_spent_usd": 11900,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0192",
+  "name": "Quantum Health",
+  "country": "Germany",
+  "industry": "subscription apps",
+  "payment_verified": true,
+  "member_since": "2023-02-01",
+  "jobs_posted": 65,
+  "hires": 57,
+  "total_spent_usd": 145407,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0193",
+  "name": "Pixel Systems",
+  "country": "Singapore",
+  "industry": "e-commerce",
+  "payment_verified": true,
+  "member_since": "2023-06-01",
+  "jobs_posted": 57,
+  "hires": 50,
+  "total_spent_usd": 106100,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0194",
+  "name": "Atlas Health",
+  "country": "Australia",
+  "industry": "SaaS",
+  "payment_verified": true,
+  "member_since": "2016-07-01",
+  "jobs_posted": 17,
+  "hires": 9,
+  "total_spent_usd": 19287,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0195",
+  "name": "Cedar Logistics",
+  "country": "US",
+  "industry": "health & fitness",
+  "payment_verified": true,
+  "member_since": "2020-08-01",
+  "jobs_posted": 23,
+  "hires": 3,
+  "total_spent_usd": 9906,
+  "avg_rating_given": 2.4,
+  "feedback_from_freelancers": [
+   "Changed scope constantly and disputed the final payment."
+  ]
+ },
+ {
+  "client_id": "cl-0196",
+  "name": "Atlas Labs",
+  "country": "UK",
+  "industry": "marketing",
+  "payment_verified": true,
+  "member_since": "2023-09-01",
+  "jobs_posted": 57,
+  "hires": 38,
+  "total_spent_usd": 79724,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0197",
+  "name": "Iron Capital",
+  "country": "France",
+  "industry": "events",
+  "payment_verified": true,
+  "member_since": "2024-04-01",
+  "jobs_posted": 50,
+  "hires": 42,
+  "total_spent_usd": 78540,
+  "avg_rating_given": 5.0,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0198",
+  "name": "Nova Media",
+  "country": "Germany",
+  "industry": "events",
+  "payment_verified": false,
+  "member_since": "2026-10-05",
+  "jobs_posted": 1,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0199",
+  "name": "Bright Health",
+  "country": "Netherlands",
+  "industry": "media",
+  "payment_verified": true,
+  "member_since": "2016-10-01",
+  "jobs_posted": 39,
+  "hires": 35,
+  "total_spent_usd": 123375,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0200",
+  "name": "Atlas Capital",
+  "country": "Singapore",
+  "industry": "health & fitness",
+  "payment_verified": true,
+  "member_since": "2023-09-01",
+  "jobs_posted": 56,
+  "hires": 50,
+  "total_spent_usd": 124450,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0201",
+  "name": "Blue Studio",
+  "country": "Pakistan",
+  "industry": "media",
+  "payment_verified": true,
+  "member_since": "2015-01-01",
+  "jobs_posted": 13,
+  "hires": 13,
+  "total_spent_usd": 23530,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0202",
+  "name": "Green Labs",
+  "country": "Australia",
+  "industry": "marketing",
+  "payment_verified": true,
+  "member_since": "2022-02-01",
+  "jobs_posted": 49,
+  "hires": 33,
+  "total_spent_usd": 103686,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0203",
+  "name": "Iron Logistics",
+  "country": "France",
+  "industry": "e-commerce",
+  "payment_verified": true,
+  "member_since": "2024-07-01",
+  "jobs_posted": 20,
+  "hires": 8,
+  "total_spent_usd": 8496,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0204",
+  "name": "Iron Logistics",
+  "country": "UK",
+  "industry": "call centers",
+  "payment_verified": true,
+  "member_since": "2023-03-01",
+  "jobs_posted": 75,
+  "hires": 60,
+  "total_spent_usd": 84120,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0205",
+  "name": "Silver Works",
+  "country": "US",
+  "industry": "nonprofit",
+  "payment_verified": true,
+  "member_since": "2017-09-01",
+  "jobs_posted": 26,
+  "hires": 10,
+  "total_spent_usd": 14070,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0206",
+  "name": "Cedar Works",
+  "country": "Canada",
+  "industry": "subscription apps",
+  "payment_verified": true,
+  "member_since": "2018-06-01",
+  "jobs_posted": 23,
+  "hires": 4,
+  "total_spent_usd": 11256,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0207",
+  "name": "Blue Capital",
+  "country": "Singapore",
+  "industry": "manufacturing",
+  "payment_verified": false,
+  "member_since": "2026-10-16",
+  "jobs_posted": 2,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0208",
+  "name": "Silver Analytics",
+  "country": "Germany",
+  "industry": "accounting",
+  "payment_verified": true,
+  "member_since": "2015-05-01",
+  "jobs_posted": 5,
+  "hires": 3,
+  "total_spent_usd": 7860,
+  "avg_rating_given": 2.7,
+  "feedback_from_freelancers": [
+   "Changed scope constantly and disputed the final payment."
+  ]
+ },
+ {
+  "client_id": "cl-0209",
+  "name": "Silver Retail",
+  "country": "Pakistan",
+  "industry": "manufacturing",
+  "payment_verified": true,
+  "member_since": "2024-09-01",
+  "jobs_posted": 51,
+  "hires": 44,
+  "total_spent_usd": 56540,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0210",
+  "name": "Green Works",
+  "country": "UK",
+  "industry": "retail",
+  "payment_verified": true,
+  "member_since": "2021-10-01",
+  "jobs_posted": 38,
+  "hires": 32,
+  "total_spent_usd": 78816,
+  "avg_rating_given": 5.0,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0211",
+  "name": "Bright Media",
+  "country": "US",
+  "industry": "consulting",
+  "payment_verified": true,
+  "member_since": "2016-03-01",
+  "jobs_posted": 51,
+  "hires": 51,
+  "total_spent_usd": 174012,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0212",
+  "name": "Harbor Studio",
+  "country": "Pakistan",
+  "industry": "telecom",
+  "payment_verified": true,
+  "member_since": "2015-10-01",
+  "jobs_posted": 38,
+  "hires": 19,
+  "total_spent_usd": 61978,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0213",
+  "name": "Nova Analytics",
+  "country": "Canada",
+  "industry": "mobile apps",
+  "payment_verified": true,
+  "member_since": "2022-03-01",
+  "jobs_posted": 17,
+  "hires": 14,
+  "total_spent_usd": 24934,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0214",
+  "name": "Pixel Retail",
+  "country": "US",
+  "industry": "call centers",
+  "payment_verified": true,
+  "member_since": "2014-08-01",
+  "jobs_posted": 52,
+  "hires": 42,
+  "total_spent_usd": 17514,
+  "avg_rating_given": 4.2,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0215",
+  "name": "Bright Retail",
+  "country": "UAE",
+  "industry": "health & fitness",
+  "payment_verified": true,
+  "member_since": "2014-05-01",
+  "jobs_posted": 74,
+  "hires": 54,
+  "total_spent_usd": 113670,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0216",
+  "name": "Iron Labs",
+  "country": "Germany",
+  "industry": "marketing",
+  "payment_verified": false,
+  "member_since": "2026-10-12",
+  "jobs_posted": 4,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0217",
+  "name": "Silver Works",
+  "country": "Canada",
+  "industry": "telecom",
+  "payment_verified": true,
+  "member_since": "2022-02-01",
+  "jobs_posted": 64,
+  "hires": 52,
+  "total_spent_usd": 96616,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0218",
+  "name": "Pixel Capital",
+  "country": "Singapore",
+  "industry": "events",
+  "payment_verified": true,
+  "member_since": "2020-08-01",
+  "jobs_posted": 37,
+  "hires": 37,
+  "total_spent_usd": 18722,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0219",
+  "name": "Bright Capital",
+  "country": "Pakistan",
+  "industry": "e-commerce",
+  "payment_verified": true,
+  "member_since": "2014-03-01",
+  "jobs_posted": 69,
+  "hires": 59,
+  "total_spent_usd": 176705,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0220",
+  "name": "Harbor Capital",
+  "country": "Germany",
+  "industry": "education",
+  "payment_verified": true,
+  "member_since": "2025-10-01",
+  "jobs_posted": 71,
+  "hires": 58,
+  "total_spent_usd": 186238,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0221",
+  "name": "Nova Media",
+  "country": "Canada",
+  "industry": "mobile apps",
+  "payment_verified": false,
+  "member_since": "2018-01-01",
+  "jobs_posted": 11,
+  "hires": 3,
+  "total_spent_usd": 6372,
+  "avg_rating_given": 2.9,
+  "feedback_from_freelancers": [
+   "Changed scope constantly and disputed the final payment."
+  ]
+ },
+ {
+  "client_id": "cl-0222",
+  "name": "Pixel Systems",
+  "country": "Australia",
+  "industry": "retail",
+  "payment_verified": true,
+  "member_since": "2023-04-01",
+  "jobs_posted": 30,
+  "hires": 24,
+  "total_spent_usd": 61920,
+  "avg_rating_given": 4.2,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0223",
+  "name": "Quantum Systems",
+  "country": "France",
+  "industry": "subscription apps",
+  "payment_verified": true,
+  "member_since": "2025-02-01",
+  "jobs_posted": 61,
+  "hires": 52,
+  "total_spent_usd": 68484,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0224",
+  "name": "Cedar Studio",
+  "country": "Pakistan",
+  "industry": "consulting",
+  "payment_verified": true,
+  "member_since": "2021-06-01",
+  "jobs_posted": 57,
+  "hires": 47,
+  "total_spent_usd": 159142,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0225",
+  "name": "Bright Labs",
+  "country": "UK",
+  "industry": "productivity",
+  "payment_verified": true,
+  "member_since": "2026-10-03",
+  "jobs_posted": 4,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0226",
+  "name": "Pixel Analytics",
+  "country": "Pakistan",
+  "industry": "marketing",
+  "payment_verified": true,
+  "member_since": "2022-06-01",
+  "jobs_posted": 39,
+  "hires": 24,
+  "total_spent_usd": 81240,
+  "avg_rating_given": 4.5,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0227",
+  "name": "Silver Retail",
+  "country": "Singapore",
+  "industry": "SaaS",
+  "payment_verified": true,
+  "member_since": "2024-11-01",
+  "jobs_posted": 49,
+  "hires": 35,
+  "total_spent_usd": 47530,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0228",
+  "name": "Cedar Logistics",
+  "country": "Germany",
+  "industry": "consulting",
+  "payment_verified": true,
+  "member_since": "2021-06-01",
+  "jobs_posted": 34,
+  "hires": 16,
+  "total_spent_usd": 8256,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0229",
+  "name": "Blue Retail",
+  "country": "Netherlands",
+  "industry": "SaaS",
+  "payment_verified": true,
+  "member_since": "2025-03-01",
+  "jobs_posted": 39,
+  "hires": 35,
+  "total_spent_usd": 70665,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0230",
+  "name": "Bright Capital",
+  "country": "Singapore",
+  "industry": "call centers",
+  "payment_verified": true,
+  "member_since": "2025-10-01",
+  "jobs_posted": 35,
+  "hires": 19,
+  "total_spent_usd": 25878,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0231",
+  "name": "Quantum Analytics",
+  "country": "Canada",
+  "industry": "real estate",
+  "payment_verified": true,
+  "member_since": "2023-01-01",
+  "jobs_posted": 31,
+  "hires": 21,
+  "total_spent_usd": 27174,
+  "avg_rating_given": 4.2,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0232",
+  "name": "Quantum Analytics",
+  "country": "UAE",
+  "industry": "legal",
+  "payment_verified": true,
+  "member_since": "2017-02-01",
+  "jobs_posted": 37,
+  "hires": 36,
+  "total_spent_usd": 70308,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0233",
+  "name": "Nova Health",
+  "country": "UK",
+  "industry": "insurance",
+  "payment_verified": true,
+  "member_since": "2015-11-01",
+  "jobs_posted": 24,
+  "hires": 21,
+  "total_spent_usd": 12516,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0234",
+  "name": "North Systems",
+  "country": "Netherlands",
+  "industry": "legal",
+  "payment_verified": false,
+  "member_since": "2026-10-13",
+  "jobs_posted": 1,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0235",
+  "name": "Cedar Systems",
+  "country": "Netherlands",
+  "industry": "telecom",
+  "payment_verified": true,
+  "member_since": "2021-04-01",
+  "jobs_posted": 29,
+  "hires": 9,
+  "total_spent_usd": 8226,
+  "avg_rating_given": 5.0,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0236",
+  "name": "Atlas Retail",
+  "country": "UK",
+  "industry": "retail",
+  "payment_verified": true,
+  "member_since": "2017-04-01",
+  "jobs_posted": 59,
+  "hires": 48,
+  "total_spent_usd": 61056,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0237",
+  "name": "Atlas Labs",
+  "country": "Germany",
+  "industry": "marketing",
+  "payment_verified": true,
+  "member_since": "2016-08-01",
+  "jobs_posted": 33,
+  "hires": 22,
+  "total_spent_usd": 13574,
+  "avg_rating_given": 4.2,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0238",
+  "name": "Cedar Capital",
+  "country": "US",
+  "industry": "e-commerce",
+  "payment_verified": true,
+  "member_since": "2014-04-01",
+  "jobs_posted": 15,
+  "hires": 8,
+  "total_spent_usd": 11352,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0239",
+  "name": "Harbor Health",
+  "country": "UAE",
+  "industry": "legal",
+  "payment_verified": true,
+  "member_since": "2021-08-01",
+  "jobs_posted": 44,
+  "hires": 39,
+  "total_spent_usd": 93444,
+  "avg_rating_given": 4.2,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0240",
+  "name": "Cedar Analytics",
+  "country": "Pakistan",
+  "industry": "nonprofit",
+  "payment_verified": true,
+  "member_since": "2017-07-01",
+  "jobs_posted": 31,
+  "hires": 14,
+  "total_spent_usd": 11452,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0241",
+  "name": "Nova Retail",
+  "country": "France",
+  "industry": "productivity",
+  "payment_verified": true,
+  "member_since": "2016-07-01",
+  "jobs_posted": 70,
+  "hires": 50,
+  "total_spent_usd": 101100,
+  "avg_rating_given": 4.5,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0242",
+  "name": "Harbor Retail",
+  "country": "Canada",
+  "industry": "logistics",
+  "payment_verified": true,
+  "member_since": "2019-09-01",
+  "jobs_posted": 50,
+  "hires": 42,
+  "total_spent_usd": 128352,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0243",
+  "name": "Blue Logistics",
+  "country": "UK",
+  "industry": "fintech",
+  "payment_verified": false,
+  "member_since": "2026-10-15",
+  "jobs_posted": 4,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0244",
+  "name": "Blue Retail",
+  "country": "UAE",
+  "industry": "telecom",
+  "payment_verified": true,
+  "member_since": "2015-08-01",
+  "jobs_posted": 54,
+  "hires": 42,
+  "total_spent_usd": 33264,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0245",
+  "name": "Blue Works",
+  "country": "UK",
+  "industry": "education",
+  "payment_verified": true,
+  "member_since": "2015-12-01",
+  "jobs_posted": 53,
+  "hires": 52,
+  "total_spent_usd": 198952,
+  "avg_rating_given": 4.2,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0246",
+  "name": "Pixel Systems",
+  "country": "Netherlands",
+  "industry": "real estate",
+  "payment_verified": true,
+  "member_since": "2014-04-01",
+  "jobs_posted": 16,
+  "hires": 1,
+  "total_spent_usd": 328,
+  "avg_rating_given": 4.5,
+  "feedback_from_freelancers": [
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0247",
+  "name": "Green Health",
+  "country": "Netherlands",
+  "industry": "real estate",
+  "payment_verified": false,
+  "member_since": "2018-06-01",
+  "jobs_posted": 9,
+  "hires": 3,
+  "total_spent_usd": 6180,
+  "avg_rating_given": 2.9,
+  "feedback_from_freelancers": [
+   "Changed scope constantly and disputed the final payment."
+  ]
+ },
+ {
+  "client_id": "cl-0248",
+  "name": "Bright Works",
+  "country": "UAE",
+  "industry": "events",
+  "payment_verified": true,
+  "member_since": "2015-04-01",
+  "jobs_posted": 26,
+  "hires": 10,
+  "total_spent_usd": 3130,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0249",
+  "name": "Cedar Studio",
+  "country": "UK",
+  "industry": "nonprofit",
+  "payment_verified": true,
+  "member_since": "2016-02-01",
+  "jobs_posted": 31,
+  "hires": 26,
+  "total_spent_usd": 58656,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0250",
+  "name": "Iron Studio",
+  "country": "Pakistan",
+  "industry": "media",
+  "payment_verified": true,
+  "member_since": "2015-11-01",
+  "jobs_posted": 62,
+  "hires": 45,
+  "total_spent_usd": 149535,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0251",
+  "name": "Silver Labs",
+  "country": "UAE",
+  "industry": "media",
+  "payment_verified": true,
+  "member_since": "2024-04-01",
+  "jobs_posted": 50,
+  "hires": 34,
+  "total_spent_usd": 128656,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0252",
+  "name": "Harbor Works",
+  "country": "Singapore",
+  "industry": "logistics",
+  "payment_verified": false,
+  "member_since": "2026-10-02",
+  "jobs_posted": 2,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0253",
+  "name": "North Logistics",
+  "country": "France",
+  "industry": "call centers",
+  "payment_verified": true,
+  "member_since": "2025-01-01",
+  "jobs_posted": 19,
+  "hires": 2,
+  "total_spent_usd": 1600,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0254",
+  "name": "Harbor Systems",
+  "country": "Canada",
+  "industry": "e-commerce",
+  "payment_verified": true,
+  "member_since": "2014-10-01",
+  "jobs_posted": 11,
+  "hires": 9,
+  "total_spent_usd": 29673,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0255",
+  "name": "Harbor Retail",
+  "country": "Canada",
+  "industry": "real estate",
+  "payment_verified": true,
+  "member_since": "2015-08-01",
+  "jobs_posted": 33,
+  "hires": 22,
+  "total_spent_usd": 34408,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0256",
+  "name": "Iron Logistics",
+  "country": "Canada",
+  "industry": "manufacturing",
+  "payment_verified": true,
+  "member_since": "2017-12-01",
+  "jobs_posted": 16,
+  "hires": 2,
+  "total_spent_usd": 6632,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0257",
+  "name": "Iron Studio",
+  "country": "France",
+  "industry": "telecom",
+  "payment_verified": true,
+  "member_since": "2017-03-01",
+  "jobs_posted": 73,
+  "hires": 53,
+  "total_spent_usd": 87132,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0258",
+  "name": "Quantum Retail",
+  "country": "UAE",
+  "industry": "logistics",
+  "payment_verified": true,
+  "member_since": "2019-01-01",
+  "jobs_posted": 38,
+  "hires": 35,
+  "total_spent_usd": 51520,
+  "avg_rating_given": 4.5,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0259",
+  "name": "Green Works",
+  "country": "UK",
+  "industry": "education",
+  "payment_verified": true,
+  "member_since": "2014-03-01",
+  "jobs_posted": 24,
+  "hires": 6,
+  "total_spent_usd": 15966,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0260",
+  "name": "Silver Analytics",
+  "country": "Netherlands",
+  "industry": "telecom",
+  "payment_verified": true,
+  "member_since": "2019-06-01",
+  "jobs_posted": 10,
+  "hires": 2,
+  "total_spent_usd": 1682,
+  "avg_rating_given": 2.2,
+  "feedback_from_freelancers": [
+   "Changed scope constantly and disputed the final payment."
+  ]
+ },
+ {
+  "client_id": "cl-0261",
+  "name": "North Media",
+  "country": "France",
+  "industry": "SaaS",
+  "payment_verified": false,
+  "member_since": "2026-10-09",
+  "jobs_posted": 4,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0262",
+  "name": "Quantum Health",
+  "country": "US",
+  "industry": "SaaS",
+  "payment_verified": true,
+  "member_since": "2024-11-01",
+  "jobs_posted": 47,
+  "hires": 42,
+  "total_spent_usd": 73794,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0263",
+  "name": "North Analytics",
+  "country": "US",
+  "industry": "fintech",
+  "payment_verified": true,
+  "member_since": "2021-06-01",
+  "jobs_posted": 50,
+  "hires": 35,
+  "total_spent_usd": 18130,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0264",
+  "name": "North Capital",
+  "country": "Australia",
+  "industry": "insurance",
+  "payment_verified": true,
+  "member_since": "2016-04-01",
+  "jobs_posted": 45,
+  "hires": 29,
+  "total_spent_usd": 21895,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0265",
+  "name": "Iron Media",
+  "country": "UAE",
+  "industry": "education",
+  "payment_verified": true,
+  "member_since": "2016-06-01",
+  "jobs_posted": 50,
+  "hires": 35,
+  "total_spent_usd": 59675,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0266",
+  "name": "Silver Studio",
+  "country": "Australia",
+  "industry": "call centers",
+  "payment_verified": true,
+  "member_since": "2016-08-01",
+  "jobs_posted": 35,
+  "hires": 26,
+  "total_spent_usd": 82758,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0267",
+  "name": "Cedar Capital",
+  "country": "Singapore",
+  "industry": "consulting",
+  "payment_verified": true,
+  "member_since": "2014-10-01",
+  "jobs_posted": 35,
+  "hires": 31,
+  "total_spent_usd": 50778,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0268",
+  "name": "North Works",
+  "country": "Netherlands",
+  "industry": "events",
+  "payment_verified": true,
+  "member_since": "2019-02-01",
+  "jobs_posted": 46,
+  "hires": 39,
+  "total_spent_usd": 74724,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0269",
+  "name": "Silver Works",
+  "country": "Netherlands",
+  "industry": "media",
+  "payment_verified": true,
+  "member_since": "2018-12-01",
+  "jobs_posted": 49,
+  "hires": 37,
+  "total_spent_usd": 78255,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0270",
+  "name": "Green Systems",
+  "country": "UK",
+  "industry": "productivity",
+  "payment_verified": false,
+  "member_since": "2026-10-03",
+  "jobs_posted": 4,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0271",
+  "name": "Green Analytics",
+  "country": "Australia",
+  "industry": "fintech",
+  "payment_verified": true,
+  "member_since": "2020-02-01",
+  "jobs_posted": 66,
+  "hires": 53,
+  "total_spent_usd": 134673,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0272",
+  "name": "Harbor Logistics",
+  "country": "Germany",
+  "industry": "call centers",
+  "payment_verified": true,
+  "member_since": "2018-12-01",
+  "jobs_posted": 29,
+  "hires": 12,
+  "total_spent_usd": 33816,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0273",
+  "name": "Iron Analytics",
+  "country": "UAE",
+  "industry": "e-commerce",
+  "payment_verified": true,
+  "member_since": "2021-10-01",
+  "jobs_posted": 17,
+  "hires": 3,
+  "total_spent_usd": 6039,
+  "avg_rating_given": 2.8,
+  "feedback_from_freelancers": [
+   "Changed scope constantly and disputed the final payment."
+  ]
+ },
+ {
+  "client_id": "cl-0274",
+  "name": "Quantum Logistics",
+  "country": "Singapore",
+  "industry": "nonprofit",
+  "payment_verified": true,
+  "member_since": "2020-08-01",
+  "jobs_posted": 59,
+  "hires": 45,
+  "total_spent_usd": 76230,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0275",
+  "name": "Blue Studio",
+  "country": "UAE",
+  "industry": "healthcare",
+  "payment_verified": true,
+  "member_since": "2015-05-01",
+  "jobs_posted": 30,
+  "hires": 30,
+  "total_spent_usd": 19020,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0276",
+  "name": "Harbor Health",
+  "country": "Netherlands",
+  "industry": "retail",
+  "payment_verified": true,
+  "member_since": "2021-01-01",
+  "jobs_posted": 61,
+  "hires": 48,
+  "total_spent_usd": 134256,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0277",
+  "name": "Quantum Retail",
+  "country": "UAE",
+  "industry": "nonprofit",
+  "payment_verified": true,
+  "member_since": "2025-07-01",
+  "jobs_posted": 25,
+  "hires": 23,
+  "total_spent_usd": 68563,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0278",
+  "name": "Silver Media",
+  "country": "Netherlands",
+  "industry": "call centers",
+  "payment_verified": true,
+  "member_since": "2014-06-01",
+  "jobs_posted": 18,
+  "hires": 16,
+  "total_spent_usd": 8272,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0279",
+  "name": "Bright Labs",
+  "country": "Netherlands",
+  "industry": "productivity",
+  "payment_verified": false,
+  "member_since": "2026-10-17",
+  "jobs_posted": 1,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0280",
+  "name": "Atlas Works",
+  "country": "Pakistan",
+  "industry": "real estate",
+  "payment_verified": true,
+  "member_since": "2018-05-01",
+  "jobs_posted": 23,
+  "hires": 5,
+  "total_spent_usd": 9365,
+  "avg_rating_given": 4.5,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0281",
+  "name": "Blue Retail",
+  "country": "Netherlands",
+  "industry": "retail",
+  "payment_verified": true,
+  "member_since": "2016-10-01",
+  "jobs_posted": 44,
+  "hires": 41,
+  "total_spent_usd": 147518,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0282",
+  "name": "Cedar Systems",
+  "country": "Germany",
+  "industry": "marketing",
+  "payment_verified": true,
+  "member_since": "2015-12-01",
+  "jobs_posted": 22,
+  "hires": 17,
+  "total_spent_usd": 65195,
+  "avg_rating_given": 5.0,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0283",
+  "name": "Iron Retail",
+  "country": "Australia",
+  "industry": "subscription apps",
+  "payment_verified": true,
+  "member_since": "2016-06-01",
+  "jobs_posted": 24,
+  "hires": 21,
+  "total_spent_usd": 70917,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0284",
+  "name": "Silver Systems",
+  "country": "Germany",
+  "industry": "media",
+  "payment_verified": true,
+  "member_since": "2022-09-01",
+  "jobs_posted": 30,
+  "hires": 18,
+  "total_spent_usd": 64656,
+  "avg_rating_given": 4.2,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0285",
+  "name": "Blue Labs",
+  "country": "UAE",
+  "industry": "SaaS",
+  "payment_verified": true,
+  "member_since": "2022-12-01",
+  "jobs_posted": 12,
+  "hires": 11,
+  "total_spent_usd": 38269,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0286",
+  "name": "Cedar Labs",
+  "country": "Singapore",
+  "industry": "manufacturing",
+  "payment_verified": false,
+  "member_since": "2019-01-01",
+  "jobs_posted": 2,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": 2.6,
+  "feedback_from_freelancers": [
+   "Changed scope constantly and disputed the final payment."
+  ]
+ },
+ {
+  "client_id": "cl-0287",
+  "name": "Silver Retail",
+  "country": "Singapore",
+  "industry": "accounting",
+  "payment_verified": true,
+  "member_since": "2016-07-01",
+  "jobs_posted": 17,
+  "hires": 2,
+  "total_spent_usd": 6966,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0288",
+  "name": "Quantum Analytics",
+  "country": "Canada",
+  "industry": "telecom",
+  "payment_verified": true,
+  "member_since": "2026-10-14",
+  "jobs_posted": 3,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0289",
+  "name": "Silver Analytics",
+  "country": "UK",
+  "industry": "marketing",
+  "payment_verified": true,
+  "member_since": "2014-07-01",
+  "jobs_posted": 18,
+  "hires": 8,
+  "total_spent_usd": 5240,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0290",
+  "name": "Harbor Analytics",
+  "country": "Canada",
+  "industry": "accounting",
+  "payment_verified": true,
+  "member_since": "2021-07-01",
+  "jobs_posted": 54,
+  "hires": 49,
+  "total_spent_usd": 30674,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0291",
+  "name": "Pixel Retail",
+  "country": "Singapore",
+  "industry": "education",
+  "payment_verified": true,
+  "member_since": "2015-02-01",
+  "jobs_posted": 71,
+  "hires": 59,
+  "total_spent_usd": 107380,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0292",
+  "name": "Pixel Studio",
+  "country": "UK",
+  "industry": "education",
+  "payment_verified": true,
+  "member_since": "2017-04-01",
+  "jobs_posted": 68,
+  "hires": 51,
+  "total_spent_usd": 138975,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0293",
+  "name": "Quantum Systems",
+  "country": "US",
+  "industry": "consulting",
+  "payment_verified": true,
+  "member_since": "2015-03-01",
+  "jobs_posted": 56,
+  "hires": 47,
+  "total_spent_usd": 100392,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0294",
+  "name": "Iron Capital",
+  "country": "Pakistan",
+  "industry": "e-commerce",
+  "payment_verified": true,
+  "member_since": "2019-05-01",
+  "jobs_posted": 37,
+  "hires": 28,
+  "total_spent_usd": 60676,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0295",
+  "name": "Quantum Analytics",
+  "country": "Singapore",
+  "industry": "events",
+  "payment_verified": true,
+  "member_since": "2023-09-01",
+  "jobs_posted": 38,
+  "hires": 26,
+  "total_spent_usd": 49504,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0296",
+  "name": "North Labs",
+  "country": "UK",
+  "industry": "telecom",
+  "payment_verified": true,
+  "member_since": "2018-05-01",
+  "jobs_posted": 21,
+  "hires": 12,
+  "total_spent_usd": 10056,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0297",
+  "name": "Quantum Retail",
+  "country": "Canada",
+  "industry": "legal",
+  "payment_verified": false,
+  "member_since": "2026-10-08",
+  "jobs_posted": 2,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0298",
+  "name": "Bright Capital",
+  "country": "France",
+  "industry": "education",
+  "payment_verified": true,
+  "member_since": "2017-11-01",
+  "jobs_posted": 19,
+  "hires": 10,
+  "total_spent_usd": 18780,
+  "avg_rating_given": 5.0,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0299",
+  "name": "Atlas Capital",
+  "country": "France",
+  "industry": "education",
+  "payment_verified": false,
+  "member_since": "2022-06-01",
+  "jobs_posted": 9,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": 2.9,
+  "feedback_from_freelancers": [
+   "Changed scope constantly and disputed the final payment."
+  ]
+ },
+ {
+  "client_id": "cl-0300",
+  "name": "Green Media",
+  "country": "UAE",
+  "industry": "consulting",
+  "payment_verified": true,
+  "member_since": "2023-08-01",
+  "jobs_posted": 25,
+  "hires": 11,
+  "total_spent_usd": 29876,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0301",
+  "name": "Atlas Capital",
+  "country": "US",
+  "industry": "accounting",
+  "payment_verified": true,
+  "member_since": "2015-02-01",
+  "jobs_posted": 19,
+  "hires": 9,
+  "total_spent_usd": 12609,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0302",
+  "name": "North Works",
+  "country": "Australia",
+  "industry": "e-commerce",
+  "payment_verified": true,
+  "member_since": "2015-03-01",
+  "jobs_posted": 51,
+  "hires": 34,
+  "total_spent_usd": 21828,
+  "avg_rating_given": 4.2,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0303",
+  "name": "Nova Retail",
+  "country": "Netherlands",
+  "industry": "nonprofit",
+  "payment_verified": true,
+  "member_since": "2014-01-01",
+  "jobs_posted": 21,
+  "hires": 3,
+  "total_spent_usd": 6651,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0304",
+  "name": "Harbor Retail",
+  "country": "US",
+  "industry": "nonprofit",
+  "payment_verified": true,
+  "member_since": "2019-02-01",
+  "jobs_posted": 29,
+  "hires": 11,
+  "total_spent_usd": 41129,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0305",
+  "name": "Harbor Media",
+  "country": "UK",
+  "industry": "media",
+  "payment_verified": true,
+  "member_since": "2014-09-01",
+  "jobs_posted": 10,
+  "hires": 10,
+  "total_spent_usd": 26270,
+  "avg_rating_given": 5.0,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0306",
+  "name": "Atlas Media",
+  "country": "UK",
+  "industry": "health & fitness",
+  "payment_verified": false,
+  "member_since": "2026-10-24",
+  "jobs_posted": 4,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0307",
+  "name": "Blue Labs",
+  "country": "UK",
+  "industry": "SaaS",
+  "payment_verified": true,
+  "member_since": "2015-12-01",
+  "jobs_posted": 13,
+  "hires": 10,
+  "total_spent_usd": 18490,
+  "avg_rating_given": 5.0,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0308",
+  "name": "Pixel Systems",
+  "country": "Pakistan",
+  "industry": "fintech",
+  "payment_verified": true,
+  "member_since": "2020-03-01",
+  "jobs_posted": 70,
+  "hires": 52,
+  "total_spent_usd": 76544,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0309",
+  "name": "Quantum Studio",
+  "country": "France",
+  "industry": "mobile apps",
+  "payment_verified": true,
+  "member_since": "2018-10-01",
+  "jobs_posted": 38,
+  "hires": 34,
+  "total_spent_usd": 79628,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0310",
+  "name": "North Systems",
+  "country": "UAE",
+  "industry": "insurance",
+  "payment_verified": true,
+  "member_since": "2015-03-01",
+  "jobs_posted": 13,
+  "hires": 12,
+  "total_spent_usd": 7200,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0311",
+  "name": "North Retail",
+  "country": "France",
+  "industry": "productivity",
+  "payment_verified": true,
+  "member_since": "2024-08-01",
+  "jobs_posted": 29,
+  "hires": 22,
+  "total_spent_usd": 54956,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0312",
+  "name": "Cedar Health",
+  "country": "Singapore",
+  "industry": "productivity",
+  "payment_verified": false,
+  "member_since": "2016-03-01",
+  "jobs_posted": 16,
+  "hires": 3,
+  "total_spent_usd": 3012,
+  "avg_rating_given": 2.8,
+  "feedback_from_freelancers": [
+   "Changed scope constantly and disputed the final payment."
+  ]
+ },
+ {
+  "client_id": "cl-0313",
+  "name": "Harbor Analytics",
+  "country": "Pakistan",
+  "industry": "consulting",
+  "payment_verified": true,
+  "member_since": "2015-09-01",
+  "jobs_posted": 66,
+  "hires": 52,
+  "total_spent_usd": 105924,
+  "avg_rating_given": 4.2,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0314",
+  "name": "Bright Capital",
+  "country": "Germany",
+  "industry": "accounting",
+  "payment_verified": true,
+  "member_since": "2025-09-01",
+  "jobs_posted": 56,
+  "hires": 40,
+  "total_spent_usd": 45200,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0315",
+  "name": "North Media",
+  "country": "Australia",
+  "industry": "events",
+  "payment_verified": false,
+  "member_since": "2026-10-04",
+  "jobs_posted": 1,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0316",
+  "name": "North Health",
+  "country": "UAE",
+  "industry": "productivity",
+  "payment_verified": true,
+  "member_since": "2025-03-01",
+  "jobs_posted": 3,
+  "hires": 1,
+  "total_spent_usd": 3102,
+  "avg_rating_given": 4.2,
+  "feedback_from_freelancers": [
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0317",
+  "name": "Pixel Logistics",
+  "country": "US",
+  "industry": "fintech",
+  "payment_verified": true,
+  "member_since": "2025-06-01",
+  "jobs_posted": 26,
+  "hires": 15,
+  "total_spent_usd": 5490,
+  "avg_rating_given": 4.5,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0318",
+  "name": "Nova Systems",
+  "country": "Australia",
+  "industry": "retail",
+  "payment_verified": true,
+  "member_since": "2025-12-01",
+  "jobs_posted": 41,
+  "hires": 21,
+  "total_spent_usd": 34965,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0319",
+  "name": "Iron Labs",
+  "country": "Germany",
+  "industry": "manufacturing",
+  "payment_verified": true,
+  "member_since": "2015-08-01",
+  "jobs_posted": 35,
+  "hires": 28,
+  "total_spent_usd": 91056,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0320",
+  "name": "Cedar Works",
+  "country": "Singapore",
+  "industry": "telecom",
+  "payment_verified": true,
+  "member_since": "2018-10-01",
+  "jobs_posted": 47,
+  "hires": 38,
+  "total_spent_usd": 70642,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0321",
+  "name": "Iron Logistics",
+  "country": "UAE",
+  "industry": "insurance",
+  "payment_verified": true,
+  "member_since": "2023-05-01",
+  "jobs_posted": 43,
+  "hires": 28,
+  "total_spent_usd": 106848,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0322",
+  "name": "Green Media",
+  "country": "Germany",
+  "industry": "events",
+  "payment_verified": true,
+  "member_since": "2021-02-01",
+  "jobs_posted": 36,
+  "hires": 23,
+  "total_spent_usd": 38778,
+  "avg_rating_given": 5.0,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0323",
+  "name": "Harbor Capital",
+  "country": "Netherlands",
+  "industry": "productivity",
+  "payment_verified": true,
+  "member_since": "2019-04-01",
+  "jobs_posted": 41,
+  "hires": 30,
+  "total_spent_usd": 69810,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0324",
+  "name": "Pixel Retail",
+  "country": "Australia",
+  "industry": "SaaS",
+  "payment_verified": false,
+  "member_since": "2026-10-06",
+  "jobs_posted": 3,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0325",
+  "name": "Silver Logistics",
+  "country": "Netherlands",
+  "industry": "consulting",
+  "payment_verified": true,
+  "member_since": "2021-09-01",
+  "jobs_posted": 19,
+  "hires": 2,
+  "total_spent_usd": 2776,
+  "avg_rating_given": 2.5,
+  "feedback_from_freelancers": [
+   "Changed scope constantly and disputed the final payment."
+  ]
+ },
+ {
+  "client_id": "cl-0326",
+  "name": "Green Studio",
+  "country": "Pakistan",
+  "industry": "subscription apps",
+  "payment_verified": true,
+  "member_since": "2024-04-01",
+  "jobs_posted": 48,
+  "hires": 33,
+  "total_spent_usd": 62502,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0327",
+  "name": "North Analytics",
+  "country": "Australia",
+  "industry": "marketing",
+  "payment_verified": true,
+  "member_since": "2016-04-01",
+  "jobs_posted": 67,
+  "hires": 56,
+  "total_spent_usd": 110320,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0328",
+  "name": "Cedar Analytics",
+  "country": "Singapore",
+  "industry": "accounting",
+  "payment_verified": true,
+  "member_since": "2021-10-01",
+  "jobs_posted": 31,
+  "hires": 25,
+  "total_spent_usd": 81475,
+  "avg_rating_given": 4.5,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0329",
+  "name": "Cedar Health",
+  "country": "Germany",
+  "industry": "SaaS",
+  "payment_verified": true,
+  "member_since": "2018-10-01",
+  "jobs_posted": 43,
+  "hires": 29,
+  "total_spent_usd": 12818,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0330",
+  "name": "Silver Systems",
+  "country": "Australia",
+  "industry": "media",
+  "payment_verified": true,
+  "member_since": "2020-04-01",
+  "jobs_posted": 24,
+  "hires": 14,
+  "total_spent_usd": 29260,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0331",
+  "name": "Harbor Works",
+  "country": "Pakistan",
+  "industry": "events",
+  "payment_verified": true,
+  "member_since": "2014-08-01",
+  "jobs_posted": 60,
+  "hires": 45,
+  "total_spent_usd": 60435,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0332",
+  "name": "Cedar Retail",
+  "country": "Pakistan",
+  "industry": "manufacturing",
+  "payment_verified": true,
+  "member_since": "2018-10-01",
+  "jobs_posted": 5,
+  "hires": 2,
+  "total_spent_usd": 7580,
+  "avg_rating_given": 4.5,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0333",
+  "name": "Atlas Works",
+  "country": "US",
+  "industry": "SaaS",
+  "payment_verified": false,
+  "member_since": "2026-10-06",
+  "jobs_posted": 1,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0334",
+  "name": "Iron Labs",
+  "country": "Australia",
+  "industry": "nonprofit",
+  "payment_verified": true,
+  "member_since": "2022-02-01",
+  "jobs_posted": 73,
+  "hires": 58,
+  "total_spent_usd": 111418,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0335",
+  "name": "Iron Analytics",
+  "country": "France",
+  "industry": "e-commerce",
+  "payment_verified": true,
+  "member_since": "2025-04-01",
+  "jobs_posted": 24,
+  "hires": 9,
+  "total_spent_usd": 16713,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0336",
+  "name": "North Works",
+  "country": "Pakistan",
+  "industry": "real estate",
+  "payment_verified": true,
+  "member_since": "2014-07-01",
+  "jobs_posted": 40,
+  "hires": 23,
+  "total_spent_usd": 57293,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0337",
+  "name": "Blue Systems",
+  "country": "US",
+  "industry": "productivity",
+  "payment_verified": true,
+  "member_since": "2022-05-01",
+  "jobs_posted": 42,
+  "hires": 26,
+  "total_spent_usd": 10998,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0338",
+  "name": "Bright Systems",
+  "country": "Singapore",
+  "industry": "fintech",
+  "payment_verified": true,
+  "member_since": "2015-10-01",
+  "jobs_posted": 12,
+  "hires": 1,
+  "total_spent_usd": 2929,
+  "avg_rating_given": 2.7,
+  "feedback_from_freelancers": [
+   "Changed scope constantly and disputed the final payment."
+  ]
+ },
+ {
+  "client_id": "cl-0339",
+  "name": "Blue Capital",
+  "country": "Germany",
+  "industry": "mobile apps",
+  "payment_verified": true,
+  "member_since": "2020-07-01",
+  "jobs_posted": 49,
+  "hires": 37,
+  "total_spent_usd": 62123,
+  "avg_rating_given": 5.0,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0340",
+  "name": "Green Labs",
+  "country": "UAE",
+  "industry": "manufacturing",
+  "payment_verified": true,
+  "member_since": "2022-01-01",
+  "jobs_posted": 75,
+  "hires": 58,
+  "total_spent_usd": 199230,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0341",
+  "name": "Atlas Media",
+  "country": "UK",
+  "industry": "call centers",
+  "payment_verified": true,
+  "member_since": "2018-08-01",
+  "jobs_posted": 54,
+  "hires": 43,
+  "total_spent_usd": 121346,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0342",
+  "name": "Cedar Retail",
+  "country": "Pakistan",
+  "industry": "logistics",
+  "payment_verified": false,
+  "member_since": "2026-10-06",
+  "jobs_posted": 2,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0343",
+  "name": "North Systems",
+  "country": "Pakistan",
+  "industry": "insurance",
+  "payment_verified": true,
+  "member_since": "2019-04-01",
+  "jobs_posted": 36,
+  "hires": 16,
+  "total_spent_usd": 58688,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0344",
+  "name": "Quantum Retail",
+  "country": "UAE",
+  "industry": "fintech",
+  "payment_verified": true,
+  "member_since": "2019-02-01",
+  "jobs_posted": 41,
+  "hires": 34,
+  "total_spent_usd": 117674,
+  "avg_rating_given": 4.5,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0345",
+  "name": "Atlas Logistics",
+  "country": "US",
+  "industry": "telecom",
+  "payment_verified": true,
+  "member_since": "2014-11-01",
+  "jobs_posted": 40,
+  "hires": 23,
+  "total_spent_usd": 88389,
+  "avg_rating_given": 4.8,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0346",
+  "name": "Nova Retail",
+  "country": "Australia",
+  "industry": "SaaS",
+  "payment_verified": true,
+  "member_since": "2020-11-01",
+  "jobs_posted": 52,
+  "hires": 44,
+  "total_spent_usd": 160952,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Responsive and respectful.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0347",
+  "name": "Quantum Analytics",
+  "country": "UK",
+  "industry": "SaaS",
+  "payment_verified": true,
+  "member_since": "2018-03-01",
+  "jobs_posted": 31,
+  "hires": 31,
+  "total_spent_usd": 117025,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0348",
+  "name": "Iron Capital",
+  "country": "Germany",
+  "industry": "education",
+  "payment_verified": true,
+  "member_since": "2025-01-01",
+  "jobs_posted": 25,
+  "hires": 23,
+  "total_spent_usd": 55775,
+  "avg_rating_given": 4.9,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0349",
+  "name": "Blue Works",
+  "country": "UK",
+  "industry": "call centers",
+  "payment_verified": true,
+  "member_since": "2019-09-01",
+  "jobs_posted": 48,
+  "hires": 48,
+  "total_spent_usd": 158208,
+  "avg_rating_given": 4.3,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0350",
+  "name": "Pixel Retail",
+  "country": "Pakistan",
+  "industry": "mobile apps",
+  "payment_verified": true,
+  "member_since": "2021-09-01",
+  "jobs_posted": 54,
+  "hires": 45,
+  "total_spent_usd": 176175,
+  "avg_rating_given": 5.0,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0351",
+  "name": "Pixel Capital",
+  "country": "Netherlands",
+  "industry": "marketing",
+  "payment_verified": true,
+  "member_since": "2026-10-15",
+  "jobs_posted": 1,
+  "hires": 0,
+  "total_spent_usd": 0,
+  "avg_rating_given": null,
+  "feedback_from_freelancers": []
+ },
+ {
+  "client_id": "cl-0352",
+  "name": "Green Studio",
+  "country": "UK",
+  "industry": "fintech",
+  "payment_verified": true,
+  "member_since": "2017-03-01",
+  "jobs_posted": 26,
+  "hires": 9,
+  "total_spent_usd": 29988,
+  "avg_rating_given": 4.5,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0353",
+  "name": "Atlas Media",
+  "country": "Pakistan",
+  "industry": "real estate",
+  "payment_verified": true,
+  "member_since": "2024-07-01",
+  "jobs_posted": 50,
+  "hires": 35,
+  "total_spent_usd": 119245,
+  "avg_rating_given": 4.2,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Would work with again."
+  ]
+ },
+ {
+  "client_id": "cl-0354",
+  "name": "Harbor Systems",
+  "country": "Australia",
+  "industry": "retail",
+  "payment_verified": true,
+  "member_since": "2019-01-01",
+  "jobs_posted": 23,
+  "hires": 3,
+  "total_spent_usd": 1935,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Great communication.",
+   "Detailed feedback, paid on time."
+  ]
+ },
+ {
+  "client_id": "cl-0355",
+  "name": "Iron Studio",
+  "country": "US",
+  "industry": "nonprofit",
+  "payment_verified": true,
+  "member_since": "2021-12-01",
+  "jobs_posted": 58,
+  "hires": 50,
+  "total_spent_usd": 108200,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0356",
+  "name": "North Analytics",
+  "country": "Pakistan",
+  "industry": "insurance",
+  "payment_verified": true,
+  "member_since": "2020-05-01",
+  "jobs_posted": 32,
+  "hires": 30,
+  "total_spent_usd": 38910,
+  "avg_rating_given": 4.6,
+  "feedback_from_freelancers": [
+   "Clear requirements and fast payment.",
+   "Great communication."
+  ]
+ },
+ {
+  "client_id": "cl-0357",
+  "name": "Pixel Studio",
+  "country": "Netherlands",
+  "industry": "healthcare",
+  "payment_verified": true,
+  "member_since": "2023-04-01",
+  "jobs_posted": 21,
+  "hires": 10,
+  "total_spent_usd": 8490,
+  "avg_rating_given": 4.5,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Responsive and respectful."
+  ]
+ },
+ {
+  "client_id": "cl-0358",
+  "name": "Quantum Logistics",
+  "country": "Australia",
+  "industry": "real estate",
+  "payment_verified": true,
+  "member_since": "2020-10-01",
+  "jobs_posted": 19,
+  "hires": 2,
+  "total_spent_usd": 1316,
+  "avg_rating_given": 4.7,
+  "feedback_from_freelancers": [
+   "Detailed feedback, paid on time.",
+   "Clear requirements and fast payment."
+  ]
+ },
+ {
+  "client_id": "cl-0359",
+  "name": "Green Analytics",
+  "country": "Singapore",
+  "industry": "insurance",
+  "payment_verified": true,
+  "member_since": "2017-02-01",
+  "jobs_posted": 57,
+  "hires": 56,
+  "total_spent_usd": 163072,
+  "avg_rating_given": 4.4,
+  "feedback_from_freelancers": [
+   "Would work with again.",
+   "Responsive and respectful."
+  ]
+ }
+]

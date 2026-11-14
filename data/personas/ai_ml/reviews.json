@@ -1,0 +1,114 @@
+[
+  {
+    "review_id": "ai_ml-rev-00",
+    "project": "Multi-agent research assistant",
+    "client_industry": "consulting",
+    "rating": 5,
+    "date": "2025-06",
+    "text": "Ayesha delivered an AI helper that researches a market and drafts a cited report for our analysts. First-draft market reports went from 5 hours to 40 minutes. Communication was clear and on time."
+  },
+  {
+    "review_id": "ai_ml-rev-01",
+    "project": "Invoice OCR pipeline",
+    "client_industry": "fintech",
+    "rating": 5,
+    "date": "2023-03",
+    "text": "We hired Ayesha for read supplier invoices (PDF scans) and fill our accounting system automatically; would hire again. Minor delays in week two but quality was high."
+  },
+  {
+    "review_id": "ai_ml-rev-02",
+    "project": "LoRA fine-tune for clinical note summaries",
+    "client_industry": "healthcare",
+    "rating": 3,
+    "date": "2025-09",
+    "text": "We hired Ayesha for summaries of long discharge notes that doctors can trust; would hire again. Minor delays in week two but quality was high."
+  },
+  {
+    "review_id": "ai_ml-rev-03",
+    "project": "Card-fraud anomaly detection",
+    "client_industry": "fintech",
+    "rating": 4,
+    "date": "2022-09",
+    "text": "Solid engineer. Asked the right questions about flag suspicious card transactions in nea and handed over clean documentation."
+  },
+  {
+    "review_id": "ai_ml-rev-04",
+    "project": "Shopping assistant chatbot",
+    "client_industry": "e-commerce",
+    "rating": 4,
+    "date": "2025-03",
+    "text": "Great to work with. The AskTheStore project went live on schedule and handled 62% of pre-sales questions without a human."
+  },
+  {
+    "review_id": "ai_ml-rev-05",
+    "project": "Feature pipelines on Airflow",
+    "client_industry": "logistics",
+    "rating": 5,
+    "date": "2023-04",
+    "text": "Ayesha delivered reliable nightly data preparation for our delivery-time models. Nightly features ready by 6am with zero missed runs in 9 months. Communication was clear and on time."
+  },
+  {
+    "review_id": "ai_ml-rev-06",
+    "project": "Insurance pricing model",
+    "client_industry": "insurance",
+    "rating": 3,
+    "date": "2022-06",
+    "text": "We hired Ayesha for improve our car-insurance premium model with modern ML; would hire again. Minor delays in week two but quality was high."
+  },
+  {
+    "review_id": "ai_ml-rev-07",
+    "project": "Assembly-line defect detection",
+    "client_industry": "manufacturing",
+    "rating": 5,
+    "date": "2024-04",
+    "text": "Great to work with. The LineEye project went live on schedule and mAP 0.88 at 30 FPS on an edge device; scrap rate down 17%."
+  },
+  {
+    "review_id": "ai_ml-rev-08",
+    "project": "Call transcription and QA scoring",
+    "client_industry": "call centers",
+    "rating": 5,
+    "date": "2024-07",
+    "text": "Great to work with. The CallScore project went live on schedule and QA coverage went from 2% of calls sampled by hand to 100% scored automatically."
+  },
+  {
+    "review_id": "ai_ml-rev-09",
+    "project": "ML platform migration to SageMaker",
+    "client_industry": "logistics",
+    "rating": 5,
+    "date": "2024-01",
+    "text": "Great to work with. The ModelHub project went live on schedule and deploy time for a model went from 2 days to 25 minutes."
+  },
+  {
+    "review_id": "ai_ml-rev-10",
+    "project": "LLM evaluation harness",
+    "client_industry": "SaaS",
+    "rating": 3,
+    "date": "2025-05",
+    "text": "Great to work with. The EvalKit project went live on schedule and caught 3 regressions before release; judge agreement with humans kappa 0.74."
+  },
+  {
+    "review_id": "ai_ml-rev-11",
+    "project": "Chest X-ray triage classifier",
+    "client_industry": "healthcare",
+    "rating": 5,
+    "date": "2023-12",
+    "text": "We hired Ayesha for prioritise urgent scans so radiologists see them first; would hire again. Minor delays in week two but quality was high."
+  },
+  {
+    "review_id": "ai_ml-rev-12",
+    "project": "Product recommendation engine",
+    "client_industry": "e-commerce",
+    "rating": 4,
+    "date": "2023-03",
+    "text": "We hired Ayesha for \"customers also bought\" suggestions that actually reflect what each shopper likes; would hire again. Minor delays in week two but quality was high."
+  },
+  {
+    "review_id": "ai_ml-rev-13",
+    "project": "Contract clause extraction",
+    "client_industry": "legal",
+    "rating": 4,
+    "date": "2024-10",
+    "text": "Ayesha delivered a tool that pulls key clauses (termination, liability, renewal) out of our contracts. Reached F1 0.91 on 12 clause types and saved paralegals ~20 hours a week. Communication was clear and on time."
+  }
+]

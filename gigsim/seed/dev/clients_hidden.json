@@ -1,0 +1,2082 @@
+{
+ "cl-0000": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0001": {
+  "responsiveness": 0.38,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0002": {
+  "responsiveness": 0.67,
+  "dislikes_generic": false,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0003": {
+  "responsiveness": 0.69,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0004": {
+  "responsiveness": 0.83,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0005": {
+  "responsiveness": 0.43,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0006": {
+  "responsiveness": 0.36,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0007": {
+  "responsiveness": 0.85,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0008": {
+  "responsiveness": 0.79,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0009": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0010": {
+  "responsiveness": 0.73,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0011": {
+  "responsiveness": 0.7,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0012": {
+  "responsiveness": 0.64,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0013": {
+  "responsiveness": 0.5,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": true
+ },
+ "cl-0014": {
+  "responsiveness": 0.58,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0015": {
+  "responsiveness": 0.37,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0016": {
+  "responsiveness": 0.73,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0017": {
+  "responsiveness": 0.72,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0018": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0019": {
+  "responsiveness": 0.61,
+  "dislikes_generic": false,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0020": {
+  "responsiveness": 0.67,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0021": {
+  "responsiveness": 0.84,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0022": {
+  "responsiveness": 0.9,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0023": {
+  "responsiveness": 0.66,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0024": {
+  "responsiveness": 0.59,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0025": {
+  "responsiveness": 0.5,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0026": {
+  "responsiveness": 0.37,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": true
+ },
+ "cl-0027": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0028": {
+  "responsiveness": 0.7,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0029": {
+  "responsiveness": 0.43,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0030": {
+  "responsiveness": 0.42,
+  "dislikes_generic": false,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0031": {
+  "responsiveness": 0.63,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0032": {
+  "responsiveness": 0.47,
+  "dislikes_generic": false,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0033": {
+  "responsiveness": 0.65,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0034": {
+  "responsiveness": 0.78,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0035": {
+  "responsiveness": 0.56,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0036": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0037": {
+  "responsiveness": 0.38,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0038": {
+  "responsiveness": 0.75,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0039": {
+  "responsiveness": 0.86,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": true
+ },
+ "cl-0040": {
+  "responsiveness": 0.69,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0041": {
+  "responsiveness": 0.63,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0042": {
+  "responsiveness": 0.76,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0043": {
+  "responsiveness": 0.48,
+  "dislikes_generic": false,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0044": {
+  "responsiveness": 0.63,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0045": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0046": {
+  "responsiveness": 0.38,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0047": {
+  "responsiveness": 0.73,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0048": {
+  "responsiveness": 0.89,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0049": {
+  "responsiveness": 0.82,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0050": {
+  "responsiveness": 0.74,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0051": {
+  "responsiveness": 0.53,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0052": {
+  "responsiveness": 0.37,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": true
+ },
+ "cl-0053": {
+  "responsiveness": 0.89,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0054": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0055": {
+  "responsiveness": 0.77,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0056": {
+  "responsiveness": 0.81,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0057": {
+  "responsiveness": 0.56,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0058": {
+  "responsiveness": 0.76,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0059": {
+  "responsiveness": 0.82,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0060": {
+  "responsiveness": 0.71,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0061": {
+  "responsiveness": 0.49,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0062": {
+  "responsiveness": 0.7,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0063": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0064": {
+  "responsiveness": 0.57,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0065": {
+  "responsiveness": 0.41,
+  "dislikes_generic": false,
+  "prefers_concise": true,
+  "difficult": true
+ },
+ "cl-0066": {
+  "responsiveness": 0.43,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0067": {
+  "responsiveness": 0.66,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0068": {
+  "responsiveness": 0.6,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0069": {
+  "responsiveness": 0.79,
+  "dislikes_generic": false,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0070": {
+  "responsiveness": 0.88,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0071": {
+  "responsiveness": 0.9,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0072": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0073": {
+  "responsiveness": 0.72,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0074": {
+  "responsiveness": 0.36,
+  "dislikes_generic": false,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0075": {
+  "responsiveness": 0.65,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0076": {
+  "responsiveness": 0.46,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0077": {
+  "responsiveness": 0.57,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0078": {
+  "responsiveness": 0.59,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": true
+ },
+ "cl-0079": {
+  "responsiveness": 0.65,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0080": {
+  "responsiveness": 0.81,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0081": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0082": {
+  "responsiveness": 0.38,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0083": {
+  "responsiveness": 0.62,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0084": {
+  "responsiveness": 0.8,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0085": {
+  "responsiveness": 0.36,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0086": {
+  "responsiveness": 0.58,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0087": {
+  "responsiveness": 0.59,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0088": {
+  "responsiveness": 0.49,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0089": {
+  "responsiveness": 0.89,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0090": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0091": {
+  "responsiveness": 0.46,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": true
+ },
+ "cl-0092": {
+  "responsiveness": 0.53,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0093": {
+  "responsiveness": 0.82,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0094": {
+  "responsiveness": 0.65,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0095": {
+  "responsiveness": 0.48,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0096": {
+  "responsiveness": 0.71,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0097": {
+  "responsiveness": 0.73,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0098": {
+  "responsiveness": 0.78,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0099": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0100": {
+  "responsiveness": 0.46,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0101": {
+  "responsiveness": 0.43,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0102": {
+  "responsiveness": 0.69,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0103": {
+  "responsiveness": 0.6,
+  "dislikes_generic": false,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0104": {
+  "responsiveness": 0.38,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": true
+ },
+ "cl-0105": {
+  "responsiveness": 0.71,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0106": {
+  "responsiveness": 0.64,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0107": {
+  "responsiveness": 0.42,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0108": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0109": {
+  "responsiveness": 0.81,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0110": {
+  "responsiveness": 0.76,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0111": {
+  "responsiveness": 0.54,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0112": {
+  "responsiveness": 0.35,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0113": {
+  "responsiveness": 0.36,
+  "dislikes_generic": false,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0114": {
+  "responsiveness": 0.71,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0115": {
+  "responsiveness": 0.72,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0116": {
+  "responsiveness": 0.45,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0117": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0118": {
+  "responsiveness": 0.48,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0119": {
+  "responsiveness": 0.44,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0120": {
+  "responsiveness": 0.53,
+  "dislikes_generic": false,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0121": {
+  "responsiveness": 0.59,
+  "dislikes_generic": false,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0122": {
+  "responsiveness": 0.35,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0123": {
+  "responsiveness": 0.36,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0124": {
+  "responsiveness": 0.79,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0125": {
+  "responsiveness": 0.48,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0126": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0127": {
+  "responsiveness": 0.55,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0128": {
+  "responsiveness": 0.81,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0129": {
+  "responsiveness": 0.71,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0130": {
+  "responsiveness": 0.46,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": true
+ },
+ "cl-0131": {
+  "responsiveness": 0.71,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0132": {
+  "responsiveness": 0.82,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0133": {
+  "responsiveness": 0.43,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0134": {
+  "responsiveness": 0.73,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0135": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0136": {
+  "responsiveness": 0.55,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0137": {
+  "responsiveness": 0.89,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0138": {
+  "responsiveness": 0.89,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0139": {
+  "responsiveness": 0.6,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0140": {
+  "responsiveness": 0.46,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0141": {
+  "responsiveness": 0.87,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0142": {
+  "responsiveness": 0.55,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0143": {
+  "responsiveness": 0.76,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": true
+ },
+ "cl-0144": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0145": {
+  "responsiveness": 0.6,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0146": {
+  "responsiveness": 0.86,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0147": {
+  "responsiveness": 0.5,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0148": {
+  "responsiveness": 0.5,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0149": {
+  "responsiveness": 0.49,
+  "dislikes_generic": false,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0150": {
+  "responsiveness": 0.54,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0151": {
+  "responsiveness": 0.75,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0152": {
+  "responsiveness": 0.68,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0153": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0154": {
+  "responsiveness": 0.4,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0155": {
+  "responsiveness": 0.67,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0156": {
+  "responsiveness": 0.47,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": true
+ },
+ "cl-0157": {
+  "responsiveness": 0.35,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0158": {
+  "responsiveness": 0.49,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0159": {
+  "responsiveness": 0.44,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0160": {
+  "responsiveness": 0.64,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0161": {
+  "responsiveness": 0.75,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0162": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0163": {
+  "responsiveness": 0.65,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0164": {
+  "responsiveness": 0.62,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0165": {
+  "responsiveness": 0.4,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0166": {
+  "responsiveness": 0.82,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0167": {
+  "responsiveness": 0.5,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0168": {
+  "responsiveness": 0.72,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0169": {
+  "responsiveness": 0.81,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": true
+ },
+ "cl-0170": {
+  "responsiveness": 0.52,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0171": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0172": {
+  "responsiveness": 0.76,
+  "dislikes_generic": false,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0173": {
+  "responsiveness": 0.48,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0174": {
+  "responsiveness": 0.41,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0175": {
+  "responsiveness": 0.6,
+  "dislikes_generic": false,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0176": {
+  "responsiveness": 0.83,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0177": {
+  "responsiveness": 0.39,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0178": {
+  "responsiveness": 0.51,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0179": {
+  "responsiveness": 0.87,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0180": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0181": {
+  "responsiveness": 0.5,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0182": {
+  "responsiveness": 0.87,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": true
+ },
+ "cl-0183": {
+  "responsiveness": 0.77,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0184": {
+  "responsiveness": 0.43,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0185": {
+  "responsiveness": 0.7,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0186": {
+  "responsiveness": 0.86,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0187": {
+  "responsiveness": 0.73,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0188": {
+  "responsiveness": 0.57,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0189": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0190": {
+  "responsiveness": 0.81,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0191": {
+  "responsiveness": 0.75,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0192": {
+  "responsiveness": 0.43,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0193": {
+  "responsiveness": 0.37,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0194": {
+  "responsiveness": 0.82,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0195": {
+  "responsiveness": 0.76,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": true
+ },
+ "cl-0196": {
+  "responsiveness": 0.47,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0197": {
+  "responsiveness": 0.48,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0198": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0199": {
+  "responsiveness": 0.86,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0200": {
+  "responsiveness": 0.74,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0201": {
+  "responsiveness": 0.63,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0202": {
+  "responsiveness": 0.78,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0203": {
+  "responsiveness": 0.68,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0204": {
+  "responsiveness": 0.36,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0205": {
+  "responsiveness": 0.6,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0206": {
+  "responsiveness": 0.52,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0207": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0208": {
+  "responsiveness": 0.59,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": true
+ },
+ "cl-0209": {
+  "responsiveness": 0.35,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0210": {
+  "responsiveness": 0.41,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0211": {
+  "responsiveness": 0.68,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0212": {
+  "responsiveness": 0.49,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0213": {
+  "responsiveness": 0.63,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0214": {
+  "responsiveness": 0.51,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0215": {
+  "responsiveness": 0.55,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0216": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0217": {
+  "responsiveness": 0.82,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0218": {
+  "responsiveness": 0.83,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0219": {
+  "responsiveness": 0.73,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0220": {
+  "responsiveness": 0.41,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0221": {
+  "responsiveness": 0.85,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": true
+ },
+ "cl-0222": {
+  "responsiveness": 0.55,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0223": {
+  "responsiveness": 0.54,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0224": {
+  "responsiveness": 0.81,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0225": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0226": {
+  "responsiveness": 0.83,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0227": {
+  "responsiveness": 0.89,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0228": {
+  "responsiveness": 0.57,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0229": {
+  "responsiveness": 0.38,
+  "dislikes_generic": false,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0230": {
+  "responsiveness": 0.59,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0231": {
+  "responsiveness": 0.88,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0232": {
+  "responsiveness": 0.67,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0233": {
+  "responsiveness": 0.44,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0234": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0235": {
+  "responsiveness": 0.76,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0236": {
+  "responsiveness": 0.61,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0237": {
+  "responsiveness": 0.5,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0238": {
+  "responsiveness": 0.89,
+  "dislikes_generic": false,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0239": {
+  "responsiveness": 0.73,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0240": {
+  "responsiveness": 0.63,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0241": {
+  "responsiveness": 0.58,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0242": {
+  "responsiveness": 0.9,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0243": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0244": {
+  "responsiveness": 0.47,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0245": {
+  "responsiveness": 0.74,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0246": {
+  "responsiveness": 0.77,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0247": {
+  "responsiveness": 0.42,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": true
+ },
+ "cl-0248": {
+  "responsiveness": 0.88,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0249": {
+  "responsiveness": 0.65,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0250": {
+  "responsiveness": 0.56,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0251": {
+  "responsiveness": 0.66,
+  "dislikes_generic": false,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0252": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0253": {
+  "responsiveness": 0.84,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0254": {
+  "responsiveness": 0.77,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0255": {
+  "responsiveness": 0.38,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0256": {
+  "responsiveness": 0.41,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0257": {
+  "responsiveness": 0.58,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0258": {
+  "responsiveness": 0.7,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0259": {
+  "responsiveness": 0.85,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0260": {
+  "responsiveness": 0.63,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": true
+ },
+ "cl-0261": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0262": {
+  "responsiveness": 0.45,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0263": {
+  "responsiveness": 0.83,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0264": {
+  "responsiveness": 0.7,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0265": {
+  "responsiveness": 0.77,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0266": {
+  "responsiveness": 0.43,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0267": {
+  "responsiveness": 0.83,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0268": {
+  "responsiveness": 0.42,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0269": {
+  "responsiveness": 0.87,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0270": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0271": {
+  "responsiveness": 0.5,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0272": {
+  "responsiveness": 0.8,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0273": {
+  "responsiveness": 0.74,
+  "dislikes_generic": false,
+  "prefers_concise": true,
+  "difficult": true
+ },
+ "cl-0274": {
+  "responsiveness": 0.64,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0275": {
+  "responsiveness": 0.66,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0276": {
+  "responsiveness": 0.43,
+  "dislikes_generic": false,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0277": {
+  "responsiveness": 0.57,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0278": {
+  "responsiveness": 0.75,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0279": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0280": {
+  "responsiveness": 0.76,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0281": {
+  "responsiveness": 0.62,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0282": {
+  "responsiveness": 0.69,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0283": {
+  "responsiveness": 0.48,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0284": {
+  "responsiveness": 0.64,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0285": {
+  "responsiveness": 0.7,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0286": {
+  "responsiveness": 0.56,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": true
+ },
+ "cl-0287": {
+  "responsiveness": 0.37,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0288": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0289": {
+  "responsiveness": 0.78,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0290": {
+  "responsiveness": 0.4,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0291": {
+  "responsiveness": 0.6,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0292": {
+  "responsiveness": 0.51,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0293": {
+  "responsiveness": 0.46,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0294": {
+  "responsiveness": 0.46,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0295": {
+  "responsiveness": 0.43,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0296": {
+  "responsiveness": 0.83,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0297": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0298": {
+  "responsiveness": 0.48,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0299": {
+  "responsiveness": 0.82,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": true
+ },
+ "cl-0300": {
+  "responsiveness": 0.48,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0301": {
+  "responsiveness": 0.36,
+  "dislikes_generic": false,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0302": {
+  "responsiveness": 0.4,
+  "dislikes_generic": false,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0303": {
+  "responsiveness": 0.4,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0304": {
+  "responsiveness": 0.85,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0305": {
+  "responsiveness": 0.62,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0306": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0307": {
+  "responsiveness": 0.73,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0308": {
+  "responsiveness": 0.69,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0309": {
+  "responsiveness": 0.61,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0310": {
+  "responsiveness": 0.65,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0311": {
+  "responsiveness": 0.82,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0312": {
+  "responsiveness": 0.73,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": true
+ },
+ "cl-0313": {
+  "responsiveness": 0.58,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0314": {
+  "responsiveness": 0.77,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0315": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0316": {
+  "responsiveness": 0.69,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0317": {
+  "responsiveness": 0.89,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0318": {
+  "responsiveness": 0.73,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0319": {
+  "responsiveness": 0.5,
+  "dislikes_generic": false,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0320": {
+  "responsiveness": 0.76,
+  "dislikes_generic": false,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0321": {
+  "responsiveness": 0.49,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0322": {
+  "responsiveness": 0.36,
+  "dislikes_generic": false,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0323": {
+  "responsiveness": 0.52,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0324": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0325": {
+  "responsiveness": 0.88,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": true
+ },
+ "cl-0326": {
+  "responsiveness": 0.74,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0327": {
+  "responsiveness": 0.77,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0328": {
+  "responsiveness": 0.64,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0329": {
+  "responsiveness": 0.43,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0330": {
+  "responsiveness": 0.52,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0331": {
+  "responsiveness": 0.37,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0332": {
+  "responsiveness": 0.65,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0333": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0334": {
+  "responsiveness": 0.77,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0335": {
+  "responsiveness": 0.66,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0336": {
+  "responsiveness": 0.76,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0337": {
+  "responsiveness": 0.58,
+  "dislikes_generic": false,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0338": {
+  "responsiveness": 0.43,
+  "dislikes_generic": false,
+  "prefers_concise": true,
+  "difficult": true
+ },
+ "cl-0339": {
+  "responsiveness": 0.73,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0340": {
+  "responsiveness": 0.58,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0341": {
+  "responsiveness": 0.62,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0342": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0343": {
+  "responsiveness": 0.9,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0344": {
+  "responsiveness": 0.42,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0345": {
+  "responsiveness": 0.44,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0346": {
+  "responsiveness": 0.54,
+  "dislikes_generic": false,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0347": {
+  "responsiveness": 0.45,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0348": {
+  "responsiveness": 0.55,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0349": {
+  "responsiveness": 0.52,
+  "dislikes_generic": false,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0350": {
+  "responsiveness": 0.5,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0351": {
+  "responsiveness": 0.9,
+  "scam": true
+ },
+ "cl-0352": {
+  "responsiveness": 0.49,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0353": {
+  "responsiveness": 0.65,
+  "dislikes_generic": false,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0354": {
+  "responsiveness": 0.79,
+  "dislikes_generic": false,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0355": {
+  "responsiveness": 0.64,
+  "dislikes_generic": false,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0356": {
+  "responsiveness": 0.49,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0357": {
+  "responsiveness": 0.58,
+  "dislikes_generic": true,
+  "prefers_concise": true,
+  "difficult": false
+ },
+ "cl-0358": {
+  "responsiveness": 0.46,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ },
+ "cl-0359": {
+  "responsiveness": 0.62,
+  "dislikes_generic": true,
+  "prefers_concise": false,
+  "difficult": false
+ }
+}
