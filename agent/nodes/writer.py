@@ -45,7 +45,8 @@ def evidence_block(ev: list[dict]) -> str:
     for i, e in enumerate(ev, 1):
         meta = ", ".join(x for x in (e.get("type"), e.get("project"), e.get("client_industry"), e.get("date"),
                                      f"outcome: {e['outcome']}" if e.get("outcome") else None) if x)
-        lines.append(f"[{i}] ({meta}) {re.sub(r'\s+', ' ', e.get('snippet') or '')[:700]}")
+        snippet = re.sub(r"\s+", " ", e.get("snippet") or "")[:700]
+        lines.append(f"[{i}] ({meta}) {snippet}")
     return "\n".join(lines)
 
 
@@ -74,7 +75,7 @@ def template_draft(job: dict, spec: dict, ev: list[dict], price: dict, profile: 
     parts.append(f"My quote is ${price.get('amount'):,.0f}{'/h' if price.get('unit') == 'hourly' else ''}.")
     parts.append("What would make this project a clear success for you in the first month?")
     answers = []
-    for q in spec.get("screening_questions", []):
+    for _q in spec.get("screening_questions", []):
         s = next((f"{_result_sentence(e.get('snippet', ''))} [{i}]." for i, e in enumerate(ev, 1) if _result_sentence(e.get("snippet", ""))), "")
         answers.append(f"{s} For your project I would follow the same approach and agree milestones up front.".strip())
     return WriterOutput(cover_letter=" ".join(parts), screening_answers=answers)

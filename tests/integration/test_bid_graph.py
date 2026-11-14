@@ -78,7 +78,7 @@ async def test_conversation_graph_drafts_reply_and_waits():
     W.reset()
     row = pick("standard", bid=True)
     jid = row["job"]["job_id"]
-    out = await run_bid("ai_ml", jid, profile=persona_profile("ai_ml"), thread_id="t-conv-bid")
+    await run_bid("ai_ml", jid, profile=persona_profile("ai_ml"), thread_id="t-conv-bid")
     await run_bid("ai_ml", jid, profile=persona_profile("ai_ml"), thread_id="t-conv-bid", resume={"action": "approve"})
     pid = next(p["proposal_id"] for p in W.proposals.values() if p["job_id"] == jid and p["status"] != "draft")
     # force a client reply into GigSim's thread

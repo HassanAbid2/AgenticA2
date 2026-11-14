@@ -87,7 +87,7 @@ async def risk_assessor(state, config):
         score = max(score, thresholds()["maximum_risk_score"])
     rep = RiskReport(score=min(1.0, score), client_quality=round(q, 3), flags=list(dict.fromkeys(flags)),
                      injection_detected=bool(spans), injected_spans=spans,
-                     explanation="; ".join(e for e in expl if e) or ("No red flags; client quality %.2f." % q))
+                     explanation="; ".join(e for e in expl if e) or f"No red flags; client quality {q:.2f}.")
     return {"risk_report": rep.model_dump(), "sanitized_description": clean,
             "analyses": {"risk": {"score": rep.score, "flags": rep.flags}},
             "_summary": {"score": rep.score, "flags": rep.flags, "injection": rep.injection_detected}}

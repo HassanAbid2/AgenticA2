@@ -1829,6 +1829,7 @@
     "RequirementMatch": {
      "properties": {
       "best_score": {
+       "description": "Best cosine similarity between the requirement and any evidence (0-1)",
        "title": "Best Score",
        "type": "number"
       },
