@@ -1,9 +1,5 @@
 import os
 
-os.environ["GIGSIM_ERROR_RATE"] = "0"
-os.environ["GIGSIM_TIME_SCALE"] = "1000"
-os.environ["GIGSIM_RATE_LIMIT_PER_MIN"] = "1000"
-
 from fastapi.testclient import TestClient  # noqa: E402
 
 from gigsim.app import W, app  # noqa: E402

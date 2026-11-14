@@ -405,6 +405,7 @@ dependencies = [
     { name = "redis" },
     { name = "sqlalchemy" },
     { name = "sse-starlette" },
+    { name = "tzdata" },
     { name = "uvicorn", extra = ["standard"] },
 ]
 
@@ -450,6 +451,7 @@ requires-dist = [
     { name = "ruff", marker = "extra == 'dev'" },
     { name = "sqlalchemy" },
     { name = "sse-starlette" },
+    { name = "tzdata" },
     { name = "uvicorn", extras = ["standard"] },
 ]
 provides-extras = ["dev"]

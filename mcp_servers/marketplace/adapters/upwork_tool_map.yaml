@@ -1,0 +1,26 @@
+# GigBid marketplace-port operation -> Upwork MCP tool name.
+# Vendor tool names change; verify with:
+#   UPWORK_ACCESS_TOKEN=... python -m mcp_servers.marketplace.adapters.upwork_live --list-tools
+# and edit this file only (no code change needed).
+tools:
+  search_jobs: search_jobs
+  get_job: get_job_details
+  get_client: get_client_details
+  get_connects: get_connects_balance
+  create_proposal_draft: create_proposal_draft
+  list_proposals: list_proposals
+  list_threads: list_rooms
+  get_thread: get_room_messages
+  send_message: create_message_draft
+# Upwork field name -> GigBid field name (identity when omitted)
+job_fields:
+  job_id: id
+  title: title
+  description: description
+  category: category
+  skills: skills
+  budget: budget
+  client_id: client_id
+  posted_at: created_time
+  connects_cost: connects_required
+  proposals_count: total_applicants

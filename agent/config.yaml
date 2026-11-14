@@ -1,26 +1,135 @@
+# GigBid runtime configuration. Rules, budgets, thresholds and models live here, never in code.
+# Env vars override: MODEL_PROFILE, MARKETPLACE_MODE, RAG_VARIANT.
+
 marketplace:
-  mode: gigsim
-  max_requests_per_minute: 20
+  mode: gigsim                # gigsim | upwork_live   (R1: one port, two adapters)
+  max_requests_per_minute: 40 # per user, below GigSim's 60/min limit
+  timeout_s: 15
+  max_retries: 3
+  live_poll_minutes: 240      # live mode scout interval (see docs/RUNBOOK.md for the justification)
+  gigsim_poll_minutes: 30
+
+policy:
+  pack: data/policy_pack/marketplace_policy.yaml  # Compliance Guard ground truth
+  version: "2026-10"                              # GigSim policy version this config targets
 
 models:
-  profile: open
-  nodes:
-    scout: qwen3-4b
-    analyst: qwen3-4b
-    risk_assessor: qwen3-4b
-    fit_matcher: qwen3-4b
-    pricing: qwen3-4b
-    writer: configure-your-model
-    critic: configure-your-model
-    client_liaison: configure-your-model
-  embeddings: nomic-embed-text
-  reranker: bge-reranker-v2-m3
+  profile: open               # open (required) | open_b (comparison) | local | offline | paid
+  profiles:
+    open:                     # hosted open-weight models (Groq), works on a free deployment host
+      base_url: https://api.groq.com/openai/v1
+      api_key_env: GROQ_API_KEY
+      nodes:
+        analyst: openai/gpt-oss-20b
+        risk_assessor: llama-3.1-8b-instant
+        fit_matcher: llama-3.1-8b-instant
+        pricing: llama-3.1-8b-instant
+        writer: openai/gpt-oss-120b
+        critic: openai/gpt-oss-120b
+        compliance: llama-3.1-8b-instant
+        liaison_intent: llama-3.1-8b-instant
+        liaison: openai/gpt-oss-120b
+        claim_judge: openai/gpt-oss-20b
+        judge: openai/gpt-oss-120b
+        hyde: llama-3.1-8b-instant
+        query_rewrite: llama-3.1-8b-instant
+        baseline: openai/gpt-oss-120b      # single-agent / supervisor baselines (R&D C)
+      fallback: openai/gpt-oss-20b         # cheap nodes fall back here on error
+    open_b:                   # second open configuration compared on the dev set
+      base_url: https://api.groq.com/openai/v1
+      api_key_env: GROQ_API_KEY
+      nodes:
+        analyst: llama-3.1-8b-instant
+        risk_assessor: llama-3.1-8b-instant
+        fit_matcher: llama-3.1-8b-instant
+        pricing: llama-3.1-8b-instant
+        writer: qwen/qwen3-32b
+        critic: qwen/qwen3-32b
+        compliance: llama-3.1-8b-instant
+        liaison_intent: llama-3.1-8b-instant
+        liaison: qwen/qwen3-32b
+        claim_judge: llama-3.1-8b-instant
+        judge: openai/gpt-oss-120b
+        hyde: llama-3.1-8b-instant
+        query_rewrite: llama-3.1-8b-instant
+        baseline: qwen/qwen3-32b
+      fallback: llama-3.1-8b-instant
+    local:                    # Ollama in docker compose (CPU or small GPU)
+      base_url: http://ollama:11434/v1
+      api_key_env: OLLAMA_API_KEY
+      nodes:
+        default: qwen3:4b
+        writer: qwen3:8b
+        critic: qwen3:8b
+        liaison: qwen3:8b
+      fallback: qwen3:4b
+    offline:                  # no LLM at all: deterministic node implementations (CI, tests, outages)
+      nodes: {}
+    paid:                     # optional; only where it beats `open` enough to justify cost
+      base_url: https://api.openai.com/v1
+      api_key_env: OPENAI_API_KEY
+      nodes:
+        default: gpt-5-mini
+        writer: gpt-5
+        critic: gpt-5
+      fallback: gpt-5-mini
+  # USD per 1M tokens (input, output). Provider list prices; local models cost 0.
+  pricing:
+    openai/gpt-oss-120b: [0.15, 0.60]
+    openai/gpt-oss-20b: [0.075, 0.30]
+    llama-3.1-8b-instant: [0.05, 0.08]
+    qwen/qwen3-32b: [0.29, 0.59]
+    gpt-5: [1.25, 10.0]
+    gpt-5-mini: [0.25, 2.0]
+  temperature: 0.2
+  timeout_s: 60
+  max_retries: 2
+  cache: true                 # SQLite LLM response cache (evals rerun for free)
+  embeddings: BAAI/bge-small-en-v1.5      # open, CPU (fastembed)
+  reranker: Xenova/ms-marco-MiniLM-L-6-v2 # open, CPU (fastembed)
+
+rag:
+  variant: "v1+v2+v9"         # chosen by evals/results/rag_variants.json (see docs/adr/0003)
+  k: 8
 
 budgets:
-  max_graph_steps: 30
-  max_revisions: 2
-  max_tokens_per_job: 12000
+  max_graph_steps: 40         # per thread; exceeding -> needs_attention
+  max_tokens_per_job: 60000   # per thread; exceeding -> needs_attention
+  max_revisions: 2            # critic send-backs
+  p95_latency_s_per_job: 30   # declared budgets (R8/E5)
+  p95_latency_s_per_proposal: 90
+  usd_per_job: 0.002
+  usd_per_proposal: 0.01
 
 thresholds:
-  minimum_fit_score: 0.60
-  maximum_risk_score: 0.70
+  minimum_fit_score: 0.55     # below -> skip
+  watch_fit_score: 0.40       # between watch and minimum -> watch
+  maximum_risk_score: 0.60    # above -> skip
+  min_client_rating: 3.5
+  connects_value_min: 0.002   # expected reply probability per Connect spent
+  max_words: 260
+  min_words: 90
+
+autonomy:
+  default: suggest            # suggest | auto_skip_low_fit  (never auto-send)
+
+proposal_strategies:          # X2 A/B experiment arms (prompt variants, see agent/prompts)
+  default: evidence_first
+  arms: [evidence_first, question_first]
+  split: 0.5
+
+agents:                       # A6: per-agent MCP tool allowlists (filtered by name)
+  scout: [search_jobs, get_job]
+  risk_assessor: [get_client_history]
+  fit_matcher: [match_job_requirements, find_projects]
+  pricing: [get_market_stats, get_connects_balance, get_policy]
+  writer: [search_evidence, get_case_study]
+  critic: [search_evidence]
+  approval: [create_proposal_draft, submit_proposal]
+  liaison: [list_messages, send_message, free_slots, create_interview_hold, create_email_draft, get_job]
+  pipeline: [list_proposals, get_events, list_messages, health]
+
+workspace:                    # A3 local mock calendar (Google Calendar/Gmail adapters are optional)
+  timezone: Asia/Karachi
+  working_hours: [10, 18]
+  working_days: [0, 1, 2, 3, 4]   # Mon-Fri
