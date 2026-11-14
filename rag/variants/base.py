@@ -54,6 +54,7 @@ class RetrievalResult:
     requirements: list[str] = field(default_factory=list)
     strength: float = 0.0  # mean over queries of the best dense cosine
     insufficient: bool = False
+    best_cos: dict[str, float] = field(default_factory=dict)  # per query: best dense cosine (absolute strength)
     trace: list[dict] = field(default_factory=list)
     latency_s: float = 0.0
 
@@ -122,8 +123,8 @@ class Pipeline:
         if self.cfg["multivector"]:
             scored = self._group_by_project(scored)
         items = [self._item(c, s, qs, per_req) for c, s in scored[:k]]
-        return RetrievalResult(items, per_req, qs, round(sum(cos) / max(1, len(cos)), 4), False, trace,
-                               round(time.perf_counter() - t0, 3))
+        return RetrievalResult(items, per_req, qs, round(sum(cos) / max(1, len(cos)), 4), False,
+                               {q: round(c, 4) for q, c in zip(qs, cos, strict=True)}, trace, round(time.perf_counter() - t0, 3))
 
     # -- V4
     def _outcome_boost(self, scored, job, owners):

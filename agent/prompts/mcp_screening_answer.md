@@ -1,7 +1,7 @@
 <!-- prompt: mcp_screening_answer v1 -->
-A client asked this screening question (job: {job_title}):
+A client asked this screening question (job: $job_title):
 
-"{question}"
+"$question"
 
 1. Call `search_evidence` with the question (and again with any specific tool or domain it mentions).
 2. Answer in 3-5 sentences, first person, plain language.

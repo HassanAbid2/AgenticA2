@@ -4,6 +4,7 @@ per-user rate limiting and the HTTP runner."""
 from __future__ import annotations
 
 import asyncio
+import contextvars
 import os
 import time
 from collections import defaultdict, deque
@@ -14,6 +15,10 @@ from mcp.server.fastmcp import Context
 from mcp.server.transport_security import TransportSecuritySettings
 
 from shared.security import mask_pii, verify_service_token
+
+# set by the agent's in-process MCP transport (memory sessions have no HTTP headers)
+INPROC_USER: contextvars.ContextVar[str | None] = contextvars.ContextVar("inproc_user", default=None)
+INPROC_TRACE: contextvars.ContextVar[str] = contextvars.ContextVar("inproc_trace", default="")
 
 
 class ServiceTokenVerifier(TokenVerifier):
@@ -50,15 +55,17 @@ def caller(ctx: Context | None) -> str:
             return tok.client_id
     except Exception:  # noqa: BLE001
         pass
-    return os.getenv("MCP_DEFAULT_USER", "local")
+    return INPROC_USER.get() or os.getenv("MCP_DEFAULT_USER", "local")
 
 
 def trace_id(ctx: Context | None) -> str:
     try:
         req = ctx.request_context.request  # starlette Request over HTTP
-        return req.headers.get("x-trace-id", "") if req is not None else ""
+        if req is not None:
+            return req.headers.get("x-trace-id", "")
     except Exception:  # noqa: BLE001
-        return ""
+        pass
+    return INPROC_TRACE.get()
 
 
 def audit(server: str, user: str, tool: str, args: dict, result, status: str, trace: str):

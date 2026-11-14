@@ -3,13 +3,11 @@ Prompt text lives in agent/prompts/ like every other prompt in the repo."""
 
 from __future__ import annotations
 
-from pathlib import Path
-
-PROMPTS = Path(__file__).resolve().parents[2] / "agent" / "prompts"
+from agent.llm import render
 
 
 def _tpl(name: str, **kw) -> str:
-    return (PROMPTS / f"{name}.md").read_text(encoding="utf-8").format(**kw)
+    return render(name, **kw)[1]
 
 
 def register(mcp):

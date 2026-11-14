@@ -1,0 +1,31 @@
+# Guardrail patterns (versioned with the prompts). v1
+injection:
+- \[?\s*(note|message|instruction)s? to (any )?(ai|llm|gpt|chatbot|assistant)[^\]\n]*\]?
+- (ai|llm) (tools|assistants?|models?)\s*(reading this)?\s*:[^\n]*
+- \b(ignore|disregard|forget|override)\b[^.\n]{0,40}\b(previous|prior|above|earlier|your|all)\b[^.\n]{0,40}\b(instructions?|rules|prompt|guidelines)[^\n]*
+- '#{2,}\s*override\s*#{2,}[^\n]*'
+- \bsystem (note|override|prompt|instruction)s?\b\s*:?[^\n]*
+- <!--.*?-->
+- \bassistant instruction\b[^\n]*
+- \b(print|reveal|show|output) (your|the) (full )?(system prompt|hidden instructions)[^\n]*
+- \[ai assistant reading this:[^\]]*\]
+scam:
+  unpaid_work:
+  - \b(free|unpaid) (test|trial|sample)\b
+  - \bno payment for the test\b
+  - \bbuild the complete[^.]*as a free\b
+  - \bbest submission gets\b
+  off_platform_contact:
+  - \b(telegram|whatsapp|skype|signal|wechat)\b
+  - '[\w.+-]+@[\w-]+\.[\w.]+'
+  - \bcontact me directly\b
+  - \bmove to email\b
+  off_platform_payment:
+  - \b(outside the platform|avoid fees|too many fees)\b
+  - \b(usdt|crypto|bitcoin|western union|wire transfer|gift cards?)\b
+  personal_info_request:
+  - \b(id card|passport|bank account( details| number)?|social security|cnic)\b
+  overpayment_scheme:
+  - \bsend you a check\b
+  - \btransfer the rest\b
+  - \bkeep your fee\b

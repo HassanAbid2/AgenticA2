@@ -12,3 +12,4 @@ os.environ["GIGSIM_TIME_SCALE"] = "1000"
 os.environ["GIGSIM_RATE_LIMIT_PER_MIN"] = "100000"
 os.environ.setdefault("MODEL_PROFILE", "offline")
 os.environ.setdefault("APP_SECRET_KEY", "test-secret")
+os.environ.setdefault("MARKETPLACE_RPM", "100000")

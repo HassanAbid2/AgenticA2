@@ -1,0 +1,57 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	scout(scout)
+	analyst(analyst)
+	risk_assessor(risk_assessor)
+	fit_matcher(fit_matcher)
+	decide(decide)
+	recall_memory(recall_memory)
+	pricing(pricing)
+	writer(writer)
+	verifier(verifier)
+	critic(critic)
+	revise(revise)
+	compliance(compliance)
+	prepare_approval(prepare_approval)
+	human_approval(human_approval)
+	compliance_recheck(compliance_recheck)
+	submit(submit)
+	needs_attention(needs_attention)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> scout;
+	analyst --> decide;
+	compliance -. &nbsp;block&nbsp; .-> __end__;
+	compliance -.-> needs_attention;
+	compliance -. &nbsp;ok&nbsp; .-> prepare_approval;
+	compliance_recheck -.-> human_approval;
+	compliance_recheck -.-> submit;
+	critic -. &nbsp;ok&nbsp; .-> compliance;
+	critic -.-> needs_attention;
+	critic -.-> revise;
+	decide -. &nbsp;end&nbsp; .-> __end__;
+	decide -.-> needs_attention;
+	decide -. &nbsp;bid&nbsp; .-> recall_memory;
+	fit_matcher --> decide;
+	human_approval -. &nbsp;end&nbsp; .-> __end__;
+	human_approval -. &nbsp;recheck&nbsp; .-> compliance_recheck;
+	human_approval -.-> submit;
+	prepare_approval --> human_approval;
+	pricing --> writer;
+	recall_memory --> pricing;
+	revise --> writer;
+	risk_assessor --> decide;
+	scout -.-> analyst;
+	scout -.-> fit_matcher;
+	scout -.-> risk_assessor;
+	verifier --> critic;
+	writer --> verifier;
+	needs_attention --> __end__;
+	submit --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc

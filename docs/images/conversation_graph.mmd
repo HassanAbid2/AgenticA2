@@ -1,0 +1,27 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	liaison_load(liaison_load)
+	liaison_classify(liaison_classify)
+	liaison_draft(liaison_draft)
+	liaison_compliance(liaison_compliance)
+	liaison_approval(liaison_approval)
+	liaison_send(liaison_send)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> liaison_load;
+	liaison_approval -. &nbsp;end&nbsp; .-> __end__;
+	liaison_approval -. &nbsp;send&nbsp; .-> liaison_send;
+	liaison_classify --> liaison_draft;
+	liaison_compliance -. &nbsp;end&nbsp; .-> __end__;
+	liaison_compliance -. &nbsp;ok&nbsp; .-> liaison_approval;
+	liaison_draft --> liaison_compliance;
+	liaison_load -. &nbsp;end&nbsp; .-> __end__;
+	liaison_load -. &nbsp;go&nbsp; .-> liaison_classify;
+	liaison_send --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc

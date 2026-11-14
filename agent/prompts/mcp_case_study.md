@@ -1,5 +1,5 @@
 <!-- prompt: mcp_case_study v1 -->
-Write a 150-word case study for the project "{project}".
+Write a 150-word case study for the project "$project".
 
 1. Call `find_projects` and `search_evidence` to collect its README, code, reviews and earlier write-ups,
    then `get_case_study` on the best items.

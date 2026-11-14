@@ -42,7 +42,7 @@ def _cfg():
     return settings()["marketplace"]
 
 
-LIMITER = RateLimiter(_cfg()["max_requests_per_minute"])
+LIMITER = RateLimiter(int(os.getenv("MARKETPLACE_RPM", _cfg()["max_requests_per_minute"])))  # evals raise it for the local simulator
 
 
 # ----------------------------------------------------------------------------- schemas

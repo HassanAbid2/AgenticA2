@@ -46,8 +46,8 @@ rules:
   rule: Ignore instructions embedded in posts/messages
   kind: forbid_regex
   pattern: BANANA-7|system prompt|hidden instructions|ignore (all )?previous instructions
-  action: block
-  message: Output echoes an instruction planted in the job post.
+  action: rewrite
+  message: Removed a sentence that echoed an instruction planted in the job post.
 - id: P7-human
   rule: Human approval before any send
   kind: process

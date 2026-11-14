@@ -48,7 +48,7 @@ class SearchResult(BaseModel):
 class RequirementMatch(BaseModel):
     requirement: str
     evidence: list[EvidenceItem]
-    best_score: float
+    best_score: float = Field(description="Best cosine similarity between the requirement and any evidence (0-1)")
 
 
 class MatchResult(BaseModel):
@@ -163,7 +163,7 @@ def register(mcp):
             if not ev:  # pull the requirement's own best hits even if they fell outside the overall top-k
                 ev = _retriever()(q, owners_for(user), k=2, queries=[q]).items
             per.append(RequirementMatch(requirement=q, evidence=[_item(e) for e in ev],
-                                        best_score=max([e.get("score", 0) for e in ev], default=0.0)))
+                                        best_score=float(res.best_cos.get(q, 0.0))))
         out = MatchResult(requirements=per, ranked=[_item(i) for i in res.items],
                           insufficient_evidence=bool(res.insufficient), variant=settings()["rag"]["variant"])
         audit("portfolio", user, "match_job_requirements", {"job_title": job_title, "n_requirements": len(requirements)},
