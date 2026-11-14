@@ -1,0 +1,72 @@
+{
+  "2026-10": {
+    "effective": "2026-10-01",
+    "summary": "Baseline marketplace rules.",
+    "submission_fee_connects": 0,
+    "featured_multiplier": 1.0,
+    "submission_rules": [
+      {
+        "id": "P1",
+        "kind": "forbid_regex",
+        "pattern": "[\\w.+-]+@[\\w-]+\\.[\\w.]+",
+        "message": "no email addresses (off-platform contact)"
+      },
+      {
+        "id": "P1",
+        "kind": "forbid_regex",
+        "pattern": "(?<![\\w-])\\+?(?:\\d{1,3}[\\s.-]?)?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{3,4}(?![\\w-])",
+        "message": "no phone numbers (off-platform contact)"
+      },
+      {
+        "id": "P1",
+        "kind": "forbid_regex",
+        "pattern": "\\b(whatsapp|telegram|skype|signal app|wechat)\\b",
+        "message": "no off-platform messaging apps"
+      },
+      {
+        "id": "P4",
+        "kind": "forbid_regex",
+        "pattern": "\\bguarantee(d|s)?\\b",
+        "message": "no guarantees of results"
+      }
+    ]
+  },
+  "2026-11-02": {
+    "effective": "2026-11-02",
+    "summary": "Platform policy update: (1) every proposal submission costs 2 extra Connects and Featured jobs cost 1.5x; (2) proposals drafted with AI assistance must disclose it in the cover letter.",
+    "submission_fee_connects": 2,
+    "featured_multiplier": 1.5,
+    "submission_rules": [
+      {
+        "id": "P1",
+        "kind": "forbid_regex",
+        "pattern": "[\\w.+-]+@[\\w-]+\\.[\\w.]+",
+        "message": "no email addresses (off-platform contact)"
+      },
+      {
+        "id": "P1",
+        "kind": "forbid_regex",
+        "pattern": "(?<![\\w-])\\+?(?:\\d{1,3}[\\s.-]?)?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{3,4}(?![\\w-])",
+        "message": "no phone numbers (off-platform contact)"
+      },
+      {
+        "id": "P1",
+        "kind": "forbid_regex",
+        "pattern": "\\b(whatsapp|telegram|skype|signal app|wechat)\\b",
+        "message": "no off-platform messaging apps"
+      },
+      {
+        "id": "P4",
+        "kind": "forbid_regex",
+        "pattern": "\\bguarantee(d|s)?\\b",
+        "message": "no guarantees of results"
+      },
+      {
+        "id": "P8",
+        "kind": "require_regex",
+        "pattern": "(drafted|written|prepared) with (the help of )?AI",
+        "message": "AI-assisted proposals must disclose AI assistance"
+      }
+    ]
+  }
+}
