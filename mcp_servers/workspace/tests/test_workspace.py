@@ -1,15 +1,21 @@
-import os
+from contextlib import asynccontextmanager  # noqa: E402
 from datetime import date, timedelta
-
-os.environ["MCP_DEFAULT_USER"] = "ws-test-user"
 
 from mcp.shared.memory import create_connected_server_and_client_session  # noqa: E402
 
+from mcp_servers.common import INPROC_USER  # noqa: E402
 from mcp_servers.workspace.server import mcp  # noqa: E402
 
 
-def connect():
-    return create_connected_server_and_client_session(mcp._mcp_server)
+@asynccontextmanager
+async def connect():
+    # in-memory MCP client; the caller identity travels in a context var (no HTTP headers in memory)
+    tok = INPROC_USER.set("ws-test-user")
+    try:
+        async with create_connected_server_and_client_session(mcp._mcp_server) as c:
+            yield c
+    finally:
+        INPROC_USER.reset(tok)
 
 
 async def test_slots_skip_holds_and_are_idempotent():

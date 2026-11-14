@@ -1,10 +1,11 @@
-import os
 
-os.environ["MCP_DEFAULT_USER"] = "ai_ml"
+
+from contextlib import asynccontextmanager  # noqa: E402
 
 from mcp.shared.memory import create_connected_server_and_client_session  # noqa: E402
 
 from gigsim.app import W  # noqa: E402
+from mcp_servers.common import INPROC_USER  # noqa: E402
 from mcp_servers.marketplace.server import mcp  # noqa: E402
 from shared.db import AuditLog, session  # noqa: E402
 
@@ -12,8 +13,15 @@ LETTER = ("You need a bot that replies to support tickets from your knowledge ba
           "LangChain and Qdrant, which cut first-response time by 38%. What does success look like for you?")
 
 
-def connect():
-    return create_connected_server_and_client_session(mcp._mcp_server)
+@asynccontextmanager
+async def connect():
+    # in-memory MCP client; the caller identity travels in a context var (no HTTP headers in memory)
+    tok = INPROC_USER.set("ai_ml")
+    try:
+        async with create_connected_server_and_client_session(mcp._mcp_server) as c:
+            yield c
+    finally:
+        INPROC_USER.reset(tok)
 
 
 async def _first_job(c):
