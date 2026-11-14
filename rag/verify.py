@@ -55,6 +55,8 @@ def is_claim(sent: str) -> bool:
     s = CITE.sub("", sent)
     if s.endswith("?") or FUTURE.search(s) or re.match(r"^(you|your)\b", s, re.I):
         return False  # questions, plans and restating the client's own post are not claims
+    if re.match(r"^(my )?(quote|rate|price|bid|fee)\b", s, re.I):
+        return False  # the offer itself is checked against the price quote, not the portfolio
     return bool(EXPERIENCE.search(s) or RESULT.search(s))
 
 
@@ -71,7 +73,7 @@ def verify_claims(draft: str, evidence: list[dict], judge_fn=None) -> list[Claim
     claims = [(i, s) for i, s in enumerate(sents) if is_claim(s)]
     if not claims:
         return []
-    texts = [e.get("text", "") for e in evidence]
+    texts = [e.get("text") or e.get("snippet") or "" for e in evidence]
     ev_nums = [_numbers(t) for t in texts]
     ev_skills = [set(e.get("skills") or []) | set(extract_skills(t, code=True)) for e, t in zip(evidence, texts, strict=True)]
     ev_vecs = embed(texts) if texts else np.zeros((0, 384))

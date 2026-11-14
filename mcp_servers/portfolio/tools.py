@@ -106,6 +106,25 @@ def owners_for(user: str) -> list[str]:
     return [o for o in (u.persona if u.persona in PERSONAS else None, f"user-{u.id}") if o]
 
 
+def excluded_for(user: str) -> set[str]:
+    """Evidence the user hid in Settings (viva Q3: delete evidence -> regenerate -> claim disappears)."""
+    if not user.isdigit():
+        return set()
+    from shared.db import User, session
+
+    with session() as s:
+        u = s.get(User, int(user))
+        return set((u.settings or {}).get("excluded_evidence", [])) if u else set()
+
+
+def _filtered(res, user: str):
+    ex = excluded_for(user)
+    if ex:
+        res.items = [i for i in res.items if i["evidence_id"] not in ex]
+        res.per_requirement = {q: [i for i in ids if i not in ex] for q, ids in res.per_requirement.items()}
+    return res
+
+
 @lru_cache
 def _retriever():
     from agent.config import settings
@@ -125,7 +144,7 @@ def _index():
 def _item(d: dict) -> EvidenceItem:
     return EvidenceItem(**{k: d.get(k) for k in ("evidence_id", "type", "title", "project", "source", "date", "outcome",
                                                  "client_industry", "score")},
-                        skills=d.get("skills") or [], snippet=d.get("text", "")[:1200],
+                        skills=d.get("skills") or [], snippet=(_index().full_text(d["evidence_id"], 1500) or d.get("text", ""))[:1500],
                         matched_requirements=d.get("matched_requirements") or [])
 
 
@@ -137,8 +156,8 @@ def register(mcp):
         """Find portfolio evidence (case studies, repos, code, reviews, past proposals with outcomes) that
         proves the freelancer can meet ONE requirement. Returns items with type, source, date and outcome."""
         user = caller(ctx)
-        res = _retriever()(requirement, owners_for(user), k=k, filters=(filters.model_dump(exclude_none=True) if filters else None),
-                           queries=[requirement])
+        res = _filtered(_retriever()(requirement, owners_for(user), k=k, filters=(filters.model_dump(exclude_none=True) if filters else None),
+                                     queries=[requirement]), user)
         out = SearchResult(query=requirement, items=[_item(i) for i in res.items])
         audit("portfolio", user, "search_evidence", {"requirement": requirement, "k": k}, {"n": len(out.items)}, "ok", trace_id(ctx))
         return out
@@ -154,14 +173,14 @@ def register(mcp):
 
         user = caller(ctx)
         job = {"title": job_title, "description": job_description}
-        res = _retriever()(job, owners_for(user), k=k, requirements=requirements or None)
+        res = _filtered(_retriever()(job, owners_for(user), k=k, requirements=requirements or None), user)
         per = []
         by_id = {i["evidence_id"]: i for i in res.items}
         for q in res.requirements:
             ids = res.per_requirement.get(q, [])
             ev = [by_id[i] for i in ids if i in by_id][:3]
             if not ev:  # pull the requirement's own best hits even if they fell outside the overall top-k
-                ev = _retriever()(q, owners_for(user), k=2, queries=[q]).items
+                ev = _filtered(_retriever()(q, owners_for(user), k=2, queries=[q]), user).items
             per.append(RequirementMatch(requirement=q, evidence=[_item(e) for e in ev],
                                         best_score=float(res.best_cos.get(q, 0.0))))
         out = MatchResult(requirements=per, ranked=[_item(i) for i in res.items],
@@ -175,7 +194,7 @@ def register(mcp):
                        ctx: Context = None) -> CaseStudy:
         """Full text and metadata of one evidence item (case study, README, code file, review or past proposal)."""
         user = caller(ctx)
-        chunks = [c for c in _index().docs_for(owners_for(user)) if c.evidence_id == id]
+        chunks = [c for c in _index().docs_for(owners_for(user)) if c.evidence_id == id and id not in excluded_for(user)]
         if not chunks:
             raise ValueError(f"no evidence item {id!r} in your portfolio")
         c = chunks[0]

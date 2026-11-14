@@ -164,6 +164,9 @@ class PortfolioIndex:
             self.chunks = self._load_chunks()
             self._ensure_vectors()
             self.bm25 = BM25Okapi([tokenize(c.embed_text) for c in self.chunks]) if self.chunks else None
+            self.full: dict[str, str] = {}
+            for c in self.chunks:  # whole document per evidence id (a chunk alone may miss the results section)
+                self.full[c.evidence_id] = (self.full[c.evidence_id] + "\n" + c.text) if c.evidence_id in self.full else c.text
             self._sync_qdrant()
 
     def maybe_reload(self):
@@ -261,6 +264,10 @@ class PortfolioIndex:
             if self._allowed(c, owners, filters):
                 out.append((c, float(scores[i])))
         return out
+
+    def full_text(self, evidence_id: str, limit: int = 2000) -> str:
+        self.maybe_reload()
+        return self.full.get(evidence_id, "")[:limit]
 
     def docs_for(self, owners) -> list[Chunk]:
         self.maybe_reload()
