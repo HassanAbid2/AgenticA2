@@ -135,6 +135,7 @@ def write_cv(persona, path: Path, rng):
     meta = PERSONAS[persona]
     prj = projects(persona)
     pdf = FPDF()
+    pdf.set_creation_date(datetime(2026, 10, 1))  # deterministic bytes
     pdf.add_page()
     pdf.set_font("Helvetica", "B", 16)
     pdf.cell(0, 10, latin1(meta["name"]), new_x="LMARGIN", new_y="NEXT")
