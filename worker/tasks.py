@@ -50,7 +50,7 @@ def _event_writer(run_id: int, user_id: int):
             rows.append(RunEvent(run_id=run_id, user_id=user_id, node=chunk.get("node", "?"), kind=chunk.get("kind", "custom"),
                                  payload=mask_pii({k: v for k, v in chunk.items() if k not in ("node", "kind")})))
         elif mode == "updates" and isinstance(chunk, dict):
-            for node, upd in chunk.items():
+            for node, _upd in chunk.items():
                 if node == "__interrupt__":
                     rows.append(RunEvent(run_id=run_id, user_id=user_id, node="human_approval", kind="interrupt", payload={}))
         if rows:
@@ -188,7 +188,7 @@ async def resume_approval(ctx, approval_id: int, trace_id: str | None = None):
         decision = {"action": "edit" if a.status == "edited" else "approve" if a.status == "approved" else "reject",
                     "edited_text": a.edited_text, "reason": a.reason, "bid_amount": (a.payload or {}).get("bid_override")}
         u = db.get(User, a.user_id)
-        user_id, thread_id, graph, kind = a.user_id, a.thread_id, a.graph, a.kind
+        user_id, thread_id, graph, _kind = a.user_id, a.thread_id, a.graph, a.kind
         job_id = (a.payload or {}).get("job", {}).get("job_id") or (a.payload or {}).get("job_id")
     profile, us = user_profile(u)
     trace_id = trace_id or uuid.uuid4().hex
