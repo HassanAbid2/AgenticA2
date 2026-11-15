@@ -106,8 +106,11 @@ def build() -> str:
     rag, dof, don, don1 = J("rag_variants"), J("decisions_dev_offline"), J("decisions_dev_open"), J("decisions_dev_open_v1_trusted_llm_flags")
     prop, tg, mac, inj, ab, jc = J("proposals_open"), J("tool_granularity"), J("multiagent_compare"), J("injection_open"), J("ab_experiment"), J("judge_calibration")
     crb, cra, hold = J("change_request_before"), J("change_request_after"), J("decisions_holdout_offline")
+    dfit, dv6 = J("decisions_dev_offline"), J("decisions_dev_offline_fit_v1+v2+v6+v9")
     v = rag.get("variants", {})
-    shipped = "v1+v2+v6+v9"
+    from agent.config import settings as _s
+
+    shipped = _s()["rag"]["variant"]
     pv = prop.get("by_variant", {})
     d0 = dof.get("overall", {})
     md = []
@@ -177,7 +180,7 @@ descriptions of read tools.""")
         md.append(f"| {k}{' (shipped)' if k == shipped else ''}{' (subset)' if m.get('eval_set', '').startswith('subset') else ''} | {f3(m.get('recall@5'))} | {f3(m.get('mrr'))} | {f3(m.get('ndcg@10'))} | {f3(m.get('recall@5_multi_req(>=4)'))} | {f3(m.get('p95_latency_s'))} |")
     ab_ = rag.get("ablation_recall@5", {})
     md.append(f"""
-**Ablation of the shipped pipeline** (Recall@5 / nDCG@10): full {f3(ab_.get('full', {}).get('recall@5'))} / {f3(ab_.get('full', {}).get('ndcg@10'))};
+**Ablation of the best-ranked pipeline `{ab_.get('pipeline')}`** (Recall@5 / nDCG@10): full {f3(ab_.get('full', {}).get('recall@5'))} / {f3(ab_.get('full', {}).get('ndcg@10'))};
 without V1 {f3(ab_.get('without_v1', {}).get('recall@5'))} / {f3(ab_.get('without_v1', {}).get('ndcg@10'))}; without V2 {f3(ab_.get('without_v2', {}).get('recall@5'))} / {f3(ab_.get('without_v2', {}).get('ndcg@10'))};
 without V6 {f3(ab_.get('without_v6', {}).get('recall@5'))} / {f3(ab_.get('without_v6', {}).get('ndcg@10'))}; without V9 {f3(ab_.get('without_v9', {}).get('recall@5'))} / {f3(ab_.get('without_v9', {}).get('ndcg@10'))}.
 Every component except V1 lowers nDCG when removed. Dropping V1 raises nDCG slightly but removes the per-requirement
@@ -206,8 +209,15 @@ typical removals merge two projects into one sentence or upgrade a described tec
 must-have skill names, a concrete number and a question; once the evidence contains one strong result,
 better ranking of the second and third item rarely changes the reply decision, so reply-rate differences
 between variants are small compared with run-to-run variance at these sample sizes.
-**Shipped choice:** `{shipped}`, because it is the best-ranked pipeline that keeps per-requirement evidence and
-stays under 1 s p95, and the extra recall shows up where the corpus is hardest (exact tool names, multi-skill jobs).
+**Where better retrieval did not translate into better decisions, and the shipped choice.** The Fit Matcher
+turns retrieval similarity into requirement strength, so the retrieval variant also drives bid/skip. With
+pricing fixed, swapping the Fit Matcher from `v1+v2+v9` to the best-ranked `v1+v2+v6+v9` lowered bid/skip F1
+from {f3(dfit.get('overall', {}).get('bid_f1', {}).get('f1'))} to {f3(dv6.get('overall', {}).get('bid_f1', {}).get('f1'))}
+(bid recall {f3(dfit.get('overall', {}).get('bid_f1', {}).get('recall'))} -> {f3(dv6.get('overall', {}).get('bid_f1', {}).get('recall'))};
+`decisions_dev_offline.json` vs `decisions_dev_offline_fit_v1+v2+v6+v9.json`): the context lines shift cosine
+similarities down and the strength thresholds were calibrated on the plain index. **Shipped: `{shipped}`**
+(nDCG@10 {f3(v.get(shipped, {}).get('ndcg@10'))}, Recall@5 {f3(v.get(shipped, {}).get('recall@5'))}); recalibrating
+the thresholds for the contextual index is the follow-up that could let V6 ship (ADR 0003).
 
 ## 5. R&D question C: single agent vs supervisor vs graph  (`multiagent_compare.json`)
 

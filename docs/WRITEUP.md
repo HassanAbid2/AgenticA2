@@ -85,6 +85,13 @@ metadata. Together: Recall@5 0.880, nDCG@10 0.862, under 1 second p95, no LLM ca
 pre-registered hypothesis (requirement decomposition plus hybrid retrieval would add at least 5 points on
 multi-requirement jobs) missed by a hair: +4.8. I'm reporting it as not supported.
 
+And then I didn't ship the winner. The agent that scores fit turns retrieval similarity into "strong",
+"partial" or "no" evidence for each requirement, so retrieval quietly drives the bid-or-skip decision too.
+With everything else fixed, swapping in the best-ranked pipeline lowered decision F1 from 0.941 to 0.931,
+because the context lines shift similarity scores and the thresholds had been tuned on the plain index.
+The runner-up (nDCG 0.848, without context lines) ships. Better retrieval by its own metric made the
+product worse, and only an end-to-end run with one variable changed could show it.
+
 ## What I'd tell someone building an agent system
 
 **Give the model the jobs where language is the bottleneck.** In GigBid that's writing the proposal,

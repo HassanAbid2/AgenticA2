@@ -38,7 +38,9 @@ def tables() -> str:
     rag, prop = load("rag_variants"), load("proposals_open")
     shipped = None
     if rag:
-        shipped = rag.get("best_by_ndcg_full_dev")
+        from agent.config import settings
+
+        shipped = settings()["rag"]["variant"]
         out.append("### Retrieval variants (R&D B, all 600 dev jobs unless noted)\n")
         out.append("| Variant | Recall@5 | MRR | nDCG@10 | Recall@5 on jobs with >=4 requirements | Refusal on mismatch jobs | p95 latency (s) | Eval set |")
         out.append("|---|---|---|---|---|---|---|---|")
