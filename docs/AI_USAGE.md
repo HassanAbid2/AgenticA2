@@ -40,3 +40,7 @@ also compared with the real recorded outcomes (won/replied vs ignored) of the pa
 tested the existing Groq V0 proposal outcomes by strategy, generated the report, and scripted a
 captioned Playwright recording. The video uses a selected fixture from the seeded GigSim corpus, so it
 demonstrates the approval and conversation workflow rather than estimating its success rate.
+
+**Submission audit.** Codex checked the required paths against the supplied brief, added the named
+proposal router and evaluation entry points, and verified that the public Portfolio MCP install
+could return evidence. The audit caught a placeholder repository URL in the earlier install instructions.
