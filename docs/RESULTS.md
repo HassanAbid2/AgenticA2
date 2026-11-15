@@ -66,11 +66,11 @@ Proposal eval: 12 drafts (complete: False). Unsupported-claim rate before -> aft
 
 ### Tool granularity (R&D A, 40 tasks)
 
-| Tool design | Tools | Selection accuracy | Argument accuracy | Tokens / task |
-|---|---|---|---|---|
-| fine | 27 | 0.750 | 0.750 | 930.175 |
-| coarse | 3 | 0.825 | 0.725 | 436.625 |
-| ours | 21 | 1.000 | 1.000 | 2021.048 |
+| Tool design | Tools | Tasks scored | Selection accuracy | Argument accuracy | Tokens / task |
+|---|---|---|---|---|---|
+| fine | 27 | 40 | 0.750 | 0.750 | 930.175 |
+| coarse | 3 | 40 | 0.825 | 0.725 | 436.625 |
+| ours | 21 | 21 | 1.000 | 1.000 | 2021.048 |
 
 ### Prompt injection (E4)
 
@@ -86,4 +86,34 @@ Proposal eval: 12 drafts (complete: False). Unsupported-claim rate before -> aft
 | before fix | 0.0% | 100.0% | True |
 | after fix (`08b287c`) | 100.0% | 0.0% | True |
 
+### X2 proposal A/B pilot (Groq `open`, `v0`, n=12 unique submitted jobs)
+
+| Arm | n | Reply rate | Mean simulated p(reply) |
+|---|---|---|---|
+| evidence_first | 7 | 42.9% | 0.302 |
+| question_first | 5 | 20.0% | 0.306 |
+
+Two-sided Fisher exact p = 0.576; not significant at 0.05; this small pilot cannot establish which prompt performs better.
+
 Judge calibration (30 items, reference labels applied by the AI assistant from a written rubric; see docs/AI_USAGE.md): Cohen's kappa = pending.
+
+Pending hosted cells were not measured before the Groq free-tier quota/time limit. The tool comparison is partial; the remaining tasks for GigBid's tool design were not rerun.
+
+### Local model pilots
+
+- `qwen2.5:0.5b` on 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz (CPU, n=1 smoke prompt): 3.13 generated tokens/s. This measures decoding, not graph throughput.
+- `qwen2.5:1.5b` on 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz (CPU, n=1 smoke prompt): 13.68 generated tokens/s. This measures decoding, not graph throughput.
+- `qwen2.5:0.5b` on CPU: proposal pilot incomplete (graph node timed out); n=0 completed jobs across variants. Unobserved cells remain pending.
+- `qwen2.5:1.5b` on CPU: proposal pilot incomplete (Ollama request timed out); n=0 completed jobs across variants. Unobserved cells remain pending.
+- `qwen2.5:0.5b` on CPU, undefended (n=0 planted + 0 novel, 0 template fallbacks): attack success pending planted / pending novel; risk detection pending.
+- `qwen2.5:0.5b` on CPU, defended (n=0 planted + 0 novel, 0 template fallbacks): attack success pending planted / pending novel; risk detection pending.
+- `qwen2.5:0.5b` injection pilot incomplete (graph node timed out). Compare matched cases only.
+- `qwen2.5:1.5b` on CPU, undefended (n=0 planted + 0 novel, 0 template fallbacks): attack success pending planted / pending novel; risk detection pending.
+- `qwen2.5:1.5b` on CPU, defended (n=0 planted + 0 novel, 0 template fallbacks): attack success pending planted / pending novel; risk detection pending.
+- `qwen2.5:1.5b` injection pilot incomplete (Ollama request timed out). Compare matched cases only.
+- `qwen2.5:0.5b` on CPU, judge calibration (n=27 valid verdicts out of 30 attempted; target 30): Cohen's kappa 0.071; invalid verdicts count as abstentions. Reference labels were applied by an AI assistant using a written rubric.
+- `qwen2.5:0.5b` labelled every valid verdict `good`; this judge did not distinguish good from bad in the pilot.
+- `qwen2.5:1.5b` on CPU, judge calibration (n=1 valid verdicts out of 1 attempted; target 30): Cohen's kappa pending (CPU time limit); invalid verdicts count as abstentions. Reference labels were applied by an AI assistant using a written rubric.
+- `qwen2.5:0.5b` on CPU: multi-agent comparison incomplete (CPU time limit), n=0 completed system runs.
+
+These small CPU pilots are not comparable with the hosted Groq `open` profile.

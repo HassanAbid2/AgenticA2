@@ -1,6 +1,6 @@
 # GigBid: R&D report (design review)
 
-*AI-4016 · build 8f7fee8 · every number below is read from `evals/results/` at build time.*
+*AI-4016 · build bca685b · measured results are read from `evals/results/`.*
 
 ## 1. Problem and constraints
 A freelancer loses hours scanning feeds, spends paid Connects on jobs they won't win, sends generic
@@ -68,7 +68,6 @@ descriptions of read tools.
 | v9 | 0.816 | 0.962 | 0.833 | 0.781 | 0.199 |
 | v1+v2 | 0.832 | 0.898 | 0.814 | 0.797 | 0.474 |
 | v1+v2+v9 (shipped) | 0.871 | 0.916 | 0.848 | 0.836 | 0.450 |
-| v1+v2+v9 (shipped) | 0.871 | 0.916 | 0.848 | 0.836 | 0.450 |
 | v1+v2+v8+v9 | 0.739 | 0.734 | 0.692 | 0.692 | 1.446 |
 
 **Ablation of the best-ranked pipeline `v1+v2+v6+v9`** (Recall@5 / nDCG@10): full 0.880 / 0.862;
@@ -94,11 +93,11 @@ ranking quality when combined.
 
 Verification removes roughly a third of the experience claims the writer makes even though it cites evidence;
 typical removals merge two projects into one sentence or upgrade a described technique into a named tool.
-**Judge calibration:** Cohen's kappa between the LLM judge and reference labels on 30 blind items = pending; labeller: pending; secondary kappa of the labels against real recorded outcomes (past proposals) = pending
+**Hosted judge calibration:** Cohen's kappa against assistant-applied rubric labels on 30 blind items = pending; secondary kappa against recorded past outcomes = pending
 (`judge_calibration.json`). **Where retrieval did not translate into replies:** GigSim's clients reward
 must-have skill names, a concrete number and a question; once the evidence contains one strong result,
-better ranking of the second and third item rarely changes the reply decision, so reply-rate differences
-between variants are small compared with run-to-run variance at these sample sizes.
+better ranking of the second and third item may matter less. The hosted pilot covers V0 only, so it
+cannot estimate a reply-rate effect from changing the retrieval variant.
 **Where better retrieval did not translate into better decisions, and the shipped choice.** The Fit Matcher
 turns retrieval similarity into requirement strength, so the retrieval variant also drives bid/skip. With
 pricing fixed, swapping the Fit Matcher from `v1+v2+v9` to the best-ranked `v1+v2+v6+v9` lowered bid/skip F1
@@ -121,7 +120,7 @@ Pending or partial: this comparison needs the most tokens and resumes daily on t
 The structural difference does not need the numbers: the ReAct and supervisor baselines decide and write in
 free text, with no step that removes unsupported claims or enforces the policy pack before output, and no
 interrupt; their outputs are scored by the same verifier and compliance check after the fact. The graph's
-decisions are rule-driven over the parallel reports, which is also why it is cheaper per skipped job.
+decisions are rule-driven over the parallel reports, allowing it to skip the expensive writing stage.
 
 ## 6. The change request  (`change_request_before.json`, `change_request_after.json`)
 The 2 Nov GigSim update added 2 Connects per submission (Featured jobs x1.5) and a rule that AI-assisted
@@ -135,7 +134,7 @@ in YAML and reading fees from the marketplace instead of re-implementing them.
 
 ## 7. Signature extension: X2 proposal A/B  (`ab_experiment.json`)
 Two writer strategies (evidence-first vs question-first) assigned by a stable hash of the job id, stored on
-every proposal, scored by GigSim's clients and promoted into outcome memory per category. Pending: pools the proposal-eval submissions once enough exist.
+every proposal, scored by GigSim's clients and promoted into outcome memory per category. Pilot on the Groq `open` profile with `v0`: evidence_first had 7 submissions and a 42.9% reply rate; question_first had 5 and 20.0%. Two-sided Fisher exact p = 0.576. The difference was not significant at 0.05; this small pilot cannot establish which prompt performs better. The sample includes submitted drafts only.
 
 ## 8. Failure analysis  (`decisions_dev_offline.json`, `proposals_open.json`)
 Failed dev jobs by category (all 600 dev jobs, deterministic profile, before the pricing fix): mispriced: 23, wrong bid (difficult client): 16, wrong bid (vague post): 3, wrong skip (vague post): 25, injection (legit job skipped): 4, wrong skip: 3, unsupported claim: 7. Pricing fix: 14 of 23 mispriced jobs now inside the band.
@@ -188,12 +187,34 @@ The instructor's hidden set runs after the deadline; as a proxy, the same pipeli
 generated with a different seed and never used for tuning: bid/skip F1 0.934,
 scam recall 0.958, price in band 96.5%, p95 0.537 s per job
 (deterministic profile) vs dev 0.941 / 1.000 / 97.8%.
-**Budgets on the live `open` profile:** per job analysed, p95 29.023 s and $0.0004
+**Budgets on the hosted `open` profile:** per job analysed, p95 2.735 s and $0.0004
 (budget 30 s / $0.002, met); per proposal, p95 100.043 s and $0.0032
-(budget 90 s / $0.01). Latency above budget comes from Groq free-tier rate-limit waits (8k tokens/min), not compute.
+(budget 90 s / $0.01). The proposal latency includes Groq free-tier rate-limit waits and retries.
 **Optimisation that helped:** deterministic routing of cheap decisions (scout, fit, pricing, decide run with no
-LLM) and gating the LLM risk model keep a job at about 2.2k tokens; skipping early means scams and mismatches
+LLM) and gating the LLM risk model keep the expensive writer out of early decisions; skipping means scams and mismatches
 never reach the 120B writer.
+
+### Follow-up: CPU pilots
+
+- `qwen2.5:0.5b` on 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz (CPU, n=1 smoke prompt): 3.13 generated tokens/s. This measures decoding, not graph throughput.
+- `qwen2.5:1.5b` on 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz (CPU, n=1 smoke prompt): 13.68 generated tokens/s. This measures decoding, not graph throughput.
+- `qwen2.5:0.5b` on CPU: proposal pilot incomplete (graph node timed out); n=0 completed jobs across variants. Unobserved cells remain pending.
+- `qwen2.5:1.5b` on CPU: proposal pilot incomplete (Ollama request timed out); n=0 completed jobs across variants. Unobserved cells remain pending.
+- `qwen2.5:0.5b` on CPU, undefended (n=0 planted + 0 novel, 0 template fallbacks): attack success pending planted / pending novel; risk detection pending.
+- `qwen2.5:0.5b` on CPU, defended (n=0 planted + 0 novel, 0 template fallbacks): attack success pending planted / pending novel; risk detection pending.
+- `qwen2.5:0.5b` injection pilot incomplete (graph node timed out). Compare matched cases only.
+- `qwen2.5:1.5b` on CPU, undefended (n=0 planted + 0 novel, 0 template fallbacks): attack success pending planted / pending novel; risk detection pending.
+- `qwen2.5:1.5b` on CPU, defended (n=0 planted + 0 novel, 0 template fallbacks): attack success pending planted / pending novel; risk detection pending.
+- `qwen2.5:1.5b` injection pilot incomplete (Ollama request timed out). Compare matched cases only.
+- `qwen2.5:0.5b` on CPU, judge calibration (n=27 valid verdicts out of 30 attempted; target 30): Cohen's kappa 0.071; invalid verdicts count as abstentions. Reference labels were applied by an AI assistant using a written rubric.
+- `qwen2.5:0.5b` labelled every valid verdict `good`; this judge did not distinguish good from bad in the pilot.
+- `qwen2.5:1.5b` on CPU, judge calibration (n=1 valid verdicts out of 1 attempted; target 30): Cohen's kappa pending (CPU time limit); invalid verdicts count as abstentions. Reference labels were applied by an AI assistant using a written rubric.
+- `qwen2.5:0.5b` on CPU: multi-agent comparison incomplete (CPU time limit), n=0 completed system runs.
+
+These small CPU pilots are not comparable with the hosted Groq `open` profile.
+
+The local run checks whether the same pipeline can complete on a laptop. A missing judge score or reply
+rate means no eligible output was measured. Pending hosted runs hit the free-tier quota or assignment time limit.
 
 ---
 *Appendix A: full per-variant breakdowns in `docs/RESULTS.md`; raw per-item records in `evals/results/raw/`.*

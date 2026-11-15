@@ -116,5 +116,15 @@ and a question, so reply rates measure fit to that model rather than to real peo
 small samples because of the free tier, and each sample size is stated in the results files. The code,
 the data generator, the evaluation runners and every number in this post are in the repository.
 
+The Groq V0 pilot also let me check the two proposal openings. The evidence-first draft received 3 replies
+from 7 submissions; the question-first draft received 1 from 5. Fisher's exact test gave p = 0.576. Those
+small counts are inconclusive and apply only to the submitted proposals in GigSim.
+
+The CPU pilot gave me a separate reason to be cautious about judge scores. Qwen2.5 0.5B attempted all
+30 assistant-labelled items, called every valid response `good`, and abstained on three malformed
+responses; Cohen's kappa was 0.071. That model needs more than a structured prompt before I would use
+it to score proposals.
+
 *GigBid: LangGraph, MCP, FastAPI, React; open-weight models (gpt-oss-120b / 20b) on Groq; Qdrant, BM25 and
-a skill graph for retrieval. Repo and live demo: <links>.*
+a skill graph for retrieval. See the [repository](https://github.com/HassanAbid2/AgenticA2) and the
+[measured results](RESULTS.md).*

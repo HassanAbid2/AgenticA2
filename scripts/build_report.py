@@ -15,6 +15,8 @@ from pathlib import Path
 
 import markdown
 
+from evals.runners.results_table import local_findings
+
 ROOT = Path(__file__).resolve().parents[1]
 RES = ROOT / "evals" / "results"
 OUT = ROOT / "docs" / "report"
@@ -116,7 +118,7 @@ def build() -> str:
     md = []
     md.append(f"""# GigBid: R&D report (design review)
 
-*AI-4016 · build {git_head()} · every number below is read from `evals/results/` at build time.*
+*AI-4016 · build {git_head()} · measured results are read from `evals/results/`.*
 
 ## 1. Problem and constraints
 A freelancer loses hours scanning feeds, spends paid Connects on jobs they won't win, sends generic
@@ -175,7 +177,7 @@ descriptions of read tools.""")
 
 | Variant | Recall@5 | MRR | nDCG@10 | Recall@5 (>=4 req.) | p95 s |
 |---|---|---|---|---|---|""")
-    for k in ("v0", "v1", "v2", "v3", "v4", "v5", "v6", "v7", "v8", "v9", "v1+v2", "v1+v2+v9", shipped, "v1+v2+v8+v9"):
+    for k in dict.fromkeys(("v0", "v1", "v2", "v3", "v4", "v5", "v6", "v7", "v8", "v9", "v1+v2", "v1+v2+v9", shipped, "v1+v2+v8+v9")):
         m = v.get(k, {})
         md.append(f"| {k}{' (shipped)' if k == shipped else ''}{' (subset)' if m.get('eval_set', '').startswith('subset') else ''} | {f3(m.get('recall@5'))} | {f3(m.get('mrr'))} | {f3(m.get('ndcg@10'))} | {f3(m.get('recall@5_multi_req(>=4)'))} | {f3(m.get('p95_latency_s'))} |")
     ab_ = rag.get("ablation_recall@5", {})
@@ -204,11 +206,11 @@ ranking quality when combined.
     md.append(f"""
 Verification removes roughly a third of the experience claims the writer makes even though it cites evidence;
 typical removals merge two projects into one sentence or upgrade a described technique into a named tool.
-**Judge calibration:** Cohen's kappa between the LLM judge and reference labels on 30 blind items = {f3(jc.get('cohens_kappa_judge_vs_human'))}; labeller: {jc.get('labeller', 'pending')}; secondary kappa of the labels against real recorded outcomes (past proposals) = {f3(jc.get('secondary_kappa_human_vs_outcome(past items)'))}
+**Hosted judge calibration:** Cohen's kappa against assistant-applied rubric labels on 30 blind items = {f3(jc.get('cohens_kappa_judge_vs_human'))}; secondary kappa against recorded past outcomes = {f3(jc.get('secondary_kappa_human_vs_outcome(past items)'))}
 (`judge_calibration.json`). **Where retrieval did not translate into replies:** GigSim's clients reward
 must-have skill names, a concrete number and a question; once the evidence contains one strong result,
-better ranking of the second and third item rarely changes the reply decision, so reply-rate differences
-between variants are small compared with run-to-run variance at these sample sizes.
+better ranking of the second and third item may matter less. The hosted pilot covers V0 only, so it
+cannot estimate a reply-rate effect from changing the retrieval variant.
 **Where better retrieval did not translate into better decisions, and the shipped choice.** The Fit Matcher
 turns retrieval similarity into requirement strength, so the retrieval variant also drives bid/skip. With
 pricing fixed, swapping the Fit Matcher from `v1+v2+v9` to the best-ranked `v1+v2+v6+v9` lowered bid/skip F1
@@ -231,7 +233,7 @@ the thresholds for the contextual index is the follow-up that could let V6 ship 
 The structural difference does not need the numbers: the ReAct and supervisor baselines decide and write in
 free text, with no step that removes unsupported claims or enforces the policy pack before output, and no
 interrupt; their outputs are scored by the same verifier and compliance check after the fact. The graph's
-decisions are rule-driven over the parallel reports, which is also why it is cheaper per skipped job.
+decisions are rule-driven over the parallel reports, allowing it to skip the expensive writing stage.
 
 ## 6. The change request  (`change_request_before.json`, `change_request_after.json`)
 The 2 Nov GigSim update added 2 Connects per submission (Featured jobs x1.5) and a rule that AI-assisted
@@ -246,9 +248,10 @@ in YAML and reading fees from the marketplace instead of re-implementing them.
 ## 7. Signature extension: X2 proposal A/B  (`ab_experiment.json`)
 Two writer strategies (evidence-first vs question-first) assigned by a stable hash of the job id, stored on
 every proposal, scored by GigSim's clients and promoted into outcome memory per category. """ + (
-        f"evidence_first: {ab['arms']['evidence_first']['n']} proposals, reply rate {pc(ab['arms']['evidence_first']['reply_rate'])}; "
-        f"question_first: {ab['arms']['question_first']['n']}, {pc(ab['arms']['question_first']['reply_rate'])}; two-proportion z-test p = {f3(ab['reply_rate_two_proportion_z']['p_value'])}; "
-        f"the power analysis asks for about {ab.get('n_per_arm_for_80pct_power_at_observed_difference')} proposals per arm. {ab['conclusion']}."
+        f"Pilot on the Groq `open` profile with `{ab['variant']}`: evidence_first had {ab['arms']['evidence_first']['n']} submissions "
+        f"and a {pc(ab['arms']['evidence_first']['reply_rate'])} reply rate; question_first had {ab['arms']['question_first']['n']} "
+        f"and {pc(ab['arms']['question_first']['reply_rate'])}. Two-sided Fisher exact p = {f3(ab['reply_rate_fisher_exact']['p_value'])}. "
+        f"The difference was {ab['conclusion']}. The sample includes submitted drafts only."
         if ab else "Pending: pools the proposal-eval submissions once enough exist.") + """
 
 ## 8. Failure analysis  (`decisions_dev_offline.json`, `proposals_open.json`)
@@ -279,12 +282,19 @@ The instructor's hidden set runs after the deadline; as a proxy, the same pipeli
 generated with a different seed and never used for tuning: bid/skip F1 {f3(hold.get('overall', {}).get('bid_f1', {}).get('f1'))},
 scam recall {f3(hold.get('overall', {}).get('scam', {}).get('recall'))}, price in band {pc(hold.get('overall', {}).get('price_in_fair_band'))}, p95 {f3(hold.get('overall', {}).get('p95_latency_s'))} s per job
 (deterministic profile) vs dev {f3(d0.get('bid_f1', {}).get('f1'))} / {f3(d0.get('scam', {}).get('recall'))} / {pc(d0.get('price_in_fair_band'))}.
-**Budgets on the live `open` profile:** per job analysed, p95 {f3(don1.get('overall', {}).get('p95_latency_s'))} s and ${usd(don1.get('overall', {}).get('mean_usd_per_job'))}
+**Budgets on the hosted `open` profile:** per job analysed, p95 {f3(don.get('overall', {}).get('p95_latency_s'))} s and ${usd(don.get('overall', {}).get('mean_usd_per_job'))}
 (budget 30 s / $0.002, met); per proposal, p95 {f3(pv.get('v0', {}).get('p95_latency_s_per_proposal'))} s and ${usd(pv.get('v0', {}).get('mean_usd_per_proposal'))}
-(budget 90 s / $0.01). Latency above budget comes from Groq free-tier rate-limit waits (8k tokens/min), not compute.
+(budget 90 s / $0.01). The proposal latency includes Groq free-tier rate-limit waits and retries.
 **Optimisation that helped:** deterministic routing of cheap decisions (scout, fit, pricing, decide run with no
-LLM) and gating the LLM risk model keep a job at about 2.2k tokens; skipping early means scams and mismatches
+LLM) and gating the LLM risk model keep the expensive writer out of early decisions; skipping means scams and mismatches
 never reach the 120B writer.
+
+### Follow-up: CPU pilots
+
+{local_findings()}
+
+The local run checks whether the same pipeline can complete on a laptop. A missing judge score or reply
+rate means no eligible output was measured. Pending hosted runs hit the free-tier quota or assignment time limit.
 
 ---
 *Appendix A: full per-variant breakdowns in `docs/RESULTS.md`; raw per-item records in `evals/results/raw/`.*

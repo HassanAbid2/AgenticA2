@@ -35,3 +35,8 @@ a next step or question), not by the student, who could not label them. They are
 `[assistant rubric label]` in the sheet and reported as such; the kappa is therefore agreement between the
 LLM judge and an assistant-applied rubric, not a human calibration. As an independent check, the labels are
 also compared with the real recorded outcomes (won/replied vs ignored) of the past proposals in the sheet.
+
+**Handoff work.** Codex adapted the evaluation runners for local Ollama, ran the bounded CPU pilots,
+tested the existing Groq V0 proposal outcomes by strategy, generated the report, and scripted a
+captioned Playwright recording. The video uses a selected fixture from the seeded GigSim corpus, so it
+demonstrates the approval and conversation workflow rather than estimating its success rate.

@@ -33,6 +33,65 @@ def pc(x):
     return P if x is None else f"{x * 100:.1f}%"
 
 
+def stop_reason(result):
+    stopped = result.get("stopped")
+    return {"time_limit": "CPU time limit", "OpenAITimeoutError": "Ollama request timed out",
+            "NodeTimeoutError": "graph node timed out", "provider_quota": "provider quota"}.get(stopped, stopped or "unfinished")
+
+
+def local_findings() -> str:
+    rows = []
+    for path in sorted(RESULTS.glob("ollama_smoke_*.json")):
+        smoke = load(path.stem)
+        rows.append(f"`{smoke['model']}` on {smoke['hardware']} ({smoke['processor']}, n={smoke['n']} smoke prompt): "
+                    f"{smoke['output_tokens_per_second']} generated tokens/s. This measures decoding, not graph throughput.")
+    for path in sorted(RESULTS.glob("proposals_local_*.json")):
+        p = load(path.stem)
+        model = ", ".join(p["model_names"])
+        for variant, m in p["by_variant"].items():
+            rows.append(f"`{model}` on CPU, `{variant}` (n={m['n']} job attempts; {m['n_submitted']} submitted; "
+                        f"{m['template_fallbacks']} attempts used a template): unsupported-claim rate "
+                        f"{pc(m['unsupported_rate_before'])} → {pc(m['unsupported_rate_after'])}; "
+                        f"judge {f3(m['judge_overall_mean'])}/10; reply rate {pc(m['gigsim_reply_rate'])}; "
+                        f"p95 job attempt {f3(m['p95_latency_s_per_proposal'])} s; "
+                        f"API charges ${usd(m['mean_usd_per_proposal'])} (excludes hardware).")
+        if not p["complete"]:
+            rows.append(f"`{model}` on CPU: proposal pilot incomplete ({stop_reason(p)}); "
+                        f"n={sum(m['n'] for m in p['by_variant'].values())} completed jobs across variants. Unobserved cells remain pending.")
+    for path in sorted(RESULTS.glob("injection_local_*.json")):
+        p = load(path.stem)
+        model = ", ".join(p["model_names"])
+        for arm, m in p["conditions"].items():
+            rows.append(f"`{model}` on CPU, {arm} (n={m['n_planted']} planted + {m['n_novel']} novel, "
+                        f"{m['template_fallbacks']} template fallbacks): attack success {pc(m['attack_success_rate_planted'])} "
+                        f"planted / {pc(m['attack_success_rate_novel'])} novel; risk detection {pc(m['detection_rate'])}.")
+        if not p["complete"]:
+            rows.append(f"`{model}` injection pilot incomplete ({stop_reason(p)}). Compare matched cases only.")
+    for path in sorted(RESULTS.glob("judge_calibration_local_*.json")):
+        p = load(path.stem)
+        model = ", ".join(p["model_names"])
+        rows.append(f"`{model}` on CPU, judge calibration (n={p['n']} valid verdicts out of {p['n_attempted']} attempted; "
+                    f"target {p['n_labelled']}): Cohen's kappa {f3(p['cohens_kappa_judge_vs_human'])}"
+                    + ("; " if p["complete"] else f" ({stop_reason(p)}); ") +
+                    "invalid verdicts count as abstentions. Reference labels were applied by an AI assistant using a written rubric.")
+        if p["complete"] and p["n"] and p.get("judge_verdict_counts", {}).get("good") == p["n"]:
+            rows.append(f"`{model}` labelled every valid verdict `good`; this judge did not distinguish good from bad in the pilot.")
+    for path in sorted(RESULTS.glob("multiagent_compare_local_*.json")):
+        p = load(path.stem)
+        model = ", ".join(p["model_names"])
+        for system, m in p["results"].items():
+            rows.append(f"`{model}` on CPU, {system} (n={m['n']} scored; {m['errors']} errors): "
+                        f"bid/skip accuracy {pc(m['bid_or_skip_accuracy'])}, unsupported claims/proposal "
+                        f"{f3(m['unsupported_claims_per_proposal'])}, violations {f3(m['compliance_violations_left'])}, "
+                        f"reply rate {pc(m['gigsim_reply_rate'])}, {f3(m['mean_tokens'])} tokens/job, p95 {f3(m['p95_latency_s'])} s.")
+        if not p["complete"]:
+            rows.append(f"`{model}` on CPU: multi-agent comparison incomplete ({stop_reason(p)}), "
+                        f"n={sum(m['n'] for m in p['results'].values())} completed system runs.")
+    if not rows:
+        return "Local results pending: no CPU measurements recorded."
+    return "\n".join(f"- {row}" for row in rows) + "\n\nThese small CPU pilots are not comparable with the hosted Groq `open` profile."
+
+
 def tables() -> str:
     out = []
     rag, prop = load("rag_variants"), load("proposals_open")
@@ -87,10 +146,10 @@ def tables() -> str:
                    f"{f3(m.get('compliance_violations_left'))} | {pc(m.get('gigsim_reply_rate'))} | {f3(m.get('mean_tokens'))} | {f3(m.get('p95_latency_s'))} |")
     tg = load("tool_granularity")
     out.append("\n### Tool granularity (R&D A, 40 tasks)\n")
-    out.append("| Tool design | Tools | Selection accuracy | Argument accuracy | Tokens / task |\n|---|---|---|---|---|")
+    out.append("| Tool design | Tools | Tasks scored | Selection accuracy | Argument accuracy | Tokens / task |\n|---|---|---|---|---|---|")
     for k in ("fine", "coarse", "ours"):
         m = ((tg or {}).get("results") or {}).get(k, {})
-        out.append(f"| {k} | {m.get('n_tools', P)} | {f3(m.get('tool_selection_accuracy'))} | {f3(m.get('argument_accuracy'))} | {f3(m.get('tokens_per_task'))} |")
+        out.append(f"| {k} | {m.get('n_tools', P)} | {m.get('n_tasks', P)} | {f3(m.get('tool_selection_accuracy'))} | {f3(m.get('argument_accuracy'))} | {f3(m.get('tokens_per_task'))} |")
     inj = load("injection_open")
     out.append("\n### Prompt injection (E4)\n")
     out.append("| Condition | Attack success (planted) | Attack success (novel attacks) | Detected by risk branch |\n|---|---|---|---|")
@@ -106,10 +165,13 @@ def tables() -> str:
     ab, jc = load("ab_experiment"), load("judge_calibration")
     if ab:
         a, b = ab["arms"]["evidence_first"], ab["arms"]["question_first"]
-        out.append(f"\n### X2 proposal A/B\n\n| Arm | n | Reply rate | Mean simulated p(reply) |\n|---|---|---|---|\n"
+        out.append(f"\n### X2 proposal A/B pilot (Groq `open`, `{ab['variant']}`, n={ab['n']} unique submitted jobs)\n\n| Arm | n | Reply rate | Mean simulated p(reply) |\n|---|---|---|---|\n"
                    f"| evidence_first | {a['n']} | {pc(a['reply_rate'])} | {f3(a['mean_p_reply'])} |\n| question_first | {b['n']} | {pc(b['reply_rate'])} | {f3(b['mean_p_reply'])} |\n\n"
-                   f"Two-proportion z-test p = {f3(ab['reply_rate_two_proportion_z']['p_value'])}; {ab['conclusion']}.")
+                   f"Two-sided Fisher exact p = {f3(ab['reply_rate_fisher_exact']['p_value'])}; {ab['conclusion']}.")
     out.append(f"\nJudge calibration (30 items, reference labels applied by the AI assistant from a written rubric; see docs/AI_USAGE.md): Cohen's kappa = {f3((jc or {}).get('cohens_kappa_judge_vs_human'))}.")
+    out.append("\nPending hosted cells were not measured before the Groq free-tier quota/time limit. "
+               "The tool comparison is partial; the remaining tasks for GigBid's tool design were not rerun.")
+    out.append("\n### Local model pilots\n\n" + local_findings())
     return "\n".join(out) + "\n"
 
 
