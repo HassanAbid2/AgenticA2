@@ -119,11 +119,11 @@ async def unhandled(request: Request, exc: Exception):
 
 
 # ---- built web app (single public URL in production)
-WEB = Path(os.getenv("WEB_DIST", Path(__file__).resolve().parents[1] / "web" / "dist"))
+WEB = Path(os.getenv("WEB_DIST", Path(__file__).resolve().parents[1] / "web" / "dist")).resolve()
 if WEB.exists():
     app.mount("/assets", StaticFiles(directory=WEB / "assets"), name="assets")
 
     @app.get("/{path:path}", include_in_schema=False)
     async def spa(path: str):
-        f = WEB / path
-        return FileResponse(f if path and f.is_file() else WEB / "index.html")
+        f = (WEB / path).resolve()
+        return FileResponse(f if path and f.is_relative_to(WEB) and f.is_file() else WEB / "index.html")

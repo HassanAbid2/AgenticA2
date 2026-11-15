@@ -38,6 +38,9 @@ def now():
 
 def database_url() -> str:
     url = os.getenv("DATABASE_URL", "")
+    if url.startswith("postgresql://"):
+        # Managed database URLs omit the driver name. This project uses psycopg 3.
+        return url.replace("postgresql://", "postgresql+psycopg://", 1)
     if not url:
         (ROOT / "var").mkdir(exist_ok=True)
         url = f"sqlite:///{(ROOT / 'var' / 'gigbid.db').as_posix()}"

@@ -1,0 +1,55 @@
+# Quick GigSim demo: the web app, API, simulator, and MCP tools share one process.
+services:
+  - type: web
+    name: gigbid
+    runtime: python
+    plan: free
+    region: oregon
+    healthCheckPath: /health
+    buildCommand: >-
+      uv sync --frozen --no-dev &&
+      npm --prefix apps/web ci --include=dev &&
+      npm --prefix apps/web run build &&
+      uv run --no-sync python -m rag.ingest.build
+    startCommand: uv run --no-sync uvicorn apps.api.main:app --host 0.0.0.0 --port "$PORT" --proxy-headers
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.11"
+      - key: APP_ENV
+        value: production
+      - key: APP_SECRET_KEY
+        generateValue: true
+      - key: COOKIE_SECURE
+        value: "1"
+      - key: DATABASE_URL
+        fromDatabase:
+          name: gigbid-db
+          property: connectionString
+      - key: MODEL_PROFILE
+        value: open
+      - key: GROQ_API_KEY
+        sync: false
+      - key: MARKETPLACE_MODE
+        value: gigsim
+      - key: GIGSIM_POLICY_VERSION
+        value: "2026-11-02"
+      - key: MCP_INPROCESS
+        value: "1"
+      - key: GIGSIM_INPROCESS
+        value: "1"
+      - key: TASK_MODE
+        value: inline
+      - key: GIGBID_EMBED_THREADS
+        value: "1"
+      - key: REVIEWER_EMAIL
+        value: reviewer@gigbid.dev
+      - key: REVIEWER_PASSWORD
+        sync: false
+
+databases:
+  - name: gigbid-db
+    databaseName: gigbid
+    plan: free
+    region: oregon
+    postgresMajorVersion: "16"
+    ipAllowList: []
