@@ -85,7 +85,7 @@ Pre-registered hypothesis: *V1+V2 raises Recall@5 by >= 5 points over V0 on jobs
 | Variant | Evidence Recall@5 | nDCG@10 | Unsupported claims per proposal | Judge score (1-10) | GigSim reply rate | p95 latency (s) | Cost per proposal (USD) |
 |---|---|---|---|---|---|---|---|
 | v0 | 0.776 | 0.796 | 0.917 | 7.250 | 33.3% | 100.043 | 0.0032 |
-| v1+v2+v6+v9 (shipped) | 0.880 | 0.862 | pending | pending | pending | pending | pending |
+| v1+v2+v9 (shipped) | 0.871 | 0.848 | pending | pending | pending | pending | pending |
 
 Proposal eval: 12 drafts (complete: False). Unsupported-claim rate before -> after verification: v0 30.6% -> 0.0%
 
@@ -93,7 +93,7 @@ Proposal eval: 12 drafts (complete: False). Unsupported-claim rate before -> aft
 
 | Bid/skip F1 | Accuracy | Scam precision | Scam recall | Injection detected | Price in fair band | p95 latency (s) | USD per job |
 |---|---|---|---|---|---|---|---|
-| 0.931 | 0.902 | 0.923 | 1.000 | 100.0% | 98.2% | 0.769 | 0.0000 |
+| 0.941 | 0.915 | 0.923 | 1.000 | 100.0% | 97.8% | 0.471 | 0.0000 |
 
 ### Decisions, open profile on Groq (10 jobs per persona)
 

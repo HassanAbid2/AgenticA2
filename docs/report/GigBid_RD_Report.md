@@ -1,6 +1,6 @@
 # GigBid: R&D report (design review)
 
-*AI-4016 · build cb3fdc5 · every number below is read from `evals/results/` at build time.*
+*AI-4016 · build 760f656 · every number below is read from `evals/results/` at build time.*
 
 ## 1. Problem and constraints
 A freelancer loses hours scanning feeds, spends paid Connects on jobs they won't win, sends generic
@@ -67,17 +67,17 @@ descriptions of read tools.
 | v8 | 0.777 | 0.942 | 0.792 | 0.746 | 0.530 |
 | v9 | 0.816 | 0.962 | 0.833 | 0.781 | 0.199 |
 | v1+v2 | 0.832 | 0.898 | 0.814 | 0.797 | 0.474 |
-| v1+v2+v9 | 0.871 | 0.916 | 0.848 | 0.836 | 0.450 |
-| v1+v2+v6+v9 (shipped) | 0.880 | 0.923 | 0.862 | 0.850 | 0.804 |
+| v1+v2+v9 (shipped) | 0.871 | 0.916 | 0.848 | 0.836 | 0.450 |
+| v1+v2+v9 (shipped) | 0.871 | 0.916 | 0.848 | 0.836 | 0.450 |
 | v1+v2+v8+v9 | 0.739 | 0.734 | 0.692 | 0.692 | 1.446 |
 
-**Ablation of the shipped pipeline** (Recall@5 / nDCG@10): full 0.880 / 0.862;
+**Ablation of the best-ranked pipeline `v1+v2+v6+v9`** (Recall@5 / nDCG@10): full 0.880 / 0.862;
 without V1 0.869 / 0.871; without V2 0.874 / 0.840;
 without V6 0.871 / 0.848; without V9 0.857 / 0.846.
 Every component except V1 lowers nDCG when removed. Dropping V1 raises nDCG slightly but removes the per-requirement
 evidence lists the Fit Matcher and the UI's evidence matrix need, so V1 stays (ADR 0003 records the deviation).
 
-**By persona** (V0 -> shipped Recall@5): ai_ml 0.841 -> 0.917; fullstack 0.666 -> 0.804; data_analyst 0.820 -> 0.918.
+**By persona** (V0 -> shipped Recall@5): ai_ml 0.841 -> 0.908; fullstack 0.666 -> 0.791; data_analyst 0.820 -> 0.912.
 **By job type:** the biggest gains are on multi-requirement and exact-tool-name jobs, where BM25 and the skill
 graph match names that embeddings blur; the one regression is vague posts, which decomposition splits into
 sentences that say little (HyDE, V7, is the candidate fix).
@@ -90,7 +90,7 @@ ranking quality when combined.
 | Variant | Drafts | Unsupported-claim rate before -> after | Unsupported claims/proposal (before) | Judge (1-10) | GigSim reply | p95 s | USD/proposal |
 |---|---|---|---|---|---|---|---|
 | v0 | 12 | 30.6% -> 0.0% | 0.917 | 7.250 | 33.3% | 100.043 | 0.0032 |
-| v1+v2+v6+v9 | 0 | pending -> pending | pending | pending | pending | pending | pending |
+| v1+v2+v9 | 0 | pending -> pending | pending | pending | pending | pending | pending |
 
 Verification removes roughly a third of the experience claims the writer makes even though it cites evidence;
 typical removals merge two projects into one sentence or upgrade a described technique into a named tool.
@@ -99,8 +99,15 @@ typical removals merge two projects into one sentence or upgrade a described tec
 must-have skill names, a concrete number and a question; once the evidence contains one strong result,
 better ranking of the second and third item rarely changes the reply decision, so reply-rate differences
 between variants are small compared with run-to-run variance at these sample sizes.
-**Shipped choice:** `v1+v2+v6+v9`, because it is the best-ranked pipeline that keeps per-requirement evidence and
-stays under 1 s p95, and the extra recall shows up where the corpus is hardest (exact tool names, multi-skill jobs).
+**Where better retrieval did not translate into better decisions, and the shipped choice.** The Fit Matcher
+turns retrieval similarity into requirement strength, so the retrieval variant also drives bid/skip. With
+pricing fixed, swapping the Fit Matcher from `v1+v2+v9` to the best-ranked `v1+v2+v6+v9` lowered bid/skip F1
+from 0.941 to 0.931
+(bid recall 0.927 -> 0.907;
+`decisions_dev_offline.json` vs `decisions_dev_offline_fit_v1+v2+v6+v9.json`): the context lines shift cosine
+similarities down and the strength thresholds were calibrated on the plain index. **Shipped: `v1+v2+v9`**
+(nDCG@10 0.848, Recall@5 0.871); recalibrating
+the thresholds for the contextual index is the follow-up that could let V6 ship (ADR 0003).
 
 ## 5. R&D question C: single agent vs supervisor vs graph  (`multiagent_compare.json`)
 
@@ -178,9 +185,9 @@ fenced but un-neutralised; then only the writer's own instructions and the outpu
 
 ## 10. Held-out results against declared budgets  (`decisions_holdout_offline.json`, `smoke.json`)
 The instructor's hidden set runs after the deadline; as a proxy, the same pipeline ran on a held-out split
-generated with a different seed and never used for tuning: bid/skip F1 0.922,
-scam recall 0.958, price in band 96.5%, p95 0.394 s per job
-(deterministic profile) vs dev 0.931 / 1.000 / 98.2%.
+generated with a different seed and never used for tuning: bid/skip F1 0.934,
+scam recall 0.958, price in band 96.5%, p95 0.537 s per job
+(deterministic profile) vs dev 0.941 / 1.000 / 97.8%.
 **Budgets on the live `open` profile:** per job analysed, p95 29.023 s and $0.0004
 (budget 30 s / $0.002, met); per proposal, p95 100.043 s and $0.0032
 (budget 90 s / $0.01). Latency above budget comes from Groq free-tier rate-limit waits (8k tokens/min), not compute.
