@@ -36,7 +36,8 @@ def tokenize(text: str) -> list[str]:
 def embedder(model: str = EMBED_MODEL):
     from fastembed import TextEmbedding
 
-    return TextEmbedding(model, cache_dir=MODELS_DIR)
+    threads = os.getenv("GIGBID_EMBED_THREADS")
+    return TextEmbedding(model, cache_dir=MODELS_DIR, threads=int(threads) if threads else None)
 
 
 def embed(texts: list[str], model: str = EMBED_MODEL) -> np.ndarray:

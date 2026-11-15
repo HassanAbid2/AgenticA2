@@ -1,5 +1,19 @@
 # 3-minute demo video: shot list and narration
 
+The [captioned recording](video/gigbid-demo.webm) uses synthetic GigSim jobs and the offline model
+profile. It shows the inbox, evidence and pricing, approved proposal, scam skip, planted injection,
+approved client reply, run timeline and analytics. It selects a seeded job whose simulated client
+will respond, then uses the normal app approvals and polls the real simulator events.
+
+To reproduce it with the local dependencies and web build already in place, run from `apps/web`:
+
+```bash
+npx playwright test -c playwright.demo.config.ts video.spec.ts
+```
+
+The recording appears under `apps/web/test-results/`. The outline below is for a separately narrated
+walkthrough.
+
 Record the deployed app (or `make dev` with `MODEL_PROFILE=open`) at 1280x720. Before recording, sign in as
 the reviewer, run saved searches once and let 5-6 jobs finish analysing so the inbox is populated.
 
