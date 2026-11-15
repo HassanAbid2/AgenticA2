@@ -126,7 +126,9 @@ def _apply_bid_result(user_id: int, job_id: str, thread_id: str, out: dict, run_
         if prop:
             prop.cost_usd = (prop.cost_usd or 0) + out["cost_usd"]
             prop.latency_s = (prop.latency_s or 0) + out["latency_s"]
-            if st.get("submission"):
+            if (st.get("submission") or {}).get("error"):
+                prop.status, prop.reject_reason = "blocked", st["submission"]["error"]
+            elif st.get("submission"):
                 sub = st["submission"]
                 prop.status = "submitted" if sub["status"] in ("submitted",) else sub["status"]
                 prop.marketplace_proposal_id = sub["proposal_id"]

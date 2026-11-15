@@ -101,6 +101,7 @@ thresholds:
   minimum_fit_score: 0.55     # below -> skip
   watch_fit_score: 0.40       # between watch and minimum -> watch
   maximum_risk_score: 0.60    # above -> skip
+  llm_flag_min_confidence: 0.70  # LLM risk flags count only at/above this scam probability
   min_client_rating: 3.5
   connects_value_min: 0.002   # expected reply probability per Connect spent
   max_words: 260

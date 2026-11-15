@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-11-15T18:32:47",
+ "git_commit": "8761b29",
+ "label": "before",
+ "gigsim_policy": "2026-11-02",
+ "jobs": 9,
+ "accepted_rate": 0.0,
+ "preview_warned_rate": 1.0,
+ "connects_preview_matches_new_price": true,
+ "fix_commit": null,
+ "fix_diffstat": null,
+ "records": [
+  {
+   "job_id": "j-ai-0018",
+   "reached_approval": true,
+   "preview_policy_issues": [
+    "P8: AI-assisted proposals must disclose AI assistance"
+   ],
+   "preview_connects": 27,
+   "connects_under_old_policy": 16,
+   "connects_under_new_policy": 27,
+   "accepted": false,
+   "status": "needs_attention",
+   "reason": "marketplace refused the submission: 404: proposal not found",
+   "connects_spent": null
+  },
+  {
+   "job_id": "j-ai-0042",
+   "reached_approval": true,
+   "preview_policy_issues": [
+    "P8: AI-assisted proposals must disclose AI assistance"
+   ],
+   "preview_connects": 18,
+   "connects_under_old_policy": 16,
+   "connects_under_new_policy": 18,
+   "accepted": false,
+   "status": "needs_attention",
+   "reason": "marketplace refused the submission: 404: proposal not found",
+   "connects_spent": null
+  },
+  {
+   "job_id": "j-ai-0014",
+   "reached_approval": false,
+   "status": "needs_attention"
+  },
+  {
+   "job_id": "j-fu-0242",
+   "reached_approval": false,
+   "status": "needs_attention"
+  },
+  {
+   "job_id": "j-fu-0235",
+   "reached_approval": false,
+   "status": "needs_attention"
+  },
+  {
+   "job_id": "j-fu-0214",
+   "reached_approval": false,
+   "status": "needs_attention"
+  },
+  {
+   "job_id": "j-da-0446",
+   "reached_approval": true,
+   "preview_policy_issues": [
+    "P8: AI-assisted proposals must disclose AI assistance"
+   ],
+   "preview_connects": 21,
+   "connects_under_old_policy": 12,
+   "connects_under_new_policy": 21,
+   "accepted": false,
+   "status": "needs_attention",
+   "reason": "marketplace refused the submission: 404: proposal not found",
+   "connects_spent": null
+  },
+  {
+   "job_id": "j-da-0435",
+   "reached_approval": true,
+   "preview_policy_issues": [
+    "P8: AI-assisted proposals must disclose AI assistance"
+   ],
+   "preview_connects": 10,
+   "connects_under_old_policy": 8,
+   "connects_under_new_policy": 10,
+   "accepted": false,
+   "status": "needs_attention",
+   "reason": "marketplace refused the submission: 404: proposal not found",
+   "connects_spent": null
+  },
+  {
+   "job_id": "j-da-0412",
+   "reached_approval": true,
+   "preview_policy_issues": [
+    "P8: AI-assisted proposals must disclose AI assistance"
+   ],
+   "preview_connects": 15,
+   "connects_under_old_policy": 8,
+   "connects_under_new_policy": 15,
+   "accepted": false,
+   "status": "needs_attention",
+   "reason": "marketplace refused the submission: 404: proposal not found",
+   "connects_spent": null
+  }
+ ]
+}

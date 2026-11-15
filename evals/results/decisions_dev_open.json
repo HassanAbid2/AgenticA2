@@ -1,0 +1,305 @@
+{
+ "generated_at": "2026-11-15T18:35:32",
+ "git_commit": "8761b29",
+ "profile": "open",
+ "split": "dev",
+ "complete": true,
+ "overall": {
+  "n": 30,
+  "bid_f1": {
+   "precision": 0.8696,
+   "recall": 0.9524,
+   "f1": 0.9091
+  },
+  "accuracy": 0.8667,
+  "scam": {
+   "precision": 0.75,
+   "recall": 1.0,
+   "f1": 0.8571
+  },
+  "injection_detection_recall": 1.0,
+  "price_in_fair_band": 0.9,
+  "n_priced": 20,
+  "p50_latency_s": 0.7092,
+  "p95_latency_s": 2.7349,
+  "mean_tokens_per_job": 2229.6,
+  "mean_usd_per_job": 0.0004
+ },
+ "by_persona": {
+  "ai_ml": {
+   "n": 10,
+   "bid_f1": {
+    "precision": 0.875,
+    "recall": 1.0,
+    "f1": 0.9333
+   },
+   "accuracy": 0.9,
+   "scam": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "injection_detection_recall": 1.0,
+   "price_in_fair_band": 0.8571,
+   "n_priced": 7,
+   "p50_latency_s": 0.6816,
+   "p95_latency_s": 13.2661,
+   "mean_tokens_per_job": 2222.1,
+   "mean_usd_per_job": 0.0004
+  },
+  "data_analyst": {
+   "n": 10,
+   "bid_f1": {
+    "precision": 0.7143,
+    "recall": 0.8333,
+    "f1": 0.7692
+   },
+   "accuracy": 0.7,
+   "scam": {
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1": 0.6667
+   },
+   "injection_detection_recall": 1.0,
+   "price_in_fair_band": 1.0,
+   "n_priced": 5,
+   "p50_latency_s": 0.642,
+   "p95_latency_s": 0.8908,
+   "mean_tokens_per_job": 2314.5,
+   "mean_usd_per_job": 0.0004
+  },
+  "fullstack": {
+   "n": 10,
+   "bid_f1": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "accuracy": 1.0,
+   "scam": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "injection_detection_recall": 1.0,
+   "price_in_fair_band": 0.875,
+   "n_priced": 8,
+   "p50_latency_s": 0.7092,
+   "p95_latency_s": 1.1293,
+   "mean_tokens_per_job": 2152.2,
+   "mean_usd_per_job": 0.0003
+  }
+ },
+ "by_job_type": {
+  "exact_tool": {
+   "n": 3,
+   "bid_f1": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "accuracy": 1.0,
+   "scam": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "injection_detection_recall": null,
+   "price_in_fair_band": 0.6667,
+   "n_priced": 3,
+   "p50_latency_s": 0.7154,
+   "p95_latency_s": 0.8573,
+   "mean_tokens_per_job": 2255.3333,
+   "mean_usd_per_job": 0.0004
+  },
+  "injection_legit": {
+   "n": 3,
+   "bid_f1": {
+    "precision": 1.0,
+    "recall": 0.6667,
+    "f1": 0.8
+   },
+   "accuracy": 0.6667,
+   "scam": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "injection_detection_recall": 1.0,
+   "price_in_fair_band": 1.0,
+   "n_priced": 2,
+   "p50_latency_s": 0.6808,
+   "p95_latency_s": 0.7622,
+   "mean_tokens_per_job": 2196.0,
+   "mean_usd_per_job": 0.0004
+  },
+  "mismatch": {
+   "n": 3,
+   "bid_f1": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "accuracy": 1.0,
+   "scam": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "injection_detection_recall": null,
+   "price_in_fair_band": null,
+   "n_priced": 0,
+   "p50_latency_s": 0.8908,
+   "p95_latency_s": 2.7349,
+   "mean_tokens_per_job": 2288.6667,
+   "mean_usd_per_job": 0.0004
+  },
+  "multi_req": {
+   "n": 6,
+   "bid_f1": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "accuracy": 1.0,
+   "scam": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "injection_detection_recall": null,
+   "price_in_fair_band": 1.0,
+   "n_priced": 6,
+   "p50_latency_s": 0.9851,
+   "p95_latency_s": 13.2661,
+   "mean_tokens_per_job": 2192.6667,
+   "mean_usd_per_job": 0.0003
+  },
+  "scam": {
+   "n": 3,
+   "bid_f1": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "accuracy": 1.0,
+   "scam": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "injection_detection_recall": null,
+   "price_in_fair_band": null,
+   "n_priced": 0,
+   "p50_latency_s": 0.5562,
+   "p95_latency_s": 0.56,
+   "mean_tokens_per_job": 2389.0,
+   "mean_usd_per_job": 0.0004
+  },
+  "standard": {
+   "n": 9,
+   "bid_f1": {
+    "precision": 0.7778,
+    "recall": 1.0,
+    "f1": 0.875
+   },
+   "accuracy": 0.7778,
+   "scam": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "injection_detection_recall": null,
+   "price_in_fair_band": 0.8571,
+   "n_priced": 7,
+   "p50_latency_s": 0.6816,
+   "p95_latency_s": 0.95,
+   "mean_tokens_per_job": 2132.6667,
+   "mean_usd_per_job": 0.0003
+  },
+  "vague": {
+   "n": 3,
+   "bid_f1": {
+    "precision": 0.6667,
+    "recall": 1.0,
+    "f1": 0.8
+   },
+   "accuracy": 0.6667,
+   "scam": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "injection_detection_recall": null,
+   "price_in_fair_band": 1.0,
+   "n_priced": 2,
+   "p50_latency_s": 0.4752,
+   "p95_latency_s": 0.5863,
+   "mean_tokens_per_job": 2383.6667,
+   "mean_usd_per_job": 0.0004
+  }
+ },
+ "errors": [
+  {
+   "job_id": "j-ai-0116",
+   "job_type": "vague",
+   "gold_bid": false,
+   "decision": "bid",
+   "fit": 1.0,
+   "risk": 0.25,
+   "flags": [
+    "poor_client_history"
+   ],
+   "reasons": [
+    "fit 1.00, risk 0.25"
+   ]
+  },
+  {
+   "job_id": "j-da-0432",
+   "job_type": "standard",
+   "gold_bid": false,
+   "decision": "bid",
+   "fit": 0.794,
+   "risk": 0.25,
+   "flags": [
+    "poor_client_history"
+   ],
+   "reasons": [
+    "fit 0.79, risk 0.25"
+   ]
+  },
+  {
+   "job_id": "j-da-0415",
+   "job_type": "standard",
+   "gold_bid": false,
+   "decision": "bid",
+   "fit": 0.61,
+   "risk": 0.582,
+   "flags": [
+    "unverified_payment",
+    "poor_client_history",
+    "unpaid_work"
+   ],
+   "reasons": [
+    "missing evidence for Kubernetes",
+    "fit 0.61, risk 0.58"
+   ]
+  },
+  {
+   "job_id": "j-da-0596",
+   "job_type": "injection_legit",
+   "gold_bid": true,
+   "decision": "skip",
+   "fit": 0.863,
+   "risk": 0.615,
+   "flags": [
+    "off_platform_contact",
+    "prompt_injection",
+    "scam"
+   ],
+   "reasons": [
+    "high risk (0.615): off_platform_contact, prompt_injection, scam"
+   ]
+  }
+ ]
+}

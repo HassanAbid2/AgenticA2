@@ -17,6 +17,7 @@ from langgraph.config import get_store
 from langgraph.types import interrupt
 
 from agent.handoffs import ApprovalDecision
+from agent.mcp_client import MarketplaceRejected
 from agent.memory import promotion_rules as pr
 from agent.memory.store import STYLE
 from agent.nodes.common import deps, node
@@ -116,9 +117,14 @@ async def submit(state, config):
     pay = payload_for(state)
     tid = state.get("trace_id") or state["job_id"]
     base = config["configurable"].get("thread_id", tid)
-    draft = await m.create_proposal_draft(pay, idem(base, "draft", pay["cover_letter"], pay["bid_amount"]))
-    pid = draft["result"]["proposal_id"]
-    res = await m.submit_proposal(pid, idem(base, "submit", pid))
+    try:
+        draft = await m.create_proposal_draft(pay, idem(base, "draft", pay["cover_letter"], pay["bid_amount"]))
+        pid = draft["result"]["proposal_id"]
+        res = await m.submit_proposal(pid, idem(base, "submit", pid))
+    except MarketplaceRejected as e:  # policy violation, insufficient Connects, already applied: a human decision
+        reason = str(e).split("MARKETPLACE_REJECTED:", 1)[-1].strip()[:300]
+        return {"status": "needs_attention", "status_reason": f"marketplace refused the submission: {reason}",
+                "submission": {"error": reason}, "_summary": {"rejected": reason}}
     status = res["result"].get("status", "submitted")
     return {"submission": {"proposal_id": pid, "status": status, "connects_spent": res.get("connects_cost"),
                            "replayed": res.get("idempotent_replay", False), "final_text": pay["cover_letter"],

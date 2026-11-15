@@ -1,0 +1,321 @@
+{
+ "generated_at": "2026-11-15T18:26:47",
+ "git_commit": "8761b29",
+ "profile": "open",
+ "split": "dev",
+ "complete": true,
+ "overall": {
+  "n": 30,
+  "bid_f1": {
+   "precision": 0.9,
+   "recall": 0.8571,
+   "f1": 0.878
+  },
+  "accuracy": 0.8333,
+  "scam": {
+   "precision": 0.375,
+   "recall": 1.0,
+   "f1": 0.5455
+  },
+  "injection_detection_recall": 1.0,
+  "price_in_fair_band": 0.8889,
+  "n_priced": 18,
+  "p50_latency_s": 15.8579,
+  "p95_latency_s": 29.0225,
+  "mean_tokens_per_job": 2229.6,
+  "mean_usd_per_job": 0.0004
+ },
+ "by_persona": {
+  "ai_ml": {
+   "n": 10,
+   "bid_f1": {
+    "precision": 0.875,
+    "recall": 1.0,
+    "f1": 0.9333
+   },
+   "accuracy": 0.9,
+   "scam": {
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1": 0.6667
+   },
+   "injection_detection_recall": 1.0,
+   "price_in_fair_band": 0.8571,
+   "n_priced": 7,
+   "p50_latency_s": 15.0346,
+   "p95_latency_s": 57.8398,
+   "mean_tokens_per_job": 2222.1,
+   "mean_usd_per_job": 0.0004
+  },
+  "data_analyst": {
+   "n": 10,
+   "bid_f1": {
+    "precision": 0.8,
+    "recall": 0.6667,
+    "f1": 0.7273
+   },
+   "accuracy": 0.7,
+   "scam": {
+    "precision": 0.25,
+    "recall": 1.0,
+    "f1": 0.4
+   },
+   "injection_detection_recall": 1.0,
+   "price_in_fair_band": 1.0,
+   "n_priced": 4,
+   "p50_latency_s": 16.0001,
+   "p95_latency_s": 22.3275,
+   "mean_tokens_per_job": 2314.5,
+   "mean_usd_per_job": 0.0004
+  },
+  "fullstack": {
+   "n": 10,
+   "bid_f1": {
+    "precision": 1.0,
+    "recall": 0.875,
+    "f1": 0.9333
+   },
+   "accuracy": 0.9,
+   "scam": {
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1": 0.6667
+   },
+   "injection_detection_recall": 1.0,
+   "price_in_fair_band": 0.8571,
+   "n_priced": 7,
+   "p50_latency_s": 15.2418,
+   "p95_latency_s": 29.0225,
+   "mean_tokens_per_job": 2152.2,
+   "mean_usd_per_job": 0.0003
+  }
+ },
+ "by_job_type": {
+  "exact_tool": {
+   "n": 3,
+   "bid_f1": {
+    "precision": 1.0,
+    "recall": 0.6667,
+    "f1": 0.8
+   },
+   "accuracy": 0.6667,
+   "scam": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "injection_detection_recall": null,
+   "price_in_fair_band": 0.5,
+   "n_priced": 2,
+   "p50_latency_s": 12.1738,
+   "p95_latency_s": 16.7833,
+   "mean_tokens_per_job": 2255.3333,
+   "mean_usd_per_job": 0.0004
+  },
+  "injection_legit": {
+   "n": 3,
+   "bid_f1": {
+    "precision": 1.0,
+    "recall": 0.6667,
+    "f1": 0.8
+   },
+   "accuracy": 0.6667,
+   "scam": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "injection_detection_recall": 1.0,
+   "price_in_fair_band": 1.0,
+   "n_priced": 2,
+   "p50_latency_s": 11.7047,
+   "p95_latency_s": 17.2385,
+   "mean_tokens_per_job": 2196.0,
+   "mean_usd_per_job": 0.0004
+  },
+  "mismatch": {
+   "n": 3,
+   "bid_f1": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "accuracy": 1.0,
+   "scam": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "injection_detection_recall": null,
+   "price_in_fair_band": null,
+   "n_priced": 0,
+   "p50_latency_s": 14.1674,
+   "p95_latency_s": 16.1941,
+   "mean_tokens_per_job": 2288.6667,
+   "mean_usd_per_job": 0.0004
+  },
+  "multi_req": {
+   "n": 6,
+   "bid_f1": {
+    "precision": 1.0,
+    "recall": 0.8333,
+    "f1": 0.9091
+   },
+   "accuracy": 0.8333,
+   "scam": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "injection_detection_recall": null,
+   "price_in_fair_band": 1.0,
+   "n_priced": 5,
+   "p50_latency_s": 15.8579,
+   "p95_latency_s": 57.8398,
+   "mean_tokens_per_job": 2192.6667,
+   "mean_usd_per_job": 0.0003
+  },
+  "scam": {
+   "n": 3,
+   "bid_f1": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "accuracy": 1.0,
+   "scam": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "injection_detection_recall": null,
+   "price_in_fair_band": null,
+   "n_priced": 0,
+   "p50_latency_s": 15.2418,
+   "p95_latency_s": 16.5662,
+   "mean_tokens_per_job": 2389.0,
+   "mean_usd_per_job": 0.0004
+  },
+  "standard": {
+   "n": 9,
+   "bid_f1": {
+    "precision": 0.875,
+    "recall": 1.0,
+    "f1": 0.9333
+   },
+   "accuracy": 0.8889,
+   "scam": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "injection_detection_recall": null,
+   "price_in_fair_band": 0.8571,
+   "n_priced": 7,
+   "p50_latency_s": 17.4178,
+   "p95_latency_s": 22.3275,
+   "mean_tokens_per_job": 2132.6667,
+   "mean_usd_per_job": 0.0003
+  },
+  "vague": {
+   "n": 3,
+   "bid_f1": {
+    "precision": 0.6667,
+    "recall": 1.0,
+    "f1": 0.8
+   },
+   "accuracy": 0.6667,
+   "scam": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "injection_detection_recall": null,
+   "price_in_fair_band": 1.0,
+   "n_priced": 2,
+   "p50_latency_s": 16.0001,
+   "p95_latency_s": 19.0482,
+   "mean_tokens_per_job": 2383.6667,
+   "mean_usd_per_job": 0.0004
+  }
+ },
+ "errors": [
+  {
+   "job_id": "j-ai-0116",
+   "job_type": "vague",
+   "gold_bid": false,
+   "decision": "bid",
+   "fit": 1.0,
+   "risk": 0.25,
+   "flags": [
+    "poor_client_history",
+    "unpaid_work"
+   ],
+   "reasons": [
+    "fit 1.00, risk 0.25"
+   ]
+  },
+  {
+   "job_id": "j-fu-0289",
+   "job_type": "multi_req",
+   "gold_bid": true,
+   "decision": "skip",
+   "fit": 0.961,
+   "risk": 0.475,
+   "flags": [
+    "poor_client_history",
+    "unpaid_work",
+    "scam"
+   ],
+   "reasons": [
+    "high risk (0.475): poor_client_history, unpaid_work, scam"
+   ]
+  },
+  {
+   "job_id": "j-da-0502",
+   "job_type": "exact_tool",
+   "gold_bid": true,
+   "decision": "skip",
+   "fit": 0.685,
+   "risk": 0.35,
+   "flags": [
+    "scam",
+    "unpaid_work"
+   ],
+   "reasons": [
+    "high risk (0.35): scam, unpaid_work"
+   ]
+  },
+  {
+   "job_id": "j-da-0432",
+   "job_type": "standard",
+   "gold_bid": false,
+   "decision": "bid",
+   "fit": 0.794,
+   "risk": 0.25,
+   "flags": [
+    "poor_client_history",
+    "unpaid_work"
+   ],
+   "reasons": [
+    "fit 0.79, risk 0.25"
+   ]
+  },
+  {
+   "job_id": "j-da-0596",
+   "job_type": "injection_legit",
+   "gold_bid": true,
+   "decision": "skip",
+   "fit": 0.863,
+   "risk": 0.615,
+   "flags": [
+    "off_platform_contact",
+    "prompt_injection",
+    "scam"
+   ],
+   "reasons": [
+    "high risk (0.615): off_platform_contact, prompt_injection, scam"
+   ]
+  }
+ ]
+}

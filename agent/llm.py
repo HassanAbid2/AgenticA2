@@ -244,6 +244,9 @@ async def structured(node: str, prompt: str, schema: type[BaseModel], config=Non
         except Exception as e:  # noqa: BLE001
             last = f"{type(e).__name__}: {str(e)[:200]}"
             log.warning("structured(%s) attempt %d failed: %s", node, attempt + 1, last)
+            # production degrades to the deterministic path; evals must not silently mix the two
+            if os.getenv("GIGBID_STRICT_LLM") == "1" and not isinstance(e, ValueError | json.JSONDecodeError):
+                raise
     return None
 
 

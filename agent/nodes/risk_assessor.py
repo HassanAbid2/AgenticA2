@@ -78,8 +78,10 @@ async def risk_assessor(state, config):
     llm = await structured("risk_assessor", "risk_assessor", LLMRisk, config, client=client, rule_flags=flags,
                            job_post=untrusted("job_post", f"{job.get('title', '')}\n{clean}"))
     if llm:
-        allowed = set(WEIGHTS) | {"scam"}
-        flags += [f for f in llm.flags if f in allowed and f not in flags]
+        # The small model over-flags (dev eval: scam precision 0.75 -> 0.38 when its flags were trusted), so it may
+        # only escalate with confidence, never add 'scam' itself; the combined score decides that below.
+        if llm.scam_probability >= thresholds()["llm_flag_min_confidence"]:
+            flags += [f for f in llm.flags if f in WEIGHTS and f not in flags]
         score = round(max(score, 0.5 * score + 0.5 * llm.scam_probability), 3)
         expl.append(llm.explanation)
     if score >= thresholds()["maximum_risk_score"] or {"overpayment_scheme", "personal_info_request", "off_platform_payment"} & set(flags):
