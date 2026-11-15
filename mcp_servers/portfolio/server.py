@@ -37,6 +37,9 @@ def _standalone_ingest():
     folder = os.getenv("PORTFOLIO_DIR")
     if not folder:
         return
+    # installed via uvx: keep the index next to the user's data, not inside site-packages (set before importing rag)
+    os.environ.setdefault("GIGBID_PROCESSED_DIR", str(Path.home() / ".gigbid" / "processed"))
+    os.environ.setdefault("GIGBID_MODELS_DIR", str(Path.home() / ".gigbid" / "models"))
     from rag.index.store import get_index
     from rag.ingest.loaders import load_persona
 
