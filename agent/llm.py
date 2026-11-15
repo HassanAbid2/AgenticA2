@@ -183,8 +183,10 @@ def _chat(model: str, base_url: str, key_env: str, temperature: float, fallback:
     key = os.getenv(key_env) or ("ollama" if "11434" in base_url else None)
     if not key:
         return None
+    p = m["profiles"][m["profile"]]
     mk = lambda name: ChatOpenAI(model=name, base_url=base_url, api_key=key, temperature=temperature,  # noqa: E731
-                                 timeout=m["timeout_s"], max_retries=m["max_retries"])
+                                 timeout=p.get("timeout_s", m["timeout_s"]), max_retries=p.get("max_retries", m["max_retries"]),
+                                 max_tokens=p.get("max_output_tokens"))
     llm = mk(model)
     return llm.with_fallbacks([mk(fallback)]) if fallback and fallback != model else llm
 

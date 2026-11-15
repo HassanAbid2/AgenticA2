@@ -21,8 +21,28 @@ while the embedding model downloads into the `models` volume).
 5. Log in as `REVIEWER_EMAIL` with `REVIEWER_PASSWORD` (seeded on first start, persona `ai_ml`).
    Give graders the credentials in a private comment, never in the repo.
 
-The Ollama service starts only with `docker compose --profile local up` (for `MODEL_PROFILE=local`); the deployed link uses the `open`
-profile (Groq), because free hosts have no GPU.
+For a CPU run, start Compose with `--profile local`, pull `qwen2.5:1.5b` inside the Ollama service,
+and set `MODEL_PROFILE=local`. For host-side evaluations, set `OLLAMA_BASE_URL=http://127.0.0.1:11434/v1`
+to point at a host-accessible Ollama. Keep production on `MODEL_PROFILE=open` (Groq).
+
+### Reproduce the local pilots
+
+Use `MODEL_PROFILE=local`, `GIGBID_STRICT_LLM=1`, `MARKETPLACE_MODE=gigsim`, and
+`GIGSIM_POLICY_VERSION=2026-11-02`. Set `GIGBID_EVAL_SECONDS` if you want each runner to save partial
+results after a time limit. Each run only uses synthetic marketplace data.
+
+```bash
+python -m evals.runners.proposal_eval --n 1 --variants v1+v2+v9,v0
+python -m evals.runners.injection_eval --n 1 --novel-per-persona 1
+python -m evals.runners.judge_calibration --score
+python -m evals.runners.multiagent_compare --n 1
+python -m evals.runners.results_table
+python -m scripts.build_report
+```
+
+`--n 1` selects one job per persona, not one job total. Local output filenames include the model, and
+the shared results tables keep those measurements separate from the Groq results. On a slower CPU,
+pull `qwen2.5:0.5b` and set `OLLAMA_MODEL=qwen2.5:0.5b` for a separate run.
 
 ## Scheduling and rate limits
 * The worker's `tick` runs every minute; each saved search runs only when its own interval

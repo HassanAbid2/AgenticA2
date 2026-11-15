@@ -48,7 +48,7 @@ services:
     ports: ["6006:6006"]
     restart: unless-stopped
 
-  ollama:                        # only with `--profile local` (MODEL_PROFILE=local; then `docker compose exec ollama ollama pull qwen3:4b`)
+  ollama:                        # only with `--profile local` (then `docker compose exec ollama ollama pull qwen2.5:1.5b`)
     image: ollama/ollama:latest
     profiles: ["local"]
     volumes: [ollama:/root/.ollama]

@@ -1,4 +1,4 @@
-"""Proposal-quality evaluation on Groq (R&D B results table, B3 claim verification, E5 budgets).
+"""Proposal-quality evaluation (R&D B results table, B3 claim verification, E5 budgets).
 
     python -m evals.runners.proposal_eval [--n 4] [--variants v0,v1+v2+v9]
 
@@ -15,6 +15,7 @@ import argparse
 import asyncio
 import os
 import time
+import uuid
 
 os.environ.update({"GIGBID_STRICT_LLM": "1"})
 for k, v in {"MCP_INPROCESS": "1", "GIGSIM_INPROCESS": "1", "GIGSIM_ERROR_RATE": "0", "GIGSIM_RATE_LIMIT_PER_MIN": "100000",
@@ -24,7 +25,17 @@ for k, v in {"MCP_INPROCESS": "1", "GIGSIM_INPROCESS": "1", "GIGSIM_ERROR_RATE":
 
 from pydantic import BaseModel, Field  # noqa: E402
 
-from evals.runners.common import RawLog, is_quota_error, load_dev, mean, pct, sample, write_result  # noqa: E402
+from evals.runners.common import (  # noqa: E402
+    RawLog,
+    eval_deadline,
+    load_dev,
+    mean,
+    model_run,
+    model_stop,
+    pct,
+    sample,
+    write_result,
+)
 
 BID_TYPES = {"standard", "multi_req", "exact_tool", "vague", "industry"}
 
@@ -62,7 +73,7 @@ async def one(row: dict, variant: str) -> dict:
 
     W.reset()
     persona, jid = row["persona"], row["job"]["job_id"]
-    tid = f"pe-{variant.replace('+', '_')}-{jid}"
+    tid = f"pe-{variant.replace('+', '_')}-{jid}-{uuid.uuid4().hex[:8]}"
     t0 = time.perf_counter()
     o = await run_bid(persona, jid, profile=persona_profile(persona), thread_id=tid, force_bid=True)
     st = o["state"]
@@ -94,7 +105,7 @@ def summarise(recs: list[dict]) -> dict:
     sent = [r for r in recs if r.get("outcome")]
     judged = [r["judge"]["overall"] for r in recs if r.get("judge")]
     return {"n": len(recs), "n_submitted": len(sent),
-            "unsupported_claims_per_proposal_before": mean([(r["unsupported_before"] or 0) * r["n_claims"] for r in recs]),
+            "unsupported_claims_per_proposal_before": mean([r["unsupported_before"] * r["n_claims"] for r in recs if r["unsupported_before"] is not None]),
             "unsupported_rate_before": mean([r["unsupported_before"] for r in recs if r["unsupported_before"] is not None]),
             "unsupported_rate_after": mean([r["unsupported_after"] for r in recs if r["unsupported_after"] is not None]),
             "judge_overall_mean": mean(judged), "judge_good_rate": mean([r["judge"]["verdict"] == "good" for r in recs if r.get("judge")]),
@@ -112,8 +123,11 @@ async def main(n: int, variants: list[str]):
     from agent.config import settings
 
     rows = sample(load_dev(), n, where=lambda r: r["gold"]["bid"] and r["gold"]["job_type"] in BID_TYPES)
-    log = RawLog("proposals_open")
-    stop = False
+    shipped = settings()["rag"]["variant"]
+    name, metadata = model_run("proposals_open")
+    log = RawLog(name)
+    deadline = eval_deadline()
+    stopped = None
     for v in variants:
         use_variant(v)
         for row in rows:
@@ -121,22 +135,28 @@ async def main(n: int, variants: list[str]):
             if log.has(key):
                 continue
             try:
-                log.add(key, await one(row, v))
+                async with asyncio.timeout_at(deadline):
+                    result = await one(row, v)
+                log.add(key, result)
                 print("done", key, flush=True)
+            except TimeoutError:
+                print(f"time limit reached at {key}; progress saved", flush=True)
+                stopped = "time_limit"
+                break
             except Exception as e:  # noqa: BLE001
-                if is_quota_error(e) or "rate limit" in str(e).lower():
-                    print(f"quota reached at {key}; progress saved, rerun later to continue")
-                    stop = True
-                    break
-                raise
-        if stop:
+                stopped = model_stop(e)
+                if not stopped:
+                    raise
+                print(f"stopped at {key}: {stopped}; progress saved", flush=True)
+                break
+        if stopped:
             break
-    recs = log.values()
+    keys = {f"{v}|{row['job']['job_id']}" for v in variants for row in rows}
+    recs = [r for r in log.values() if r["key"] in keys]
     by_v = {v: summarise([r for r in recs if r["variant"] == v]) for v in variants if any(r["variant"] == v for r in recs)}
-    shipped = settings()["rag"]["variant"]
-    out = write_result("proposals_open", {
-        "profile": "open", "models": {k: settings()["models"]["profiles"]["open"]["nodes"][k] for k in ("writer", "critic", "judge")},
-        "jobs_per_persona": n, "variants": variants, "complete": all(log.has(f"{v}|{r['job']['job_id']}") for v in variants for r in rows),
+    out = write_result(name, {
+        **metadata,
+        "jobs_per_persona": n, "variants": variants, "stopped": stopped, "complete": all(log.has(k) for k in keys),
         "by_variant": by_v,
         "by_persona": {p: summarise([r for r in recs if r["persona"] == p and r["variant"] == shipped]) for p in ("ai_ml", "fullstack", "data_analyst")},
         "by_job_type": {t: summarise([r for r in recs if r["job_type"] == t and r["variant"] == shipped]) for t in sorted(BID_TYPES)},

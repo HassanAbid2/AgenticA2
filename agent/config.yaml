@@ -1,5 +1,5 @@
 # GigBid runtime configuration. Rules, budgets, thresholds and models live here, never in code.
-# Env vars override: MODEL_PROFILE, MARKETPLACE_MODE, RAG_VARIANT.
+# Env vars override: MODEL_PROFILE, OLLAMA_BASE_URL, OLLAMA_MODEL, MARKETPLACE_MODE, RAG_VARIANT.
 
 marketplace:
   mode: gigsim                # gigsim | upwork_live   (R1: one port, two adapters)
@@ -55,11 +55,11 @@ models:
       base_url: http://ollama:11434/v1
       api_key_env: OLLAMA_API_KEY
       nodes:
-        default: qwen3:4b
-        writer: qwen3:8b
-        critic: qwen3:8b
-        liaison: qwen3:8b
-      fallback: qwen3:4b
+        default: qwen2.5:1.5b
+      fallback: qwen2.5:1.5b
+      max_output_tokens: 512   # cap CPU generation below the graph node timeout
+      timeout_s: 110
+      max_retries: 0
     offline:                  # no LLM at all: deterministic node implementations (CI, tests, outages)
       nodes: {}
     paid:                     # optional; only where it beats `open` enough to justify cost

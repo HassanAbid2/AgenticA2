@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import asyncio
 import json
 import math
 import os
@@ -14,6 +15,27 @@ ROOT = Path(__file__).resolve().parents[2]
 RESULTS = ROOT / "evals" / "results"
 RAW = RESULTS / "raw"
 PERSONAS = ("ai_ml", "fullstack", "data_analyst")
+
+
+def model_run(name: str) -> tuple[str, dict]:
+    """Keep new profiles and local model changes out of historical evaluation logs."""
+    import re
+
+    from agent.config import settings
+
+    models = settings()["models"]
+    profile = models["profile"]
+    config = models["profiles"][profile]
+    nodes = config["nodes"]
+    names = sorted(set(nodes.values()) | ({config["fallback"]} if config.get("fallback") else set()))
+    suffix = re.sub(r"[^a-zA-Z0-9._-]+", "-", "_".join([profile, *names]))
+    return (name if profile == "open" else f"{name.removesuffix('_open')}_{suffix}",
+            {"profile": profile, "models": nodes, "model_names": names})
+
+
+def eval_deadline() -> float | None:
+    seconds = os.getenv("GIGBID_EVAL_SECONDS")
+    return asyncio.get_running_loop().time() + float(seconds) if seconds else None
 
 
 def load_dev(persona: str | None = None, split: str = "dev") -> list[dict]:
@@ -129,3 +151,14 @@ class QuotaExhausted(Exception):
 def is_quota_error(e: BaseException) -> bool:
     s = str(e).lower()
     return "per day" in s or "tokens per day" in s or "requests per day" in s or "(tpd)" in s or "(rpd)" in s
+
+
+def model_stop(e: Exception) -> str | None:
+    from langgraph.errors import NodeTimeoutError
+    from openai import APIConnectionError, APIStatusError
+
+    if is_quota_error(e) or "rate limit" in str(e).lower():
+        return "provider_quota"
+    if isinstance(e, (NodeTimeoutError, APIConnectionError, APIStatusError)):
+        return type(e).__name__
+    return None

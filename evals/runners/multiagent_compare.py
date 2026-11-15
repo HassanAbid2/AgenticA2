@@ -26,7 +26,17 @@ for k, v in {"MCP_INPROCESS": "1", "GIGSIM_INPROCESS": "1", "GIGSIM_ERROR_RATE":
              "CHECKPOINT_DB": "var/macompare_cp.db", "MEMORY_DB": "var/macompare_mem.db"}.items():
     os.environ.setdefault(k, v)
 
-from evals.runners.common import RawLog, is_quota_error, load_dev, mean, pct, sample, write_result  # noqa: E402
+from evals.runners.common import (  # noqa: E402
+    RawLog,
+    eval_deadline,
+    is_quota_error,
+    load_dev,
+    mean,
+    model_run,
+    pct,
+    sample,
+    write_result,
+)
 
 
 def parse_final(text: str) -> dict:
@@ -144,33 +154,43 @@ async def score_one(system: str, row: dict) -> dict:
 
 async def main(n: int):
     rows = sample(load_dev(), n)
-    log = RawLog("multiagent_compare")
+    name, _ = model_run("multiagent_compare")
+    log = RawLog(name)
+    deadline = eval_deadline()
     for row in rows:
         for system in ("graph", "react", "supervisor"):
             key = f"{system}|{row['job']['job_id']}"
             if log.has(key):
                 continue
             try:
-                log.add(key, await score_one(system, row))
+                async with asyncio.timeout_at(deadline):
+                    result = await score_one(system, row)
+                log.add(key, result)
                 print("done", key, flush=True)
+            except TimeoutError:
+                return report(rows, log, "time_limit")
             except Exception as e:  # noqa: BLE001
                 if is_quota_error(e) or "rate limit" in str(e).lower():
                     print("quota reached; progress saved")
-                    return report(rows, log)
+                    return report(rows, log, "provider_quota")
                 log.add(key, {"system": system, "persona": row["persona"], "job_type": row["gold"]["job_type"], "error": str(e)[:300],
-                              "gold_bid": row["gold"]["bid"], "bid": False, "correct": False, "latency_s": 0, "tokens": 0, "cost_usd": 0})
+                              "gold_bid": row["gold"]["bid"]})
+                print("failed", key, type(e).__name__, flush=True)
     report(rows, log)
 
 
-def report(rows, log):
-    recs = log.values()
+def report(rows, log, stopped=None):
+    name, metadata = model_run("multiagent_compare")
+    keys = {f"{s}|{r['job']['job_id']}" for r in rows for s in ("graph", "react", "supervisor")}
+    recs = [r for r in log.values() if r["key"] in keys]
     res = {}
     for s in ("react", "supervisor", "graph"):
-        rs = [r for r in recs if r["system"] == s]
-        if not rs:
+        attempted = [r for r in recs if r["system"] == s]
+        if not attempted:
             continue
+        rs = [r for r in attempted if "error" not in r]
         bids = [r for r in rs if "n_claims" in r]
-        res[s] = {"n": len(rs), "errors": sum("error" in r for r in rs), "bid_or_skip_accuracy": mean([r["correct"] for r in rs]),
+        res[s] = {"n": len(rs), "errors": len(attempted) - len(rs), "bid_or_skip_accuracy": mean([r["correct"] for r in rs]),
                   "unsupported_claims_per_proposal": mean([r["unsupported_claims"] for r in bids]),
                   "unsupported_rate": mean([r["unsupported_rate"] for r in bids]),
                   "compliance_violations_left": mean([r["violations_left"] for r in bids]),
@@ -178,8 +198,8 @@ def report(rows, log):
                   "gigsim_reply_rate": mean([r["replied"] for r in rs if "replied" in r]),
                   "mean_tokens": mean([r["tokens"] for r in rs]), "p95_latency_s": pct([r["latency_s"] for r in rs], .95),
                   "accuracy_by_job_type": {t: mean([r["correct"] for r in rs if r["job_type"] == t]) for t in sorted({r["job_type"] for r in rs})}}
-    out = write_result("multiagent_compare", {"jobs": len(rows), "complete": all(log.has(f"{s}|{r['job']['job_id']}") for r in rows
-                                                                                for s in ("graph", "react", "supervisor")), "results": res})
+    out = write_result(name, {**metadata, "jobs": len(rows), "stopped": stopped,
+                              "complete": len(recs) == len(keys) and not any("error" in r for r in recs), "results": res})
     print(out, json.dumps(res, indent=1)[:1500])
 
 
