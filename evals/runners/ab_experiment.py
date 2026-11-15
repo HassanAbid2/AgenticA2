@@ -4,14 +4,14 @@
 
 Arms (prompt variants, config `proposal_strategies`): A = evidence_first, B = question_first. Every
 proposal the eval pipeline drafts is assigned an arm by a stable hash of the job id (50/50) and submitted
-to GigSim, whose simulated clients decide replies. This script pools those proposals (no extra LLM
-cost) and reports, per arm: reply rate with a two-proportion z-test, mean simulated reply probability
-(GigSim's p_reply, a lower-variance outcome) with Welch's t-test, and the sample size per arm needed
-for 80% power at the observed reply-rate difference.
+to GigSim, whose simulated clients decide replies. This script reports reply rates, Fisher's exact
+test for the small sample, and mean simulated reply probability by arm. Use one profile and retrieval
+variant so there is one observation per job and the prompt is the only intended treatment.
 """
 
 from __future__ import annotations
 
+import argparse
 import json
 import math
 from statistics import fmean, pvariance
@@ -52,13 +52,20 @@ def n_for_power(p1, p2, alpha_z=1.96, power_z=0.8416):
     return math.ceil(((alpha_z * math.sqrt(2 * pbar * (1 - pbar)) + power_z * math.sqrt(p1 * (1 - p1) + p2 * (1 - p2))) ** 2) / (p1 - p2) ** 2)
 
 
-def main():
-    recs = []
-    for name in ("proposals_open", "multiagent_compare"):
-        path = RAW / f"{name}.jsonl"
-        if path.exists():
-            recs += [json.loads(x) for x in path.read_text(encoding="utf-8").splitlines() if x.strip()]
-    sent = [r for r in recs if r.get("outcome") and r.get("strategy")]
+def fisher_exact(x1, n1, x2, n2):
+    if not (n1 and n2):
+        return None
+    total = x1 + x2
+    weight = lambda x: math.comb(n1, x) * math.comb(n2, total - x)  # noqa: E731
+    return round(sum(weight(x) for x in range(max(0, total - n2), min(n1, total) + 1)
+                     if weight(x) <= weight(x1)) / math.comb(n1 + n2, total), 4)
+
+
+def main(variant):
+    recs = [json.loads(x) for x in (RAW / "proposals_open.jsonl").read_text(encoding="utf-8").splitlines() if x.strip()]
+    sent = {r["key"].split("|", 1)[1]: r for r in recs if r["variant"] == variant and r.get("outcome")
+            and r.get("strategy") and "template" not in r.get("draft_sources", [])}
+    sent = list(sent.values())
     arms = {}
     for arm in ("evidence_first", "question_first"):
         rs = [r for r in sent if r["strategy"] == arm]
@@ -68,16 +75,20 @@ def main():
                      "judge_mean": round(fmean([r["judge"]["overall"] for r in rs if r.get("judge")]), 3) if any(r.get("judge") for r in rs) else None}
     a, b = arms["evidence_first"], arms["question_first"]
     z, pz = two_prop_z(a["replies"], a["n"], b["replies"], b["n"])
+    pf = fisher_exact(a["replies"], a["n"], b["replies"], b["n"])
     t, pt = welch([r["outcome"].get("p_reply", 0) for r in sent if r["strategy"] == "evidence_first"],
                   [r["outcome"].get("p_reply", 0) for r in sent if r["strategy"] == "question_first"])
     need = n_for_power(a["reply_rate"] or 0, b["reply_rate"] or 0) if a["n"] and b["n"] else None
-    res = {"arms": arms, "reply_rate_two_proportion_z": {"z": z, "p_value": pz},
+    res = {"profile": "open", "variant": variant, "n": len(sent), "arms": arms,
+           "reply_rate_fisher_exact": {"p_value": pf}, "reply_rate_two_proportion_z": {"z": z, "p_value": pz},
            "p_reply_welch": {"t": t, "p_value": pt},
            "n_per_arm_for_80pct_power_at_observed_difference": need,
-           "conclusion": ("significant at 0.05" if (pz is not None and pz < 0.05) else
-                          "not significant at 0.05; the sample is far below the size the power analysis asks for")}
+           "conclusion": ("pending: both arms need submissions" if pf is None else "significant at 0.05" if pf < 0.05 else
+                          "not significant at 0.05; this small pilot cannot establish which prompt performs better")}
     print(write_result("ab_experiment", res), json.dumps(res, indent=1))
 
 
 if __name__ == "__main__":
-    main()
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--variant", default="v0")
+    main(ap.parse_args().variant)

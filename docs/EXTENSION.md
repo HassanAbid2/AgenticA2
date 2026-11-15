@@ -16,13 +16,10 @@ clients with a significance test on reply rate.
   so the writer is told which arm has been winning per job category once there is enough data.
 * Arms are prompt files plus one config list: adding a third arm is a new `.md` file and a config entry.
 
-**Measurement.** `python -m evals.runners.ab_experiment` pools every proposal the evals submitted to GigSim
-(no extra LLM cost) and reports, per arm: reply rate with a two-proportion z-test; mean simulated reply
-probability (GigSim's `p_reply`, lower variance) with Welch's t-test; and the sample size per arm needed for
-80% power at the observed difference. Results: `evals/results/ab_experiment.json`, summarised in
-`docs/RESULTS.md`.
+**Measurement.** `python -m evals.runners.ab_experiment --variant v0` reuses submitted Groq `open`
+proposals with one entry per job. It reports a two-sided Fisher exact test on reply rates and the mean
+simulated reply probability per arm. See [`docs/RESULTS.md`](RESULTS.md) for the pilot results.
 
-**Honest limits.** On the Groq free tier the eval budget allows a few dozen proposals, far below the
-hundreds per arm the power analysis asks for; the result is therefore reported as an effect estimate with
-its p-value and the required sample size, not as a winner. GigSim's heuristic clients reward specific
-opening lines and a question, which both arms include, so the expected effect is small.
+**Limits.** The pilot conditions on submitting a draft and uses GigSim clients. Its small sample cannot
+establish a winner or predict how real clients will respond. A follow-up should keep the model and retrieval
+variant fixed, count all jobs assigned to each arm, and collect more outcomes.

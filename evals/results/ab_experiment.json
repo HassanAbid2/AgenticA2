@@ -1,0 +1,36 @@
+{
+ "generated_at": "2026-11-15T22:08:21",
+ "git_commit": "8d4132f",
+ "profile": "open",
+ "variant": "v0",
+ "n": 12,
+ "arms": {
+  "evidence_first": {
+   "n": 7,
+   "replies": 3,
+   "reply_rate": 0.4286,
+   "mean_p_reply": 0.3023,
+   "judge_mean": 8.0
+  },
+  "question_first": {
+   "n": 5,
+   "replies": 1,
+   "reply_rate": 0.2,
+   "mean_p_reply": 0.306,
+   "judge_mean": 6.2
+  }
+ },
+ "reply_rate_fisher_exact": {
+  "p_value": 0.5758
+ },
+ "reply_rate_two_proportion_z": {
+  "z": 0.828,
+  "p_value": 0.4076
+ },
+ "p_reply_welch": {
+  "t": -0.061,
+  "p_value": 0.9512
+ },
+ "n_per_arm_for_80pct_power_at_observed_difference": 64,
+ "conclusion": "not significant at 0.05; this small pilot cannot establish which prompt performs better"
+}
