@@ -1,0 +1,94 @@
+{
+ "generated_at": "2026-11-15T18:41:39",
+ "git_commit": "08b287c",
+ "label": "after",
+ "gigsim_policy": "2026-11-02",
+ "jobs": 9,
+ "accepted_rate": 1.0,
+ "preview_warned_rate": 0.0,
+ "connects_preview_matches_new_price": true,
+ "fix_commit": "08b287c",
+ "fix_diffstat": "08b287c Absorb 2 Nov 2026 GigSim policy update: AI-disclosure rule P8 via policy pack (config only)\n\n agent/config.yaml                        |  2 +-\n data/policy_pack/marketplace_policy.md   |  3 +++\n data/policy_pack/marketplace_policy.yaml |  5 +++--\n evals/results/change_request_before.json | 14 +++++++-------\n 4 files changed, 14 insertions(+), 10 deletions(-)\n",
+ "records": [
+  {
+   "job_id": "j-ai-0018",
+   "reached_approval": true,
+   "preview_policy_issues": [],
+   "preview_connects": 27,
+   "connects_under_old_policy": 16,
+   "connects_under_new_policy": 27,
+   "accepted": true,
+   "status": "submitted",
+   "reason": "user asked to bid anyway",
+   "connects_spent": 27
+  },
+  {
+   "job_id": "j-ai-0042",
+   "reached_approval": true,
+   "preview_policy_issues": [],
+   "preview_connects": 18,
+   "connects_under_old_policy": 16,
+   "connects_under_new_policy": 18,
+   "accepted": true,
+   "status": "submitted",
+   "reason": "user asked to bid anyway",
+   "connects_spent": 18
+  },
+  {
+   "job_id": "j-ai-0014",
+   "reached_approval": false,
+   "status": "needs_attention"
+  },
+  {
+   "job_id": "j-fu-0242",
+   "reached_approval": false,
+   "status": "needs_attention"
+  },
+  {
+   "job_id": "j-fu-0235",
+   "reached_approval": false,
+   "status": "needs_attention"
+  },
+  {
+   "job_id": "j-fu-0214",
+   "reached_approval": false,
+   "status": "needs_attention"
+  },
+  {
+   "job_id": "j-da-0446",
+   "reached_approval": true,
+   "preview_policy_issues": [],
+   "preview_connects": 21,
+   "connects_under_old_policy": 12,
+   "connects_under_new_policy": 21,
+   "accepted": true,
+   "status": "submitted",
+   "reason": "user asked to bid anyway",
+   "connects_spent": 21
+  },
+  {
+   "job_id": "j-da-0435",
+   "reached_approval": true,
+   "preview_policy_issues": [],
+   "preview_connects": 10,
+   "connects_under_old_policy": 8,
+   "connects_under_new_policy": 10,
+   "accepted": true,
+   "status": "submitted",
+   "reason": "user asked to bid anyway",
+   "connects_spent": 10
+  },
+  {
+   "job_id": "j-da-0412",
+   "reached_approval": true,
+   "preview_policy_issues": [],
+   "preview_connects": 15,
+   "connects_under_old_policy": 8,
+   "connects_under_new_policy": 15,
+   "accepted": true,
+   "status": "submitted",
+   "reason": "user asked to bid anyway",
+   "connects_spent": 15
+  }
+ ]
+}

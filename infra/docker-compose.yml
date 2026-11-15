@@ -56,7 +56,7 @@ services:
   gigsim:
     build: { context: .., dockerfile: infra/docker/gigsim.Dockerfile }
     environment:
-      GIGSIM_POLICY_VERSION: ${GIGSIM_POLICY_VERSION:-2026-10}
+      GIGSIM_POLICY_VERSION: ${GIGSIM_POLICY_VERSION:-2026-11-02}
       GIGSIM_DATASET: ${GIGSIM_DATASET:-dev}
     restart: unless-stopped
 
