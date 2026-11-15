@@ -4,7 +4,7 @@
 - [R&D report PDF](report/GigBid_RD_Report.pdf) (attach this file in Classroom)
 - [Public demo video download](https://raw.githubusercontent.com/HassanAbid2/AgenticA2/bc9a801233910b8876eaec52cd683a96b682d446/docs/video/gigbid-demo.webm) and [local WebM](video/gigbid-demo.webm)
 - [Playwright end-to-end test report](test-reports/playwright.html) (download and open locally)
-- [Technical write-up draft](WRITEUP.md)
+- [Technical write-up](WRITEUP.md)
 - [Portfolio MCP installation and configuration](../mcp_servers/portfolio/README.md)
 - [Measured results and remaining evaluation gaps](RESULTS.md)
 
@@ -21,7 +21,7 @@ recording to a video host for streaming.
 | Repository and required paths | Public GitHub repository. The local source export uses the `gigbid/` root. |
 | PDF report and demo | Report attached separately. The repository also contains the Playwright report, 30-second GIF, both graphs and MCP Inspector screenshots. |
 | Installable Portfolio MCP | The public Git install via `uvx` initialized over stdio and returned portfolio evidence. |
-| Technical write-up | The draft is within the 1,200–1,800 word range. The brief requires publication on LinkedIn, Medium or a personal blog. Supply the published URL. |
+| Technical write-up | The public repository copy meets the brief's length requirement. The required LinkedIn, Medium, or personal blog URL is still outstanding. |
 | Public app and reviewer login | Pending. Deploy with the `open` profile in GigSim mode. Share credentials only in a private Classroom comment. See the [runbook](RUNBOOK.md). |
 | Public trace links | Pending for the skipped scam, approved proposal, Critic loop and crash-and-resume examples. |
 | Evaluation evidence | Partial. The tool study lacks the remaining 19 tasks for GigBid's tool design. The hosted model comparison, shipped proposal metrics, injection before/after study and 50-job orchestration comparison remain incomplete. A single-agent grounded-draft example is also unverified. |

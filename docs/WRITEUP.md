@@ -1,130 +1,45 @@
-# The least trustworthy part of my AI agent was the AI
+# What GigBid taught me about trusting AI agents
 
-*Draft for LinkedIn / Medium (about 1,450 words). Every number links to a results file in the GigBid repo.*
+GigBid scans freelance jobs, flags scams, recommends bids, and writes proposals from portfolio evidence. A person reviews every proposal before it goes to the marketplace. I expected the hardest part to be getting the agents to cooperate. The bigger challenge was deciding when a model's answer deserved to influence a bid. Four experiments changed where I put those checks, from the evidence shown alongside a proposal to the thresholds that decide which jobs reach the writer.
 
-I spent the last few weeks building GigBid, a team of nine AI agents that does the tedious half of
-freelancing: it scans job feeds, flags scams, decides whether a job is worth the paid "Connects" a bid costs,
-and drafts a proposal in which every claim points at real evidence from my portfolio. A human approves
-everything before it leaves the system. It runs on open-weight models through Groq's free tier, which turned
-out to matter: with 200,000 tokens a day for the big model, every experiment had to earn its tokens.
+## Citations need verification
 
-I expected the hard part to be the agents. It wasn't. The most surprising thing my experiments showed is
-that, again and again, the language model was the component I could trust least, and the parts that made
-the system good were boring, deterministic and measurable. Here are four results that changed how I build
-agents.
+In 12 baseline proposals generated with Groq, the verifier flagged **30.6% of experience claims** before review and **0% after filtering**. The writer already had instructions to cite every experience claim. Some citations pointed to real projects while the sentence combined details from different projects or turned a general description into a named tool. A valid citation made the sentence look more credible even when its evidence supported only part of it. [Proposal evaluation](../evals/results/proposals_open.json)
 
-## 1. A third of the experience claims were not supported, even when citations were mandatory
+The verifier now checks each claim against the closest passage of the cited evidence and looks for support for its numbers and named tools. This lets me distinguish a link that opens from evidence that backs the claim. It also gives the reviewer something concrete to inspect in the proposal studio. If a claim has to be removed, the person reviewing the proposal can see what changed before deciding whether the letter still answers the job post.
 
-The writer's prompt is strict: every sentence that claims experience must cite a numbered evidence item, and
-must not claim anything the evidence doesn't state. I then ran every draft through a claim verifier before a
-critic agent saw it. The verifier splits the letter into claims, finds the closest passage of the cited
-evidence, and requires every number and named tool in the claim to appear in that evidence.
+The rejects also exposed errors in the verifier. A statement about work delivered in 2022 failed because the date appeared in case study metadata. Checking the rejected claims revealed that the verifier had overlooked valid evidence. For future evaluations, I want to track both unsupported claims that survive and supported claims that get removed. False positives can erase the specific experience that makes a proposal worth reading.
 
-On the first 12 live drafts, **30.6% of experience claims failed verification** (`proposals_open.json`).
-They weren't wild hallucinations. They were the plausible kind: the model merged two different projects into
-one impressive sentence, or turned "a self-hosted vector database written in Rust" into a named product, or
-quoted a result from one project as if it belonged to another. With citations attached, they looked
-trustworthy, which is exactly why they were dangerous. After verification removed them, the rate in what
-reached me for approval was 0%.
+## Scam flags need a stronger threshold
 
-The twist: some of those removals were wrong. A claim like "In 2022 I delivered..." failed because the year
-lives in the case study's metadata, not its text. The checker needed checking too. I only found it by
-reading the removed claims one by one, which is now a step in my evaluation, not an afterthought.
+The Risk Assessor uses signals from the job post and the client's history. In an early version, I accepted the model's additional risk flags at face value. On the same **30 jobs**, scam precision dropped from **0.75 to 0.38**. Recall was already **1.0** with the rules on that sample. The extra flags made legitimate jobs look suspicious without finding additional scams. [Trusted-flag run](../evals/results/decisions_dev_open_v1_trusted_llm_flags.json) · [Gated run](../evals/results/decisions_dev_open.json)
 
-## 2. Trusting a small model's judgement halved scam precision
+The mistakes mattered because a false alarm can keep a freelancer from seeing a suitable job. The model read a low budget as suspicious and treated an ordinary request for a call as a sign of off-platform contact. GigBid now lets the model add flags when its scam probability reaches **0.7**, and the combined score determines the decision. Precision returned to **0.75** on that sample. For the next threshold change, I would review the jobs that switched from ordinary to suspicious. Those examples show which model flags affect the freelancer's inbox and whether the gate is worth keeping at its current setting.
 
-Scams are a real cost for freelancers: "build the full app as a free test", "let's move to Telegram and I'll
-pay in USDT". GigBid's Risk Assessor combines rules (pattern signals plus the client's history: payment
-verified, hires, ratings) with a small LLM classifier for the subtle cases.
+On those same 30 jobs, the gated hosted model and the rules alone both scored **0.909 bid-or-skip F1**. I kept the larger dev evaluation separate because it used a different sample size. The paired result supports using model calls selectively. It also gives me a baseline to revisit when I change the risk threshold or try a stronger analyst. [Paired decision evaluation](../evals/results/decisions_dev_open.json)
 
-My first version simply added any red flags the model named. On the same 30 jobs, scam **precision dropped
-from 0.75 with rules alone to 0.38** with the model's flags trusted (`decisions_dev_open_v1_trusted_llm_flags.json`).
-The model was "helpfully" calling ordinary jobs scams: a low budget became "suspicious", a mention of a call
-became "off-platform contact". Recall was already 1.0 from the rules, so the model added false alarms and
-nothing else.
+The same evaluation helped decide where to spend model calls. A vague request such as “make our site faster” can benefit from a model that extracts concrete requirements. Pricing and bid thresholds already receive inputs that can be checked and compared directly. Keeping those decisions explicit makes it possible to explain a skip and rerun the decision after changing a threshold, with the rest of the pipeline held fixed.
 
-The fix was a confidence gate: the model may add flags only when its own scam probability is at least 0.7,
-and it never declares "scam" by itself; the combined score does. Precision went back to 0.75. More
-uncomfortable was the overall result on bid-or-skip decisions: the LLM profile **matched but did not beat**
-the deterministic rules on the same jobs (F1 0.909 either way), while costing about 2,200 tokens per job
-(`decisions_dev_open.json`). On 600 dev jobs the rule-based path alone scores F1 0.94 with 100% scam recall.
+## Each checker needs the evidence for its decision
 
-The language model isn't useless here: on vague posts ("we're not technical, we need our website to load
-faster"), turning a client's words into capabilities is a language problem, and that's where the LLM analyst
-is worth its tokens. But "is this a scam?" turned out to be a question of evidence (payment verification,
-zero hires, the word "USDT"), and rules answer it better and cheaper.
+I gave an early compliance model the proposal text and asked it to identify invented experience. It removed a supported claim about reducing support ticket response time by 38%. From its input, it could see a statistic and no evidence for it. The portfolio was available elsewhere in the pipeline, so the compliance step had been asked to make a decision with a real input missing. [R&D report](report/GigBid_RD_Report.pdf)
 
-## 3. A compliance model that can't see the evidence deletes the truth
+I assigned factual checks to the verifier, which receives portfolio evidence. The Compliance Guard focuses on what it can see in the letter, including contact details, requests to move payment off the platform, and guarantees. This division makes failures easier to diagnose. A missing result now points back to the evidence selected and the way the verifier read it. An off-platform payment suggestion points to the policy checks. The review in the studio still gives the freelancer the final decision.
 
-The Compliance Guard enforces the platform's policy: no contact details, no off-platform payment, no
-guarantees, no invented experience. The first three are regex-friendly; "invented experience" is not, so I
-gave a small model the draft and asked it to flag violations.
+## Better retrieval changed which jobs got bids
 
-It deleted true claims. Shown "I built a support-ticket assistant that cut response time by 38%", with no
-access to my portfolio, it reasonably flagged an unverifiable boast as possible fabrication, and the guard
-removed the best sentence in the letter. The model wasn't wrong given what it could see; the design was.
-Fabrication is a question about evidence, so only the component that holds the evidence (the verifier)
-should judge it. The compliance model now only looks for what text alone can show: "ping me on the green
-app", "we can settle payment privately", "I promise first-page rankings".
+I compared retrieval variants on a synthetic dev corpus of **600 labelled jobs**. Boosting projects mentioned in proposals that won or received replies reduced Recall@5 from **0.776 to 0.694**. It pushed frequently cited projects toward the top of searches, including jobs that called for different work. Grouping chunks by project also hurt recall. Grouping reached **0.686 Recall@5**. A project with several mediocre matches could outrank one case study with a precise answer. The scores made me check whether the top evidence answered the requirement before using past outcomes to promote it. [Retrieval results](../evals/results/rag_variants.json)
 
-## 4. Learning from winning proposals made retrieval worse
+Splitting a job into requirements, adding BM25 for exact terms such as Celery and dbt, and using a skill graph helped. With extra context attached to each chunk, the best-ranked combination reached **0.880 Recall@5** and **0.862 nDCG@10**. My stated hypothesis for requirement splitting plus hybrid retrieval was a five-point recall gain on jobs with four or more requirements. The measured gain was **4.8 points**, just below the target. [Retrieval results](../evals/results/rag_variants.json)
 
-Retrieval decides which evidence the writer sees. I built ten variants on a deliberately messy synthetic
-corpus: each project described three ways, skills implied rather than named, code that reveals what a terse
-README hides. Then I measured all ten on 600 labelled jobs (`rag_variants.json`).
+The fit step uses similarity scores to decide whether a requirement has strong, partial, or missing evidence. Adding context changed the scores, so the existing thresholds classified some jobs differently. With the rest of the system held fixed, the best-ranked retrieval variant reduced bid-or-skip F1 from **0.941 to 0.931**. I shipped the variant without the extra chunk context. It reached **0.848 nDCG@10** and kept the stronger downstream decision score. If I revisit the context variant, I would recalibrate the fit thresholds and evaluate it against a separate labelled set. [Retrieval decision record](adr/0003-rag-variant-choice.md)
 
-The intuitive idea, boosting evidence from past proposals that won or got replies, was the worst variant:
-Recall@5 fell from 0.776 for plain dense retrieval to 0.694. A handful of popular projects appear in many
-winning proposals, so the boost pushed them up regardless of what the job asked for. Grouping a project's
-chunks together (multi-vector) also hurt (0.686).
+## What the smaller pilots can tell us
 
-What helped was unglamorous. Split the job into its individual requirements and retrieve for each one. Add
-BM25, because embeddings blur exact tool names like "Celery" or "dbt". Add a small skill graph that knows
-which projects used which tools for which industries. Prefix chunks with a context line built from
-metadata. Together: Recall@5 0.880, nDCG@10 0.862, under 1 second p95, no LLM call per query. My
-pre-registered hypothesis (requirement decomposition plus hybrid retrieval would add at least 5 points on
-multi-requirement jobs) missed by a hair: +4.8. I'm reporting it as not supported.
+The simulator measures how proposals performed against synthetic clients. In the Groq pilot, the evidence-first opening received **3 replies from 7 submissions** and the question-first opening received **1 from 5**. Fisher's exact test gave **p = 0.576**. The counts are too small to choose an opening confidently, and the sample covers submitted proposals in GigSim. A larger comparison should use the same selection rules for both openings and track which jobs produce submissions. [A/B results](../evals/results/ab_experiment.json)
 
-And then I didn't ship the winner. The agent that scores fit turns retrieval similarity into "strong",
-"partial" or "no" evidence for each requirement, so retrieval quietly drives the bid-or-skip decision too.
-With everything else fixed, swapping in the best-ranked pipeline lowered decision F1 from 0.941 to 0.931,
-because the context lines shift similarity scores and the thresholds had been tuned on the plain index.
-The runner-up (nDCG 0.848, without context lines) ships. Better retrieval by its own metric made the
-product worse, and only an end-to-end run with one variable changed could show it.
+The judge pilot exposed a separate problem. Qwen2.5 0.5B attempted **30 assistant-labelled items**, returned **good** for every valid verdict, and abstained on three malformed outputs. Cohen's kappa was **0.071**. The verdict distribution explains why I would avoid using this judge to rank the openings. A useful follow-up would compare a stronger judge against independent labels and inspect the disagreements alongside the aggregate score. [Judge calibration](../evals/results/judge_calibration_local_qwen2.5-0.5b.json)
 
-## What I'd tell someone building an agent system
+The reply counts and judge scores answer different questions. Reply counts reflect how the simulator responded to submissions. A judge can flag a weak claim before submission, including on jobs that may never receive a reply. I would keep both measurements visible in the next trial.
 
-**Give the model the jobs where language is the bottleneck.** In GigBid that's writing the proposal,
-turning a vague post into requirements, and replying to clients. Scouting, fit scoring, pricing and the
-bid decision run with no LLM at all, which is also why a skipped scam costs almost nothing.
-
-**Wrap every model with a check that can be measured on its own.** The verifier, the compliance rules and
-the decision thresholds each have their own evaluation on the same items. That's how the scam-precision drop
-showed up as a number instead of a vague feeling that "the risk agent is a bit jumpy".
-
-**Measure components in isolation, on identical inputs.** The comparison that changed my design was the
-same 30 jobs run twice, once with model flags trusted and once with them gated. End-to-end metrics would
-have hidden it; a reply rate on 12 proposals can't tell you which of nine agents is misbehaving.
-
-**Read the rejects.** The verifier's false positives (dates in metadata) and the compliance model's
-deletions were both found by reading what the system threw away, not what it kept.
-
-## Limits
-
-The corpus and the clients are synthetic: my simulator's clients reward specific results, a must-have skill
-and a question, so reply rates measure fit to that model rather than to real people. LLM experiments ran on
-small samples because of the free tier, and each sample size is stated in the results files. The code,
-the data generator, the evaluation runners and every number in this post are in the repository.
-
-The Groq V0 pilot also let me check the two proposal openings. The evidence-first draft received 3 replies
-from 7 submissions; the question-first draft received 1 from 5. Fisher's exact test gave p = 0.576. Those
-small counts are inconclusive and apply only to the submitted proposals in GigSim.
-
-The CPU pilot gave me a separate reason to be cautious about judge scores. Qwen2.5 0.5B attempted all
-30 assistant-labelled items, called every valid response `good`, and abstained on three malformed
-responses; Cohen's kappa was 0.071. That model needs more than a structured prompt before I would use
-it to score proposals.
-
-*GigBid: LangGraph, MCP, FastAPI, React; open-weight models (gpt-oss-120b / 20b) on Groq; Qdrant, BM25 and
-a skill graph for retrieval. See the [repository](https://github.com/HassanAbid2/AgenticA2) and the
-[measured results](RESULTS.md).*
+These experiments left GigBid with specific checks at the points where mistakes cost the freelancer time or money. The writer can propose language, the verifier checks whether the portfolio supports it, and the freelancer decides whether to spend Connects on the job. The next experiment I would prioritize is recalibrating fit after changing retrieval, because that choice controls which jobs get far enough for proposal quality to matter. [Full results](RESULTS.md)
