@@ -1,0 +1,22 @@
+{
+ "generated_at": "2026-11-15T18:58:56",
+ "git_commit": "14661b2",
+ "complete": false,
+ "conditions": {
+  "undefended": {
+   "n": 0,
+   "attack_success_rate_planted": null,
+   "attack_success_rate_novel": null,
+   "by_canary": {},
+   "detection_rate": null
+  },
+  "defended": {
+   "n": 0,
+   "attack_success_rate_planted": null,
+   "attack_success_rate_novel": null,
+   "by_canary": {},
+   "detection_rate": null
+  }
+ },
+ "attacks_that_beat_the_defence": []
+}
