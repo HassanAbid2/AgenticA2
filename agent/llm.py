@@ -238,7 +238,8 @@ async def structured(node: str, prompt: str, schema: type[BaseModel], config=Non
     last = None
     for attempt in range(2):
         try:
-            res = await llm.ainvoke(msgs if attempt == 0 else msgs + [("user", f"Your last reply was invalid ({last}). Reply with JSON only.")], config=cfg)
+            retry = [("user", render("json_retry", error=last)[1])] if attempt else []
+            res = await llm.ainvoke(msgs + retry, config=cfg)
             return schema.model_validate(_json_from(res.content))
         except Exception as e:  # noqa: BLE001
             last = f"{type(e).__name__}: {str(e)[:200]}"
