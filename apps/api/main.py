@@ -19,7 +19,7 @@ from fastapi.staticfiles import StaticFiles
 from agent.config import settings
 from apps.api.auth import token_store, users
 from apps.api.auth.users import current_user
-from apps.api.routers import analytics, approvals, jobs, messages, runs
+from apps.api.routers import analytics, approvals, jobs, messages, proposals, runs
 from apps.api.routers import settings as settings_router
 from apps.api.schemas import HealthOut
 from apps.api.streaming import router as stream_router
@@ -78,7 +78,7 @@ if os.getenv("GIGSIM_INPROCESS") == "1" and os.getenv("APP_ENV", "development") 
 
     app.mount("/gigsim", _gigsim)  # dev only: same simulator object the in-process adapter talks to
 
-for r in (users.router, token_store.router, settings_router.router, jobs.router, approvals.router, messages.router,
+for r in (users.router, token_store.router, settings_router.router, jobs.router, approvals.router, proposals.router, messages.router,
           runs.router, analytics.router, stream_router):
     app.include_router(r)
 

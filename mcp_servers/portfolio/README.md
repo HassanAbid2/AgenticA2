@@ -9,7 +9,7 @@ Read-only. Runs locally. Embeddings and reranking are open models on CPU (no API
 ## Install (one command)
 
 ```bash
-uvx --from "git+https://github.com/<your-github>/gigbid" gigbid-portfolio-mcp
+uvx --python 3.12 --from "git+https://github.com/HassanAbid2/AgenticA2.git@main" gigbid-portfolio-mcp
 ```
 
 ### Claude Desktop / Cursor config
@@ -19,7 +19,7 @@ uvx --from "git+https://github.com/<your-github>/gigbid" gigbid-portfolio-mcp
   "mcpServers": {
     "portfolio": {
       "command": "uvx",
-      "args": ["--from", "git+https://github.com/<your-github>/gigbid", "gigbid-portfolio-mcp"],
+      "args": ["--python", "3.12", "--from", "git+https://github.com/HassanAbid2/AgenticA2.git@main", "gigbid-portfolio-mcp"],
       "env": { "PORTFOLIO_DIR": "/path/to/my-portfolio" }
     }
   }

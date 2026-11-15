@@ -16,6 +16,7 @@ import argparse
 import csv
 import time
 
+from evals.runners.ablation import run as run_ablation
 from evals.runners.common import (
     RESULTS,
     group_mean,
@@ -91,13 +92,7 @@ def main(quick: bool = False):
     on_subset = {s: summarise([x for x in per_job[s] if x["job_id"] in sub_ids]) for s in VARIANTS}
     # ablation: drop one component of the best full-dev pipeline at a time
     best_full = max((s for s in VARIANTS if s not in SLOW), key=lambda s: (results[s]["ndcg@10"], results[s]["recall@5"]))
-    parts = best_full.split("+")
-    ablation = {"pipeline": best_full, "full": {k: results[best_full][k] for k in ("recall@5", "mrr", "ndcg@10")}}
-    for p in parts:
-        spec = "+".join(x for x in parts if x != p) or "v0"
-        per = per_job.get(spec) or run_variant(spec, full, titles)
-        sm = summarise(per)
-        ablation[f"without_{p}"] = {k: sm[k] for k in ("recall@5", "mrr", "ndcg@10")}
+    ablation = run_ablation(best_full, full, titles, per_job)
     v0m = results["v0"]["recall@5_multi_req(>=4)"]
     hyp = results["v1+v2"]["recall@5_multi_req(>=4)"]
     best = max(VARIANTS, key=lambda s: (on_subset[s].get("ndcg@10", 0), on_subset[s].get("recall@5", 0)))

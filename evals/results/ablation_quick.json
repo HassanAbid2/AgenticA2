@@ -1,0 +1,19 @@
+{
+ "generated_at": "2026-11-15T22:56:38",
+ "git_commit": "bc9a801",
+ "n_jobs": 60,
+ "pipeline": "v1+v2",
+ "full": {
+  "recall@5": 0.8549,
+  "mrr": 0.8432,
+  "ndcg@10": 0.8055
+ },
+ "without_v1": {
+  "recall@5": 0.7978,
+  "ndcg@10": 0.8281
+ },
+ "without_v2": {
+  "recall@5": 0.8225,
+  "ndcg@10": 0.7966
+ }
+}

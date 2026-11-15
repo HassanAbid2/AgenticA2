@@ -1,4 +1,4 @@
-"""Approvals (proposal studio + message approvals) and the pipeline board.
+"""Approvals for the proposal studio and client messages.
 
 A decision is persisted first (so a refresh or an API crash never loses it), then the worker resumes
 the interrupted LangGraph thread with Command(resume=decision)."""
@@ -14,17 +14,14 @@ from apps.api.auth.users import current_user
 from apps.api.schemas import (
     ApprovalOut,
     DecisionIn,
-    Pipeline,
-    ProposalCard,
     Queued,
     RegenerateIn,
     RegenerateOut,
 )
-from shared.db import Approval, Job, Proposal, User, session
+from shared.db import Approval, Job, User, session
 from worker.tasks import enqueue
 
 router = APIRouter(prefix="/api", tags=["approvals"])
-COLUMNS = ["drafted", "submitted", "viewed", "replied", "interview", "hired", "lost"]
 
 
 def a_out(a: Approval) -> ApprovalOut:
@@ -96,18 +93,3 @@ async def regenerate_paragraph(aid: int, body: RegenerateIn, u: User = Depends(c
     paras[i] = v.cleaned_text
     return RegenerateOut(text="\n\n".join(paras), paragraph=v.cleaned_text, claims=[c.to_dict() for c in claims],
                          violations=[x.model_dump() for x in v.violations])
-
-
-@router.get("/pipeline", response_model=Pipeline)
-def pipeline(u: User = Depends(current_user)):
-    cols: dict[str, list[ProposalCard]] = {c: [] for c in COLUMNS}
-    with session() as db:
-        jobs = {j.job_id: j for j in db.query(Job).filter_by(user_id=u.id)}
-        pend = {a.thread_id: a.id for a in db.query(Approval).filter_by(user_id=u.id, status="pending")}
-        for p in db.query(Proposal).filter_by(user_id=u.id).order_by(Proposal.updated_at.desc()):
-            col = p.status if p.status in cols else ("lost" if p.status in ("rejected", "blocked") else "drafted")
-            cols[col].append(ProposalCard(id=p.id, job_id=p.job_id, title=jobs[p.job_id].job.get("title", "") if p.job_id in jobs else p.job_id,
-                                          status=p.status, bid_amount=p.bid_amount,
-                                          bid_unit=(jobs[p.job_id].job.get("budget") or {}).get("type", "fixed") if p.job_id in jobs else "fixed", connects_spent=p.connects_spent, category=p.category,
-                                          strategy=p.strategy, updated_at=p.updated_at, approval_id=pend.get(p.thread_id)))
-    return Pipeline(columns=cols)

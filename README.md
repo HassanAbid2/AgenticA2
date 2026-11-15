@@ -7,7 +7,7 @@ proposals in which every claim links to real evidence from your portfolio. You a
 and message before anything leaves the system.**
 
 * **Live demo:** Public deployment requires the student's hosting account. Run locally with `make up` and open `http://localhost:8080`.
-* **Demo video:** [Captioned GigSim walkthrough](docs/video/gigbid-demo.webm). It uses a synthetic persona and the offline profile.
+* **Demo video:** [Captioned GigSim walkthrough](https://raw.githubusercontent.com/HassanAbid2/AgenticA2/bc9a801233910b8876eaec52cd683a96b682d446/docs/video/gigbid-demo.webm). It uses a synthetic persona and the offline profile.
 * **Technical write-up:** [What the experiments showed](docs/WRITEUP.md) · **R&D report:** [PDF](docs/report/GigBid_RD_Report.pdf) · **Portfolio MCP server:** [Install and use](mcp_servers/portfolio/README.md)
 * **Traces:** The run viewer and local Phoenix (`http://localhost:6006`) show local traces. Public trace links for the scam, approved proposal, Critic loop and crash recovery require the hosted stack.
 
@@ -26,8 +26,8 @@ and message before anything leaves the system.**
    counter-offer above your floor, or interview slots from your calendar. These also need your approval.
 
 ## Architecture
-![bid graph](docs/images/bid_graph.mmd) See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for both graphs
-(rendered from code), the MCP surface, the stores and why each agent exists.
+See the [rendered bid and conversation graphs](docs/ARCHITECTURE.md) for the MCP surface, the stores,
+and why each agent exists.
 
 ```
 React + TS (typed client from OpenAPI)  --SSE/REST-->  FastAPI  --Redis-->  Arq worker  -->  LangGraph graphs

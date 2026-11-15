@@ -37,6 +37,7 @@ eval:               ## no-LLM evals: retrieval variants, decisions, smoke gate (
 	MODEL_PROFILE=offline $(PY) -m evals.runners.rag_eval
 	MODEL_PROFILE=offline $(PY) -m evals.runners.decision_eval --profile offline
 	MODEL_PROFILE=offline $(PY) -m evals.runners.smoke --jobs 30
+	MODEL_PROFILE=offline $(PY) -m evals.runners.gigsim_outcomes
 
 eval-llm:           ## LLM evals on Groq (resumable: rerun daily on the free tier until complete)
 	$(PY) -m evals.runners.decision_eval --profile open --n 15

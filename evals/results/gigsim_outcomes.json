@@ -1,0 +1,151 @@
+{
+ "generated_at": "2026-11-15T22:56:31",
+ "git_commit": "bc9a801",
+ "profile": "offline",
+ "variant": "v1+v2+v9",
+ "n_jobs": 6,
+ "n_submitted": 5,
+ "reply_rate": 0.2,
+ "hire_rate": 0.0,
+ "jobs": [
+  {
+   "job_id": "j-ai-0146",
+   "persona": "ai_ml",
+   "status": "awaiting_approval",
+   "submitted": true,
+   "outcome": {
+    "proposal_id": "p-e85b69f4a3",
+    "job_id": "j-ai-0146",
+    "freelancer_id": "fl-ai_ml",
+    "status": "lost",
+    "viewed": true,
+    "replied": false,
+    "interview": false,
+    "hired": false,
+    "intent": "question",
+    "score": 1.4,
+    "p_reply": 0.359,
+    "why": [
+     "-missing must-have scikit-learn",
+     "+must-have pandas",
+     "+concrete result",
+     "+past work",
+     "+asks a question",
+     "+answered screening"
+    ]
+   }
+  },
+  {
+   "job_id": "j-ai-0044",
+   "persona": "ai_ml",
+   "status": "awaiting_approval",
+   "submitted": true,
+   "outcome": {
+    "proposal_id": "p-40f8270ddf",
+    "job_id": "j-ai-0044",
+    "freelancer_id": "fl-ai_ml",
+    "status": "lost",
+    "viewed": true,
+    "replied": false,
+    "interview": false,
+    "hired": false,
+    "intent": "question",
+    "score": 2.2,
+    "p_reply": 0.545,
+    "why": [
+     "+must-have RAG",
+     "+must-have OpenAI API",
+     "+concrete result",
+     "+past work",
+     "+asks a question"
+    ]
+   }
+  },
+  {
+   "job_id": "j-fu-0346",
+   "persona": "fullstack",
+   "status": "needs_attention",
+   "submitted": false,
+   "outcome": null
+  },
+  {
+   "job_id": "j-fu-0245",
+   "persona": "fullstack",
+   "status": "awaiting_approval",
+   "submitted": true,
+   "outcome": {
+    "proposal_id": "p-d86c111d04",
+    "job_id": "j-fu-0245",
+    "freelancer_id": "fl-fullstack",
+    "status": "replied",
+    "viewed": true,
+    "replied": true,
+    "interview": true,
+    "hired": false,
+    "intent": "interview_request",
+    "score": 1.1,
+    "p_reply": 0.315,
+    "why": [
+     "-missing must-have Next.js",
+     "+must-have TypeScript",
+     "+concrete result",
+     "+past work",
+     "+asks a question"
+    ]
+   }
+  },
+  {
+   "job_id": "j-da-0494",
+   "persona": "data_analyst",
+   "status": "awaiting_approval",
+   "submitted": true,
+   "outcome": {
+    "proposal_id": "p-d237e376f4",
+    "job_id": "j-da-0494",
+    "freelancer_id": "fl-data_analyst",
+    "status": "lost",
+    "viewed": false,
+    "replied": false,
+    "interview": false,
+    "hired": false,
+    "intent": "question",
+    "score": 1.1,
+    "p_reply": 0.318,
+    "why": [
+     "-missing must-have cohort analysis",
+     "+must-have SQL",
+     "+concrete result",
+     "+past work",
+     "+asks a question"
+    ]
+   }
+  },
+  {
+   "job_id": "j-da-0505",
+   "persona": "data_analyst",
+   "status": "awaiting_approval",
+   "submitted": true,
+   "outcome": {
+    "proposal_id": "p-d5bc0f4fc0",
+    "job_id": "j-da-0505",
+    "freelancer_id": "fl-data_analyst",
+    "status": "lost",
+    "viewed": false,
+    "replied": false,
+    "interview": false,
+    "hired": false,
+    "intent": "question",
+    "score": 2.5,
+    "p_reply": 0.377,
+    "why": [
+     "+must-have VBA",
+     "+must-have Excel",
+     "+concrete result",
+     "+past work",
+     "+asks a question",
+     "+answered screening"
+    ]
+   }
+  }
+ ]
+}

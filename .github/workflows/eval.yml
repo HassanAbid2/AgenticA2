@@ -17,6 +17,12 @@ jobs:
       - run: uv run python -m rag.ingest.build
       - name: 30-job smoke eval (retrieval, decisions, grounding) with failure thresholds
         run: uv run python -m evals.runners.smoke --jobs 30
+      - name: Fixed GigSim simulated reply and hire rates
+        run: uv run python -m evals.runners.gigsim_outcomes
       - uses: actions/upload-artifact@v4
         if: always()
-        with: { name: smoke-eval, path: evals/results/smoke.json }
+        with:
+          name: smoke-eval
+          path: |
+            evals/results/smoke.json
+            evals/results/gigsim_outcomes.json
