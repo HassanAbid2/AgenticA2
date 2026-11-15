@@ -1,0 +1,167 @@
+{
+ "generated_at": "2026-11-15T22:36:26",
+ "git_commit": "e29ca08",
+ "profile": "local",
+ "models": {
+  "default": "qwen2.5:0.5b"
+ },
+ "model_names": [
+  "qwen2.5:0.5b"
+ ],
+ "n": 27,
+ "n_attempted": 30,
+ "n_abstained": 3,
+ "n_labelled": 30,
+ "complete": true,
+ "stopped": null,
+ "labeller": "AI assistant with a written rubric (the student did not label; see docs/AI_USAGE.md)",
+ "judge_verdict_counts": {
+  "good": 27,
+  "abstain": 3
+ },
+ "reference_label_counts": {
+  "good": 13,
+  "bad": 17
+ },
+ "cohens_kappa_judge_vs_human": 0.071,
+ "agreement": 0.4333,
+ "secondary_kappa_human_vs_outcome(past items)": 0.431,
+ "disagreements": [
+  {
+   "item_id": "1",
+   "human": "bad",
+   "judge": null,
+   "judge_why": "",
+   "notes": "[assistant rubric label] generic cliche opening, no evidence",
+   "proposal": "Hello, I am a passionate and hardworking professional. I have 7 years of experience and I can do this job perfectly and on time. I am passionate about quality work. Please message me to discuss. Thank you!"
+  },
+  {
+   "item_id": "2",
+   "human": "bad",
+   "judge": "good",
+   "judge_why": "The proposal is clear, concise, and professional. It addresses the job's requirements and hidden needs, provides concrete evidence and results, and uses appropriate language and tone. The client would likely reply with a positive response.",
+   "notes": "[assistant rubric label] generic cliche opening, no evidence",
+   "proposal": "Hi there! I have read your job description carefully and I am the perfect fit. I have 6 years of experience and I can do this job perfectly and on time. I am passionate about quality work. Please message me to discuss. Thank you!"
+  },
+  {
+   "item_id": "3",
+   "human": "bad",
+   "judge": "good",
+   "judge_why": "The proposal is concise, clear, and relevant to the job description. It provides a good overview of the NLP model's performance and the specific tasks involved in the project. The credibility and tone are appropriate, and the length is well-suited for a brief proposal.",
+   "notes": "[assistant rubric label] garbled truncated echo of the post, metric repeated; reads careless",
+   "proposal": "Your post about a summary of what customers say about our app in s sounds a lot like App-review sentiment analytics, which tagged 250k reviews into 14 themes with 0.87 macro-F1. In App-review sentiment analytics I used Python, NLP, Hugging Face Transformers, and it tagged 250k reviews into 14 themes with 0.87 macro-F1. For your project I would start with a short discovery call, then ship a first m"
+  },
+  {
+   "item_id": "4",
+   "human": "bad",
+   "judge": "good",
+   "judge_why": "The proposal is clear, concise, and professional. It addresses the job requirements and hidden needs, provides concrete evidence and results, and uses a professional tone and length. The client would likely reply.",
+   "notes": "[assistant rubric label] generic cliche opening, no evidence",
+   "proposal": "Dear Hiring Manager, I am writing to apply for your job. I have 5 years of experience and I can do this job perfectly and on time. I am passionate about quality work. Please message me to discuss. Thank you!"
+  },
+  {
+   "item_id": "6",
+   "human": "bad",
+   "judge": null,
+   "judge_why": "",
+   "notes": "[assistant rubric label] generic cliche opening, no evidence",
+   "proposal": "Greetings! I am an expert with many years of experience. I have 6 years of experience and I can do this job perfectly and on time. I am passionate about quality work. Please message me to discuss. Thank you!"
+  },
+  {
+   "item_id": "7",
+   "human": "bad",
+   "judge": "good",
+   "judge_why": "The proposal is concise and professional, with clear objectives and a logical flow. It mentions the study of why discharged patients return to hospital, which aligns with the job description. The specific details about CareReturn and the pilot are relevant and specific. The credibility is high as the client is a busy client. The tone and length are appropriate, with no cliches. The overall score is 1 out of 10.",
+   "notes": "[assistant rubric label] garbled truncated echo of the post, metric repeated; reads careless",
+   "proposal": "Your post about a study of why discharged patients return to hospi sounds a lot like CareReturn, which identified 3 discharge factors; readmissions down 9% after the pilot. In CareReturn I used R, statistics, SQL, and it identified 3 discharge factors; readmissions down 9% after the pilot. For your project I would start with a short discovery call, then ship a first milestone in a week. Quick ques"
+  },
+  {
+   "item_id": "11",
+   "human": "bad",
+   "judge": "good",
+   "judge_why": "The proposal is concise, specific, and relevant to the job description. It outlines the project's goals and the proposed solution, which is ideal for a busy client. The proposal is clear and professional, with no exaggeration or cliches. It provides a roadmap for the project, making it easy for the client to understand and approve.",
+   "notes": "[assistant rubric label] garbled truncated echo of the post, metric repeated; reads careless",
+   "proposal": "Your post about patients booking appointments online and getting t sounds a lot like CareSlot, which no-shows down 28% thanks to automated reminders. In CareSlot I used Django, PostgreSQL, Celery, and it no-shows down 28% thanks to automated reminders. For your project I would start with a short discovery call, then ship a first milestone in a week. Quick question: what does success look like for "
+  },
+  {
+   "item_id": "12",
+   "human": "bad",
+   "judge": "good",
+   "judge_why": "The proposal is concise and directly addresses the client's needs without being overly specific. It provides a clear roadmap for the project, including milestones and deliverables. The client is likely to find this proposal useful and agree to proceed with the project.",
+   "notes": "[assistant rubric label] garbled truncated echo of the post, metric repeated; reads careless",
+   "proposal": "Your post about a dashboard that shows our drivers' positions live sounds a lot like Real-time logistics tracker, which 1,200 trucks on a live map with sub-second updates. In Real-time logistics tracker I used React, Node.js, WebSockets, and it 1,200 trucks on a live map with sub-second updates. For your project I would start with a short discovery call, then ship a first milestone in a week. Quic"
+  },
+  {
+   "item_id": "14",
+   "human": "bad",
+   "judge": "good",
+   "judge_why": "The proposal is professional, concise, and clear, with no cliches or generic claims. It addresses the job's requirements and hidden needs, and the client is likely to reply.",
+   "notes": "[assistant rubric label] generic cliche opening, no evidence",
+   "proposal": "Hello, I am a passionate and hardworking professional. I have 5 years of experience and I can do this job perfectly and on time. I am passionate about quality work. Please message me to discuss. Thank you!"
+  },
+  {
+   "item_id": "15",
+   "human": "bad",
+   "judge": "good",
+   "judge_why": "The proposal provides a clear and concise overview of the project, addressing the client's specific needs and highlighting the benefits of the proposed solution. It also includes a specific timeframe for the project, which is a good starting point for the client. The proposal is well-organized and easy to follow, making it suitable for a busy client.",
+   "notes": "[assistant rubric label] garbled truncated echo of the post, metric repeated; reads careless",
+   "proposal": "Your post about automatic visual inspection of parts coming off th sounds a lot like Assembly-line defect detection, which mAP 0.88 at 30 FPS on an edge device; scrap rate down 17%. In Assembly-line defect detection I used Python, PyTorch, computer vision, and it mAP 0.88 at 30 FPS on an edge device; scrap rate down 17%. For your project I would start with a short discovery call, then ship a first"
+  },
+  {
+   "item_id": "17",
+   "human": "bad",
+   "judge": "good",
+   "judge_why": "The proposal provides a clear and concise overview of the project, addressing the client's specific needs and highlighting the benefits of the proposed solution. It also includes a specific timeframe for the project, which is a good starting point for the client. The proposal is well-organized and easy to follow, making it suitable for a busy client.",
+   "notes": "[assistant rubric label] garbled truncated echo of the post, metric repeated; reads careless",
+   "proposal": "Your post about automatic visual inspection of parts coming off th sounds a lot like Assembly-line defect detection, which mAP 0.88 at 30 FPS on an edge device; scrap rate down 17%. In Assembly-line defect detection I used Python, PyTorch, computer vision, and it mAP 0.88 at 30 FPS on an edge device; scrap rate down 17%. For your project I would start with a short discovery call, then ship a first"
+  },
+  {
+   "item_id": "18",
+   "human": "bad",
+   "judge": "good",
+   "judge_why": "The proposal is clear, concise, and professional. It addresses the job requirements and hidden needs, provides concrete evidence and results, and is backed by the client's experience and passion for quality work. The tone and length are appropriate, and the client's message is well-written.",
+   "notes": "[assistant rubric label] generic cliche opening, no evidence",
+   "proposal": "Hi there! I have read your job description carefully and I am the perfect fit. I have 7 years of experience and I can do this job perfectly and on time. I am passionate about quality work. Please message me to discuss. Thank you!"
+  },
+  {
+   "item_id": "20",
+   "human": "bad",
+   "judge": "good",
+   "judge_why": "The proposal is clear, concise, and professional. It addresses the job requirements and hidden needs, provides concrete evidence and results, and uses a friendly tone and length. The client would likely reply with a positive response.",
+   "notes": "[assistant rubric label] generic cliche opening, no evidence",
+   "proposal": "Dear Hiring Manager, I am writing to apply for your job. I have 7 years of experience and I can do this job perfectly and on time. I am passionate about quality work. Please message me to discuss. Thank you!"
+  },
+  {
+   "item_id": "23",
+   "human": "bad",
+   "judge": "good",
+   "judge_why": "The proposal is concise and professional, addressing the client's needs without being overly generic. It provides concrete evidence and results, and the client would likely reply. The proposal is clear and easy to understand, making it suitable for a busy client.",
+   "notes": "[assistant rubric label] garbled truncated echo of the post, metric repeated; reads careless",
+   "proposal": "Your post about a blog our editors can update themselves without d sounds a lot like Headless CMS blog, which organic traffic up 40% after the rebuild. In Headless CMS blog I used Next.js, GraphQL, TypeScript, and it organic traffic up 40% after the rebuild. For your project I would start with a short discovery call, then ship a first milestone in a week. Quick question: what does success look lik"
+  },
+  {
+   "item_id": "24",
+   "human": "bad",
+   "judge": "good",
+   "judge_why": "The proposal is concise, specific, and detailed. It outlines the project requirements, the team's expertise, and the deliverables. The client is likely to find this proposal useful and agree to the terms. The overall tone is professional and clear, making it suitable for a busy client.",
+   "notes": "[assistant rubric label] grounded but no concrete result; long generic plan",
+   "proposal": "A collaborative notes tool where changes appear for everyone instantly is needed for your real-estate platform. I delivered a real-time notes app for a productivity client, building it end-to-end with TypeScript, hosted PostgreSQL, and a React framework that provides server-side rendering and file-based routing, and I wrote tests for critical paths and documented the handover. As a first step I wi"
+  },
+  {
+   "item_id": "27",
+   "human": "bad",
+   "judge": "good",
+   "judge_why": "The proposal is clear, concise, and professional, with all the necessary details included. It also shows the applicant's passion for quality work and their experience in the field. The tone is professional, and the length is appropriate for the job description.",
+   "notes": "[assistant rubric label] generic cliche opening, no evidence",
+   "proposal": "Dear Hiring Manager, I am writing to apply for your job. I have 5 years of experience and I can do this job perfectly and on time. I am passionate about quality work. Please message me to discuss. Thank you!"
+  },
+  {
+   "item_id": "29",
+   "human": "bad",
+   "judge": null,
+   "judge_why": "",
+   "notes": "[assistant rubric label] generic cliche opening, no evidence",
+   "proposal": "Hi there! I have read your job description carefully and I am the perfect fit. I have 6 years of experience and I can do this job perfectly and on time. I am passionate about quality work. Please message me to discuss. Thank you!"
+  }
+ ]
+}

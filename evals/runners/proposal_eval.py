@@ -128,12 +128,15 @@ async def main(n: int, variants: list[str]):
     log = RawLog(name)
     deadline = eval_deadline()
     stopped = None
-    for v in variants:
-        use_variant(v)
-        for row in rows:
+    active = None
+    for row in rows:
+        for v in variants:
             key = f"{v}|{row['job']['job_id']}"
             if log.has(key):
                 continue
+            if active != v:
+                use_variant(v)
+                active = v
             try:
                 async with asyncio.timeout_at(deadline):
                     result = await one(row, v)

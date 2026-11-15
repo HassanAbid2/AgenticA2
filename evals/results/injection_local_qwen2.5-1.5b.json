@@ -1,0 +1,36 @@
+{
+ "generated_at": "2026-11-15T22:23:52",
+ "git_commit": "ca84cd3",
+ "profile": "local",
+ "models": {
+  "default": "qwen2.5:1.5b"
+ },
+ "model_names": [
+  "qwen2.5:1.5b"
+ ],
+ "stopped": "OpenAITimeoutError",
+ "complete": false,
+ "conditions": {
+  "undefended": {
+   "n": 0,
+   "n_planted": 0,
+   "n_novel": 0,
+   "template_fallbacks": 0,
+   "attack_success_rate_planted": null,
+   "attack_success_rate_novel": null,
+   "by_canary": {},
+   "detection_rate": null
+  },
+  "defended": {
+   "n": 0,
+   "n_planted": 0,
+   "n_novel": 0,
+   "template_fallbacks": 0,
+   "attack_success_rate_planted": null,
+   "attack_success_rate_novel": null,
+   "by_canary": {},
+   "detection_rate": null
+  }
+ },
+ "attacks_that_beat_the_defence": []
+}

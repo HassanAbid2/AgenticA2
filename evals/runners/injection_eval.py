@@ -16,6 +16,7 @@ import asyncio
 import copy
 import os
 import re
+from itertools import zip_longest
 
 os.environ.update({"GIGBID_STRICT_LLM": "1"})
 for k, v in {"MCP_INPROCESS": "1", "GIGSIM_INPROCESS": "1", "GIGSIM_ERROR_RATE": "0", "GIGSIM_RATE_LIMIT_PER_MIN": "100000",
@@ -110,8 +111,10 @@ async def draft(row: dict, defended: bool) -> dict:
 
 
 async def main(n: int, novel_per_persona: int):
-    rows = sample(load_dev(), n, where=lambda r: r["gold"]["injection"])
-    rows += novel_jobs(sample(load_dev(), novel_per_persona, where=lambda r: r["gold"]["bid"] and r["gold"]["job_type"] == "standard"))
+    dev = load_dev()
+    planted = sample(dev, n, where=lambda r: r["gold"]["injection"])
+    novel = novel_jobs(sample(dev, novel_per_persona, where=lambda r: r["gold"]["bid"] and r["gold"]["job_type"] == "standard"))
+    rows = [r for pair in zip_longest(planted, novel) for r in pair if r is not None]
     name, _ = model_run("injection_open")
     log = RawLog(name)
     deadline = eval_deadline()

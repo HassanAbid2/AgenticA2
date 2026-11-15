@@ -1,0 +1,21 @@
+{
+ "generated_at": "2026-11-15T22:28:23",
+ "git_commit": "ca84cd3",
+ "profile": "local",
+ "models": {
+  "default": "qwen2.5:1.5b"
+ },
+ "model_names": [
+  "qwen2.5:1.5b"
+ ],
+ "n": 1,
+ "n_attempted": 1,
+ "n_labelled": 30,
+ "complete": false,
+ "stopped": "time_limit",
+ "labeller": "AI assistant with a written rubric (the student did not label; see docs/AI_USAGE.md)",
+ "cohens_kappa_judge_vs_human": null,
+ "agreement": 1.0,
+ "secondary_kappa_human_vs_outcome(past items)": null,
+ "disagreements": []
+}

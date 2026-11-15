@@ -1,0 +1,15 @@
+{
+ "generated_at": "2026-11-15T22:36:07",
+ "git_commit": "e29ca08",
+ "profile": "local",
+ "models": {
+  "default": "qwen2.5:0.5b"
+ },
+ "model_names": [
+  "qwen2.5:0.5b"
+ ],
+ "jobs": 3,
+ "stopped": "time_limit",
+ "complete": false,
+ "results": {}
+}

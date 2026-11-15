@@ -17,6 +17,7 @@ import csv
 import json
 import os
 import random
+from collections import Counter
 
 os.environ.update({"GIGBID_STRICT_LLM": "1"})
 
@@ -98,19 +99,24 @@ async def score():
                        "judge_overall": (j or {}).get("overall"), "judge_why": (j or {}).get("why", "")})
         print("scored", item, verdict or "invalid", flush=True)
     attempted = [r | log.done[r["item_id"]] for r in labelled if log.has(r["item_id"])]
-    out = [r for r in attempted if r["judge_verdict"] is not None]
-    human = [r["human_label"].lower() for r in out]
-    jd = [r["judge_verdict"].lower() for r in out]
-    past = [r for r in out if r["outcome"]]
+    # A malformed verdict is an abstention, a distinct category. Counting it as "bad"
+    # would give the judge credit for correct negative labels it never returned.
+    human = [r["human_label"].strip().lower() for r in attempted]
+    jd = [r["judge_verdict"] or "abstain" for r in attempted]
+    past = [r for r in labelled if r["outcome"]]
+    n_valid = sum(r["judge_verdict"] is not None for r in attempted)
+    complete = len(attempted) == len(labelled)
     labeller = "student" if not any("[assistant rubric label]" in r["notes"] for r in labelled) else "AI assistant with a written rubric (the student did not label; see docs/AI_USAGE.md)"
-    res = {**metadata, "n": len(out), "n_attempted": len(attempted), "n_labelled": len(labelled),
-           "complete": len(out) == len(labelled), "stopped": stopped, "labeller": labeller,
-           "cohens_kappa_judge_vs_human": kappa(human, jd) if len(out) == len(labelled) else None,
-           "agreement": round(sum(h == j for h, j in zip(human, jd, strict=True)) / len(out), 4) if out else None,
+    res = {**metadata, "n": n_valid, "n_attempted": len(attempted), "n_abstained": len(attempted) - n_valid,
+           "n_labelled": len(labelled), "complete": complete, "stopped": stopped, "labeller": labeller,
+           "judge_verdict_counts": dict(Counter(jd)), "reference_label_counts": dict(Counter(human)),
+           "cohens_kappa_judge_vs_human": kappa(human, jd) if complete else None,
+           "agreement": round(sum(h == j for h, j in zip(human, jd, strict=True)) / len(attempted), 4) if attempted else None,
            "secondary_kappa_human_vs_outcome(past items)": kappa([r["human_label"].lower() for r in past],
                                                                  ["good" if r["outcome"] in ("won", "replied") else "bad" for r in past]),
            "disagreements": [{"item_id": r["item_id"], "human": r["human_label"], "judge": r["judge_verdict"], "judge_why": r["judge_why"],
-                              "notes": r["notes"], "proposal": r["proposal"][:400]} for r in out if r["human_label"].lower() != r["judge_verdict"].lower()]}
+                              "notes": r["notes"], "proposal": r["proposal"][:400]}
+                             for r in attempted if r["human_label"].strip().lower() != r["judge_verdict"]]}
     print(write_result(name, res), {k: v for k, v in res.items() if k != "disagreements"})
 
 
