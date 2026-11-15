@@ -109,7 +109,7 @@ def tables() -> str:
         out.append(f"\n### X2 proposal A/B\n\n| Arm | n | Reply rate | Mean simulated p(reply) |\n|---|---|---|---|\n"
                    f"| evidence_first | {a['n']} | {pc(a['reply_rate'])} | {f3(a['mean_p_reply'])} |\n| question_first | {b['n']} | {pc(b['reply_rate'])} | {f3(b['mean_p_reply'])} |\n\n"
                    f"Two-proportion z-test p = {f3(ab['reply_rate_two_proportion_z']['p_value'])}; {ab['conclusion']}.")
-    out.append(f"\nJudge calibration (30 human-labelled items): Cohen's kappa = {f3((jc or {}).get('cohens_kappa_judge_vs_human'))}.")
+    out.append(f"\nJudge calibration (30 items, reference labels applied by the AI assistant from a written rubric; see docs/AI_USAGE.md): Cohen's kappa = {f3((jc or {}).get('cohens_kappa_judge_vs_human'))}.")
     return "\n".join(out) + "\n"
 
 

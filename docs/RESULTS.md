@@ -86,4 +86,4 @@ Proposal eval: 12 drafts (complete: False). Unsupported-claim rate before -> aft
 | before fix | 0.0% | 100.0% | True |
 | after fix (`08b287c`) | 100.0% | 0.0% | True |
 
-Judge calibration (30 human-labelled items): Cohen's kappa = pending.
+Judge calibration (30 items, reference labels applied by the AI assistant from a written rubric; see docs/AI_USAGE.md): Cohen's kappa = pending.

@@ -1,6 +1,6 @@
 # GigBid: R&D report (design review)
 
-*AI-4016 · build 760f656 · every number below is read from `evals/results/` at build time.*
+*AI-4016 · build 8f7fee8 · every number below is read from `evals/results/` at build time.*
 
 ## 1. Problem and constraints
 A freelancer loses hours scanning feeds, spends paid Connects on jobs they won't win, sends generic
@@ -94,7 +94,7 @@ ranking quality when combined.
 
 Verification removes roughly a third of the experience claims the writer makes even though it cites evidence;
 typical removals merge two projects into one sentence or upgrade a described technique into a named tool.
-**Judge calibration:** Cohen's kappa against the student's own labels on 30 blind items = pending
+**Judge calibration:** Cohen's kappa between the LLM judge and reference labels on 30 blind items = pending; labeller: pending; secondary kappa of the labels against real recorded outcomes (past proposals) = pending
 (`judge_calibration.json`). **Where retrieval did not translate into replies:** GigSim's clients reward
 must-have skill names, a concrete number and a question; once the evidence contains one strong result,
 better ranking of the second and third item rarely changes the reply decision, so reply-rate differences

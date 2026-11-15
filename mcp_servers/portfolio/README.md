@@ -60,3 +60,18 @@ Prompts: *Answer a screening question from my portfolio*, *Is this job a fit for
 
 `gigbid-portfolio-mcp --http` serves Streamable HTTP on `:8101` with bearer-token auth (this is how the
 GigBid app uses it). Inspect it with `npx @modelcontextprotocol/inspector`.
+
+## In MCP Inspector
+
+```bash
+npx @modelcontextprotocol/inspector -e MCP_DEFAULT_USER=ai_ml python -m mcp_servers.portfolio.server
+```
+
+Tools discovered over stdio (read-only and idempotent annotations shown per tool):
+
+![Inspector tool list](../../docs/images/inspector-tools.jpg)
+
+`search_evidence("Celery background task queue", k=3)` returns typed evidence with source, date and skills
+(the first call after start-up waits for the embedding model to load and can exceed the Inspector's 60 s timeout):
+
+![Inspector search_evidence call](../../docs/images/inspector-search-evidence.jpg)
