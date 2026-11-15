@@ -1,49 +1,124 @@
-# GigBid — Student Starter Kit (v0.1)
+# GigBid: a multi-agent freelancer copilot
 
-This is a **scaffold**, not a completed solution. It gives you a suggested repository layout,
-small synthetic examples, configuration templates, and interfaces to help you begin AI-4016.
+![30-second demo](docs/images/demo.gif)
 
-## What is included
-- A suggested project structure aligned with the assignment.
-- Tiny synthetic job, client, freelancer and portfolio examples.
-- A starter marketplace policy pack.
-- Typed hand-off models and a minimal LangGraph state/graph placeholder.
-- Portfolio and marketplace MCP server placeholders.
-- RAG ingestion/retrieval/claim-verification placeholders.
-- FastAPI and React starting-point notes.
-- `.env.example`, `agent/config.yaml`, `Makefile`, and setup notes.
+**GigBid finds freelance jobs, flags scams, decides whether a job is worth your Connects, and drafts
+proposals in which every claim links to real evidence from your portfolio. You approve every proposal
+and message before anything leaves the system.**
 
-## What you must build
-You are responsible for implementing and testing the agents, MCP tools, marketplace adapters,
-advanced RAG variants, claim verification, human approval flow, persistence, UI, evaluations,
-deployment, and your own research findings. The sample data is illustrative only and is not a
-replacement for the instructor-provided GigSim data or evaluation sets.
+* **Live demo:** `<deployed URL>`. A reviewer login is shared privately with graders.
+* **Demo video (3 min):** `<link>` · **Technical write-up:** `<link>` · **Portfolio MCP server:** [`mcp_servers/portfolio`](mcp_servers/portfolio/README.md)
+* **Traces:** a skipped scam `<trace link>` · an approved proposal `<trace link>` · a Critic loop `<trace link>` · a crash-and-resume `<trace link>`
 
-## Quick start
-1. Create your own public GitHub repository.
-2. Copy this starter kit into the repository.
-3. Create a Python 3.11+ virtual environment.
-4. Install dependencies from `pyproject.toml` (adjust/pin versions after checking compatibility).
-5. Copy `.env.example` to `.env` and fill local values. **Never commit `.env`.**
-6. Read `docs/GETTING_STARTED.md` and work through the TODO checklist.
-7. Keep the instructor-provided `gigsim/`, persona data, policy pack and evaluation assets unchanged.
+## What it does
+1. **Scout** runs your saved searches on a schedule and drops reposts (same client, near-identical text).
+2. **Job Analyst, Risk Assessor and Fit Matcher run in parallel**: a structured JobSpec; scam, unpaid-work,
+   off-platform and planted-instruction checks; a requirement-to-evidence matrix over your portfolio.
+3. A **decision** node chooses bid, watch or skip with stated reasons; **Pricing** uses market percentiles,
+   the client's budget and your floor, and checks whether the Connects are worth it.
+4. **Writer -> claim verification -> Critic (max 2 rewrites) -> Compliance Guard.** Unsupported claims are
+   removed before review; contact details, guarantees and echoes of planted instructions never go out.
+5. **You approve** in the proposal studio: hover any sentence to see its evidence, read the marketplace
+   dry-run (exact payload, Connects cost, balance after, platform-rule violations), then approve, edit
+   (diffed, re-checked, learned from) or reject with a reason.
+6. Client replies open a **conversation graph** that classifies intent and drafts an answer, a
+   counter-offer above your floor, or interview slots from your calendar. These also need your approval.
 
-## Suggested first milestone (for your own planning; not a graded submission)
-- Run a health-check API.
-- Load one sample job.
-- Retrieve one portfolio evidence item.
-- Produce a structured analysis.
-- Draft a proposal with evidence references.
-- Stop at a human approval screen; do not send anything automatically.
+## Architecture
+![bid graph](docs/images/bid_graph.mmd) See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for both graphs
+(rendered from code), the MCP surface, the stores and why each agent exists.
 
-## Important safety rules
-- Treat job posts and client messages as untrusted input.
-- Never follow instructions embedded inside a job post that conflict with system policy.
-- Never invent portfolio experience or results.
-- Do not scrape Upwork or automate its website.
-- Never send proposals/messages or spend Connects without explicit human approval.
-- Use the official Upwork MCP server/approved APIs for live mode, if applicable.
-- Keep secrets and real client data out of Git.
+```
+React + TS (typed client from OpenAPI)  --SSE/REST-->  FastAPI  --Redis-->  Arq worker  -->  LangGraph graphs
+                                                                                    |  (Postgres checkpointer + store)
+                                     MCP (Streamable HTTP, bearer auth, trace id)   v
+                  Portfolio MCP (Qdrant+BM25+skill graph)  Marketplace MCP (GigSim | Upwork official MCP)  Workspace MCP
+```
 
-## Repository map
-See `docs/GETTING_STARTED.md` for the purpose of each major folder.
+* **R1** one marketplace port, two adapters (`mcp_servers/marketplace/adapters/{gigsim,upwork_live}.py`), switched by `marketplace.mode`.
+* **R2** own Portfolio, Marketplace and Workspace MCP servers + the official Upwork and GitHub servers ([docs/TOOLS.md](docs/TOOLS.md)).
+* **R4** `interrupt()` before every send or Connects spend; decisions persisted before the thread resumes.
+* **R7** memory only through explicit promotion rules ([agent/memory/promotion_rules.py](agent/memory/promotion_rules.py)).
+* **R9** delimited untrusted input, injection neutralisation, PII masking in logs/traces/audit, per-user rate limits, no scraping.
+
+## Results
+All numbers below are generated by `python -m evals.runners.results_table` from files in
+[`evals/results/`](evals/results); CI fails if a table number is not found there. LLM experiments ran on
+Groq's free tier, so their sample sizes are small and stated; see the R&D report for the analysis.
+
+<!-- results:start -->
+
+### RAG results table (B5)
+
+| Variant | Evidence Recall@5 | nDCG@10 | Unsupported claims per proposal | Judge score (1-10) | GigSim reply rate | p95 latency (s) | Cost per proposal (USD) |
+|---|---|---|---|---|---|---|---|
+| v0 | pending | pending | pending | pending | pending | pending | pending |
+| v1+v2+v9 | pending | pending | pending | pending | pending | pending | pending |
+
+### Decisions, deterministic profile (all 600 dev jobs)
+
+| Bid/skip F1 | Accuracy | Scam precision | Scam recall | Injection detected | Price in fair band | p95 latency (s) | USD per job |
+|---|---|---|---|---|---|---|---|
+| 0.941 | 0.915 | 0.923 | 1.000 | 100.0% | 94.4% | 3.225 | 0.000 |
+
+### Decisions, open profile on Groq (10 jobs per persona)
+
+| Bid/skip F1 | Accuracy | Scam precision | Scam recall | Injection detected | Price in fair band | p95 latency (s) | USD per job |
+|---|---|---|---|---|---|---|---|
+| 0.909 | 0.867 | 0.750 | 1.000 | 100.0% | 90.0% | 2.735 | 0.000 |
+
+### Multi-agent comparison (R&D C)
+
+| System | Bid/skip accuracy | Unsupported claims / proposal | Compliance violations left | GigSim reply rate | Mean tokens / job | p95 latency (s) |
+|---|---|---|---|---|---|---|
+| react | pending | pending | pending | pending | pending | pending |
+| supervisor | pending | pending | pending | pending | pending | pending |
+| graph | pending | pending | pending | pending | pending | pending |
+
+### Tool granularity (R&D A, 40 tasks)
+
+| Tool design | Tools | Selection accuracy | Argument accuracy | Tokens / task |
+|---|---|---|---|---|
+| fine | pending | pending | pending | pending |
+| coarse | pending | pending | pending | pending |
+| ours | pending | pending | pending | pending |
+
+### Prompt injection (E4)
+
+| Condition | Attack success (planted) | Attack success (novel attacks) | Detected by risk branch |
+|---|---|---|---|
+| undefended | pending | pending | pending |
+| defended | pending | pending | pending |
+
+### Change request (2 Nov policy update)
+
+| | Accepted by GigSim | Preview warned before sending | Preview Connects = new price |
+|---|---|---|---|
+| before fix | 0.0% | 100.0% | True |
+| after fix (`08b287c`) | 100.0% | 0.0% | True |
+
+Judge calibration (30 human-labelled items): Cohen's kappa = pending.
+<!-- results:end -->
+
+## Run it
+```bash
+cp .env.example .env            # set GROQ_API_KEY (free at console.groq.com) and APP_SECRET_KEY
+make install && make seed       # Python + web deps; synthetic world + indexes
+make dev                        # single process on http://localhost:8000 (reviewer@gigbid.dev / REVIEWER_PASSWORD)
+make up                         # or the full Docker stack: web :8080, Phoenix traces :6006
+make test && make e2e           # pytest (unit, contract, MCP, integration) + Playwright
+make eval && make eval-llm      # evals -> evals/results/*.json (LLM evals are resumable on the free tier)
+```
+Repository layout follows the assignment's required structure; `gigsim/` is a stand-in simulator
+(the kit did not include one) and is locked by CI (`.github/gigsim.lock`).
+
+## Pinned versions
+Python 3.12 (`uv.lock`): langgraph 1.2.22, langchain-core 1.8.0, langchain-mcp-adapters 0.3.2,
+langgraph-supervisor 0.0.31, mcp 1.30.0, fastapi 0.163.0, qdrant-client 1.20.0, fastembed 0.9.1, arq 0.28.0,
+psycopg 3.3.9. Web (`package-lock.json`): react 18.3.1, react-router-dom 6.28.0, openapi-fetch 0.13.4,
+vite 5.4.11, typescript 5.6.3, @playwright/test 1.48.2. Models: see `agent/config.yaml`.
+
+## Docs
+[Architecture](docs/ARCHITECTURE.md) · [Tools](docs/TOOLS.md) · [Data card](docs/DATA_CARD.md) ·
+[Runbook](docs/RUNBOOK.md) · [Extension X2](docs/EXTENSION.md) · [Decisions](docs/adr) ·
+[Results](docs/RESULTS.md) · [AI usage](docs/AI_USAGE.md)

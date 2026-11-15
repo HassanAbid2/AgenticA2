@@ -71,14 +71,13 @@ def check_numbers() -> list[str]:
     if not readme.exists():
         return []
     blob = " ".join(p.read_text(encoding="utf-8") for p in (ROOT / "evals" / "results").glob("*.json"))
-    known = set(re.findall(r"-?\d+\.\d+", blob))
-    known |= {str(round(float(x), 2)) for x in known} | {str(round(float(x), 3)) for x in known}
-    known |= {f"{float(x) * 100:.1f}" for x in list(known)} | {f"{float(x) * 100:.0f}" for x in list(known)}
+    known = {round(float(x), 3) for x in re.findall(r"-?\d+(?:\.\d+)?(?:e-?\d+)?", blob)}
     errs = []
     for line in readme.read_text(encoding="utf-8").splitlines():
         if line.startswith("|") and "<!-- untraced -->" not in line:
             for n in re.findall(r"(?<![\w.])\d+\.\d+(?![\w.])", line):
-                if n not in known and n.rstrip("0").rstrip(".") not in known:
+                v = float(n)
+                if round(v, 3) not in known and round(v / 100, 3) not in known and round(v / 100, 4) not in {round(k, 4) for k in known}:
                     errs.append(f"README number {n} not found in evals/results/: {line[:80]}")
     return errs
 
