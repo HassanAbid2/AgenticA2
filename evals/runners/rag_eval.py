@@ -16,12 +16,21 @@ import argparse
 import csv
 import time
 
-from evals.runners.common import RESULTS, group_mean, load_dev, mean, pct, project_titles, ranking_metrics, sample, write_result
+from evals.runners.common import (
+    RESULTS,
+    group_mean,
+    load_dev,
+    mean,
+    pct,
+    project_titles,
+    ranking_metrics,
+    sample,
+    write_result,
+)
 
 VARIANTS = ["v0", "v1", "v2", "v3", "v4", "v5", "v6", "v7", "v8", "v9",
             "v1+v2", "v1+v2+v9", "v1+v2+v4", "v1+v2+v3", "v1+v2+v4+v9", "v1+v2+v6+v9", "v1+v2+v5+v9", "v1+v2+v8+v9"]
-SLOW = {"v3", "v1+v2+v3"}  # cross-encoder on CPU: run on the stratified subset
-BEST_FOR_ABLATION = "v1+v2+v4+v9"
+SLOW = {"v3", "v1+v2+v3"}  # cross-encoder on CPU (~14 s/job): run on the stratified subset only
 
 
 def run_variant(spec: str, rows: list[dict], titles) -> list[dict]:
@@ -31,7 +40,10 @@ def run_variant(spec: str, rows: list[dict], titles) -> list[dict]:
     out = []
     for row in rows:
         gold_slugs = row["gold"]["relevant_projects"]
-        if not gold_slugs:
+        if not gold_slugs:  # mismatch jobs: did the variant refuse to surface evidence? (V8's purpose)
+            res = r(row["job"], [row["persona"]], k=10)
+            out.append({"job_id": row["job"]["job_id"], "persona": row["persona"], "job_type": row["gold"]["job_type"],
+                        "no_gold": True, "refused": len(res.items) == 0})
             continue
         gold = {titles[row["persona"]][s] for s in gold_slugs}
         t0 = time.perf_counter()
@@ -48,9 +60,14 @@ def run_variant(spec: str, rows: list[dict], titles) -> list[dict]:
 
 def summarise(per: list[dict]) -> dict:
     f = ["recall@5", "mrr", "ndcg@10", "item_recall@5"]
+    skips = [x for x in per if x.get("no_gold")]
+    per = [x for x in per if not x.get("no_gold")]
     multi = [x for x in per if x["n_req"] >= 4]
+    if not per:
+        return {"n": 0}
     return {"n": len(per), **{k: mean([x[k] for x in per]) for k in f},
             "recall@5_multi_req(>=4)": mean([x["recall@5"] for x in multi]), "n_multi_req": len(multi),
+            "refusal_rate_on_mismatch_jobs": mean([x["refused"] for x in skips]), "n_mismatch": len(skips),
             "p50_latency_s": pct([x["latency_s"] for x in per], .5), "p95_latency_s": pct([x["latency_s"] for x in per], .95),
             "by_persona": group_mean(per, "persona", f), "by_job_type": group_mean(per, "job_type", f)}
 
@@ -59,7 +76,7 @@ def main(quick: bool = False):
     titles = project_titles()
     rows = load_dev()
     full = sample(rows, 20) if quick else rows
-    subset = sample(rows, 20 if quick else 50)
+    subset = sample(rows, 20)
     results, per_job = {}, {}
     for spec in VARIANTS:
         rs = subset if spec in SLOW else full
@@ -72,23 +89,25 @@ def main(quick: bool = False):
     # every variant also on the same subset, so slow variants compare like for like
     sub_ids = {r["job"]["job_id"] for r in subset}
     on_subset = {s: summarise([x for x in per_job[s] if x["job_id"] in sub_ids]) for s in VARIANTS}
-    # ablation: drop one component of the best pipeline at a time
-    parts = BEST_FOR_ABLATION.split("+")
-    ablation = {"full": results[BEST_FOR_ABLATION]["recall@5"]}
+    # ablation: drop one component of the best full-dev pipeline at a time
+    best_full = max((s for s in VARIANTS if s not in SLOW), key=lambda s: (results[s]["ndcg@10"], results[s]["recall@5"]))
+    parts = best_full.split("+")
+    ablation = {"pipeline": best_full, "full": {k: results[best_full][k] for k in ("recall@5", "mrr", "ndcg@10")}}
     for p in parts:
         spec = "+".join(x for x in parts if x != p) or "v0"
         per = per_job.get(spec) or run_variant(spec, full, titles)
-        ablation[f"without_{p}"] = summarise(per)["recall@5"]
+        sm = summarise(per)
+        ablation[f"without_{p}"] = {k: sm[k] for k in ("recall@5", "mrr", "ndcg@10")}
     v0m = results["v0"]["recall@5_multi_req(>=4)"]
     hyp = results["v1+v2"]["recall@5_multi_req(>=4)"]
-    best = max(VARIANTS, key=lambda s: (on_subset[s]["ndcg@10"], on_subset[s]["recall@5"]))
+    best = max(VARIANTS, key=lambda s: (on_subset[s].get("ndcg@10", 0), on_subset[s].get("recall@5", 0)))
     out = write_result("rag_variants" + ("_quick" if quick else ""), {
         "metric_notes": "project-level ranking metrics; gold = relevant projects from the generator's ground truth",
         "hypothesis": "V1+V2 raises Recall@5 by >= 5 points over V0 on jobs with >= 4 requirements",
         "hypothesis_result": {"v0": v0m, "v1+v2": hyp, "delta_points": round((hyp - v0m) * 100, 1) if v0m is not None else None,
                               "supported": (hyp - v0m) >= 0.05 if v0m is not None else None},
         "variants": results, "same_subset_comparison": on_subset, "ablation_recall@5": ablation,
-        "best_by_ndcg_on_subset": best})
+        "best_by_ndcg_on_subset": best, "best_by_ndcg_full_dev": best_full})
     with open(RESULTS / ("rag_variants" + ("_quick" if quick else "") + ".csv"), "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["variant", "eval_set", "n", "recall@5", "mrr", "ndcg@10", "item_recall@5", "recall@5_multi_req", "p95_latency_s"])

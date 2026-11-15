@@ -65,8 +65,10 @@ def make_corrective(pipeline, rewrite_fn=None, max_rewrites: int = 2):
         r.trace.append({"corrective_attempts": s.get("attempt", 0), "coverage": round(s["coverage"], 3)})
         if s["coverage"] < MIN_COVERAGE:
             r.insufficient = True
-            if r.strength < FLOOR:
-                r.items = []  # refuse to claim: nothing is strong enough to cite
+            # refuse to claim only when NOTHING matches: short tool-name queries ('Python') score low on
+            # cosine even when well evidenced, so a mean over decomposed queries would refuse good jobs
+            if max(r.best_cos.values(), default=0.0) < FLOOR:
+                r.items = []
         return {"result": r}
 
     g = StateGraph(CState)
