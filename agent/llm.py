@@ -60,15 +60,21 @@ class UsageTracker(BaseCallbackHandler):
         self.lock = threading.Lock()
         self.per_node: dict[str, dict[str, float]] = defaultdict(lambda: {"input_tokens": 0, "output_tokens": 0, "cost_usd": 0.0, "llm_calls": 0, "llm_s": 0.0})
         self._t0: dict[Any, float] = {}
+        self._node: dict[Any, str] = {}
+
+    def _start(self, run_id, kw):
+        md = kw.get("metadata") or {}
+        self._t0[run_id] = time.perf_counter()
+        self._node[run_id] = md.get("gigbid_node") or md.get("langgraph_node") or "other"
 
     def on_chat_model_start(self, serialized, messages, *, run_id, **kw):
-        self._t0[run_id] = time.perf_counter()
+        self._start(run_id, kw)
 
     def on_llm_start(self, serialized, prompts, *, run_id, **kw):
-        self._t0[run_id] = time.perf_counter()
+        self._start(run_id, kw)
 
     def on_llm_end(self, response, *, run_id, **kw):
-        node = (kw.get("metadata") or {}).get("gigbid_node") or (kw.get("metadata") or {}).get("langgraph_node") or "other"
+        node = self._node.pop(run_id, None) or (kw.get("metadata") or {}).get("gigbid_node") or "other"
         inp = out = 0
         model = ""
         for gens in response.generations:

@@ -13,7 +13,7 @@ from apps.api.main import app  # noqa: E402
 from gigsim.app import W  # noqa: E402
 
 
-def wait(c, cond, timeout=90):
+def wait(c, cond, timeout=400):  # inline mode runs tasks one at a time (SQLite)
     t0 = time.time()
     while time.time() - t0 < timeout:
         r = cond()

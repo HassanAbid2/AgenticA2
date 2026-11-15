@@ -130,8 +130,9 @@ async def submit(state, config):
 async def needs_attention(state, config):
     from agent.nodes.common import over_budget
 
-    return {"status": "needs_attention", "status_reason": over_budget(state) or state.get("status_reason", ""),
-            "_summary": {"reason": over_budget(state)}}
+    reason = over_budget(state) or ("no grounded draft after the maximum number of revisions; the portfolio may not "
+                                     "support this job" if state.get("critiques") else state.get("status_reason", ""))
+    return {"status": "needs_attention", "status_reason": reason, "_summary": {"reason": reason}}
 
 
 @node("recall_memory")

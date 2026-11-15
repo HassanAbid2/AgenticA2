@@ -60,6 +60,7 @@ async def critic(state, config):
     a = auto_checks(draft, job, spec)
     base = rule_critique(a)
     llm = await structured("critic", "critic", Critique, config, min_words=thresholds()["min_words"],
+                           approve_score=thresholds()["critic_approve_score"],
                            max_words=thresholds()["max_words"],
                            job_spec=json.dumps({k: spec.get(k) for k in ("title", "requirements", "hidden_needs")}),
                            draft=draft["cover_letter"], answers=draft.get("screening_answers", []),
@@ -68,7 +69,7 @@ async def critic(state, config):
     if llm:
         # rules can veto, never rubber-stamp: hard failures stay failures whatever the model says
         hard = [i for i in base.issues if i.startswith(("no grounded", "answer every", "length"))]
-        c = llm.model_copy(update={"approve": llm.approve and not hard, "issues": list(dict.fromkeys(hard + llm.issues)),
+        c = llm.model_copy(update={"approve": (llm.approve or llm.score >= thresholds()["critic_approve_score"]) and not hard, "issues": list(dict.fromkeys(hard + llm.issues)),
                                    "instructions": "\n".join(filter(None, ["\n".join(f"- {h}" for h in hard), llm.instructions]))})
     return {"critiques": [c.model_dump() | {"revision": state.get("revision", 0), "auto": a}],
             "_summary": {"approve": c.approve, "score": c.score, "issues": c.issues[:3]}}

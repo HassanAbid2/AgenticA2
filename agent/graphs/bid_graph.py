@@ -63,8 +63,12 @@ def route_critic(state: BidState) -> str:
     if over_budget(state):
         return "needs_attention"
     last = (state.get("critiques") or [{}])[-1]
-    if last.get("approve") or state.get("revision", 0) >= settings()["budgets"]["max_revisions"]:
+    if last.get("approve"):
         return "ok"
+    if state.get("revision", 0) >= settings()["budgets"]["max_revisions"]:
+        auto = last.get("auto") or {}
+        # nothing grounded survived verification: never hand the human an evidence-free letter
+        return "needs_attention" if not auto.get("supported_claims") else "ok"
     return "revise"
 
 

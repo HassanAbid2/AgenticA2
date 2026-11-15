@@ -15,7 +15,7 @@ def _judge():
         return None
 
     def judge(claim: str, texts: list[str]) -> str:
-        sys_p, user_p = render("claim_judge", claim=claim, evidence="\n---\n".join(t[:800] for t in texts))
+        sys_p, user_p = render("claim_judge", claim=claim, evidence="\n---\n".join(t[:2000] for t in texts))
         out = llm.invoke([("system", sys_p), ("user", user_p)], config={"metadata": {"gigbid_node": "claim_judge"}}).content.lower()
         return "unsupported" if "unsupported" in out else "supported" if "supported" in out else "partly_supported"
 

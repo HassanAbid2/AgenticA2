@@ -29,12 +29,13 @@ def check_text(text: str, pack: dict | None = None, unsupported: list[str] | Non
         if r["kind"] != "forbid_regex":
             continue
         rx = re.compile(r["pattern"], re.I)
-        for m in list(rx.finditer(out)):
+        hits = [s for s in sentences(out) if rx.search(s) and not (r.get("skip_questions") and s.rstrip().endswith("?"))]
+        for m in (rx.search(s) for s in hits):
             viol.append(Violation(rule_id=r["id"], message=r["message"], action=r["action"], excerpt=m.group(0)[:80]))
-        if not rx.search(out):
+        if not hits:
             continue
         if r["action"] in ("redact", "rewrite"):  # drop the offending sentence; a half-sentence reads worse
-            out = " ".join(s for s in sentences(out) if not rx.search(s))
+            out = " ".join(s for s in sentences(out) if not rx.search(s) or (r.get("skip_questions") and s.rstrip().endswith("?")))
         elif r["action"] == "block":
             blocked = True
     for claim in unsupported or []:
@@ -62,9 +63,11 @@ async def guard(text: str, answers: list[str], config=None, unsupported=None) ->
         clean_answers.append(ca)
         viol += va
         blocked = blocked or ba
-    rules_txt = "\n".join(f"- {r['id']}: {r['rule']}" for r in pack["rules"])
+    rules_txt = "\n".join(f"- {r['id']}: {r['rule']}" for r in pack["rules"] if r["id"].startswith(("P1", "P2", "P4")))
     llm = await structured("compliance", "compliance", _LLMViolations, config, rules=rules_txt, text=clean + "\n" + "\n".join(clean_answers))
     for v in (llm.violations if llm else []):
+        if str(v.get("rule_id", "")).upper().startswith(("P3", "P5", "P7")):
+            continue  # fabrication is judged against evidence by the verifier, never by a model that can't see it
         ex = str(v.get("excerpt", ""))[:200]
         if ex and ex in clean:
             clean = " ".join(s for s in sentences(clean) if ex not in s)

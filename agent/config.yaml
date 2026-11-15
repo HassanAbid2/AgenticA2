@@ -16,40 +16,40 @@ policy:
 models:
   profile: open               # open (required) | open_b (comparison) | local | offline | paid
   profiles:
-    open:                     # hosted open-weight models (Groq), works on a free deployment host
+    open:                     # hosted open-weight models (Groq). Small model for cheap nodes, large for writing.
       base_url: https://api.groq.com/openai/v1
       api_key_env: GROQ_API_KEY
       nodes:
         analyst: openai/gpt-oss-20b
-        risk_assessor: llama-3.1-8b-instant
+        risk_assessor: openai/gpt-oss-20b
         writer: openai/gpt-oss-120b
         critic: openai/gpt-oss-120b
-        compliance: llama-3.1-8b-instant
-        liaison_intent: llama-3.1-8b-instant
+        compliance: openai/gpt-oss-20b
+        liaison_intent: openai/gpt-oss-20b
         liaison: openai/gpt-oss-120b
         claim_judge: openai/gpt-oss-20b
         judge: openai/gpt-oss-120b
-        hyde: llama-3.1-8b-instant
-        query_rewrite: llama-3.1-8b-instant
+        hyde: openai/gpt-oss-20b
+        query_rewrite: openai/gpt-oss-20b
         baseline: openai/gpt-oss-120b      # single-agent / supervisor baselines (R&D C)
-      fallback: openai/gpt-oss-20b         # cheap nodes fall back here on error
+      fallback: qwen/qwen3.8-27b           # cheap nodes fall back to a different model family on error
     open_b:                   # second open configuration compared on the dev set
       base_url: https://api.groq.com/openai/v1
       api_key_env: GROQ_API_KEY
       nodes:
-        analyst: llama-3.1-8b-instant
-        risk_assessor: llama-3.1-8b-instant
-        writer: qwen/qwen3-32b
-        critic: qwen/qwen3-32b
-        compliance: llama-3.1-8b-instant
-        liaison_intent: llama-3.1-8b-instant
-        liaison: qwen/qwen3-32b
-        claim_judge: llama-3.1-8b-instant
-        judge: openai/gpt-oss-120b
-        hyde: llama-3.1-8b-instant
-        query_rewrite: llama-3.1-8b-instant
-        baseline: qwen/qwen3-32b
-      fallback: llama-3.1-8b-instant
+        analyst: openai/gpt-oss-20b
+        risk_assessor: openai/gpt-oss-20b
+        writer: qwen/qwen3.8-27b
+        critic: qwen/qwen3.8-27b
+        compliance: openai/gpt-oss-20b
+        liaison_intent: openai/gpt-oss-20b
+        liaison: qwen/qwen3.8-27b
+        claim_judge: openai/gpt-oss-20b
+        judge: openai/gpt-oss-120b         # same judge for both profiles so scores are comparable
+        hyde: openai/gpt-oss-20b
+        query_rewrite: openai/gpt-oss-20b
+        baseline: qwen/qwen3.8-27b
+      fallback: openai/gpt-oss-120b
     local:                    # Ollama in docker compose (CPU or small GPU)
       base_url: http://ollama:11434/v1
       api_key_env: OLLAMA_API_KEY
@@ -73,13 +73,12 @@ models:
   pricing:
     openai/gpt-oss-120b: [0.15, 0.60]
     openai/gpt-oss-20b: [0.075, 0.30]
-    llama-3.1-8b-instant: [0.05, 0.08]
-    qwen/qwen3-32b: [0.29, 0.59]
+    qwen/qwen3.8-27b: [0.29, 0.59]   # assumed = Groq's earlier Qwen3-32B list price; verify on console.groq.com
     gpt-5: [1.25, 10.0]
     gpt-5-mini: [0.25, 2.0]
   temperature: 0.2
   timeout_s: 60
-  max_retries: 2
+  max_retries: 6               # Groq free tier returns 429s under load; backoff instead of failing
   cache: true                 # SQLite LLM response cache (evals rerun for free)
   embeddings: BAAI/bge-small-en-v1.5      # open, CPU (fastembed)
   reranker: Xenova/ms-marco-MiniLM-L-6-v2 # open, CPU (fastembed)
@@ -104,6 +103,7 @@ thresholds:
   min_client_rating: 3.5
   connects_value_min: 0.002   # expected reply probability per Connect spent
   max_words: 260
+  critic_approve_score: 6     # LLM critic score that passes (rule checks can still veto); see docs/adr
   min_words: 90
 
 autonomy:

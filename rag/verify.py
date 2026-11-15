@@ -29,7 +29,19 @@ EXPERIENCE = re.compile(
     r"\b(built|build|shipped|delivered|led|designed|developed|created|implemented|worked|"
     r"used|cut|reduced|increased|improved|migrated|automated|trained|deployed|launched|wrote|have \d+|years|experience|"
     r"helped|ran|optimi[sz]ed|scaled|integrated|handled|saved|achieved|reached)\b", re.I)
-RESULT = re.compile(r"\d")  # any number is a factual assertion worth checking
+RESULT = re.compile(r"\d+(\.\d+)?\s?%|\$\s?\d|\b\d+(\.\d+)?x\b|\b\d{1,3}(,\d{3})+\b|\b\d{3,}\b|\b(19|20)\d\d\b")
+# results/metrics/years count as factual assertions; "Step 1" or "a 30-minute call" do not
+UNICODE = str.maketrans({" ": " ", " ": " ", " ": " ", " ": " ", "‑": "-", "‐": "-",
+                         "‒": "-", "–": "-", "—": "-", "‘": "'", "’": "'", "“": '"', "”": '"'})
+
+
+def normalise(text: str) -> str:
+    """Model output uses narrow no-break spaces and non-breaking hyphens ('62 %', 'e‑commerce');
+    fold them so numbers and tool names compare equal to the evidence."""
+    return (text or "").translate(UNICODE)
+
+
+PLAN = re.compile(r"^(step\s*\d|phase\s*\d|milestone\s*\d|week\s*\d|proposed\b|next\b|(run|ingest|build|create|set up|deploy|commit|deliver|provide|schedule|review|map|prototype|start|begin|clone|validate|test|write|design|integrate|implement|add|configure|train|evaluate|share|draft|kick off|audit)\b)", re.I)
 SUPPORTED_SIM, PARTLY_SIM = 0.80, 0.70
 
 
@@ -47,7 +59,8 @@ class ClaimResult:
 
 
 def sentences(text: str) -> list[str]:
-    parts = re.split(r"(?<=[.!?])\s+(?=[A-Z\"'(\[])|\n+", text.strip())
+    text = re.sub(r"(?:(?<=\s)|^)\d{1,2}[.)]\s+(?=[A-Z])", "\n", text.strip())  # '1. Ingest...' list items
+    parts = re.split(r"(?<=[.!?:])\s+(?=[A-Z\"'(\[])|\n+", text)
     return [p.strip() for p in parts if p.strip()]
 
 
@@ -55,6 +68,8 @@ def is_claim(sent: str) -> bool:
     s = CITE.sub("", sent)
     if s.endswith("?") or FUTURE.search(s) or re.match(r"^(you|your)\b", s, re.I):
         return False  # questions, plans and restating the client's own post are not claims
+    if PLAN.match(s):
+        return False  # 'Step 2: ...', 'Run speech-to-text ...': a plan, not a claim about the past
     if re.match(r"^(my )?(quote|rate|price|bid|fee)\b", s, re.I):
         return False  # the offer itself is checked against the price quote, not the portfolio
     return bool(EXPERIENCE.search(s) or RESULT.search(s))
@@ -69,21 +84,29 @@ def _numbers(text: str) -> set[str]:
 
 
 def verify_claims(draft: str, evidence: list[dict], judge_fn=None) -> list[ClaimResult]:
-    sents = sentences(draft)
+    sents = sentences(normalise(draft))
     claims = [(i, s) for i, s in enumerate(sents) if is_claim(s)]
     if not claims:
         return []
-    texts = [e.get("text") or e.get("snippet") or "" for e in evidence]
+    texts = [normalise(e.get("text") or e.get("snippet") or "") for e in evidence]
     ev_nums = [_numbers(t) for t in texts]
     ev_skills = [set(e.get("skills") or []) | set(extract_skills(t, code=True)) for e, t in zip(evidence, texts, strict=True)]
-    ev_vecs = embed(texts) if texts else np.zeros((0, 384))
+    windows, owner = [], []
+    for j, t in enumerate(texts):
+        ss = [x for x in re.split(r"(?<=[.!?])\s+|\n+", t) if x.strip()] or [t]
+        for k in range(len(ss)):
+            windows.append(" ".join(ss[k:k + 2]))
+            owner.append(j)
+    win_vecs = embed(windows) if windows else np.zeros((0, 384))
+    owner_arr = np.array(owner)
     cl_vecs = embed([CITE.sub("", s) for _, s in claims])
     out = []
     for (i, s), v in zip(claims, cl_vecs, strict=True):
         cited = [int(c) - 1 for c in CITE.findall(s) if 0 < int(c) <= len(evidence)]
         pool = cited or list(range(len(evidence)))
         clean = CITE.sub("", s)
-        sims = (ev_vecs[pool] @ v) if pool else np.array([0.0])
+        win_sims = win_vecs @ v if len(windows) else np.zeros(0)
+        sims = np.array([win_sims[owner_arr == j].max() if (owner_arr == j).any() else 0.0 for j in pool]) if pool else np.array([0.0])
         best = float(sims.max()) if len(pool) else 0.0
         reasons = []
         nums = _numbers(clean)
@@ -123,7 +146,7 @@ def verify_claims(draft: str, evidence: list[dict], judge_fn=None) -> list[Claim
 
 def strip_unsupported(draft: str, results: list[ClaimResult]) -> str:
     bad = {r.sentence_index for r in results if r.label == "unsupported"}
-    sents = sentences(draft)
+    sents = sentences(normalise(draft))
     return " ".join(s for i, s in enumerate(sents) if i not in bad)
 
 
