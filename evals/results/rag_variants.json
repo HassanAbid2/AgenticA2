@@ -1,0 +1,3420 @@
+{
+ "generated_at": "2026-11-15T19:09:23",
+ "git_commit": "a9d42a8",
+ "metric_notes": "project-level ranking metrics; gold = relevant projects from the generator's ground truth",
+ "hypothesis": "V1+V2 raises Recall@5 by >= 5 points over V0 on jobs with >= 4 requirements",
+ "hypothesis_result": {
+  "v0": 0.7489,
+  "v1+v2": 0.7973,
+  "delta_points": 4.8,
+  "supported": false
+ },
+ "variants": {
+  "v0": {
+   "n": 540,
+   "recall@5": 0.7756,
+   "mrr": 0.9486,
+   "ndcg@10": 0.7965,
+   "item_recall@5": 0.2827,
+   "recall@5_multi_req(>=4)": 0.7489,
+   "n_multi_req": 291,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 60,
+   "p50_latency_s": 0.2857,
+   "p95_latency_s": 0.7195,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.8407,
+     "mrr": 0.9419,
+     "ndcg@10": 0.84,
+     "item_recall@5": 0.2704,
+     "n": 180
+    },
+    "data_analyst": {
+     "recall@5": 0.8199,
+     "mrr": 0.9506,
+     "ndcg@10": 0.8283,
+     "item_recall@5": 0.3064,
+     "n": 180
+    },
+    "fullstack": {
+     "recall@5": 0.6662,
+     "mrr": 0.9532,
+     "ndcg@10": 0.7213,
+     "item_recall@5": 0.2712,
+     "n": 180
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 0.7967,
+     "mrr": 0.9544,
+     "ndcg@10": 0.8122,
+     "item_recall@5": 0.3029,
+     "n": 75
+    },
+    "industry": {
+     "recall@5": 1.0,
+     "mrr": 0.9778,
+     "ndcg@10": 0.9836,
+     "item_recall@5": 0.3437,
+     "n": 45
+    },
+    "injection_legit": {
+     "recall@5": 0.9722,
+     "mrr": 1.0,
+     "ndcg@10": 0.9659,
+     "item_recall@5": 0.3028,
+     "n": 12
+    },
+    "injection_scam": {
+     "recall@5": 0.7222,
+     "mrr": 0.7778,
+     "ndcg@10": 0.7047,
+     "item_recall@5": 0.2,
+     "n": 12
+    },
+    "low_budget": {
+     "recall@5": 0.7278,
+     "mrr": 0.9444,
+     "ndcg@10": 0.7501,
+     "item_recall@5": 0.2917,
+     "n": 30
+    },
+    "multi_req": {
+     "recall@5": 0.5981,
+     "mrr": 0.9269,
+     "ndcg@10": 0.6534,
+     "item_recall@5": 0.2667,
+     "n": 90
+    },
+    "scam": {
+     "recall@5": 0.8171,
+     "mrr": 0.9083,
+     "ndcg@10": 0.7995,
+     "item_recall@5": 0.2699,
+     "n": 36
+    },
+    "standard": {
+     "recall@5": 0.7898,
+     "mrr": 0.9493,
+     "ndcg@10": 0.8085,
+     "item_recall@5": 0.2837,
+     "n": 180
+    },
+    "vague": {
+     "recall@5": 0.775,
+     "mrr": 1.0,
+     "ndcg@10": 0.8212,
+     "item_recall@5": 0.2481,
+     "n": 60
+    }
+   },
+   "eval_set": "full_dev"
+  },
+  "v1": {
+   "n": 540,
+   "recall@5": 0.8077,
+   "mrr": 0.8527,
+   "ndcg@10": 0.7953,
+   "item_recall@5": 0.3786,
+   "recall@5_multi_req(>=4)": 0.7683,
+   "n_multi_req": 291,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 60,
+   "p50_latency_s": 0.4513,
+   "p95_latency_s": 1.0166,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.8343,
+     "mrr": 0.8038,
+     "ndcg@10": 0.7888,
+     "item_recall@5": 0.3507,
+     "n": 180
+    },
+    "data_analyst": {
+     "recall@5": 0.8454,
+     "mrr": 0.8663,
+     "ndcg@10": 0.8322,
+     "item_recall@5": 0.3345,
+     "n": 180
+    },
+    "fullstack": {
+     "recall@5": 0.7435,
+     "mrr": 0.8881,
+     "ndcg@10": 0.7649,
+     "item_recall@5": 0.4505,
+     "n": 180
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 0.8144,
+     "mrr": 0.8428,
+     "ndcg@10": 0.7975,
+     "item_recall@5": 0.4224,
+     "n": 75
+    },
+    "industry": {
+     "recall@5": 0.9556,
+     "mrr": 0.8324,
+     "ndcg@10": 0.8737,
+     "item_recall@5": 0.3696,
+     "n": 45
+    },
+    "injection_legit": {
+     "recall@5": 0.8611,
+     "mrr": 0.7847,
+     "ndcg@10": 0.8155,
+     "item_recall@5": 0.3361,
+     "n": 12
+    },
+    "injection_scam": {
+     "recall@5": 0.8681,
+     "mrr": 0.9028,
+     "ndcg@10": 0.8609,
+     "item_recall@5": 0.3569,
+     "n": 12
+    },
+    "low_budget": {
+     "recall@5": 0.7972,
+     "mrr": 0.8444,
+     "ndcg@10": 0.7746,
+     "item_recall@5": 0.4033,
+     "n": 30
+    },
+    "multi_req": {
+     "recall@5": 0.6046,
+     "mrr": 0.7063,
+     "ndcg@10": 0.6188,
+     "item_recall@5": 0.3367,
+     "n": 90
+    },
+    "scam": {
+     "recall@5": 0.8495,
+     "mrr": 0.8521,
+     "ndcg@10": 0.8126,
+     "item_recall@5": 0.4074,
+     "n": 36
+    },
+    "standard": {
+     "recall@5": 0.8616,
+     "mrr": 0.8887,
+     "ndcg@10": 0.8449,
+     "item_recall@5": 0.4154,
+     "n": 180
+    },
+    "vague": {
+     "recall@5": 0.7889,
+     "mrr": 1.0,
+     "ndcg@10": 0.8326,
+     "item_recall@5": 0.2661,
+     "n": 60
+    }
+   },
+   "eval_set": "full_dev"
+  },
+  "v2": {
+   "n": 540,
+   "recall@5": 0.7937,
+   "mrr": 0.9846,
+   "ndcg@10": 0.8267,
+   "item_recall@5": 0.2303,
+   "recall@5_multi_req(>=4)": 0.766,
+   "n_multi_req": 291,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 60,
+   "p50_latency_s": 0.3256,
+   "p95_latency_s": 0.6773,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.8394,
+     "mrr": 0.9796,
+     "ndcg@10": 0.859,
+     "item_recall@5": 0.2273,
+     "n": 180
+    },
+    "data_analyst": {
+     "recall@5": 0.8384,
+     "mrr": 0.9852,
+     "ndcg@10": 0.8617,
+     "item_recall@5": 0.2251,
+     "n": 180
+    },
+    "fullstack": {
+     "recall@5": 0.7032,
+     "mrr": 0.9889,
+     "ndcg@10": 0.7595,
+     "item_recall@5": 0.2385,
+     "n": 180
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 0.8133,
+     "mrr": 1.0,
+     "ndcg@10": 0.8531,
+     "item_recall@5": 0.2393,
+     "n": 75
+    },
+    "industry": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 1.0,
+     "item_recall@5": 0.2881,
+     "n": 45
+    },
+    "injection_legit": {
+     "recall@5": 0.9722,
+     "mrr": 0.9583,
+     "ndcg@10": 0.9497,
+     "item_recall@5": 0.2278,
+     "n": 12
+    },
+    "injection_scam": {
+     "recall@5": 0.8681,
+     "mrr": 0.875,
+     "ndcg@10": 0.8168,
+     "item_recall@5": 0.2667,
+     "n": 12
+    },
+    "low_budget": {
+     "recall@5": 0.6972,
+     "mrr": 1.0,
+     "ndcg@10": 0.7653,
+     "item_recall@5": 0.215,
+     "n": 30
+    },
+    "multi_req": {
+     "recall@5": 0.6213,
+     "mrr": 0.9815,
+     "ndcg@10": 0.6884,
+     "item_recall@5": 0.1833,
+     "n": 90
+    },
+    "scam": {
+     "recall@5": 0.8079,
+     "mrr": 0.9722,
+     "ndcg@10": 0.8251,
+     "item_recall@5": 0.2176,
+     "n": 36
+    },
+    "standard": {
+     "recall@5": 0.8245,
+     "mrr": 0.9796,
+     "ndcg@10": 0.8482,
+     "item_recall@5": 0.241,
+     "n": 180
+    },
+    "vague": {
+     "recall@5": 0.7694,
+     "mrr": 1.0,
+     "ndcg@10": 0.816,
+     "item_recall@5": 0.2225,
+     "n": 60
+    }
+   },
+   "eval_set": "full_dev"
+  },
+  "v3": {
+   "n": 54,
+   "recall@5": 0.7701,
+   "mrr": 0.9907,
+   "ndcg@10": 0.8174,
+   "item_recall@5": 0.2052,
+   "recall@5_multi_req(>=4)": 0.7214,
+   "n_multi_req": 32,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 6,
+   "p50_latency_s": 3.8337,
+   "p95_latency_s": 5.7989,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.8148,
+     "mrr": 0.9722,
+     "ndcg@10": 0.848,
+     "item_recall@5": 0.213,
+     "n": 18
+    },
+    "data_analyst": {
+     "recall@5": 0.787,
+     "mrr": 1.0,
+     "ndcg@10": 0.8365,
+     "item_recall@5": 0.1389,
+     "n": 18
+    },
+    "fullstack": {
+     "recall@5": 0.7083,
+     "mrr": 1.0,
+     "ndcg@10": 0.7677,
+     "item_recall@5": 0.2639,
+     "n": 18
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 0.875,
+     "mrr": 1.0,
+     "ndcg@10": 0.8984,
+     "item_recall@5": 0.3194,
+     "n": 6
+    },
+    "industry": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 1.0,
+     "item_recall@5": 0.1667,
+     "n": 3
+    },
+    "injection_legit": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 1.0,
+     "item_recall@5": 0.0889,
+     "n": 6
+    },
+    "multi_req": {
+     "recall@5": 0.5444,
+     "mrr": 0.9667,
+     "ndcg@10": 0.6329,
+     "item_recall@5": 0.2467,
+     "n": 15
+    },
+    "scam": {
+     "recall@5": 0.6667,
+     "mrr": 1.0,
+     "ndcg@10": 0.7329,
+     "item_recall@5": 0.0,
+     "n": 3
+    },
+    "standard": {
+     "recall@5": 0.8111,
+     "mrr": 1.0,
+     "ndcg@10": 0.8554,
+     "item_recall@5": 0.1722,
+     "n": 15
+    },
+    "vague": {
+     "recall@5": 0.8333,
+     "mrr": 1.0,
+     "ndcg@10": 0.871,
+     "item_recall@5": 0.3083,
+     "n": 6
+    }
+   },
+   "eval_set": "subset_50_per_persona"
+  },
+  "v4": {
+   "n": 540,
+   "recall@5": 0.6935,
+   "mrr": 0.7012,
+   "ndcg@10": 0.6081,
+   "item_recall@5": 0.0407,
+   "recall@5_multi_req(>=4)": 0.6641,
+   "n_multi_req": 291,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 60,
+   "p50_latency_s": 0.185,
+   "p95_latency_s": 0.3696,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.687,
+     "mrr": 0.6968,
+     "ndcg@10": 0.6118,
+     "item_recall@5": 0.0315,
+     "n": 180
+    },
+    "data_analyst": {
+     "recall@5": 0.7745,
+     "mrr": 0.7031,
+     "ndcg@10": 0.6562,
+     "item_recall@5": 0.0267,
+     "n": 180
+    },
+    "fullstack": {
+     "recall@5": 0.619,
+     "mrr": 0.7037,
+     "ndcg@10": 0.5563,
+     "item_recall@5": 0.0639,
+     "n": 180
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 0.7322,
+     "mrr": 0.6891,
+     "ndcg@10": 0.6279,
+     "item_recall@5": 0.0558,
+     "n": 75
+    },
+    "industry": {
+     "recall@5": 0.8444,
+     "mrr": 0.6322,
+     "ndcg@10": 0.6854,
+     "item_recall@5": 0.0404,
+     "n": 45
+    },
+    "injection_legit": {
+     "recall@5": 0.7917,
+     "mrr": 0.6389,
+     "ndcg@10": 0.6117,
+     "item_recall@5": 0.0542,
+     "n": 12
+    },
+    "injection_scam": {
+     "recall@5": 0.6597,
+     "mrr": 0.6458,
+     "ndcg@10": 0.6176,
+     "item_recall@5": 0.0417,
+     "n": 12
+    },
+    "low_budget": {
+     "recall@5": 0.6583,
+     "mrr": 0.7556,
+     "ndcg@10": 0.5989,
+     "item_recall@5": 0.02,
+     "n": 30
+    },
+    "multi_req": {
+     "recall@5": 0.5,
+     "mrr": 0.7224,
+     "ndcg@10": 0.5012,
+     "item_recall@5": 0.04,
+     "n": 90
+    },
+    "scam": {
+     "recall@5": 0.7523,
+     "mrr": 0.7435,
+     "ndcg@10": 0.6821,
+     "item_recall@5": 0.0194,
+     "n": 36
+    },
+    "standard": {
+     "recall@5": 0.6958,
+     "mrr": 0.6893,
+     "ndcg@10": 0.599,
+     "item_recall@5": 0.0434,
+     "n": 180
+    },
+    "vague": {
+     "recall@5": 0.7847,
+     "mrr": 0.7431,
+     "ndcg@10": 0.6708,
+     "item_recall@5": 0.035,
+     "n": 60
+    }
+   },
+   "eval_set": "full_dev"
+  },
+  "v5": {
+   "n": 540,
+   "recall@5": 0.6861,
+   "mrr": 0.8809,
+   "ndcg@10": 0.7109,
+   "item_recall@5": 0.3328,
+   "recall@5_multi_req(>=4)": 0.667,
+   "n_multi_req": 291,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 60,
+   "p50_latency_s": 0.1162,
+   "p95_latency_s": 0.454,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.7449,
+     "mrr": 0.9023,
+     "ndcg@10": 0.7623,
+     "item_recall@5": 0.3484,
+     "n": 180
+    },
+    "data_analyst": {
+     "recall@5": 0.7477,
+     "mrr": 0.8627,
+     "ndcg@10": 0.7538,
+     "item_recall@5": 0.3482,
+     "n": 180
+    },
+    "fullstack": {
+     "recall@5": 0.5657,
+     "mrr": 0.8778,
+     "ndcg@10": 0.6167,
+     "item_recall@5": 0.3019,
+     "n": 180
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 0.71,
+     "mrr": 0.88,
+     "ndcg@10": 0.7374,
+     "item_recall@5": 0.3607,
+     "n": 75
+    },
+    "industry": {
+     "recall@5": 0.9556,
+     "mrr": 0.887,
+     "ndcg@10": 0.9043,
+     "item_recall@5": 0.4,
+     "n": 45
+    },
+    "injection_legit": {
+     "recall@5": 0.75,
+     "mrr": 0.7361,
+     "ndcg@10": 0.7126,
+     "item_recall@5": 0.2861,
+     "n": 12
+    },
+    "injection_scam": {
+     "recall@5": 0.4444,
+     "mrr": 0.625,
+     "ndcg@10": 0.4791,
+     "item_recall@5": 0.1958,
+     "n": 12
+    },
+    "low_budget": {
+     "recall@5": 0.6083,
+     "mrr": 0.9111,
+     "ndcg@10": 0.6471,
+     "item_recall@5": 0.305,
+     "n": 30
+    },
+    "multi_req": {
+     "recall@5": 0.463,
+     "mrr": 0.8944,
+     "ndcg@10": 0.5471,
+     "item_recall@5": 0.2889,
+     "n": 90
+    },
+    "scam": {
+     "recall@5": 0.706,
+     "mrr": 0.8528,
+     "ndcg@10": 0.7176,
+     "item_recall@5": 0.2991,
+     "n": 36
+    },
+    "standard": {
+     "recall@5": 0.7028,
+     "mrr": 0.8606,
+     "ndcg@10": 0.7152,
+     "item_recall@5": 0.3208,
+     "n": 180
+    },
+    "vague": {
+     "recall@5": 0.8014,
+     "mrr": 1.0,
+     "ndcg@10": 0.8398,
+     "item_recall@5": 0.4206,
+     "n": 60
+    }
+   },
+   "eval_set": "full_dev"
+  },
+  "v6": {
+   "n": 540,
+   "recall@5": 0.7332,
+   "mrr": 0.9386,
+   "ndcg@10": 0.7644,
+   "item_recall@5": 0.2437,
+   "recall@5_multi_req(>=4)": 0.7019,
+   "n_multi_req": 291,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 60,
+   "p50_latency_s": 0.1149,
+   "p95_latency_s": 0.5705,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.7907,
+     "mrr": 0.912,
+     "ndcg@10": 0.7945,
+     "item_recall@5": 0.2573,
+     "n": 180
+    },
+    "data_analyst": {
+     "recall@5": 0.794,
+     "mrr": 0.975,
+     "ndcg@10": 0.8257,
+     "item_recall@5": 0.2443,
+     "n": 180
+    },
+    "fullstack": {
+     "recall@5": 0.6148,
+     "mrr": 0.9287,
+     "ndcg@10": 0.6729,
+     "item_recall@5": 0.2296,
+     "n": 180
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 0.7767,
+     "mrr": 0.9489,
+     "ndcg@10": 0.7941,
+     "item_recall@5": 0.2564,
+     "n": 75
+    },
+    "industry": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 1.0,
+     "item_recall@5": 0.3548,
+     "n": 45
+    },
+    "injection_legit": {
+     "recall@5": 0.9167,
+     "mrr": 0.9028,
+     "ndcg@10": 0.8638,
+     "item_recall@5": 0.2861,
+     "n": 12
+    },
+    "injection_scam": {
+     "recall@5": 0.5069,
+     "mrr": 0.6944,
+     "ndcg@10": 0.542,
+     "item_recall@5": 0.1833,
+     "n": 12
+    },
+    "low_budget": {
+     "recall@5": 0.6306,
+     "mrr": 0.9278,
+     "ndcg@10": 0.6743,
+     "item_recall@5": 0.22,
+     "n": 30
+    },
+    "multi_req": {
+     "recall@5": 0.4704,
+     "mrr": 0.9204,
+     "ndcg@10": 0.557,
+     "item_recall@5": 0.1983,
+     "n": 90
+    },
+    "scam": {
+     "recall@5": 0.8079,
+     "mrr": 0.9444,
+     "ndcg@10": 0.8227,
+     "item_recall@5": 0.2449,
+     "n": 36
+    },
+    "standard": {
+     "recall@5": 0.7653,
+     "mrr": 0.9296,
+     "ndcg@10": 0.7868,
+     "item_recall@5": 0.2379,
+     "n": 180
+    },
+    "vague": {
+     "recall@5": 0.7917,
+     "mrr": 0.9917,
+     "ndcg@10": 0.8292,
+     "item_recall@5": 0.245,
+     "n": 60
+    }
+   },
+   "eval_set": "full_dev"
+  },
+  "v7": {
+   "n": 540,
+   "recall@5": 0.8088,
+   "mrr": 0.9215,
+   "ndcg@10": 0.8067,
+   "item_recall@5": 0.3127,
+   "recall@5_multi_req(>=4)": 0.7663,
+   "n_multi_req": 291,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 60,
+   "p50_latency_s": 0.1117,
+   "p95_latency_s": 0.2778,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.844,
+     "mrr": 0.911,
+     "ndcg@10": 0.8295,
+     "item_recall@5": 0.3069,
+     "n": 180
+    },
+    "data_analyst": {
+     "recall@5": 0.8356,
+     "mrr": 0.925,
+     "ndcg@10": 0.8264,
+     "item_recall@5": 0.2908,
+     "n": 180
+    },
+    "fullstack": {
+     "recall@5": 0.7468,
+     "mrr": 0.9283,
+     "ndcg@10": 0.7644,
+     "item_recall@5": 0.3405,
+     "n": 180
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 0.8411,
+     "mrr": 0.9344,
+     "ndcg@10": 0.8323,
+     "item_recall@5": 0.376,
+     "n": 75
+    },
+    "industry": {
+     "recall@5": 1.0,
+     "mrr": 0.8933,
+     "ndcg@10": 0.9208,
+     "item_recall@5": 0.2948,
+     "n": 45
+    },
+    "injection_legit": {
+     "recall@5": 0.9583,
+     "mrr": 0.9167,
+     "ndcg@10": 0.9063,
+     "item_recall@5": 0.3528,
+     "n": 12
+    },
+    "injection_scam": {
+     "recall@5": 0.8264,
+     "mrr": 0.8917,
+     "ndcg@10": 0.7878,
+     "item_recall@5": 0.2917,
+     "n": 12
+    },
+    "low_budget": {
+     "recall@5": 0.7972,
+     "mrr": 0.975,
+     "ndcg@10": 0.8196,
+     "item_recall@5": 0.3483,
+     "n": 30
+    },
+    "multi_req": {
+     "recall@5": 0.5704,
+     "mrr": 0.876,
+     "ndcg@10": 0.616,
+     "item_recall@5": 0.2894,
+     "n": 90
+    },
+    "scam": {
+     "recall@5": 0.8472,
+     "mrr": 0.8968,
+     "ndcg@10": 0.8152,
+     "item_recall@5": 0.2931,
+     "n": 36
+    },
+    "standard": {
+     "recall@5": 0.8468,
+     "mrr": 0.9179,
+     "ndcg@10": 0.838,
+     "item_recall@5": 0.3334,
+     "n": 180
+    },
+    "vague": {
+     "recall@5": 0.8181,
+     "mrr": 1.0,
+     "ndcg@10": 0.8538,
+     "item_recall@5": 0.2103,
+     "n": 60
+    }
+   },
+   "eval_set": "full_dev"
+  },
+  "v8": {
+   "n": 540,
+   "recall@5": 0.7767,
+   "mrr": 0.9423,
+   "ndcg@10": 0.7916,
+   "item_recall@5": 0.2586,
+   "recall@5_multi_req(>=4)": 0.746,
+   "n_multi_req": 291,
+   "refusal_rate_on_mismatch_jobs": 0.85,
+   "n_mismatch": 60,
+   "p50_latency_s": 0.1585,
+   "p95_latency_s": 0.5301,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.825,
+     "mrr": 0.9329,
+     "ndcg@10": 0.8228,
+     "item_recall@5": 0.2549,
+     "n": 180
+    },
+    "data_analyst": {
+     "recall@5": 0.8167,
+     "mrr": 0.9565,
+     "ndcg@10": 0.8261,
+     "item_recall@5": 0.2568,
+     "n": 180
+    },
+    "fullstack": {
+     "recall@5": 0.6884,
+     "mrr": 0.9375,
+     "ndcg@10": 0.7259,
+     "item_recall@5": 0.2643,
+     "n": 180
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 0.8156,
+     "mrr": 0.9667,
+     "ndcg@10": 0.8311,
+     "item_recall@5": 0.2911,
+     "n": 75
+    },
+    "industry": {
+     "recall@5": 0.9778,
+     "mrr": 0.9296,
+     "ndcg@10": 0.9421,
+     "item_recall@5": 0.3252,
+     "n": 45
+    },
+    "injection_legit": {
+     "recall@5": 0.9306,
+     "mrr": 0.8611,
+     "ndcg@10": 0.845,
+     "item_recall@5": 0.3194,
+     "n": 12
+    },
+    "injection_scam": {
+     "recall@5": 0.7153,
+     "mrr": 0.75,
+     "ndcg@10": 0.6469,
+     "item_recall@5": 0.1458,
+     "n": 12
+    },
+    "low_budget": {
+     "recall@5": 0.7361,
+     "mrr": 0.9778,
+     "ndcg@10": 0.7794,
+     "item_recall@5": 0.2517,
+     "n": 30
+    },
+    "multi_req": {
+     "recall@5": 0.5926,
+     "mrr": 0.9204,
+     "ndcg@10": 0.636,
+     "item_recall@5": 0.255,
+     "n": 90
+    },
+    "scam": {
+     "recall@5": 0.7963,
+     "mrr": 0.9444,
+     "ndcg@10": 0.8136,
+     "item_recall@5": 0.2245,
+     "n": 36
+    },
+    "standard": {
+     "recall@5": 0.8065,
+     "mrr": 0.9556,
+     "ndcg@10": 0.8203,
+     "item_recall@5": 0.2477,
+     "n": 180
+    },
+    "vague": {
+     "recall@5": 0.7542,
+     "mrr": 0.95,
+     "ndcg@10": 0.7875,
+     "item_recall@5": 0.2408,
+     "n": 60
+    }
+   },
+   "eval_set": "full_dev"
+  },
+  "v9": {
+   "n": 540,
+   "recall@5": 0.8162,
+   "mrr": 0.962,
+   "ndcg@10": 0.8327,
+   "item_recall@5": 0.3664,
+   "recall@5_multi_req(>=4)": 0.7809,
+   "n_multi_req": 291,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 60,
+   "p50_latency_s": 0.1181,
+   "p95_latency_s": 0.1993,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.8667,
+     "mrr": 0.9481,
+     "ndcg@10": 0.8626,
+     "item_recall@5": 0.3707,
+     "n": 180
+    },
+    "data_analyst": {
+     "recall@5": 0.8505,
+     "mrr": 0.9704,
+     "ndcg@10": 0.8618,
+     "item_recall@5": 0.366,
+     "n": 180
+    },
+    "fullstack": {
+     "recall@5": 0.7315,
+     "mrr": 0.9676,
+     "ndcg@10": 0.7738,
+     "item_recall@5": 0.3624,
+     "n": 180
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 0.8411,
+     "mrr": 0.98,
+     "ndcg@10": 0.8634,
+     "item_recall@5": 0.3956,
+     "n": 75
+    },
+    "industry": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 1.0,
+     "item_recall@5": 0.5056,
+     "n": 45
+    },
+    "injection_legit": {
+     "recall@5": 0.9722,
+     "mrr": 0.9583,
+     "ndcg@10": 0.9497,
+     "item_recall@5": 0.3819,
+     "n": 12
+    },
+    "injection_scam": {
+     "recall@5": 0.8889,
+     "mrr": 0.9444,
+     "ndcg@10": 0.8763,
+     "item_recall@5": 0.3042,
+     "n": 12
+    },
+    "low_budget": {
+     "recall@5": 0.7528,
+     "mrr": 1.0,
+     "ndcg@10": 0.8067,
+     "item_recall@5": 0.3583,
+     "n": 30
+    },
+    "multi_req": {
+     "recall@5": 0.6278,
+     "mrr": 0.9537,
+     "ndcg@10": 0.6902,
+     "item_recall@5": 0.3061,
+     "n": 90
+    },
+    "scam": {
+     "recall@5": 0.8634,
+     "mrr": 0.9861,
+     "ndcg@10": 0.8769,
+     "item_recall@5": 0.3486,
+     "n": 36
+    },
+    "standard": {
+     "recall@5": 0.8458,
+     "mrr": 0.9769,
+     "ndcg@10": 0.8642,
+     "item_recall@5": 0.4038,
+     "n": 180
+    },
+    "vague": {
+     "recall@5": 0.7986,
+     "mrr": 0.85,
+     "ndcg@10": 0.7428,
+     "item_recall@5": 0.2278,
+     "n": 60
+    }
+   },
+   "eval_set": "full_dev"
+  },
+  "v1+v2": {
+   "n": 540,
+   "recall@5": 0.8316,
+   "mrr": 0.8983,
+   "ndcg@10": 0.8137,
+   "item_recall@5": 0.3812,
+   "recall@5_multi_req(>=4)": 0.7973,
+   "n_multi_req": 291,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 60,
+   "p50_latency_s": 0.2277,
+   "p95_latency_s": 0.4742,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.8856,
+     "mrr": 0.8657,
+     "ndcg@10": 0.836,
+     "item_recall@5": 0.3767,
+     "n": 180
+    },
+    "data_analyst": {
+     "recall@5": 0.8685,
+     "mrr": 0.9171,
+     "ndcg@10": 0.8451,
+     "item_recall@5": 0.3322,
+     "n": 180
+    },
+    "fullstack": {
+     "recall@5": 0.7407,
+     "mrr": 0.912,
+     "ndcg@10": 0.76,
+     "item_recall@5": 0.4347,
+     "n": 180
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 0.8733,
+     "mrr": 0.9082,
+     "ndcg@10": 0.8336,
+     "item_recall@5": 0.4384,
+     "n": 75
+    },
+    "industry": {
+     "recall@5": 1.0,
+     "mrr": 0.9185,
+     "ndcg@10": 0.9397,
+     "item_recall@5": 0.3685,
+     "n": 45
+    },
+    "injection_legit": {
+     "recall@5": 0.9722,
+     "mrr": 0.8125,
+     "ndcg@10": 0.8295,
+     "item_recall@5": 0.3569,
+     "n": 12
+    },
+    "injection_scam": {
+     "recall@5": 0.8889,
+     "mrr": 0.8611,
+     "ndcg@10": 0.8358,
+     "item_recall@5": 0.3736,
+     "n": 12
+    },
+    "low_budget": {
+     "recall@5": 0.7639,
+     "mrr": 0.9222,
+     "ndcg@10": 0.7668,
+     "item_recall@5": 0.3783,
+     "n": 30
+    },
+    "multi_req": {
+     "recall@5": 0.6537,
+     "mrr": 0.7746,
+     "ndcg@10": 0.6617,
+     "item_recall@5": 0.3544,
+     "n": 90
+    },
+    "scam": {
+     "recall@5": 0.8912,
+     "mrr": 0.9037,
+     "ndcg@10": 0.8483,
+     "item_recall@5": 0.3681,
+     "n": 36
+    },
+    "standard": {
+     "recall@5": 0.8657,
+     "mrr": 0.9201,
+     "ndcg@10": 0.846,
+     "item_recall@5": 0.4137,
+     "n": 180
+    },
+    "vague": {
+     "recall@5": 0.7764,
+     "mrr": 1.0,
+     "ndcg@10": 0.8204,
+     "item_recall@5": 0.2775,
+     "n": 60
+    }
+   },
+   "eval_set": "full_dev"
+  },
+  "v1+v2+v9": {
+   "n": 540,
+   "recall@5": 0.8705,
+   "mrr": 0.9156,
+   "ndcg@10": 0.8482,
+   "item_recall@5": 0.4393,
+   "recall@5_multi_req(>=4)": 0.8359,
+   "n_multi_req": 291,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 60,
+   "p50_latency_s": 0.2383,
+   "p95_latency_s": 0.4504,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.9079,
+     "mrr": 0.884,
+     "ndcg@10": 0.8574,
+     "item_recall@5": 0.4253,
+     "n": 180
+    },
+    "data_analyst": {
+     "recall@5": 0.9125,
+     "mrr": 0.9338,
+     "ndcg@10": 0.8884,
+     "item_recall@5": 0.4048,
+     "n": 180
+    },
+    "fullstack": {
+     "recall@5": 0.7912,
+     "mrr": 0.9289,
+     "ndcg@10": 0.7989,
+     "item_recall@5": 0.4879,
+     "n": 180
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 0.9122,
+     "mrr": 0.9444,
+     "ndcg@10": 0.8879,
+     "item_recall@5": 0.5147,
+     "n": 75
+    },
+    "industry": {
+     "recall@5": 1.0,
+     "mrr": 0.9333,
+     "ndcg@10": 0.9508,
+     "item_recall@5": 0.4559,
+     "n": 45
+    },
+    "injection_legit": {
+     "recall@5": 1.0,
+     "mrr": 0.8958,
+     "ndcg@10": 0.9158,
+     "item_recall@5": 0.4361,
+     "n": 12
+    },
+    "injection_scam": {
+     "recall@5": 0.875,
+     "mrr": 0.9444,
+     "ndcg@10": 0.8811,
+     "item_recall@5": 0.4278,
+     "n": 12
+    },
+    "low_budget": {
+     "recall@5": 0.8639,
+     "mrr": 0.9611,
+     "ndcg@10": 0.8519,
+     "item_recall@5": 0.475,
+     "n": 30
+    },
+    "multi_req": {
+     "recall@5": 0.7389,
+     "mrr": 0.8365,
+     "ndcg@10": 0.7355,
+     "item_recall@5": 0.4244,
+     "n": 90
+    },
+    "scam": {
+     "recall@5": 0.9282,
+     "mrr": 0.9361,
+     "ndcg@10": 0.8919,
+     "item_recall@5": 0.4356,
+     "n": 36
+    },
+    "standard": {
+     "recall@5": 0.9056,
+     "mrr": 0.9593,
+     "ndcg@10": 0.8969,
+     "item_recall@5": 0.4887,
+     "n": 180
+    },
+    "vague": {
+     "recall@5": 0.7556,
+     "mrr": 0.8167,
+     "ndcg@10": 0.6966,
+     "item_recall@5": 0.1942,
+     "n": 60
+    }
+   },
+   "eval_set": "full_dev"
+  },
+  "v1+v2+v4": {
+   "n": 540,
+   "recall@5": 0.8407,
+   "mrr": 0.887,
+   "ndcg@10": 0.812,
+   "item_recall@5": 0.3682,
+   "recall@5_multi_req(>=4)": 0.8061,
+   "n_multi_req": 291,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 60,
+   "p50_latency_s": 0.2614,
+   "p95_latency_s": 0.465,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.8741,
+     "mrr": 0.8803,
+     "ndcg@10": 0.8368,
+     "item_recall@5": 0.3697,
+     "n": 180
+    },
+    "data_analyst": {
+     "recall@5": 0.8815,
+     "mrr": 0.8831,
+     "ndcg@10": 0.8392,
+     "item_recall@5": 0.3158,
+     "n": 180
+    },
+    "fullstack": {
+     "recall@5": 0.7667,
+     "mrr": 0.8976,
+     "ndcg@10": 0.76,
+     "item_recall@5": 0.4191,
+     "n": 180
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 0.8633,
+     "mrr": 0.8875,
+     "ndcg@10": 0.8314,
+     "item_recall@5": 0.3796,
+     "n": 75
+    },
+    "industry": {
+     "recall@5": 1.0,
+     "mrr": 0.9285,
+     "ndcg@10": 0.9462,
+     "item_recall@5": 0.3581,
+     "n": 45
+    },
+    "injection_legit": {
+     "recall@5": 0.8889,
+     "mrr": 0.8452,
+     "ndcg@10": 0.8565,
+     "item_recall@5": 0.3778,
+     "n": 12
+    },
+    "injection_scam": {
+     "recall@5": 0.9306,
+     "mrr": 0.9028,
+     "ndcg@10": 0.8731,
+     "item_recall@5": 0.3736,
+     "n": 12
+    },
+    "low_budget": {
+     "recall@5": 0.8083,
+     "mrr": 0.9361,
+     "ndcg@10": 0.7992,
+     "item_recall@5": 0.3733,
+     "n": 30
+    },
+    "multi_req": {
+     "recall@5": 0.6593,
+     "mrr": 0.7633,
+     "ndcg@10": 0.6465,
+     "item_recall@5": 0.33,
+     "n": 90
+    },
+    "scam": {
+     "recall@5": 0.9421,
+     "mrr": 0.9375,
+     "ndcg@10": 0.9005,
+     "item_recall@5": 0.3588,
+     "n": 36
+    },
+    "standard": {
+     "recall@5": 0.8796,
+     "mrr": 0.9119,
+     "ndcg@10": 0.8423,
+     "item_recall@5": 0.4085,
+     "n": 180
+    },
+    "vague": {
+     "recall@5": 0.7764,
+     "mrr": 0.9167,
+     "ndcg@10": 0.7769,
+     "item_recall@5": 0.2981,
+     "n": 60
+    }
+   },
+   "eval_set": "full_dev"
+  },
+  "v1+v2+v3": {
+   "n": 54,
+   "recall@5": 0.892,
+   "mrr": 0.912,
+   "ndcg@10": 0.8536,
+   "item_recall@5": 0.4509,
+   "recall@5_multi_req(>=4)": 0.849,
+   "n_multi_req": 32,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 6,
+   "p50_latency_s": 7.3796,
+   "p95_latency_s": 12.5229,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.8889,
+     "mrr": 0.9306,
+     "ndcg@10": 0.8587,
+     "item_recall@5": 0.5157,
+     "n": 18
+    },
+    "data_analyst": {
+     "recall@5": 0.8981,
+     "mrr": 0.8981,
+     "ndcg@10": 0.8488,
+     "item_recall@5": 0.3593,
+     "n": 18
+    },
+    "fullstack": {
+     "recall@5": 0.8889,
+     "mrr": 0.9074,
+     "ndcg@10": 0.8534,
+     "item_recall@5": 0.4778,
+     "n": 18
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 1.0,
+     "item_recall@5": 0.6528,
+     "n": 6
+    },
+    "industry": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 1.0,
+     "item_recall@5": 0.3056,
+     "n": 3
+    },
+    "injection_legit": {
+     "recall@5": 1.0,
+     "mrr": 0.7917,
+     "ndcg@10": 0.8436,
+     "item_recall@5": 0.3556,
+     "n": 6
+    },
+    "multi_req": {
+     "recall@5": 0.7111,
+     "mrr": 0.8,
+     "ndcg@10": 0.6598,
+     "item_recall@5": 0.4333,
+     "n": 15
+    },
+    "scam": {
+     "recall@5": 0.8333,
+     "mrr": 1.0,
+     "ndcg@10": 0.8563,
+     "item_recall@5": 0.5,
+     "n": 3
+    },
+    "standard": {
+     "recall@5": 0.9667,
+     "mrr": 0.9667,
+     "ndcg@10": 0.9384,
+     "item_recall@5": 0.4756,
+     "n": 15
+    },
+    "vague": {
+     "recall@5": 0.9167,
+     "mrr": 1.0,
+     "ndcg@10": 0.9151,
+     "item_recall@5": 0.375,
+     "n": 6
+    }
+   },
+   "eval_set": "subset_50_per_persona"
+  },
+  "v1+v2+v4+v9": {
+   "n": 540,
+   "recall@5": 0.8724,
+   "mrr": 0.892,
+   "ndcg@10": 0.8373,
+   "item_recall@5": 0.4044,
+   "recall@5_multi_req(>=4)": 0.8411,
+   "n_multi_req": 291,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 60,
+   "p50_latency_s": 0.2888,
+   "p95_latency_s": 0.6013,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.9079,
+     "mrr": 0.8663,
+     "ndcg@10": 0.846,
+     "item_recall@5": 0.4016,
+     "n": 180
+    },
+    "data_analyst": {
+     "recall@5": 0.9148,
+     "mrr": 0.9009,
+     "ndcg@10": 0.8725,
+     "item_recall@5": 0.3663,
+     "n": 180
+    },
+    "fullstack": {
+     "recall@5": 0.7944,
+     "mrr": 0.9089,
+     "ndcg@10": 0.7935,
+     "item_recall@5": 0.4452,
+     "n": 180
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 0.9167,
+     "mrr": 0.9298,
+     "ndcg@10": 0.8845,
+     "item_recall@5": 0.4496,
+     "n": 75
+    },
+    "industry": {
+     "recall@5": 1.0,
+     "mrr": 0.9444,
+     "ndcg@10": 0.9585,
+     "item_recall@5": 0.4285,
+     "n": 45
+    },
+    "injection_legit": {
+     "recall@5": 1.0,
+     "mrr": 0.9375,
+     "ndcg@10": 0.9336,
+     "item_recall@5": 0.3403,
+     "n": 12
+    },
+    "injection_scam": {
+     "recall@5": 0.9583,
+     "mrr": 0.9444,
+     "ndcg@10": 0.9442,
+     "item_recall@5": 0.3903,
+     "n": 12
+    },
+    "low_budget": {
+     "recall@5": 0.8417,
+     "mrr": 0.9778,
+     "ndcg@10": 0.864,
+     "item_recall@5": 0.4417,
+     "n": 30
+    },
+    "multi_req": {
+     "recall@5": 0.7426,
+     "mrr": 0.8207,
+     "ndcg@10": 0.7284,
+     "item_recall@5": 0.4039,
+     "n": 90
+    },
+    "scam": {
+     "recall@5": 0.9491,
+     "mrr": 0.9537,
+     "ndcg@10": 0.9145,
+     "item_recall@5": 0.4222,
+     "n": 36
+    },
+    "standard": {
+     "recall@5": 0.9023,
+     "mrr": 0.924,
+     "ndcg@10": 0.8702,
+     "item_recall@5": 0.4531,
+     "n": 180
+    },
+    "vague": {
+     "recall@5": 0.7528,
+     "mrr": 0.7172,
+     "ndcg@10": 0.6519,
+     "item_recall@5": 0.1703,
+     "n": 60
+    }
+   },
+   "eval_set": "full_dev"
+  },
+  "v1+v2+v6+v9": {
+   "n": 540,
+   "recall@5": 0.8798,
+   "mrr": 0.9231,
+   "ndcg@10": 0.8616,
+   "item_recall@5": 0.5201,
+   "recall@5_multi_req(>=4)": 0.8497,
+   "n_multi_req": 291,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 60,
+   "p50_latency_s": 0.333,
+   "p95_latency_s": 0.8042,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.9171,
+     "mrr": 0.9083,
+     "ndcg@10": 0.8829,
+     "item_recall@5": 0.517,
+     "n": 180
+    },
+    "data_analyst": {
+     "recall@5": 0.9185,
+     "mrr": 0.9157,
+     "ndcg@10": 0.8839,
+     "item_recall@5": 0.4804,
+     "n": 180
+    },
+    "fullstack": {
+     "recall@5": 0.8037,
+     "mrr": 0.9454,
+     "ndcg@10": 0.8181,
+     "item_recall@5": 0.5629,
+     "n": 180
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 0.91,
+     "mrr": 0.9378,
+     "ndcg@10": 0.8842,
+     "item_recall@5": 0.5833,
+     "n": 75
+    },
+    "industry": {
+     "recall@5": 1.0,
+     "mrr": 0.9741,
+     "ndcg@10": 0.9807,
+     "item_recall@5": 0.5878,
+     "n": 45
+    },
+    "injection_legit": {
+     "recall@5": 1.0,
+     "mrr": 0.9583,
+     "ndcg@10": 0.9692,
+     "item_recall@5": 0.4653,
+     "n": 12
+    },
+    "injection_scam": {
+     "recall@5": 0.9583,
+     "mrr": 1.0,
+     "ndcg@10": 0.9369,
+     "item_recall@5": 0.5861,
+     "n": 12
+    },
+    "low_budget": {
+     "recall@5": 0.8556,
+     "mrr": 0.95,
+     "ndcg@10": 0.854,
+     "item_recall@5": 0.53,
+     "n": 30
+    },
+    "multi_req": {
+     "recall@5": 0.7861,
+     "mrr": 0.8556,
+     "ndcg@10": 0.764,
+     "item_recall@5": 0.4917,
+     "n": 90
+    },
+    "scam": {
+     "recall@5": 0.9051,
+     "mrr": 0.9306,
+     "ndcg@10": 0.8811,
+     "item_recall@5": 0.5222,
+     "n": 36
+    },
+    "standard": {
+     "recall@5": 0.9139,
+     "mrr": 0.9731,
+     "ndcg@10": 0.921,
+     "item_recall@5": 0.5874,
+     "n": 180
+    },
+    "vague": {
+     "recall@5": 0.7472,
+     "mrr": 0.7778,
+     "ndcg@10": 0.6683,
+     "item_recall@5": 0.2225,
+     "n": 60
+    }
+   },
+   "eval_set": "full_dev"
+  },
+  "v1+v2+v5+v9": {
+   "n": 540,
+   "recall@5": 0.7403,
+   "mrr": 0.9077,
+   "ndcg@10": 0.7647,
+   "item_recall@5": 0.524,
+   "recall@5_multi_req(>=4)": 0.6773,
+   "n_multi_req": 291,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 60,
+   "p50_latency_s": 0.3269,
+   "p95_latency_s": 0.7556,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.769,
+     "mrr": 0.875,
+     "ndcg@10": 0.7742,
+     "item_recall@5": 0.4919,
+     "n": 180
+    },
+    "data_analyst": {
+     "recall@5": 0.8014,
+     "mrr": 0.9176,
+     "ndcg@10": 0.8124,
+     "item_recall@5": 0.5669,
+     "n": 180
+    },
+    "fullstack": {
+     "recall@5": 0.6505,
+     "mrr": 0.9306,
+     "ndcg@10": 0.7073,
+     "item_recall@5": 0.5131,
+     "n": 180
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 0.7933,
+     "mrr": 0.9333,
+     "ndcg@10": 0.8168,
+     "item_recall@5": 0.5647,
+     "n": 75
+    },
+    "industry": {
+     "recall@5": 1.0,
+     "mrr": 0.9778,
+     "ndcg@10": 0.9836,
+     "item_recall@5": 0.733,
+     "n": 45
+    },
+    "injection_legit": {
+     "recall@5": 0.8333,
+     "mrr": 0.9167,
+     "ndcg@10": 0.8462,
+     "item_recall@5": 0.6,
+     "n": 12
+    },
+    "injection_scam": {
+     "recall@5": 0.7639,
+     "mrr": 0.9167,
+     "ndcg@10": 0.8004,
+     "item_recall@5": 0.5569,
+     "n": 12
+    },
+    "low_budget": {
+     "recall@5": 0.7139,
+     "mrr": 0.9833,
+     "ndcg@10": 0.7652,
+     "item_recall@5": 0.4983,
+     "n": 30
+    },
+    "multi_req": {
+     "recall@5": 0.462,
+     "mrr": 0.8111,
+     "ndcg@10": 0.5327,
+     "item_recall@5": 0.4139,
+     "n": 90
+    },
+    "scam": {
+     "recall@5": 0.8264,
+     "mrr": 0.9583,
+     "ndcg@10": 0.8522,
+     "item_recall@5": 0.6051,
+     "n": 36
+    },
+    "standard": {
+     "recall@5": 0.8019,
+     "mrr": 0.9667,
+     "ndcg@10": 0.8333,
+     "item_recall@5": 0.5971,
+     "n": 180
+    },
+    "vague": {
+     "recall@5": 0.65,
+     "mrr": 0.7194,
+     "ndcg@10": 0.6012,
+     "item_recall@5": 0.2044,
+     "n": 60
+    }
+   },
+   "eval_set": "full_dev"
+  },
+  "v1+v2+v8+v9": {
+   "n": 540,
+   "recall@5": 0.7394,
+   "mrr": 0.7335,
+   "ndcg@10": 0.6922,
+   "item_recall@5": 0.311,
+   "recall@5_multi_req(>=4)": 0.6919,
+   "n_multi_req": 291,
+   "refusal_rate_on_mismatch_jobs": 0.8667,
+   "n_mismatch": 60,
+   "p50_latency_s": 0.7777,
+   "p95_latency_s": 1.4462,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.7722,
+     "mrr": 0.6855,
+     "ndcg@10": 0.6786,
+     "item_recall@5": 0.3116,
+     "n": 180
+    },
+    "data_analyst": {
+     "recall@5": 0.8306,
+     "mrr": 0.8002,
+     "ndcg@10": 0.7671,
+     "item_recall@5": 0.3141,
+     "n": 180
+    },
+    "fullstack": {
+     "recall@5": 0.6153,
+     "mrr": 0.7147,
+     "ndcg@10": 0.6309,
+     "item_recall@5": 0.3073,
+     "n": 180
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 0.7867,
+     "mrr": 0.7398,
+     "ndcg@10": 0.7163,
+     "item_recall@5": 0.3318,
+     "n": 75
+    },
+    "industry": {
+     "recall@5": 0.9111,
+     "mrr": 0.7282,
+     "ndcg@10": 0.7842,
+     "item_recall@5": 0.3352,
+     "n": 45
+    },
+    "injection_legit": {
+     "recall@5": 0.6528,
+     "mrr": 0.4792,
+     "ndcg@10": 0.5169,
+     "item_recall@5": 0.2111,
+     "n": 12
+    },
+    "injection_scam": {
+     "recall@5": 0.8958,
+     "mrr": 0.7708,
+     "ndcg@10": 0.7642,
+     "item_recall@5": 0.3611,
+     "n": 12
+    },
+    "low_budget": {
+     "recall@5": 0.7833,
+     "mrr": 0.7861,
+     "ndcg@10": 0.7163,
+     "item_recall@5": 0.3933,
+     "n": 30
+    },
+    "multi_req": {
+     "recall@5": 0.5676,
+     "mrr": 0.6456,
+     "ndcg@10": 0.5663,
+     "item_recall@5": 0.2728,
+     "n": 90
+    },
+    "scam": {
+     "recall@5": 0.8356,
+     "mrr": 0.8306,
+     "ndcg@10": 0.7997,
+     "item_recall@5": 0.3611,
+     "n": 36
+    },
+    "standard": {
+     "recall@5": 0.7796,
+     "mrr": 0.7957,
+     "ndcg@10": 0.7574,
+     "item_recall@5": 0.3482,
+     "n": 180
+    },
+    "vague": {
+     "recall@5": 0.5944,
+     "mrr": 0.6333,
+     "ndcg@10": 0.5301,
+     "item_recall@5": 0.1511,
+     "n": 60
+    }
+   },
+   "eval_set": "full_dev"
+  }
+ },
+ "same_subset_comparison": {
+  "v0": {
+   "n": 54,
+   "recall@5": 0.804,
+   "mrr": 0.9691,
+   "ndcg@10": 0.8251,
+   "item_recall@5": 0.2815,
+   "recall@5_multi_req(>=4)": 0.8177,
+   "n_multi_req": 32,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 6,
+   "p50_latency_s": 0.2874,
+   "p95_latency_s": 0.6748,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.8194,
+     "mrr": 0.9074,
+     "ndcg@10": 0.8081,
+     "item_recall@5": 0.3315,
+     "n": 18
+    },
+    "data_analyst": {
+     "recall@5": 0.8148,
+     "mrr": 1.0,
+     "ndcg@10": 0.8546,
+     "item_recall@5": 0.2824,
+     "n": 18
+    },
+    "fullstack": {
+     "recall@5": 0.7778,
+     "mrr": 1.0,
+     "ndcg@10": 0.8126,
+     "item_recall@5": 0.2306,
+     "n": 18
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 0.875,
+     "mrr": 0.8889,
+     "ndcg@10": 0.8151,
+     "item_recall@5": 0.2278,
+     "n": 6
+    },
+    "industry": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 1.0,
+     "item_recall@5": 0.3889,
+     "n": 3
+    },
+    "injection_legit": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 0.9946,
+     "item_recall@5": 0.2472,
+     "n": 6
+    },
+    "multi_req": {
+     "recall@5": 0.7278,
+     "mrr": 1.0,
+     "ndcg@10": 0.7723,
+     "item_recall@5": 0.38,
+     "n": 15
+    },
+    "scam": {
+     "recall@5": 0.75,
+     "mrr": 1.0,
+     "ndcg@10": 0.7889,
+     "item_recall@5": 0.15,
+     "n": 3
+    },
+    "standard": {
+     "recall@5": 0.7667,
+     "mrr": 0.9333,
+     "ndcg@10": 0.799,
+     "item_recall@5": 0.2156,
+     "n": 15
+    },
+    "vague": {
+     "recall@5": 0.75,
+     "mrr": 1.0,
+     "ndcg@10": 0.7932,
+     "item_recall@5": 0.3,
+     "n": 6
+    }
+   }
+  },
+  "v1": {
+   "n": 54,
+   "recall@5": 0.8225,
+   "mrr": 0.8102,
+   "ndcg@10": 0.7966,
+   "item_recall@5": 0.3778,
+   "recall@5_multi_req(>=4)": 0.7865,
+   "n_multi_req": 32,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 6,
+   "p50_latency_s": 0.4659,
+   "p95_latency_s": 0.8267,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.8611,
+     "mrr": 0.8889,
+     "ndcg@10": 0.8621,
+     "item_recall@5": 0.4815,
+     "n": 18
+    },
+    "data_analyst": {
+     "recall@5": 0.8426,
+     "mrr": 0.7639,
+     "ndcg@10": 0.7783,
+     "item_recall@5": 0.3102,
+     "n": 18
+    },
+    "fullstack": {
+     "recall@5": 0.7639,
+     "mrr": 0.7778,
+     "ndcg@10": 0.7493,
+     "item_recall@5": 0.3417,
+     "n": 18
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 0.9971,
+     "item_recall@5": 0.5,
+     "n": 6
+    },
+    "industry": {
+     "recall@5": 1.0,
+     "mrr": 0.7778,
+     "ndcg@10": 0.8333,
+     "item_recall@5": 0.1944,
+     "n": 3
+    },
+    "injection_legit": {
+     "recall@5": 0.8333,
+     "mrr": 0.5694,
+     "ndcg@10": 0.6918,
+     "item_recall@5": 0.3222,
+     "n": 6
+    },
+    "multi_req": {
+     "recall@5": 0.5778,
+     "mrr": 0.6611,
+     "ndcg@10": 0.6127,
+     "item_recall@5": 0.3467,
+     "n": 15
+    },
+    "scam": {
+     "recall@5": 0.9167,
+     "mrr": 1.0,
+     "ndcg@10": 0.894,
+     "item_recall@5": 0.5,
+     "n": 3
+    },
+    "standard": {
+     "recall@5": 0.9,
+     "mrr": 0.8722,
+     "ndcg@10": 0.8598,
+     "item_recall@5": 0.4156,
+     "n": 15
+    },
+    "vague": {
+     "recall@5": 0.9167,
+     "mrr": 1.0,
+     "ndcg@10": 0.9355,
+     "item_recall@5": 0.325,
+     "n": 6
+    }
+   }
+  },
+  "v2": {
+   "n": 54,
+   "recall@5": 0.7978,
+   "mrr": 0.9815,
+   "ndcg@10": 0.8281,
+   "item_recall@5": 0.2475,
+   "recall@5_multi_req(>=4)": 0.7839,
+   "n_multi_req": 32,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 6,
+   "p50_latency_s": 0.3103,
+   "p95_latency_s": 0.5527,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.8148,
+     "mrr": 0.9444,
+     "ndcg@10": 0.8155,
+     "item_recall@5": 0.2981,
+     "n": 18
+    },
+    "data_analyst": {
+     "recall@5": 0.8148,
+     "mrr": 1.0,
+     "ndcg@10": 0.8536,
+     "item_recall@5": 0.1778,
+     "n": 18
+    },
+    "fullstack": {
+     "recall@5": 0.7639,
+     "mrr": 1.0,
+     "ndcg@10": 0.8152,
+     "item_recall@5": 0.2667,
+     "n": 18
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 0.9167,
+     "mrr": 1.0,
+     "ndcg@10": 0.9394,
+     "item_recall@5": 0.2778,
+     "n": 6
+    },
+    "industry": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 1.0,
+     "item_recall@5": 0.2778,
+     "n": 3
+    },
+    "injection_legit": {
+     "recall@5": 1.0,
+     "mrr": 0.9167,
+     "ndcg@10": 0.9385,
+     "item_recall@5": 0.1722,
+     "n": 6
+    },
+    "multi_req": {
+     "recall@5": 0.6611,
+     "mrr": 1.0,
+     "ndcg@10": 0.7299,
+     "item_recall@5": 0.2733,
+     "n": 15
+    },
+    "scam": {
+     "recall@5": 0.6667,
+     "mrr": 1.0,
+     "ndcg@10": 0.7329,
+     "item_recall@5": 0.0667,
+     "n": 3
+    },
+    "standard": {
+     "recall@5": 0.8444,
+     "mrr": 0.9667,
+     "ndcg@10": 0.8566,
+     "item_recall@5": 0.2189,
+     "n": 15
+    },
+    "vague": {
+     "recall@5": 0.6667,
+     "mrr": 1.0,
+     "ndcg@10": 0.7421,
+     "item_recall@5": 0.375,
+     "n": 6
+    }
+   }
+  },
+  "v3": {
+   "n": 54,
+   "recall@5": 0.7701,
+   "mrr": 0.9907,
+   "ndcg@10": 0.8174,
+   "item_recall@5": 0.2052,
+   "recall@5_multi_req(>=4)": 0.7214,
+   "n_multi_req": 32,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 6,
+   "p50_latency_s": 3.8337,
+   "p95_latency_s": 5.7989,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.8148,
+     "mrr": 0.9722,
+     "ndcg@10": 0.848,
+     "item_recall@5": 0.213,
+     "n": 18
+    },
+    "data_analyst": {
+     "recall@5": 0.787,
+     "mrr": 1.0,
+     "ndcg@10": 0.8365,
+     "item_recall@5": 0.1389,
+     "n": 18
+    },
+    "fullstack": {
+     "recall@5": 0.7083,
+     "mrr": 1.0,
+     "ndcg@10": 0.7677,
+     "item_recall@5": 0.2639,
+     "n": 18
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 0.875,
+     "mrr": 1.0,
+     "ndcg@10": 0.8984,
+     "item_recall@5": 0.3194,
+     "n": 6
+    },
+    "industry": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 1.0,
+     "item_recall@5": 0.1667,
+     "n": 3
+    },
+    "injection_legit": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 1.0,
+     "item_recall@5": 0.0889,
+     "n": 6
+    },
+    "multi_req": {
+     "recall@5": 0.5444,
+     "mrr": 0.9667,
+     "ndcg@10": 0.6329,
+     "item_recall@5": 0.2467,
+     "n": 15
+    },
+    "scam": {
+     "recall@5": 0.6667,
+     "mrr": 1.0,
+     "ndcg@10": 0.7329,
+     "item_recall@5": 0.0,
+     "n": 3
+    },
+    "standard": {
+     "recall@5": 0.8111,
+     "mrr": 1.0,
+     "ndcg@10": 0.8554,
+     "item_recall@5": 0.1722,
+     "n": 15
+    },
+    "vague": {
+     "recall@5": 0.8333,
+     "mrr": 1.0,
+     "ndcg@10": 0.871,
+     "item_recall@5": 0.3083,
+     "n": 6
+    }
+   }
+  },
+  "v4": {
+   "n": 54,
+   "recall@5": 0.7438,
+   "mrr": 0.7022,
+   "ndcg@10": 0.6332,
+   "item_recall@5": 0.0485,
+   "recall@5_multi_req(>=4)": 0.7083,
+   "n_multi_req": 32,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 6,
+   "p50_latency_s": 0.1763,
+   "p95_latency_s": 0.3904,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.6852,
+     "mrr": 0.713,
+     "ndcg@10": 0.6015,
+     "item_recall@5": 0.0704,
+     "n": 18
+    },
+    "data_analyst": {
+     "recall@5": 0.787,
+     "mrr": 0.6389,
+     "ndcg@10": 0.6134,
+     "item_recall@5": 0.0,
+     "n": 18
+    },
+    "fullstack": {
+     "recall@5": 0.7593,
+     "mrr": 0.7546,
+     "ndcg@10": 0.6846,
+     "item_recall@5": 0.075,
+     "n": 18
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 0.9583,
+     "mrr": 0.7083,
+     "ndcg@10": 0.741,
+     "item_recall@5": 0.0,
+     "n": 6
+    },
+    "industry": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 1.0,
+     "item_recall@5": 0.3056,
+     "n": 3
+    },
+    "injection_legit": {
+     "recall@5": 0.7778,
+     "mrr": 0.6111,
+     "ndcg@10": 0.6276,
+     "item_recall@5": 0.1083,
+     "n": 6
+    },
+    "multi_req": {
+     "recall@5": 0.5056,
+     "mrr": 0.6833,
+     "ndcg@10": 0.4902,
+     "item_recall@5": 0.0533,
+     "n": 15
+    },
+    "scam": {
+     "recall@5": 0.6667,
+     "mrr": 1.0,
+     "ndcg@10": 0.7329,
+     "item_recall@5": 0.0,
+     "n": 3
+    },
+    "standard": {
+     "recall@5": 0.7778,
+     "mrr": 0.6333,
+     "ndcg@10": 0.5962,
+     "item_recall@5": 0.0167,
+     "n": 15
+    },
+    "vague": {
+     "recall@5": 0.9167,
+     "mrr": 0.7083,
+     "ndcg@10": 0.7476,
+     "item_recall@5": 0.0,
+     "n": 6
+    }
+   }
+  },
+  "v5": {
+   "n": 54,
+   "recall@5": 0.6929,
+   "mrr": 0.8889,
+   "ndcg@10": 0.7167,
+   "item_recall@5": 0.3525,
+   "recall@5_multi_req(>=4)": 0.6693,
+   "n_multi_req": 32,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 6,
+   "p50_latency_s": 0.1211,
+   "p95_latency_s": 0.4172,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.6019,
+     "mrr": 0.7778,
+     "ndcg@10": 0.6072,
+     "item_recall@5": 0.2907,
+     "n": 18
+    },
+    "data_analyst": {
+     "recall@5": 0.7593,
+     "mrr": 0.9444,
+     "ndcg@10": 0.8025,
+     "item_recall@5": 0.3361,
+     "n": 18
+    },
+    "fullstack": {
+     "recall@5": 0.7176,
+     "mrr": 0.9444,
+     "ndcg@10": 0.7403,
+     "item_recall@5": 0.4306,
+     "n": 18
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 0.875,
+     "mrr": 0.9167,
+     "ndcg@10": 0.8369,
+     "item_recall@5": 0.3194,
+     "n": 6
+    },
+    "industry": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 1.0,
+     "item_recall@5": 0.3611,
+     "n": 3
+    },
+    "injection_legit": {
+     "recall@5": 0.7778,
+     "mrr": 0.75,
+     "ndcg@10": 0.7327,
+     "item_recall@5": 0.2472,
+     "n": 6
+    },
+    "multi_req": {
+     "recall@5": 0.5222,
+     "mrr": 0.9333,
+     "ndcg@10": 0.6059,
+     "item_recall@5": 0.34,
+     "n": 15
+    },
+    "scam": {
+     "recall@5": 0.6667,
+     "mrr": 1.0,
+     "ndcg@10": 0.7329,
+     "item_recall@5": 0.1333,
+     "n": 3
+    },
+    "standard": {
+     "recall@5": 0.6444,
+     "mrr": 0.8,
+     "ndcg@10": 0.6566,
+     "item_recall@5": 0.3967,
+     "n": 15
+    },
+    "vague": {
+     "recall@5": 0.8333,
+     "mrr": 1.0,
+     "ndcg@10": 0.8577,
+     "item_recall@5": 0.5167,
+     "n": 6
+    }
+   }
+  },
+  "v6": {
+   "n": 54,
+   "recall@5": 0.7608,
+   "mrr": 0.9321,
+   "ndcg@10": 0.7779,
+   "item_recall@5": 0.2441,
+   "recall@5_multi_req(>=4)": 0.7214,
+   "n_multi_req": 32,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 6,
+   "p50_latency_s": 0.1127,
+   "p95_latency_s": 0.4619,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.8194,
+     "mrr": 0.8241,
+     "ndcg@10": 0.7676,
+     "item_recall@5": 0.3213,
+     "n": 18
+    },
+    "data_analyst": {
+     "recall@5": 0.787,
+     "mrr": 1.0,
+     "ndcg@10": 0.8331,
+     "item_recall@5": 0.1611,
+     "n": 18
+    },
+    "fullstack": {
+     "recall@5": 0.6759,
+     "mrr": 0.9722,
+     "ndcg@10": 0.733,
+     "item_recall@5": 0.25,
+     "n": 18
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 0.875,
+     "mrr": 0.9167,
+     "ndcg@10": 0.8369,
+     "item_recall@5": 0.2917,
+     "n": 6
+    },
+    "industry": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 1.0,
+     "item_recall@5": 0.3889,
+     "n": 3
+    },
+    "injection_legit": {
+     "recall@5": 0.9444,
+     "mrr": 0.8056,
+     "ndcg@10": 0.816,
+     "item_recall@5": 0.2056,
+     "n": 6
+    },
+    "multi_req": {
+     "recall@5": 0.5444,
+     "mrr": 0.9667,
+     "ndcg@10": 0.6291,
+     "item_recall@5": 0.2567,
+     "n": 15
+    },
+    "scam": {
+     "recall@5": 0.6667,
+     "mrr": 1.0,
+     "ndcg@10": 0.7329,
+     "item_recall@5": 0.0667,
+     "n": 3
+    },
+    "standard": {
+     "recall@5": 0.8,
+     "mrr": 0.9,
+     "ndcg@10": 0.8151,
+     "item_recall@5": 0.1956,
+     "n": 15
+    },
+    "vague": {
+     "recall@5": 0.8333,
+     "mrr": 1.0,
+     "ndcg@10": 0.871,
+     "item_recall@5": 0.3417,
+     "n": 6
+    }
+   }
+  },
+  "v7": {
+   "n": 54,
+   "recall@5": 0.8225,
+   "mrr": 0.9059,
+   "ndcg@10": 0.803,
+   "item_recall@5": 0.3151,
+   "recall@5_multi_req(>=4)": 0.763,
+   "n_multi_req": 32,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 6,
+   "p50_latency_s": 0.1104,
+   "p95_latency_s": 0.1902,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.8611,
+     "mrr": 0.838,
+     "ndcg@10": 0.8001,
+     "item_recall@5": 0.3833,
+     "n": 18
+    },
+    "data_analyst": {
+     "recall@5": 0.8148,
+     "mrr": 0.9352,
+     "ndcg@10": 0.8143,
+     "item_recall@5": 0.2509,
+     "n": 18
+    },
+    "fullstack": {
+     "recall@5": 0.7917,
+     "mrr": 0.9444,
+     "ndcg@10": 0.7948,
+     "item_recall@5": 0.3111,
+     "n": 18
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 1.0,
+     "item_recall@5": 0.4333,
+     "n": 6
+    },
+    "industry": {
+     "recall@5": 1.0,
+     "mrr": 0.8333,
+     "ndcg@10": 0.877,
+     "item_recall@5": 0.3889,
+     "n": 3
+    },
+    "injection_legit": {
+     "recall@5": 1.0,
+     "mrr": 0.8333,
+     "ndcg@10": 0.877,
+     "item_recall@5": 0.2806,
+     "n": 6
+    },
+    "multi_req": {
+     "recall@5": 0.5611,
+     "mrr": 0.8556,
+     "ndcg@10": 0.5907,
+     "item_recall@5": 0.3233,
+     "n": 15
+    },
+    "scam": {
+     "recall@5": 0.8333,
+     "mrr": 0.7778,
+     "ndcg@10": 0.6726,
+     "item_recall@5": 0.2167,
+     "n": 3
+    },
+    "standard": {
+     "recall@5": 0.9,
+     "mrr": 0.95,
+     "ndcg@10": 0.8994,
+     "item_recall@5": 0.3011,
+     "n": 15
+    },
+    "vague": {
+     "recall@5": 0.8333,
+     "mrr": 1.0,
+     "ndcg@10": 0.8506,
+     "item_recall@5": 0.2583,
+     "n": 6
+    }
+   }
+  },
+  "v8": {
+   "n": 54,
+   "recall@5": 0.8086,
+   "mrr": 0.929,
+   "ndcg@10": 0.8021,
+   "item_recall@5": 0.2809,
+   "recall@5_multi_req(>=4)": 0.7865,
+   "n_multi_req": 32,
+   "refusal_rate_on_mismatch_jobs": 0.8333,
+   "n_mismatch": 6,
+   "p50_latency_s": 0.1609,
+   "p95_latency_s": 0.55,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.8611,
+     "mrr": 0.8796,
+     "ndcg@10": 0.7951,
+     "item_recall@5": 0.3537,
+     "n": 18
+    },
+    "data_analyst": {
+     "recall@5": 0.8148,
+     "mrr": 0.9722,
+     "ndcg@10": 0.8454,
+     "item_recall@5": 0.2278,
+     "n": 18
+    },
+    "fullstack": {
+     "recall@5": 0.75,
+     "mrr": 0.9352,
+     "ndcg@10": 0.7659,
+     "item_recall@5": 0.2611,
+     "n": 18
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 0.9167,
+     "mrr": 0.9167,
+     "ndcg@10": 0.8779,
+     "item_recall@5": 0.2611,
+     "n": 6
+    },
+    "industry": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 1.0,
+     "item_recall@5": 0.2778,
+     "n": 3
+    },
+    "injection_legit": {
+     "recall@5": 1.0,
+     "mrr": 0.8056,
+     "ndcg@10": 0.8552,
+     "item_recall@5": 0.2472,
+     "n": 6
+    },
+    "multi_req": {
+     "recall@5": 0.6444,
+     "mrr": 0.9222,
+     "ndcg@10": 0.6844,
+     "item_recall@5": 0.3667,
+     "n": 15
+    },
+    "scam": {
+     "recall@5": 0.6667,
+     "mrr": 1.0,
+     "ndcg@10": 0.7329,
+     "item_recall@5": 0.0,
+     "n": 3
+    },
+    "standard": {
+     "recall@5": 0.8667,
+     "mrr": 0.9333,
+     "ndcg@10": 0.8408,
+     "item_recall@5": 0.2689,
+     "n": 15
+    },
+    "vague": {
+     "recall@5": 0.75,
+     "mrr": 1.0,
+     "ndcg@10": 0.8066,
+     "item_recall@5": 0.2917,
+     "n": 6
+    }
+   }
+  },
+  "v9": {
+   "n": 54,
+   "recall@5": 0.8225,
+   "mrr": 0.9599,
+   "ndcg@10": 0.8376,
+   "item_recall@5": 0.3571,
+   "recall@5_multi_req(>=4)": 0.8099,
+   "n_multi_req": 32,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 6,
+   "p50_latency_s": 0.1204,
+   "p95_latency_s": 0.2081,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.8194,
+     "mrr": 0.963,
+     "ndcg@10": 0.8324,
+     "item_recall@5": 0.3676,
+     "n": 18
+    },
+    "data_analyst": {
+     "recall@5": 0.8704,
+     "mrr": 0.9444,
+     "ndcg@10": 0.8679,
+     "item_recall@5": 0.3065,
+     "n": 18
+    },
+    "fullstack": {
+     "recall@5": 0.7778,
+     "mrr": 0.9722,
+     "ndcg@10": 0.8124,
+     "item_recall@5": 0.3972,
+     "n": 18
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 0.9583,
+     "mrr": 1.0,
+     "ndcg@10": 0.972,
+     "item_recall@5": 0.3194,
+     "n": 6
+    },
+    "industry": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 1.0,
+     "item_recall@5": 0.3611,
+     "n": 3
+    },
+    "injection_legit": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 1.0,
+     "item_recall@5": 0.2889,
+     "n": 6
+    },
+    "multi_req": {
+     "recall@5": 0.6778,
+     "mrr": 0.9667,
+     "ndcg@10": 0.7335,
+     "item_recall@5": 0.34,
+     "n": 15
+    },
+    "scam": {
+     "recall@5": 0.6667,
+     "mrr": 1.0,
+     "ndcg@10": 0.7329,
+     "item_recall@5": 0.3,
+     "n": 3
+    },
+    "standard": {
+     "recall@5": 0.9,
+     "mrr": 0.9556,
+     "ndcg@10": 0.8893,
+     "item_recall@5": 0.48,
+     "n": 15
+    },
+    "vague": {
+     "recall@5": 0.6667,
+     "mrr": 0.8333,
+     "ndcg@10": 0.6429,
+     "item_recall@5": 0.225,
+     "n": 6
+    }
+   }
+  },
+  "v1+v2": {
+   "n": 54,
+   "recall@5": 0.8549,
+   "mrr": 0.8432,
+   "ndcg@10": 0.8055,
+   "item_recall@5": 0.4198,
+   "recall@5_multi_req(>=4)": 0.8099,
+   "n_multi_req": 32,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 6,
+   "p50_latency_s": 0.2265,
+   "p95_latency_s": 0.5177,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.9028,
+     "mrr": 0.9028,
+     "ndcg@10": 0.8665,
+     "item_recall@5": 0.5185,
+     "n": 18
+    },
+    "data_analyst": {
+     "recall@5": 0.8704,
+     "mrr": 0.7963,
+     "ndcg@10": 0.7783,
+     "item_recall@5": 0.3407,
+     "n": 18
+    },
+    "fullstack": {
+     "recall@5": 0.7917,
+     "mrr": 0.8306,
+     "ndcg@10": 0.7716,
+     "item_recall@5": 0.4,
+     "n": 18
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 1.0,
+     "mrr": 0.9167,
+     "ndcg@10": 0.9385,
+     "item_recall@5": 0.6528,
+     "n": 6
+    },
+    "industry": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 1.0,
+     "item_recall@5": 0.3889,
+     "n": 3
+    },
+    "injection_legit": {
+     "recall@5": 1.0,
+     "mrr": 0.625,
+     "ndcg@10": 0.7376,
+     "item_recall@5": 0.3639,
+     "n": 6
+    },
+    "multi_req": {
+     "recall@5": 0.6278,
+     "mrr": 0.7189,
+     "ndcg@10": 0.6263,
+     "item_recall@5": 0.3467,
+     "n": 15
+    },
+    "scam": {
+     "recall@5": 0.9167,
+     "mrr": 1.0,
+     "ndcg@10": 0.9082,
+     "item_recall@5": 0.5,
+     "n": 3
+    },
+    "standard": {
+     "recall@5": 0.9333,
+     "mrr": 0.9,
+     "ndcg@10": 0.8783,
+     "item_recall@5": 0.42,
+     "n": 15
+    },
+    "vague": {
+     "recall@5": 0.8333,
+     "mrr": 1.0,
+     "ndcg@10": 0.8577,
+     "item_recall@5": 0.4,
+     "n": 6
+    }
+   }
+  },
+  "v1+v2+v9": {
+   "n": 54,
+   "recall@5": 0.8966,
+   "mrr": 0.8719,
+   "ndcg@10": 0.8549,
+   "item_recall@5": 0.4923,
+   "recall@5_multi_req(>=4)": 0.8646,
+   "n_multi_req": 32,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 6,
+   "p50_latency_s": 0.2323,
+   "p95_latency_s": 0.442,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.9167,
+     "mrr": 0.9306,
+     "ndcg@10": 0.8966,
+     "item_recall@5": 0.6241,
+     "n": 18
+    },
+    "data_analyst": {
+     "recall@5": 0.8981,
+     "mrr": 0.8241,
+     "ndcg@10": 0.8227,
+     "item_recall@5": 0.3778,
+     "n": 18
+    },
+    "fullstack": {
+     "recall@5": 0.875,
+     "mrr": 0.8611,
+     "ndcg@10": 0.8452,
+     "item_recall@5": 0.475,
+     "n": 18
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 1.0,
+     "item_recall@5": 0.6528,
+     "n": 6
+    },
+    "industry": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 1.0,
+     "item_recall@5": 0.3889,
+     "n": 3
+    },
+    "injection_legit": {
+     "recall@5": 1.0,
+     "mrr": 0.7917,
+     "ndcg@10": 0.8606,
+     "item_recall@5": 0.4806,
+     "n": 6
+    },
+    "multi_req": {
+     "recall@5": 0.7778,
+     "mrr": 0.7222,
+     "ndcg@10": 0.7005,
+     "item_recall@5": 0.4567,
+     "n": 15
+    },
+    "scam": {
+     "recall@5": 0.9167,
+     "mrr": 1.0,
+     "ndcg@10": 0.9172,
+     "item_recall@5": 0.6333,
+     "n": 3
+    },
+    "standard": {
+     "recall@5": 0.9667,
+     "mrr": 1.0,
+     "ndcg@10": 0.9718,
+     "item_recall@5": 0.5411,
+     "n": 15
+    },
+    "vague": {
+     "recall@5": 0.75,
+     "mrr": 0.75,
+     "ndcg@10": 0.694,
+     "item_recall@5": 0.2917,
+     "n": 6
+    }
+   }
+  },
+  "v1+v2+v4": {
+   "n": 54,
+   "recall@5": 0.841,
+   "mrr": 0.8366,
+   "ndcg@10": 0.8038,
+   "item_recall@5": 0.4034,
+   "recall@5_multi_req(>=4)": 0.8021,
+   "n_multi_req": 32,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 6,
+   "p50_latency_s": 0.2489,
+   "p95_latency_s": 0.465,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.8056,
+     "mrr": 0.8968,
+     "ndcg@10": 0.8385,
+     "item_recall@5": 0.5157,
+     "n": 18
+    },
+    "data_analyst": {
+     "recall@5": 0.8704,
+     "mrr": 0.838,
+     "ndcg@10": 0.8101,
+     "item_recall@5": 0.2889,
+     "n": 18
+    },
+    "fullstack": {
+     "recall@5": 0.8472,
+     "mrr": 0.775,
+     "ndcg@10": 0.7628,
+     "item_recall@5": 0.4056,
+     "n": 18
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 1.0,
+     "item_recall@5": 0.4556,
+     "n": 6
+    },
+    "industry": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 1.0,
+     "item_recall@5": 0.3889,
+     "n": 3
+    },
+    "injection_legit": {
+     "recall@5": 0.8333,
+     "mrr": 0.6905,
+     "ndcg@10": 0.7828,
+     "item_recall@5": 0.3639,
+     "n": 6
+    },
+    "multi_req": {
+     "recall@5": 0.6111,
+     "mrr": 0.6689,
+     "ndcg@10": 0.5862,
+     "item_recall@5": 0.3467,
+     "n": 15
+    },
+    "scam": {
+     "recall@5": 0.9167,
+     "mrr": 1.0,
+     "ndcg@10": 0.894,
+     "item_recall@5": 0.5,
+     "n": 3
+    },
+    "standard": {
+     "recall@5": 0.9667,
+     "mrr": 0.9,
+     "ndcg@10": 0.8822,
+     "item_recall@5": 0.4033,
+     "n": 15
+    },
+    "vague": {
+     "recall@5": 0.8333,
+     "mrr": 0.9167,
+     "ndcg@10": 0.8333,
+     "item_recall@5": 0.4917,
+     "n": 6
+    }
+   }
+  },
+  "v1+v2+v3": {
+   "n": 54,
+   "recall@5": 0.892,
+   "mrr": 0.912,
+   "ndcg@10": 0.8536,
+   "item_recall@5": 0.4509,
+   "recall@5_multi_req(>=4)": 0.849,
+   "n_multi_req": 32,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 6,
+   "p50_latency_s": 7.3796,
+   "p95_latency_s": 12.5229,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.8889,
+     "mrr": 0.9306,
+     "ndcg@10": 0.8587,
+     "item_recall@5": 0.5157,
+     "n": 18
+    },
+    "data_analyst": {
+     "recall@5": 0.8981,
+     "mrr": 0.8981,
+     "ndcg@10": 0.8488,
+     "item_recall@5": 0.3593,
+     "n": 18
+    },
+    "fullstack": {
+     "recall@5": 0.8889,
+     "mrr": 0.9074,
+     "ndcg@10": 0.8534,
+     "item_recall@5": 0.4778,
+     "n": 18
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 1.0,
+     "item_recall@5": 0.6528,
+     "n": 6
+    },
+    "industry": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 1.0,
+     "item_recall@5": 0.3056,
+     "n": 3
+    },
+    "injection_legit": {
+     "recall@5": 1.0,
+     "mrr": 0.7917,
+     "ndcg@10": 0.8436,
+     "item_recall@5": 0.3556,
+     "n": 6
+    },
+    "multi_req": {
+     "recall@5": 0.7111,
+     "mrr": 0.8,
+     "ndcg@10": 0.6598,
+     "item_recall@5": 0.4333,
+     "n": 15
+    },
+    "scam": {
+     "recall@5": 0.8333,
+     "mrr": 1.0,
+     "ndcg@10": 0.8563,
+     "item_recall@5": 0.5,
+     "n": 3
+    },
+    "standard": {
+     "recall@5": 0.9667,
+     "mrr": 0.9667,
+     "ndcg@10": 0.9384,
+     "item_recall@5": 0.4756,
+     "n": 15
+    },
+    "vague": {
+     "recall@5": 0.9167,
+     "mrr": 1.0,
+     "ndcg@10": 0.9151,
+     "item_recall@5": 0.375,
+     "n": 6
+    }
+   }
+  },
+  "v1+v2+v4+v9": {
+   "n": 54,
+   "recall@5": 0.8873,
+   "mrr": 0.8549,
+   "ndcg@10": 0.8253,
+   "item_recall@5": 0.4614,
+   "recall@5_multi_req(>=4)": 0.849,
+   "n_multi_req": 32,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 6,
+   "p50_latency_s": 0.2912,
+   "p95_latency_s": 0.5563,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.9167,
+     "mrr": 0.9028,
+     "ndcg@10": 0.8556,
+     "item_recall@5": 0.6074,
+     "n": 18
+    },
+    "data_analyst": {
+     "recall@5": 0.8981,
+     "mrr": 0.8519,
+     "ndcg@10": 0.8338,
+     "item_recall@5": 0.3824,
+     "n": 18
+    },
+    "fullstack": {
+     "recall@5": 0.8472,
+     "mrr": 0.8102,
+     "ndcg@10": 0.7865,
+     "item_recall@5": 0.3944,
+     "n": 18
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 1.0,
+     "item_recall@5": 0.6083,
+     "n": 6
+    },
+    "industry": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 1.0,
+     "item_recall@5": 0.3889,
+     "n": 3
+    },
+    "injection_legit": {
+     "recall@5": 1.0,
+     "mrr": 0.875,
+     "ndcg@10": 0.8895,
+     "item_recall@5": 0.2889,
+     "n": 6
+    },
+    "multi_req": {
+     "recall@5": 0.7444,
+     "mrr": 0.7611,
+     "ndcg@10": 0.6744,
+     "item_recall@5": 0.43,
+     "n": 15
+    },
+    "scam": {
+     "recall@5": 0.9167,
+     "mrr": 1.0,
+     "ndcg@10": 0.9172,
+     "item_recall@5": 0.5667,
+     "n": 3
+    },
+    "standard": {
+     "recall@5": 0.9667,
+     "mrr": 0.9,
+     "ndcg@10": 0.895,
+     "item_recall@5": 0.5511,
+     "n": 15
+    },
+    "vague": {
+     "recall@5": 0.75,
+     "mrr": 0.6667,
+     "ndcg@10": 0.6563,
+     "item_recall@5": 0.325,
+     "n": 6
+    }
+   }
+  },
+  "v1+v2+v6+v9": {
+   "n": 54,
+   "recall@5": 0.892,
+   "mrr": 0.892,
+   "ndcg@10": 0.8607,
+   "item_recall@5": 0.5685,
+   "recall@5_multi_req(>=4)": 0.8568,
+   "n_multi_req": 32,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 6,
+   "p50_latency_s": 0.3599,
+   "p95_latency_s": 0.7719,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.9167,
+     "mrr": 0.9444,
+     "ndcg@10": 0.9104,
+     "item_recall@5": 0.6917,
+     "n": 18
+    },
+    "data_analyst": {
+     "recall@5": 0.8704,
+     "mrr": 0.8241,
+     "ndcg@10": 0.8096,
+     "item_recall@5": 0.4444,
+     "n": 18
+    },
+    "fullstack": {
+     "recall@5": 0.8889,
+     "mrr": 0.9074,
+     "ndcg@10": 0.8622,
+     "item_recall@5": 0.5694,
+     "n": 18
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 1.0,
+     "item_recall@5": 0.7167,
+     "n": 6
+    },
+    "industry": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 1.0,
+     "item_recall@5": 0.6667,
+     "n": 3
+    },
+    "injection_legit": {
+     "recall@5": 1.0,
+     "mrr": 0.9167,
+     "ndcg@10": 0.9385,
+     "item_recall@5": 0.4722,
+     "n": 6
+    },
+    "multi_req": {
+     "recall@5": 0.7944,
+     "mrr": 0.7778,
+     "ndcg@10": 0.7161,
+     "item_recall@5": 0.5133,
+     "n": 15
+    },
+    "scam": {
+     "recall@5": 0.9167,
+     "mrr": 0.8333,
+     "ndcg@10": 0.8327,
+     "item_recall@5": 0.7167,
+     "n": 3
+    },
+    "standard": {
+     "recall@5": 0.9667,
+     "mrr": 1.0,
+     "ndcg@10": 0.9834,
+     "item_recall@5": 0.6344,
+     "n": 15
+    },
+    "vague": {
+     "recall@5": 0.6667,
+     "mrr": 0.75,
+     "ndcg@10": 0.6429,
+     "item_recall@5": 0.3667,
+     "n": 6
+    }
+   }
+  },
+  "v1+v2+v5+v9": {
+   "n": 54,
+   "recall@5": 0.6991,
+   "mrr": 0.8611,
+   "ndcg@10": 0.7256,
+   "item_recall@5": 0.5355,
+   "recall@5_multi_req(>=4)": 0.6016,
+   "n_multi_req": 32,
+   "refusal_rate_on_mismatch_jobs": 0.0,
+   "n_mismatch": 6,
+   "p50_latency_s": 0.3398,
+   "p95_latency_s": 0.6919,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.6806,
+     "mrr": 0.9167,
+     "ndcg@10": 0.7309,
+     "item_recall@5": 0.5907,
+     "n": 18
+    },
+    "data_analyst": {
+     "recall@5": 0.7407,
+     "mrr": 0.7778,
+     "ndcg@10": 0.7278,
+     "item_recall@5": 0.4935,
+     "n": 18
+    },
+    "fullstack": {
+     "recall@5": 0.6759,
+     "mrr": 0.8889,
+     "ndcg@10": 0.7181,
+     "item_recall@5": 0.5222,
+     "n": 18
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 0.9167,
+     "mrr": 1.0,
+     "ndcg@10": 0.9394,
+     "item_recall@5": 0.7167,
+     "n": 6
+    },
+    "industry": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 1.0,
+     "item_recall@5": 0.6389,
+     "n": 3
+    },
+    "injection_legit": {
+     "recall@5": 0.7778,
+     "mrr": 0.8333,
+     "ndcg@10": 0.7942,
+     "item_recall@5": 0.525,
+     "n": 6
+    },
+    "multi_req": {
+     "recall@5": 0.3278,
+     "mrr": 0.6667,
+     "ndcg@10": 0.3787,
+     "item_recall@5": 0.3333,
+     "n": 15
+    },
+    "scam": {
+     "recall@5": 0.6667,
+     "mrr": 1.0,
+     "ndcg@10": 0.7499,
+     "item_recall@5": 0.6333,
+     "n": 3
+    },
+    "standard": {
+     "recall@5": 0.9111,
+     "mrr": 1.0,
+     "ndcg@10": 0.9328,
+     "item_recall@5": 0.6967,
+     "n": 15
+    },
+    "vague": {
+     "recall@5": 0.6667,
+     "mrr": 0.75,
+     "ndcg@10": 0.6429,
+     "item_recall@5": 0.3667,
+     "n": 6
+    }
+   }
+  },
+  "v1+v2+v8+v9": {
+   "n": 54,
+   "recall@5": 0.7546,
+   "mrr": 0.6759,
+   "ndcg@10": 0.6692,
+   "item_recall@5": 0.3071,
+   "recall@5_multi_req(>=4)": 0.7109,
+   "n_multi_req": 32,
+   "refusal_rate_on_mismatch_jobs": 1.0,
+   "n_mismatch": 6,
+   "p50_latency_s": 0.826,
+   "p95_latency_s": 1.4568,
+   "by_persona": {
+    "ai_ml": {
+     "recall@5": 0.7454,
+     "mrr": 0.662,
+     "ndcg@10": 0.6585,
+     "item_recall@5": 0.3972,
+     "n": 18
+    },
+    "data_analyst": {
+     "recall@5": 0.8981,
+     "mrr": 0.6852,
+     "ndcg@10": 0.7356,
+     "item_recall@5": 0.2185,
+     "n": 18
+    },
+    "fullstack": {
+     "recall@5": 0.6204,
+     "mrr": 0.6806,
+     "ndcg@10": 0.6135,
+     "item_recall@5": 0.3056,
+     "n": 18
+    }
+   },
+   "by_job_type": {
+    "exact_tool": {
+     "recall@5": 0.875,
+     "mrr": 0.6806,
+     "ndcg@10": 0.7312,
+     "item_recall@5": 0.325,
+     "n": 6
+    },
+    "industry": {
+     "recall@5": 1.0,
+     "mrr": 1.0,
+     "ndcg@10": 1.0,
+     "item_recall@5": 0.4444,
+     "n": 3
+    },
+    "injection_legit": {
+     "recall@5": 0.7778,
+     "mrr": 0.4861,
+     "ndcg@10": 0.5417,
+     "item_recall@5": 0.2056,
+     "n": 6
+    },
+    "multi_req": {
+     "recall@5": 0.6222,
+     "mrr": 0.6056,
+     "ndcg@10": 0.5648,
+     "item_recall@5": 0.2967,
+     "n": 15
+    },
+    "scam": {
+     "recall@5": 0.8333,
+     "mrr": 1.0,
+     "ndcg@10": 0.8062,
+     "item_recall@5": 0.3333,
+     "n": 3
+    },
+    "standard": {
+     "recall@5": 0.8667,
+     "mrr": 0.7944,
+     "ndcg@10": 0.8039,
+     "item_recall@5": 0.3678,
+     "n": 15
+    },
+    "vague": {
+     "recall@5": 0.5,
+     "mrr": 0.4167,
+     "ndcg@10": 0.4251,
+     "item_recall@5": 0.1833,
+     "n": 6
+    }
+   }
+  }
+ },
+ "ablation_recall@5": {
+  "pipeline": "v1+v2+v6+v9",
+  "full": {
+   "recall@5": 0.8798,
+   "mrr": 0.9231,
+   "ndcg@10": 0.8616
+  },
+  "without_v1": {
+   "recall@5": 0.8691,
+   "mrr": 0.958,
+   "ndcg@10": 0.8712
+  },
+  "without_v2": {
+   "recall@5": 0.8735,
+   "mrr": 0.8952,
+   "ndcg@10": 0.8396
+  },
+  "without_v6": {
+   "recall@5": 0.8705,
+   "mrr": 0.9156,
+   "ndcg@10": 0.8482
+  },
+  "without_v9": {
+   "recall@5": 0.8573,
+   "mrr": 0.925,
+   "ndcg@10": 0.8455
+  }
+ },
+ "best_by_ndcg_on_subset": "v1+v2+v6+v9",
+ "best_by_ndcg_full_dev": "v1+v2+v6+v9"
+}

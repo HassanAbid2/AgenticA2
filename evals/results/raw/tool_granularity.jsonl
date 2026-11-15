@@ -76,3 +76,26 @@
 {"key": "coarse|35", "design": "coarse", "task": 35, "tool": "marketplace_read", "args": {"action": "get_client", "params": {"client_id": "cl-0200"}}, "tokens": 395, "tool_ok": true, "args_ok": true, "ts": 1794751424.7259338}
 {"key": "coarse|36", "design": "coarse", "task": 36, "tool": "portfolio", "args": {"action": "find_projects", "params": {}}, "tokens": 465, "tool_ok": true, "args_ok": true, "ts": 1794751425.3088455}
 {"key": "coarse|37", "design": "coarse", "task": 37, "tool": "marketplace_read", "args": {"action": "search_jobs", "params": {"budget_min": 500, "hourly": true, "query": "Web apps"}}, "tokens": 470, "tool_ok": true, "args_ok": true, "ts": 1794751429.252978}
+{"key": "coarse|38", "design": "coarse", "task": 38, "tool": "marketplace_read", "args": {"action": "get_job", "params": {"job_id": "j-da-0401"}}, "tokens": 388, "tool_ok": true, "args_ok": true, "ts": 1794751433.0673816}
+{"key": "coarse|39", "design": "coarse", "task": 39, "tool": "marketplace_read", "args": {"action": "get_job", "params": {"id": "fullstack-prop-012"}}, "tokens": 483, "tool_ok": false, "args_ok": false, "ts": 1794751437.0300229}
+{"key": "ours|0", "design": "ours", "task": 0, "tool": "search_jobs", "args": {"limit": 20, "query": "Celery"}, "tokens": 2002, "tool_ok": true, "args_ok": true, "ts": 1794751451.7638881}
+{"key": "ours|1", "design": "ours", "task": 1, "tool": "search_jobs", "args": {"category": "", "limit": 20, "min_budget": 0, "posted_after": "", "query": "", "skills": ["dbt", "Snowflake"]}, "tokens": 2022, "tool_ok": true, "args_ok": true, "ts": 1794751468.491822}
+{"key": "ours|2", "design": "ours", "task": 2, "tool": "search_jobs", "args": {"category": "", "limit": 20, "min_budget": 2000, "posted_after": "", "query": "", "skills": []}, "tokens": 2056, "tool_ok": true, "args_ok": true, "ts": 1794751484.5280986}
+{"key": "ours|3", "design": "ours", "task": 3, "tool": "search_jobs", "args": {"category": "Computer vision"}, "tokens": 1975, "tool_ok": true, "args_ok": true, "ts": 1794751498.6020236}
+{"key": "ours|4", "design": "ours", "task": 4, "tool": "get_job", "args": {"job_id": "j-ai-0042"}, "tokens": 1984, "tool_ok": true, "args_ok": true, "ts": 1794751512.3806117}
+{"key": "ours|5", "design": "ours", "task": 5, "tool": "get_job", "args": {"job_id": "j-fu-0300"}, "tokens": 1986, "tool_ok": true, "args_ok": true, "ts": 1794751529.2082887}
+{"key": "ours|6", "design": "ours", "task": 6, "tool": "get_job", "args": {"job_id": "j-da-0450"}, "tokens": 2003, "tool_ok": true, "args_ok": true, "ts": 1794751543.1319425}
+{"key": "ours|7", "design": "ours", "task": 7, "tool": "get_client_history", "args": {"client_id": "cl-0062"}, "tokens": 1977, "tool_ok": true, "args_ok": true, "ts": 1794751557.1836727}
+{"key": "ours|8", "design": "ours", "task": 8, "tool": "get_client_history", "args": {"client_id": "cl-0168"}, "tokens": 1981, "tool_ok": true, "args_ok": true, "ts": 1794751572.0239444}
+{"key": "ours|9", "design": "ours", "task": 9, "tool": "get_client_history", "args": {"client_id": "cl-0011"}, "tokens": 1993, "tool_ok": true, "args_ok": true, "ts": 1794751586.9627428}
+{"key": "ours|10", "design": "ours", "task": 10, "tool": "get_client_history", "args": {"client_id": "cl-0099"}, "tokens": 2029, "tool_ok": true, "args_ok": true, "ts": 1794751604.4887738}
+{"key": "ours|11", "design": "ours", "task": 11, "tool": "get_connects_balance", "args": {}, "tokens": 1963, "tool_ok": true, "args_ok": true, "ts": 1794751620.0563414}
+{"key": "ours|12", "design": "ours", "task": 12, "tool": "get_policy", "args": {"": ""}, "tokens": 2005, "tool_ok": true, "args_ok": true, "ts": 1794751620.667945}
+{"key": "ours|13", "design": "ours", "task": 13, "tool": "get_policy", "args": {"": ""}, "tokens": 2034, "tool_ok": true, "args_ok": true, "ts": 1794751633.4987772}
+{"key": "ours|14", "design": "ours", "task": 14, "tool": "get_market_stats", "args": {"category": "Dashboards & BI"}, "tokens": 2086, "tool_ok": true, "args_ok": true, "ts": 1794751648.5403295}
+{"key": "ours|15", "design": "ours", "task": 15, "tool": "search_evidence", "args": {"k": 5, "requirement": "RAG chatbots"}, "tokens": 2052, "tool_ok": true, "args_ok": true, "ts": 1794751664.805775}
+{"key": "ours|16", "design": "ours", "task": 16, "tool": "search_evidence", "args": {"k": 5, "requirement": "Qdrant"}, "tokens": 2026, "tool_ok": true, "args_ok": true, "ts": 1794751666.7876892}
+{"key": "ours|17", "design": "ours", "task": 17, "tool": "search_evidence", "args": {"k": 5, "requirement": "churn model"}, "tokens": 2246, "tool_ok": true, "args_ok": true, "ts": 1794751682.0023487}
+{"key": "ours|18", "design": "ours", "task": 18, "tool": "search_evidence", "args": {"k": 5, "requirement": "dashboards"}, "tokens": 2044, "tool_ok": true, "args_ok": true, "ts": 1794751685.18199}
+{"key": "ours|19", "design": "ours", "task": 19, "tool": "get_case_study", "args": {"id": "ai_ml-cs-telco-churn"}, "tokens": 2012, "tool_ok": true, "args_ok": true, "ts": 1794751701.366293}
+{"key": "ours|20", "design": "ours", "task": 20, "tool": "list_skills", "args": {"": ""}, "tokens": 1966, "tool_ok": true, "args_ok": true, "ts": 1794751715.1500978}

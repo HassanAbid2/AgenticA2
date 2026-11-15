@@ -1,0 +1,134 @@
+{
+ "generated_at": "2026-11-15T19:08:35",
+ "git_commit": "a9d42a8",
+ "model": "analyst model (see agent/config.yaml)",
+ "n_tasks": 40,
+ "complete": false,
+ "results": {
+  "fine": {
+   "n_tools": 27,
+   "n_tasks": 40,
+   "tool_selection_accuracy": 0.75,
+   "argument_accuracy": 0.75,
+   "tokens_per_task": 930.175
+  },
+  "coarse": {
+   "n_tools": 3,
+   "n_tasks": 40,
+   "tool_selection_accuracy": 0.825,
+   "argument_accuracy": 0.725,
+   "tokens_per_task": 436.625
+  },
+  "ours": {
+   "n_tools": 21,
+   "n_tasks": 21,
+   "tool_selection_accuracy": 1.0,
+   "argument_accuracy": 1.0,
+   "tokens_per_task": 2021.0476
+  }
+ },
+ "misses": [
+  {
+   "design": "fine",
+   "task": "Find my evidence of building RAG chatbots.",
+   "chose": "search_code",
+   "expected": "search_case_studies"
+  },
+  {
+   "design": "fine",
+   "task": "Open the full case study ai_ml-cs-telco-churn.",
+   "chose": "search_case_studies",
+   "expected": "get_evidence"
+  },
+  {
+   "design": "fine",
+   "task": "Have I used XGBoost for an insurance client?",
+   "chose": "search_past_proposals",
+   "expected": "find_projects_by_skill_and_industry"
+  },
+  {
+   "design": "fine",
+   "task": "Which projects did I do for healthcare clients?",
+   "chose": "search_past_proposals",
+   "expected": "find_projects_by_skill_and_industry"
+  },
+  {
+   "design": "fine",
+   "task": "Map every requirement of this job to my portfolio: 'Need Airflow pipelines and pandas cleaning'.",
+   "chose": "search_code",
+   "expected": "search_case_studies"
+  },
+  {
+   "design": "fine",
+   "task": "Any updates on my submitted proposals since event 40?",
+   "chose": "search_past_proposals",
+   "expected": "list_threads"
+  },
+  {
+   "design": "fine",
+   "task": "What evidence do I have for Stripe subscriptions?",
+   "chose": "get_evidence",
+   "expected": "search_case_studies"
+  },
+  {
+   "design": "fine",
+   "task": "Get the details of client cl-0200 before I bid.",
+   "chose": "get_client_rating",
+   "expected": "get_client_payment_status"
+  },
+  {
+   "design": "fine",
+   "task": "Find hourly-friendly jobs in Web apps above $500 budget.",
+   "chose": "search_jobs_by_keyword",
+   "expected": "search_jobs_by_budget"
+  },
+  {
+   "design": "fine",
+   "task": "Read the past proposal fullstack-prop-012.",
+   "chose": "search_past_proposals",
+   "expected": "get_evidence"
+  },
+  {
+   "design": "coarse",
+   "task": "What did clients say about my churn model work?",
+   "chose": "marketplace_read",
+   "expected": "portfolio"
+  },
+  {
+   "design": "coarse",
+   "task": "Show past proposals about dashboards that won.",
+   "chose": "marketplace_read",
+   "expected": "portfolio"
+  },
+  {
+   "design": "coarse",
+   "task": "Open the full case study ai_ml-cs-telco-churn.",
+   "chose": "marketplace_read",
+   "expected": "portfolio"
+  },
+  {
+   "design": "coarse",
+   "task": "Preview exactly what would be sent for job j-ai-0002 at $900 before I approve.",
+   "chose": "marketplace_read",
+   "expected": "marketplace_write"
+  },
+  {
+   "design": "coarse",
+   "task": "Look up my past proposals that got ignored about churn.",
+   "chose": "marketplace_read",
+   "expected": "portfolio"
+  },
+  {
+   "design": "coarse",
+   "task": "What evidence do I have for Stripe subscriptions?",
+   "chose": "marketplace_read",
+   "expected": "portfolio"
+  },
+  {
+   "design": "coarse",
+   "task": "Read the past proposal fullstack-prop-012.",
+   "chose": "marketplace_read",
+   "expected": "portfolio"
+  }
+ ]
+}

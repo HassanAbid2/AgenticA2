@@ -147,6 +147,6 @@ async def main(n: int, variants: list[str]):
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--n", type=int, default=4, help="jobs per persona")
-    ap.add_argument("--variants", default="v0,v1+v2+v9")
+    ap.add_argument("--variants", default="v0,v1+v2+v6+v9")
     a = ap.parse_args()
     asyncio.run(main(a.n, a.variants.split(",")))
