@@ -12,7 +12,7 @@ marketplace:
 
 policy:
   pack: data/policy_pack/marketplace_policy.yaml  # Compliance Guard ground truth
-  version: "2026-10"                              # GigSim policy version this config targets
+  version: "2026-11-02"                            # GigSim policy version this config targets
 
 models:
   profile: open               # open (required) | open_b (comparison) | local | offline | paid

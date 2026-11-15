@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-15T18:32:47",
- "git_commit": "8761b29",
+ "generated_at": "2026-11-15T18:38:16",
+ "git_commit": "8d93dea",
  "label": "before",
  "gigsim_policy": "2026-11-02",
  "jobs": 9,
@@ -21,7 +21,7 @@
    "connects_under_new_policy": 27,
    "accepted": false,
    "status": "needs_attention",
-   "reason": "marketplace refused the submission: 404: proposal not found",
+   "reason": "marketplace refused the submission: 422: policy_violation: P8 AI-assisted proposals must disclose AI assistance",
    "connects_spent": null
   },
   {
@@ -35,7 +35,7 @@
    "connects_under_new_policy": 18,
    "accepted": false,
    "status": "needs_attention",
-   "reason": "marketplace refused the submission: 404: proposal not found",
+   "reason": "marketplace refused the submission: 422: policy_violation: P8 AI-assisted proposals must disclose AI assistance",
    "connects_spent": null
   },
   {
@@ -69,7 +69,7 @@
    "connects_under_new_policy": 21,
    "accepted": false,
    "status": "needs_attention",
-   "reason": "marketplace refused the submission: 404: proposal not found",
+   "reason": "marketplace refused the submission: 422: policy_violation: P8 AI-assisted proposals must disclose AI assistance",
    "connects_spent": null
   },
   {
@@ -83,7 +83,7 @@
    "connects_under_new_policy": 10,
    "accepted": false,
    "status": "needs_attention",
-   "reason": "marketplace refused the submission: 404: proposal not found",
+   "reason": "marketplace refused the submission: 422: policy_violation: P8 AI-assisted proposals must disclose AI assistance",
    "connects_spent": null
   },
   {
@@ -97,7 +97,7 @@
    "connects_under_new_policy": 15,
    "accepted": false,
    "status": "needs_attention",
-   "reason": "marketplace refused the submission: 404: proposal not found",
+   "reason": "marketplace refused the submission: 422: policy_violation: P8 AI-assisted proposals must disclose AI assistance",
    "connects_spent": null
   }
  ]

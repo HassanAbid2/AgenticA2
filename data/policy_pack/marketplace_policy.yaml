@@ -1,4 +1,4 @@
-version: 2026-10
+version: 2026-11-02
 source: data/policy_pack/marketplace_policy.md (instructor summary) + GigSim /policy
 rules:
 - id: P1-email
@@ -54,4 +54,5 @@ rules:
   kind: process
   action: enforced_by_graph
   message: Every send goes through interrupt() approval.
-required_disclosure: null
+required_disclosure: Drafted with AI assistance and reviewed by me.
+disclosure_rule_id: P8-disclosure
