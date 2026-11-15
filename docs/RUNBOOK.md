@@ -21,7 +21,7 @@ while the embedding model downloads into the `models` volume).
 5. Log in as `REVIEWER_EMAIL` with `REVIEWER_PASSWORD` (seeded on first start, persona `ai_ml`).
    Give graders the credentials in a private comment, never in the repo.
 
-The Ollama service is part of the stack for `MODEL_PROFILE=local`; the deployed link uses the `open`
+The Ollama service starts only with `docker compose --profile local up` (for `MODEL_PROFILE=local`); the deployed link uses the `open`
 profile (Groq), because free hosts have no GPU.
 
 ## Scheduling and rate limits
