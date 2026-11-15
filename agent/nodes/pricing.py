@@ -3,8 +3,20 @@ Connects cost is worth it (expected reply rate per Connect)."""
 
 from __future__ import annotations
 
+import re
+
 from agent.handoffs import PriceQuote
 from agent.nodes.common import deps, node, thresholds
+
+
+def requirement_count(job: dict, spec: dict) -> int:
+    """Effort scales with the number of requirements, not with how many tool names the post happens to
+    mention (failure analysis: counting skill names over-priced posts that list many tools and under-priced
+    posts that describe needs in words). Prefer the post's own requirement bullets."""
+    m = re.search(r"Requirements:\s*\n((?:\s*[-*]\s.*\n?)+)", job.get("description", ""))
+    if m:
+        return max(1, min(20, len([x for x in m.group(1).splitlines() if x.strip()])))
+    return max(1, min(20, len(spec.get("required_skills", [])) or 3))
 
 
 def expected_reply_rate(fit: float, risk: float, proposals_count: int) -> float:
@@ -62,7 +74,7 @@ async def pricing(state, config):
     job = state["job"]
     spec = state.get("job_spec", {})
     try:
-        stats = await m.get_market_stats(job.get("category", ""), max(1, min(20, len(spec.get("required_skills", [])) or 3)))
+        stats = await m.get_market_stats(job.get("category", ""), requirement_count(job, spec))
     except Exception:  # noqa: BLE001 - live mode has no market stats; quote() falls back to the budget
         stats = None
     q = quote(job, stats, d.profile | d.user_settings, state.get("fit_report", {}).get("score", 0.5),

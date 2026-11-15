@@ -1,0 +1,189 @@
+# GigBid: R&D report (design review)
+
+*AI-4016 · build fc91cdb · every number below is read from `evals/results/` at build time.*
+
+## 1. Problem and constraints
+A freelancer loses hours scanning feeds, spends paid Connects on jobs they won't win, sends generic
+proposals and meets scams (free "test" work, off-platform payment, data harvesting). GigBid automates
+discovery, risk triage, evidence gathering, pricing and drafting; **the human decides**. Never automated:
+submitting a proposal, sending a message, spending Connects (each requires `interrupt()` approval in the
+UI; live Upwork additionally requires confirming the draft on Upwork), claiming experience the portfolio
+does not show, contacting or paying off-platform, scraping. **Declared budgets** (`agent/config.yaml`):
+p95 <= 30 s per job analysed and <= 90 s per proposal; <= $0.002 per job and <= $0.01 per proposal on the
+`open` profile (Groq-hosted open-weight models).
+
+## 2. Architecture
+Two hand-written LangGraph graphs (bid: one thread per job; conversation: one per client thread) with a
+Postgres checkpointer and a LangGraph store, run by an Arq worker; a FastAPI API streams node events to a
+React UI over SSE. All capabilities are MCP tools: GigBid's Portfolio, Marketplace and Workspace servers
+(21 tools, schema-snapshot tested) plus the official Upwork and GitHub servers. The graph holds one
+`MarketplacePort`; the Marketplace server picks the GigSim or Upwork adapter from config. Job Analyst,
+Risk Assessor and Fit Matcher run in parallel via `Send`; a decision node routes bid/watch/skip; Writer ->
+claim verification -> Critic (max 2 revisions) -> Compliance Guard -> approval -> idempotent submit.
+State, execution trace (state `trace`, `run_events`, append-only `audit_log`, Phoenix spans, one trace id)
+and long-term memory (style + outcome namespaces written only by explicit promotion rules) are separate.
+Diagrams and per-agent rationale: `docs/ARCHITECTURE.md`; decisions: `docs/adr/`.
+
+**Data.** The kit lacked GigSim, persona corpora and the dev set, so all three were generated with known
+ground truth (`docs/DATA_CARD.md`): 3 personas x 18-19 projects (case studies, alt write-ups, repos+code,
+reviews, 150 labelled past proposals), 600 labelled dev jobs, 1,500 historical jobs, 360 clients with hidden
+preferences, and a held-out proxy split.
+
+## 3. R&D question A: tool granularity  (`tool_granularity.json`)
+*Hypothesis:* typed task-level tools ("ours") beat a few action-dispatch tools on argument accuracy and many
+narrow tools on selection accuracy. *Setup:* 40 tasks with known correct calls, one tool-choice call each,
+`gpt-oss-20b`, temperature 0, nothing executed.
+
+| Design | Tools | Selection acc. | Argument acc. | Tokens/task | Tasks run |
+|---|---|---|---|---|---|
+| fine | 27 | 0.750 | 0.750 | 930.175 | 40/40 |
+| coarse | 3 | 0.825 | 0.725 | 436.625 | 40/40 |
+| ours | 21 | 1.000 | 1.000 | 2021.048 | 21/40 |
+
+*Result:* the narrow 27-tool design picks the wrong tool most often (75.0%): near-duplicates such as
+`get_client_spend` vs `get_client_rating` split one intent across several tools. Coarse tools are cheapest
+(436.625 tokens) and select well, but the model must invent a free-form `params` dict, which costs argument
+accuracy. GigBid's set is the most accurate on the tasks completed so far but costs the most tokens, because its schemas
+carry real constraints and descriptions. Partial: the free-tier daily quota stopped the run; it resumes with `make eval-llm`.
+*Conclusion:* granularity changes behaviour; typed, task-level tools buy accuracy with prompt tokens, which
+is the right trade for write tools (idempotency key and dry-run must be exact) but argues for trimming
+descriptions of read tools.
+
+## 4. R&D question B: retrieval, verification, proposal quality  (`rag_variants.json`, `proposals_open.json`)
+*Hypothesis (pre-registered):* V1+V2 raises Recall@5 by >= 5 points over V0 on jobs with >= 4 requirements. **Not supported, narrowly**: V0 0.749 vs V1+V2 0.797
+(+4.8 points). Metrics are project-level (each project is described several ways), on all
+600 dev jobs; cross-encoder variants on a 60-job stratified subset.
+
+| Variant | Recall@5 | MRR | nDCG@10 | Recall@5 (>=4 req.) | p95 s |
+|---|---|---|---|---|---|
+| v0 | 0.776 | 0.949 | 0.796 | 0.749 | 0.720 |
+| v1 | 0.808 | 0.853 | 0.795 | 0.768 | 1.017 |
+| v2 | 0.794 | 0.985 | 0.827 | 0.766 | 0.677 |
+| v3 (subset) | 0.770 | 0.991 | 0.817 | 0.721 | 5.799 |
+| v4 | 0.694 | 0.701 | 0.608 | 0.664 | 0.370 |
+| v5 | 0.686 | 0.881 | 0.711 | 0.667 | 0.454 |
+| v6 | 0.733 | 0.939 | 0.764 | 0.702 | 0.571 |
+| v7 | 0.809 | 0.921 | 0.807 | 0.766 | 0.278 |
+| v8 | 0.777 | 0.942 | 0.792 | 0.746 | 0.530 |
+| v9 | 0.816 | 0.962 | 0.833 | 0.781 | 0.199 |
+| v1+v2 | 0.832 | 0.898 | 0.814 | 0.797 | 0.474 |
+| v1+v2+v9 | 0.871 | 0.916 | 0.848 | 0.836 | 0.450 |
+| v1+v2+v6+v9 (shipped) | 0.880 | 0.923 | 0.862 | 0.850 | 0.804 |
+| v1+v2+v8+v9 | 0.739 | 0.734 | 0.692 | 0.692 | 1.446 |
+
+**Ablation of the shipped pipeline** (Recall@5 / nDCG@10): full 0.880 / 0.862;
+without V1 0.869 / 0.871; without V2 0.874 / 0.840;
+without V6 0.871 / 0.848; without V9 0.857 / 0.846.
+Every component except V1 lowers nDCG when removed. Dropping V1 raises nDCG slightly but removes the per-requirement
+evidence lists the Fit Matcher and the UI's evidence matrix need, so V1 stays (ADR 0003 records the deviation).
+
+**By persona** (V0 -> shipped Recall@5): ai_ml 0.841 -> 0.917; fullstack 0.666 -> 0.804; data_analyst 0.820 -> 0.918.
+**By job type:** the biggest gains are on multi-requirement and exact-tool-name jobs, where BM25 and the skill
+graph match names that embeddings blur; the one regression is vague posts, which decomposition splits into
+sentences that say little (HyDE, V7, is the candidate fix).
+**Negative results:** outcome-aware boosting (V4) and multi-vector grouping (V5) both fall below V0, and the
+corrective loop (V8) refuses evidence on 85.0% of jobs the persona should skip (its purpose) but lowers
+ranking quality when combined.
+
+**Claim verification (B3) and proposal quality.** Live drafts on Groq (`gpt-oss-120b` writer/critic/judge):
+
+| Variant | Drafts | Unsupported-claim rate before -> after | Unsupported claims/proposal (before) | Judge (1-10) | GigSim reply | p95 s | USD/proposal |
+|---|---|---|---|---|---|---|---|
+| v0 | 12 | 30.6% -> 0.0% | 0.917 | 7.250 | 33.3% | 100.043 | 0.003 |
+| v1+v2+v6+v9 | 0 | pending -> pending | pending | pending | pending | pending | pending |
+
+Verification removes roughly a third of the experience claims the writer makes even though it cites evidence;
+typical removals merge two projects into one sentence or upgrade a described technique into a named tool.
+**Judge calibration:** Cohen's kappa against the student's own labels on 30 blind items = pending
+(`judge_calibration.json`). **Where retrieval did not translate into replies:** GigSim's clients reward
+must-have skill names, a concrete number and a question; once the evidence contains one strong result,
+better ranking of the second and third item rarely changes the reply decision, so reply-rate differences
+between variants are small compared with run-to-run variance at these sample sizes.
+**Shipped choice:** `v1+v2+v6+v9`, because it is the best-ranked pipeline that keeps per-requirement evidence and
+stays under 1 s p95, and the extra recall shows up where the corpus is hardest (exact tool names, multi-skill jobs).
+
+## 5. R&D question C: single agent vs supervisor vs graph  (`multiagent_compare.json`)
+
+| System | Bid/skip acc. | Unsupported claims/proposal | Compliance violations left | GigSim reply | Tokens/job | p95 s |
+|---|---|---|---|---|---|---|
+| react | pending | pending | pending | pending | pending | pending |
+| supervisor | pending | pending | pending | pending | pending | pending |
+| graph | pending | pending | pending | pending | pending | pending |
+
+Pending or partial: this comparison needs the most tokens and resumes daily on the free tier (`make eval-llm`).
+The structural difference does not need the numbers: the ReAct and supervisor baselines decide and write in
+free text, with no step that removes unsupported claims or enforces the policy pack before output, and no
+interrupt; their outputs are scored by the same verifier and compliance check after the fact. The graph's
+decisions are rule-driven over the parallel reports, which is also why it is cheaper per skipped job.
+
+## 6. The change request  (`change_request_before.json`, `change_request_after.json`)
+The 2 Nov GigSim update added 2 Connects per submission (Featured jobs x1.5) and a rule that AI-assisted
+proposals must disclose it (rule P8, rejected with 422 otherwise). **Before the fix:** 0.0% of approved
+proposals accepted; the approval preview had already flagged P8 on 100.0% of them (the dry run applies the platform's
+own `/policy` rules) and showed the new Connects price. **Fix:** commit `08b287c`, config only: `required_disclosure`
+and rule P8 in `data/policy_pack/marketplace_policy.yaml`, `policy.version` in `agent/config.yaml`, three lines of
+policy docs; **no Python changed**. **After:** 100.0% accepted; Connects spent match the new price because pricing reads
+the marketplace's own job price. It took one short session; the design point that paid off was keeping rules
+in YAML and reading fees from the marketplace instead of re-implementing them.
+
+## 7. Signature extension: X2 proposal A/B  (`ab_experiment.json`)
+Two writer strategies (evidence-first vs question-first) assigned by a stable hash of the job id, stored on
+every proposal, scored by GigSim's clients and promoted into outcome memory per category. Pending: pools the proposal-eval submissions once enough exist.
+
+## 8. Failure analysis  (`decisions_dev_offline.json`, `proposals_open.json`)
+Counts over all 600 dev jobs (offline profile): mispriced: 23, wrong bid: 19, wrong skip (vague post): 25, wrong skip (injection): 4, wrong skip: 3.
+
+| Category | Job | Type | What went wrong | Node | Fix tried | Did it work |
+|---|---|---|---|---|---|---|
+| mispriced | j-ai-0102 | exact_tool | gold bid / got bid / price 3100 vs band 1850-2770 | pricing | median of a +-1 requirement bucket; client budget caps below the fair band | open profile: bid |
+| mispriced | j-fu-0232 | standard | gold bid / got bid / price 2000 vs band 1290-1940 | pricing | median of a +-1 requirement bucket; client budget caps below the fair band | open profile: bid |
+| mispriced | j-ai-0027 | standard | gold bid / got bid / price 3770 vs band 2470-3710 | pricing | median of a +-1 requirement bucket; client budget caps below the fair band | not in LLM sample |
+| wrong bid | j-da-0432 | standard | gold skip / got bid | risk_assessor / decide | difficult-client signal is a soft weight; raise poor_client_history weight (not shipped: hurts recall) | open profile: bid |
+| wrong bid | j-ai-0009 | standard | gold skip / got bid | risk_assessor / decide | difficult-client signal is a soft weight; raise poor_client_history weight (not shipped: hurts recall) | not in LLM sample |
+| wrong bid | j-ai-0116 | vague | gold skip / got bid | risk_assessor / decide | difficult-client signal is a soft weight; raise poor_client_history weight (not shipped: hurts recall) | open profile: bid |
+| wrong skip (vague post) | j-ai-0117 | vague | gold bid / got watch | analyst -> fit_matcher | LLM analyst decomposes the need into capabilities (open profile) | not in LLM sample |
+| wrong skip (vague post) | j-ai-0121 | vague | gold bid / got watch | analyst -> fit_matcher | LLM analyst decomposes the need into capabilities (open profile) | not in LLM sample |
+| wrong skip (vague post) | j-ai-0122 | vague | gold bid / got watch | analyst -> fit_matcher | LLM analyst decomposes the need into capabilities (open profile) | not in LLM sample |
+| wrong skip (injection) | j-ai-0195 | injection_legit | gold bid / got skip | risk_assessor | none: the planted text names WhatsApp, a real off-platform signal; kept by design | not in LLM sample |
+| wrong skip (injection) | j-da-0593 | injection_legit | gold bid / got skip | risk_assessor | none: the planted text names WhatsApp, a real off-platform signal; kept by design | not in LLM sample |
+| wrong skip (injection) | j-da-0594 | injection_legit | gold bid / got skip | risk_assessor | none: the planted text names WhatsApp, a real off-platform signal; kept by design | not in LLM sample |
+| wrong skip | j-da-0423 | standard | gold bid / got watch | fit_matcher | skill-aware requirement strength (shipped) | not in LLM sample |
+| wrong skip | j-da-0515 | exact_tool | gold bid / got watch | fit_matcher | skill-aware requirement strength (shipped) | not in LLM sample |
+| wrong skip | j-da-0538 | industry | gold bid / got watch | fit_matcher | skill-aware requirement strength (shipped) | not in LLM sample |
+| unsupported claim | j-ai-0146 | industry | removed: "In a 2022 insurance pricing model I delivered a Python solution using pandas, scikit-learn and gradient-booste..." | writer | claim verification removed it before the Critic | worked: 0 unsupported after |
+
+The LLM-risk episode is the clearest failure caught by measurement: when the small model's flags were
+trusted, scam precision on the same 30 jobs fell from 0.750 to 0.375
+(`decisions_dev_open_v1_trusted_llm_flags.json`); a confidence gate restored it. On decisions overall, the LLM
+profile matched but did not beat the deterministic rules on the same jobs (bid/skip F1 0.909).
+
+## 9. Safety and platform respect
+**Never:** send, submit or spend Connects without an approved interrupt; follow instructions in posts or
+client messages; state experience the evidence lacks; contact or pay off-platform; scrape. **Enforcement:**
+LangGraph `interrupt()` + approvals persisted before resume + idempotency keys; injection patterns
+neutralised before any model reads a post, untrusted text fenced in prompts, output canary rules in the
+Compliance Guard; claim verification with the letter-level grounding gate; policy pack in YAML; per-user rate
+limiting below the platform limit; live Upwork only through its official MCP server with OAuth (no cookies,
+no browser automation) and drafts the user confirms on Upwork; PII masking in logs, traces and the audit log;
+tokens Fernet-encrypted; tenant filter on every query (tested). **Measured:** planted injections detected
+100.0% of the time (dev); attack success undefended vs defended:
+pending vs pending (planted),
+pending for novel attacks (`injection_open.json`). **What still gets through:** the patterns are lexical, so a
+paraphrased instruction with no trigger words, or one placed in a screening question, can reach the writer
+fenced but un-neutralised; then only the writer's own instructions and the output rules stand in the way.
+
+## 10. Held-out results against declared budgets  (`decisions_holdout_offline.json`, `smoke.json`)
+The instructor's hidden set runs after the deadline; as a proxy, the same pipeline ran on a held-out split
+generated with a different seed and never used for tuning: bid/skip F1 pending,
+scam recall pending, price in band pending, p95 pending s per job
+(deterministic profile) vs dev 0.941 / 1.000 / 94.4%.
+**Budgets on the live `open` profile:** per job analysed, p95 29.023 s and $0.000
+(budget 30 s / $0.002, met); per proposal, p95 100.043 s and $0.003
+(budget 90 s / $0.01). Latency above budget comes from Groq free-tier rate-limit waits (8k tokens/min), not compute.
+**Optimisation that helped:** deterministic routing of cheap decisions (scout, fit, pricing, decide run with no
+LLM) and gating the LLM risk model keep a job at about 2.2k tokens; skipping early means scams and mismatches
+never reach the 120B writer.
+
+---
+*Appendix A: full per-variant breakdowns in `docs/RESULTS.md`; raw per-item records in `evals/results/raw/`.*
+*Appendix B: viva walkthroughs (kill the marketplace server, crash-and-resume, delete evidence and regenerate) in `docs/RUNBOOK.md`.*

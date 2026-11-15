@@ -42,7 +42,7 @@ dependencies = [
 gigbid-portfolio-mcp = "mcp_servers.portfolio.server:main"
 
 [project.optional-dependencies]
-dev = ["pytest", "pytest-asyncio", "ruff"]
+dev = ["pytest", "pytest-asyncio", "ruff", "markdown"]
 
 [build-system]
 requires = ["hatchling"]

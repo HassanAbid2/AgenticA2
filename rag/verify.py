@@ -88,7 +88,8 @@ def verify_claims(draft: str, evidence: list[dict], judge_fn=None) -> list[Claim
     claims = [(i, s) for i, s in enumerate(sents) if is_claim(s)]
     if not claims:
         return []
-    texts = [normalise(e.get("text") or e.get("snippet") or "") for e in evidence]
+    # the item's date lives in metadata, not body text; without it "In 2022 I built..." fails the number check
+    texts = [normalise((e.get("text") or e.get("snippet") or "") + (f" (dated {e['date']})" if e.get("date") else "")) for e in evidence]
     ev_nums = [_numbers(t) for t in texts]
     ev_skills = [set(e.get("skills") or []) | set(extract_skills(t, code=True)) for e, t in zip(evidence, texts, strict=True)]
     windows, owner = [], []

@@ -43,3 +43,10 @@ def test_fabricated_numbers_and_tools_are_unsupported():
 
 def test_citations_are_stripped_for_the_client():
     assert strip_citations("I built it [1]. Results improved [2][3].") == "I built it. Results improved."
+
+
+def test_year_in_evidence_metadata_counts_and_wrong_year_does_not():
+    ev = [{"evidence_id": "e", "text": "Insurance pricing model. Gini up 0.06 over the GLM.", "skills": ["XGBoost"], "date": "2022-05"}]
+    ok = verify_claims("In 2022 I delivered an insurance pricing model that lifted Gini by 0.06 over the GLM [1].", ev)
+    bad = verify_claims("In 2019 I delivered an insurance pricing model that lifted Gini by 0.06 [1].", ev)
+    assert ok[0].label != "unsupported" and bad[0].label == "unsupported"
