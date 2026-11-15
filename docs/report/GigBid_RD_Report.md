@@ -1,6 +1,6 @@
 # GigBid: R&D report (design review)
 
-*AI-4016 · build 0d7d483 · every number below is read from `evals/results/` at build time.*
+*AI-4016 · build cb3fdc5 · every number below is read from `evals/results/` at build time.*
 
 ## 1. Problem and constraints
 A freelancer loses hours scanning feeds, spends paid Connects on jobs they won't win, sends generic
@@ -181,8 +181,8 @@ The instructor's hidden set runs after the deadline; as a proxy, the same pipeli
 generated with a different seed and never used for tuning: bid/skip F1 0.922,
 scam recall 0.958, price in band 96.5%, p95 0.394 s per job
 (deterministic profile) vs dev 0.931 / 1.000 / 98.2%.
-**Budgets on the live `open` profile:** per job analysed, p95 29.023 s and $0.000
-(budget 30 s / $0.002, met); per proposal, p95 100.043 s and $0.003
+**Budgets on the live `open` profile:** per job analysed, p95 29.023 s and $0.0004
+(budget 30 s / $0.002, met); per proposal, p95 100.043 s and $0.0032
 (budget 90 s / $0.01). Latency above budget comes from Groq free-tier rate-limit waits (8k tokens/min), not compute.
 **Optimisation that helped:** deterministic routing of cheap decisions (scout, fit, pricing, decide run with no
 LLM) and gating the LLM risk model keep a job at about 2.2k tokens; skipping early means scams and mismatches

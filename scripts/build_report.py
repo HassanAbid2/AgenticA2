@@ -269,8 +269,8 @@ The instructor's hidden set runs after the deadline; as a proxy, the same pipeli
 generated with a different seed and never used for tuning: bid/skip F1 {f3(hold.get('overall', {}).get('bid_f1', {}).get('f1'))},
 scam recall {f3(hold.get('overall', {}).get('scam', {}).get('recall'))}, price in band {pc(hold.get('overall', {}).get('price_in_fair_band'))}, p95 {f3(hold.get('overall', {}).get('p95_latency_s'))} s per job
 (deterministic profile) vs dev {f3(d0.get('bid_f1', {}).get('f1'))} / {f3(d0.get('scam', {}).get('recall'))} / {pc(d0.get('price_in_fair_band'))}.
-**Budgets on the live `open` profile:** per job analysed, p95 {f3(don1.get('overall', {}).get('p95_latency_s'))} s and ${f3(don1.get('overall', {}).get('mean_usd_per_job'))}
-(budget 30 s / $0.002, met); per proposal, p95 {f3(pv.get('v0', {}).get('p95_latency_s_per_proposal'))} s and ${f3(pv.get('v0', {}).get('mean_usd_per_proposal'))}
+**Budgets on the live `open` profile:** per job analysed, p95 {f3(don1.get('overall', {}).get('p95_latency_s'))} s and ${usd(don1.get('overall', {}).get('mean_usd_per_job'))}
+(budget 30 s / $0.002, met); per proposal, p95 {f3(pv.get('v0', {}).get('p95_latency_s_per_proposal'))} s and ${usd(pv.get('v0', {}).get('mean_usd_per_proposal'))}
 (budget 90 s / $0.01). Latency above budget comes from Groq free-tier rate-limit waits (8k tokens/min), not compute.
 **Optimisation that helped:** deterministic routing of cheap decisions (scout, fit, pricing, decide run with no
 LLM) and gating the LLM risk model keep a job at about 2.2k tokens; skipping early means scams and mismatches
