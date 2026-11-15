@@ -29,6 +29,10 @@ def f3(x):
     return "pending" if x is None else f"{x:.3f}"
 
 
+def usd(x):
+    return "pending" if x is None else f"{x:.4f}"
+
+
 def pc(x):
     return "pending" if x is None else f"{x * 100:.1f}%"
 
@@ -193,7 +197,7 @@ ranking quality when combined.
     md.append("\n| Variant | Drafts | Unsupported-claim rate before -> after | Unsupported claims/proposal (before) | Judge (1-10) | GigSim reply | p95 s | USD/proposal |\n|---|---|---|---|---|---|---|---|")
     for k in ("v0", shipped):
         m = pv.get(k, {})
-        md.append(f"| {k} | {m.get('n', 0)} | {pc(m.get('unsupported_rate_before'))} -> {pc(m.get('unsupported_rate_after'))} | {f3(m.get('unsupported_claims_per_proposal_before'))} | {f3(m.get('judge_overall_mean'))} | {pc(m.get('gigsim_reply_rate'))} | {f3(m.get('p95_latency_s_per_proposal'))} | {f3(m.get('mean_usd_per_proposal'))} |")
+        md.append(f"| {k} | {m.get('n', 0)} | {pc(m.get('unsupported_rate_before'))} -> {pc(m.get('unsupported_rate_after'))} | {f3(m.get('unsupported_claims_per_proposal_before'))} | {f3(m.get('judge_overall_mean'))} | {pc(m.get('gigsim_reply_rate'))} | {f3(m.get('p95_latency_s_per_proposal'))} | {usd(m.get('mean_usd_per_proposal'))} |")
     md.append(f"""
 Verification removes roughly a third of the experience claims the writer makes even though it cites evidence;
 typical removals merge two projects into one sentence or upgrade a described technique into a named tool.

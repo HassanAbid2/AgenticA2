@@ -1,6 +1,6 @@
 # GigBid: R&D report (design review)
 
-*AI-4016 · build b33d8f4 · every number below is read from `evals/results/` at build time.*
+*AI-4016 · build 0d7d483 · every number below is read from `evals/results/` at build time.*
 
 ## 1. Problem and constraints
 A freelancer loses hours scanning feeds, spends paid Connects on jobs they won't win, sends generic
@@ -89,7 +89,7 @@ ranking quality when combined.
 
 | Variant | Drafts | Unsupported-claim rate before -> after | Unsupported claims/proposal (before) | Judge (1-10) | GigSim reply | p95 s | USD/proposal |
 |---|---|---|---|---|---|---|---|
-| v0 | 12 | 30.6% -> 0.0% | 0.917 | 7.250 | 33.3% | 100.043 | 0.003 |
+| v0 | 12 | 30.6% -> 0.0% | 0.917 | 7.250 | 33.3% | 100.043 | 0.0032 |
 | v1+v2+v6+v9 | 0 | pending -> pending | pending | pending | pending | pending | pending |
 
 Verification removes roughly a third of the experience claims the writer makes even though it cites evidence;

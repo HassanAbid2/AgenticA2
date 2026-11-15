@@ -25,6 +25,10 @@ def f3(x):
     return P if x is None else f"{x:.3f}"
 
 
+def usd(x):
+    return "pending" if x is None else f"{x:.4f}"
+
+
 def pc(x):
     return P if x is None else f"{x * 100:.1f}%"
 
@@ -56,7 +60,7 @@ def tables() -> str:
         q = ((prop or {}).get("by_variant") or {}).get(v, {})
         out.append(f"| {v}{' (shipped)' if v == shipped else ''} | {f3(r.get('recall@5'))} | {f3(r.get('ndcg@10'))} | "
                    f"{f3(q.get('unsupported_claims_per_proposal_before'))} | {f3(q.get('judge_overall_mean'))} | {pc(q.get('gigsim_reply_rate'))} | "
-                   f"{f3(q.get('p95_latency_s_per_proposal'))} | {f3(q.get('mean_usd_per_proposal'))} |")
+                   f"{f3(q.get('p95_latency_s_per_proposal'))} | {usd(q.get('mean_usd_per_proposal'))} |")
     if prop:
         out.append(f"\nProposal eval: {sum(v['n'] for v in prop['by_variant'].values())} drafts (complete: {prop['complete']}). "
                    "Unsupported-claim rate before -> after verification: " +
@@ -70,7 +74,7 @@ def tables() -> str:
             out.append("| Bid/skip F1 | Accuracy | Scam precision | Scam recall | Injection detected | Price in fair band | p95 latency (s) | USD per job |")
             out.append("|---|---|---|---|---|---|---|---|")
             out.append(f"| {f3(o['bid_f1']['f1'])} | {f3(o['accuracy'])} | {f3(o['scam']['precision'])} | {f3(o['scam']['recall'])} | "
-                       f"{pc(o['injection_detection_recall'])} | {pc(o['price_in_fair_band'])} | {f3(o['p95_latency_s'])} | {f3(o['mean_usd_per_job'])} |")
+                       f"{pc(o['injection_detection_recall'])} | {pc(o['price_in_fair_band'])} | {f3(o['p95_latency_s'])} | {usd(o['mean_usd_per_job'])} |")
     mac = load("multiagent_compare")
     out.append("\n### Multi-agent comparison (R&D C)\n")
     out.append("| System | Bid/skip accuracy | Unsupported claims / proposal | Compliance violations left | GigSim reply rate | Mean tokens / job | p95 latency (s) |")

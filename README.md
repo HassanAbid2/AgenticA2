@@ -84,7 +84,7 @@ Pre-registered hypothesis: *V1+V2 raises Recall@5 by >= 5 points over V0 on jobs
 
 | Variant | Evidence Recall@5 | nDCG@10 | Unsupported claims per proposal | Judge score (1-10) | GigSim reply rate | p95 latency (s) | Cost per proposal (USD) |
 |---|---|---|---|---|---|---|---|
-| v0 | 0.776 | 0.796 | 0.917 | 7.250 | 33.3% | 100.043 | 0.003 |
+| v0 | 0.776 | 0.796 | 0.917 | 7.250 | 33.3% | 100.043 | 0.0032 |
 | v1+v2+v6+v9 (shipped) | 0.880 | 0.862 | pending | pending | pending | pending | pending |
 
 Proposal eval: 12 drafts (complete: False). Unsupported-claim rate before -> after verification: v0 30.6% -> 0.0%
@@ -93,13 +93,13 @@ Proposal eval: 12 drafts (complete: False). Unsupported-claim rate before -> aft
 
 | Bid/skip F1 | Accuracy | Scam precision | Scam recall | Injection detected | Price in fair band | p95 latency (s) | USD per job |
 |---|---|---|---|---|---|---|---|
-| 0.931 | 0.902 | 0.923 | 1.000 | 100.0% | 98.2% | 0.769 | 0.000 |
+| 0.931 | 0.902 | 0.923 | 1.000 | 100.0% | 98.2% | 0.769 | 0.0000 |
 
 ### Decisions, open profile on Groq (10 jobs per persona)
 
 | Bid/skip F1 | Accuracy | Scam precision | Scam recall | Injection detected | Price in fair band | p95 latency (s) | USD per job |
 |---|---|---|---|---|---|---|---|
-| 0.909 | 0.867 | 0.750 | 1.000 | 100.0% | 90.0% | 2.735 | 0.000 |
+| 0.909 | 0.867 | 0.750 | 1.000 | 100.0% | 90.0% | 2.735 | 0.0004 |
 
 ### Multi-agent comparison (R&D C)
 
