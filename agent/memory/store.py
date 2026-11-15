@@ -8,6 +8,7 @@ Nothing else is ever written to the store; raw tool output stays in the executio
 
 from __future__ import annotations
 
+import asyncio
 import os
 from contextlib import asynccontextmanager, contextmanager
 from pathlib import Path
@@ -24,6 +25,21 @@ def _pg_url() -> str | None:
     return None
 
 
+_setup_done: set[str] = set()
+_setup_lock = asyncio.Lock()
+
+
+async def _setup_once(name: str, obj) -> None:
+    """Concurrent jobs racing on CREATE TABLE IF NOT EXISTS hit a Postgres unique violation on pg_type,
+    so each process runs the migrations once, serialised."""
+    if name in _setup_done:
+        return
+    async with _setup_lock:
+        if name not in _setup_done:
+            await obj.setup()
+            _setup_done.add(name)
+
+
 def _sqlite_path(name: str) -> str:
     p = os.getenv("CHECKPOINT_DB") if name == "checkpoints" else os.getenv("MEMORY_DB")
     if p:
@@ -38,7 +54,7 @@ async def open_checkpointer():
         from langgraph.checkpoint.postgres.aio import AsyncPostgresSaver
 
         async with AsyncPostgresSaver.from_conn_string(pg) as cp:
-            await cp.setup()
+            await _setup_once("pg_checkpointer", cp)
             yield cp
     else:
         from langgraph.checkpoint.sqlite.aio import AsyncSqliteSaver
@@ -53,7 +69,7 @@ async def open_store():
         from langgraph.store.postgres.aio import AsyncPostgresStore
 
         async with AsyncPostgresStore.from_conn_string(pg) as st:
-            await st.setup()
+            await _setup_once("pg_store", st)
             yield st
     else:
         from langgraph.store.sqlite.aio import AsyncSqliteStore

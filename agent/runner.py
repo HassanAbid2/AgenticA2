@@ -68,6 +68,11 @@ def bid_thread_id(user_id: str, job_id: str, suffix: str = "") -> str:
     return f"bid-{user_id}-{job_id}{suffix}"
 
 
+async def _has_checkpoint(thread_id: str) -> bool:
+    async with open_checkpointer() as cp:
+        return await cp.aget_tuple({"configurable": {"thread_id": thread_id}}) is not None
+
+
 async def run_bid(user_id: str, job_id: str, *, profile: dict, user_settings: dict | None = None, owners=None,
                   job: dict | None = None, duplicate_of: str | None = None, force_bid: bool = False, resume: dict | None = None,
                   cont: bool = False, thread_id: str | None = None, trace_id: str | None = None, on_event=None,
@@ -78,9 +83,9 @@ async def run_bid(user_id: str, job_id: str, *, profile: dict, user_settings: di
     deps = Deps(MCPHub(user_id, trace_id), UsageTracker(), profile, user_settings or {}, strategy=strategy)
     if resume is not None:
         inp = Command(resume=resume)
-    elif cont:
+    elif cont and await _has_checkpoint(thread_id):
         inp = None
-    else:
+    else:  # fresh start, also for a parked job whose first run failed before any checkpoint was written
         inp = {"user_id": str(user_id), "job_id": job_id, "trace_id": trace_id, "force_bid": force_bid,
                "duplicate_of": duplicate_of, "revision": 0, "owners": owners or []} | ({"job": job} if job else {})
     return await _run(build_bid_graph, thread_id, inp, deps, trace_id, on_event, {"job_id": job_id})

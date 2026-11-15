@@ -92,3 +92,12 @@ async def test_conversation_graph_drafts_reply_and_waits():
     s = await run_conversation("ai_ml", "t-" + pid, profile=persona_profile("ai_ml"), graph_thread_id="g-conv-1",
                                resume={"action": "approve"})
     assert s["state"]["status"] == "sent" and s["state"]["sent"]["holds"] >= 1
+
+
+async def test_continue_without_checkpoint_starts_fresh():
+    """A job parked before its first checkpoint (e.g. a crash in setup) is retried with cont=True."""
+    W.reset()
+    row = pick("scam")
+    out = await run_bid("ai_ml", row["job"]["job_id"], profile=persona_profile("ai_ml"), thread_id="t-never-ran",
+                        job=row["job"], cont=True)
+    assert out["state"]["status"] == "skipped"

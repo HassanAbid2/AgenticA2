@@ -39,17 +39,18 @@ services:
     restart: unless-stopped
 
   qdrant:
-    image: qdrant/qdrant:v1.12.4
+    image: qdrant/qdrant:v1.20.0
     volumes: [qdrant:/qdrant/storage]
     restart: unless-stopped
 
   phoenix:                       # self-hosted tracing (OpenTelemetry / OpenInference)
-    image: arizephoenix/phoenix:latest
+    image: arizephoenix/phoenix@sha256:09ec48906c054a27dd09a88c8e6bcc24fe89649d3ecc94d3a8ed394e21279b31   # arize-phoenix v21.1.0
     ports: ["6006:6006"]
     restart: unless-stopped
 
-  ollama:                        # local models for MODEL_PROFILE=local (`docker compose exec ollama ollama pull qwen3:4b`)
+  ollama:                        # only with `--profile local` (MODEL_PROFILE=local; then `docker compose exec ollama ollama pull qwen3:4b`)
     image: ollama/ollama:latest
+    profiles: ["local"]
     volumes: [ollama:/root/.ollama]
     restart: unless-stopped
 

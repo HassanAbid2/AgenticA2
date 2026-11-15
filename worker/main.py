@@ -27,5 +27,5 @@ class WorkerSettings:
     on_startup = startup
     max_jobs = int(os.getenv("WORKER_CONCURRENCY", "4"))
     job_timeout = 900
-    keep_result = 3600
+    keep_result = 0  # results live in the DB; a kept result would block re-enqueueing the same _job_id (dedup is only for queued/running jobs)
     allow_abort_jobs = True

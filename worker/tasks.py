@@ -158,7 +158,7 @@ async def analyse_job(ctx, user_id: int, job_id: str, force_bid: bool = False, t
     trace_id = trace_id or uuid.uuid4().hex
     run_id = _new_run(user_id, thread_id, "bid", job_id, trace_id)
     try:
-        out = await run_bid(str(user_id), job_id, profile=profile, user_settings=us, job=None if cont else job, duplicate_of=dup,
+        out = await run_bid(str(user_id), job_id, profile=profile, user_settings=us, job=job, duplicate_of=dup,
                             force_bid=force_bid, cont=cont, thread_id=thread_id, trace_id=trace_id, on_event=_event_writer(run_id, user_id))
     except MarketplaceUnavailable as e:  # degraded mode: park, show banner, recover later
         with session() as db:
