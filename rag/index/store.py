@@ -175,22 +175,36 @@ class PortfolioIndex:
             self.reload()
 
     def _sync_qdrant(self):
+        """Idempotent sync, safe when several processes share one Qdrant server (API, worker, Portfolio
+        MCP): upsert points whose chunk id is missing, delete points no longer in the chunk store."""
         from qdrant_client import QdrantClient, models
 
         url = os.getenv("QDRANT_URL")
         if self.qdrant is None:
-            self.qdrant = QdrantClient(url=url, timeout=10) if url else QdrantClient(":memory:")
+            self.qdrant = QdrantClient(url=url, timeout=30) if url else QdrantClient(":memory:")
+        self.by_id = {c.chunk_id: c for c in self.chunks}
         dim = self.vecs.shape[1] if len(self.vecs) else 384
-        if self.qdrant.collection_exists(self.collection):
-            self.qdrant.delete_collection(self.collection)
-        self.qdrant.create_collection(self.collection, vectors_config=models.VectorParams(size=dim, distance=models.Distance.COSINE))
-        if url:  # payload indexes are a server feature; the in-process instance ignores them
-            self.qdrant.create_payload_index(self.collection, "owner", models.PayloadSchemaType.KEYWORD)
-        if self.chunks:
+        if not self.qdrant.collection_exists(self.collection):
+            self.qdrant.create_collection(self.collection, vectors_config=models.VectorParams(size=dim, distance=models.Distance.COSINE))
+            if url:  # payload indexes are a server feature; the in-process instance ignores them
+                self.qdrant.create_payload_index(self.collection, "owner", models.PayloadSchemaType.KEYWORD)
+        pid = lambda cid: str(uuid.uuid5(uuid.NAMESPACE_URL, cid))  # noqa: E731
+        existing, offset = set(), None
+        while True:
+            pts, offset = self.qdrant.scroll(self.collection, limit=1000, offset=offset, with_payload=False, with_vectors=False)
+            existing |= {str(p.id) for p in pts}
+            if offset is None:
+                break
+        wanted = {pid(c.chunk_id): (c, v) for c, v in zip(self.chunks, self.vecs, strict=True)}
+        missing = [k for k in wanted if k not in existing]
+        if missing:
             self.qdrant.upload_points(self.collection, [
-                models.PointStruct(id=str(uuid.uuid5(uuid.NAMESPACE_URL, c.chunk_id)), vector=v.tolist(),
-                                   payload={"i": i, "owner": c.owner, "type": c.type})
-                for i, (c, v) in enumerate(zip(self.chunks, self.vecs, strict=True))], batch_size=256)
+                models.PointStruct(id=k, vector=wanted[k][1].tolist(),
+                                   payload={"chunk_id": wanted[k][0].chunk_id, "owner": wanted[k][0].owner, "type": wanted[k][0].type})
+                for k in missing], batch_size=256)
+        stale = [k for k in existing if k not in wanted]
+        if stale:
+            self.qdrant.delete(self.collection, points_selector=models.PointIdsList(points=stale))
 
     # -- writes (ingestion)
     def upsert_docs(self, docs: list[Doc]) -> dict:
@@ -247,7 +261,7 @@ class PortfolioIndex:
             self.collection, query=qv.tolist(), limit=max(k * 4, 50),
             query_filter=models.Filter(must=[models.FieldCondition(key="owner", match=models.MatchAny(any=list(owners)))]),
         ).points
-        out = [(self.chunks[p.payload["i"]], float(p.score)) for p in res]
+        out = [(self.by_id[p.payload["chunk_id"]], float(p.score)) for p in res if p.payload.get("chunk_id") in self.by_id]
         return [(c, s) for c, s in out if self._allowed(c, owners, filters)][:k]
 
     def lexical(self, query: str, k: int, owners, filters=None) -> list[tuple[Chunk, float]]:

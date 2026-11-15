@@ -1,3 +1,111 @@
-# TODO: Define web, API, worker, MCP servers, GigSim, Postgres, Redis,
-# vector store and local model service as appropriate.
-services: {}
+# GigBid: `docker compose -f infra/docker-compose.yml --env-file .env up --build`
+# Public entry point: http://localhost:8080 (web + /api). Phoenix traces: http://localhost:6006
+name: gigbid
+
+x-app: &app
+  env_file: ../.env
+  environment: &appenv
+    APP_ENV: ${APP_ENV:-development}
+    DATABASE_URL: postgresql+psycopg://gigbid:${POSTGRES_PASSWORD:-gigbid}@postgres:5432/gigbid
+    REDIS_URL: redis://redis:6379/0
+    QDRANT_URL: http://qdrant:6333
+    GIGSIM_BASE_URL: http://gigsim:8081
+    PORTFOLIO_MCP_URL: http://mcp-portfolio:8101/mcp
+    MARKETPLACE_MCP_URL: http://mcp-marketplace:8102/mcp
+    WORKSPACE_MCP_URL: http://mcp-workspace:8103/mcp
+    PHOENIX_COLLECTOR_ENDPOINT: http://phoenix:6006
+    PHOENIX_PUBLIC_URL: ${PHOENIX_PUBLIC_URL:-http://localhost:6006}
+    GIGBID_PUBLIC_API_URL: ${GIGBID_PUBLIC_API_URL:-http://localhost:8080}
+    TASK_MODE: worker
+    MODEL_PROFILE: ${MODEL_PROFILE:-open}
+    MARKETPLACE_MODE: ${MARKETPLACE_MODE:-gigsim}
+    OLLAMA_API_KEY: ollama
+  volumes:
+    - processed:/app/data/processed
+    - models:/models
+  restart: unless-stopped
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment: { POSTGRES_USER: gigbid, POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:-gigbid}", POSTGRES_DB: gigbid }
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck: { test: ["CMD-SHELL", "pg_isready -U gigbid"], interval: 5s, retries: 20 }
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    healthcheck: { test: ["CMD", "redis-cli", "ping"], interval: 5s, retries: 20 }
+    restart: unless-stopped
+
+  qdrant:
+    image: qdrant/qdrant:v1.12.4
+    volumes: [qdrant:/qdrant/storage]
+    restart: unless-stopped
+
+  phoenix:                       # self-hosted tracing (OpenTelemetry / OpenInference)
+    image: arizephoenix/phoenix:latest
+    ports: ["6006:6006"]
+    restart: unless-stopped
+
+  ollama:                        # local models for MODEL_PROFILE=local (`docker compose exec ollama ollama pull qwen3:4b`)
+    image: ollama/ollama:latest
+    volumes: [ollama:/root/.ollama]
+    restart: unless-stopped
+
+  gigsim:
+    build: { context: .., dockerfile: infra/docker/gigsim.Dockerfile }
+    environment:
+      GIGSIM_POLICY_VERSION: ${GIGSIM_POLICY_VERSION:-2026-10}
+      GIGSIM_DATASET: ${GIGSIM_DATASET:-dev}
+    restart: unless-stopped
+
+  ingest:                        # one-shot: build / refresh the portfolio indexes (incremental)
+    <<: *app
+    build: { context: .., dockerfile: infra/docker/ingest.Dockerfile }
+    restart: "no"
+    depends_on: { qdrant: { condition: service_started } }
+
+  mcp-portfolio:
+    <<: *app
+    build: { context: .., dockerfile: infra/docker/mcp-portfolio.Dockerfile }
+    depends_on: { ingest: { condition: service_completed_successfully }, postgres: { condition: service_healthy } }
+
+  mcp-marketplace:
+    <<: *app
+    build: { context: .., dockerfile: infra/docker/mcp-marketplace.Dockerfile }
+    depends_on: { gigsim: { condition: service_started }, postgres: { condition: service_healthy } }
+
+  mcp-workspace:
+    <<: *app
+    build: { context: .., dockerfile: infra/docker/mcp-workspace.Dockerfile }
+    depends_on: { postgres: { condition: service_healthy } }
+
+  api:
+    <<: *app
+    build: { context: .., dockerfile: infra/docker/api.Dockerfile }
+    depends_on:
+      postgres: { condition: service_healthy }
+      redis: { condition: service_healthy }
+      mcp-portfolio: { condition: service_started }
+      mcp-marketplace: { condition: service_started }
+      mcp-workspace: { condition: service_started }
+    healthcheck: { test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"], interval: 10s, retries: 30 }
+
+  worker:
+    <<: *app
+    build: { context: .., dockerfile: infra/docker/worker.Dockerfile }
+    depends_on: { api: { condition: service_healthy } }
+
+  web:
+    build: { context: .., dockerfile: infra/docker/web.Dockerfile }
+    ports: ["${WEB_PORT:-8080}:8080"]
+    depends_on: { api: { condition: service_started } }
+    restart: unless-stopped
+
+volumes:
+  pgdata:
+  qdrant:
+  processed:
+  models:
+  ollama:

@@ -1,0 +1,174 @@
+{
+ "generated_at": "2026-11-15T17:49:37",
+ "git_commit": "4bca30f",
+ "profile": "offline",
+ "split": "dev",
+ "complete": true,
+ "overall": {
+  "n": 9,
+  "bid_f1": {
+   "precision": 0.8889,
+   "recall": 1.0,
+   "f1": 0.9412
+  },
+  "accuracy": 0.8889,
+  "scam": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0
+  },
+  "injection_detection_recall": null,
+  "price_in_fair_band": 0.75,
+  "n_priced": 8,
+  "p50_latency_s": 1.6415,
+  "p95_latency_s": 23.0726,
+  "mean_tokens_per_job": 0.0,
+  "mean_usd_per_job": 0.0
+ },
+ "by_persona": {
+  "ai_ml": {
+   "n": 3,
+   "bid_f1": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "accuracy": 1.0,
+   "scam": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "injection_detection_recall": null,
+   "price_in_fair_band": 0.6667,
+   "n_priced": 3,
+   "p50_latency_s": 1.6904,
+   "p95_latency_s": 23.0726,
+   "mean_tokens_per_job": 0.0,
+   "mean_usd_per_job": 0.0
+  },
+  "data_analyst": {
+   "n": 3,
+   "bid_f1": {
+    "precision": 0.6667,
+    "recall": 1.0,
+    "f1": 0.8
+   },
+   "accuracy": 0.6667,
+   "scam": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "injection_detection_recall": null,
+   "price_in_fair_band": 1.0,
+   "n_priced": 2,
+   "p50_latency_s": 1.6415,
+   "p95_latency_s": 1.7681,
+   "mean_tokens_per_job": 0.0,
+   "mean_usd_per_job": 0.0
+  },
+  "fullstack": {
+   "n": 3,
+   "bid_f1": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "accuracy": 1.0,
+   "scam": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "injection_detection_recall": null,
+   "price_in_fair_band": 0.6667,
+   "n_priced": 3,
+   "p50_latency_s": 1.3411,
+   "p95_latency_s": 2.3125,
+   "mean_tokens_per_job": 0.0,
+   "mean_usd_per_job": 0.0
+  }
+ },
+ "by_job_type": {
+  "exact_tool": {
+   "n": 3,
+   "bid_f1": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "accuracy": 1.0,
+   "scam": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "injection_detection_recall": null,
+   "price_in_fair_band": 0.6667,
+   "n_priced": 3,
+   "p50_latency_s": 1.2558,
+   "p95_latency_s": 1.7681,
+   "mean_tokens_per_job": 0.0,
+   "mean_usd_per_job": 0.0
+  },
+  "multi_req": {
+   "n": 3,
+   "bid_f1": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "accuracy": 1.0,
+   "scam": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "injection_detection_recall": null,
+   "price_in_fair_band": 1.0,
+   "n_priced": 3,
+   "p50_latency_s": 2.3125,
+   "p95_latency_s": 23.0726,
+   "mean_tokens_per_job": 0.0,
+   "mean_usd_per_job": 0.0
+  },
+  "standard": {
+   "n": 3,
+   "bid_f1": {
+    "precision": 0.6667,
+    "recall": 1.0,
+    "f1": 0.8
+   },
+   "accuracy": 0.6667,
+   "scam": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "injection_detection_recall": null,
+   "price_in_fair_band": 0.5,
+   "n_priced": 2,
+   "p50_latency_s": 1.3411,
+   "p95_latency_s": 1.6904,
+   "mean_tokens_per_job": 0.0,
+   "mean_usd_per_job": 0.0
+  }
+ },
+ "errors": [
+  {
+   "job_id": "j-da-0432",
+   "job_type": "standard",
+   "gold_bid": false,
+   "decision": "bid",
+   "fit": 0.794,
+   "risk": 0.25,
+   "flags": [
+    "poor_client_history"
+   ],
+   "reasons": [
+    "fit 0.79, risk 0.25"
+   ]
+  }
+ ]
+}
