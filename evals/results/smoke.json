@@ -1,0 +1,23 @@
+{
+ "generated_at": "2026-11-15T18:16:44",
+ "git_commit": "ad991e8",
+ "profile": "offline",
+ "rag_variant": "v1+v2+v9",
+ "n_jobs": 30,
+ "retrieval_recall@5": 0.9228,
+ "bid_f1": 0.9091,
+ "scam_recall": 1.0,
+ "n_drafted": 23,
+ "unsupported_rate_before": 0.0435,
+ "unsupported_rate_after": 0.0,
+ "max_unsupported_rate_after": 0,
+ "p95_latency_s": 45.201,
+ "thresholds": {
+  "min_bid_f1": 0.8,
+  "min_scam_recall": 0.9,
+  "min_retrieval_recall_at_5": 0.8,
+  "max_unsupported_rate_after_verification": 0.0
+ },
+ "failures": [],
+ "passed": true
+}

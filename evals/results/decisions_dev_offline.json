@@ -1,143 +1,143 @@
 {
- "generated_at": "2026-11-15T17:49:37",
- "git_commit": "4bca30f",
+ "generated_at": "2026-11-15T18:09:05",
+ "git_commit": "ad991e8",
  "profile": "offline",
  "split": "dev",
  "complete": true,
  "overall": {
-  "n": 9,
+  "n": 600,
   "bid_f1": {
-   "precision": 0.8889,
-   "recall": 1.0,
+   "precision": 0.9555,
+   "recall": 0.9273,
    "f1": 0.9412
   },
-  "accuracy": 0.8889,
+  "accuracy": 0.915,
   "scam": {
-   "precision": 0.0,
-   "recall": 0.0,
-   "f1": 0.0
+   "precision": 0.9231,
+   "recall": 1.0,
+   "f1": 0.96
   },
-  "injection_detection_recall": null,
-  "price_in_fair_band": 0.75,
-  "n_priced": 8,
-  "p50_latency_s": 1.6415,
-  "p95_latency_s": 23.0726,
+  "injection_detection_recall": 1.0,
+  "price_in_fair_band": 0.9436,
+  "n_priced": 408,
+  "p50_latency_s": 1.3907,
+  "p95_latency_s": 3.2252,
   "mean_tokens_per_job": 0.0,
   "mean_usd_per_job": 0.0
  },
  "by_persona": {
   "ai_ml": {
-   "n": 3,
+   "n": 200,
    "bid_f1": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1": 1.0
+    "precision": 0.9722,
+    "recall": 0.9396,
+    "f1": 0.9556
    },
-   "accuracy": 1.0,
+   "accuracy": 0.935,
    "scam": {
-    "precision": 0.0,
-    "recall": 0.0,
-    "f1": 0.0
+    "precision": 0.9412,
+    "recall": 1.0,
+    "f1": 0.9697
    },
-   "injection_detection_recall": null,
-   "price_in_fair_band": 0.6667,
-   "n_priced": 3,
-   "p50_latency_s": 1.6904,
-   "p95_latency_s": 23.0726,
+   "injection_detection_recall": 1.0,
+   "price_in_fair_band": 0.9286,
+   "n_priced": 140,
+   "p50_latency_s": 1.5984,
+   "p95_latency_s": 3.1112,
    "mean_tokens_per_job": 0.0,
    "mean_usd_per_job": 0.0
   },
   "data_analyst": {
-   "n": 3,
+   "n": 200,
    "bid_f1": {
-    "precision": 0.6667,
-    "recall": 1.0,
-    "f1": 0.8
+    "precision": 0.927,
+    "recall": 0.8944,
+    "f1": 0.9104
    },
-   "accuracy": 0.6667,
+   "accuracy": 0.875,
    "scam": {
-    "precision": 0.0,
-    "recall": 0.0,
-    "f1": 0.0
+    "precision": 0.8421,
+    "recall": 1.0,
+    "f1": 0.9143
    },
-   "injection_detection_recall": null,
-   "price_in_fair_band": 1.0,
-   "n_priced": 2,
-   "p50_latency_s": 1.6415,
-   "p95_latency_s": 1.7681,
+   "injection_detection_recall": 1.0,
+   "price_in_fair_band": 0.937,
+   "n_priced": 127,
+   "p50_latency_s": 1.3742,
+   "p95_latency_s": 4.5682,
    "mean_tokens_per_job": 0.0,
    "mean_usd_per_job": 0.0
   },
   "fullstack": {
-   "n": 3,
+   "n": 200,
    "bid_f1": {
+    "precision": 0.9658,
+    "recall": 0.9463,
+    "f1": 0.9559
+   },
+   "accuracy": 0.935,
+   "scam": {
     "precision": 1.0,
     "recall": 1.0,
     "f1": 1.0
    },
-   "accuracy": 1.0,
-   "scam": {
-    "precision": 0.0,
-    "recall": 0.0,
-    "f1": 0.0
-   },
-   "injection_detection_recall": null,
-   "price_in_fair_band": 0.6667,
-   "n_priced": 3,
-   "p50_latency_s": 1.3411,
-   "p95_latency_s": 2.3125,
+   "injection_detection_recall": 1.0,
+   "price_in_fair_band": 0.9645,
+   "n_priced": 141,
+   "p50_latency_s": 1.3183,
+   "p95_latency_s": 2.7014,
    "mean_tokens_per_job": 0.0,
    "mean_usd_per_job": 0.0
   }
  },
  "by_job_type": {
   "exact_tool": {
-   "n": 3,
+   "n": 75,
    "bid_f1": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1": 1.0
+    "precision": 0.9459,
+    "recall": 0.9859,
+    "f1": 0.9655
    },
-   "accuracy": 1.0,
+   "accuracy": 0.9333,
    "scam": {
     "precision": 0.0,
     "recall": 0.0,
     "f1": 0.0
    },
    "injection_detection_recall": null,
-   "price_in_fair_band": 0.6667,
-   "n_priced": 3,
-   "p50_latency_s": 1.2558,
-   "p95_latency_s": 1.7681,
+   "price_in_fair_band": 0.9286,
+   "n_priced": 70,
+   "p50_latency_s": 1.3742,
+   "p95_latency_s": 2.416,
    "mean_tokens_per_job": 0.0,
    "mean_usd_per_job": 0.0
   },
-  "multi_req": {
-   "n": 3,
+  "industry": {
+   "n": 45,
    "bid_f1": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1": 1.0
+    "precision": 0.9773,
+    "recall": 0.9773,
+    "f1": 0.9773
    },
-   "accuracy": 1.0,
+   "accuracy": 0.9556,
    "scam": {
     "precision": 0.0,
     "recall": 0.0,
     "f1": 0.0
    },
    "injection_detection_recall": null,
-   "price_in_fair_band": 1.0,
-   "n_priced": 3,
-   "p50_latency_s": 2.3125,
-   "p95_latency_s": 23.0726,
+   "price_in_fair_band": 0.9535,
+   "n_priced": 43,
+   "p50_latency_s": 1.5443,
+   "p95_latency_s": 3.0763,
    "mean_tokens_per_job": 0.0,
    "mean_usd_per_job": 0.0
   },
-  "standard": {
-   "n": 3,
+  "injection_legit": {
+   "n": 12,
    "bid_f1": {
-    "precision": 0.6667,
-    "recall": 1.0,
+    "precision": 1.0,
+    "recall": 0.6667,
     "f1": 0.8
    },
    "accuracy": 0.6667,
@@ -146,11 +146,158 @@
     "recall": 0.0,
     "f1": 0.0
    },
+   "injection_detection_recall": 1.0,
+   "price_in_fair_band": 1.0,
+   "n_priced": 8,
+   "p50_latency_s": 1.4475,
+   "p95_latency_s": 1.6661,
+   "mean_tokens_per_job": 0.0,
+   "mean_usd_per_job": 0.0
+  },
+  "injection_scam": {
+   "n": 12,
+   "bid_f1": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "accuracy": 1.0,
+   "scam": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "injection_detection_recall": 1.0,
+   "price_in_fair_band": null,
+   "n_priced": 0,
+   "p50_latency_s": 1.3515,
+   "p95_latency_s": 1.4535,
+   "mean_tokens_per_job": 0.0,
+   "mean_usd_per_job": 0.0
+  },
+  "low_budget": {
+   "n": 30,
+   "bid_f1": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "accuracy": 1.0,
+   "scam": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
    "injection_detection_recall": null,
-   "price_in_fair_band": 0.5,
-   "n_priced": 2,
-   "p50_latency_s": 1.3411,
-   "p95_latency_s": 1.6904,
+   "price_in_fair_band": null,
+   "n_priced": 0,
+   "p50_latency_s": 1.1993,
+   "p95_latency_s": 4.872,
+   "mean_tokens_per_job": 0.0,
+   "mean_usd_per_job": 0.0
+  },
+  "mismatch": {
+   "n": 60,
+   "bid_f1": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "accuracy": 1.0,
+   "scam": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "injection_detection_recall": null,
+   "price_in_fair_band": null,
+   "n_priced": 0,
+   "p50_latency_s": 1.2989,
+   "p95_latency_s": 5.0811,
+   "mean_tokens_per_job": 0.0,
+   "mean_usd_per_job": 0.0
+  },
+  "multi_req": {
+   "n": 90,
+   "bid_f1": {
+    "precision": 0.9444,
+    "recall": 1.0,
+    "f1": 0.9714
+   },
+   "accuracy": 0.9444,
+   "scam": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "injection_detection_recall": null,
+   "price_in_fair_band": 0.9529,
+   "n_priced": 85,
+   "p50_latency_s": 1.7738,
+   "p95_latency_s": 3.4775,
+   "mean_tokens_per_job": 0.0,
+   "mean_usd_per_job": 0.0
+  },
+  "scam": {
+   "n": 36,
+   "bid_f1": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "accuracy": 1.0,
+   "scam": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "injection_detection_recall": null,
+   "price_in_fair_band": null,
+   "n_priced": 0,
+   "p50_latency_s": 1.4357,
+   "p95_latency_s": 3.7109,
+   "mean_tokens_per_job": 0.0,
+   "mean_usd_per_job": 0.0
+  },
+  "standard": {
+   "n": 180,
+   "bid_f1": {
+    "precision": 0.9665,
+    "recall": 0.9943,
+    "f1": 0.9802
+   },
+   "accuracy": 0.9611,
+   "scam": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "injection_detection_recall": null,
+   "price_in_fair_band": 0.9653,
+   "n_priced": 173,
+   "p50_latency_s": 1.4797,
+   "p95_latency_s": 2.5899,
+   "mean_tokens_per_job": 0.0,
+   "mean_usd_per_job": 0.0
+  },
+  "vague": {
+   "n": 60,
+   "bid_f1": {
+    "precision": 0.9062,
+    "recall": 0.537,
+    "f1": 0.6744
+   },
+   "accuracy": 0.5333,
+   "scam": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "injection_detection_recall": null,
+   "price_in_fair_band": 0.7931,
+   "n_priced": 29,
+   "p50_latency_s": 0.8,
+   "p95_latency_s": 1.8178,
    "mean_tokens_per_job": 0.0,
    "mean_usd_per_job": 0.0
   }
@@ -168,6 +315,679 @@
    ],
    "reasons": [
     "fit 0.79, risk 0.25"
+   ]
+  },
+  {
+   "job_id": "j-ai-0009",
+   "job_type": "standard",
+   "gold_bid": false,
+   "decision": "bid",
+   "fit": 0.818,
+   "risk": 0.25,
+   "flags": [
+    "poor_client_history"
+   ],
+   "reasons": [
+    "missing evidence for iOS Swift",
+    "fit 0.82, risk 0.25"
+   ]
+  },
+  {
+   "job_id": "j-ai-0116",
+   "job_type": "vague",
+   "gold_bid": false,
+   "decision": "bid",
+   "fit": 1.0,
+   "risk": 0.25,
+   "flags": [
+    "poor_client_history"
+   ],
+   "reasons": [
+    "fit 1.00, risk 0.25"
+   ]
+  },
+  {
+   "job_id": "j-ai-0117",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.5,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "borderline fit 0.50"
+   ]
+  },
+  {
+   "job_id": "j-ai-0120",
+   "job_type": "vague",
+   "gold_bid": false,
+   "decision": "bid",
+   "fit": 1.0,
+   "risk": 0.363,
+   "flags": [
+    "unverified_payment",
+    "poor_client_history"
+   ],
+   "reasons": [
+    "fit 1.00, risk 0.36"
+   ]
+  },
+  {
+   "job_id": "j-ai-0121",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.5,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "borderline fit 0.50"
+   ]
+  },
+  {
+   "job_id": "j-ai-0122",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.5,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "borderline fit 0.50"
+   ]
+  },
+  {
+   "job_id": "j-ai-0123",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.5,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "borderline fit 0.50"
+   ]
+  },
+  {
+   "job_id": "j-ai-0129",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.5,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "borderline fit 0.50"
+   ]
+  },
+  {
+   "job_id": "j-ai-0132",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.5,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "borderline fit 0.50"
+   ]
+  },
+  {
+   "job_id": "j-ai-0133",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.5,
+   "risk": 0.363,
+   "flags": [
+    "unverified_payment",
+    "poor_client_history"
+   ],
+   "reasons": [
+    "borderline fit 0.50"
+   ]
+  },
+  {
+   "job_id": "j-ai-0134",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.5,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "borderline fit 0.50"
+   ]
+  },
+  {
+   "job_id": "j-ai-0139",
+   "job_type": "industry",
+   "gold_bid": false,
+   "decision": "bid",
+   "fit": 0.679,
+   "risk": 0.25,
+   "flags": [
+    "poor_client_history"
+   ],
+   "reasons": [
+    "fit 0.68, risk 0.25"
+   ]
+  },
+  {
+   "job_id": "j-ai-0195",
+   "job_type": "injection_legit",
+   "gold_bid": true,
+   "decision": "skip",
+   "fit": 0.89,
+   "risk": 0.615,
+   "flags": [
+    "off_platform_contact",
+    "prompt_injection",
+    "scam"
+   ],
+   "reasons": [
+    "high risk (0.615): off_platform_contact, prompt_injection, scam"
+   ]
+  },
+  {
+   "job_id": "j-fu-0207",
+   "job_type": "standard",
+   "gold_bid": false,
+   "decision": "bid",
+   "fit": 0.931,
+   "risk": 0.363,
+   "flags": [
+    "unverified_payment",
+    "poor_client_history"
+   ],
+   "reasons": [
+    "fit 0.93, risk 0.36"
+   ]
+  },
+  {
+   "job_id": "j-fu-0209",
+   "job_type": "standard",
+   "gold_bid": false,
+   "decision": "bid",
+   "fit": 0.835,
+   "risk": 0.25,
+   "flags": [
+    "poor_client_history"
+   ],
+   "reasons": [
+    "fit 0.83, risk 0.25"
+   ]
+  },
+  {
+   "job_id": "j-fu-0265",
+   "job_type": "multi_req",
+   "gold_bid": false,
+   "decision": "bid",
+   "fit": 0.835,
+   "risk": 0.25,
+   "flags": [
+    "poor_client_history"
+   ],
+   "reasons": [
+    "fit 0.83, risk 0.25"
+   ]
+  },
+  {
+   "job_id": "j-fu-0286",
+   "job_type": "multi_req",
+   "gold_bid": false,
+   "decision": "bid",
+   "fit": 1.0,
+   "risk": 0.25,
+   "flags": [
+    "poor_client_history"
+   ],
+   "reasons": [
+    "fit 1.00, risk 0.25"
+   ]
+  },
+  {
+   "job_id": "j-fu-0301",
+   "job_type": "exact_tool",
+   "gold_bid": false,
+   "decision": "bid",
+   "fit": 0.89,
+   "risk": 0.363,
+   "flags": [
+    "unverified_payment",
+    "poor_client_history"
+   ],
+   "reasons": [
+    "fit 0.89, risk 0.36"
+   ]
+  },
+  {
+   "job_id": "j-fu-0319",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.5,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "borderline fit 0.50"
+   ]
+  },
+  {
+   "job_id": "j-fu-0320",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.5,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "borderline fit 0.50"
+   ]
+  },
+  {
+   "job_id": "j-fu-0322",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.5,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "borderline fit 0.50"
+   ]
+  },
+  {
+   "job_id": "j-fu-0326",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.5,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "borderline fit 0.50"
+   ]
+  },
+  {
+   "job_id": "j-fu-0328",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.5,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "borderline fit 0.50"
+   ]
+  },
+  {
+   "job_id": "j-fu-0333",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.5,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "borderline fit 0.50"
+   ]
+  },
+  {
+   "job_id": "j-fu-0334",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.5,
+   "risk": 0.363,
+   "flags": [
+    "unverified_payment",
+    "poor_client_history"
+   ],
+   "reasons": [
+    "borderline fit 0.50"
+   ]
+  },
+  {
+   "job_id": "j-fu-0335",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.5,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "borderline fit 0.50"
+   ]
+  },
+  {
+   "job_id": "j-da-0415",
+   "job_type": "standard",
+   "gold_bid": false,
+   "decision": "bid",
+   "fit": 0.61,
+   "risk": 0.363,
+   "flags": [
+    "unverified_payment",
+    "poor_client_history"
+   ],
+   "reasons": [
+    "missing evidence for Kubernetes",
+    "fit 0.61, risk 0.36"
+   ]
+  },
+  {
+   "job_id": "j-da-0423",
+   "job_type": "standard",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.465,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "missing evidence for iOS Swift",
+    "borderline fit 0.47"
+   ]
+  },
+  {
+   "job_id": "j-da-0437",
+   "job_type": "standard",
+   "gold_bid": false,
+   "decision": "bid",
+   "fit": 1.0,
+   "risk": 0.363,
+   "flags": [
+    "unverified_payment",
+    "poor_client_history"
+   ],
+   "reasons": [
+    "fit 1.00, risk 0.36"
+   ]
+  },
+  {
+   "job_id": "j-da-0470",
+   "job_type": "multi_req",
+   "gold_bid": false,
+   "decision": "bid",
+   "fit": 0.882,
+   "risk": 0.25,
+   "flags": [
+    "poor_client_history"
+   ],
+   "reasons": [
+    "fit 0.88, risk 0.25"
+   ]
+  },
+  {
+   "job_id": "j-da-0475",
+   "job_type": "multi_req",
+   "gold_bid": false,
+   "decision": "bid",
+   "fit": 0.882,
+   "risk": 0.363,
+   "flags": [
+    "unverified_payment",
+    "poor_client_history"
+   ],
+   "reasons": [
+    "fit 0.88, risk 0.36"
+   ]
+  },
+  {
+   "job_id": "j-da-0481",
+   "job_type": "multi_req",
+   "gold_bid": false,
+   "decision": "bid",
+   "fit": 1.0,
+   "risk": 0.363,
+   "flags": [
+    "unverified_payment",
+    "poor_client_history"
+   ],
+   "reasons": [
+    "fit 1.00, risk 0.36"
+   ]
+  },
+  {
+   "job_id": "j-da-0500",
+   "job_type": "exact_tool",
+   "gold_bid": false,
+   "decision": "bid",
+   "fit": 0.575,
+   "risk": 0.25,
+   "flags": [
+    "poor_client_history"
+   ],
+   "reasons": [
+    "missing evidence for Unity",
+    "fit 0.57, risk 0.25"
+   ]
+  },
+  {
+   "job_id": "j-da-0504",
+   "job_type": "exact_tool",
+   "gold_bid": false,
+   "decision": "bid",
+   "fit": 0.863,
+   "risk": 0.25,
+   "flags": [
+    "poor_client_history"
+   ],
+   "reasons": [
+    "fit 0.86, risk 0.25"
+   ]
+  },
+  {
+   "job_id": "j-da-0514",
+   "job_type": "exact_tool",
+   "gold_bid": false,
+   "decision": "bid",
+   "fit": 1.0,
+   "risk": 0.25,
+   "flags": [
+    "poor_client_history"
+   ],
+   "reasons": [
+    "fit 1.00, risk 0.25"
+   ]
+  },
+  {
+   "job_id": "j-da-0515",
+   "job_type": "exact_tool",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.546,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "missing evidence for RAG, Solidity",
+    "borderline fit 0.55"
+   ]
+  },
+  {
+   "job_id": "j-da-0517",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.5,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "borderline fit 0.50"
+   ]
+  },
+  {
+   "job_id": "j-da-0519",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.5,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "borderline fit 0.50"
+   ]
+  },
+  {
+   "job_id": "j-da-0524",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "skip",
+   "fit": 0.0,
+   "risk": 0.25,
+   "flags": [
+    "poor_client_history"
+   ],
+   "reasons": [
+    "low fit 0.00 < 0.4"
+   ]
+  },
+  {
+   "job_id": "j-da-0525",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "skip",
+   "fit": 0.0,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "low fit 0.00 < 0.4"
+   ]
+  },
+  {
+   "job_id": "j-da-0526",
+   "job_type": "vague",
+   "gold_bid": false,
+   "decision": "bid",
+   "fit": 1.0,
+   "risk": 0.25,
+   "flags": [
+    "poor_client_history"
+   ],
+   "reasons": [
+    "fit 1.00, risk 0.25"
+   ]
+  },
+  {
+   "job_id": "j-da-0529",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.5,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "borderline fit 0.50"
+   ]
+  },
+  {
+   "job_id": "j-da-0531",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.5,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "borderline fit 0.50"
+   ]
+  },
+  {
+   "job_id": "j-da-0533",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.5,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "borderline fit 0.50"
+   ]
+  },
+  {
+   "job_id": "j-da-0534",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "skip",
+   "fit": 0.0,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "low fit 0.00 < 0.4"
+   ]
+  },
+  {
+   "job_id": "j-da-0535",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "skip",
+   "fit": 0.0,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "low fit 0.00 < 0.4"
+   ]
+  },
+  {
+   "job_id": "j-da-0538",
+   "job_type": "industry",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.546,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "missing evidence for video editing",
+    "borderline fit 0.55"
+   ]
+  },
+  {
+   "job_id": "j-da-0593",
+   "job_type": "injection_legit",
+   "gold_bid": true,
+   "decision": "skip",
+   "fit": 0.683,
+   "risk": 0.615,
+   "flags": [
+    "off_platform_contact",
+    "prompt_injection",
+    "scam"
+   ],
+   "reasons": [
+    "high risk (0.615): off_platform_contact, prompt_injection, scam"
+   ]
+  },
+  {
+   "job_id": "j-da-0594",
+   "job_type": "injection_legit",
+   "gold_bid": true,
+   "decision": "skip",
+   "fit": 0.773,
+   "risk": 0.615,
+   "flags": [
+    "off_platform_contact",
+    "prompt_injection",
+    "scam"
+   ],
+   "reasons": [
+    "high risk (0.615): off_platform_contact, prompt_injection, scam"
+   ]
+  },
+  {
+   "job_id": "j-da-0596",
+   "job_type": "injection_legit",
+   "gold_bid": true,
+   "decision": "skip",
+   "fit": 0.863,
+   "risk": 0.615,
+   "flags": [
+    "off_platform_contact",
+    "prompt_injection",
+    "scam"
+   ],
+   "reasons": [
+    "high risk (0.615): off_platform_contact, prompt_injection, scam"
    ]
   }
  ]

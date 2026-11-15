@@ -1,0 +1,22 @@
+name: Eval smoke
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    env:
+      MODEL_PROFILE: offline           # deterministic gate; set GROQ_API_KEY secret + MODEL_PROFILE=open for a live smoke
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with: { version: "0.11.28" }
+      - run: uv sync --frozen --extra dev
+      - run: uv run python -m rag.ingest.build
+      - name: 30-job smoke eval (retrieval, decisions, grounding) with failure thresholds
+        run: uv run python -m evals.runners.smoke --jobs 30
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: smoke-eval, path: evals/results/smoke.json }
