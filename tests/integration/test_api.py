@@ -48,9 +48,10 @@ def test_full_flow_and_tenant_isolation():
         sent_cols = ("submitted", "viewed", "replied", "interview", "hired", "lost")
         try:
             wait(c, lambda: any(c.get("/api/pipeline").json()["columns"][k] for k in sent_cols))
-        except AssertionError:
-            raise AssertionError(f"not sent: approval={c.get(f'/api/approvals/{a['id']}').json()['status']} "
-                                 f"jobs={c.get('/api/jobs').json()['counts']} runs={[(r['id'], r['status'], r['error']) for r in c.get('/api/runs').json()[:4]]}")
+        except AssertionError as e:
+            status = c.get(f"/api/approvals/{a['id']}").json()["status"]
+            runs = [(r["id"], r["status"], r["error"]) for r in c.get("/api/runs").json()[:4]]
+            raise AssertionError(f"not sent: approval={status} runs={runs}") from e
         run = c.get("/api/runs").json()[0]
         d = c.get(f"/api/runs/{run['id']}").json()
         assert d["events"] and d["audit"]  # node events + audit rows share the trace id
