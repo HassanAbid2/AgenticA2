@@ -9,6 +9,7 @@ from __future__ import annotations
 import hashlib
 import re
 
+from agent.config import settings
 from agent.nodes.common import deps, node
 
 NEAR_DUP = 0.8
@@ -51,7 +52,8 @@ async def run_saved_searches(market, searches: list[dict], known: list[dict], po
     out: list[dict] = []
     for s in searches:
         jobs = await market.search_jobs(query=s.get("query", ""), skills=s.get("skills") or [], category=s.get("category", ""),
-                                        min_budget=s.get("min_budget", 0), posted_after=posted_after, limit=50)
+                                        min_budget=s.get("min_budget", 0), posted_after=posted_after,
+                                        limit=int(s.get("limit") or settings()["marketplace"]["max_jobs_per_search"]))
         for j in jobs:
             if j["job_id"] in seen:
                 continue

@@ -107,6 +107,7 @@ def pipeline(u: User = Depends(current_user)):
         for p in db.query(Proposal).filter_by(user_id=u.id).order_by(Proposal.updated_at.desc()):
             col = p.status if p.status in cols else ("lost" if p.status in ("rejected", "blocked") else "drafted")
             cols[col].append(ProposalCard(id=p.id, job_id=p.job_id, title=jobs[p.job_id].job.get("title", "") if p.job_id in jobs else p.job_id,
-                                          status=p.status, bid_amount=p.bid_amount, connects_spent=p.connects_spent, category=p.category,
+                                          status=p.status, bid_amount=p.bid_amount,
+                                          bid_unit=(jobs[p.job_id].job.get("budget") or {}).get("type", "fixed") if p.job_id in jobs else "fixed", connects_spent=p.connects_spent, category=p.category,
                                           strategy=p.strategy, updated_at=p.updated_at, approval_id=pend.get(p.thread_id)))
     return Pipeline(columns=cols)

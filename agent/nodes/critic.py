@@ -9,6 +9,7 @@ from agent.handoffs import Critique
 from agent.llm import structured
 from agent.nodes.common import node, thresholds
 from agent.nodes.writer import evidence_block
+from rag.verify import normalise, strip_citations
 
 GENERIC_OPEN = re.compile(r"^(dear|hello|hi|greetings|i am|i'm|my name|as an? )", re.I)
 CLICHE = re.compile(r"\b(passionate|hardworking|perfect fit|many years of experience|do this job perfectly|look no further)\b", re.I)
@@ -29,6 +30,7 @@ def auto_checks(draft: dict, job: dict, spec: dict) -> dict:
         "screening_answered": len([a for a in draft.get("screening_answers", []) if a.strip()]) >= len(spec.get("screening_questions", [])),
         "unsupported_removed": len(draft.get("removed_claims", [])),
         "supported_claims": sum(c["label"] == "supported" for c in claims),
+        "letter_claims": sum(c["label"] != "unsupported" and c["claim"][:40] in normalise(strip_citations(letter)) for c in claims),
     }
 
 
@@ -44,7 +46,7 @@ def rule_critique(a: dict) -> Critique:
         issues.append("end with one specific question for the client")
     if not a["screening_answered"]:
         issues.append("answer every screening question")
-    if a["citations"] == 0 or a["supported_claims"] == 0:
+    if a["citations"] == 0 or a["letter_claims"] == 0:
         issues.append("no grounded evidence left; cite at least one concrete result")
     if a["unsupported_removed"] > 1:
         issues.append(f"{a['unsupported_removed']} unsupported claims were removed; only state what the evidence shows")

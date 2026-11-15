@@ -68,7 +68,8 @@ def route_critic(state: BidState) -> str:
     if state.get("revision", 0) >= settings()["budgets"]["max_revisions"]:
         auto = last.get("auto") or {}
         # nothing grounded survived verification: never hand the human an evidence-free letter
-        return "needs_attention" if not auto.get("supported_claims") else "ok"
+        grounded = auto.get("letter_claims", auto.get("supported_claims"))
+        return "needs_attention" if not grounded else "ok"
     return "revise"
 
 

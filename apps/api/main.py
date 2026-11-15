@@ -73,6 +73,11 @@ async def _startup():
         asyncio.get_running_loop().create_task(scheduler())
 
 
+if os.getenv("GIGSIM_INPROCESS") == "1" and os.getenv("APP_ENV", "development") != "production":
+    from gigsim.app import app as _gigsim
+
+    app.mount("/gigsim", _gigsim)  # dev only: same simulator object the in-process adapter talks to
+
 for r in (users.router, token_store.router, settings_router.router, jobs.router, approvals.router, messages.router,
           runs.router, analytics.router, stream_router):
     app.include_router(r)

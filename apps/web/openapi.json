@@ -3031,6 +3031,11 @@
       ],
       "title": "Bid Amount"
      },
+     "bid_unit": {
+      "type": "string",
+      "title": "Bid Unit",
+      "default": "fixed"
+     },
      "connects_spent": {
       "type": "integer",
       "title": "Connects Spent"

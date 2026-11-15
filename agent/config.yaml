@@ -8,6 +8,7 @@ marketplace:
   max_retries: 3
   live_poll_minutes: 240      # live mode scout interval (see docs/RUNBOOK.md for the justification)
   gigsim_poll_minutes: 30
+  max_jobs_per_search: 8      # newest N per saved search per run: polite to the platform and to LLM quotas
 
 policy:
   pack: data/policy_pack/marketplace_policy.yaml  # Compliance Guard ground truth

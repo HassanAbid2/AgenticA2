@@ -77,7 +77,7 @@ app = FastAPI(title="GigSim", version="1.0.0", description="Marketplace simulato
 # ----------------------------------------------------------------------------- middleware
 @app.middleware("http")
 async def chaos_and_limits(request: Request, call_next):
-    path = request.url.path
+    path = request.url.path.removeprefix(request.scope.get("root_path", ""))  # also correct when mounted
     if path.startswith("/admin") or path in ("/health", "/openapi.json", "/docs"):
         return await call_next(request)
     if W.forced_down:

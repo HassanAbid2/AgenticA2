@@ -54,6 +54,9 @@ def _result_sentence(text: str) -> str | None:
     for s in re.split(r"(?<=[.!?])\s+", re.sub(r"\s+", " ", text or "")):
         if re.search(r"\d", s) and 25 < len(s) < 220 and not s.lstrip().startswith(("#", "-", "[")):
             return s.strip().rstrip(".")
+    for s in re.split(r"(?<=[.!?])\s+", re.sub(r"\s+", " ", text or "")):  # no metric: first descriptive sentence
+        if 40 < len(s) < 220 and not s.lstrip().startswith(("#", "-", "[", "*")) and re.search(r"\b(built|delivered|shipped|designed|used|cut|launched)\b", s, re.I):
+            return s.strip().rstrip(".")
     return None
 
 

@@ -146,6 +146,7 @@ class ProposalCard(BaseModel):
     title: str
     status: str
     bid_amount: float | None
+    bid_unit: str = "fixed"
     connects_spent: int
     category: str
     strategy: str

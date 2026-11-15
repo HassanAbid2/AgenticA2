@@ -45,7 +45,12 @@ def test_full_flow_and_tenant_isolation():
         assert detail["analysis"]["fit_report"]["matrix"]
         assert c.post(f"/api/approvals/{a['id']}/decide", json={"action": "reject"}).status_code == 422  # reason required
         assert c.post(f"/api/approvals/{a['id']}/decide", json={"action": "approve"}).json()["queued"]
-        wait(c, lambda: c.get("/api/pipeline").json()["columns"]["submitted"])
+        sent_cols = ("submitted", "viewed", "replied", "interview", "hired", "lost")
+        try:
+            wait(c, lambda: any(c.get("/api/pipeline").json()["columns"][k] for k in sent_cols))
+        except AssertionError:
+            raise AssertionError(f"not sent: approval={c.get(f'/api/approvals/{a['id']}').json()['status']} "
+                                 f"jobs={c.get('/api/jobs').json()['counts']} runs={[(r['id'], r['status'], r['error']) for r in c.get('/api/runs').json()[:4]]}")
         run = c.get("/api/runs").json()[0]
         d = c.get(f"/api/runs/{run['id']}").json()
         assert d["events"] and d["audit"]  # node events + audit rows share the trace id

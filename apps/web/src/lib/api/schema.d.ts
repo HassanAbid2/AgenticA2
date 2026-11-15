@@ -954,6 +954,11 @@ export interface components {
             status: string;
             /** Bid Amount */
             bid_amount: number | null;
+            /**
+             * Bid Unit
+             * @default fixed
+             */
+            bid_unit: string;
             /** Connects Spent */
             connects_spent: number;
             /** Category */

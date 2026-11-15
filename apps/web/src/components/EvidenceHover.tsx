@@ -22,6 +22,7 @@ export default function EvidenceHover({ claim }: { claim: Claim }) {
       onMouseLeave={() => setOpen(false)}
       onFocus={() => setOpen(true)}
       onBlur={() => setOpen(false)}
+      onKeyDown={(e) => e.key === "Escape" && setOpen(false)}
       data-testid="claim"
     >
       {claim.claim}{" "}

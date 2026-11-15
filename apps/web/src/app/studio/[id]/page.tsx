@@ -6,7 +6,7 @@ import { ErrorBox, Loading, RiskBadges } from "../../../components/ui";
 import { api, unwrap } from "../../../lib/api/client";
 import { money, pct, useLoad } from "../../../lib/hooks";
 
-const norm = (s: string) => s.replace(/\s*\[\d+\]/g, "").replace(/\s+/g, " ").trim().toLowerCase();
+const norm = (s: string) => s.replace(/[   ]/g, " ").replace(/[‐-—]/g, "-").replace(/\s*\[\d+\]/g, "").replace(/\s+/g, " ").trim().toLowerCase();
 const sentences = (t: string) => t.split(/(?<=[.!?])\s+/).filter(Boolean);
 
 export default function StudioPage() {
@@ -50,7 +50,7 @@ export default function StudioPage() {
         <p><Link to="/inbox">← Inbox</Link></p>
         <div className="card" role="status" data-testid="decision-done">
           <h2>Decision recorded</h2>
-          <p>{done ?? `This approval is ${data.status}.`} The agent is resuming; track it in the <Link to="/pipeline">pipeline</Link>.</p>
+          <p>{done ? `${done}.` : `This approval is ${data.status}.`} Track it in the <Link to="/pipeline">pipeline</Link>.</p>
           <button className="ghost" onClick={() => nav("/inbox")}>Back to inbox</button>
         </div>
       </section>

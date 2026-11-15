@@ -23,7 +23,7 @@ export default function PipelinePage() {
               {(data.columns[c] ?? []).map((p: ProposalCard) => (
                 <article key={p.id} className="card mini">
                   <Link to={p.approval_id ? `/studio/${p.approval_id}` : `/jobs/${p.job_id}`}>{p.title}</Link>
-                  <div className="small muted">{p.category} · {money(p.bid_amount)} · {p.connects_spent} Connects</div>
+                  <div className="small muted">{p.category} · {money(p.bid_amount, p.bid_unit)} · {p.connects_spent} Connects</div>
                   <div className="small"><span className="badge">{p.status}</span> <span className="muted">{p.strategy}</span></div>
                 </article>
               ))}
