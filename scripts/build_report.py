@@ -204,7 +204,7 @@ ranking quality when combined.
     md.append(f"""
 Verification removes roughly a third of the experience claims the writer makes even though it cites evidence;
 typical removals merge two projects into one sentence or upgrade a described technique into a named tool.
-**Judge calibration:** Cohen's kappa against the student's own labels on 30 blind items = {f3(jc.get('cohens_kappa_judge_vs_human'))}
+**Judge calibration:** Cohen's kappa between the LLM judge and reference labels on 30 blind items = {f3(jc.get('cohens_kappa_judge_vs_human'))}; labeller: {jc.get('labeller', 'pending')}; secondary kappa of the labels against real recorded outcomes (past proposals) = {f3(jc.get('secondary_kappa_human_vs_outcome(past items)'))}
 (`judge_calibration.json`). **Where retrieval did not translate into replies:** GigSim's clients reward
 must-have skill names, a concrete number and a question; once the evidence contains one strong result,
 better ranking of the second and third item rarely changes the reply decision, so reply-rate differences

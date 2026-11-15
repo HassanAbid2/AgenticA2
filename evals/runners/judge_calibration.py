@@ -80,7 +80,8 @@ async def score():
     human = [r["human_label"].lower() for r in out]
     jd = [r["judge_verdict"].lower() for r in out]
     past = [r for r in out if r["outcome"]]
-    res = {"n": len(out), "cohens_kappa_judge_vs_human": kappa(human, jd),
+    labeller = "student" if not any("[assistant rubric label]" in r["notes"] for r in out) else         "AI assistant with a written rubric (the student did not label; see docs/AI_USAGE.md)"
+    res = {"n": len(out), "labeller": labeller, "cohens_kappa_judge_vs_human": kappa(human, jd),
            "agreement": round(sum(h == j for h, j in zip(human, jd, strict=True)) / len(out), 4),
            "secondary_kappa_human_vs_outcome(past items)": kappa([r["human_label"].lower() for r in past],
                                                                  ["good" if r["outcome"] in ("won", "replied") else "bad" for r in past]),

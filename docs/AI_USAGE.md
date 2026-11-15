@@ -28,3 +28,10 @@ ships, the policy-update procedure) were discussed and decided in that session.
    Playwright test.
 7. **The corrective-RAG loop refused to cite anything on ordinary jobs** because "weak evidence" was a mean
    over short tool-name queries; it now refuses only when nothing matches.
+
+**Judge-calibration labels.** The 30 reference labels in `evals/datasets/judge_calibration.csv` were assigned
+by the AI assistant from a written rubric (specific to the job, at least one concrete result, no clichés,
+a next step or question), not by the student, who could not label them. They are marked
+`[assistant rubric label]` in the sheet and reported as such; the kappa is therefore agreement between the
+LLM judge and an assistant-applied rubric, not a human calibration. As an independent check, the labels are
+also compared with the real recorded outcomes (won/replied vs ignored) of the past proposals in the sheet.
