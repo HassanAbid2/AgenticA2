@@ -65,14 +65,15 @@ def score(recs: list[dict]) -> dict:
             "mean_tokens_per_job": mean([r["tokens"] for r in recs]), "mean_usd_per_job": mean([r["cost_usd"] for r in recs])}
 
 
-async def main(profile: str, n: int | None, split: str):
+async def main(profile: str, n: int | None, split: str, tag: str = ""):
     os.environ["MODEL_PROFILE"] = profile
     from agent.config import reload
 
     reload()
     rows = load_dev(split=split)
     rows = sample(rows, n) if n else rows
-    log = RawLog(f"decisions_{split}_{profile}")
+    name = f"decisions_{split}_{profile}" + (f"_{tag}" if tag else "")
+    log = RawLog(name)
     for i, row in enumerate(rows):
         key = row["job"]["job_id"]
         if log.has(key):
@@ -95,7 +96,9 @@ async def main(profile: str, n: int | None, split: str):
     errors = [{"job_id": r["key"], "job_type": r["job_type"], "gold_bid": r["gold_bid"], "decision": r["decision"],
                "fit": r["fit"], "risk": r["risk"], "flags": r["flags"], "reasons": r["reasons"]}
               for r in recs if (r["decision"] == "bid") != r["gold_bid"]]
-    out = write_result(f"decisions_{split}_{profile}", {"profile": profile, "split": split, "complete": len(recs) == len(rows),
+    from agent.config import settings
+
+    out = write_result(name, {"profile": profile, "split": split, "rag_variant": settings()["rag"]["variant"], "complete": len(recs) == len(rows),
                                                        "overall": score(recs) if recs else {}, "by_persona": by_persona,
                                                        "by_job_type": by_type, "errors": errors})
     print(out, score(recs) if recs else "no records")
@@ -106,5 +109,6 @@ if __name__ == "__main__":
     ap.add_argument("--profile", default="offline")
     ap.add_argument("--n", type=int, default=None, help="jobs per persona (default: all)")
     ap.add_argument("--split", default="dev", choices=["dev", "holdout"])
+    ap.add_argument("--tag", default="", help="suffix for result files (ablations)")
     a = ap.parse_args()
-    asyncio.run(main(a.profile, a.n, a.split))
+    asyncio.run(main(a.profile, a.n, a.split, a.tag))

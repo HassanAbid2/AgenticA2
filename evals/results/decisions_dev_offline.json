@@ -1,27 +1,27 @@
 {
- "generated_at": "2026-11-15T18:09:05",
- "git_commit": "ad991e8",
+ "generated_at": "2026-11-15T19:19:53",
+ "git_commit": "b33d8f4",
  "profile": "offline",
  "split": "dev",
  "complete": true,
  "overall": {
   "n": 600,
   "bid_f1": {
-   "precision": 0.9555,
-   "recall": 0.9273,
-   "f1": 0.9412
+   "precision": 0.9568,
+   "recall": 0.9068,
+   "f1": 0.9312
   },
-  "accuracy": 0.915,
+  "accuracy": 0.9017,
   "scam": {
    "precision": 0.9231,
    "recall": 1.0,
    "f1": 0.96
   },
   "injection_detection_recall": 1.0,
-  "price_in_fair_band": 0.9436,
-  "n_priced": 408,
-  "p50_latency_s": 1.3907,
-  "p95_latency_s": 3.2252,
+  "price_in_fair_band": 0.9825,
+  "n_priced": 399,
+  "p50_latency_s": 0.4085,
+  "p95_latency_s": 0.7695,
   "mean_tokens_per_job": 0.0,
   "mean_usd_per_job": 0.0
  },
@@ -29,21 +29,21 @@
   "ai_ml": {
    "n": 200,
    "bid_f1": {
-    "precision": 0.9722,
-    "recall": 0.9396,
-    "f1": 0.9556
+    "precision": 0.9786,
+    "recall": 0.9195,
+    "f1": 0.9481
    },
-   "accuracy": 0.935,
+   "accuracy": 0.925,
    "scam": {
     "precision": 0.9412,
     "recall": 1.0,
     "f1": 0.9697
    },
    "injection_detection_recall": 1.0,
-   "price_in_fair_band": 0.9286,
-   "n_priced": 140,
-   "p50_latency_s": 1.5984,
-   "p95_latency_s": 3.1112,
+   "price_in_fair_band": 0.9781,
+   "n_priced": 137,
+   "p50_latency_s": 0.492,
+   "p95_latency_s": 0.8631,
    "mean_tokens_per_job": 0.0,
    "mean_usd_per_job": 0.0
   },
@@ -61,31 +61,31 @@
     "f1": 0.9143
    },
    "injection_detection_recall": 1.0,
-   "price_in_fair_band": 0.937,
+   "price_in_fair_band": 0.9843,
    "n_priced": 127,
-   "p50_latency_s": 1.3742,
-   "p95_latency_s": 4.5682,
+   "p50_latency_s": 0.3203,
+   "p95_latency_s": 0.582,
    "mean_tokens_per_job": 0.0,
    "mean_usd_per_job": 0.0
   },
   "fullstack": {
    "n": 200,
    "bid_f1": {
-    "precision": 0.9658,
-    "recall": 0.9463,
-    "f1": 0.9559
+    "precision": 0.9643,
+    "recall": 0.906,
+    "f1": 0.9343
    },
-   "accuracy": 0.935,
+   "accuracy": 0.905,
    "scam": {
     "precision": 1.0,
     "recall": 1.0,
     "f1": 1.0
    },
    "injection_detection_recall": 1.0,
-   "price_in_fair_band": 0.9645,
-   "n_priced": 141,
-   "p50_latency_s": 1.3183,
-   "p95_latency_s": 2.7014,
+   "price_in_fair_band": 0.9852,
+   "n_priced": 135,
+   "p50_latency_s": 0.4314,
+   "p95_latency_s": 0.7428,
    "mean_tokens_per_job": 0.0,
    "mean_usd_per_job": 0.0
   }
@@ -105,31 +105,31 @@
     "f1": 0.0
    },
    "injection_detection_recall": null,
-   "price_in_fair_band": 0.9286,
+   "price_in_fair_band": 1.0,
    "n_priced": 70,
-   "p50_latency_s": 1.3742,
-   "p95_latency_s": 2.416,
+   "p50_latency_s": 0.3747,
+   "p95_latency_s": 0.7107,
    "mean_tokens_per_job": 0.0,
    "mean_usd_per_job": 0.0
   },
   "industry": {
    "n": 45,
    "bid_f1": {
-    "precision": 0.9773,
-    "recall": 0.9773,
-    "f1": 0.9773
+    "precision": 0.9778,
+    "recall": 1.0,
+    "f1": 0.9888
    },
-   "accuracy": 0.9556,
+   "accuracy": 0.9778,
    "scam": {
     "precision": 0.0,
     "recall": 0.0,
     "f1": 0.0
    },
    "injection_detection_recall": null,
-   "price_in_fair_band": 0.9535,
-   "n_priced": 43,
-   "p50_latency_s": 1.5443,
-   "p95_latency_s": 3.0763,
+   "price_in_fair_band": 0.9773,
+   "n_priced": 44,
+   "p50_latency_s": 0.4569,
+   "p95_latency_s": 0.6565,
    "mean_tokens_per_job": 0.0,
    "mean_usd_per_job": 0.0
   },
@@ -149,8 +149,8 @@
    "injection_detection_recall": 1.0,
    "price_in_fair_band": 1.0,
    "n_priced": 8,
-   "p50_latency_s": 1.4475,
-   "p95_latency_s": 1.6661,
+   "p50_latency_s": 0.3448,
+   "p95_latency_s": 0.3787,
    "mean_tokens_per_job": 0.0,
    "mean_usd_per_job": 0.0
   },
@@ -170,8 +170,8 @@
    "injection_detection_recall": 1.0,
    "price_in_fair_band": null,
    "n_priced": 0,
-   "p50_latency_s": 1.3515,
-   "p95_latency_s": 1.4535,
+   "p50_latency_s": 0.3588,
+   "p95_latency_s": 0.4719,
    "mean_tokens_per_job": 0.0,
    "mean_usd_per_job": 0.0
   },
@@ -191,8 +191,8 @@
    "injection_detection_recall": null,
    "price_in_fair_band": null,
    "n_priced": 0,
-   "p50_latency_s": 1.1993,
-   "p95_latency_s": 4.872,
+   "p50_latency_s": 0.3829,
+   "p95_latency_s": 1.3276,
    "mean_tokens_per_job": 0.0,
    "mean_usd_per_job": 0.0
   },
@@ -212,8 +212,8 @@
    "injection_detection_recall": null,
    "price_in_fair_band": null,
    "n_priced": 0,
-   "p50_latency_s": 1.2989,
-   "p95_latency_s": 5.0811,
+   "p50_latency_s": 0.4854,
+   "p95_latency_s": 1.0008,
    "mean_tokens_per_job": 0.0,
    "mean_usd_per_job": 0.0
   },
@@ -231,10 +231,10 @@
     "f1": 0.0
    },
    "injection_detection_recall": null,
-   "price_in_fair_band": 0.9529,
+   "price_in_fair_band": 0.9882,
    "n_priced": 85,
-   "p50_latency_s": 1.7738,
-   "p95_latency_s": 3.4775,
+   "p50_latency_s": 0.5433,
+   "p95_latency_s": 0.883,
    "mean_tokens_per_job": 0.0,
    "mean_usd_per_job": 0.0
   },
@@ -254,82 +254,81 @@
    "injection_detection_recall": null,
    "price_in_fair_band": null,
    "n_priced": 0,
-   "p50_latency_s": 1.4357,
-   "p95_latency_s": 3.7109,
+   "p50_latency_s": 0.3579,
+   "p95_latency_s": 0.7068,
    "mean_tokens_per_job": 0.0,
    "mean_usd_per_job": 0.0
   },
   "standard": {
    "n": 180,
    "bid_f1": {
-    "precision": 0.9665,
-    "recall": 0.9943,
-    "f1": 0.9802
+    "precision": 0.9663,
+    "recall": 0.9885,
+    "f1": 0.9773
    },
-   "accuracy": 0.9611,
+   "accuracy": 0.9556,
    "scam": {
     "precision": 0.0,
     "recall": 0.0,
     "f1": 0.0
    },
    "injection_detection_recall": null,
-   "price_in_fair_band": 0.9653,
-   "n_priced": 173,
-   "p50_latency_s": 1.4797,
-   "p95_latency_s": 2.5899,
+   "price_in_fair_band": 0.9942,
+   "n_priced": 172,
+   "p50_latency_s": 0.4344,
+   "p95_latency_s": 0.7278,
    "mean_tokens_per_job": 0.0,
    "mean_usd_per_job": 0.0
   },
   "vague": {
    "n": 60,
    "bid_f1": {
-    "precision": 0.9062,
-    "recall": 0.537,
-    "f1": 0.6744
+    "precision": 0.9091,
+    "recall": 0.3704,
+    "f1": 0.5263
    },
-   "accuracy": 0.5333,
+   "accuracy": 0.4,
    "scam": {
     "precision": 0.0,
     "recall": 0.0,
     "f1": 0.0
    },
    "injection_detection_recall": null,
-   "price_in_fair_band": 0.7931,
-   "n_priced": 29,
-   "p50_latency_s": 0.8,
-   "p95_latency_s": 1.8178,
+   "price_in_fair_band": 0.8,
+   "n_priced": 20,
+   "p50_latency_s": 0.2329,
+   "p95_latency_s": 0.4065,
    "mean_tokens_per_job": 0.0,
    "mean_usd_per_job": 0.0
   }
  },
  "errors": [
   {
-   "job_id": "j-da-0432",
-   "job_type": "standard",
-   "gold_bid": false,
-   "decision": "bid",
-   "fit": 0.794,
-   "risk": 0.25,
-   "flags": [
-    "poor_client_history"
-   ],
-   "reasons": [
-    "fit 0.79, risk 0.25"
-   ]
-  },
-  {
    "job_id": "j-ai-0009",
    "job_type": "standard",
    "gold_bid": false,
    "decision": "bid",
-   "fit": 0.818,
+   "fit": 0.773,
    "risk": 0.25,
    "flags": [
     "poor_client_history"
    ],
    "reasons": [
     "missing evidence for iOS Swift",
-    "fit 0.82, risk 0.25"
+    "fit 0.77, risk 0.25"
+   ]
+  },
+  {
+   "job_id": "j-ai-0013",
+   "job_type": "standard",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.52,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "missing evidence for Figma",
+    "borderline fit 0.52"
    ]
   },
   {
@@ -359,21 +358,6 @@
    ]
   },
   {
-   "job_id": "j-ai-0120",
-   "job_type": "vague",
-   "gold_bid": false,
-   "decision": "bid",
-   "fit": 1.0,
-   "risk": 0.363,
-   "flags": [
-    "unverified_payment",
-    "poor_client_history"
-   ],
-   "reasons": [
-    "fit 1.00, risk 0.36"
-   ]
-  },
-  {
    "job_id": "j-ai-0121",
    "job_type": "vague",
    "gold_bid": true,
@@ -399,6 +383,30 @@
   },
   {
    "job_id": "j-ai-0123",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "skip",
+   "fit": 0.0,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "low fit 0.00 < 0.4"
+   ]
+  },
+  {
+   "job_id": "j-ai-0125",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.5,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "borderline fit 0.50"
+   ]
+  },
+  {
+   "job_id": "j-ai-0128",
    "job_type": "vague",
    "gold_bid": true,
    "decision": "watch",
@@ -479,7 +487,7 @@
    "job_type": "injection_legit",
    "gold_bid": true,
    "decision": "skip",
-   "fit": 0.89,
+   "fit": 0.835,
    "risk": 0.615,
    "flags": [
     "off_platform_contact",
@@ -538,13 +546,13 @@
    "job_type": "multi_req",
    "gold_bid": false,
    "decision": "bid",
-   "fit": 1.0,
+   "fit": 0.945,
    "risk": 0.25,
    "flags": [
     "poor_client_history"
    ],
    "reasons": [
-    "fit 1.00, risk 0.25"
+    "fit 0.94, risk 0.25"
    ]
   },
   {
@@ -560,6 +568,30 @@
    ],
    "reasons": [
     "fit 0.89, risk 0.36"
+   ]
+  },
+  {
+   "job_id": "j-fu-0316",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.5,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "borderline fit 0.50"
+   ]
+  },
+  {
+   "job_id": "j-fu-0317",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.5,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "borderline fit 0.50"
    ]
   },
   {
@@ -587,7 +619,43 @@
    ]
   },
   {
+   "job_id": "j-fu-0321",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.5,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "borderline fit 0.50"
+   ]
+  },
+  {
    "job_id": "j-fu-0322",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.5,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "borderline fit 0.50"
+   ]
+  },
+  {
+   "job_id": "j-fu-0324",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.5,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "borderline fit 0.50"
+   ]
+  },
+  {
+   "job_id": "j-fu-0325",
    "job_type": "vague",
    "gold_bid": true,
    "decision": "watch",
@@ -612,6 +680,18 @@
   },
   {
    "job_id": "j-fu-0328",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.5,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "borderline fit 0.50"
+   ]
+  },
+  {
+   "job_id": "j-fu-0329",
    "job_type": "vague",
    "gold_bid": true,
    "decision": "watch",
@@ -682,12 +762,26 @@
    "job_type": "standard",
    "gold_bid": true,
    "decision": "watch",
-   "fit": 0.465,
+   "fit": 0.41,
    "risk": 0.0,
    "flags": [],
    "reasons": [
     "missing evidence for iOS Swift",
-    "borderline fit 0.47"
+    "borderline fit 0.41"
+   ]
+  },
+  {
+   "job_id": "j-da-0432",
+   "job_type": "standard",
+   "gold_bid": false,
+   "decision": "bid",
+   "fit": 0.794,
+   "risk": 0.25,
+   "flags": [
+    "poor_client_history"
+   ],
+   "reasons": [
+    "fit 0.79, risk 0.25"
    ]
   },
   {
@@ -710,13 +804,13 @@
    "job_type": "multi_req",
    "gold_bid": false,
    "decision": "bid",
-   "fit": 0.882,
+   "fit": 0.921,
    "risk": 0.25,
    "flags": [
     "poor_client_history"
    ],
    "reasons": [
-    "fit 0.88, risk 0.25"
+    "fit 0.92, risk 0.25"
    ]
   },
   {
@@ -724,14 +818,14 @@
    "job_type": "multi_req",
    "gold_bid": false,
    "decision": "bid",
-   "fit": 0.882,
+   "fit": 0.843,
    "risk": 0.363,
    "flags": [
     "unverified_payment",
     "poor_client_history"
    ],
    "reasons": [
-    "fit 0.88, risk 0.36"
+    "fit 0.84, risk 0.36"
    ]
   },
   {
@@ -783,13 +877,13 @@
    "job_type": "exact_tool",
    "gold_bid": false,
    "decision": "bid",
-   "fit": 1.0,
+   "fit": 0.945,
    "risk": 0.25,
    "flags": [
     "poor_client_history"
    ],
    "reasons": [
-    "fit 1.00, risk 0.25"
+    "fit 0.94, risk 0.25"
    ]
   },
   {
@@ -894,6 +988,18 @@
    ]
   },
   {
+   "job_id": "j-da-0532",
+   "job_type": "vague",
+   "gold_bid": true,
+   "decision": "watch",
+   "fit": 0.5,
+   "risk": 0.0,
+   "flags": [],
+   "reasons": [
+    "borderline fit 0.50"
+   ]
+  },
+  {
    "job_id": "j-da-0533",
    "job_type": "vague",
    "gold_bid": true,
@@ -927,19 +1033,6 @@
    "flags": [],
    "reasons": [
     "low fit 0.00 < 0.4"
-   ]
-  },
-  {
-   "job_id": "j-da-0538",
-   "job_type": "industry",
-   "gold_bid": true,
-   "decision": "watch",
-   "fit": 0.546,
-   "risk": 0.0,
-   "flags": [],
-   "reasons": [
-    "missing evidence for video editing",
-    "borderline fit 0.55"
    ]
   },
   {

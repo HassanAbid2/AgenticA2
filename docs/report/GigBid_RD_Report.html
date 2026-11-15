@@ -1,7 +1,7 @@
 <!doctype html><meta charset='utf-8'><title>GigBid R&D report</title><style>body{font:10.5pt/1.45 Georgia,serif;color:#111;max-width:180mm;margin:auto}h1{font-size:19pt;margin:0 0 4pt}
 h2{font-size:13pt;margin:14pt 0 4pt;border-bottom:1px solid #ccc}table{border-collapse:collapse;font:8.5pt/1.3 Arial,sans-serif;margin:6pt 0;width:100%}
 td,th{border:1px solid #bbb;padding:2pt 4pt;vertical-align:top}th{background:#eef2ef}code{font-size:8.5pt}p{margin:4pt 0}</style><h1>GigBid: R&amp;D report (design review)</h1>
-<p><em>AI-4016 · build fc91cdb · every number below is read from <code>evals/results/</code> at build time.</em></p>
+<p><em>AI-4016 · build b33d8f4 · every number below is read from <code>evals/results/</code> at build time.</em></p>
 <h2>1. Problem and constraints</h2>
 <p>A freelancer loses hours scanning feeds, spends paid Connects on jobs they won't win, sends generic
 proposals and meets scams (free "test" work, off-platform payment, data harvesting). GigBid automates
@@ -325,7 +325,7 @@ in YAML and reading fees from the marketplace instead of re-implementing them.</
 <p>Two writer strategies (evidence-first vs question-first) assigned by a stable hash of the job id, stored on
 every proposal, scored by GigSim's clients and promoted into outcome memory per category. Pending: pools the proposal-eval submissions once enough exist.</p>
 <h2>8. Failure analysis  (<code>decisions_dev_offline.json</code>, <code>proposals_open.json</code>)</h2>
-<p>Counts over all 600 dev jobs (offline profile): mispriced: 23, wrong bid: 19, wrong skip (vague post): 25, wrong skip (injection): 4, wrong skip: 3.</p>
+<p>Failed dev jobs by category (all 600 dev jobs, deterministic profile, before the pricing fix): mispriced: 23, wrong bid (difficult client): 16, wrong bid (vague post): 3, wrong skip (vague post): 25, injection (legit job skipped): 4, wrong skip: 3, unsupported claim: 7. Pricing fix: 14 of 23 mispriced jobs now inside the band.</p>
 <table>
 <thead>
 <tr>
@@ -335,7 +335,7 @@ every proposal, scored by GigSim's clients and promoted into outcome memory per 
 <th>What went wrong</th>
 <th>Node</th>
 <th>Fix tried</th>
-<th>Did it work</th>
+<th>Worked?</th>
 </tr>
 </thead>
 <tbody>
@@ -343,145 +343,181 @@ every proposal, scored by GigSim's clients and promoted into outcome memory per 
 <td>mispriced</td>
 <td>j-ai-0102</td>
 <td>exact_tool</td>
-<td>gold bid / got bid / price 3100 vs band 1850-2770</td>
+<td>price 3100 outside band 1850-2770</td>
 <td>pricing</td>
-<td>median of a +-1 requirement bucket; client budget caps below the fair band</td>
-<td>open profile: bid</td>
+<td>bucket market stats by requirement bullets, not skill-name count</td>
+<td>yes (2450)</td>
 </tr>
 <tr>
 <td>mispriced</td>
 <td>j-fu-0232</td>
 <td>standard</td>
-<td>gold bid / got bid / price 2000 vs band 1290-1940</td>
+<td>price 2000 outside band 1290-1940</td>
 <td>pricing</td>
-<td>median of a +-1 requirement bucket; client budget caps below the fair band</td>
-<td>open profile: bid</td>
+<td>bucket market stats by requirement bullets, not skill-name count</td>
+<td>no (2000)</td>
 </tr>
 <tr>
 <td>mispriced</td>
 <td>j-ai-0027</td>
 <td>standard</td>
-<td>gold bid / got bid / price 3770 vs band 2470-3710</td>
+<td>price 3770 outside band 2470-3710</td>
 <td>pricing</td>
-<td>median of a +-1 requirement bucket; client budget caps below the fair band</td>
-<td>not in LLM sample</td>
+<td>bucket market stats by requirement bullets, not skill-name count</td>
+<td>yes (3360)</td>
 </tr>
 <tr>
-<td>wrong bid</td>
+<td>wrong bid (difficult client)</td>
 <td>j-da-0432</td>
 <td>standard</td>
-<td>gold skip / got bid</td>
-<td>risk_assessor / decide</td>
-<td>difficult-client signal is a soft weight; raise poor_client_history weight (not shipped: hurts recall)</td>
-<td>open profile: bid</td>
+<td>bid at risk 0.25</td>
+<td>risk_assessor</td>
+<td>poor client history is a soft weight (0.25); a hard rule would also drop good clients with one dispute</td>
+<td>not changed</td>
 </tr>
 <tr>
-<td>wrong bid</td>
+<td>wrong bid (difficult client)</td>
 <td>j-ai-0009</td>
 <td>standard</td>
-<td>gold skip / got bid</td>
-<td>risk_assessor / decide</td>
-<td>difficult-client signal is a soft weight; raise poor_client_history weight (not shipped: hurts recall)</td>
-<td>not in LLM sample</td>
+<td>bid at risk 0.25</td>
+<td>risk_assessor</td>
+<td>poor client history is a soft weight (0.25); a hard rule would also drop good clients with one dispute</td>
+<td>not changed</td>
 </tr>
 <tr>
-<td>wrong bid</td>
+<td>wrong bid (difficult client)</td>
+<td>j-ai-0139</td>
+<td>industry</td>
+<td>bid at risk 0.25</td>
+<td>risk_assessor</td>
+<td>poor client history is a soft weight (0.25); a hard rule would also drop good clients with one dispute</td>
+<td>not changed</td>
+</tr>
+<tr>
+<td>wrong bid (vague post)</td>
 <td>j-ai-0116</td>
 <td>vague</td>
-<td>gold skip / got bid</td>
-<td>risk_assessor / decide</td>
-<td>difficult-client signal is a soft weight; raise poor_client_history weight (not shipped: hurts recall)</td>
-<td>open profile: bid</td>
+<td>gold skip, got bid</td>
+<td>analyst -&gt; fit_matcher</td>
+<td>LLM analyst decomposes the need (open profile)</td>
+<td>no</td>
+</tr>
+<tr>
+<td>wrong bid (vague post)</td>
+<td>j-ai-0120</td>
+<td>vague</td>
+<td>gold skip, got bid</td>
+<td>analyst -&gt; fit_matcher</td>
+<td>LLM analyst decomposes the need (open profile)</td>
+<td>not in the 30-job LLM sample</td>
+</tr>
+<tr>
+<td>wrong bid (vague post)</td>
+<td>j-da-0526</td>
+<td>vague</td>
+<td>gold skip, got bid</td>
+<td>analyst -&gt; fit_matcher</td>
+<td>LLM analyst decomposes the need (open profile)</td>
+<td>not in the 30-job LLM sample</td>
 </tr>
 <tr>
 <td>wrong skip (vague post)</td>
 <td>j-ai-0117</td>
 <td>vague</td>
-<td>gold bid / got watch</td>
+<td>gold bid, got watch</td>
 <td>analyst -&gt; fit_matcher</td>
-<td>LLM analyst decomposes the need into capabilities (open profile)</td>
-<td>not in LLM sample</td>
+<td>LLM analyst decomposes the need (open profile)</td>
+<td>not in the 30-job LLM sample</td>
 </tr>
 <tr>
 <td>wrong skip (vague post)</td>
 <td>j-ai-0121</td>
 <td>vague</td>
-<td>gold bid / got watch</td>
+<td>gold bid, got watch</td>
 <td>analyst -&gt; fit_matcher</td>
-<td>LLM analyst decomposes the need into capabilities (open profile)</td>
-<td>not in LLM sample</td>
+<td>LLM analyst decomposes the need (open profile)</td>
+<td>not in the 30-job LLM sample</td>
 </tr>
 <tr>
 <td>wrong skip (vague post)</td>
 <td>j-ai-0122</td>
 <td>vague</td>
-<td>gold bid / got watch</td>
+<td>gold bid, got watch</td>
 <td>analyst -&gt; fit_matcher</td>
-<td>LLM analyst decomposes the need into capabilities (open profile)</td>
-<td>not in LLM sample</td>
+<td>LLM analyst decomposes the need (open profile)</td>
+<td>not in the 30-job LLM sample</td>
 </tr>
 <tr>
-<td>wrong skip (injection)</td>
+<td>injection (legit job skipped)</td>
 <td>j-ai-0195</td>
 <td>injection_legit</td>
-<td>gold bid / got skip</td>
+<td>skip: off_platform_contact, prompt_injection, scam</td>
 <td>risk_assessor</td>
-<td>none: the planted text names WhatsApp, a real off-platform signal; kept by design</td>
-<td>not in LLM sample</td>
+<td>none: the planted text names WhatsApp, a real off-platform signal; skipping is acceptable</td>
+<td>by design</td>
 </tr>
 <tr>
-<td>wrong skip (injection)</td>
+<td>injection (legit job skipped)</td>
 <td>j-da-0593</td>
 <td>injection_legit</td>
-<td>gold bid / got skip</td>
+<td>skip: off_platform_contact, prompt_injection, scam</td>
 <td>risk_assessor</td>
-<td>none: the planted text names WhatsApp, a real off-platform signal; kept by design</td>
-<td>not in LLM sample</td>
+<td>none: the planted text names WhatsApp, a real off-platform signal; skipping is acceptable</td>
+<td>by design</td>
 </tr>
 <tr>
-<td>wrong skip (injection)</td>
+<td>injection (legit job skipped)</td>
 <td>j-da-0594</td>
 <td>injection_legit</td>
-<td>gold bid / got skip</td>
+<td>skip: off_platform_contact, prompt_injection, scam</td>
 <td>risk_assessor</td>
-<td>none: the planted text names WhatsApp, a real off-platform signal; kept by design</td>
-<td>not in LLM sample</td>
+<td>none: the planted text names WhatsApp, a real off-platform signal; skipping is acceptable</td>
+<td>by design</td>
 </tr>
 <tr>
 <td>wrong skip</td>
 <td>j-da-0423</td>
 <td>standard</td>
-<td>gold bid / got watch</td>
+<td>watch with fit 0.47</td>
 <td>fit_matcher</td>
-<td>skill-aware requirement strength (shipped)</td>
-<td>not in LLM sample</td>
+<td>skill-aware requirement strength</td>
+<td>partly</td>
 </tr>
 <tr>
 <td>wrong skip</td>
 <td>j-da-0515</td>
 <td>exact_tool</td>
-<td>gold bid / got watch</td>
+<td>watch with fit 0.55</td>
 <td>fit_matcher</td>
-<td>skill-aware requirement strength (shipped)</td>
-<td>not in LLM sample</td>
+<td>skill-aware requirement strength</td>
+<td>partly</td>
 </tr>
 <tr>
 <td>wrong skip</td>
 <td>j-da-0538</td>
 <td>industry</td>
-<td>gold bid / got watch</td>
+<td>watch with fit 0.55</td>
 <td>fit_matcher</td>
-<td>skill-aware requirement strength (shipped)</td>
-<td>not in LLM sample</td>
+<td>skill-aware requirement strength</td>
+<td>partly</td>
 </tr>
 <tr>
 <td>unsupported claim</td>
 <td>j-ai-0146</td>
 <td>industry</td>
-<td>removed: "In a 2022 insurance pricing model I delivered a Python solution using pandas, scikit-learn and gradient-booste..."</td>
+<td>"In a 2022 insurance pricing model I delivered a Python solution using pandas, scikit-learn and gradi..."</td>
 <td>writer</td>
-<td>claim verification removed it before the Critic</td>
-<td>worked: 0 unsupported after</td>
+<td>claim verification removes it before the Critic</td>
+<td>yes: 0 unsupported after</td>
+</tr>
+<tr>
+<td>unsupported claim</td>
+<td>j-ai-0088</td>
+<td>multi_req</td>
+<td>"In the Card-fraud anomaly detection case study I built an end-to-end solution using Python, scikit-l..."</td>
+<td>writer</td>
+<td>claim verification removes it before the Critic</td>
+<td>yes: 0 unsupported after</td>
 </tr>
 </tbody>
 </table>
@@ -505,9 +541,9 @@ paraphrased instruction with no trigger words, or one placed in a screening ques
 fenced but un-neutralised; then only the writer's own instructions and the output rules stand in the way.</p>
 <h2>10. Held-out results against declared budgets  (<code>decisions_holdout_offline.json</code>, <code>smoke.json</code>)</h2>
 <p>The instructor's hidden set runs after the deadline; as a proxy, the same pipeline ran on a held-out split
-generated with a different seed and never used for tuning: bid/skip F1 pending,
-scam recall pending, price in band pending, p95 pending s per job
-(deterministic profile) vs dev 0.941 / 1.000 / 94.4%.
+generated with a different seed and never used for tuning: bid/skip F1 0.922,
+scam recall 0.958, price in band 96.5%, p95 0.394 s per job
+(deterministic profile) vs dev 0.931 / 1.000 / 98.2%.
 <strong>Budgets on the live <code>open</code> profile:</strong> per job analysed, p95 29.023 s and $0.000
 (budget 30 s / $0.002, met); per proposal, p95 100.043 s and $0.003
 (budget 90 s / $0.01). Latency above budget comes from Groq free-tier rate-limit waits (8k tokens/min), not compute.

@@ -1,6 +1,6 @@
 # GigBid: R&D report (design review)
 
-*AI-4016 · build fc91cdb · every number below is read from `evals/results/` at build time.*
+*AI-4016 · build b33d8f4 · every number below is read from `evals/results/` at build time.*
 
 ## 1. Problem and constraints
 A freelancer loses hours scanning feeds, spends paid Connects on jobs they won't win, sends generic
@@ -131,26 +131,30 @@ Two writer strategies (evidence-first vs question-first) assigned by a stable ha
 every proposal, scored by GigSim's clients and promoted into outcome memory per category. Pending: pools the proposal-eval submissions once enough exist.
 
 ## 8. Failure analysis  (`decisions_dev_offline.json`, `proposals_open.json`)
-Counts over all 600 dev jobs (offline profile): mispriced: 23, wrong bid: 19, wrong skip (vague post): 25, wrong skip (injection): 4, wrong skip: 3.
+Failed dev jobs by category (all 600 dev jobs, deterministic profile, before the pricing fix): mispriced: 23, wrong bid (difficult client): 16, wrong bid (vague post): 3, wrong skip (vague post): 25, injection (legit job skipped): 4, wrong skip: 3, unsupported claim: 7. Pricing fix: 14 of 23 mispriced jobs now inside the band.
 
-| Category | Job | Type | What went wrong | Node | Fix tried | Did it work |
+| Category | Job | Type | What went wrong | Node | Fix tried | Worked? |
 |---|---|---|---|---|---|---|
-| mispriced | j-ai-0102 | exact_tool | gold bid / got bid / price 3100 vs band 1850-2770 | pricing | median of a +-1 requirement bucket; client budget caps below the fair band | open profile: bid |
-| mispriced | j-fu-0232 | standard | gold bid / got bid / price 2000 vs band 1290-1940 | pricing | median of a +-1 requirement bucket; client budget caps below the fair band | open profile: bid |
-| mispriced | j-ai-0027 | standard | gold bid / got bid / price 3770 vs band 2470-3710 | pricing | median of a +-1 requirement bucket; client budget caps below the fair band | not in LLM sample |
-| wrong bid | j-da-0432 | standard | gold skip / got bid | risk_assessor / decide | difficult-client signal is a soft weight; raise poor_client_history weight (not shipped: hurts recall) | open profile: bid |
-| wrong bid | j-ai-0009 | standard | gold skip / got bid | risk_assessor / decide | difficult-client signal is a soft weight; raise poor_client_history weight (not shipped: hurts recall) | not in LLM sample |
-| wrong bid | j-ai-0116 | vague | gold skip / got bid | risk_assessor / decide | difficult-client signal is a soft weight; raise poor_client_history weight (not shipped: hurts recall) | open profile: bid |
-| wrong skip (vague post) | j-ai-0117 | vague | gold bid / got watch | analyst -> fit_matcher | LLM analyst decomposes the need into capabilities (open profile) | not in LLM sample |
-| wrong skip (vague post) | j-ai-0121 | vague | gold bid / got watch | analyst -> fit_matcher | LLM analyst decomposes the need into capabilities (open profile) | not in LLM sample |
-| wrong skip (vague post) | j-ai-0122 | vague | gold bid / got watch | analyst -> fit_matcher | LLM analyst decomposes the need into capabilities (open profile) | not in LLM sample |
-| wrong skip (injection) | j-ai-0195 | injection_legit | gold bid / got skip | risk_assessor | none: the planted text names WhatsApp, a real off-platform signal; kept by design | not in LLM sample |
-| wrong skip (injection) | j-da-0593 | injection_legit | gold bid / got skip | risk_assessor | none: the planted text names WhatsApp, a real off-platform signal; kept by design | not in LLM sample |
-| wrong skip (injection) | j-da-0594 | injection_legit | gold bid / got skip | risk_assessor | none: the planted text names WhatsApp, a real off-platform signal; kept by design | not in LLM sample |
-| wrong skip | j-da-0423 | standard | gold bid / got watch | fit_matcher | skill-aware requirement strength (shipped) | not in LLM sample |
-| wrong skip | j-da-0515 | exact_tool | gold bid / got watch | fit_matcher | skill-aware requirement strength (shipped) | not in LLM sample |
-| wrong skip | j-da-0538 | industry | gold bid / got watch | fit_matcher | skill-aware requirement strength (shipped) | not in LLM sample |
-| unsupported claim | j-ai-0146 | industry | removed: "In a 2022 insurance pricing model I delivered a Python solution using pandas, scikit-learn and gradient-booste..." | writer | claim verification removed it before the Critic | worked: 0 unsupported after |
+| mispriced | j-ai-0102 | exact_tool | price 3100 outside band 1850-2770 | pricing | bucket market stats by requirement bullets, not skill-name count | yes (2450) |
+| mispriced | j-fu-0232 | standard | price 2000 outside band 1290-1940 | pricing | bucket market stats by requirement bullets, not skill-name count | no (2000) |
+| mispriced | j-ai-0027 | standard | price 3770 outside band 2470-3710 | pricing | bucket market stats by requirement bullets, not skill-name count | yes (3360) |
+| wrong bid (difficult client) | j-da-0432 | standard | bid at risk 0.25 | risk_assessor | poor client history is a soft weight (0.25); a hard rule would also drop good clients with one dispute | not changed |
+| wrong bid (difficult client) | j-ai-0009 | standard | bid at risk 0.25 | risk_assessor | poor client history is a soft weight (0.25); a hard rule would also drop good clients with one dispute | not changed |
+| wrong bid (difficult client) | j-ai-0139 | industry | bid at risk 0.25 | risk_assessor | poor client history is a soft weight (0.25); a hard rule would also drop good clients with one dispute | not changed |
+| wrong bid (vague post) | j-ai-0116 | vague | gold skip, got bid | analyst -> fit_matcher | LLM analyst decomposes the need (open profile) | no |
+| wrong bid (vague post) | j-ai-0120 | vague | gold skip, got bid | analyst -> fit_matcher | LLM analyst decomposes the need (open profile) | not in the 30-job LLM sample |
+| wrong bid (vague post) | j-da-0526 | vague | gold skip, got bid | analyst -> fit_matcher | LLM analyst decomposes the need (open profile) | not in the 30-job LLM sample |
+| wrong skip (vague post) | j-ai-0117 | vague | gold bid, got watch | analyst -> fit_matcher | LLM analyst decomposes the need (open profile) | not in the 30-job LLM sample |
+| wrong skip (vague post) | j-ai-0121 | vague | gold bid, got watch | analyst -> fit_matcher | LLM analyst decomposes the need (open profile) | not in the 30-job LLM sample |
+| wrong skip (vague post) | j-ai-0122 | vague | gold bid, got watch | analyst -> fit_matcher | LLM analyst decomposes the need (open profile) | not in the 30-job LLM sample |
+| injection (legit job skipped) | j-ai-0195 | injection_legit | skip: off_platform_contact, prompt_injection, scam | risk_assessor | none: the planted text names WhatsApp, a real off-platform signal; skipping is acceptable | by design |
+| injection (legit job skipped) | j-da-0593 | injection_legit | skip: off_platform_contact, prompt_injection, scam | risk_assessor | none: the planted text names WhatsApp, a real off-platform signal; skipping is acceptable | by design |
+| injection (legit job skipped) | j-da-0594 | injection_legit | skip: off_platform_contact, prompt_injection, scam | risk_assessor | none: the planted text names WhatsApp, a real off-platform signal; skipping is acceptable | by design |
+| wrong skip | j-da-0423 | standard | watch with fit 0.47 | fit_matcher | skill-aware requirement strength | partly |
+| wrong skip | j-da-0515 | exact_tool | watch with fit 0.55 | fit_matcher | skill-aware requirement strength | partly |
+| wrong skip | j-da-0538 | industry | watch with fit 0.55 | fit_matcher | skill-aware requirement strength | partly |
+| unsupported claim | j-ai-0146 | industry | "In a 2022 insurance pricing model I delivered a Python solution using pandas, scikit-learn and gradi..." | writer | claim verification removes it before the Critic | yes: 0 unsupported after |
+| unsupported claim | j-ai-0088 | multi_req | "In the Card-fraud anomaly detection case study I built an end-to-end solution using Python, scikit-l..." | writer | claim verification removes it before the Critic | yes: 0 unsupported after |
 
 The LLM-risk episode is the clearest failure caught by measurement: when the small model's flags were
 trusted, scam precision on the same 30 jobs fell from 0.750 to 0.375
@@ -174,9 +178,9 @@ fenced but un-neutralised; then only the writer's own instructions and the outpu
 
 ## 10. Held-out results against declared budgets  (`decisions_holdout_offline.json`, `smoke.json`)
 The instructor's hidden set runs after the deadline; as a proxy, the same pipeline ran on a held-out split
-generated with a different seed and never used for tuning: bid/skip F1 pending,
-scam recall pending, price in band pending, p95 pending s per job
-(deterministic profile) vs dev 0.941 / 1.000 / 94.4%.
+generated with a different seed and never used for tuning: bid/skip F1 0.922,
+scam recall 0.958, price in band 96.5%, p95 0.394 s per job
+(deterministic profile) vs dev 0.931 / 1.000 / 98.2%.
 **Budgets on the live `open` profile:** per job analysed, p95 29.023 s and $0.000
 (budget 30 s / $0.002, met); per proposal, p95 100.043 s and $0.003
 (budget 90 s / $0.01). Latency above budget comes from Groq free-tier rate-limit waits (8k tokens/min), not compute.

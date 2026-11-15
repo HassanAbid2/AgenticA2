@@ -93,7 +93,7 @@ Proposal eval: 12 drafts (complete: False). Unsupported-claim rate before -> aft
 
 | Bid/skip F1 | Accuracy | Scam precision | Scam recall | Injection detected | Price in fair band | p95 latency (s) | USD per job |
 |---|---|---|---|---|---|---|---|
-| 0.941 | 0.915 | 0.923 | 1.000 | 100.0% | 94.4% | 3.225 | 0.000 |
+| 0.931 | 0.902 | 0.923 | 1.000 | 100.0% | 98.2% | 0.769 | 0.000 |
 
 ### Decisions, open profile on Groq (10 jobs per persona)
 
