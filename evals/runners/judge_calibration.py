@@ -23,16 +23,21 @@ os.environ.update({"GIGBID_STRICT_LLM": "1"})
 from evals.runners.common import RAW, ROOT, write_result  # noqa: E402
 
 CSV = ROOT / "evals" / "datasets" / "judge_calibration.csv"
+KEY = ROOT / "evals" / "datasets" / "judge_calibration_key.json"  # hidden from the labeller
 
 
 def prepare(n: int = 30):
     items = []
+    from evals.runners.common import load_dev
+
+    titles = {r["job"]["job_id"]: r["job"] for r in load_dev()}
     raw = RAW / "proposals_open.jsonl"
     if raw.exists():
         for line in raw.read_text(encoding="utf-8").splitlines():
             r = json.loads(line)
             if r.get("final_text"):
-                items.append({"source": "gigbid", "job": r["key"].split("|")[1], "proposal": r["final_text"], "outcome": ""})
+                job = titles.get(r["key"].split("|")[1], {})
+                items.append({"source": "gigbid", "job": f"{job.get('category', '')}: {job.get('title', '')}", "proposal": r["final_text"], "outcome": ""})
     rng = random.Random(30)
     for p in ("ai_ml", "fullstack", "data_analyst"):
         rows = [json.loads(x) for x in (ROOT / "data/personas" / p / "proposals.jsonl").read_text(encoding="utf-8").splitlines()]
@@ -41,11 +46,13 @@ def prepare(n: int = 30):
             items.append({"source": "past", "job": r["job_title"], "proposal": r["text"], "outcome": r["outcome"]})
     rng.shuffle(items)
     items = items[:n]
-    with open(CSV, "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=["item_id", "job", "proposal", "human_label", "notes", "source", "outcome"])
+    with open(CSV, "w", newline="", encoding="utf-8") as f:  # blind: no source / outcome columns
+        w = csv.DictWriter(f, fieldnames=["item_id", "job", "proposal", "human_label", "notes"])
         w.writeheader()
         for i, it in enumerate(items):
-            w.writerow({"item_id": i, "human_label": "", "notes": "", **it})
+            w.writerow({"item_id": i, "job": it["job"], "proposal": it["proposal"], "human_label": "", "notes": ""})
+    KEY.write_text(json.dumps({str(i): {"source": it["source"], "outcome": it["outcome"]} for i, it in enumerate(items)}, indent=1),
+                   encoding="utf-8")
     print(f"wrote {CSV} with {len(items)} items: fill human_label (good/bad) for each row")
 
 
@@ -61,7 +68,8 @@ def kappa(a: list[str], b: list[str]) -> float | None:
 async def score():
     from evals.runners.proposal_eval import judge
 
-    rows = list(csv.DictReader(open(CSV, encoding="utf-8")))
+    key = json.loads(KEY.read_text(encoding="utf-8"))
+    rows = [r | key[r["item_id"]] for r in csv.DictReader(open(CSV, encoding="utf-8"))]
     labelled = [r for r in rows if r["human_label"].strip().lower() in ("good", "bad")]
     if len(labelled) < len(rows):
         raise SystemExit(f"{len(rows) - len(labelled)} rows still need a human_label (good/bad) in {CSV}")

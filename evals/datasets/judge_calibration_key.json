@@ -1,0 +1,122 @@
+{
+ "0": {
+  "source": "gigbid",
+  "outcome": ""
+ },
+ "1": {
+  "source": "past",
+  "outcome": "ignored"
+ },
+ "2": {
+  "source": "past",
+  "outcome": "ignored"
+ },
+ "3": {
+  "source": "past",
+  "outcome": "ignored"
+ },
+ "4": {
+  "source": "past",
+  "outcome": "ignored"
+ },
+ "5": {
+  "source": "past",
+  "outcome": "replied"
+ },
+ "6": {
+  "source": "past",
+  "outcome": "ignored"
+ },
+ "7": {
+  "source": "past",
+  "outcome": "ignored"
+ },
+ "8": {
+  "source": "gigbid",
+  "outcome": ""
+ },
+ "9": {
+  "source": "gigbid",
+  "outcome": ""
+ },
+ "10": {
+  "source": "past",
+  "outcome": "won"
+ },
+ "11": {
+  "source": "past",
+  "outcome": "ignored"
+ },
+ "12": {
+  "source": "past",
+  "outcome": "ignored"
+ },
+ "13": {
+  "source": "past",
+  "outcome": "won"
+ },
+ "14": {
+  "source": "past",
+  "outcome": "replied"
+ },
+ "15": {
+  "source": "past",
+  "outcome": "won"
+ },
+ "16": {
+  "source": "gigbid",
+  "outcome": ""
+ },
+ "17": {
+  "source": "past",
+  "outcome": "replied"
+ },
+ "18": {
+  "source": "past",
+  "outcome": "ignored"
+ },
+ "19": {
+  "source": "past",
+  "outcome": "won"
+ },
+ "20": {
+  "source": "past",
+  "outcome": "ignored"
+ },
+ "21": {
+  "source": "gigbid",
+  "outcome": ""
+ },
+ "22": {
+  "source": "past",
+  "outcome": "ignored"
+ },
+ "23": {
+  "source": "past",
+  "outcome": "replied"
+ },
+ "24": {
+  "source": "gigbid",
+  "outcome": ""
+ },
+ "25": {
+  "source": "gigbid",
+  "outcome": ""
+ },
+ "26": {
+  "source": "gigbid",
+  "outcome": ""
+ },
+ "27": {
+  "source": "past",
+  "outcome": "replied"
+ },
+ "28": {
+  "source": "past",
+  "outcome": "won"
+ },
+ "29": {
+  "source": "past",
+  "outcome": "ignored"
+ }
+}
