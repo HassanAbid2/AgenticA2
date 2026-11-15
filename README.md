@@ -6,7 +6,7 @@
 proposals in which every claim links to real evidence from your portfolio. You approve every proposal
 and message before anything leaves the system.**
 
-* **Live demo:** Public deployment requires the student's hosting account. Run locally with `make up` and open `http://localhost:8080`.
+* **Live demo:** [GigBid on Render](https://gigbid-uxin.onrender.com). Reviewer credentials go in the private Classroom comment.
 * **Demo video:** [Captioned GigSim walkthrough](https://raw.githubusercontent.com/HassanAbid2/AgenticA2/bc9a801233910b8876eaec52cd683a96b682d446/docs/video/gigbid-demo.webm). It uses a synthetic persona and the offline profile.
 * **Technical write-up:** [What the experiments showed](docs/WRITEUP.md) · **R&D report:** [PDF](docs/report/GigBid_RD_Report.pdf) · **Portfolio MCP server:** [Install and use](mcp_servers/portfolio/README.md)
 * **Traces:** The run viewer and local Phoenix (`http://localhost:6006`) show local traces. Public trace links for the scam, approved proposal, Critic loop and crash recovery require the hosted stack.
