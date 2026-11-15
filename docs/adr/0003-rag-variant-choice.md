@@ -21,7 +21,8 @@ also drives bid/skip decisions. With pricing held fixed, swapping the Fit Matche
 0.907). The context lines shift cosine similarities downward, and the strength thresholds (`fit.strong_cos`,
 `fit.partial_cos`) were calibrated on the plain index, so more good jobs fall to "watch". A +0.014 nDCG gain
 is not worth losing bid recall. Recalibrating the thresholds for the contextual index is the follow-up that
-could let V6 ship. This is the clearest case in the project of better retrieval not translating into better
+could let V6 ship. The held-out proxy split agrees: bid/skip F1 0.934 with `v1+v2+v9` vs 0.922 with `v1+v2+v6+v9`
+(`decisions_holdout_offline.json`, `decisions_holdout_offline_fit_v1+v2+v6+v9.json`). This is the clearest case in the project of better retrieval not translating into better
 outcomes.
 
 **Not shipped: V1.** Dropping V1 also scores slightly higher nDCG (0.871 for `v2+v6+v9`), but V1 produces the
