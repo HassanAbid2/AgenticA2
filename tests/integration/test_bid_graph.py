@@ -81,7 +81,8 @@ async def test_conversation_graph_drafts_reply_and_waits():
     await run_bid("ai_ml", jid, profile=persona_profile("ai_ml"), thread_id="t-conv-bid")
     await run_bid("ai_ml", jid, profile=persona_profile("ai_ml"), thread_id="t-conv-bid", resume={"action": "approve"})
     pid = next(p["proposal_id"] for p in W.proposals.values() if p["job_id"] == jid and p["status"] != "draft")
-    # force a client reply into GigSim's thread
+    # Replace the scheduled simulator outcome with a fixed reply, even on a slow test host.
+    W.pending = [(due, event) for due, event in W.pending if event["proposal_id"] != pid]
     W.threads["t-" + pid] = {"thread_id": "t-" + pid, "proposal_id": pid, "job_id": jid, "client_id": row["job"]["client_id"],
                             "freelancer_id": "fl-ai_ml", "messages": [{"message_id": "m1", "sender": "client",
                             "text": "Thanks! Could we schedule a 30-minute call this week?", "sent_at": "now"}]}
